@@ -1,0 +1,6 @@
+__pycache__/
+*.py[oc]
+.venv/
+uv.lock
+.ruff_cache/
+.mypy_cache/
