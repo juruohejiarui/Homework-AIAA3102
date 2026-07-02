@@ -18,15 +18,17 @@ def classify(cards: tuple[Card, ...]) -> HandRank:
     is_flush = len({c.suit for c in cards}) == 1
     distinct = sorted(counts)
     is_straight = False
-    if len(distinct) == 5 and distinct[4] - distinct[0] == 4:
+    if len(distinct) == 5 and (distinct[4] - distinct[0] == 4):
         is_straight = True
     pattern = sorted(counts.values(), reverse=True)
 
     if is_straight and is_flush:
-        return HandRank.STRAIGHT_FLUSH
-    if pattern == [4]:
+        return HandRank.ROYAL_FLUSH if distinct[4] == 14 else HandRank.STRAIGHT_FLUSH # old: return HandRank.STRAIGNT_FLUSH
+    if len(distinct) == 5 and distinct[4] == 14 and distinct[3] - distinct[0] == 3 :
+        return HandRank.STRAIGHT_FLUSH if is_flush else HandRank.STRAIGHT # to handle A2345
+    if pattern == [4, 1] : # old: if pattern == [4]:
         return HandRank.FOUR_OF_A_KIND
-    if pattern == [2, 3]:
+    if pattern == [3, 2] : # old: if pattern == [2, 3]:
         return HandRank.FULL_HOUSE
     if is_flush:
         return HandRank.FLUSH
@@ -34,7 +36,7 @@ def classify(cards: tuple[Card, ...]) -> HandRank:
         return HandRank.STRAIGHT
     if pattern == [3, 1, 1]:
         return HandRank.THREE_OF_A_KIND
-    if pattern == [2, 2]:
+    if pattern == [2, 2, 1]: # old: if pattern == [2, 2]:
         return HandRank.TWO_PAIR
     if pattern == [2, 1, 1, 1]:
         return HandRank.ONE_PAIR
