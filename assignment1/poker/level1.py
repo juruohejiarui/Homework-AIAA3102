@@ -24,7 +24,7 @@ def classify(cards: tuple[Card, ...]) -> HandRank:
 
     if is_straight and is_flush:
         return HandRank.ROYAL_FLUSH if distinct[4] == 14 else HandRank.STRAIGHT_FLUSH # old: return HandRank.STRAIGNT_FLUSH
-    if len(distinct) == 5 and distinct[4] == 14 and distinct[3] - distinct[0] == 3 :
+    if len(distinct) == 5 and set(distinct) == {2, 3, 4, 5, 14}:
         return HandRank.STRAIGHT_FLUSH if is_flush else HandRank.STRAIGHT # to handle A2345
     if pattern == [4, 1] : # old: if pattern == [4]:
         return HandRank.FOUR_OF_A_KIND

@@ -20,7 +20,10 @@ def order_five(cards: tuple[Card, ...]) -> list[Card]:
     rank = classify(cards)
     counts = Counter(c.value for c in cards)
     if rank in (HandRank.STRAIGHT, HandRank.STRAIGHT_FLUSH, HandRank.ROYAL_FLUSH):
+        # Wheel straight (A-2-3-4-5) is 5-high, so ace must be treated as low.
+        if {c.value for c in cards} == {14, 2, 3, 4, 5}:
+            return sorted(cards, key=lambda c: 1 if c.value == 14 else c.value, reverse=True)
         return sorted(cards, key=lambda c: c.value, reverse=True)
     if rank in (HandRank.FLUSH, HandRank.HIGH_CARD):
-        return sorted(cards, key=lambda c: c.value)
-    return sorted(cards, key=lambda c: (counts[c.value], c.value))
+        return sorted(cards, key=lambda c: c.value, reverse=True)
+    return sorted(cards, key=lambda c: (counts[c.value], c.value), reverse=True)

@@ -39,4 +39,32 @@
 - **Fix**: added a special case that returns `HandRank.ROYAL_FLUSH` when the hand is both a straight and a flush and the highest card is an ace
 - **Why the fix is correct**: in poker, a royal flush is the highest possible straight flush and must be classified distinctly from all other straight flushes
 
+## Bug 6
+- **Where**: `level2.py`, `order_five()` flush/high-card ordering
+- **Symptom**: flush and high-card hands were returned in ascending order (low to high), which breaks tie comparison order
+- **Root cause**: the `sorted(..., key=value)` call for these ranks omitted `reverse=True`
+- **Fix**: changed flush/high-card sorting to descending value order
+- **Why the fix is correct**: poker compares same-rank hands from the highest relevant card downward
+
+## Bug 7
+- **Where**: `level2.py`, `order_five()` grouped-hand ordering for pairs/trips/quads/full house
+- **Symptom**: grouped hands were ordered with low-frequency and low-value cards first, so kickers could appear before the primary made hand
+- **Root cause**: sorting by `(count, value)` was ascending, putting less significant cards first
+- **Fix**: changed sorting by `(count, value)` to descending with `reverse=True`
+- **Why the fix is correct**: canonical compare order must put the most significant combination first, then kickers high to low
+
+## Bug 8
+- **Where**: `level2.py`, `order_five()` straight / straight-flush wheel case
+- **Symptom**: `A-2-3-4-5` was ordered as ace-high when sorted by raw value, incorrectly treating it like an ace-high straight
+- **Root cause**: ace is encoded as value 14 and needed a special low-ace adjustment for the wheel
+- **Fix**: added an explicit wheel check and sort key that treats ace as 1 in this specific case
+- **Why the fix is correct**: in standard poker, `A-2-3-4-5` is the lowest straight (5-high), so compare order must be `5,4,3,2,A`
+
+## Bug 9
+- **Where**: `level1.py`, `classify()` ace-low straight detection
+- **Symptom**: hands like `6H 7D 8S 9C AH` were incorrectly classified as a straight, even though they are not consecutive poker ranks
+- **Root cause**: the ace-low branch used only a span check (`distinct[3] - distinct[0] == 3`) and matched non-wheel hands that happened to include an ace
+- **Fix**: tightened the special case to exactly the wheel rank set `{2, 3, 4, 5, 14}`
+- **Why the fix is correct**: only `A-2-3-4-5` is a valid ace-low straight in standard poker; `A-6-7-8-9` is not
+
 <!-- ## Bug 2 ... add as many as you find -->

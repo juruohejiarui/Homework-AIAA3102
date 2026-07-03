@@ -15,4 +15,17 @@ from poker_common import five_card_hands, parse  # noqa: F401
 
 def best_hand(seven: list[str]) -> tuple[HandRank, list[str]]:
     # TODO(student): enumerate, score, and return (rank, 5 cards in order).
-    raise NotImplementedError("Level 3: implement best_hand")
+    from poker_common import Card
+    card_lst = parse(seven)
+    combs: list[tuple[HandRank, list[Card]]] = []
+
+    for comb in five_card_hands(card_lst):
+        rank = classify(comb)
+        combs.append((rank, order_five(comb)))
+
+    best_rank, best_cards = max(
+        combs,
+        key=lambda item: (item[0].value, tuple(card.value for card in item[1])),
+    )
+
+    return best_rank, [str(card) for card in best_cards]

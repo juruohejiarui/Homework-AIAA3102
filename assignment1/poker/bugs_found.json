@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "nr_cases": 1000000,
+    "workers": 8,
+    "seed": null,
+    "elapsed_seconds": 172.062,
+    "best_hand_mismatches": 0,
+    "compare_hands_mismatches": 0,
+    "total_unique_mismatches": 0
+  },
+  "mismatches": []
+}
