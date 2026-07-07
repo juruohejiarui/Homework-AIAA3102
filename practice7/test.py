@@ -2,7 +2,7 @@ from train import generate_data, init_random, get_device, Model, SelfDataset, MO
 from torch.utils.data import DataLoader
 from torch.nn import MSELoss as LossFn
 from tqdm import tqdm, trange
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, root_mean_squared_error
 import torch
 import torch.nn as nn
 
@@ -33,10 +33,11 @@ if __name__ == "__main__" :
             pred = pred.reshape(-1)
             loss : torch.Tensor = loss_fn(pred, y)
             
-            loss_sum += loss.sum().item()
+            loss_sum += loss.item() * x.shape[0]
             
             y_true.extend(y.to("cpu").numpy().tolist())
             y_pred.extend(pred.to("cpu").numpy().tolist())
     
     print(f"Test MSE Loss: {loss_sum / n}")
-    print(f"Mean sequare error: {mean_squared_error(y_true, y_pred)}")
+    print(f"Mean squared error: {mean_squared_error(y_true, y_pred)}")
+    print(f"Root mean squared error: {root_mean_squared_error(y_true, y_pred)}")
