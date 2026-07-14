@@ -1,0 +1,2 @@
+run_id,model,main_change,image_size,batch_size,epochs,optimizer,learning_rate,seed,val_accuracy,val_macro_f1,notes
+baseline,baseline,initial model,128,32,15,adamw,0.001,398,,,

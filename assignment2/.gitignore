@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+data/
+checkpoints/
+*.pt
+*.pth
+results/*.png
+predictions/*.csv
+!results/.gitkeep
+!predictions/.gitkeep
+*.zip
