@@ -36,12 +36,17 @@ class LeafDataset(Dataset[tuple[torch.Tensor, int]]):
         self.transform = transform
 
     def __len__(self) -> int:
-        """TODO: return the number of examples in the dataframe."""
-        raise NotImplementedError
+        """Return the number of labeled examples."""
+        return len(self.frame)
 
     def __getitem__(self, index: int) -> tuple[torch.Tensor, int]:
-        """TODO: load one RGB image and return its transformed tensor and class index."""
-        raise NotImplementedError
+        """Load one RGB image and return its transformed tensor and class index."""
+        row = self.frame.iloc[index]
+        image_path = self.image_dir / f"{row['image_id']}.jpg"
+        with Image.open(image_path) as image:
+            tensor = self.transform(image.convert("RGB"))
+        target = int(row.loc[list(CLASSES)].to_numpy(dtype=int).argmax())
+        return tensor, target
 
 
 def load_labeled_csv(path: Path) -> pd.DataFrame:

@@ -1,1 +1,9 @@
 image_id,true_label,predicted_label,confidence,failure_group,observation
+Train_128,multiple_diseases,rust,0.999509,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
+Train_1573,multiple_diseases,scab,0.997470,multiple_diseases_predicted_as_scab,Inspect leaf appearance and lesion distribution manually.
+Train_1052,scab,healthy,0.996729,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_1560,rust,scab,0.995967,rust_predicted_as_scab,Inspect leaf appearance and lesion distribution manually.
+Train_1730,scab,healthy,0.990067,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_104,multiple_diseases,healthy,0.961536,multiple_diseases_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_621,healthy,scab,0.961154,healthy_predicted_as_scab,Inspect leaf appearance and lesion distribution manually.
+Train_371,rust,healthy,0.950415,rust_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
