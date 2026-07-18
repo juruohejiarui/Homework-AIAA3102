@@ -1,0 +1,82 @@
+{
+  "negative": [
+    {
+      "date": "2023-07-24",
+      "conversation": [
+        "A: What can I help you with?",
+        "C: I CAN'T CONNECT TO MY 😤 ACCOUNT",
+        "A: Are you sure it's not your caps lock?",
+        "C: 😤! You're right!"
+      ]
+    },
+    {
+      "date": "2023-05-05",
+      "conversation": [
+        "A: Hi, how can I help you today?",
+        "C: MY 😤 ORDER STILL HASN'T ARRIVED AND IT'S BEEN A WEEK!!!",
+        "A: I'm sorry to hear that, ********. Let's look into this issue.",
+        "A: Can you please provide your order number so I can check the status for you?",
+        "C: Fine, it's ********.",
+        "A: Thank you, ********. I see there was a delay in shipping. Your order will arrive within the next 2 days."
+      ]
+    }
+  ],
+  "positive": [
+    {
+      "date": "2023-06-15",
+      "conversation": [
+        "A: Hello! How can I assist you today?",
+        "C: I can't seem to find the download link for my purchased software.",
+        "A: No problem, ********. Let me find that for you. Can you please provide your order number?",
+        "C: It's ********. Thanks for helping me out!"
+      ]
+    },
+    {
+      "date": "2023-06-18",
+      "conversation": [
+        "A: Hello! How can I help you today?",
+        "C: I accidentally placed an order twice, can you help me cancel one?",
+        "A: Sure, ********. Can you give me the order number you'd like to cancel?",
+        "C: Yes, it's ********. Thank you!",
+        "A: I've successfully canceled order number ********. You will receive a confirmation email shortly."
+      ]
+    },
+    {
+      "date": "2023-06-29",
+      "conversation": [
+        "A: Good morning, what can I assist you with today?",
+        "C: Hi there, I received a damaged item in my order. Can you help me return it?",
+        "A: I'm sorry to hear that, ********. Can you provide your order number and specify the damaged item?",
+        "C: Sure, order number is ******** and the damaged item is a coffee mug."
+      ]
+    },
+    {
+      "date": "2023-05-04",
+      "conversation": [
+        "A: How can I help you today?",
+        "C: My coupon code isn't working at checkout. Can you help?",
+        "A: Of course, ********. Please provide the coupon code you're trying to use.",
+        "C: It's \"********\".",
+        "A: I've checked the code, and it seems to have expired. I apologize for the inconvenience. Here's a new code for you to use: \"********\"."
+      ]
+    },
+    {
+      "date": "2023-06-15",
+      "conversation": [
+        "A: Good evening! How may I assist you?",
+        "C: Hi there, I'm having trouble logging into my account. I've tried resetting my password, but it's not working.",
+        "A: I'm sorry to hear that, ********. Let me help you. Can you please confirm your email address?",
+        "C: Sure, it's ********."
+      ]
+    },
+    {
+      "date": "2023-06-24",
+      "conversation": [
+        "A: Welcome! What can I do for you today?",
+        "C: Hi, I need to change my delivery address for my recent order.",
+        "A: Alright, ********. Please provide your order number.",
+        "C: It's ********. Thanks for your help!"
+      ]
+    }
+  ]
+}

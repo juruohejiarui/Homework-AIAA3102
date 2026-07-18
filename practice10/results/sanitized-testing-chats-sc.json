@@ -1,0 +1,87 @@
+{
+  "negative": [
+    {
+      "date": "2023-07-24",
+      "conversation": [
+        "A: Good day! How can I help you?",
+        "C: Hi \"********\", I can't update my 😤 credit card information. Do you want my 😤 money or not?",
+        "A: I'm sorry for the inconvenience, ********. Can you please confirm your account's email?",
+        "C: Sure, you have all my 😤 data already anyways. It's ********."
+      ]
+    },
+    {
+      "date": "2023-08-30",
+      "conversation": [
+        "A: Good evening! How may I assist you today?",
+        "C: Hi ********, I've forgotten my 😤 password and I can't login into my account.",
+        "A: I'm sorry for the trouble, ********. Could you confirm your email address so we can reset your password?",
+        "C: Definitely, it's ********."
+      ]
+    },
+    {
+      "date": "2023-10-19",
+      "conversation": [
+        "A: Welcome! How can I assist you right now?",
+        "C: 😤! There's no option to change my profile picture. What kind of 😤 joint are you running? ",
+        "A: Let me help you with this, ********. Are you trying to update it from the mobile app or the website?",
+        "C: I'm using the 😤 website"
+      ]
+    }
+  ],
+  "positive": [
+    {
+      "date": "2023-07-15",
+      "conversation": [
+        "A: Hello! What can I help you with today?",
+        "C: Hey, my promo code isn't applying the discount in my cart.",
+        "A: My apologies for the trouble, ********. Could you tell me the promo code you're trying to use?",
+        "C: It's \"SAVE20\"."
+      ]
+    },
+    {
+      "date": "2023-08-13",
+      "conversation": [
+        "A: Good morning! How may I assist you?",
+        "C: Hello, I'm having a problem with my mobile app, it keeps crashing.",
+        "A: I'm sorry to hear that, ********. Could you tell me what device you're using?",
+        "C: I have an iPhone 11."
+      ]
+    },
+    {
+      "date": "2023-09-01",
+      "conversation": [
+        "A: Hello! How can I assist you this morning?",
+        "C: Hi, I'm trying to make a purchase but it's not going through.",
+        "A: I'm sorry to hear that, ********. Can you tell me what error message you're receiving?",
+        "C: It's saying \"Payment method not valid\"."
+      ]
+    },
+    {
+      "date": "2023-10-11",
+      "conversation": [
+        "A: Good morning! How may I assist you?",
+        "C: Hello, I'd like to know the status of my order. ",
+        "A: Of course, ********. Could you please provide me with the order number?",
+        "C: It's ********."
+      ]
+    },
+    {
+      "date": "2023-10-29",
+      "conversation": [
+        "A: Hello! What can I help you with today?",
+        "C: Hi ********, I was charged twice for my last order. ",
+        "A: I'm sorry to hear that, ********. Could you share your order number so I can look into this for you?",
+        "C: Sure, it's ********."
+      ]
+    },
+    {
+      "date": "2023-11-08",
+      "conversation": [
+        "A: How can I help you today?",
+        "C: Hi, I made an order last week but I need to change the sizing. ",
+        "A: Certainly, ********. Could you provide me the order number?",
+        "C: Yes, it's ********. Thanks!"
+      ]
+    }
+  ]
+}
