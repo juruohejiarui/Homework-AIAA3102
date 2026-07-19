@@ -115,13 +115,18 @@ def evaluate(config_path: Path, checkpoint: Path) -> None:
             targets.extend(labels.tolist())
             predictions.extend(batch_predictions.tolist())
     metrics = classification_metrics(targets, predictions)
-    matrix_name = (
-        "confusion_matrix_baseline.png"
-        if config["run_id"] == "baseline"
-        else "confusion_matrix_final.png"
-    )
+    if config["run_id"] == "baseline":
+        matrix_name = "confusion_matrix_baseline.png"
+        error_name = "error_analysis_baseline.csv"
+    else:
+        matrix_name = "confusion_matrix_final.png"
+        error_name = f"error_analysis_{config['run_id']}.csv"
+        
     save_confusion_matrix(targets, predictions, Path("results") / matrix_name)
     errors.sort(key=lambda row: float(str(row["confidence"])), reverse=True)
+    save_error_analysis(errors, Path("results") / error_name)
+    
+    # 按照作业要求，也保存一份默认的 error_analysis.csv
     save_error_analysis(errors, Path("results/error_analysis.csv"))
     print(f"accuracy={metrics['accuracy']:.6f}")
     print(f"macro_f1={metrics['macro_f1']:.6f}")

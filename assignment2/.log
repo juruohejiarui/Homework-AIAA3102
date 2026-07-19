@@ -1,0 +1,250 @@
+Processing ./configs/baseline.json
+No label weights
+No scheduler
+epoch 1/50: loss=1.7184, train_acc=0.2834, val_f1=0.2809                                                                                                                                               
+epoch 2/50: loss=1.3332, train_acc=0.3359, val_f1=0.3020                                                                                                                                               
+epoch 3/50: loss=1.3007, train_acc=0.3783, val_f1=0.2797                                                                                                                                               
+epoch 4/50: loss=1.2535, train_acc=0.3830, val_f1=0.2593                                                                                                                                               
+epoch 5/50: loss=1.2436, train_acc=0.4003, val_f1=0.2990                                                                                                                                               
+epoch 6/50: loss=1.2263, train_acc=0.3987, val_f1=0.3403                                                                                                                                               
+epoch 7/50: loss=1.2166, train_acc=0.4325, val_f1=0.3400                                                                                                                                               
+epoch 8/50: loss=1.2243, train_acc=0.3972, val_f1=0.3301                                                                                                                                               
+epoch 9/50: loss=1.1849, train_acc=0.4333, val_f1=0.3684                                                                                                                                               
+epoch 10/50: loss=1.1663, train_acc=0.4521, val_f1=0.2357                                                                                                                                              
+epoch 11/50: loss=1.1573, train_acc=0.4702, val_f1=0.4042                                                                                                                                              
+epoch 12/50: loss=1.1409, train_acc=0.4969, val_f1=0.3962                                                                                                                                              
+epoch 13/50: loss=1.1174, train_acc=0.5008, val_f1=0.3540                                                                                                                                              
+epoch 14/50: loss=1.0962, train_acc=0.5133, val_f1=0.3629                                                                                                                                              
+epoch 15/50: loss=1.0838, train_acc=0.5408, val_f1=0.4320                                                                                                                                              
+epoch 16/50: loss=1.0184, train_acc=0.5863, val_f1=0.4620                                                                                                                                              
+epoch 17/50: loss=0.9529, train_acc=0.6193, val_f1=0.4061                                                                                                                                              
+epoch 18/50: loss=0.9401, train_acc=0.6138, val_f1=0.4342                                                                                                                                              
+epoch 19/50: loss=0.8939, train_acc=0.6641, val_f1=0.2652                                                                                                                                              
+epoch 20/50: loss=0.8572, train_acc=0.6821, val_f1=0.4156                                                                                                                                              
+epoch 21/50: loss=0.8359, train_acc=0.6774, val_f1=0.2500                                                                                                                                              
+epoch 22/50: loss=0.7435, train_acc=0.7292, val_f1=0.5757                                                                                                                                              
+epoch 23/50: loss=0.6546, train_acc=0.7786, val_f1=0.4864                                                                                                                                              
+epoch 24/50: loss=0.6719, train_acc=0.7684, val_f1=0.6150                                                                                                                                              
+epoch 25/50: loss=0.6083, train_acc=0.7920, val_f1=0.6107                                                                                                                                              
+epoch 26/50: loss=0.5669, train_acc=0.8061, val_f1=0.5724                                                                                                                                              
+epoch 27/50: loss=0.6016, train_acc=0.7818, val_f1=0.6416                                                                                                                                              
+epoch 28/50: loss=0.5345, train_acc=0.8124, val_f1=0.6105                                                                                                                                              
+epoch 29/50: loss=0.4866, train_acc=0.8352, val_f1=0.5984                                                                                                                                              
+epoch 30/50: loss=0.4619, train_acc=0.8509, val_f1=0.6545                                                                                                                                              
+epoch 31/50: loss=0.4756, train_acc=0.8265, val_f1=0.6443                                                                                                                                              
+epoch 32/50: loss=0.4378, train_acc=0.8501, val_f1=0.6490                                                                                                                                              
+epoch 33/50: loss=0.4389, train_acc=0.8469, val_f1=0.6180                                                                                                                                              
+epoch 34/50: loss=0.4795, train_acc=0.8344, val_f1=0.5844                                                                                                                                              
+epoch 35/50: loss=0.4251, train_acc=0.8540, val_f1=0.6398                                                                                                                                              
+epoch 36/50: loss=0.4084, train_acc=0.8673, val_f1=0.6628                                                                                                                                              
+epoch 37/50: loss=0.3915, train_acc=0.8548, val_f1=0.7144                                                                                                                                              
+epoch 38/50: loss=0.3370, train_acc=0.8776, val_f1=0.6661                                                                                                                                              
+epoch 39/50: loss=0.3326, train_acc=0.8878, val_f1=0.7079                                                                                                                                              
+epoch 40/50: loss=0.3785, train_acc=0.8689, val_f1=0.6701                                                                                                                                              
+epoch 41/50: loss=0.3293, train_acc=0.8870, val_f1=0.7205                                                                                                                                              
+epoch 42/50: loss=0.3055, train_acc=0.8925, val_f1=0.7331                                                                                                                                              
+epoch 43/50: loss=0.2882, train_acc=0.8987, val_f1=0.6709                                                                                                                                              
+epoch 44/50: loss=0.2909, train_acc=0.9011, val_f1=0.6414                                                                                                                                              
+epoch 45/50: loss=0.2959, train_acc=0.9082, val_f1=0.6759                                                                                                                                              
+epoch 46/50: loss=0.2536, train_acc=0.9152, val_f1=0.6961                                                                                                                                              
+epoch 47/50: loss=0.2525, train_acc=0.9113, val_f1=0.7168                                                                                                                                              
+epoch 48/50: loss=0.2594, train_acc=0.9066, val_f1=0.6552                                                                                                                                              
+epoch 49/50: loss=0.2334, train_acc=0.9129, val_f1=0.6643                                                                                                                                              
+epoch 50/50: loss=0.2637, train_acc=0.9144, val_f1=0.6658                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [05:30<00:00,  6.60s/it]
+Saved best checkpoint to checkpoints/baseline_best.pt
+Processing ./configs/baseline_scheduler.json
+No label weights
+Use scheduler
+epoch 1/50: loss=1.7189, train_acc=0.2904, val_f1=0.2060                                                                                                                                               
+epoch 2/50: loss=1.3356, train_acc=0.3634, val_f1=0.1561                                                                                                                                               
+epoch 3/50: loss=1.3154, train_acc=0.3540, val_f1=0.2576                                                                                                                                               
+epoch 4/50: loss=1.2724, train_acc=0.3838, val_f1=0.2857                                                                                                                                               
+epoch 5/50: loss=1.2422, train_acc=0.3752, val_f1=0.2161                                                                                                                                               
+epoch 6/50: loss=1.2367, train_acc=0.4137, val_f1=0.3074                                                                                                                                               
+epoch 7/50: loss=1.2255, train_acc=0.4160, val_f1=0.3511                                                                                                                                               
+epoch 8/50: loss=1.2258, train_acc=0.4121, val_f1=0.3697                                                                                                                                               
+epoch 9/50: loss=1.1957, train_acc=0.4333, val_f1=0.3835                                                                                                                                               
+epoch 10/50: loss=1.1468, train_acc=0.4859, val_f1=0.4119                                                                                                                                              
+epoch 11/50: loss=1.1468, train_acc=0.4702, val_f1=0.2775                                                                                                                                              
+epoch 12/50: loss=1.1220, train_acc=0.5031, val_f1=0.3266                                                                                                                                              
+epoch 13/50: loss=1.1486, train_acc=0.4859, val_f1=0.3999                                                                                                                                              
+epoch 14/50: loss=1.0738, train_acc=0.5644, val_f1=0.3985                                                                                                                                              
+epoch 15/50: loss=1.0434, train_acc=0.5487, val_f1=0.4160                                                                                                                                              
+epoch 16/50: loss=0.9656, train_acc=0.6005, val_f1=0.5040                                                                                                                                              
+epoch 17/50: loss=0.9312, train_acc=0.6248, val_f1=0.4819                                                                                                                                              
+epoch 18/50: loss=0.9065, train_acc=0.6397, val_f1=0.5160                                                                                                                                              
+epoch 19/50: loss=0.9004, train_acc=0.6499, val_f1=0.4892                                                                                                                                              
+epoch 20/50: loss=0.8434, train_acc=0.6609, val_f1=0.5591                                                                                                                                              
+epoch 21/50: loss=0.7817, train_acc=0.7159, val_f1=0.4750                                                                                                                                              
+epoch 22/50: loss=0.7812, train_acc=0.7041, val_f1=0.5001                                                                                                                                              
+epoch 23/50: loss=0.7321, train_acc=0.7378, val_f1=0.3763                                                                                                                                              
+epoch 24/50: loss=0.7448, train_acc=0.7308, val_f1=0.3987                                                                                                                                              
+epoch 25/50: loss=0.6627, train_acc=0.7598, val_f1=0.5907                                                                                                                                              
+epoch 26/50: loss=0.5849, train_acc=0.8006, val_f1=0.6184                                                                                                                                              
+epoch 27/50: loss=0.5478, train_acc=0.8100, val_f1=0.6232                                                                                                                                              
+epoch 28/50: loss=0.5062, train_acc=0.8234, val_f1=0.5879                                                                                                                                              
+epoch 29/50: loss=0.4920, train_acc=0.8367, val_f1=0.6213                                                                                                                                              
+epoch 30/50: loss=0.4642, train_acc=0.8407, val_f1=0.6094                                                                                                                                              
+epoch 31/50: loss=0.4523, train_acc=0.8438, val_f1=0.6301                                                                                                                                              
+epoch 32/50: loss=0.4366, train_acc=0.8524, val_f1=0.6342                                                                                                                                              
+epoch 33/50: loss=0.4305, train_acc=0.8454, val_f1=0.6390                                                                                                                                              
+epoch 34/50: loss=0.4152, train_acc=0.8579, val_f1=0.6282                                                                                                                                              
+epoch 35/50: loss=0.3826, train_acc=0.8705, val_f1=0.6711                                                                                                                                              
+epoch 36/50: loss=0.3965, train_acc=0.8603, val_f1=0.6444                                                                                                                                              
+epoch 37/50: loss=0.4041, train_acc=0.8501, val_f1=0.6433                                                                                                                                              
+epoch 38/50: loss=0.3723, train_acc=0.8658, val_f1=0.6347                                                                                                                                              
+epoch 39/50: loss=0.3555, train_acc=0.8721, val_f1=0.6227                                                                                                                                              
+epoch 40/50: loss=0.3485, train_acc=0.8838, val_f1=0.6433                                                                                                                                              
+epoch 41/50: loss=0.2937, train_acc=0.8987, val_f1=0.6446                                                                                                                                              
+epoch 42/50: loss=0.2753, train_acc=0.9019, val_f1=0.6580                                                                                                                                              
+epoch 43/50: loss=0.2363, train_acc=0.9270, val_f1=0.7177                                                                                                                                              
+epoch 44/50: loss=0.2238, train_acc=0.9231, val_f1=0.7046                                                                                                                                              
+epoch 45/50: loss=0.2322, train_acc=0.9294, val_f1=0.6739                                                                                                                                              
+epoch 46/50: loss=0.2263, train_acc=0.9262, val_f1=0.6853                                                                                                                                              
+epoch 47/50: loss=0.2353, train_acc=0.9121, val_f1=0.6990                                                                                                                                              
+epoch 48/50: loss=0.1932, train_acc=0.9301, val_f1=0.7234                                                                                                                                              
+epoch 49/50: loss=0.1665, train_acc=0.9372, val_f1=0.7145                                                                                                                                              
+epoch 50/50: loss=0.1659, train_acc=0.9451, val_f1=0.7387                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [05:35<00:00,  6.72s/it]
+Saved best checkpoint to checkpoints/baseline_scheduler_best.pt
+Processing ./configs/baseline_diffweight.json
+weights: tensor([0.4745, 2.7189, 0.3929, 0.4137], device='cuda:0')
+No scheduler
+epoch 1/50: loss=1.9542, train_acc=0.2512, val_f1=0.1881                                                                                                                                               
+epoch 2/50: loss=1.5757, train_acc=0.2245, val_f1=0.0853                                                                                                                                               
+epoch 3/50: loss=1.4793, train_acc=0.2912, val_f1=0.2636                                                                                                                                               
+epoch 4/50: loss=1.4330, train_acc=0.3046, val_f1=0.1967                                                                                                                                               
+epoch 5/50: loss=1.3965, train_acc=0.3179, val_f1=0.1813                                                                                                                                               
+epoch 6/50: loss=1.4003, train_acc=0.2936, val_f1=0.2246                                                                                                                                               
+epoch 7/50: loss=1.3926, train_acc=0.3171, val_f1=0.2606                                                                                                                                               
+epoch 8/50: loss=1.3890, train_acc=0.3069, val_f1=0.3218                                                                                                                                               
+epoch 9/50: loss=1.3891, train_acc=0.2896, val_f1=0.2856                                                                                                                                               
+epoch 10/50: loss=1.3744, train_acc=0.3242, val_f1=0.3050                                                                                                                                              
+epoch 11/50: loss=1.3305, train_acc=0.3336, val_f1=0.1483                                                                                                                                              
+epoch 12/50: loss=1.3552, train_acc=0.3320, val_f1=0.3026                                                                                                                                              
+epoch 13/50: loss=1.3386, train_acc=0.3430, val_f1=0.2807                                                                                                                                              
+epoch 14/50: loss=1.3539, train_acc=0.3179, val_f1=0.2778                                                                                                                                              
+epoch 15/50: loss=1.3184, train_acc=0.3838, val_f1=0.2631                                                                                                                                              
+epoch 16/50: loss=1.3190, train_acc=0.3509, val_f1=0.0870                                                                                                                                              
+epoch 17/50: loss=1.3016, train_acc=0.3155, val_f1=0.3643                                                                                                                                              
+epoch 18/50: loss=1.3135, train_acc=0.4019, val_f1=0.3703                                                                                                                                              
+epoch 19/50: loss=1.3195, train_acc=0.3312, val_f1=0.3137                                                                                                                                              
+epoch 20/50: loss=1.3073, train_acc=0.3509, val_f1=0.3325                                                                                                                                              
+epoch 21/50: loss=1.3404, train_acc=0.3838, val_f1=0.2994                                                                                                                                              
+epoch 22/50: loss=1.3387, train_acc=0.3352, val_f1=0.3310                                                                                                                                              
+epoch 23/50: loss=1.3258, train_acc=0.4349, val_f1=0.3240                                                                                                                                              
+epoch 24/50: loss=1.3183, train_acc=0.3689, val_f1=0.2972                                                                                                                                              
+epoch 25/50: loss=1.2844, train_acc=0.3917, val_f1=0.3542                                                                                                                                              
+epoch 26/50: loss=1.3321, train_acc=0.3893, val_f1=0.3444                                                                                                                                              
+epoch 27/50: loss=1.2649, train_acc=0.3791, val_f1=0.3902                                                                                                                                              
+epoch 28/50: loss=1.3007, train_acc=0.4458, val_f1=0.3966                                                                                                                                              
+epoch 29/50: loss=1.2709, train_acc=0.3776, val_f1=0.3169                                                                                                                                              
+epoch 30/50: loss=1.2365, train_acc=0.4042, val_f1=0.3449                                                                                                                                              
+epoch 31/50: loss=1.2566, train_acc=0.4215, val_f1=0.3051                                                                                                                                              
+epoch 32/50: loss=1.2335, train_acc=0.4184, val_f1=0.2749                                                                                                                                              
+epoch 33/50: loss=1.1877, train_acc=0.4498, val_f1=0.3257                                                                                                                                              
+epoch 34/50: loss=1.2207, train_acc=0.3901, val_f1=0.4246                                                                                                                                              
+epoch 35/50: loss=1.2484, train_acc=0.4215, val_f1=0.3754                                                                                                                                              
+epoch 36/50: loss=1.2497, train_acc=0.3776, val_f1=0.3706                                                                                                                                              
+epoch 37/50: loss=1.2152, train_acc=0.4341, val_f1=0.2202                                                                                                                                              
+epoch 38/50: loss=1.1695, train_acc=0.4717, val_f1=0.3707                                                                                                                                              
+epoch 39/50: loss=1.1649, train_acc=0.4765, val_f1=0.3482                                                                                                                                              
+epoch 40/50: loss=1.1042, train_acc=0.5031, val_f1=0.3850                                                                                                                                              
+epoch 41/50: loss=1.0912, train_acc=0.4953, val_f1=0.4485                                                                                                                                              
+epoch 42/50: loss=1.0905, train_acc=0.5078, val_f1=0.3260                                                                                                                                              
+epoch 43/50: loss=1.0270, train_acc=0.5479, val_f1=0.4381                                                                                                                                              
+epoch 44/50: loss=0.9707, train_acc=0.5824, val_f1=0.3572                                                                                                                                              
+epoch 45/50: loss=1.0050, train_acc=0.5534, val_f1=0.4313                                                                                                                                              
+epoch 46/50: loss=1.0585, train_acc=0.5542, val_f1=0.3232                                                                                                                                              
+epoch 47/50: loss=1.0594, train_acc=0.5165, val_f1=0.4036                                                                                                                                              
+epoch 48/50: loss=1.0285, train_acc=0.5298, val_f1=0.3996                                                                                                                                              
+epoch 49/50: loss=0.9100, train_acc=0.5918, val_f1=0.4495                                                                                                                                              
+epoch 50/50: loss=0.9673, train_acc=0.5887, val_f1=0.4403                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [05:30<00:00,  6.61s/it]
+Saved best checkpoint to checkpoints/baseline_diffweight_best.pt
+Processing ./configs/transfer_scheduler.json
+No label weights
+Use scheduler
+epoch 1/12: loss=1.2364, train_acc=0.5141, val_f1=0.5298                                                                                                                                               
+epoch 2/12: loss=0.4645, train_acc=0.8407, val_f1=0.6400                                                                                                                                               
+epoch 3/12: loss=0.3435, train_acc=0.8987, val_f1=0.6860                                                                                                                                               
+epoch 4/12: loss=0.2524, train_acc=0.9105, val_f1=0.7122                                                                                                                                               
+epoch 5/12: loss=0.1616, train_acc=0.9529, val_f1=0.7607                                                                                                                                               
+epoch 6/12: loss=0.1127, train_acc=0.9662, val_f1=0.7723                                                                                                                                               
+epoch 7/12: loss=0.1147, train_acc=0.9623, val_f1=0.8051                                                                                                                                               
+epoch 8/12: loss=0.0732, train_acc=0.9733, val_f1=0.7206                                                                                                                                               
+epoch 9/12: loss=0.0610, train_acc=0.9819, val_f1=0.6911                                                                                                                                               
+epoch 10/12: loss=0.0408, train_acc=0.9827, val_f1=0.8097                                                                                                                                              
+epoch 11/12: loss=0.0527, train_acc=0.9851, val_f1=0.8350                                                                                                                                              
+epoch 12/12: loss=0.0467, train_acc=0.9827, val_f1=0.8201                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [01:20<00:00,  6.71s/it]
+Saved best checkpoint to checkpoints/transfer_scheduler_best.pt
+Processing ./configs/transfer_lr_0.0001.json
+No label weights
+No scheduler
+epoch 1/12: loss=1.6661, train_acc=0.2983, val_f1=0.5290                                                                                                                                               
+epoch 2/12: loss=0.8644, train_acc=0.6484, val_f1=0.6223                                                                                                                                               
+epoch 3/12: loss=0.5658, train_acc=0.8085, val_f1=0.6444                                                                                                                                               
+epoch 4/12: loss=0.4526, train_acc=0.8493, val_f1=0.6556                                                                                                                                               
+epoch 5/12: loss=0.3470, train_acc=0.8846, val_f1=0.6776                                                                                                                                               
+epoch 6/12: loss=0.2590, train_acc=0.9097, val_f1=0.6731                                                                                                                                               
+epoch 7/12: loss=0.2346, train_acc=0.9184, val_f1=0.7011                                                                                                                                               
+epoch 8/12: loss=0.1973, train_acc=0.9356, val_f1=0.6803                                                                                                                                               
+epoch 9/12: loss=0.1551, train_acc=0.9537, val_f1=0.7156                                                                                                                                               
+epoch 10/12: loss=0.1292, train_acc=0.9647, val_f1=0.7094                                                                                                                                              
+epoch 11/12: loss=0.1061, train_acc=0.9686, val_f1=0.7353                                                                                                                                              
+epoch 12/12: loss=0.0972, train_acc=0.9702, val_f1=0.7221                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [01:21<00:00,  6.77s/it]
+Saved best checkpoint to checkpoints/transfer_lr_0.0001_best.pt
+Processing ./configs/transfer.json
+No label weights
+No scheduler
+epoch 1/12: loss=1.2364, train_acc=0.5141, val_f1=0.5298                                                                                                                                               
+epoch 2/12: loss=0.4645, train_acc=0.8414, val_f1=0.6427                                                                                                                                               
+epoch 3/12: loss=0.3433, train_acc=0.8987, val_f1=0.6860                                                                                                                                               
+epoch 4/12: loss=0.2527, train_acc=0.9082, val_f1=0.7090                                                                                                                                               
+epoch 5/12: loss=0.1612, train_acc=0.9529, val_f1=0.7372                                                                                                                                               
+epoch 6/12: loss=0.1151, train_acc=0.9655, val_f1=0.7722                                                                                                                                               
+epoch 7/12: loss=0.1168, train_acc=0.9615, val_f1=0.8021                                                                                                                                               
+epoch 8/12: loss=0.0709, train_acc=0.9757, val_f1=0.7174                                                                                                                                               
+epoch 9/12: loss=0.0596, train_acc=0.9835, val_f1=0.7207                                                                                                                                               
+epoch 10/12: loss=0.0421, train_acc=0.9851, val_f1=0.8163                                                                                                                                              
+epoch 11/12: loss=0.0503, train_acc=0.9843, val_f1=0.8380                                                                                                                                              
+epoch 12/12: loss=0.0470, train_acc=0.9827, val_f1=0.8151                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [01:21<00:00,  6.76s/it]
+Saved best checkpoint to checkpoints/transfer_resnet18_best.pt
+Processing ./configs/transfer_frozen.json
+No label weights
+No scheduler
+epoch 1/12: loss=1.8062, train_acc=0.2276, val_f1=0.1965                                                                                                                                               
+epoch 2/12: loss=1.5073, train_acc=0.3203, val_f1=0.1866                                                                                                                                               
+epoch 3/12: loss=1.4647, train_acc=0.3564, val_f1=0.2630                                                                                                                                               
+epoch 4/12: loss=1.4575, train_acc=0.3689, val_f1=0.3135                                                                                                                                               
+epoch 5/12: loss=1.3866, train_acc=0.3917, val_f1=0.3173                                                                                                                                               
+epoch 6/12: loss=1.3708, train_acc=0.3964, val_f1=0.3746                                                                                                                                               
+epoch 7/12: loss=1.3288, train_acc=0.4058, val_f1=0.4018                                                                                                                                               
+epoch 8/12: loss=1.2949, train_acc=0.4403, val_f1=0.4394                                                                                                                                               
+epoch 9/12: loss=1.2479, train_acc=0.4372, val_f1=0.4671                                                                                                                                               
+epoch 10/12: loss=1.2088, train_acc=0.4812, val_f1=0.4841                                                                                                                                              
+epoch 11/12: loss=1.1659, train_acc=0.4961, val_f1=0.4911                                                                                                                                              
+epoch 12/12: loss=1.1518, train_acc=0.5094, val_f1=0.4782                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [01:17<00:00,  6.42s/it]
+Saved best checkpoint to checkpoints/transfer_frozen_best.pt
+Processing ./configs/transfer_diffweight.json
+weights: tensor([0.4745, 2.7189, 0.3929, 0.4137], device='cuda:0')
+No scheduler
+epoch 1/12: loss=1.3882, train_acc=0.4074, val_f1=0.5309                                                                                                                                               
+epoch 2/12: loss=0.7550, train_acc=0.7355, val_f1=0.5507                                                                                                                                               
+epoch 3/12: loss=0.5269, train_acc=0.8085, val_f1=0.7070                                                                                                                                               
+epoch 4/12: loss=0.4119, train_acc=0.8548, val_f1=0.6998                                                                                                                                               
+epoch 5/12: loss=0.3054, train_acc=0.8995, val_f1=0.7114                                                                                                                                               
+epoch 6/12: loss=0.2069, train_acc=0.9137, val_f1=0.7863                                                                                                                                               
+epoch 7/12: loss=0.2210, train_acc=0.9333, val_f1=0.7507                                                                                                                                               
+epoch 8/12: loss=0.1527, train_acc=0.9435, val_f1=0.7757                                                                                                                                               
+epoch 9/12: loss=0.1256, train_acc=0.9576, val_f1=0.7801                                                                                                                                               
+epoch 10/12: loss=0.0888, train_acc=0.9678, val_f1=0.7802                                                                                                                                              
+epoch 11/12: loss=0.0962, train_acc=0.9710, val_f1=0.8042                                                                                                                                              
+epoch 12/12: loss=0.0941, train_acc=0.9702, val_f1=0.7956                                                                                                                                              
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [01:20<00:00,  6.71s/it]
+Saved best checkpoint to checkpoints/transfer_diffweight_best.pt

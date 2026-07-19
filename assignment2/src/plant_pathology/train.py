@@ -62,6 +62,7 @@ def set_seed(seed: int) -> None:
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+        torch.backends.cudnn.deterministic = True
 
 
 def loader_options(config: dict[str, object], device: torch.device) -> dict[str, object]:
@@ -147,6 +148,13 @@ def build_optimizer(model: nn.Module, config: dict[str, object]) -> Optimizer:
         )
     raise ValueError(f"Unsupported optimizer: {config['optimizer']}")
 
+def compute_class_weights(dataset: LeafDataset, device: torch.device) -> torch.Tensor:
+    """Compute inverse class frequencies for weighted loss."""
+    class_counts = dataset.frame.loc[:, list(dataset.frame.columns)[1:]].sum().to_numpy()
+    weights = 1.0 / class_counts
+    weights = weights / weights.sum() * len(class_counts)
+    return torch.tensor(weights, dtype=torch.float32, device=device)
+
 
 def train(config_path: Path) -> None:
     """Train one experiment, save its best checkpoint, and record validation metrics."""
@@ -187,8 +195,26 @@ def train(config_path: Path) -> None:
         pretrained=bool(config["pretrained"]),
         freeze_backbone=bool(config["freeze_backbone"]),
     ).to(device)
-    criterion = nn.CrossEntropyLoss()
+    # 使用类别权重解决 multiple_diseases 样本过少的问题
+    if config["label_weights"] :
+        class_weights = compute_class_weights(train_dataset, device)
+        criterion = nn.CrossEntropyLoss(weight=class_weights)
+        print(f"weights: {class_weights}")
+    else :
+        criterion = nn.CrossEntropyLoss()
+        print("No label weights")
     optimizer = build_optimizer(model, config)
+    
+    # 添加学习率调度器
+    if config["scheduler"] :
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+            optimizer, mode='max', factor=0.5, patience=3
+        )
+        print("Use scheduler")
+    else :
+        scheduler = None
+        print("No scheduler")
+    
     scaler = torch.amp.GradScaler("cuda", enabled=device.type == "cuda")
     best_metrics: dict[str, float] | None = None
     history: list[dict[str, float]] = []
@@ -226,6 +252,11 @@ def train(config_path: Path) -> None:
             f"epoch {epoch}/{config['epochs']}: loss={history[-1]['train_loss']:.4f}, "
             f"train_acc={history[-1]['train_accuracy']:.4f}, val_f1={metrics['macro_f1']:.4f}"
         )
+        
+        # 更新学习率调度器
+        if scheduler is not None : 
+            scheduler.step(metrics["macro_f1"])
+        
         if best_metrics is None or metrics["macro_f1"] > best_metrics["macro_f1"]:
             best_metrics = metrics
             torch.save(

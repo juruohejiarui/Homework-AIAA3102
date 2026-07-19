@@ -1,5 +1,5 @@
 {
-  "run_id": "transfer_resnet18",
+  "run_id": "transfer_scheduler",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,
@@ -12,7 +12,7 @@
   "learning_rate": 0.0003,
   "weight_decay": 0.0001,
   "label_weights": false,
-  "scheduler": false,
+  "scheduler": true,
   "seed": 398,
   "train_csv": "data/train.csv",
   "validation_csv": "data/validation.csv",

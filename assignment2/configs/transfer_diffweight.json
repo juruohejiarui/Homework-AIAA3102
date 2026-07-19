@@ -1,5 +1,5 @@
 {
-  "run_id": "transfer_resnet18",
+  "run_id": "transfer_diffweight",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,
@@ -11,7 +11,7 @@
   "optimizer": "adamw",
   "learning_rate": 0.0003,
   "weight_decay": 0.0001,
-  "label_weights": false,
+  "label_weights": true,
   "scheduler": false,
   "seed": 398,
   "train_csv": "data/train.csv",

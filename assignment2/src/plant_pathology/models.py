@@ -65,6 +65,8 @@ class BaselineCNN(nn.Module):
         self.layer3 = self._make_layer(256, blocks=2, stride=2)
         self.layer4 = self._make_layer(512, blocks=2, stride=2)
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
+        # 添加 Dropout 减少过拟合
+        self.dropout = nn.Dropout(p=0.5)
         self.classifier = nn.Linear(512, num_classes)
 
     def _make_layer(self, out_channels: int, blocks: int, stride: int = 1) -> nn.Sequential:
@@ -80,6 +82,7 @@ class BaselineCNN(nn.Module):
         outputs = self.layer3(outputs)
         outputs = self.layer4(outputs)
         outputs = torch.flatten(self.pool(outputs), 1)
+        outputs = self.dropout(outputs)
         return self.classifier(outputs)
 
 
@@ -107,5 +110,11 @@ def build_model(
     if freeze_backbone:
         for parameter in model.parameters():
             parameter.requires_grad = False
-    model.fc = nn.Linear(model.fc.in_features, num_classes)
+    
+    # 为迁移学习模型也添加 Dropout
+    num_features = model.fc.in_features
+    model.fc = nn.Sequential(
+        nn.Dropout(p=0.5),
+        nn.Linear(num_features, num_classes)
+    )
     return model
