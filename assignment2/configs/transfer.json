@@ -1,5 +1,6 @@
 {
   "run_id": "transfer",
+  "main_change": "pretrained transfer baseline",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,

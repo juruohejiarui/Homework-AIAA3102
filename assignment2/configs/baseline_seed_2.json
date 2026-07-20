@@ -1,5 +1,6 @@
 {
   "run_id": "baseline_seed_2",
+  "main_change": "seed sensitivity",
   "model": "manual_resnet18",
   "pretrained": false,
   "freeze_backbone": false,

@@ -1,5 +1,6 @@
 {
   "run_id": "transfer_lr_0.0001",
+  "main_change": "learning rate ablation",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,

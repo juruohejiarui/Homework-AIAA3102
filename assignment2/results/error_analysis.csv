@@ -1,9 +1,9 @@
 image_id,true_label,predicted_label,confidence,failure_group,observation
-Train_1618,multiple_diseases,rust,0.999847,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
-Train_128,multiple_diseases,rust,0.997565,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
-Train_1800,scab,healthy,0.989942,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
-Train_307,healthy,scab,0.983730,healthy_predicted_as_scab,Inspect leaf appearance and lesion distribution manually.
-Train_1170,scab,healthy,0.981193,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
-Train_1236,multiple_diseases,rust,0.978433,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
-Train_1358,multiple_diseases,scab,0.975414,multiple_diseases_predicted_as_scab,Inspect leaf appearance and lesion distribution manually.
-Train_1730,scab,healthy,0.972363,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_1618,multiple_diseases,rust,0.997712,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
+Train_1429,scab,healthy,0.997152,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_104,multiple_diseases,healthy,0.994034,multiple_diseases_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_128,multiple_diseases,rust,0.992399,multiple_diseases_predicted_as_rust,Inspect leaf appearance and lesion distribution manually.
+Train_1120,scab,healthy,0.991751,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_1730,scab,healthy,0.970732,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_1411,scab,healthy,0.957286,scab_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.
+Train_1013,multiple_diseases,healthy,0.936483,multiple_diseases_predicted_as_healthy,Inspect leaf appearance and lesion distribution manually.

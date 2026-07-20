@@ -69,7 +69,10 @@ class BaselineCNN(nn.Module):
         self.layer3 = self._make_layer(256, blocks=2, stride=2)
         self.layer4 = self._make_layer(512, blocks=2, stride=2)
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
-        self.dropout = nn.Dropout(p=dropout)
+        if dropout != 0.0 :
+            self.dropout = nn.Dropout(p=dropout)
+        else :
+            self.dropout = nn.Identity()
         self.classifier = nn.Linear(512, num_classes)
 
     def _make_layer(self, out_channels: int, blocks: int, stride: int = 1) -> nn.Sequential:
@@ -117,7 +120,7 @@ def build_model(
 
     num_features = model.fc.in_features
     model.fc = nn.Sequential(
-        nn.Dropout(p=dropout),
+        nn.Dropout(p=dropout) if dropout != 0.0 else nn.Identity(),
         nn.Linear(num_features, num_classes),
     )
     return model

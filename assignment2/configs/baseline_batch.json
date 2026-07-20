@@ -1,5 +1,6 @@
 {
   "run_id": "baseline_batch",
+  "main_change": "batch size ablation",
   "model": "manual_resnet18",
   "pretrained": false,
   "freeze_backbone": false,

@@ -60,13 +60,17 @@ configured epochs using AdamW with learning rate 0.001.
 The transfer model used `torchvision.models.resnet18` initialized with
 `ResNet18_Weights.DEFAULT`. Its final fully connected layer was replaced with a four-class head.
 The main transfer experiment fine-tuned all layers using AdamW with learning rate 0.0003 for 12
-epochs. Both manual and transfer models used a dropout layer before final classification.
+epochs. Both manual and transfer models used a dropout layer (dropout=0.5) before final
+classification in the default setting, and most core experiments in this report are based on this
+dropout-enabled setup.
 
-The training code supports three additional toggles for controlled comparisons:
+The training code supports four toggles for controlled comparisons:
 
 1. Class-weighted cross-entropy (`label_weights=true`) to upweight minority classes.
 2. Learning-rate scheduler (`scheduler=true`) using ReduceLROnPlateau on validation macro F1.
 3. Seed variants to estimate sensitivity to stochastic initialization and sampling.
+4. Dropout switch (`dropout=0.5` vs `dropout=0.0`) for bonus-style with/without regularization
+	comparison.
 
 ## Results and Ablations
 
@@ -79,7 +83,9 @@ The training code supports three additional toggles for controlled comparisons:
 | transfer_scheduler | resnet18 | 128 | 0.0003 | 0.915751 | 0.818565 |
 | transfer_diffweight | resnet18 | 128 | 0.0003 | 0.908425 | 0.810304 |
 | transfer_seed_1 | resnet18 | 128 | 0.0003 | 0.904762 | 0.795870 |
+| transfer_no_dropout | resnet18 | 128 | 0.0003 | 0.908425 | 0.788928 |
 | transfer_lr_0.0001 | resnet18 | 128 | 0.0001 | 0.919414 | 0.764835 |
+| baseline_no_dropout | manual_resnet18 | 128 | 0.0010 | 0.871795 | 0.763114 |
 | baseline_seed | manual_resnet18 | 128 | 0.0010 | 0.849817 | 0.727923 |
 | baseline_batch | manual_resnet18 | 64 | 0.0010 | 0.853480 | 0.727152 |
 | baseline_scheduler | manual_resnet18 | 128 | 0.0010 | 0.868132 | 0.717728 |
@@ -92,11 +98,15 @@ The training code supports three additional toggles for controlled comparisons:
 ### Main findings
 
 1. Transfer learning clearly dominates manual training from scratch on this dataset.
-2. Fully fine-tuning the transfer backbone is crucial; freezing it causes a major macro F1 drop.
-3. For manual ResNet18, lowering learning rate to 0.0001 underfits badly within 50 epochs.
-4. Class weighting is helpful for transfer (`transfer_diffweight`) but harmful for the manual
+2. Dropout is a central regularization choice in this project, and its effect is
+	architecture-dependent: for transfer, dropout improves macro F1
+	(`transfer` 0.818565 vs `transfer_no_dropout` 0.788928), while for the manual baseline,
+	removing dropout performs better (`baseline_no_dropout` 0.763114 vs `baseline` 0.688385).
+3. Fully fine-tuning the transfer backbone is crucial; freezing it causes a major macro F1 drop.
+4. For manual ResNet18, lowering learning rate to 0.0001 underfits badly within 50 epochs.
+5. Class weighting is helpful for transfer (`transfer_diffweight`) but harmful for the manual
 	baseline (`baseline_diffweight`), indicating architecture-dependent optimization behavior. The combination of the limited dataset size and class weighting causes the manual baseline to over-focus on minority classes, preventing it from learning sufficiently rich patterns. At the same time, it loses attention to the major classes.
-5. Scheduler impact is model-dependent. For the manual baseline, enabling
+6. Scheduler impact is model-dependent. For the manual baseline, enabling
 	ReduceLROnPlateau improved macro F1 from 0.688385 (`baseline`) to 0.717728
 	(`baseline_scheduler`) and validation accuracy from 0.857143 to 0.868132.
 	This suggests the baseline benefits from adaptive step-size reduction when
@@ -104,7 +114,7 @@ The training code supports three additional toggles for controlled comparisons:
 	plain `transfer` run (same accuracy and macro F1), indicating the
 	pretrained backbone plus short fine-tuning horizon was already in a stable
 	optimization regime where additional LR decay brought little extra gain.
-6. Seed variation is non-trivial. The best single run is `transfer_seed_2` with macro F1 0.831825.
+7. Seed variation is non-trivial. The best single run is `transfer_seed_2` with macro F1 0.831825.
 
 Representative training curves:
 
@@ -207,18 +217,43 @@ uv run python -m plant_pathology.validate_submission \
 
 ## Bonus Improvement
 
-The core requirements of this submission are already satisfied by the baseline model, the transfer
-model, and the controlled ablation experiments. The top-5 major-voting ensemble can be regarded as
-an additional bonus-style improvement: it is not required for the baseline assignment pipeline, but
-it was added as a practical extension to further improve robustness and validation macro F1.
+The bonus improvement is dropout regularization in the transfer-model classification head. The
+comparison is between:
+
+1. With improvement: `transfer` (dropout = 0.5).
+2. Without improvement: `transfer_no_dropout` (dropout = 0.0).
+
+Motivation: the dataset is relatively small (1274 training images) and imbalanced (only 63
+`multiple_diseases` samples), so overfitting is a realistic risk. Dropout is used as an
+algorithm-level regularization method to improve generalization.
+
+Bonus comparison figure (the same figure includes training/validation accuracy and validation
+macro F1 across epochs for both versions):
+
+![Bonus dropout comparison](results/bonus_dropout_comparison.png)
+
+Observed results from the same with-vs-without comparison:
+
+1. Transfer model: with dropout reaches validation accuracy/macro F1 of 0.915751/0.818565,
+   compared with 0.908425/0.788928 without dropout.
+2. Manual baseline model: with dropout reaches validation accuracy/macro F1 of 0.857143/0.688385,
+   while without dropout reaches 0.871795/0.763114.
+
+The figure shows that the dropout effect is architecture-dependent in this project. For the
+transfer model, dropout improves validation behavior while slightly constraining training accuracy,
+which is consistent with overfitting control. For the manual baseline, removing dropout yields
+stronger validation metrics under the current training budget, suggesting that heavy regularization
+can also underfit when representation capacity and optimization stability are limited.
 
 ## Conclusion
 
 The complete rerun confirms that transfer learning is essential for this task. The best single
 validation run (`transfer_seed_2`) reached macro F1 0.831825, substantially above the manual
 baseline. Freezing the transfer backbone or under-tuning the learning rate causes clear degradation.
-Class weighting helps transfer models more than manual models, and seed variance remains
-non-negligible.
+Dropout is a major regularization lever throughout this work: it helps the transfer model but does
+not help the manual baseline under the same training budget, which highlights architecture-dependent
+regularization behavior. Class weighting helps transfer models more than manual models, and seed
+variance remains non-negligible.
 
 For final submission robustness, majority voting across top-performing transfer variants was used.
 The selected top-5 ensemble produced the strongest validation-set macro F1 among tested ensembles

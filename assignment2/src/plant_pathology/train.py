@@ -154,7 +154,12 @@ def record_experiment(config: dict[str, object], metrics: dict[str, float]) -> N
     row = {
         "run_id": str(config["run_id"]),
         "model": str(config["model"]),
-        "main_change": "initial model" if config["run_id"] == "baseline" else "configured run",
+        "main_change": str(
+            config.get(
+                "main_change",
+                "initial model" if config["run_id"] == "baseline" else "configured run",
+            )
+        ),
         "image_size": config["image_size"],
         "batch_size": config["batch_size"],
         "epochs": config["epochs"],

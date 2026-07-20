@@ -1,5 +1,6 @@
 {
   "run_id": "transfer_seed_2",
+  "main_change": "seed sensitivity",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,

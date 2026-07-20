@@ -1,5 +1,6 @@
 {
   "run_id": "baseline_lr_0.0001",
+  "main_change": "learning rate ablation",
   "model": "manual_resnet18",
   "pretrained": false,
   "freeze_backbone": false,

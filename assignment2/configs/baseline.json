@@ -1,5 +1,6 @@
 {
   "run_id": "baseline",
+  "main_change": "initial model",
   "model": "manual_resnet18",
   "pretrained": false,
   "freeze_backbone": false,

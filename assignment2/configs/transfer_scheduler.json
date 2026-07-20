@@ -1,5 +1,6 @@
 {
   "run_id": "transfer_scheduler",
+  "main_change": "scheduler ablation",
   "model": "resnet18",
   "pretrained": true,
   "freeze_backbone": false,
