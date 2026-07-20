@@ -55,7 +55,7 @@ class BasicBlock(nn.Module):
 class BaselineCNN(nn.Module):
     """Manual ResNet18 baseline trained from scratch."""
 
-    def __init__(self, num_classes: int = 4) -> None:
+    def __init__(self, num_classes: int = 4, dropout: float = 0.5) -> None:
         super().__init__()
         self.in_channels = 64
         self.stem = nn.Sequential(
@@ -69,8 +69,7 @@ class BaselineCNN(nn.Module):
         self.layer3 = self._make_layer(256, blocks=2, stride=2)
         self.layer4 = self._make_layer(512, blocks=2, stride=2)
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
-        # 添加 Dropout 减少过拟合
-        self.dropout = nn.Dropout(p=0.5)
+        self.dropout = nn.Dropout(p=dropout)
         self.classifier = nn.Linear(512, num_classes)
 
     def _make_layer(self, out_channels: int, blocks: int, stride: int = 1) -> nn.Sequential:
@@ -95,6 +94,7 @@ def build_model(
     num_classes: int = 4,
     pretrained: bool = False,
     freeze_backbone: bool = False,
+    dropout: float = 0.5,
 ) -> nn.Module:
     """Construct a supported model and replace its classification head.
 
@@ -105,7 +105,7 @@ def build_model(
             raise ValueError(
                 "manual_resnet18 must be trained from scratch without a frozen backbone"
             )
-        return BaselineCNN(num_classes=num_classes)
+        return BaselineCNN(num_classes=num_classes, dropout=dropout)
     if name != "resnet18":
         raise ValueError(f"Unsupported model: {name}")
 
@@ -115,10 +115,9 @@ def build_model(
         for parameter in model.parameters():
             parameter.requires_grad = False
 
-    # 为迁移学习模型也添加 Dropout
     num_features = model.fc.in_features
     model.fc = nn.Sequential(
-        nn.Dropout(p=0.5),
+        nn.Dropout(p=dropout),
         nn.Linear(num_features, num_classes),
     )
     return model

@@ -13,3 +13,4 @@ transfer_scheduler,resnet18,configured run,128,128,12,adamw,0.0003,398,0.915751,
 transfer_seed_1,resnet18,configured run,128,128,12,adamw,0.0003,42,0.904762,0.795870,best checkpoint selected by validation macro F1
 transfer_seed_2,resnet18,configured run,128,128,12,adamw,0.0003,84,0.912088,0.831825,best checkpoint selected by validation macro F1
 baseline,manual_resnet18,initial model,128,128,50,adamw,0.001,398,0.857143,0.688385,best checkpoint selected by validation macro F1
+transfer_no_dropout,resnet18,configured run,128,128,12,adamw,0.0003,398,0.908425,0.788928,best checkpoint selected by validation macro F1

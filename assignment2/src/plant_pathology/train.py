@@ -225,6 +225,7 @@ def train(config_path: Path) -> None:
         str(config["model"]),
         pretrained=bool(config["pretrained"]),
         freeze_backbone=bool(config["freeze_backbone"]),
+        dropout=float(config.get("dropout", 0.5)),
     ).to(device)
     # 使用类别权重解决 multiple_diseases 样本过少的问题
     if bool(config.get("label_weights", False)):
