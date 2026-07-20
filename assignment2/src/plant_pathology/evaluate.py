@@ -80,6 +80,7 @@ def evaluate(config_path: Path, checkpoint: Path) -> None:
         str(config["model"]),
         pretrained=False,
         freeze_backbone=bool(config["freeze_backbone"]),
+        dropout=float(config.get("dropout", 0.5)),
     ).to(device)
     state = torch.load(checkpoint, map_location=device, weights_only=False)
     model.load_state_dict(state["model_state"])
