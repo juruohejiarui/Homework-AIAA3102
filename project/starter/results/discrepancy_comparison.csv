@@ -1,0 +1,4 @@
+probe,single_factor,setting,dev_f1_target_1,heldout_f1_target_1,difference_from_reference,iterations
+lbfgs_solver,solver,{'solver': 'lbfgs'},0.734033953112,0.73182552504,-0.0255966328162,26
+submitted_baseline,none,frozen configuration,0.734033953112,0.731983805668,-0.0254383521886,5
+unigrams_only,ngram_range,"{'ngram_range': (1, 1)}",0.738812042311,0.751219512195,-0.0062026456615,5

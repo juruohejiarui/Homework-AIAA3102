@@ -1,0 +1,135 @@
+{
+  "ticket-1": {
+    "decision": "accepted",
+    "decision_rationale": "Reasonable text-only baseline fixed from the assignment and dev evaluation.",
+    "dev_result": 0.7340339531123686,
+    "run_id": "t1-baseline",
+    "selected_configuration": {
+      "classifier": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 3102,
+        "solver": "liblinear",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "mode": "text",
+      "normalization": {
+        "casing": "lower",
+        "emoji": "preserve",
+        "hashtag": "preserve",
+        "mention": "preserve",
+        "punctuation": "preserve",
+        "url": "preserve"
+      },
+      "vectorizer": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "<class 'numpy.float64'>",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": false,
+        "max_df": 1.0,
+        "max_features": 40000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      }
+    },
+    "selected_threshold": 0.5,
+    "selection_metric": "dev_f1_target_1",
+    "status": "frozen",
+    "ticket": "ticket-1",
+    "timestamp": "omitted-for-determinism"
+  },
+  "ticket-2": {
+    "decision": "accepted",
+    "decision_rationale": "Highest dev F1 among controlled single-lever candidates; mechanism checked via transitions.",
+    "dev_result": 0.7371048252911814,
+    "run_id": "t2-normalization",
+    "selected_configuration": {
+      "candidate": "url_replace",
+      "normalization": {
+        "casing": "lower",
+        "emoji": "preserve",
+        "hashtag": "preserve",
+        "mention": "preserve",
+        "punctuation": "preserve",
+        "url": "replace"
+      }
+    },
+    "selected_threshold": 0.5,
+    "selection_metric": "dev_f1_target_1",
+    "status": "frozen",
+    "ticket": "ticket-2",
+    "timestamp": "omitted-for-determinism"
+  },
+  "ticket-3": {
+    "decision": "accepted",
+    "decision_rationale": "Best controlled dev feature set; shortcut-only results retained for audit.",
+    "dev_result": 0.7340339531123686,
+    "run_id": "t3-features",
+    "selected_configuration": {
+      "mode": "text"
+    },
+    "selected_threshold": 0.5,
+    "selection_metric": "dev_f1_target_1",
+    "status": "frozen",
+    "ticket": "ticket-3",
+    "timestamp": "omitted-for-determinism"
+  },
+  "ticket-4": {
+    "decision": "accepted",
+    "decision_rationale": "Best dev operating point in limited interpretable search.",
+    "dev_result": 0.753577106518283,
+    "run_id": "t4-decision-rule",
+    "selected_configuration": {
+      "C": 10,
+      "class_weight": "balanced",
+      "family": "lr",
+      "score_type": "probability"
+    },
+    "selected_threshold": 0.56,
+    "selection_metric": "dev_f1_target_1",
+    "status": "frozen",
+    "ticket": "ticket-4",
+    "timestamp": "omitted-for-determinism"
+  },
+  "ticket-5": {
+    "decision": "accepted",
+    "decision_rationale": "Audit evidence was insufficient for an automatic training-label correction.",
+    "dev_result": 0.753577106518283,
+    "run_id": "t5-data-quality",
+    "selected_configuration": {
+      "audit_model": "lr_c10_balanced_t0.56",
+      "label_correction": "none"
+    },
+    "selected_threshold": 0.56,
+    "selection_metric": "dev_f1_target_1",
+    "status": "frozen",
+    "ticket": "ticket-5",
+    "timestamp": "omitted-for-determinism"
+  }
+}

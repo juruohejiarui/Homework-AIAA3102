@@ -1,0 +1,6 @@
+data/train.csv
+data/test.csv
+data/sample_submission.csv
+__pycache__/
+.pytest_cache/
+*.pyc
