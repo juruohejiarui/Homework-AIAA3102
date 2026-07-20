@@ -1,9 +1,15 @@
 run_id,model,main_change,image_size,batch_size,epochs,optimizer,learning_rate,seed,val_accuracy,val_macro_f1,notes
-baseline,manual_resnet18,initial model,128,128,50,adamw,0.001,398,0.864469,0.733082,best checkpoint selected by validation macro F1
-baseline_scheduler,manual_resnet18,configured run,128,128,50,adamw,0.001,398,0.853480,0.738727,best checkpoint selected by validation macro F1
-baseline_diffweight,manual_resnet18,configured run,128,128,50,adamw,0.001,398,0.549451,0.449523,best checkpoint selected by validation macro F1
-transfer_scheduler,resnet18,configured run,128,128,12,adamw,0.0003,398,0.915751,0.834982,best checkpoint selected by validation macro F1
-transfer_lr_0.0001,resnet18,configured run,128,128,12,adamw,0.0001,398,0.886447,0.735335,best checkpoint selected by validation macro F1
-transfer_resnet18,resnet18,configured run,128,128,12,adamw,0.0003,398,0.919414,0.837986,best checkpoint selected by validation macro F1
-transfer_frozen,resnet18,configured run,128,128,12,adamw,0.0003,398,0.641026,0.491064,best checkpoint selected by validation macro F1
-transfer_diffweight,resnet18,configured run,128,128,12,adamw,0.0003,398,0.901099,0.804151,best checkpoint selected by validation macro F1
+baseline_batch,manual_resnet18,configured run,128,64,50,adamw,0.001,398,0.853480,0.727152,best checkpoint selected by validation macro F1
+baseline_diffweight,manual_resnet18,configured run,128,128,50,adamw,0.001,398,0.578755,0.509335,best checkpoint selected by validation macro F1
+baseline_lr_0.0001,manual_resnet18,configured run,128,128,50,adamw,0.0001,398,0.597070,0.499932,best checkpoint selected by validation macro F1
+baseline_scheduler,manual_resnet18,configured run,128,128,50,adamw,0.001,398,0.868132,0.717728,best checkpoint selected by validation macro F1
+baseline_seed,manual_resnet18,configured run,128,128,50,adamw,0.001,42,0.849817,0.727923,best checkpoint selected by validation macro F1
+baseline_seed_2,manual_resnet18,configured run,128,128,50,adamw,0.001,114,0.860806,0.708579,best checkpoint selected by validation macro F1
+transfer,resnet18,configured run,128,128,12,adamw,0.0003,398,0.915751,0.818565,best checkpoint selected by validation macro F1
+transfer_diffweight,resnet18,configured run,128,128,12,adamw,0.0003,398,0.908425,0.810304,best checkpoint selected by validation macro F1
+transfer_frozen,resnet18,configured run,128,128,12,adamw,0.0003,398,0.637363,0.490575,best checkpoint selected by validation macro F1
+transfer_lr_0.0001,resnet18,configured run,128,128,12,adamw,0.0001,398,0.919414,0.764835,best checkpoint selected by validation macro F1
+transfer_scheduler,resnet18,configured run,128,128,12,adamw,0.0003,398,0.915751,0.818565,best checkpoint selected by validation macro F1
+transfer_seed_1,resnet18,configured run,128,128,12,adamw,0.0003,42,0.904762,0.795870,best checkpoint selected by validation macro F1
+transfer_seed_2,resnet18,configured run,128,128,12,adamw,0.0003,84,0.912088,0.831825,best checkpoint selected by validation macro F1
+baseline,manual_resnet18,initial model,128,128,50,adamw,0.001,398,0.857143,0.688385,best checkpoint selected by validation macro F1

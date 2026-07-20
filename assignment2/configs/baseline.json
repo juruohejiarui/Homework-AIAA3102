@@ -19,5 +19,6 @@
   "test_csv": "data/test.csv",
   "image_dir": "data/images",
   "results_csv": "results/experiments.csv",
-  "checkpoint_dir": "checkpoints"
+  "checkpoint_dir": "checkpoints",
+  "ckpt_name": "best.pt"
 }

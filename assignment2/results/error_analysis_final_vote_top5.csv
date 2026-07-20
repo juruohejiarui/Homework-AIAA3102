@@ -1,0 +1,9 @@
+image_id,true_label,predicted_label,confidence,failure_group,observation
+Train_104,multiple_diseases,healthy,1.0,multiple_diseases_predicted_as_healthy,Validation voting error for final ensemble.
+Train_128,multiple_diseases,rust,1.0,multiple_diseases_predicted_as_rust,Validation voting error for final ensemble.
+Train_1536,multiple_diseases,scab,1.0,multiple_diseases_predicted_as_scab,Validation voting error for final ensemble.
+Train_1573,multiple_diseases,scab,1.0,multiple_diseases_predicted_as_scab,Validation voting error for final ensemble.
+Train_1618,multiple_diseases,rust,1.0,multiple_diseases_predicted_as_rust,Validation voting error for final ensemble.
+Train_1120,scab,healthy,0.8,scab_predicted_as_healthy,Validation voting error for final ensemble.
+Train_1246,scab,multiple_diseases,0.8,scab_predicted_as_multiple_diseases,Validation voting error for final ensemble.
+Train_1560,rust,scab,0.8,rust_predicted_as_scab,Validation voting error for final ensemble.

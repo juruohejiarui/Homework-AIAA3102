@@ -8,32 +8,24 @@ List the AI tools, tutorials, repositories, or substantial external help used in
 | PyTorch documentation | Confirmed expected APIs for datasets, training loops, optimizers, and checkpoint loading. | Used as a reference for implementation planning and for the report references section. |
 | torchvision ResNet18 documentation | Confirmed pretrained weight loading and final-layer replacement for transfer learning. | Used to verify the required transfer-learning model design. |
 
-Additional scope of AI assistance in this draft:
+Final scope of AI assistance:
 
-- verified that the work was run in the `aiaa3102` conda environment
-- checked that `pytest -q` passes but does not prove assignment completion
-- checked that the required pipeline files still contain unimplemented `TODO` sections
-- checked that required artifacts such as confusion matrices and `predictions/submission.csv` have
-	not yet been generated
-- drafted a step-by-step completion order in `REPORT.md` without modifying `README.md`
+- used `uv` with the conda base Python environment to run `python run_all.py` over all 14 config
+  files
+- updated the training pipeline to export curve data CSV files in addition to curve PNG files
+- generated per-run checkpoints, per-run confusion matrices, per-run error-analysis CSV files, and
+  per-run prediction files
+- compared all experiment results from `results/experiments.csv` and selected top transfer variants
+  for ensemble testing
+- ran majority-voting ensembles (top-3 and top-5) and selected the better one as final
+  `predictions/submission.csv`
+- updated the report with full rerun metrics, ablation findings, error-pattern analysis, and final
+  submission rationale
 
-Final verification and reporting assistance:
+One useful suggestion: compare single-model and ensemble behavior on the validation split before
+finalizing `submission.csv`, instead of assuming the validation-best single model always gives the
+strongest final behavior.
 
-- used `uv` with the conda base Python environment to run public tests, training, evaluation, and
-	prediction commands
-- added data-loading and CUDA throughput settings, including pinned memory, worker prefetching,
-	AMP, and TF32, then checked the public tests again
-- ran the required manual baseline, pretrained transfer model, frozen-backbone ablation, and
-	lower-learning-rate ablation
-- generated the baseline and final confusion matrices, eight-row error-analysis CSV, and validated
-	test submission
-- replaced report placeholders with measured experiment results and documented the selected model
-
-One useful suggestion: the AI assistant suggested turning the starter README into a step-by-step
-submission checklist, which is useful because it makes the missing deliverables easy to verify
-before zipping the final submission.
-
-One suggestion that I rejected or corrected: passing `pytest` alone is not enough to claim the
-assignment is complete. The public tests only cover a small subset of the project, so I corrected
-that assumption and separately checked the repository for unfinished TODO sections and missing
-required output files.
+One suggestion that I rejected or corrected: increasing worker count or batch size indefinitely to
+raise GPU utilization. Measured throughput showed over-allocation can reduce end-to-end speed, so
+the final settings were chosen from real benchmarks.

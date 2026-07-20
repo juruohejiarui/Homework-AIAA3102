@@ -59,7 +59,7 @@ def predict(config_path: Path, checkpoint: Path, output: Path) -> None:
         dataset,
         batch_size=int(config["batch_size"]),
         shuffle=False,
-        **loader_options(config, device),
+        **loader_options(config, device, int(config["seed"])),
     )
     model = build_model(
         str(config["model"]),

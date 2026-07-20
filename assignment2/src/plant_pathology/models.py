@@ -16,6 +16,10 @@ from torch import Tensor, nn
 from torchvision import models
 
 
+def get_model_name(run_id: str) -> str:
+    return f"{run_id}_best.pt"
+
+
 class BasicBlock(nn.Module):
     """Basic residual block used by the manual ResNet18 baseline."""
 
@@ -110,11 +114,11 @@ def build_model(
     if freeze_backbone:
         for parameter in model.parameters():
             parameter.requires_grad = False
-    
+
     # 为迁移学习模型也添加 Dropout
     num_features = model.fc.in_features
     model.fc = nn.Sequential(
         nn.Dropout(p=0.5),
-        nn.Linear(num_features, num_classes)
+        nn.Linear(num_features, num_classes),
     )
     return model

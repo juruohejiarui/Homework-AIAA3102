@@ -74,7 +74,7 @@ def evaluate(config_path: Path, checkpoint: Path) -> None:
         dataset,
         batch_size=int(config["batch_size"]),
         shuffle=False,
-        **loader_options(config, device),
+        **loader_options(config, device, int(config["seed"])),
     )
     model = build_model(
         str(config["model"]),
@@ -115,12 +115,9 @@ def evaluate(config_path: Path, checkpoint: Path) -> None:
             targets.extend(labels.tolist())
             predictions.extend(batch_predictions.tolist())
     metrics = classification_metrics(targets, predictions)
-    if config["run_id"] == "baseline":
-        matrix_name = "confusion_matrix_baseline.png"
-        error_name = "error_analysis_baseline.csv"
-    else:
-        matrix_name = "confusion_matrix_final.png"
-        error_name = f"error_analysis_{config['run_id']}.csv"
+
+    matrix_name = f"confusion_matrix_{config['run_id']}.png"
+    error_name = f"error_analysis_{config['run_id']}.csv"
         
     save_confusion_matrix(targets, predictions, Path("results") / matrix_name)
     errors.sort(key=lambda row: float(str(row["confidence"])), reverse=True)

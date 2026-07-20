@@ -38,7 +38,10 @@ from tqdm import tqdm, trange
 
 from plant_pathology.data import LeafDataset, build_transforms, load_labeled_csv
 from plant_pathology.metrics import classification_metrics
-from plant_pathology.models import build_model
+from plant_pathology.models import build_model, get_model_name
+
+# Must be configured before CUDA creates its first context.
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
 
 EXPERIMENT_FIELDS = [
     "run_id",
@@ -63,13 +66,27 @@ def set_seed(seed: int) -> None:
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
         torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+        torch.backends.cuda.matmul.allow_tf32 = False
+        torch.backends.cudnn.allow_tf32 = False
+    torch.use_deterministic_algorithms(True)
 
 
-def loader_options(config: dict[str, object], device: torch.device) -> dict[str, object]:
+def seed_worker(worker_id: int) -> None:
+    worker_seed = torch.initial_seed() % 2**32
+    random.seed(worker_seed)
+    np.random.seed(worker_seed)
+
+
+def loader_options(
+    config: dict[str, object], device: torch.device, seed: int
+) -> dict[str, object]:
     num_workers = int(config.get("num_workers", min(8, os.cpu_count() or 1)))
     options: dict[str, object] = {
         "num_workers": num_workers,
         "pin_memory": device.type == "cuda",
+        "worker_init_fn": seed_worker,
+        "generator": torch.Generator().manual_seed(seed),
     }
     if num_workers > 0:
         options["persistent_workers"] = True
@@ -107,6 +124,24 @@ def save_training_curves(history: list[dict[str, float]], output_path: Path) -> 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(output_path, dpi=150)
     plt.close(figure)
+
+
+def save_training_curves_csv(history: list[dict[str, float]], output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    fields = ["epoch", "train_loss", "train_accuracy", "val_accuracy", "val_macro_f1"]
+    with output_path.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.DictWriter(file, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        for epoch, item in enumerate(history, start=1):
+            writer.writerow(
+                {
+                    "epoch": epoch,
+                    "train_loss": f"{item['train_loss']:.8f}",
+                    "train_accuracy": f"{item['train_accuracy']:.8f}",
+                    "val_accuracy": f"{item['val_accuracy']:.8f}",
+                    "val_macro_f1": f"{item['val_macro_f1']:.8f}",
+                }
+            )
 
 
 def record_experiment(config: dict[str, object], metrics: dict[str, float]) -> None:
@@ -162,10 +197,6 @@ def train(config_path: Path) -> None:
         config: dict[str, object] = json.load(file)
     set_seed(int(config["seed"]))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    if device.type == "cuda":
-        torch.backends.cuda.matmul.allow_tf32 = True
-        torch.backends.cudnn.allow_tf32 = True
-        torch.backends.cudnn.benchmark = True
     image_dir = Path(str(config["image_dir"]))
     train_dataset = LeafDataset(
         load_labeled_csv(Path(str(config["train_csv"]))),
@@ -177,7 +208,7 @@ def train(config_path: Path) -> None:
         image_dir,
         build_transforms(int(config["image_size"]), training=False),
     )
-    options = loader_options(config, device)
+    options = loader_options(config, device, int(config["seed"]))
     train_loader = DataLoader(
         train_dataset,
         batch_size=int(config["batch_size"]),
@@ -196,29 +227,33 @@ def train(config_path: Path) -> None:
         freeze_backbone=bool(config["freeze_backbone"]),
     ).to(device)
     # 使用类别权重解决 multiple_diseases 样本过少的问题
-    if config["label_weights"] :
+    if bool(config.get("label_weights", False)):
         class_weights = compute_class_weights(train_dataset, device)
         criterion = nn.CrossEntropyLoss(weight=class_weights)
         print(f"weights: {class_weights}")
-    else :
+    else:
         criterion = nn.CrossEntropyLoss()
         print("No label weights")
     optimizer = build_optimizer(model, config)
     
     # 添加学习率调度器
-    if config["scheduler"] :
+    if bool(config.get("scheduler", False)):
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-            optimizer, mode='max', factor=0.5, patience=3
+            optimizer, mode="max", factor=0.5, patience=3
         )
         print("Use scheduler")
-    else :
+    else:
         scheduler = None
         print("No scheduler")
     
     scaler = torch.amp.GradScaler("cuda", enabled=device.type == "cuda")
     best_metrics: dict[str, float] | None = None
     history: list[dict[str, float]] = []
-    checkpoint_path = Path(str(config["checkpoint_dir"])) / f"{config['run_id']}_best.pt"
+    if "ckpt_name" in config :
+        checkpoint_path_2 = Path(str(config["checkpoint_dir"])) / config['ckpt_name']
+    else :
+        checkpoint_path_2 = None
+    checkpoint_path = Path(str(config["checkpoint_dir"])) / get_model_name(config['run_id'])
     checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
 
     for epoch in trange(1, int(config["epochs"]) + 1):
@@ -254,7 +289,7 @@ def train(config_path: Path) -> None:
         )
         
         # 更新学习率调度器
-        if scheduler is not None : 
+        if scheduler is not None:
             scheduler.step(metrics["macro_f1"])
         
         if best_metrics is None or metrics["macro_f1"] > best_metrics["macro_f1"]:
@@ -263,11 +298,16 @@ def train(config_path: Path) -> None:
                 {"model_state": model.state_dict(), "config": config, "epoch": epoch},
                 checkpoint_path,
             )
+            if checkpoint_path_2 is not None :
+                torch.save(
+                    {"model_state": model.state_dict(), "config": config, "epoch": epoch},
+                    checkpoint_path_2,
+                )
 
     if best_metrics is None:
         raise RuntimeError("No training epochs were completed")
-    if config["run_id"] == "baseline":
-        save_training_curves(history, Path("results/training_curves_baseline.png"))
+    save_training_curves(history, Path(f"results/training_curves_{config['run_id']}.png"))
+    save_training_curves_csv(history, Path(f"results/training_curves_{config['run_id']}.csv"))
     record_experiment(config, best_metrics)
     print(f"Saved best checkpoint to {checkpoint_path}")
 
