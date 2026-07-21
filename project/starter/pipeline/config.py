@@ -6,6 +6,7 @@ RESULTS = ROOT / "results"
 PREDICTIONS = ROOT / "predictions"
 EXPERIMENTS = ROOT / "experiments"
 TICKETS = ROOT / "tickets"
+PENDING_DECISIONS = EXPERIMENTS / "pending_decisions.json"
 SEED = 3102
 
 EXPECTED_COUNTS = {"train": 4567, "dev": 1523, "heldout": 1523}

@@ -9673,7 +9673,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 5368,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,punct_remove,ticket-2
 5368,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,punct_repeat,ticket-2
 5368,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,raw,ticket-2
-5368,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,url_remove,ticket-2
+5368,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,url_remove,ticket-2
 5368,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
 5371,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
 5373,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
@@ -9920,7 +9920,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 5488,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,punct_repeat,ticket-2
 5488,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,raw,ticket-2
 5488,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,url_remove,ticket-2
-5488,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
+5488,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
 5489,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,emoji_remove,ticket-2
 5489,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,emoji_replace,ticket-2
 5489,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,hashtag_remove,ticket-2
@@ -14153,7 +14153,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 7775,0,1,1,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,punct_remove,ticket-2
 7775,0,1,1,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,punct_repeat,ticket-2
 7775,0,1,1,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,raw,ticket-2
-7775,0,1,1,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,url_remove,ticket-2
+7775,0,1,0,fixed_fp,tfidf_12_sublinear_lr_liblinear_c1,url_remove,ticket-2
 7775,0,1,1,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
 7784,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,url_replace,ticket-2
 7785,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,emoji_remove,ticket-2
@@ -24381,7 +24381,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 4238,1,1,0,new_fn,tfidf_12_sublinear_lr_liblinear_c1,location,ticket-3
 4238,1,1,0,new_fn,tfidf_12_sublinear_lr_liblinear_c1,numeric,ticket-3
 4238,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
-4238,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text_plus_keyword,ticket-3
+4238,1,1,0,new_fn,tfidf_12_sublinear_lr_liblinear_c1,text_plus_keyword,ticket-3
 4238,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text_plus_numeric,ticket-3
 4239,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
 4242,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,keyword,ticket-3
@@ -27046,7 +27046,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 6420,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,numeric,ticket-3
 6420,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
 6420,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,text_plus_keyword,ticket-3
-6420,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,text_plus_numeric,ticket-3
+6420,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,text_plus_numeric,ticket-3
 6421,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
 6434,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
 6436,1,1,1,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,text,ticket-3
@@ -32691,7 +32691,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 4906,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
 4912,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
 4915,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
-4917,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
+4917,0,0,1,new_fp,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
 4918,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
 4920,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
 4938,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-4
@@ -34214,7 +34214,7 @@ id,y_true,old_pred,new_pred,category,baseline_model,candidate_model,ticket
 4906,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
 4912,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
 4915,1,0,1,fixed_fn,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
-4917,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
+4917,0,0,1,new_fp,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
 4918,1,0,0,unchanged_error,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
 4920,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5
 4938,0,0,0,unchanged_correct,tfidf_12_sublinear_lr_liblinear_c1,lr_c10_balanced_t0.56,ticket-5

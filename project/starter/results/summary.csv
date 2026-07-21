@@ -1,6 +1,6 @@
 ticket,model_name,dev_f1_target_1,heldout_f1_target_1,heldout_accuracy,fixed_fp,fixed_fn,new_fp,new_fn,decision,decision_reason
 ticket-1,tfidf_12_sublinear_lr_liblinear_c1,0.734033953112,0.731983805668,0.782665791202,0,0,0,0,accepted,Assignment-driven baseline frozen at threshold 0.5
-ticket-2,url_replace,0.737104825291,0.739817123857,0.794484569928,32,8,7,15,accepted,Dev-selected single lever: url_replace
+ticket-2,url_replace,0.738154613466,0.739817123857,0.794484569928,32,8,7,15,accepted,Dev-selected single lever: url_replace
 ticket-3,text,0.734033953112,0.731983805668,0.782665791202,0,0,0,0,accepted,Dev-selected feature set: text
-ticket-4,lr_c10_balanced_t0.56,0.753577106518,0.755310778914,0.795797767564,17,37,25,9,accepted,Dev-selected model and operating threshold
-ticket-5,lr_c10_balanced_t0.56,0.753577106518,0.755310778914,0.795797767564,17,37,25,9,keep_original_labels,Audit-only: no labels modified
+ticket-4,lr_c10_balanced_t0.56,0.753577106518,0.754716981132,0.795141168746,17,37,26,9,accepted,Dev-selected model and operating threshold
+ticket-5,lr_c10_balanced_t0.56,0.753577106518,0.754716981132,0.795141168746,17,37,26,9,keep_original_labels,Audit-only: no labels modified

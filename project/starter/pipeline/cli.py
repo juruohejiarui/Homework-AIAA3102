@@ -1,9 +1,8 @@
 """Command-line interface for validation, experiments, and artifact checks."""
 import argparse, json
 from .artifacts import validate_artifacts
-from .config import EXPERIMENTS
 from .data import get_splits
-from .experiments import run_all
+from .experiments import freeze_ticket, run_all, run_ticket_dev, run_ticket_heldout
 
 
 def build_parser():
@@ -24,17 +23,16 @@ def main(argv=None):
     if args.command=="run-all":
         result=run_all(); print(result["summary"].to_string(index=False)); return 0
     if args.command=="validate-artifacts": print(json.dumps(validate_artifacts(),sort_keys=True)); return 0
-    path=EXPERIMENTS/"decisions.json"
     if args.command=="freeze-ticket":
-        if not path.exists(): raise SystemExit("No dev decision exists. Run the ticket dev experiment first.")
-        record=json.loads(path.read_text(encoding="utf-8")).get(f"ticket-{args.ticket}")
-        if not record: raise SystemExit("Ticket decision missing")
-        print(f"ticket-{args.ticket} already frozen: {record['run_id']}"); return 0
-    if args.split=="heldout":
-        if not path.exists() or json.loads(path.read_text(encoding="utf-8")).get(f"ticket-{args.ticket}",{}).get("status")!="frozen":
-            raise SystemExit("Held-out evaluation requires a frozen decision")
-    # Ticket runs are idempotent full-registry rebuilds so shared baselines stay consistent.
-    run_all(); print(f"ticket-{args.ticket} {args.split} artifacts regenerated"); return 0
+        try: record=freeze_ticket(args.ticket)
+        except ValueError as exc: raise SystemExit(str(exc)) from exc
+        print(f"ticket-{args.ticket} frozen: {record['run_id']}"); return 0
+    if args.split=="dev":
+        record=run_ticket_dev(args.ticket)
+        print(f"ticket-{args.ticket} dev decision pending: {record['run_id']}"); return 0
+    try: result=run_ticket_heldout(args.ticket)
+    except ValueError as exc: raise SystemExit(str(exc)) from exc
+    print(json.dumps(result,sort_keys=True)); return 0
 
 
 if __name__=="__main__": raise SystemExit(main())

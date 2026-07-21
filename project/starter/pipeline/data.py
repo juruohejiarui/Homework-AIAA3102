@@ -59,3 +59,26 @@ def validate_and_split(df: pd.DataFrame, ids: dict[str, list[int]]) -> dict[str,
 def get_splits(path: Path | None = None) -> dict[str, pd.DataFrame]:
     return validate_and_split(load_data(path), load_split_ids())
 
+
+def get_train_dev(path: Path | None = None) -> dict[str, pd.DataFrame]:
+    """Return the immutable training and development partitions only."""
+    df = load_data(path)
+    ids = load_split_ids()
+    if df["id"].duplicated().any(): raise DataValidationError("Dataset IDs must be unique")
+    if not set(df["target"].dropna().unique()).issubset({0, 1}) or df["target"].isna().any():
+        raise DataValidationError("target must contain only 0 and 1")
+    sets = {name: set(values) for name, values in ids.items()}
+    for name, values in ids.items():
+        if len(values) != len(sets[name]): raise DataValidationError(f"Duplicate split IDs in {name}")
+    if sets["train"] & sets["dev"] or sets["train"] & sets["heldout"] or sets["dev"] & sets["heldout"]:
+        raise DataValidationError("Splits must be pairwise disjoint")
+    all_ids = set(df["id"].astype(int))
+    assigned = set().union(*sets.values())
+    if assigned - all_ids: raise DataValidationError(f"Missing split IDs: {sorted(assigned-all_ids)[:5]}")
+    if all_ids != assigned: raise DataValidationError(f"Split union does not cover dataset; unassigned={len(all_ids-assigned)}")
+    parts = {name: df[df.id.isin(ids[name])].sort_values("id").reset_index(drop=True) for name in ("train", "dev")}
+    for name, part in parts.items():
+        if len(part) != EXPECTED_COUNTS[name]: raise DataValidationError(f"{name} has {len(part)} rows, expected {EXPECTED_COUNTS[name]}")
+        if int(part.target.sum()) != EXPECTED_POSITIVES[name]: raise DataValidationError(f"{name} positive count mismatch")
+    return parts
+

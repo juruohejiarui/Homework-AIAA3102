@@ -6,7 +6,7 @@ import pytest
 from pipeline.artifacts import PRED_COLS,SUMMARY_COLS,SWEEP_COLS,AUDIT_COLS,validate_artifacts
 from pipeline.cli import main
 from pipeline.config import DATA,EXPECTED_COUNTS,EXPECTED_POSITIVES,EXPERIMENTS
-from pipeline.data import DataValidationError,get_splits,load_data,load_split_ids,validate_and_split
+from pipeline.data import DataValidationError,get_splits,get_train_dev,load_data,load_split_ids,validate_and_split
 from pipeline.data_quality import duplicate_key,exact_duplicate_groups,conflicting_duplicates,near_duplicate_pairs,validate_dispositions
 from pipeline.features import FeatureBuilder
 from sklearn.linear_model import LogisticRegression
@@ -21,6 +21,9 @@ def test_exact_positive_counts(splits): assert {k:int(v.target.sum()) for k,v in
 def test_split_disjointness(splits):
     sets=[set(v.id) for v in splits.values()]; assert not sets[0]&sets[1] and not sets[0]&sets[2] and not sets[1]&sets[2]
 def test_split_union_coverage(splits): assert set().union(*(set(v.id) for v in splits.values()))==set(load_data().id)
+def test_train_dev_loader_excludes_heldout_partition():
+    parts=get_train_dev()
+    assert set(parts)=={"train","dev"} and not set(parts["train"].id)&set(parts["dev"].id)
 def test_id_uniqueness(): assert load_data().id.is_unique
 def test_target_validity(): assert set(load_data().target)=={0,1}
 def test_missing_split_ids():
@@ -45,6 +48,9 @@ def test_casing_lever_reaches_vectorizer():
     d=pd.DataFrame({"id":[1,2],"text":["Fire","fire"]})
     b=FeatureBuilder(normalization=NormalizationConfig(casing="preserve")); b.fit_transform(d)
     assert "Fire" in b.vectorizer.vocabulary_ and "fire" in b.vectorizer.vocabulary_
+def test_vectorizer_diagnostic_parameters_reach_tfidf():
+    b=FeatureBuilder(max_df=.9,use_idf=False,smooth_idf=False,norm=None,strip_accents="unicode",token_pattern=r"(?u)\b\w+\b")
+    assert b.vectorizer.get_params()["max_df"]==.9 and not b.vectorizer.use_idf and b.vectorizer.norm is None
 def test_emoji_remove(): assert normalize_text("fire🔥",NormalizationConfig(emoji="remove"))=="fire"
 def test_emoji_replace(): assert "emojitoken" in normalize_text("🔥",NormalizationConfig(emoji="replace"))
 def test_missing_text_handling(): assert normalize_text(None)=="" and normalize_text(np.nan)==""
@@ -89,10 +95,25 @@ def test_cli_invalid_ticket():
 def test_frozen_decisions_exist():
     if (EXPERIMENTS/"decisions.json").exists(): assert all(v["status"]=="frozen" for v in json.loads((EXPERIMENTS/"decisions.json").read_text()).values())
 def test_heldout_requires_freeze(tmp_path,monkeypatch):
-    import pipeline.cli as cli; monkeypatch.setattr(cli,"EXPERIMENTS",tmp_path)
+    import pipeline.cli as cli
+    monkeypatch.setattr(cli,"run_ticket_heldout",lambda ticket: (_ for _ in ()).throw(ValueError("Held-out evaluation requires a frozen decision")))
     with pytest.raises(SystemExit,match="frozen"): cli.main(["run-ticket","--ticket","1","--split","heldout"])
+def test_cli_dev_does_not_dispatch_heldout(monkeypatch):
+    import pipeline.cli as cli
+    calls=[]
+    monkeypatch.setattr(cli,"run_ticket_dev",lambda ticket: calls.append(ticket) or {"run_id":"dev-only"})
+    monkeypatch.setattr(cli,"run_ticket_heldout",lambda ticket: pytest.fail("dev command must not evaluate held-out"))
+    assert cli.main(["run-ticket","--ticket","2","--split","dev"])==0
+    assert calls==[2]
+def test_cli_freeze_requires_pending_decision(monkeypatch):
+    import pipeline.cli as cli
+    monkeypatch.setattr(cli,"freeze_ticket",lambda ticket: (_ for _ in ()).throw(ValueError("No pending dev decision")))
+    with pytest.raises(SystemExit,match="pending"): cli.main(["freeze-ticket","--ticket","1"])
 def test_artifacts_if_generated():
     if (Path("results")/"summary.csv").exists(): assert validate_artifacts()["summary_rows"]==5
+def test_summary_transitions_use_frozen_baseline():
+    if (Path("results")/"summary.csv").exists():
+        assert validate_artifacts()["prediction_rows"]==7615
 def test_small_fixture_end_to_end():
     train=pd.DataFrame({"id":[1,2,3,4],"text":["forest fire","happy music","flood warning","nice day"],"target":[1,0,1,0]})
     dev=pd.DataFrame({"id":[5,6],"text":["fire warning","happy day"],"target":[1,0]})
@@ -109,3 +130,45 @@ def test_artifact_ordering():
     path=Path("predictions/heldout_predictions.csv")
     if path.exists():
         p=pd.read_csv(path); assert p[["ticket","id"]].values.tolist()==p.sort_values(["ticket","id"])[["ticket","id"]].values.tolist()
+def test_rejected_audit_finding_is_preserved():
+    path=Path("results")/"data_quality_audit.csv"
+    if path.exists():
+        audit=pd.read_csv(path)
+        finding=audit[(audit.id==198)&(audit.issue_type=="high_confidence_fp")]
+        assert len(finding)==1 and finding.iloc[0].disposition=="reject_false_positive"
+def test_discrepancy_probes_have_frozen_heldout_evidence():
+    path=Path("results")/"discrepancy_comparison.csv"
+    if path.exists():
+        discrepancy=pd.read_csv(path)
+        probes=discrepancy[discrepancy.probe!="submitted_baseline"]
+        assert probes.heldout_f1_target_1.notna().all()
+        assert {"dev_delta_from_baseline","heldout_delta_from_baseline"}.issubset(discrepancy.columns)
+def test_representative_discrepancy_transitions_are_exported():
+    path=Path("results")/"discrepancy_transition_summary.csv"
+    if path.exists():
+        summary=pd.read_csv(path)
+        assert set(summary.probe)=={"c_10","no_vector_normalization"}
+        assert {"fixed_fp","fixed_fn","new_fp","new_fn"}.issubset(summary.columns)
+
+def test_ticket4_decision_curves_are_dev_only():
+    path=Path("results")/"ticket4_dev_decision_curve.csv"
+    if path.exists():
+        curve=pd.read_csv(path)
+        assert set(curve.split)=={"dev"} and curve.threshold.between(.2,.8).all()
+        selected=curve[np.isclose(curve.threshold,.56)].iloc[0]
+        assert selected.f1_target_1==pytest.approx(.753577106518)
+        assert (Path("results")/"figures"/"ticket4_dev_precision_recall.png").is_file()
+        assert (Path("results")/"figures"/"ticket4_dev_f1_threshold.png").is_file()
+
+def test_ticket_evidence_exports_are_complete():
+    if (Path("results")/"summary.csv").exists():
+        ticket2=pd.read_csv("results/ticket2_normalization_comparison.csv")
+        ticket3=pd.read_csv("results/ticket3_feature_comparison.csv")
+        ticket4=pd.read_csv("results/ticket4_model_grid.csv")
+        ticket5=pd.read_csv("results/ticket5_audit_summary.csv")
+        assert len(ticket2)==12 and ticket2.selected.sum()==1
+        assert len(ticket3)==7 and ticket3.selected.sum()==1
+        assert len(ticket4)==15 and ticket4.selected.sum()==1
+        assert {"issue_type","disposition","evidence_rows"}.issubset(ticket5.columns)
+        for filename in ("ticket1_probe_delta_agreement.png","ticket2_normalization_and_stress.png","ticket3_feature_and_stress.png","ticket4_model_grid.png","ticket5_audit_distribution.png"):
+            assert (Path("results")/"figures"/filename).is_file()

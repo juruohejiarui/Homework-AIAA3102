@@ -3,6 +3,13 @@
     "decision": "accepted",
     "decision_rationale": "Reasonable text-only baseline fixed from the assignment and dev evaluation.",
     "dev_result": 0.7340339531123686,
+    "diagnostic_probe_policy": {
+      "freeze_boundary": "The submitted baseline is frozen before any diagnostic held-out score is computed.",
+      "heldout_use": "Held-out probe scores are forensic evidence only; they cannot replace the baseline or select later ticket settings.",
+      "interpretation": "Compare dev and held-out deltas for agreement; do not rank probes by held-out F1.",
+      "matrix": "fixed one-factor diagnostic matrix defined in pipeline.experiments",
+      "representative_transition_probes": "c_10 and no_vector_normalization are fixed after dev comparison and before held-out evaluation."
+    },
     "run_id": "t1-baseline",
     "selected_configuration": {
       "classifier": {
@@ -11,11 +18,10 @@
         "dual": false,
         "fit_intercept": true,
         "intercept_scaling": 1,
-        "l1_ratio": null,
+        "l1_ratio": 0.0,
         "max_iter": 1000,
-        "multi_class": "deprecated",
         "n_jobs": null,
-        "penalty": "l2",
+        "penalty": "deprecated",
         "random_state": 3102,
         "solver": "liblinear",
         "tol": 0.0001,
@@ -67,7 +73,7 @@
   "ticket-2": {
     "decision": "accepted",
     "decision_rationale": "Highest dev F1 among controlled single-lever candidates; mechanism checked via transitions.",
-    "dev_result": 0.7371048252911814,
+    "dev_result": 0.7381546134663342,
     "run_id": "t2-normalization",
     "selected_configuration": {
       "candidate": "url_replace",

@@ -10,7 +10,7 @@ One normalization choice at a time: URL, mention, hashtag, casing, punctuation, 
 The Ticket 1 feature/model settings and threshold stay fixed. Twelve single-lever candidates are listed in `results/experiment_registry.csv`; combinations were not searched.
 
 ## Dev Results
-URL replacement was highest at F1 0.737105 versus raw 0.734034. URL removal was 0.734868; hashtag removal was 0.736167; all other candidates are recorded.
+URL replacement was highest at F1 0.738155 versus raw 0.734034. URL removal was 0.734868; hashtag removal was 0.736167; all other candidates are recorded.
 
 ## Frozen Decision
 Freeze URL replacement on dev before held-out evaluation.
@@ -37,10 +37,10 @@ Compared with raw text, precision improved because false positives fell substant
 ID 353 is promotional “World Annihilation” content whose opaque link no longer drives a positive. ID 237 is a real airplane-accident post that becomes a new miss, showing the cost of collapsing URL fragments.
 
 ## Interpretation
-The mechanism is consistent but mixed: URL replacement improves precision and net F1, yet creates more new FN than fixed FN. Perturbation results in `results/perturbation_stress.csv` show sensitivity for URLs, mentions, casing, hashtags, punctuation, and emoji.
+The mechanism is consistent but mixed: URL replacement improves precision and net F1, yet creates more new FN than fixed FN. The stress table now evaluates both the raw baseline and the selected `url_replace` model. Replacing URLs drops the raw model from F1 0.734034 to 0.714029 with 125 flips, while the selected model is invariant to the same URL replacement (F1 remains 0.738155 with zero flips). This supports the narrower claim that its URL normalizer removes URL-fragment dependence. It does not make the model generally surface-invariant: punctuation removal lowers the selected model to F1 0.720212 with 70 flips.
 
 ## Limitation
-The gain is small and selected on one dev split; `<URL>` behavior is represented by the tokenizer-safe `URLTOKEN` string.
+The gain is small and selected on one dev split; `URLTOKEN` is tokenizer-safe but the selected model remains sensitive to some unnormalized surface changes, especially punctuation.
 
 ## Reproduction Command
 `python -m pipeline.cli run-ticket --ticket 2 --split dev` then freeze and held-out commands.

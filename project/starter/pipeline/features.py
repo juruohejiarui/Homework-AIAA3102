@@ -21,11 +21,16 @@ def shallow_features(df: pd.DataFrame) -> np.ndarray:
 
 
 class FeatureBuilder:
-    def __init__(self, mode="text", normalization=NormalizationConfig(), ngram_range=(1,2), min_df=1):
+    def __init__(self, mode="text", normalization=NormalizationConfig(), ngram_range=(1,2), min_df=1,
+                 sublinear_tf=True, max_features=40000, max_df=1.0, use_idf=True, smooth_idf=True,
+                 norm="l2", strip_accents=None, token_pattern=r"(?u)\b\w\w+\b"):
         self.mode, self.normalization = mode, normalization
         # Casing is handled explicitly by normalize_text; disabling vectorizer
         # lowercasing makes the preserve-case lever a genuine single change.
-        self.vectorizer = TfidfVectorizer(ngram_range=ngram_range, min_df=min_df, sublinear_tf=True, max_features=40000, lowercase=False)
+        self.vectorizer = TfidfVectorizer(ngram_range=ngram_range, min_df=min_df, max_df=max_df,
+                          sublinear_tf=sublinear_tf, max_features=max_features, use_idf=use_idf,
+                          smooth_idf=smooth_idf, norm=norm, strip_accents=strip_accents,
+                          token_pattern=token_pattern, lowercase=False)
         self.keyword = OneHotEncoder(handle_unknown="ignore")
         self.location = OneHotEncoder(handle_unknown="ignore", min_frequency=2)
         self.scaler = StandardScaler()

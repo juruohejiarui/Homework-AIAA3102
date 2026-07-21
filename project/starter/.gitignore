@@ -2,5 +2,6 @@ data/train.csv
 data/test.csv
 data/sample_submission.csv
 __pycache__/
+.venv/
 .pytest_cache/
 *.pyc

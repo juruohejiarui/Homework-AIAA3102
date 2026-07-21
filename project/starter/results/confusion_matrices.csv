@@ -1,11 +1,11 @@
 ticket,split,model_name,tn,fp,fn,tp
 ticket-1,dev,tfidf_12_sublinear_lr_liblinear_c1,740,128,201,454
 ticket-1,heldout,tfidf_12_sublinear_lr_liblinear_c1,740,129,202,452
-ticket-2,dev,url_replace,764,104,212,443
+ticket-2,dev,url_replace,764,104,211,444
 ticket-2,heldout,url_replace,765,104,209,445
 ticket-3,dev,text,740,128,201,454
 ticket-3,heldout,text,740,129,202,452
 ticket-4,dev,lr_c10_balanced_t0.56,739,129,181,474
-ticket-4,heldout,lr_c10_balanced_t0.56,732,137,174,480
+ticket-4,heldout,lr_c10_balanced_t0.56,731,138,174,480
 ticket-5,dev,lr_c10_balanced_t0.56,739,129,181,474
-ticket-5,heldout,lr_c10_balanced_t0.56,732,137,174,480
+ticket-5,heldout,lr_c10_balanced_t0.56,731,138,174,480

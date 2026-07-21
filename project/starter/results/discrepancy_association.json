@@ -1,0 +1,17 @@
+{
+  "baseline_probe": "submitted_baseline",
+  "dev_metric": "f1_target_1",
+  "heldout_metric": "f1_target_1",
+  "pearson_p_value": 7.136036982990422e-28,
+  "pearson_r": 0.9968128577146691,
+  "policy": {
+    "freeze_boundary": "The submitted baseline is frozen before any diagnostic held-out score is computed.",
+    "heldout_use": "Held-out probe scores are forensic evidence only; they cannot replace the baseline or select later ticket settings.",
+    "interpretation": "Compare dev and held-out deltas for agreement; do not rank probes by held-out F1.",
+    "matrix": "fixed one-factor diagnostic matrix defined in pipeline.experiments",
+    "representative_transition_probes": "c_10 and no_vector_normalization are fixed after dev comparison and before held-out evaluation."
+  },
+  "probe_count": 26,
+  "spearman_p_value": 5.042082911045417e-09,
+  "spearman_rho": 0.8749147872693915
+}
