@@ -1,6 +1,6 @@
 {
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket5_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-5/frozen_decision.json --output-dir experiments/ticket-5/heldout --confirm-single-ticket5-report",
-  "freeze_sha256": "f5e814a4cbe4f4f94bcac1c2d1ab07e5effacb83f21e91a6395791b2f5b9b097",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.run_ticket5_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-5/frozen_decision.json --output-dir experiments/ticket-5/heldout --confirm-single-ticket5-report",
+  "freeze_sha256": "c0d8eac7e52d4146d480003957f03bfa2456cb057eaec28afdde6aff8fbfea94",
   "full_rows_audited": 7613,
   "heldout_labels_modified": false,
   "heldout_rows_removed": 0,

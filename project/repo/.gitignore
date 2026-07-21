@@ -1,1 +1,4 @@
 /tmp
+/.venv
+/.pytest_cache
+*.pyc

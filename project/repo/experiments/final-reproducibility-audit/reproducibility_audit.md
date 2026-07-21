@@ -14,7 +14,7 @@ This is the reproducibility audit requested before final report assembly. It is 
 
 ## Clean-process reproduction
 
-- Distinct process IDs: `58724, 58799, 58878, 58950, 59038`.
+- Distinct process IDs: `85798, 85871, 85954, 86042, 86120`.
 - Archived prediction changes across all ten dev/held-out comparisons: `0`.
 - Maximum score discrepancy from an archived artifact: `1.1102230246251565e-16` (acceptance limit `1e-12`).
 - Convergence: all five replays completed without convergence warnings.

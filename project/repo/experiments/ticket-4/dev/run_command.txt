@@ -1,1 +1,1 @@
-/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket4_dev --data data/train.csv --split starter/data/split_indices.json --plan experiments/ticket-4/dev/experiment_plan.json --output-dir experiments/ticket-4/dev
+/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.run_ticket4_dev --data data/train.csv --split starter/data/split_indices.json --plan experiments/ticket-4/dev/experiment_plan.json --output-dir experiments/ticket-4/dev

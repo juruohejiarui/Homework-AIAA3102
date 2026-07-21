@@ -1,6 +1,6 @@
 # Ticket 5 Freeze Decision
 
-Frozen at: 2026-07-21T20:14:58+08:00
+Frozen at: 2026-07-21T23:34:47+08:00
 
 Selected: retain the frozen Ticket 4 model (lr_c1_balanced_default); apply no label corrections.
 

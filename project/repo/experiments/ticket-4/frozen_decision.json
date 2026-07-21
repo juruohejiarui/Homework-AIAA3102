@@ -13,9 +13,9 @@
   },
   "decision_reason": "Selected variant 'lr_c1_balanced_default' maximised target-1 dev F1 under the predeclared bounded criterion (dev F1 0.7520849128). Hyperparameters: C=1.0, class_weight=balanced, threshold=0.50.",
   "decision_split": "dev_ids only",
-  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket4 --dev-dir experiments/ticket-4/dev --output experiments/ticket-4/frozen_decision.json",
+  "exact_freeze_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.freeze_ticket4 --dev-dir experiments/ticket-4/dev --output experiments/ticket-4/frozen_decision.json",
   "freeze_status": "frozen_before_ticket4_heldout_evaluation",
-  "frozen_at": "2026-07-21T20:14:47+08:00",
+  "frozen_at": "2026-07-21T23:34:37+08:00",
   "integrity": {
     "baseline_heldout_predictions_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
     "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
@@ -30,7 +30,7 @@
     "selection_result_sha256": "58c98fc10b51caca6b9f3d24b26af795f46b79b7eef7a6a995522bff25ff109d",
     "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
     "threshold_sweep_sha256": "fe0f6907e72431a5b5852252e8570abaeab53504b949a0580a54900a9a4e53b6",
-    "ticket1_freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b"
+    "ticket1_freeze_sha256": "05cda9ffc22be9d10da1768228458fab66c629e2729ebc8fe7a6c6e6ad284f8e"
   },
   "prior_ticket_heldout_artifacts_exist": true,
   "selected_C": 1.0,

@@ -2,9 +2,9 @@
   "decision": "Reject keyword, location, length, and selected shallow additions; retain the frozen text-only baseline.",
   "decision_reason": "Retain the frozen text-only baseline. Although text plus keyword and selected shallow features raised dev F1 to 0.7493956486704271, its gain was shortcut-sensitive: masking keyword changed 702 predictions and reduced F1 to 0.6423057128152342, while superficial-text neutralization reduced F1 to 0.7330677290836654. Text plus keyword alone was worse than baseline (0.7350835322195705). Sparse location, length-only, and shallow-only variants were substantially weaker. The visible gain is therefore rejected rather than adopted automatically.",
   "decision_split": "dev_ids only",
-  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket3 --dev-dir experiments/ticket-3/dev --output experiments/ticket-3/frozen_decision.json",
+  "exact_freeze_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.freeze_ticket3 --dev-dir experiments/ticket-3/dev --output experiments/ticket-3/frozen_decision.json",
   "freeze_status": "frozen_before_ticket3_heldout_reporting",
-  "frozen_at": "2026-07-21T20:14:15+08:00",
+  "frozen_at": "2026-07-21T23:34:04+08:00",
   "heldout_reporting_mode": "Reuse the already validated Ticket 1 stable baseline predictions after freeze; do not refit or rerun the baseline on held-out.",
   "integrity": {
     "baseline_heldout_predictions_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
@@ -18,7 +18,7 @@
     "shortcut_source_sha256": "54602815e659a4255c0d5459d86fe2d13895187011e930fb8fa4bcba19d0067d",
     "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
     "text_control_dev_predictions_sha256": "23b3e84fa858181c444c8b8f23601a5a3d6ace3cc5a421068f652ee2a5949d62",
-    "ticket1_freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b"
+    "ticket1_freeze_sha256": "05cda9ffc22be9d10da1768228458fab66c629e2729ebc8fe7a6c6e6ad284f8e"
   },
   "prior_ticket_heldout_artifacts_exist": true,
   "rejected_best_visible_candidate": {

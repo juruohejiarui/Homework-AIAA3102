@@ -49,7 +49,7 @@
     }
   },
   "effective_regularization": "L2: scikit-learn 1.9.0 represents the deprecated penalty default as 'deprecated' and its l1_ratio=0.0 gives pure L2 regularization.",
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_baselines --data data/train.csv --split starter/data/split_indices.json --output-dir experiments/step-4-baselines",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.run_baselines --data data/train.csv --split starter/data/split_indices.json --output-dir experiments/step-4-baselines",
   "identical_floor_predictions_and_metrics": true,
   "identical_reference_predictions_scores_and_metrics": true,
   "input_feature": "raw text column only",

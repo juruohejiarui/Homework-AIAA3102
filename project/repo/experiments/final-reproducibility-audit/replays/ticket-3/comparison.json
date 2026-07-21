@@ -1,5 +1,5 @@
 {
-  "clean_process_pid": 58878,
+  "clean_process_pid": 85954,
   "dev": {
     "archived_sha256": "23b3e84fa858181c444c8b8f23601a5a3d6ace3cc5a421068f652ee2a5949d62",
     "maximum_absolute_score_difference": 1.1102230246251565e-16,
@@ -9,7 +9,7 @@
     "same_y_true": true,
     "scores_match_within_1e_12": true
   },
-  "freeze_sha256": "4a555995bdfff447ea192e35e78abcfda02d4914375ebe4631b28faf7a0f957c",
+  "freeze_sha256": "13d91f8fd1fd9b24daeacf8aba23398d7023cb62c7d27b83029888502ab8dd53",
   "heldout": {
     "archived_sha256": "a6f65bfdcd9cd7116acd2966f55d68a7fac6f9ebb85a56149b88ae56f50c942e",
     "maximum_absolute_score_difference": 1.1102230246251565e-16,
@@ -19,9 +19,9 @@
     "same_y_true": true,
     "scores_match_within_1e_12": true
   },
-  "manifest_sha256": "58a293b517d016767b6f7f64c0d43ce0ab2fb0ccea6c19bdcd7c3685080e403d",
+  "manifest_sha256": "fd1f7a397e36ca00b132f03108d52a7935c6aee9f398bbfdfc872c8b3ccdc855",
   "metrics_exact_within_1e_15": true,
-  "process_started": "2026-07-21T20:15:14.623354+08:00",
+  "process_started": "2026-07-21T23:35:02.507449+08:00",
   "result": "PASS",
   "ticket": 3
 }

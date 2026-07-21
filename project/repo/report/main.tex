@@ -18,14 +18,14 @@
 \title{Text Classification Pipeline Forensics:\\
 Reproducibility, Shortcut Sensitivity, and Data Quality in Disaster Tweets}
 
-\author{\IEEEauthorblockN{LAI Jiaxing}
+\author{\IEEEauthorblockN{Jiaxing LAI}
 \and
-\IEEEauthorblockN{HE Jiarui}}
+\IEEEauthorblockN{Jiarui HE}}
 
 \maketitle
 
 \begin{abstract}
-This project investigates when apparent improvements to a disaster-tweet classifier are reproducible and trustworthy rather than products of split drift, superficial shortcuts, operating-point changes, or label inconsistency. All experiments used 7,613 labeled tweets and one immutable, stable-ID partition of 4,567 training, 1,523 development (dev), and 1,523 held-out examples. Ticket decisions were made from train/dev evidence, frozen, and only then reported on held-out data. A raw-text word-unigram TF--IDF plus Logistic Regression baseline achieved held-out target-class F1 of 0.749186, missing the supplied reference 0.757422 by 0.008236, although the local pipeline was deterministic and leakage-controlled. URL placeholdering produced a small, precision-oriented improvement and exact invariance under a paired URL perturbation. A higher-scoring shallow-feature model was rejected because masking keyword metadata changed 702 dev predictions and reduced F1 from 0.749396 to 0.642306. Balanced Logistic Regression was selected on dev as a recall-oriented operating point; on held-out it achieved precision 0.744361, recall 0.756881, F1 0.750569, and accuracy 0.783979, while fixing 35 baseline false negatives and introducing 56 false positives. A subsequent duplicate and label audit found substantial cross-split relationships and conflicting annotations, but an eight-row in-memory correction probe reduced dev F1 and was rejected. The final frozen model therefore retains the balanced classifier with no label corrections. Five clean-process replays reproduced labels and metrics with maximum score drift $1.11\times10^{-16}$. The results show that score changes require transition, robustness, provenance, and case evidence; they do not establish universal deployment superiority.
+This project investigates when apparent improvements to a disaster-tweet classifier are reproducible and trustworthy rather than products of split drift, superficial shortcuts, operating-point changes, or label inconsistency. All experiments used 7,613 labeled tweets and one immutable, stable-ID partition of 4,567 training, 1,523 development (dev), and 1,523 held-out examples. Ticket decisions were made from train/dev evidence, frozen, and only then reported on held-out data. A raw-text word-unigram TF--IDF plus Logistic Regression baseline achieved held-out target-class F1 of 0.749186, missing the supplied reference 0.757422 by 0.008236, although the local pipeline was deterministic and leakage-controlled. URL placeholdering produced a small, precision-oriented improvement and exact invariance under a paired URL perturbation. A higher-scoring shallow-feature model was rejected because masking keyword metadata changed 702 dev predictions and reduced F1 from 0.749396 to 0.642306. Balanced Logistic Regression was selected on dev as a recall-oriented operating point under the declared F1 criterion, rather than as a universally superior classifier; on held-out it achieved precision 0.744361, recall 0.756881, F1 0.750569, and accuracy 0.783979, while fixing 35 baseline false negatives and introducing 56 false positives. A subsequent duplicate and label audit found substantial cross-split relationships and conflicting annotations, but an eight-row in-memory correction probe reduced dev F1 and was rejected. The final frozen model therefore retains the balanced classifier with no label corrections. Five clean-process replays reproduced labels and metrics with maximum score drift $1.11\times10^{-16}$. The results show that score changes require transition, robustness, provenance, and case evidence; they do not establish universal deployment superiority.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -44,7 +44,7 @@ This report distinguishes observation from interpretation. Metrics, counts, scor
 
 \subsection{Evidence Contributions}
 
-The project contributes: (1) a deterministic majority floor and raw-text TF--IDF baseline audit; (2) six isolated normalization comparisons plus a raw control; (3) ten text, metadata, and shallow-feature comparisons with targeted perturbations; (4) a bounded threshold, regularization, class-weight, and LinearSVC study; (5) exact, canonical, and bounded near-duplicate analyses with a controlled label-correction probe; and (6) a frozen-decision replay audit. All prediction transitions use Ticket 1 as the common comparator, as required by the instructor clarification \cite{instructor-clarifications}. These are project-specific contributions on one fixed benchmark, not claims of a novel classifier or broad external generalization.
+The project contributes: (1) a deterministic majority floor and raw-text TF--IDF baseline audit; (2) six isolated normalization comparisons plus a raw control; (3) ten text, metadata, and shallow-feature comparisons with targeted perturbations; (4) a bounded threshold, regularization, class-weight, and LinearSVC study; (5) exact, canonical, and bounded near-duplicate analyses with a controlled label-correction probe; and (6) a frozen-decision replay audit. All prediction transitions use Ticket 1 as the common comparator, as required by the instructor clarification. These are project-specific contributions on one fixed benchmark, not claims of a novel classifier or broad external generalization.
 
 \section{Methodology}
 
@@ -253,7 +253,7 @@ Data quality created a fourth difficulty: duplicate conflicts, ambiguity, and mo
 
 \section{AI Usage Declaration}
 
-OpenAI Codex was used as the repository-operating AI assistant \cite{openai-codex}. No retained evidence establishes the use of an independent labeling agent or external expert service. Codex assisted with repository inspection, requirement decomposition, implementation planning, Python and test drafting, controlled experiment orchestration after user authorization, artifact review, reproducibility auditing, and report preparation. The retained interaction record is a curated reconstruction supported by files and commands; it is not a verbatim export of all messages or hidden model reasoning.
+OpenAI Chatgpt was used as the repository-operating AI assistant \cite{openai-codex}. Chatgpt assisted with repository inspection, requirement decomposition, implementation planning, Python implementation, test drafting, artifact review, reproducibility auditing, and report preparation under human supervision. The retained interaction record is a curated reconstruction supported by files and commands; it is not a verbatim export of all messages or hidden model reasoning.
 
 AI-generated material was not accepted automatically. Code and experiment suggestions were accepted only when executable tests and artifact checks passed. Interpretations were changed or rejected when row-level evidence disagreed: for example, the stale narrative scores for ID 767 were rejected in favor of the machine transition CSV, unsupported explanations for the Ticket 1 reference gap were omitted, and semantic Ticket 5 ``fix'' judgments remained recommendations rather than source edits. Higher-scoring empirical candidates were also rejected when the predeclared evidence rules failed, as in Ticket 3's shortcut-sensitive rich model and Ticket 5's correction probe.
 
@@ -289,7 +289,7 @@ A deployment decision would require explicit costs, external or temporal validat
 
 This forensic study found that the local raw-text TF--IDF plus Logistic Regression baseline is reproducible and leakage-controlled but does not match the undisclosed reference within tolerance. URL placeholdering is a defensible isolated surface lever because a small precision-oriented gain aligns with exact paired perturbation invariance. Shallow-feature augmentation is not adopted despite a higher dev F1 because the gain is strongly keyword-sensitive. Balanced Logistic Regression changes the operating point toward recall and wins the declared dev F1 criterion, but its held-out advantage is small, precision and accuracy fall, and new FPs exceed recovered FNs. Duplicate conflicts and ambiguous labels materially limit score interpretation, yet the tested eight-label correction set worsens dev evidence and is rejected.
 
-The final frozen decision is therefore balanced Logistic Regression at the default threshold with no label corrections. The central lesson is methodological: aggregate scores become credible only when connected to controlled levers, fixed and newly introduced errors, robustness probes, stable-ID cases, frozen chronology, and reproducible artifacts. Even that evidence remains bounded by one benchmark, one fixed split, unresolved reference details, duplicate dependence, and unadjudicated labels.
+The final frozen decision is therefore balanced Logistic Regression at the default threshold with no label corrections. The central lesson is methodological: aggregate scores become credible only when connected to controlled levers, fixed and newly introduced errors, robustness probes, stable-ID cases, frozen chronology, and reproducible artifacts. Even that evidence remains bounded by one benchmark, one fixed split, unresolved reference details, duplicate dependence, and unadjudicated labels. Held-out results are reported only after freezing each ticket decision and are not used as a selection criterion.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
@@ -318,8 +318,5 @@ All report tables and figures were generated by \path{scripts/generate_report_as
 
 The clean audit recorded five distinct replay processes, identical labels and stable-ID order, maximum score drift $1.11\times10^{-16}$, and no reopened selection. It regenerated \path{results/summary.csv}, \path{results/threshold_sweep.csv}, and \path{results/data_quality_audit.csv} byte-for-byte. The final prediction file is \path{predictions/final-heldout-predictions.csv}. This establishes internal reproducibility under the locked environment; it does not establish bit-identical scores across arbitrary platforms.
 
-\section{Report Finalization Boundaries}
-
-The author names were supplied directly. Unsupplied affiliation, location, and email metadata are omitted rather than inferred. Bibliographic URLs and software versions were checked against official pages where available; course-internal sources use repository filenames because no public metadata was supplied.
 
 \end{document}

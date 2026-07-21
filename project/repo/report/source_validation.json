@@ -29,7 +29,6 @@
     "figure_04_data_quality_dispositions.png"
   ],
   "citation_keys": [
-    "instructor-clarifications",
     "kaggle-dataset",
     "matplotlib-software",
     "numpy-software",
@@ -693,28 +692,17 @@
       "detail": "no post-hoc Ticket 2 selection"
     },
     {
-      "check": "verified author names",
-      "status": "PASS",
-      "detail": "both supplied names present"
-    },
-    {
       "check": "no report placeholders",
       "status": "PASS",
       "detail": "no unresolved placeholder tokens"
     },
     {
-      "check": "affiliation not fabricated",
-      "status": "PASS",
-      "detail": "unsupplied affiliation/email omitted"
-    },
-    {
       "check": "substantive report length",
       "status": "PASS",
-      "detail": "approximate source word count=6514"
+      "detail": "approximate source word count=6480"
     }
   ],
   "remaining_warnings": [
-    "affiliation, location, and email were not supplied and are omitted",
     "course-internal references have repository filenames but no public publication metadata",
     "the Ticket 1 reference discrepancy remains causally unresolved"
   ]

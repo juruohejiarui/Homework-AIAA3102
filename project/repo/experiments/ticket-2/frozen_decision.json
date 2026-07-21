@@ -54,15 +54,15 @@
       "vocabulary": null
     }
   },
-  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket2 --dev-dir experiments/ticket-2/dev --output experiments/ticket-2/frozen_decision.json",
+  "exact_freeze_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.freeze_ticket2 --dev-dir experiments/ticket-2/dev --output experiments/ticket-2/frozen_decision.json",
   "freeze_status": "frozen_before_ticket2_heldout",
-  "frozen_at": "2026-07-21T20:13:37+08:00",
+  "frozen_at": "2026-07-21T23:33:28+08:00",
   "heldout_observed_at_freeze": false,
   "integrity": {
     "control_dev_predictions_sha256": "36c239ae24573e168be6d3b93c120ddfbe0aef485ca6f36c41ab4d9ac2b35496",
     "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
     "dev_metrics_sha256": "bdc40f65b89d7b348e1b76d9576ad8bec54dfe0d43b370f3e0d8f66f6c369925",
-    "dev_run_config_sha256": "83e70ea199a131370db42e5200399072c9b721830804067660b46d787a9baa93",
+    "dev_run_config_sha256": "b894fc6c3d0dc30482fe943f504331746bd634245a42717db163bcec1013b98f",
     "dev_runner_source_sha256": "cc6ce024e79b451e8e6a030fb4ab8952b6c430db2ec79e93fafe198affde8754",
     "experiment_plan_sha256": "15fe483a5c66a148cfec1ac21f53b6c3115e0b54c4b61456a0e81afa4d0cd2c7",
     "heldout_runner_source_sha256": "90ede6764fd37f2181f9221343835f4a71310c5c54663395f69d132e8515b1fe",
@@ -71,7 +71,7 @@
     "robustness_metrics_sha256": "1c0550dbe99a480c709dbad057c570822acb9df1c375d6e04013ec40f6953031",
     "selected_dev_predictions_sha256": "5ae850e24e071fe60d71b8f93d260e2b12577bae7b520030964949241be1f266",
     "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
-    "ticket1_freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b",
+    "ticket1_freeze_sha256": "05cda9ffc22be9d10da1768228458fab66c629e2729ebc8fe7a6c6e6ad284f8e",
     "ticket2_source_sha256": "5ff19156e4733ef2e02e07b429d2f2254d3163b222f5b7f7dc8441d2f2951afc"
   },
   "normalization": {

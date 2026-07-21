@@ -1,5 +1,5 @@
 {
-  "freeze_sha256": "d0818d6ad68f1900301e8738495ade949f96bcaa6d7646ef3e4b3a845896eaed",
+  "freeze_sha256": "4fc711acde06d2e0511c34abd2499ebaf30858b7d1fd3dfbc55b36fb09fe288b",
   "metrics": {
     "accuracy": 0.8049901510177282,
     "f1_target_1": 0.7531172069825436,

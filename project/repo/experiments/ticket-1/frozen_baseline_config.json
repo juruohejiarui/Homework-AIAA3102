@@ -47,7 +47,7 @@
   },
   "fit_split": "train_ids only",
   "freeze_status": "frozen_before_heldout",
-  "frozen_at": "2026-07-21T20:09:42+08:00",
+  "frozen_at": "2026-07-21T23:30:08+08:00",
   "heldout_evaluation_count_at_freeze": 0,
   "heldout_observed_at_freeze": false,
   "heldout_split": "heldout_ids; evaluation permitted only after this freeze file exists",

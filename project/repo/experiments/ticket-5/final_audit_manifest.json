@@ -6,7 +6,7 @@
     "keep_but_flag": 6,
     "reject_false_positive": 13
   },
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.finalize_ticket5_audit --data data/train.csv --split starter/data/split_indices.json --records experiments/ticket-5/final_audit_records.json --output results/data_quality_audit.csv",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.finalize_ticket5_audit --data data/train.csv --split starter/data/split_indices.json --records experiments/ticket-5/final_audit_records.json --output results/data_quality_audit.csv",
   "heldout_labels_modified": false,
   "heldout_rows_removed": 0,
   "output_sha256": "9387710cc13d24ab914e61514da4d2c6a23a2d1bbd98beb3017e0faf88c39421",

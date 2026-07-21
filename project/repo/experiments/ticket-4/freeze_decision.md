@@ -1,6 +1,6 @@
 # Ticket 4 Freeze Decision
 
-Frozen at: 2026-07-21T20:14:47+08:00
+Frozen at: 2026-07-21T23:34:37+08:00
 
 Selected: lr_c1_balanced_default — C=1.0, class_weight=balanced, threshold=0.50.
 

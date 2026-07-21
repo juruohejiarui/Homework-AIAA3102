@@ -1,6 +1,6 @@
 # Ticket 3 Freeze Decision
 
-Frozen at: 2026-07-21T20:14:15+08:00
+Frozen at: 2026-07-21T23:34:04+08:00
 
 Selected decision: retain the frozen raw-text baseline and reject shortcut additions.
 

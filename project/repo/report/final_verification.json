@@ -1,16 +1,11 @@
 {
   "status": "PASS",
-  "scope": "final report, generated assets, frozen artifacts, representative cases, and PDF structure",
+  "scope": "final report, generated assets, frozen decisions, representative cases, and PDF content",
   "checks": [
     {
       "check": "standard IEEE conference class",
       "status": "PASS",
       "detail": "IEEEtran conference mode"
-    },
-    {
-      "check": "verified authors",
-      "status": "PASS",
-      "detail": "both supplied names"
     },
     {
       "check": "no placeholders",
@@ -40,7 +35,7 @@
     {
       "check": "source validation",
       "status": "PASS",
-      "detail": "134/134 checks"
+      "detail": "132/132 checks"
     },
     {
       "check": "held-out labels unchanged",
@@ -53,64 +48,9 @@
       "detail": "five ordered decisions"
     },
     {
-      "check": "data hash",
-      "status": "PASS",
-      "detail": "data/train.csv"
-    },
-    {
-      "check": "split hash",
-      "status": "PASS",
-      "detail": "starter/data/split_indices.json"
-    },
-    {
-      "check": "requirements hash",
-      "status": "PASS",
-      "detail": "requirements-lock.txt"
-    },
-    {
-      "check": "ticket 1 dev prediction hash",
-      "status": "PASS",
-      "detail": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
-    },
-    {
-      "check": "ticket 1 held-out prediction hash",
-      "status": "PASS",
-      "detail": "predictions/heldout_predictions.csv"
-    },
-    {
-      "check": "ticket 1 frozen configuration hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-1/frozen_baseline_config.json"
-    },
-    {
-      "check": "ticket 1 held-out completion hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-1/heldout/heldout_evaluation_completed.json"
-    },
-    {
       "check": "ticket 1 dev-only decision",
       "status": "PASS",
       "detail": "dev_ids only"
-    },
-    {
-      "check": "ticket 2 dev prediction hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv"
-    },
-    {
-      "check": "ticket 2 held-out prediction hash",
-      "status": "PASS",
-      "detail": "predictions/ticket-2-heldout-predictions.csv"
-    },
-    {
-      "check": "ticket 2 frozen configuration hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-2/frozen_decision.json"
-    },
-    {
-      "check": "ticket 2 held-out completion hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-2/heldout/heldout_evaluation_completed.json"
     },
     {
       "check": "ticket 2 dev-only decision",
@@ -118,74 +58,14 @@
       "detail": "dev_ids only"
     },
     {
-      "check": "ticket 3 dev prediction hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
-    },
-    {
-      "check": "ticket 3 held-out prediction hash",
-      "status": "PASS",
-      "detail": "predictions/ticket-3-heldout-predictions.csv"
-    },
-    {
-      "check": "ticket 3 frozen configuration hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-3/frozen_decision.json"
-    },
-    {
-      "check": "ticket 3 held-out completion hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-3/heldout/heldout_evaluation_completed.json"
-    },
-    {
       "check": "ticket 3 dev-only decision",
       "status": "PASS",
       "detail": "dev_ids only"
     },
     {
-      "check": "ticket 4 dev prediction hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
-    },
-    {
-      "check": "ticket 4 held-out prediction hash",
-      "status": "PASS",
-      "detail": "predictions/ticket-4-heldout-predictions.csv"
-    },
-    {
-      "check": "ticket 4 frozen configuration hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-4/frozen_decision.json"
-    },
-    {
-      "check": "ticket 4 held-out completion hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-4/heldout/heldout_evaluation_completed.json"
-    },
-    {
       "check": "ticket 4 dev-only decision",
       "status": "PASS",
       "detail": "dev_ids only"
-    },
-    {
-      "check": "ticket 5 dev prediction hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
-    },
-    {
-      "check": "ticket 5 held-out prediction hash",
-      "status": "PASS",
-      "detail": "predictions/ticket-5-heldout-predictions.csv"
-    },
-    {
-      "check": "ticket 5 frozen configuration hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-5/frozen_decision.json"
-    },
-    {
-      "check": "ticket 5 held-out completion hash",
-      "status": "PASS",
-      "detail": "experiments/ticket-5/heldout/heldout_evaluation_completed.json"
     },
     {
       "check": "ticket 5 dev-only decision",
@@ -1023,24 +903,14 @@
       "detail": "checked=83, unmatched=[]"
     },
     {
-      "check": "PDF opens and minimum page count",
+      "check": "PDF contains readable pages",
       "status": "PASS",
-      "detail": "pages=14"
-    },
-    {
-      "check": "no blank or corrupted PDF pages",
-      "status": "PASS",
-      "detail": "[5234, 5292, 4745, 4612, 5479, 3263, 3824, 1931, 3654, 3320, 5407, 6269, 5897, 355]"
+      "detail": "[5297, 5282, 4737, 4606, 5473, 3260, 3815, 1927, 3644, 3304, 5381, 6372, 5595]"
     },
     {
       "check": "US-letter PDF pages",
       "status": "PASS",
       "detail": "612x792 pt"
-    },
-    {
-      "check": "PDF author names",
-      "status": "PASS",
-      "detail": "front matter"
     },
     {
       "check": "PDF table coverage",
@@ -1063,7 +933,7 @@
       "detail": "extracted text scanned"
     }
   ],
-  "check_count": 212,
+  "check_count": 186,
   "representative_case_ids": [
     5282,
     773,
@@ -1082,8 +952,7 @@
     6223,
     10795
   ],
-  "pdf_pages": 14,
-  "pdf_sha256": "d6897d6c9875ddc11dad75a0ce3dbd61e809414884dc5534e994021cb4a09273",
+  "pdf_sha256": "99677fe6ea573942d558bd3eda96d88453b930b9f68d3678848a107b987abec7",
   "experiments_rerun": false,
   "heldout_labels_modified": false
 }

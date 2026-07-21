@@ -1,8 +1,8 @@
 {
   "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket2_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-2/frozen_decision.json --output-dir experiments/ticket-2/heldout --confirm-single-heldout-evaluation",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.run_ticket2_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-2/frozen_decision.json --output-dir experiments/ticket-2/heldout --confirm-single-heldout-evaluation",
   "fit_rows": 4567,
-  "freeze_sha256": "d0818d6ad68f1900301e8738495ade949f96bcaa6d7646ef3e4b3a845896eaed",
+  "freeze_sha256": "4fc711acde06d2e0511c34abd2499ebaf30858b7d1fd3dfbc55b36fb09fe288b",
   "heldout_rows": 1523,
   "scope": "single held-out evaluation of the frozen Ticket 2 decision",
   "selected_variant": "normalize_urls_placeholder",

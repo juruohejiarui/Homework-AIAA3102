@@ -1,6 +1,6 @@
 {
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket4_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-4/frozen_decision.json --output-dir experiments/ticket-4/heldout --confirm-single-ticket4-evaluation",
-  "freeze_sha256": "098ce482f0bf9cf9ac5b0bd509d15310c9e6a48cb66c08651c87584316307845",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.run_ticket4_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-4/frozen_decision.json --output-dir experiments/ticket-4/heldout --confirm-single-ticket4-evaluation",
+  "freeze_sha256": "e72f7356ab24937088865a9d5b2cb728a35843c66335dfc37d1c938983eaa9ed",
   "heldout_rows": 1523,
   "scope": "Single held-out evaluation of the frozen Ticket 4 balanced Logistic Regression decision",
   "selection_or_tuning_on_heldout": false,

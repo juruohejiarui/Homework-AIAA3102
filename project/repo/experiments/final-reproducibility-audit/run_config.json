@@ -1,7 +1,7 @@
 {
-  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.verify_final_reproducibility",
+  "exact_command": "/home/hjr/miniconda3/envs/aiaa3102/bin/python3 -m pipeline.verify_final_reproducibility",
   "final_report_written": false,
-  "pid": 59102,
+  "pid": 86189,
   "scope": "Step 10 verification and final prediction publication only",
   "selection_reopened": false
 }

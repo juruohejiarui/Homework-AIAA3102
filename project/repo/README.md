@@ -99,8 +99,6 @@ v3/
 This project requires Python 3.10 or later. All dependencies are pinned in `requirements.txt`.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 # Create and activate a virtual environment (recommended)
 python -m venv .venv
 source .venv/bin/activate        # Linux / macOS

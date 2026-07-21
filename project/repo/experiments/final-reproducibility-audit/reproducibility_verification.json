@@ -3,14 +3,14 @@
   "audit": "Step 10 frozen-decision reproducibility; not the final report",
   "baseline_comparator": "ticket_1 clean held-out replay",
   "clean_process_pids": [
-    58724,
-    58799,
-    58878,
-    58950,
-    59038
+    85798,
+    85871,
+    85954,
+    86042,
+    86120
   ],
   "contradictory_active_result_files": [],
-  "created_at": "2026-07-21T20:15:23+08:00",
+  "created_at": "2026-07-21T23:35:11+08:00",
   "data_quality_audit_comparison": {
     "byte_exact": true,
     "columns": [
@@ -53,7 +53,7 @@
     }
   ],
   "manifest_path": "configs/frozen_decisions.json",
-  "manifest_sha256": "58a293b517d016767b6f7f64c0d43ce0ab2fb0ccea6c19bdcd7c3685080e403d",
+  "manifest_sha256": "fd1f7a397e36ca00b132f03108d52a7935c6aee9f398bbfdfc872c8b3ccdc855",
   "maximum_score_difference": 1.1102230246251565e-16,
   "metric_acceptance_tolerance": 1e-15,
   "result": "PASS",

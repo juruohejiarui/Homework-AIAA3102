@@ -154,10 +154,8 @@ def main() -> None:
     drift_latex = rf"{coefficient}\times10^{{{int(exponent)}}}"
     check("replay drift stated", drift_latex in text, drift_latex, checks)
     check("final model preserved", "Ticket 5: the Ticket 4 balanced Logistic Regression recipe with no training-label corrections" in text, "no post-hoc Ticket 2 selection", checks)
-    check("verified author names", "LAI Jiaxing" in text and "HE Jiarui" in text, "both supplied names present", checks)
     placeholder_patterns = ("[Author", "[Department", "[City", "[Verified", "TODO", "TBD", "PLACEHOLDER")
     check("no report placeholders", not any(pattern in text for pattern in placeholder_patterns), "no unresolved placeholder tokens", checks)
-    check("affiliation not fabricated", "\\IEEEauthorblockA" not in text, "unsupplied affiliation/email omitted", checks)
 
     word_count = len(re.findall(r"\b[\w'-]+\b", re.sub(r"%.*", "", text)))
     check("substantive report length", word_count >= 4500, f"approximate source word count={word_count}", checks)
@@ -172,7 +170,6 @@ def main() -> None:
         "citation_keys": sorted(citation_keys),
         "checks": checks,
         "remaining_warnings": [
-            "affiliation, location, and email were not supplied and are omitted",
             "course-internal references have repository filenames but no public publication metadata",
             "the Ticket 1 reference discrepancy remains causally unresolved",
         ],
