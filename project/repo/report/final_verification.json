@@ -35,12 +35,12 @@
     {
       "check": "asset generator validation",
       "status": "PASS",
-      "detail": "196/196 checks"
+      "detail": "206/206 checks"
     },
     {
       "check": "source validation",
       "status": "PASS",
-      "detail": "123/123 checks"
+      "detail": "134/134 checks"
     },
     {
       "check": "held-out labels unchanged",
@@ -988,6 +988,21 @@
       "detail": "61 rows match"
     },
     {
+      "check": "Ticket 4 model-grid figure source",
+      "status": "PASS",
+      "detail": "12 candidate metrics and F1 deltas match"
+    },
+    {
+      "check": "Ticket 1 historical probe table source",
+      "status": "PASS",
+      "detail": "33 baseline-relative dev/held-out rows match"
+    },
+    {
+      "check": "Ticket 1 historical probe figure source",
+      "status": "PASS",
+      "detail": "Figure 6 matches Table XV"
+    },
+    {
       "check": "dev/held-out figure source",
       "status": "PASS",
       "detail": "10 ticket/split values"
@@ -1005,17 +1020,17 @@
     {
       "check": "prose decimal provenance",
       "status": "PASS",
-      "detail": "checked=75, unmatched=[]"
+      "detail": "checked=83, unmatched=[]"
     },
     {
-      "check": "PDF opens and page count",
+      "check": "PDF opens and minimum page count",
       "status": "PASS",
-      "detail": "pages=12"
+      "detail": "pages=14"
     },
     {
       "check": "no blank or corrupted PDF pages",
       "status": "PASS",
-      "detail": "[5216, 4826, 5463, 4657, 3029, 4575, 3342, 3415, 2821, 6389, 6357, 2728]"
+      "detail": "[5234, 5292, 4745, 4612, 5479, 3263, 3824, 1931, 3654, 3320, 5407, 6269, 5897, 355]"
     },
     {
       "check": "US-letter PDF pages",
@@ -1030,12 +1045,12 @@
     {
       "check": "PDF table coverage",
       "status": "PASS",
-      "detail": "Tables I-XIV"
+      "detail": "Tables I-XV"
     },
     {
       "check": "PDF figure coverage",
       "status": "PASS",
-      "detail": "Figures 1-4"
+      "detail": "Figures 1-6"
     },
     {
       "check": "PDF section coverage",
@@ -1048,7 +1063,7 @@
       "detail": "extracted text scanned"
     }
   ],
-  "check_count": 209,
+  "check_count": 212,
   "representative_case_ids": [
     5282,
     773,
@@ -1067,8 +1082,8 @@
     6223,
     10795
   ],
-  "pdf_pages": 12,
-  "pdf_sha256": "a1b81e2a29963ca755f00b2c63170e087f3468dda05a49a177c4d23782384275",
+  "pdf_pages": 14,
+  "pdf_sha256": "d6897d6c9875ddc11dad75a0ce3dbd61e809414884dc5534e994021cb4a09273",
   "experiments_rerun": false,
   "heldout_labels_modified": false
 }

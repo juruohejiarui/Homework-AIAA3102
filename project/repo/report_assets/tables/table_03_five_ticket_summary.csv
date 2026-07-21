@@ -1,0 +1,6 @@
+ticket,model_name,decision,dev_f1,heldout_f1,heldout_accuracy,fixed_fp,fixed_fn,new_fp,new_fn
+1,raw_text_tfidf_logistic_regression,frozen_reference_baseline,0.73881204231082176,0.74918566775244289,0.79776756401838478,0,0,0,0
+2,normalize_urls_placeholder,adopt_url_placeholder_normalization,0.74031327287716409,0.7531172069825437,0.80499015101772819,22,8,4,15
+3,raw_text_tfidf_logistic_regression,retain_text_only_reject_shortcuts,0.73881204231082176,0.74918566775244289,0.79776756401838478,0,0,0,0
+4,lr_c1_balanced_default,adopt_balanced_logistic_regression_at_default_threshold,0.75208491281273682,0.75056861258529184,0.78397898883782013,0,35,56,0
+5,lr_c1_balanced_default,retain_ticket4_model_no_label_corrections,0.75208491281273682,0.75056861258529184,0.78397898883782013,0,35,56,0

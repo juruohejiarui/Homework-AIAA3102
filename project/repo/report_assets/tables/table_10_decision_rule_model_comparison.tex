@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Ticket 4 Model and Decision-Rule Comparison on Dev}
+\label{tab:model_comparison}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrrrrr}
+\hline
+variant & classifier family & class weight & decision threshold & precision target 1 & recall target 1 & f1 target 1 & accuracy & fixed fn & new fp \\
+\hline
+lr\_c1\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.790941 & 0.693130 & 0.738812 & 0.789232 & 0 & 0 \\
+lr\_c025\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.811133 & 0.622901 & 0.704663 & 0.775443 & 5 & 6 \\
+lr\_c05\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.791367 & 0.671756 & 0.726672 & 0.782666 & 3 & 4 \\
+lr\_c2\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.793867 & 0.711450 & 0.750403 & 0.796454 & 16 & 9 \\
+lr\_c4\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.786555 & 0.714504 & 0.748800 & 0.793828 & 22 & 22 \\
+lr\_c5\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.782392 & 0.719084 & 0.749403 & 0.793171 & 25 & 25 \\
+lr\_c10\_unweighted\_default & logistic\_regression & -- & 0.500000 & 0.777778 & 0.716031 & 0.745628 & 0.789888 & 28 & 34 \\
+lr\_c1\_balanced\_default & logistic\_regression & balanced & 0.500000 & 0.746988 & 0.757252 & 0.752085 & 0.785292 & 42 & 48 \\
+lr\_c5\_balanced\_default & logistic\_regression & balanced & 0.500000 & 0.751543 & 0.743511 & 0.747506 & 0.783979 & 37 & 47 \\
+lr\_c10\_balanced\_default & logistic\_regression & balanced & 0.500000 & 0.753846 & 0.748092 & 0.750958 & 0.786605 & 41 & 51 \\
+linear\_svc\_c1\_default & linear\_svc & -- & 0 & 0.772803 & 0.711450 & 0.740859 & 0.785949 & 27 & 43 \\
+lr\_c1\_unweighted\_tuned\_threshold & logistic\_regression & -- & 0.470000 & 0.777049 & 0.723664 & 0.749407 & 0.791858 & 20 & 16 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{All rows preserve the frozen text representation; only the listed classifier/regularization/class-weight/threshold lever changes.}
+\end{table*}

@@ -1,0 +1,52 @@
+{
+  "acceptance_rule": "Adopt the corrected-training model only if every proposal confidence is at least 0.90, dev F1 is no worse than 0.002 below the frozen Ticket 4 dev F1, and the candidate fixes at least as many Ticket 4 dev errors as it creates. Otherwise retain the frozen Ticket 4 model. Held-out cannot affect this decision.",
+  "adopt_corrected_training_model": false,
+  "candidate_dev_metrics": {
+    "accuracy": 0.7820091923834537,
+    "f1_target_1": 0.7488653555219364,
+    "false_negative": 160,
+    "false_positive": 172,
+    "precision_target_1": 0.7421289355322339,
+    "recall_target_1": 0.7557251908396947,
+    "true_negative": 696,
+    "true_positive": 495
+  },
+  "candidate_f1_delta_vs_ticket4": -0.003219557290800479,
+  "candidate_transitions_vs_frozen_baseline": {
+    "fixed_fn": 41,
+    "fixed_fp": 1,
+    "new_fn": 0,
+    "new_fp": 53,
+    "prediction_changes": 95
+  },
+  "candidate_transitions_vs_ticket4": {
+    "fixed_fn": 0,
+    "fixed_fp": 3,
+    "new_fn": 1,
+    "new_fp": 7,
+    "prediction_changes": 11
+  },
+  "decision_split": "dev_ids only",
+  "dev_labels_modified": false,
+  "error_balance_pass": false,
+  "fixed_errors": 3,
+  "heldout_labels_modified": false,
+  "heldout_rows_loaded": 0,
+  "minimum_proposal_confidence": 0.96,
+  "new_errors": 8,
+  "noninferiority_margin": -0.002,
+  "noninferiority_pass": false,
+  "original_dev_metrics": {
+    "accuracy": 0.7852921864740644,
+    "f1_target_1": 0.7520849128127369,
+    "false_negative": 159,
+    "false_positive": 168,
+    "precision_target_1": 0.7469879518072289,
+    "recall_target_1": 0.7572519083969466,
+    "true_negative": 700,
+    "true_positive": 496
+  },
+  "proposal_count": 8,
+  "selected_variant": "lr_c1_balanced_default",
+  "source_dataset_modified": false
+}

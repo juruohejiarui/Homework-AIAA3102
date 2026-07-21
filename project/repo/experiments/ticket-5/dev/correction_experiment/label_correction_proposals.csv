@@ -1,0 +1,9 @@
+id,original_label,proposed_label,confidence,evidence,split,applied_only_to_in_memory_experiment,source_dataset_modified
+4076,0,1,0.98,"Raw-exact duplicate group contains IDs 4068 and 4077 labeled 1 in train and ID 4072 labeled 1 in dev; the text explicitly describes genocide, refugees, and internally displaced people.",train,True,False
+6566,0,1,0.99,"Raw-exact train duplicates 6537 and 6548 are labeled 1; the text is a cleared traffic incident with injury, which is literal event reporting.",train,True,False
+8698,1,0,0.98,"Raw-exact train duplicates 8702 and 8714 are labeled 0; 'sinking feeling' refers figuratively to discovering a phone used 3G, not a disaster.",train,True,False
+8739,1,0,0.98,"Same raw-exact 3G-phone text as IDs 8698, 8702, and 8714; semantics are clearly figurative despite another canonical dev duplicate carrying label 1.",train,True,False
+1723,1,0,0.96,"Raw-exact train duplicate 1922 is labeled 0; the text is a lyric-like phrase about 'burning buildings,' not a report of an event.",train,True,False
+1760,1,0,0.96,Raw-exact train duplicate 1950 is labeled 0; the speaker hypothetically wants burning buildings in a music video rather than reporting a disaster.,train,True,False
+6097,1,0,0.99,"Four raw-exact duplicates (6087, 6090, 6111, 6118) are labeled 0; 'Hellfire' occurs in a religious charity quotation, not a literal fire.",train,True,False
+9472,1,0,0.98,Raw-exact dev duplicate 9470 is labeled 0; the text explicitly says Islam is the opposite of terrorism and reports no event.,train,True,False

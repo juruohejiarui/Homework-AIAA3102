@@ -1,7 +1,14 @@
 {
+  "balanced_classes": [],
+  "c_0_1": [],
+  "c_0_25": [],
+  "c_0_5": [],
+  "c_10": [],
+  "c_2": [],
+  "c_4": [],
+  "l1_normalization": [],
+  "lbfgs_solver": [],
   "leaky_tfidf_train_plus_dev": [],
-  "logreg_c_0_5": [],
-  "logreg_class_weight_balanced": [],
   "logreg_explicit_l2": [
     {
       "category": "FutureWarning",
@@ -11,7 +18,23 @@
   "logreg_max_iter_1000": [],
   "logreg_seed_9999": [],
   "logreg_solver_liblinear": [],
+  "max_df_0_9": [],
+  "max_features_20000": [],
+  "max_features_unbounded": [],
+  "min_df_2": [],
+  "min_df_3": [],
+  "min_df_5": [],
+  "no_idf": [],
+  "no_smooth_idf": [],
+  "no_sublinear_tf": [],
+  "no_vector_normalization": [],
   "raw_text_tfidf_logistic_regression": [],
+  "seed_1": [],
+  "seed_42": [],
+  "single_character_tokens": [],
   "tfidf_lowercase_false": [],
-  "tfidf_word_bigrams": []
+  "tfidf_word_bigrams": [],
+  "trigrams_added": [],
+  "unicode_accents": [],
+  "unigrams_only": []
 }

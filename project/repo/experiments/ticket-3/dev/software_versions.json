@@ -5,9 +5,9 @@
     "pandas": "3.0.3",
     "scikit-learn": "1.9.0"
   },
-  "platform": "Windows-11-10.0.26200-SP0",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
   "python": {
     "implementation": "CPython",
-    "version": "3.13.0"
+    "version": "3.13.14"
   }
 }

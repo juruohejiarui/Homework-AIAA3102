@@ -22,14 +22,15 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "train.csv"
 DEFAULT_PLAN_PATH = PROJECT_ROOT / "experiments" / "ticket-5" / "dev" / "audit_plan.json"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "experiments" / "ticket-5" / "dev"
-TICKET4_DEV_PREDICTIONS = (
-    PROJECT_ROOT
-    / "experiments"
-    / "ticket-4"
-    / "dev"
-    / "predictions"
-    / "lr_c1_balanced_default_dev_predictions.csv"
-)
+def _get_ticket4_dev_predictions_path() -> Path:
+    """Dynamically resolve Ticket 4 dev predictions path from frozen_decision.json."""
+    freeze_path = PROJECT_ROOT / "experiments" / "ticket-4" / "frozen_decision.json"
+    if freeze_path.exists():
+        import json as _json
+        variant = _json.loads(freeze_path.read_text(encoding="utf-8"))["selected_variant"]
+    else:
+        variant = "lr_c1_balanced_default"
+    return PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / f"{variant}_dev_predictions.csv"
 
 
 def _arguments() -> argparse.Namespace:
@@ -68,7 +69,11 @@ def main() -> int:
     args = _arguments()
     output_dir = args.output_dir.resolve()
     existing = [path for path in output_dir.iterdir()] if output_dir.exists() else []
-    allowed_existing = {args.plan.resolve()}
+    allowed_existing = {
+        args.plan.resolve(),
+        (output_dir / "curated_dev_review.csv").resolve(),
+        (output_dir / "label_correction_plan.json").resolve(),
+    }
     unexpected = [path for path in existing if path.resolve() not in allowed_existing]
     if unexpected:
         raise RuntimeError("Ticket 5 dev artifacts already exist; refusing repeated execution")
@@ -77,6 +82,8 @@ def main() -> int:
         raise ValueError("Ticket 5 pre-execution audit plan is invalid")
     if plan.get("heldout_access_by_dev_command") is not False:
         raise ValueError("Ticket 5 dev plan must prohibit held-out access")
+
+    ticket4_dev_predictions = _get_ticket4_dev_predictions_path()
 
     settings = load_reproducibility_settings()
     configure_reproducibility(settings)
@@ -105,7 +112,7 @@ def main() -> int:
         ignore_index=True,
     ).drop_duplicates(["review_source", "group_id", "id"], keep="first")
 
-    predictions = pd.read_csv(TICKET4_DEV_PREDICTIONS)
+    predictions = pd.read_csv(ticket4_dev_predictions)
     validate_prediction_frame(predictions, expected_ids=list(split.dev_ids))
     errors = predictions.merge(
         dev.loc[:, ["id", "text", "keyword", "location"]],
@@ -152,7 +159,7 @@ def main() -> int:
         "data_sha256": sha256(args.data),
         "split_sha256": sha256(args.split),
         "plan_sha256": sha256(args.plan),
-        "ticket4_dev_predictions_sha256": sha256(TICKET4_DEV_PREDICTIONS),
+        "ticket4_dev_predictions_sha256": sha256(ticket4_dev_predictions),
         "train_rows": len(train),
         "dev_rows": len(dev),
         "heldout_rows_loaded": 0,

@@ -1,0 +1,53 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+472,God's Kingdom (Heavenly Gov't) will rule over all people on the earth after Armageddon.  http://t.co/8HGcBXUkz0  http://t.co/4kopkCyvTt,armageddon,Worldwide,0,1,0,0.5440637498599186,0.4648802335988713,1->0,False,True,fixed_error
+675,Notley's tactful yet very direct response to Harper's attack on Alberta's gov't. Hell YEAH Premier! http://t.co/rzSUlzMOkX #ableg #cdnpoli,attack,Online 24/7. Not even kidding.,1,1,0,0.5323417161325543,0.4949480199092598,1->0,True,False,new_error
+773,GREAT PERFORMANCE CHIP FUEL/GAS SAVER CHEVY TAHOE/BLAZER/AVALANCHE/S-10 http://t.co/iCrZi5TqC5 http://t.co/ONxhKfHn2a,avalanche,,0,1,0,0.5330453472032985,0.46067960618170645,1->0,False,True,fixed_error
+902,Government Experts Concerned About Possible Bioterrorism Using GM Organisms: Scientists are concerned that the... http://t.co/SuMe5prO0F,bioterrorism,timeline kamu,1,1,0,0.5086661750194451,0.4993555581871499,1->0,True,False,new_error
+936,See a virtual tour of one of our listings on 547 Fir St Cannon Beach OR listed by Dorrie Caruana. http://t.co/nF46PAYTvw,blaze,,0,1,0,0.5197233362064878,0.4853213254202813,1->0,False,True,fixed_error
+1671,A Marshall Plan for the United States by Dambisa Moyo via @ProSyn #oped http://t.co/GnPStnvi5G via @po_st,bridge%20collapse,VitÌ_ria (ES),0,1,0,0.5406824803706612,0.49845342495200257,1->0,False,True,fixed_error
+1719,A Marshall Plan for the United States by Dambisa Moyo via @ProSyn #oped http://t.co/l5g2zJ3kgG via @po_st,bridge%20collapse,,0,1,0,0.5406824803706612,0.49845342495200257,1->0,False,True,fixed_error
+1737,? High Skies - Burning Buildings ? http://t.co/uVq41i3Kx2 #nowplaying,buildings%20burning,San Francisco,0,1,0,0.5472241654582184,0.49968471109088014,1->0,False,True,fixed_error
+2068,Another sad ocean casualty-Gray whale population in the Pacific listed as critically #endangered (#drone video) https://t.co/vwz3vZpmfb .,casualty,,1,0,1,0.4878098454160011,0.551643320050116,0->1,False,True,fixed_error
+2191,A better look at what this catastrophic rain and flooding has done to ourÛ_ https://t.co/5yRBegzafX,catastrophic,,1,0,1,0.4414137783190674,0.5319270978523872,0->1,False,True,fixed_error
+2569,am boy @Crash_______  https://t.co/f5Ylp7pfN7,crash,"Cleveland, OH",0,0,1,0.3490645053368548,0.5080136274348254,0->1,True,False,new_error
+2852,Cyclone by Double G would be the cherry on top to this outfit! #OOTD #DoubleGhats http://t.co/JSuHuPz6Vp http://t.co/N5vrFFRbo3,cyclone,Made in America,0,1,0,0.5091859187190805,0.4186647207657837,1->0,False,True,fixed_error
+3345,5000 year old ring fort to be demolished http://t.co/1PxpoqKTjo,demolished,Kilkenny,0,1,0,0.5014398370788119,0.4598764787160788,1->0,False,True,fixed_error
+3389,@samajp32 really needs to tone it down some in the weight room. RT @SoonerSportsTV: Demolition (cont) http://t.co/2o7Eva1cOe,demolition,"ÌÏT: 36.142163,-95.979189",0,1,0,0.5274071550645296,0.4935339899181329,1->0,False,True,fixed_error
+3495,Sad that biker beatdown derailed his pro-democracy work as @NYPDnews undercover: http://t.co/iHHRKG4V1S. http://t.co/aryU5qNgJJ,derailed,NYC,1,1,0,0.5606851658745077,0.4917095292613154,1->0,True,False,new_error
+4526,"Myanmar floods: Childfund https://t.co/pQHQ4JnZTT
+ and International Needs https://t.co/FX0W2Sq05F and CARE Aust @CAREemergencies appeals",emergency,Adelaide,1,0,1,0.3603035486620094,0.514895376547717,0->1,False,True,fixed_error
+4575,b/c it costs less to have sick people using emergency rooms?...grrrr.... http://t.co/vFbbcHwrFD,emergency%20plan,"Atlanta, GA",1,1,0,0.5147910629800333,0.4709917928374394,1->0,True,False,new_error
+4840,Updated #RockyFire map with Mandatory Evacuation areas (red) Advisory Evacuation (yellow) 2 Evac Centers (green) https://t.co/gZEgjoAKKw,evacuation,Northern California U.S.A.,1,0,1,0.4581397616174031,0.5253375323200301,0->1,False,True,fixed_error
+4915,@KopiteLuke1892 Its broken its fully exploded.,exploded,LFC x GSW,1,0,1,0.4884788528058244,0.5021900792190626,0->1,False,True,fixed_error
+4974,Exploring New Worlds: Three Moments of an Explosion by China MiÌ©ville http://t.co/OTrwZ1t9sp http://t.co/xVlkFCvfX5,explosion,,1,1,0,0.5775462685392196,0.49568047887991157,1->0,True,False,new_error
+5336,This fire is WAY too close wtf is going on ???? http://t.co/drf3mmRbyx,fire,,1,1,0,0.5347284229205278,0.46035932711063837,1->0,True,False,new_error
+5342,#news Politifiact: Harry Reid's '30 Percent of Women Served' Planned Parenthood Claim Is a 'Pants on Fire' Lie... http://t.co/bMSeDZOfSV,fire,,0,1,0,0.5041966732468321,0.4715874035568906,1->0,False,True,fixed_error
+5446,First Responders Convene for National Summit and Awards on GIS Technology http://t.co/0T9yd557rY #gisuserPR #geoTech,first%20responders,USA,0,1,0,0.5295470926609558,0.47111076135379515,1->0,False,True,fixed_error
+6000,#dam #gms Olap #world pres: http://t.co/mIcjNPuhG0 How To Recognize A Hazardous Waste And The Multidimensional http://t.co/Vddi5ChKTP,hazardous,,1,1,0,0.5097433552958403,0.43857039094116307,1->0,True,False,new_error
+6232,Remove the http://t.co/7IEiZ619h0 and Linkury Browser Hijacker http://t.co/tFeaNwhH2h http://t.co/SjicbhzFo4,hijacker,"El Paso, TX",0,1,0,0.6118569869107265,0.48904971420909776,1->0,False,True,fixed_error
+6299,quoted here--&gt;CNN: Purported ISIS video threatens Croatian hostage http://t.co/swVuZxi6gT,hostage,,1,1,0,0.504778217210236,0.46260373114738407,1->0,True,False,new_error
+6642,Punjab government flood relief platform: http://t.co/vULrClw7Bd realtime information on inundation damages rescue efforts &amp; travel alerts,inundation,,1,1,0,0.5117407200743372,0.4865153432490212,1->0,True,False,new_error
+6670,Now Playing: Landslide by Smashing Pumpkins http://t.co/7pQS4rshHb #89X,landslide,Detroit/Windsor,0,1,0,0.5691276604765169,0.49028116696581053,1->0,False,True,fixed_error
+6794,Check out this amazing footage of lightning filmed while lifting off from Chicago... http://t.co/AOg5chjmVs http://t.co/cLN2SXzY1Z,lightning,"State College, PA",0,1,0,0.5298432541927472,0.4552220984054219,1->0,False,True,fixed_error
+6979,Review: Dude Bro Party Massacre III http://t.co/f0WQlobOoy by Patrick BromleyThe title sa  http://t.co/THpBDPdj35,massacre,Cimerak - Pangandaran,0,1,0,0.5537026033633167,0.4884514540855923,1->0,False,True,fixed_error
+7332,A little filming inside a Nuclear Reactor at #Chernobyl @SonyProUSA @LumixUSA @DJIGlobal @ProfBrianCox @RT_America https://t.co/2GLjhvEAD9,nuclear%20reactor,"Denver, CO",0,0,1,0.4558113156996002,0.5431035983770478,0->1,True,False,new_error
+7908,"#CCOT #TCOT #radiation Nuclear Emergency Tracking Center
+http://t.co/KF74o2mcsC
+https://t.co/N2ZHrChCGV",radiation%20emergency,#MayGodHelpUS,0,0,1,0.4911585995006019,0.5341274058638577,0->1,True,False,new_error
+8204,http://t.co/cxB55H37jn Rascal Flatts Riot Tour Atlantic City Beach Concert-August 20 2015-2 Tickets http://t.co/H6tyYSGR30,riot,Bossland,0,1,0,0.5687785214472283,0.49820361493138016,1->0,False,True,fixed_error
+8250,Twitter is doing a count down to the rioting and financial collapse of Brazil #Rio2016 http://t.co/9mtrq5Jf4d,rioting,Australia,1,1,0,0.533758236141348,0.4999725761969743,1->0,True,False,new_error
+8613,SEISMIC AUDIO SA-15T SA15T Padded Black Speaker COVERS (2) - Qty of 1 = 1 Pair! http://t.co/2jbIbeib9G http://t.co/p5KtaqW5QG,seismic,,0,1,0,0.5399878147997657,0.4651096046267303,1->0,False,True,fixed_error
+8693,After a Few Years Afloat Pension Plans Start Sinking Again http://t.co/4cEEuzWHvf,sinking,Sacramento,1,1,0,0.5011483261905598,0.46492535594320883,1->0,True,False,new_error
+9248,Near them on the sand half sunk a shattered visage lies... http://t.co/0kCCG1BT06,sunk,glasgow,1,1,0,0.5343771585850472,0.47478384022611647,1->0,True,False,new_error
+9435,@LawfulSurvivor T-Dog had been holed up in an apartment store with several other survivors Glenn Morales Andrea Jacqui and Merle.--,survivors,Anywhere Safe,1,0,1,0.4894264609272589,0.5063592328350359,0->1,False,True,fixed_error
+9524,@BarackObama Senator John McCainÛªs Whoops Moment : Photographed Chilling With ISISÛ_ http://t.co/JNrOMsE1Z2 @acmilan http://t.co/w6Yu7Qs4CV,terrorist,,0,1,0,0.5020947344449446,0.4373788200324463,1->0,False,True,fixed_error
+9565,#PlayingNow #BLOODBOUND Seven Angels Media Stream http://t.co/dlY6rUuSqK,thunder,"Enfield, UK",0,1,0,0.5301524459086168,0.48407524081798464,1->0,False,True,fixed_error
+9873,...the kids at the orphanage were obviously not too traumatised. http://t.co/DjA4relcnS,traumatised,,0,1,0,0.5033300782582192,0.46033490771903873,1->0,False,True,fixed_error
+9932,Live updates: Boyd gets out of trouble in 5th http://t.co/3ugfpwMY2x via @detroitnews,trouble,"Rochester Hills, MI",0,1,0,0.5140257619620582,0.4826432212213345,1->0,False,True,fixed_error
+10243,The Architect Behind Kanye WestÛªs Volcano https://t.co/MUSBIk7EJf,volcano,"West Coast, Cali USA",0,0,1,0.4475837807342584,0.5348145229354221,0->1,True,False,new_error
+10304,Iranian warship points weapon at U.S. helicopter official says http://t.co/SnqfHpYm3O #tcot,weapon,MI - CA,1,1,0,0.5063593401269963,0.47453240876347064,1->0,True,False,new_error
+10371,PM Abe pledged to make every effort to seek a world without nuclear weapons. http://t.co/CBXnHhZ6kD,weapons,"Hawthorne, NE",1,1,0,0.5027566361454483,0.4731875492915305,1->0,True,False,new_error
+10410,Whirlwind Medusa Audio Snake: 16 microphone inputs 0 returns 150 ft http://t.co/mxkAlMQpdb http://t.co/8KZnhtYtt9,whirlwind,,1,1,0,0.5157868403649837,0.43221936287797424,1->0,True,False,new_error
+10414,Whirlwind that has lasted for more than an hour and still strong. A standstill in parts of middle east.,whirlwind,"Nairobi, Kenya",1,0,1,0.4991055944836061,0.5067764870185042,0->1,False,True,fixed_error
+10441,My brother-n-law riooooos got the call to head up north and fight the wild fires. Dudes a beast atÛ_ https://t.co/463P0yS0Eb,wild%20fires,,1,0,1,0.4871273565036005,0.5528871179488237,0->1,False,True,fixed_error
+10584,Texas Seeks Comment on Rules for Changes to Windstorm Insurer http://t.co/XQIadG9H2w http://t.co/yPEElMjdZY,windstorm,,0,1,0,0.5097794165921193,0.43764400217518595,1->0,False,True,fixed_error

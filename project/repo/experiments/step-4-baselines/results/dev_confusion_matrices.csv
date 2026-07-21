@@ -1,0 +1,5 @@
+model_name,actual_label,predicted_0,predicted_1
+train_majority_floor,0,868,0
+train_majority_floor,1,655,0
+raw_text_tfidf_logistic_regression,0,748,120
+raw_text_tfidf_logistic_regression,1,201,454

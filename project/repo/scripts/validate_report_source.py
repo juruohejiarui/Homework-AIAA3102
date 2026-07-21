@@ -70,8 +70,8 @@ def main() -> None:
 
     input_paths = re.findall(r"\\input\{([^}]+)\}", text)
     graphic_paths = re.findall(r"\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}", text)
-    check("14 generated tables included", len(input_paths) == 14, str(input_paths), checks)
-    check("4 generated figures included", len(graphic_paths) == 4, str(graphic_paths), checks)
+    check("15 generated tables included", len(input_paths) == 15, str(input_paths), checks)
+    check("6 generated figures included", len(graphic_paths) == 6, str(graphic_paths), checks)
     for raw_path in input_paths + graphic_paths:
         path = (REPORT / raw_path).resolve()
         if raw_path in graphic_paths and not path.is_file():
@@ -109,6 +109,9 @@ def main() -> None:
     transitions = pd.read_csv(ROOT / "report_assets/tables/table_07_prediction_transitions.csv")
     cases = pd.read_csv(ROOT / "report_assets/tables/table_12_representative_case_analysis.csv").set_index("id")
     comparison = json.loads((ROOT / "experiments/ticket-1/heldout/primary_contract_comparison.json").read_text(encoding="utf-8"))
+    probe_comparison = pd.read_csv(ROOT / "experiments/ticket-1/heldout/discrepancy_comparison.csv")
+    probe_table = pd.read_csv(ROOT / "report_assets/tables/table_15_ticket1_dev_probe_ledger.csv")
+    probe_figure = pd.read_csv(ROOT / "report_assets/figures/figure_06_ticket1_dev_probe_deltas_data.csv")
     replay = json.loads((ROOT / "experiments/final-reproducibility-audit/reproducibility_verification.json").read_text(encoding="utf-8"))
     audit = json.loads((ROOT / "experiments/ticket-5/final_audit_manifest.json").read_text(encoding="utf-8"))
 
@@ -135,6 +138,17 @@ def main() -> None:
     check("final transition values present", all(str(int(final_transition[key])) in text for key in ("fixed_fn", "new_fp")), final_transition.to_dict().__str__(), checks)
     check("machine ID 767 values used", "0.487623" in text and "0.544815" in text, "machine CSV values", checks)
     check("stale ID 767 values excluded", "0.481794" not in text and "0.544153" not in text, "stale narrative values absent", checks)
+    check("Ticket 1 historical probe table source", len(probe_comparison) == len(probe_table) == 33
+          and probe_comparison["probe"].equals(probe_table["probe"])
+          and all((probe_comparison["dev_f1_target_1"] - probe_table["dev_f1_target_1"]).abs() <= 1e-15)
+          and all((probe_comparison["heldout_f1_target_1"] - probe_table["heldout_f1_target_1"]).abs() <= 1e-15)
+          and all((probe_comparison["dev_delta_from_baseline"] * 100.0 - probe_table["dev_delta_percentage_points"]).abs() <= 1e-12)
+          and all((probe_comparison["heldout_delta_from_baseline"] * 100.0 - probe_table["heldout_delta_percentage_points"]).abs() <= 1e-12),
+          "33 baseline-relative dev/held-out F1 rows", checks)
+    check("Ticket 1 historical probe figure source", probe_table["probe"].equals(probe_figure["probe"])
+          and all((probe_table["dev_delta_percentage_points"] - probe_figure["dev_delta_percentage_points"]).abs() <= 1e-12)
+          and all((probe_table["heldout_delta_percentage_points"] - probe_figure["heldout_delta_percentage_points"]).abs() <= 1e-12),
+          "figure source matches Table XV", checks)
     check("heldout integrity stated", audit["heldout_labels_modified"] is False and audit["heldout_rows_removed"] == 0 and "no source or held-out label was changed" in text, "no held-out mutation", checks)
     coefficient, exponent = f"{replay['maximum_score_difference']:.2e}".split("e")
     drift_latex = rf"{coefficient}\times10^{{{int(exponent)}}}"

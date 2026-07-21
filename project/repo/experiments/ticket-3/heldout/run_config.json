@@ -1,0 +1,9 @@
+{
+  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket3_heldout --split starter/data/split_indices.json --freeze experiments/ticket-3/frozen_decision.json --output-dir experiments/ticket-3/heldout --confirm-single-ticket3-report",
+  "freeze_sha256": "4a555995bdfff447ea192e35e78abcfda02d4914375ebe4631b28faf7a0f957c",
+  "new_heldout_model_fit": false,
+  "reporting_mode": "reuse validated Ticket 1 stable held-out predictions; no refit or new prediction pass",
+  "scope": "Ticket 3 held-out report for the frozen decision to retain the existing text-only baseline",
+  "selection_or_tuning_on_heldout": false,
+  "ticket3_heldout_reporting_number": 1
+}

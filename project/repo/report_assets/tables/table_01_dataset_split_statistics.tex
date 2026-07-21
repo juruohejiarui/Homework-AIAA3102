@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Dataset and Fixed Split Statistics}
+\label{tab:dataset_split}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\hline
+split & rows & target 0 & target 1 & target 1 rate & unique ids & seed \\
+\hline
+train & 4567 & 2605 & 1962 & 0.429604 & 4567 & 3102 \\
+dev & 1523 & 868 & 655 & 0.430072 & 1523 & 3102 \\
+heldout & 1523 & 869 & 654 & 0.429416 & 1523 & 3102 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{Counts are tweets; target-1 rate is a fraction in [0,1]. The split is fixed and stratified.}
+\end{table*}

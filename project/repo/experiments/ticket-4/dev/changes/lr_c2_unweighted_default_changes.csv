@@ -1,0 +1,44 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+110,'By accident' they knew what was gon happen https://t.co/Ysxun5vCeh,accident,Norf Carolina,0,0,1,0.4866711270489187,0.5069936513345182,0->1,True,False,new_error
+174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183660052,0.4946396671018304,1->0,False,True,fixed_error
+402,Apocalypse please,apocalypse,Texas,0,0,1,0.4493645745894221,0.5074960160220882,0->1,True,False,new_error
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.512056342729524,0.49637263361093503,1->0,False,True,fixed_error
+1610,http://t.co/wMNOnHxEIr 'Nagasaki has to be forever the last city bombed with a nuclear weapon.' #bannukes,bombed,"Nairobi, Kenya ",1,0,1,0.4973945313563198,0.5252020793384917,0->1,False,True,fixed_error
+1741,@1acd4900c1424d1 @FoxNews no one is rioting burning down buildings or looting.,buildings%20burning,GO BLUE! HAIL YES!!,1,0,1,0.4865289206344229,0.5361853771095261,0->1,False,True,fixed_error
+2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169255,0.4705932537301843,1->0,True,False,new_error
+2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0,0.5275325531944569,0.4785619961960263,1->0,False,True,fixed_error
+3026,@Allahsfinest12 ...death to muslims,death,"Sylacauga, Alabama",1,0,1,0.4817204142044541,0.5201929664944834,0->1,False,True,fixed_error
+3463,@jozerphine LITERALLY JUST LOOK THAT UP! YEAH DERAILED AT SMITHSONIAN SO EVERYTHIGN IS SHUT DOWN FROM FEDERAL CENTER SW TO MCPHERSON,derailed,,1,0,1,0.4729885546301397,0.5517047815868215,0->1,False,True,fixed_error
+3464,Of what use exactly is the national Assembly? Honestly they are worthless. We are derailed.,derailed,"Kwara, Nigeria",0,0,1,0.4697788912799997,0.5085196733338757,0->1,True,False,new_error
+3484,So a train derailed and instead of me getting to work early like I would've I'm now late as fuck,derailed,DC,1,0,1,0.4407192382417809,0.5212111149045756,0->1,False,True,fixed_error
+4628,#Healthcare #Job in #Kodiak AK: Emergency Services Supervisor - Emergency... at Providence Health &amp; Services http://t.co/8KJ1wDAiGj #Jobs,emergency%20services,Alaska,0,1,0,0.5202693345035683,0.492772390406037,1->0,False,True,fixed_error
+4732,The EFAK would be designed for building occupants once they evacuate and report to their evacuation assembly sites,evacuate,"Chevy Chase, MD",1,0,1,0.4822085365347792,0.5454016004735488,0->1,False,True,fixed_error
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597520046,0.4990654316243484,1->0,False,True,fixed_error
+5458,As firefighters make gains on #RockyFire Jerry Brown is heading to the area to meet with first responders tomorrow morning,first%20responders,"Sacramento, CA",1,0,1,0.4746906504421361,0.5013200557794036,0->1,False,True,fixed_error
+5719,@Sweet2Young -runs at her for setting my forest on fire and bites the shit out of her neck-,forest%20fire,,1,0,1,0.4850099654004476,0.540098962009875,0->1,False,True,fixed_error
+6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237764,0.48921270659852184,1->0,False,True,fixed_error
+6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0,0.5163946237233049,0.4989486890900354,1->0,False,True,fixed_error
+6420,@pattonoswalt @FoxNews Wait I thought Fecal Hurricane was on SciFi? Maybe that was turdnado. I've been forgeting up a shit storm lately.,hurricane,,1,0,1,0.4947911418212289,0.5197597805350528,0->1,False,True,fixed_error
+6542,@NEPD_Loyko Texans hope you are wrong. Radio in Houston have him as starter after Foster injury,injury,"Houston, TX",0,0,1,0.464350640209588,0.5130381384854755,0->1,True,False,new_error
+6854,The media needs to stop publicizing mass murder. So many sick people do these things for the eyes of the world &amp; the media is not helping.,mass%20murder,New Sweden,1,0,1,0.4753826162084852,0.5042722279234315,0->1,False,True,fixed_error
+6885,@JakeGint the mass murder got her hot and bothered but at heart she was always a traditionalist.,mass%20murder,,1,0,1,0.4478752843485133,0.5073813218800586,0->1,False,True,fixed_error
+7229,We have overrun a Natural Disaster Survival server!,natural%20disaster,"Suburban Detroit, Michigan",1,0,1,0.4856233998228822,0.5079946168350515,0->1,False,True,fixed_error
+7753,Police unions retard justice &amp; drain gov $ but cops vote 4 Rs so Rs go after teachers unions instead! @DCCC @VJ44 @Lawrence @JBouie @mmfa,police,,0,0,1,0.4684176316310182,0.5150680555111181,0->1,True,False,new_error
+8154,I have an unexplainable desire to watch The Rescuers. #childhooddefined,rescuers,,0,0,1,0.4900587869816755,0.5188352649360853,0->1,True,False,new_error
+8289,AM `bbcnews The Ass British Insurers says rioting will cost insurers163;millions. But police numbers are reduced by blind fat controllers.,rioting,A little house in the outback.,1,0,1,0.4597348234079438,0.5009128190873477,0->1,False,True,fixed_error
+8795,"Thu Aug 06 2015 01:20:32 GMT+0000 (UTC)
+#millcityio #20150613
+theramin sirens",sirens,... -.- -.--,1,0,1,0.4968999562282334,0.5310051006869968,0->1,False,True,fixed_error
+9463,"Does this apply to Muslims/terrorism?
+Or Catholicism/homophobia?",terrorism,,0,0,1,0.4641664498616655,0.5235074253188982,0->1,True,False,new_error
+9551,The few I warned about .. Were just as I expected.. They are a threat to his soul,threat,"Ohio, USA",0,0,1,0.4967742365844112,0.5727817165882236,0->1,True,False,new_error
+9690,@Rebelmage2 I'm glad you got away XD But My 'be safe' was in reference to a tornado near calgary and drum heller at around 4 :O,tornado,,1,0,1,0.4479482101944277,0.5316748925190126,0->1,False,True,fixed_error
+9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0,0.5171927159339386,0.49107671690888255,1->0,False,True,fixed_error
+9810,in response to trauma Children of Addicts develop a defensive self - one that decreases vulnerability. (3,trauma,"Montgomery County, MD",0,0,1,0.4938710079910158,0.5050408528396666,0->1,True,False,new_error
+10130,Ancient Mayan Tablet Found in Jungle Temple http://t.co/qp6q8RS8ON,upheaval,"Wisconsin, USA",1,1,0,0.5263920812154439,0.48063175274741987,1->0,True,False,new_error
+10203,If you were the NWS wth a rotating storm w/ a report of a 'HUGE' / 'MASSIVE' / 'VIOLENT' tornado what would you do? https://t.co/J3dI85IST5,violent%20storm,,1,0,1,0.4858328220652796,0.621120988176958,0->1,False,True,fixed_error
+10209,"nside a Dragon's belly. Or an ice cave under
+a volcano in Kamchatka | Photography by
+å©Daniel Korzhonov
+http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098492,0.466885324113485,1->0,True,False,new_error
+10536,Windstorm lastingness perquisite - acquiesce in a twister retreat: ZiUW http://t.co/iRt4kkgsJx,windstorm,,1,1,0,0.517413485326659,0.47577072988592634,1->0,True,False,new_error

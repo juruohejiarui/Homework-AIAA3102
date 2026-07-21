@@ -1,0 +1,1 @@
+/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.reproduce_frozen_ticket --ticket 4 --manifest configs/frozen_decisions.json --output-dir experiments/final-reproducibility-audit/replays/ticket-4

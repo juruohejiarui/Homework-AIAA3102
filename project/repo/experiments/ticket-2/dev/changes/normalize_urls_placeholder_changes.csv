@@ -1,57 +1,57 @@
 id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
-110,'By accident' they knew what was gon happen https://t.co/Ysxun5vCeh,accident,Norf Carolina,0,0,1,0.4866711270489145,0.5725337170325607,0->1,True,False,new_error
-174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183659895,0.4201903652169,1->0,False,True,fixed_error
+110,'By accident' they knew what was gon happen https://t.co/Ysxun5vCeh,accident,Norf Carolina,0,0,1,0.48667112704891874,0.5725337170324656,0->1,True,False,new_error
+174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183660052,0.4201903652168364,1->0,False,True,fixed_error
 237,"#OMG! I don't believe this. #RIP bro
-#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756524,0.47129938448366815,1->0,True,False,new_error
-512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.5120563427295252,0.48985618196121067,1->0,False,True,fixed_error
-971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848427,0.4486040594750767,1->0,False,True,fixed_error
-1887,Leader of #Zionism STOP BURNING #Babies  https://t.co/6xYsDN2Xz0,burning,Earthling (For now!),1,0,1,0.42220712808918176,0.5117284491343232,0->1,False,True,fixed_error
-1895,The Burning Legion has RETURNED!  https://t.co/hKsbmijqZ1,burning,NY,0,0,1,0.42011557878988015,0.5210525462298503,0->1,True,False,new_error
-1921,Killing Black Babies at Planned Parenthood where's the demonstrations looting of PP burning down the buildings Black Babies Lives Matter,burning%20buildings,"Sacramento, CA",1,0,1,0.4926164398516754,0.5032688109294793,0->1,False,True,fixed_error
-2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169084,0.4886292184956078,1->0,True,False,new_error
-2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0,0.6314778275767235,0.47473359177008917,1->0,False,True,fixed_error
-2530,Westminister Sr22 W / Knott St **Trfc Collision-No Inj** http://t.co/EUmlca1Edw,collision,"Orange County, California",1,1,0,0.5443241357382528,0.4980397323934158,1->0,True,False,new_error
-2575,Crash and burn ?? https://t.co/Jq2iB1Ob1X,crash,,1,0,1,0.43978757784795486,0.6000164811533788,0->1,False,True,fixed_error
-2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0,0.5275325531944466,0.4811698989884931,1->0,False,True,fixed_error
-3388,@MentalHealthGov like AHHhhh fix the ALEC made state med tort and work comp laws leading to the injustice in our MH https://t.co/qEjEDwsFDG,demolition,"New York, USA",0,0,1,0.4275559548667325,0.5001622099763388,0->1,True,False,new_error
-3567,If the Taken movies took place in India 2 (Vine by @JusReign) https://t.co/hxM8C8e33D,desolate,,0,0,1,0.49251943048049557,0.5668390067191935,0->1,True,False,new_error
-3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000146,0.4815211506137681,1->0,False,True,fixed_error
-3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0,0.5329051435429631,0.48848243651110695,1->0,False,True,fixed_error
-4012,beautiful disaster https://t.co/qm5Sz0fyU8,disaster,en el pais de los arrechos,0,0,1,0.47572152802335443,0.6507031084481855,0->1,True,False,new_error
-4014,My first staining attempt was a disaster https://t.co/buDmKE3nNf,disaster,,0,0,1,0.42741986128473397,0.541095148412817,0->1,True,False,new_error
-4550,See Aug 4 2015 PoconoRecord @EmergencyMgtMag - How Many Households Have an #Emergency Plan? | http://t.co/7zlsUmIess http://t.co/TdccH01N7q,emergency%20plan,"Alexandria, VA, USA",1,1,0,0.5615938777307199,0.47908602315023413,1->0,True,False,new_error
-4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0,0.5484739669811307,0.4952132088037435,1->0,False,True,fixed_error
-4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0,0.5244978354434978,0.49190526578953414,1->0,False,True,fixed_error
-5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597519968,0.4953788764232414,1->0,False,True,fixed_error
-5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273623,0.45989872602516674,1->0,True,False,new_error
-5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0,0.5794638757469245,0.39498193707942963,1->0,False,True,fixed_error
-6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237609,0.48484706277652234,1->0,False,True,fixed_error
-6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0,0.6118569869106921,0.48904971420922044,1->0,False,True,fixed_error
-6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0,0.6118569869106921,0.48904971420922044,1->0,False,True,fixed_error
-6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0,0.5163946237232752,0.44806622038447075,1->0,False,True,fixed_error
-6896,Okay not sure the word 'mass murder' applies during this war but it was horrendous none the less. https://t.co/Sb3rjQqzIX,mass%20murder,"Huntsville, AL",1,0,1,0.46458365456800366,0.5277979364864699,0->1,False,True,fixed_error
-7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0,0.5954571356633346,0.4903908213054499,1->0,False,True,fixed_error
-8060,Policyholders object to Clico rescue plan http://t.co/E4DvI9vUXZ http://t.co/JyCpf8iYhg,rescue,Trinidad & Tobago,1,1,0,0.5647289198233264,0.43396918941414625,1->0,True,False,new_error
-8154,I have an unexplainable desire to watch The Rescuers. #childhooddefined,rescuers,,0,0,1,0.4900587869816859,0.503836758273208,0->1,True,False,new_error
-8430,PUT SANDSTORM DOWN!!!! https://t.co/EfKCoegJck,sandstorm,"North Carolina, USA",0,0,1,0.41907191755907636,0.5595488365727579,0->1,True,False,new_error
-8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0,0.5416531814780787,0.45051108383648236,1->0,False,True,fixed_error
-8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0,0.5070019989638579,0.46283190427804355,1->0,False,True,fixed_error
+#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756566,0.4712993844836221,1->0,True,False,new_error
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.512056342729524,0.48985618196112113,1->0,False,True,fixed_error
+971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848288,0.44860405947503434,1->0,False,True,fixed_error
+1887,Leader of #Zionism STOP BURNING #Babies  https://t.co/6xYsDN2Xz0,burning,Earthling (For now!),1,0,1,0.42220712808918603,0.5117284491342378,0->1,False,True,fixed_error
+1895,The Burning Legion has RETURNED!  https://t.co/hKsbmijqZ1,burning,NY,0,0,1,0.4201155787898734,0.5210525462297326,0->1,True,False,new_error
+1921,Killing Black Babies at Planned Parenthood where's the demonstrations looting of PP burning down the buildings Black Babies Lives Matter,burning%20buildings,"Sacramento, CA",1,0,1,0.49261643985166664,0.5032688109293684,0->1,False,True,fixed_error
+2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169255,0.4886292184954842,1->0,True,False,new_error
+2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0,0.6314778275767777,0.4747335917699917,1->0,False,True,fixed_error
+2530,Westminister Sr22 W / Knott St **Trfc Collision-No Inj** http://t.co/EUmlca1Edw,collision,"Orange County, California",1,1,0,0.5443241357382685,0.49803973239340765,1->0,True,False,new_error
+2575,Crash and burn ?? https://t.co/Jq2iB1Ob1X,crash,,1,0,1,0.43978757784794875,0.6000164811533507,0->1,False,True,fixed_error
+2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0,0.5275325531944569,0.48116989898841156,1->0,False,True,fixed_error
+3388,@MentalHealthGov like AHHhhh fix the ALEC made state med tort and work comp laws leading to the injustice in our MH https://t.co/qEjEDwsFDG,demolition,"New York, USA",0,0,1,0.42755595486671155,0.500162209976273,0->1,True,False,new_error
+3567,If the Taken movies took place in India 2 (Vine by @JusReign) https://t.co/hxM8C8e33D,desolate,,0,0,1,0.4925194304804893,0.5668390067191506,0->1,True,False,new_error
+3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000026,0.4815211506137314,1->0,False,True,fixed_error
+3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0,0.5329051435429902,0.4884824365110603,1->0,False,True,fixed_error
+4012,beautiful disaster https://t.co/qm5Sz0fyU8,disaster,en el pais de los arrechos,0,0,1,0.47572152802337314,0.650703108448036,0->1,True,False,new_error
+4014,My first staining attempt was a disaster https://t.co/buDmKE3nNf,disaster,,0,0,1,0.42741986128470677,0.5410951484127912,0->1,True,False,new_error
+4550,See Aug 4 2015 PoconoRecord @EmergencyMgtMag - How Many Households Have an #Emergency Plan? | http://t.co/7zlsUmIess http://t.co/TdccH01N7q,emergency%20plan,"Alexandria, VA, USA",1,1,0,0.5615938777307514,0.4790860231501699,1->0,True,False,new_error
+4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0,0.548473966981153,0.49521320880370623,1->0,False,True,fixed_error
+4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0,0.5244978354435214,0.4919052657894684,1->0,False,True,fixed_error
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597520046,0.4953788764232094,1->0,False,True,fixed_error
+5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273591,0.4598987260250836,1->0,True,False,new_error
+5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0,0.5794638757469507,0.3949819370793328,1->0,False,True,fixed_error
+6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237764,0.48484706277650574,1->0,False,True,fixed_error
+6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0,0.6118569869107265,0.48904971420909776,1->0,False,True,fixed_error
+6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0,0.6118569869107265,0.48904971420909776,1->0,False,True,fixed_error
+6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0,0.5163946237233049,0.4480662203844012,1->0,False,True,fixed_error
+6896,Okay not sure the word 'mass murder' applies during this war but it was horrendous none the less. https://t.co/Sb3rjQqzIX,mass%20murder,"Huntsville, AL",1,0,1,0.4645836545679682,0.5277979364863122,0->1,False,True,fixed_error
+7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0,0.5954571356633654,0.49039082130541,1->0,False,True,fixed_error
+8060,Policyholders object to Clico rescue plan http://t.co/E4DvI9vUXZ http://t.co/JyCpf8iYhg,rescue,Trinidad & Tobago,1,1,0,0.5647289198233721,0.4339691894140586,1->0,True,False,new_error
+8154,I have an unexplainable desire to watch The Rescuers. #childhooddefined,rescuers,,0,0,1,0.4900587869816755,0.5038367582731592,0->1,True,False,new_error
+8430,PUT SANDSTORM DOWN!!!! https://t.co/EfKCoegJck,sandstorm,"North Carolina, USA",0,0,1,0.41907191755906886,0.5595488365727449,0->1,True,False,new_error
+8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0,0.5416531814781036,0.45051108383640937,1->0,False,True,fixed_error
+8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0,0.5070019989638421,0.4628319042780588,1->0,False,True,fixed_error
 8795,"Thu Aug 06 2015 01:20:32 GMT+0000 (UTC)
 #millcityio #20150613
-theramin sirens",sirens,... -.- -.--,1,0,1,0.49689995622822936,0.5150117063524963,0->1,False,True,fixed_error
-9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473890103,0.49423932836108136,1->0,False,True,fixed_error
-9550,WHITE AMERICANS ARE THE BIGGEST THREAT IN THE WORLD. DUH https://t.co/7PaOvYzTtw,threat,front row at a show,0,0,1,0.4636465098924204,0.5557492243752988,0->1,True,False,new_error
-9551,The few I warned about .. Were just as I expected.. They are a threat to his soul,threat,"Ohio, USA",0,0,1,0.49677423658442704,0.5080684290362597,0->1,True,False,new_error
-9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0,0.5171927159339293,0.4420751504902105,1->0,False,True,fixed_error
-9810,in response to trauma Children of Addicts develop a defensive self - one that decreases vulnerability. (3,trauma,"Montgomery County, MD",0,0,1,0.49387100799102207,0.5133510419883139,0->1,True,False,new_error
-10130,Ancient Mayan Tablet Found in Jungle Temple http://t.co/qp6q8RS8ON,upheaval,"Wisconsin, USA",1,1,0,0.5263920812154085,0.46506672234066593,1->0,True,False,new_error
-10203,If you were the NWS wth a rotating storm w/ a report of a 'HUGE' / 'MASSIVE' / 'VIOLENT' tornado what would you do? https://t.co/J3dI85IST5,violent%20storm,,1,0,1,0.48583282206530204,0.5716509556354172,0->1,False,True,fixed_error
+theramin sirens",sirens,... -.- -.--,1,0,1,0.4968999562282334,0.5150117063524465,0->1,False,True,fixed_error
+9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473889971,0.49423932836107504,1->0,False,True,fixed_error
+9550,WHITE AMERICANS ARE THE BIGGEST THREAT IN THE WORLD. DUH https://t.co/7PaOvYzTtw,threat,front row at a show,0,0,1,0.46364650989239975,0.5557492243752019,0->1,True,False,new_error
+9551,The few I warned about .. Were just as I expected.. They are a threat to his soul,threat,"Ohio, USA",0,0,1,0.4967742365844112,0.5080684290361821,0->1,True,False,new_error
+9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0,0.5171927159339386,0.44207515049016005,1->0,False,True,fixed_error
+9810,in response to trauma Children of Addicts develop a defensive self - one that decreases vulnerability. (3,trauma,"Montgomery County, MD",0,0,1,0.4938710079910158,0.5133510419883139,0->1,True,False,new_error
+10130,Ancient Mayan Tablet Found in Jungle Temple http://t.co/qp6q8RS8ON,upheaval,"Wisconsin, USA",1,1,0,0.5263920812154439,0.46506672234059543,1->0,True,False,new_error
+10203,If you were the NWS wth a rotating storm w/ a report of a 'HUGE' / 'MASSIVE' / 'VIOLENT' tornado what would you do? https://t.co/J3dI85IST5,violent%20storm,,1,0,1,0.4858328220652796,0.5716509556352833,0->1,False,True,fixed_error
 10209,"nside a Dragon's belly. Or an ice cave under
 a volcano in Kamchatka | Photography by
 å©Daniel Korzhonov
-http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098314,0.47881258338574595,1->0,True,False,new_error
-10421,Richard returns after whirlwind few days http://t.co/L8W30WFW3R #MLB,whirlwind,Internet,1,1,0,0.5378505096348914,0.49603569040020556,1->0,True,False,new_error
-10527,Oregon's biggest wildfire slows growth http://t.co/P0GoS5URXG via @katunews,wildfire,"Eddyville, Oregon 97343",1,1,0,0.5298624181989355,0.4905378817815983,1->0,True,False,new_error
-10536,Windstorm lastingness perquisite - acquiesce in a twister retreat: ZiUW http://t.co/iRt4kkgsJx,windstorm,,1,1,0,0.5174134853266275,0.4597783512683276,1->0,True,False,new_error
-10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0,0.5368685953378197,0.49679150211058737,1->0,False,True,fixed_error
-10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0,0.5312923407705948,0.4789599461744009,1->0,False,True,fixed_error
+http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098492,0.4788125833857104,1->0,True,False,new_error
+10421,Richard returns after whirlwind few days http://t.co/L8W30WFW3R #MLB,whirlwind,Internet,1,1,0,0.5378505096349157,0.4960356904001157,1->0,True,False,new_error
+10527,Oregon's biggest wildfire slows growth http://t.co/P0GoS5URXG via @katunews,wildfire,"Eddyville, Oregon 97343",1,1,0,0.5298624181989622,0.49053788178151164,1->0,True,False,new_error
+10536,Windstorm lastingness perquisite - acquiesce in a twister retreat: ZiUW http://t.co/iRt4kkgsJx,windstorm,,1,1,0,0.517413485326659,0.45977835126827826,1->0,True,False,new_error
+10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0,0.5368685953378366,0.4967915021104899,1->0,False,True,fixed_error
+10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0,0.5312923407705978,0.47895994617431686,1->0,False,True,fixed_error

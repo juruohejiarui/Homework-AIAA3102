@@ -1,0 +1,12 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+1863,@thomasvissman22 @KeithyyL Keithyy gettin burned outta the blocks and on social media.... http://t.co/dlkuFtLQnF,burned,"Upper St Clair, PA",0,1,0,0.5007857333695511,0.49804729740699066,1->0,False,True,fixed_error
+1969,Where are the protests ? The riots? The burning buildings? How come you don't see any of that crap happening when... http://t.co/1QOchsPYbw,burning%20buildings,Charlotte County Florida,1,1,0,0.5167686386505639,0.49297078854699433,1->0,True,False,new_error
+2064,Was '80s New #Wave a #Casualty of #AIDS?: Tweet And Since theyÛªd grown up watching DavidÛ_ http://t.co/qBecjli7cx,casualty,London UK,0,0,1,0.4974264608444578,0.5032311534455841,0->1,True,False,new_error
+3633,The Hobbit: The Desolation of Smaug - Ed Sheeran 'I See Fire' [HD] http://t.co/OXRwRJZmnu,desolation,??????,0,0,1,0.4961883735047593,0.5023511434521539,0->1,True,False,new_error
+4014,My first staining attempt was a disaster https://t.co/buDmKE3nNf,disaster,,0,0,1,0.4965085567697246,0.5022090595741443,0->1,True,False,new_error
+4858,Evacuation drill at work. The fire doors wouldn't open so i got to smash the emergency release glass #feelingmanly,evacuation,"Brisbane, Queensland",0,0,1,0.4996683550809571,0.5020748209749397,0->1,True,False,new_error
+4981,Aspiring musician &amp; song writer shares her talent at the GMMBC Youth Explosion on this past Saturday. http://t.co/OmjMTU9kFG,explosion,,0,1,0,0.503726394522146,0.49898445482188253,1->0,False,True,fixed_error
+7959,Former Freedom Surf/Spa Razed to Make Way for New Homes http://t.co/EX6JzQJ3NI,razed,,0,0,1,0.4991186533856603,0.5014770565690265,0->1,True,False,new_error
+9470,In #islam saving a person is equal in reward to saving all humans! Islam is the opposite of terrorism!,terrorism,Jeddah_Saudi Arabia.,0,1,0,0.6330437168615483,0.46527780886342945,1->0,False,True,fixed_error
+9943,Love how I don't get in any trouble for having people over and the house still being trashed,trouble,,0,0,1,0.4939007929892749,0.50538362492826,0->1,True,False,new_error
+10380,Death certificates safes weapons and Teslas: DEF CON 23 #Security http://t.co/KMDQm3NlnS,weapons,London,0,0,1,0.4989343856394557,0.5000291572084116,0->1,True,False,new_error

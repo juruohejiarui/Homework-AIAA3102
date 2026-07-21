@@ -1,0 +1,8 @@
+split,variant,model_name,precision_target_1,recall_target_1,f1_target_1,accuracy,true_negative,false_positive,false_negative,true_positive,f1_delta_vs_frozen_baseline,prediction_changes,fixed_fp,fixed_fn,new_fp,new_fn,converged,n_iter,robustness_affected_rows,robustness_changed_predictions,robustness_invariance_rate
+dev,raw_text_control,raw_text_tfidf_logistic_regression,0.7909407665505227,0.69312977099236639,0.73881204231082176,0.78923177938279709,748,120,201,454,0,0,0,0,0,0,True,[15],,,
+dev,normalize_urls_placeholder,normalize_urls_placeholder,0.80465949820788529,0.68549618320610683,0.74031327287716409,0.7931713722915299,759,109,206,449,0.0015012305663423,50,22,6,11,11,True,[22],767,0,1
+dev,normalize_mentions_placeholder,normalize_mentions_placeholder,0.79020979020979021,0.69007633587786255,0.73675631621841886,0.78791858174655283,748,120,203,452,-0.0020557260924028002,8,2,1,2,3,True,[14],399,0,1
+dev,strip_hashtag_marker,strip_hashtag_marker,0.7909407665505227,0.69312977099236639,0.73881204231082176,0.78923177938279709,748,120,201,454,0,0,0,0,0,0,True,[15],330,0,1
+dev,normalize_punctuation_to_space,normalize_punctuation_to_space,0.79232111692844676,0.69312977099236639,0.73941368078175895,0.78988837820091928,749,119,201,454,0.00060163847093710001,5,1,2,0,2,True,[15],1445,0,1
+dev,unicode_casefold,unicode_casefold,0.7909407665505227,0.69312977099236639,0.73881204231082176,0.78923177938279709,748,120,201,454,0,0,0,0,0,0,True,[15],1523,0,1
+dev,normalize_emoji_placeholder,normalize_emoji_placeholder,0.7909407665505227,0.69312977099236639,0.73881204231082176,0.78923177938279709,748,120,201,454,0,0,0,0,0,0,True,[15],0,0,1

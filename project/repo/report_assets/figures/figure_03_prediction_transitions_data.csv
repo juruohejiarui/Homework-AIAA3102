@@ -1,0 +1,6 @@
+ticket,split,baseline,fixed_fp,fixed_fn,new_fp,new_fn
+1,heldout,ticket_1_frozen,0,0,0,0
+2,heldout,ticket_1_frozen,22,8,4,15
+3,heldout,ticket_1_frozen,0,0,0,0
+4,heldout,ticket_1_frozen,0,35,56,0
+5,heldout,ticket_1_frozen,0,35,56,0

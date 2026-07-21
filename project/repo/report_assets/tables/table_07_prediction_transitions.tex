@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\caption{Prediction Transitions Relative to the Ticket 1 Frozen Baseline}
+\label{tab:prediction_transitions}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\hline
+ticket & split & baseline & fixed fp & fixed fn & new fp & new fn \\
+\hline
+1 & dev & ticket\_1\_frozen & 0 & 0 & 0 & 0 \\
+1 & heldout & ticket\_1\_frozen & 0 & 0 & 0 & 0 \\
+2 & dev & ticket\_1\_frozen & 22 & 6 & 11 & 11 \\
+2 & heldout & ticket\_1\_frozen & 22 & 8 & 4 & 15 \\
+3 & dev & ticket\_1\_frozen & 0 & 0 & 0 & 0 \\
+3 & heldout & ticket\_1\_frozen & 0 & 0 & 0 & 0 \\
+4 & dev & ticket\_1\_frozen & 0 & 42 & 48 & 0 \\
+4 & heldout & ticket\_1\_frozen & 0 & 35 & 56 & 0 \\
+5 & dev & ticket\_1\_frozen & 0 & 42 & 48 & 0 \\
+5 & heldout & ticket\_1\_frozen & 0 & 35 & 56 & 0 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{Fixed/new FP/FN are disjoint correctness transitions; counts are tweets and are reported separately for dev and held-out.}
+\end{table*}

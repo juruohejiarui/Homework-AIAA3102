@@ -1,0 +1,24 @@
+{
+  "freeze_sha256": "d0818d6ad68f1900301e8738495ade949f96bcaa6d7646ef3e4b3a845896eaed",
+  "metrics": {
+    "accuracy": 0.8049901510177282,
+    "f1_target_1": 0.7531172069825436,
+    "false_negative": 201,
+    "false_positive": 96,
+    "precision_target_1": 0.825136612021858,
+    "recall_target_1": 0.6926605504587156,
+    "true_negative": 773,
+    "true_positive": 453
+  },
+  "prediction_sha256": "14fa2e4f1bdc99c97abd6d39a418279545cc084786ad6785dd948673202ef54a",
+  "selection_reopened": false,
+  "status": "ticket2_heldout_evaluation_completed",
+  "ticket2_heldout_evaluation_count": 1,
+  "transitions_vs_frozen_baseline": {
+    "fixed_fn": 8,
+    "fixed_fp": 22,
+    "new_fn": 15,
+    "new_fp": 4,
+    "prediction_changes": 49
+  }
+}

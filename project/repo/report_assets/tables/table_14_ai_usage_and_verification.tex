@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{AI Usage and Verification Workflow}
+\label{tab:ai_usage}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}p{0.16\textwidth}p{0.25\textwidth}p{0.34\textwidth}p{0.18\textwidth}@{}}
+\hline
+\textbf{workflow stage} & \textbf{ai assistance} & \textbf{verification} & \textbf{human accountability} \\
+\hline
+Evidence and contract audit & Repository inspection, requirement decomposition, and artifact inventory & Claims cross-checked against handout, clarifications, generated CSV/JSON, predictions, and frozen manifests & Final interpretation and submission remain the student's responsibility \\
+Implementation and testing & Pipeline/test drafting and diagnostic support & Automated tests, deterministic split checks, artifact schemas, hashes, and row-level assertions & No AI statement is accepted when it conflicts with machine-generated artifacts \\
+Experiment orchestration & Running authorized dev experiments and producing frozen artifacts & Selections use dev evidence; held-out completion files and frozen manifests enforce usage policy & Held-out results did not reopen ticket selection \\
+Reproducibility audit & Clean-process replay and comparison of archived outputs & Five tickets reproduced with stable IDs, labels, metrics, transitions, and bounded score tolerances & Exact score identity is not overstated \\
+Report asset generation & Programmatic table, figure, and case-material generation & This script recomputes metrics, verifies labels/IDs/configuration, and records an asset manifest & Generated assets must be reviewed before inclusion \\
+\hline
+\end{tabular}
+\par\footnotesize{This is a workflow declaration, not a substitute for source citations or human review.}
+\end{table*}

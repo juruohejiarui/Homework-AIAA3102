@@ -1,0 +1,507 @@
+variant,feature_group,direction,rank,feature,coefficient,absolute_coefficient
+keyword_only,keyword,positive,1,keyword__keyword_derailment,2.5982599763923035,2.5982599763923035
+keyword_only,keyword,positive,2,keyword__keyword_debris,2.478322158696367,2.478322158696367
+keyword_only,keyword,positive,3,keyword__keyword_rescuers,2.4098291179615243,2.4098291179615243
+keyword_only,keyword,positive,4,keyword__keyword_wreckage,2.372973433512023,2.372973433512023
+keyword_only,keyword,positive,5,keyword__keyword_oil%20spill,2.372973433512023,2.372973433512023
+keyword_only,keyword,positive,6,keyword__keyword_typhoon,2.185445314373713,2.185445314373713
+keyword_only,keyword,positive,7,keyword__keyword_outbreak,2.1487494646254444,2.1487494646254444
+keyword_only,keyword,positive,8,keyword__keyword_suicide%20bombing,2.0697293613754213,2.0697293613754213
+keyword_only,keyword,positive,9,keyword__keyword_bombing,1.8827734665547389,1.8827734665547389
+keyword_only,keyword,positive,10,keyword__keyword_wild%20fires,1.8500752206928466,1.8500752206928466
+keyword_only,keyword,positive,11,keyword__keyword_suicide%20bomb,1.8500752206928466,1.8500752206928466
+keyword_only,keyword,positive,12,keyword__keyword_suicide%20bomber,1.7693645079700184,1.7693645079700184
+keyword_only,keyword,positive,13,keyword__keyword_evacuated,1.7586978400950002,1.7586978400950002
+keyword_only,keyword,positive,14,keyword__keyword_forest%20fires,1.6660608210213574,1.6660608210213574
+keyword_only,keyword,positive,15,keyword__keyword_terrorist,1.6660608210213572,1.6660608210213572
+keyword_only,keyword,positive,16,keyword__keyword_sandstorm,1.6381435236942032,1.6381435236942032
+keyword_only,keyword,positive,17,keyword__keyword_bridge%20collapse,1.620047496910172,1.620047496910172
+keyword_only,keyword,positive,18,keyword__keyword_nuclear%20disaster,1.571546363303821,1.571546363303821
+keyword_only,keyword,positive,19,keyword__keyword_mass%20murder,1.5542161586711443,1.5542161586711443
+keyword_only,keyword,positive,20,keyword__keyword_airplane%20accident,1.5202681933888096,1.5202681933888096
+keyword_only,keyword,positive,21,keyword__keyword_dust%20storm,1.5092397293013387,1.5092397293013387
+keyword_only,keyword,positive,22,keyword__keyword_hostages,1.5092397293013387,1.5092397293013387
+keyword_only,keyword,positive,23,keyword__keyword_violent%20storm,1.4619861523918962,1.4619861523918962
+keyword_only,keyword,positive,24,keyword__keyword_drought,1.4619861523918962,1.4619861523918962
+keyword_only,keyword,positive,25,keyword__keyword_buildings%20on%20fire,1.4619861523918962,1.4619861523918962
+keyword_only,keyword,negative,1,keyword__keyword_aftershock,-2.0017727650014425,2.0017727650014425
+keyword_only,keyword,negative,2,keyword__keyword_body%20bags,-2.0017727650014425,2.0017727650014425
+keyword_only,keyword,negative,3,keyword__keyword_bloody,-1.8663944448032523,1.8663944448032523
+keyword_only,keyword,negative,4,keyword__keyword_body%20bag,-1.8663944448032523,1.8663944448032523
+keyword_only,keyword,negative,5,keyword__keyword_blazing,-1.8281000239457088,1.8281000239457088
+keyword_only,keyword,negative,6,keyword__keyword_ruin,-1.8275173057888905,1.8275173057888905
+keyword_only,keyword,negative,7,keyword__keyword_wrecked,-1.7700890448639357,1.7700890448639357
+keyword_only,keyword,negative,8,keyword__keyword_hellfire,-1.64009794917622,1.64009794917622
+keyword_only,keyword,negative,9,keyword__keyword_stretcher,-1.5656260508367612,1.5656260508367612
+keyword_only,keyword,negative,10,keyword__keyword_panicking,-1.565626050836761,1.565626050836761
+keyword_only,keyword,negative,11,keyword__keyword_explode,-1.565626050836761,1.565626050836761
+keyword_only,keyword,negative,12,keyword__keyword_obliterate,-1.565626050836761,1.565626050836761
+keyword_only,keyword,negative,13,keyword__keyword_blew%20up,-1.531444472444548,1.531444472444548
+keyword_only,keyword,negative,14,keyword__keyword_blizzard,-1.5254569989379996,1.5254569989379996
+keyword_only,keyword,negative,15,keyword__keyword_electrocute,-1.5254569989379996,1.5254569989379996
+keyword_only,keyword,negative,16,keyword__keyword_harm,-1.4993885178327528,1.4993885178327528
+keyword_only,keyword,negative,17,keyword__keyword_fear,-1.4660128683440903,1.4660128683440903
+keyword_only,keyword,negative,18,keyword__keyword_traumatised,-1.4381353454842993,1.4381353454842993
+keyword_only,keyword,negative,19,keyword__keyword_smoke,-1.4312061677017205,1.4312061677017205
+keyword_only,keyword,negative,20,keyword__keyword_siren,-1.4312061677017203,1.4312061677017203
+keyword_only,keyword,negative,21,keyword__keyword_armageddon,-1.3948417495219194,1.3948417495219194
+keyword_only,keyword,negative,22,keyword__keyword_screamed,-1.3948417495219194,1.3948417495219194
+keyword_only,keyword,negative,23,keyword__keyword_screaming,-1.3948417495219192,1.3948417495219192
+keyword_only,keyword,negative,24,keyword__keyword_avalanche,-1.39041377894067,1.39041377894067
+keyword_only,keyword,negative,25,keyword__keyword_blight,-1.3567747502923004,1.3567747502923004
+length_only,length,positive,1,length__character_count,1.1553308815287462,1.1553308815287462
+length_only,length,positive,2,length__mean_token_length,-0.06989195699041253,0.06989195699041253
+length_only,length,positive,3,length__whitespace_token_count,-0.895837413684667,0.895837413684667
+length_only,length,negative,1,length__whitespace_token_count,-0.895837413684667,0.895837413684667
+length_only,length,negative,2,length__mean_token_length,-0.06989195699041253,0.06989195699041253
+length_only,length,negative,3,length__character_count,1.1553308815287462,1.1553308815287462
+keyword_plus_length,keyword,positive,1,keyword__keyword_derailment,2.515753646966689,2.515753646966689
+keyword_plus_length,keyword,positive,2,keyword__keyword_debris,2.4408974744824583,2.4408974744824583
+keyword_plus_length,keyword,positive,3,keyword__keyword_oil%20spill,2.267302995507076,2.267302995507076
+keyword_plus_length,keyword,positive,4,keyword__keyword_rescuers,2.156010520902781,2.156010520902781
+keyword_plus_length,keyword,positive,5,keyword__keyword_wreckage,2.117572208700575,2.117572208700575
+keyword_plus_length,keyword,positive,6,keyword__keyword_suicide%20bombing,2.0159751040811775,2.0159751040811775
+keyword_plus_length,keyword,positive,7,keyword__keyword_typhoon,1.9839521846857204,1.9839521846857204
+keyword_plus_length,keyword,positive,8,keyword__keyword_wild%20fires,1.9473712819006757,1.9473712819006757
+keyword_plus_length,keyword,positive,9,keyword__keyword_outbreak,1.9090926991723844,1.9090926991723844
+keyword_plus_length,keyword,positive,10,keyword__keyword_bombing,1.77062660095019,1.77062660095019
+keyword_plus_length,keyword,positive,11,keyword__keyword_sandstorm,1.7464825886170627,1.7464825886170627
+keyword_plus_length,keyword,positive,12,keyword__keyword_suicide%20bomb,1.7291784608817202,1.7291784608817202
+keyword_plus_length,keyword,positive,13,keyword__keyword_suicide%20bomber,1.671903202124209,1.671903202124209
+keyword_plus_length,keyword,positive,14,keyword__keyword_forest%20fires,1.6283595496756664,1.6283595496756664
+keyword_plus_length,keyword,positive,15,keyword__keyword_terrorist,1.622748005047593,1.622748005047593
+keyword_plus_length,keyword,positive,16,keyword__keyword_dust%20storm,1.5959845161522692,1.5959845161522692
+keyword_plus_length,keyword,positive,17,keyword__keyword_evacuated,1.5584379570749347,1.5584379570749347
+keyword_plus_length,keyword,positive,18,keyword__keyword_mass%20murder,1.5458936756743185,1.5458936756743185
+keyword_plus_length,keyword,positive,19,keyword__keyword_airplane%20accident,1.5317683561276993,1.5317683561276993
+keyword_plus_length,keyword,positive,20,keyword__keyword_bridge%20collapse,1.5284273676405071,1.5284273676405071
+keyword_plus_length,keyword,positive,21,keyword__keyword_drought,1.446495821970234,1.446495821970234
+keyword_plus_length,keyword,positive,22,keyword__keyword___MISSING_KEYWORD__,1.4457406325552615,1.4457406325552615
+keyword_plus_length,keyword,positive,23,keyword__keyword_buildings%20on%20fire,1.4139420755595637,1.4139420755595637
+keyword_plus_length,keyword,positive,24,keyword__keyword_wildfire,1.3334921067836962,1.3334921067836962
+keyword_plus_length,keyword,positive,25,keyword__keyword_nuclear%20disaster,1.3225792114483343,1.3225792114483343
+keyword_plus_length,keyword,negative,1,keyword__keyword_body%20bag,-2.167351400572731,2.167351400572731
+keyword_plus_length,keyword,negative,2,keyword__keyword_body%20bags,-2.139571043617227,2.139571043617227
+keyword_plus_length,keyword,negative,3,keyword__keyword_aftershock,-2.0132950378781325,2.0132950378781325
+keyword_plus_length,keyword,negative,4,keyword__keyword_blazing,-1.6892876512192865,1.6892876512192865
+keyword_plus_length,keyword,negative,5,keyword__keyword_wrecked,-1.6473443647042418,1.6473443647042418
+keyword_plus_length,keyword,negative,6,keyword__keyword_bloody,-1.6129843184588346,1.6129843184588346
+keyword_plus_length,keyword,negative,7,keyword__keyword_quarantine,-1.5848522545213655,1.5848522545213655
+keyword_plus_length,keyword,negative,8,keyword__keyword_obliterate,-1.5661145534777055,1.5661145534777055
+keyword_plus_length,keyword,negative,9,keyword__keyword_stretcher,-1.5532944987040735,1.5532944987040735
+keyword_plus_length,keyword,negative,10,keyword__keyword_armageddon,-1.471808062587727,1.471808062587727
+keyword_plus_length,keyword,negative,11,keyword__keyword_ruin,-1.4427870415375468,1.4427870415375468
+keyword_plus_length,keyword,negative,12,keyword__keyword_avalanche,-1.4407290032556768,1.4407290032556768
+keyword_plus_length,keyword,negative,13,keyword__keyword_harm,-1.4390464900676325,1.4390464900676325
+keyword_plus_length,keyword,negative,14,keyword__keyword_survive,-1.403121091440842,1.403121091440842
+keyword_plus_length,keyword,negative,15,keyword__keyword_blizzard,-1.3811277072316195,1.3811277072316195
+keyword_plus_length,keyword,negative,16,keyword__keyword_destruction,-1.3664114178774067,1.3664114178774067
+keyword_plus_length,keyword,negative,17,keyword__keyword_blight,-1.357920196263081,1.357920196263081
+keyword_plus_length,keyword,negative,18,keyword__keyword_fear,-1.3571698307012192,1.3571698307012192
+keyword_plus_length,keyword,negative,19,keyword__keyword_panicking,-1.3447624144900863,1.3447624144900863
+keyword_plus_length,keyword,negative,20,keyword__keyword_explode,-1.3434270093666185,1.3434270093666185
+keyword_plus_length,keyword,negative,21,keyword__keyword_hellfire,-1.3366220936293502,1.3366220936293502
+keyword_plus_length,keyword,negative,22,keyword__keyword_army,-1.321258561238434,1.321258561238434
+keyword_plus_length,keyword,negative,23,keyword__keyword_siren,-1.3129504196898065,1.3129504196898065
+keyword_plus_length,keyword,negative,24,keyword__keyword_sinking,-1.2600381989055374,1.2600381989055374
+keyword_plus_length,keyword,negative,25,keyword__keyword_electrocute,-1.2507698333349964,1.2507698333349964
+keyword_plus_length,length,positive,1,length__character_count,0.7974783083521287,0.7974783083521287
+keyword_plus_length,length,positive,2,length__mean_token_length,0.07647166466153714,0.07647166466153714
+keyword_plus_length,length,positive,3,length__whitespace_token_count,-0.5738409675509436,0.5738409675509436
+keyword_plus_length,length,negative,1,length__whitespace_token_count,-0.5738409675509436,0.5738409675509436
+keyword_plus_length,length,negative,2,length__mean_token_length,0.07647166466153714,0.07647166466153714
+keyword_plus_length,length,negative,3,length__character_count,0.7974783083521287,0.7974783083521287
+location_only,location,positive,1,location__location_India,1.5135196007314502,1.5135196007314502
+location_only,location,positive,2,location__location_Mumbai,1.34393006722695,1.34393006722695
+location_only,location,positive,3,location__location_Nigeria,1.3152744682652446,1.3152744682652446
+location_only,location,positive,4,location__location_Midwest,1.2066285659856264,1.2066285659856264
+location_only,location,positive,5,location__location_Nigeria ,1.2066285659856264,1.2066285659856264
+location_only,location,positive,6,"location__location_Bend, Oregon",1.2066285659856264,1.2066285659856264
+location_only,location,positive,7,location__location_UK,1.0495813816087154,1.0495813816087154
+location_only,location,positive,8,location__location_Africa,1.0305098987267363,1.0305098987267363
+location_only,location,positive,9,location__location_ARGENTINA,1.0305098987267363,1.0305098987267363
+location_only,location,positive,10,location__location_Financial News and Views,1.0305098987267363,1.0305098987267363
+location_only,location,positive,11,"location__location_Oklahoma City, OK",1.0305098987267363,1.0305098987267363
+location_only,location,positive,12,location__location_Birmingham,1.0305098987267363,1.0305098987267363
+location_only,location,positive,13,location__location_Nairobi-KENYA,1.0305098987267363,1.0305098987267363
+location_only,location,positive,14,"location__location_Calgary, Alberta",1.0305098987267363,1.0305098987267363
+location_only,location,positive,15,location__location_Calgary,1.0305098987267363,1.0305098987267363
+location_only,location,positive,16,location__location_Melbourne,1.0305098987267363,1.0305098987267363
+location_only,location,positive,17,location__location_MAD as Hell,1.0305098987267363,1.0305098987267363
+location_only,location,positive,18,location__location_Puerto Rico,1.0305098987267363,1.0305098987267363
+location_only,location,positive,19,location__location_canada,1.0305098987267363,1.0305098987267363
+location_only,location,positive,20,location__location_USA,0.9456193017545392,0.9456193017545392
+location_only,location,positive,21,"location__location_Paterson, New Jersey ",0.8655094667091426,0.8655094667091426
+location_only,location,positive,22,location__location_Earth,0.8655094667091426,0.8655094667091426
+location_only,location,positive,23,"location__location_Melbourne, Australia",0.8655094667091426,0.8655094667091426
+location_only,location,positive,24,"location__location_Sacramento, CA",0.8655094667091425,0.8655094667091425
+location_only,location,positive,25,"location__location_Mumbai, Maharashtra",0.7980458705688449,0.7980458705688449
+location_only,location,negative,1,location__location_304,-1.1934919907028527,1.1934919907028527
+location_only,location,negative,2,location__location_NYC,-1.108477619774421,1.108477619774421
+location_only,location,negative,3,location__location_Indiana,-0.8935099134627442,0.8935099134627442
+location_only,location,negative,4,location__location_Wisconsin,-0.8935099134627442,0.8935099134627442
+location_only,location,negative,5,location__location_Coventry,-0.8935099134627442,0.8935099134627442
+location_only,location,negative,6,"location__location_Boston, MA",-0.8935099134627442,0.8935099134627442
+location_only,location,negative,7,"location__location_Brooklyn, NY",-0.8935099134627442,0.8935099134627442
+location_only,location,negative,8,location__location_New York,-0.8680170327336556,0.8680170327336556
+location_only,location,negative,9,location__location_United Kingdom,-0.8213851649155487,0.8213851649155487
+location_only,location,negative,10,location__location_Utah,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,11,location__location_Glasgow,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,12,"location__location_Seattle, Washington",-0.7513336509777535,0.7513336509777535
+location_only,location,negative,13,"location__location_Leeds, England",-0.7513336509777535,0.7513336509777535
+location_only,location,negative,14,location__location_Taylor Swift,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,15,"location__location_Des Moines, IA",-0.7513336509777535,0.7513336509777535
+location_only,location,negative,16,location__location_Las Vegas,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,17,location__location_China,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,18,location__location_Barbados,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,19,location__location_?,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,20,location__location_#FLIGHTCITY UK  ,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,21,"location__location_Adelaide, Australia",-0.7513336509777535,0.7513336509777535
+location_only,location,negative,22,location__location_Buy Give Me My Money ,-0.7513336509777535,0.7513336509777535
+location_only,location,negative,23,location__location_Kenya,-0.730867098899791,0.730867098899791
+location_only,location,negative,24,"location__location_San Diego, CA",-0.7255891884222668,0.7255891884222668
+location_only,location,negative,25,location__location_Florida,-0.662424931028389,0.662424931028389
+keyword_plus_location,keyword,positive,1,keyword__keyword_derailment,2.474482067274784,2.474482067274784
+keyword_plus_location,keyword,positive,2,keyword__keyword_oil%20spill,2.443610291048236,2.443610291048236
+keyword_plus_location,keyword,positive,3,keyword__keyword_debris,2.436474004296323,2.436474004296323
+keyword_plus_location,keyword,positive,4,keyword__keyword_rescuers,2.3377825149423295,2.3377825149423295
+keyword_plus_location,keyword,positive,5,keyword__keyword_wreckage,2.3161680614724234,2.3161680614724234
+keyword_plus_location,keyword,positive,6,keyword__keyword_outbreak,2.1929466764381065,2.1929466764381065
+keyword_plus_location,keyword,positive,7,keyword__keyword_typhoon,2.134568994544644,2.134568994544644
+keyword_plus_location,keyword,positive,8,keyword__keyword_suicide%20bombing,1.9824049673680266,1.9824049673680266
+keyword_plus_location,keyword,positive,9,keyword__keyword_wild%20fires,1.9566261618511727,1.9566261618511727
+keyword_plus_location,keyword,positive,10,keyword__keyword_bombing,1.796426858535059,1.796426858535059
+keyword_plus_location,keyword,positive,11,keyword__keyword_evacuated,1.775920262856211,1.775920262856211
+keyword_plus_location,keyword,positive,12,keyword__keyword_terrorist,1.6737660748962429,1.6737660748962429
+keyword_plus_location,keyword,positive,13,keyword__keyword_suicide%20bomber,1.6677271082977259,1.6677271082977259
+keyword_plus_location,keyword,positive,14,keyword__keyword_forest%20fires,1.6513753534683957,1.6513753534683957
+keyword_plus_location,keyword,positive,15,keyword__keyword_suicide%20bomb,1.649038849035284,1.649038849035284
+keyword_plus_location,keyword,positive,16,keyword__keyword_bridge%20collapse,1.61900588656825,1.61900588656825
+keyword_plus_location,keyword,positive,17,keyword__keyword_nuclear%20disaster,1.5865411945810775,1.5865411945810775
+keyword_plus_location,keyword,positive,18,keyword__keyword_mass%20murder,1.5194560023599641,1.5194560023599641
+keyword_plus_location,keyword,positive,19,keyword__keyword_airplane%20accident,1.50648289808123,1.50648289808123
+keyword_plus_location,keyword,positive,20,keyword__keyword_dust%20storm,1.4955592463073468,1.4955592463073468
+keyword_plus_location,keyword,positive,21,keyword__keyword_buildings%20on%20fire,1.487058415829192,1.487058415829192
+keyword_plus_location,keyword,positive,22,keyword__keyword_razed,1.4752498451983886,1.4752498451983886
+keyword_plus_location,keyword,positive,23,keyword__keyword_drought,1.4720207637026916,1.4720207637026916
+keyword_plus_location,keyword,positive,24,keyword__keyword_hostages,1.4611587041582144,1.4611587041582144
+keyword_plus_location,keyword,positive,25,keyword__keyword_devastation,1.452454103537407,1.452454103537407
+keyword_plus_location,keyword,negative,1,keyword__keyword_body%20bags,-1.9261197391198963,1.9261197391198963
+keyword_plus_location,keyword,negative,2,keyword__keyword_aftershock,-1.9029409232435996,1.9029409232435996
+keyword_plus_location,keyword,negative,3,keyword__keyword_ruin,-1.8489161863308383,1.8489161863308383
+keyword_plus_location,keyword,negative,4,keyword__keyword_blazing,-1.7938335099217246,1.7938335099217246
+keyword_plus_location,keyword,negative,5,keyword__keyword_bloody,-1.7913553876645685,1.7913553876645685
+keyword_plus_location,keyword,negative,6,keyword__keyword_wrecked,-1.7530093286609354,1.7530093286609354
+keyword_plus_location,keyword,negative,7,keyword__keyword_body%20bag,-1.683073873359134,1.683073873359134
+keyword_plus_location,keyword,negative,8,keyword__keyword_hellfire,-1.6526299969315876,1.6526299969315876
+keyword_plus_location,keyword,negative,9,keyword__keyword_explode,-1.5259204776240078,1.5259204776240078
+keyword_plus_location,keyword,negative,10,keyword__keyword_harm,-1.4962888022266057,1.4962888022266057
+keyword_plus_location,keyword,negative,11,keyword__keyword_blizzard,-1.4918663961295888,1.4918663961295888
+keyword_plus_location,keyword,negative,12,keyword__keyword_obliterate,-1.4803060458951427,1.4803060458951427
+keyword_plus_location,keyword,negative,13,keyword__keyword_smoke,-1.4675771540500917,1.4675771540500917
+keyword_plus_location,keyword,negative,14,keyword__keyword_fear,-1.4670510512069144,1.4670510512069144
+keyword_plus_location,keyword,negative,15,keyword__keyword_panicking,-1.4637626169901932,1.4637626169901932
+keyword_plus_location,keyword,negative,16,keyword__keyword_electrocute,-1.4600057842463925,1.4600057842463925
+keyword_plus_location,keyword,negative,17,keyword__keyword_blew%20up,-1.4578730969989107,1.4578730969989107
+keyword_plus_location,keyword,negative,18,keyword__keyword_blight,-1.4260675718565097,1.4260675718565097
+keyword_plus_location,keyword,negative,19,keyword__keyword_siren,-1.4204451052229212,1.4204451052229212
+keyword_plus_location,keyword,negative,20,keyword__keyword_armageddon,-1.4185328541240791,1.4185328541240791
+keyword_plus_location,keyword,negative,21,keyword__keyword_stretcher,-1.400039459375303,1.400039459375303
+keyword_plus_location,keyword,negative,22,keyword__keyword_avalanche,-1.3991333326747337,1.3991333326747337
+keyword_plus_location,keyword,negative,23,keyword__keyword_screamed,-1.398833216340221,1.398833216340221
+keyword_plus_location,keyword,negative,24,keyword__keyword_screaming,-1.3957311892118018,1.3957311892118018
+keyword_plus_location,keyword,negative,25,keyword__keyword_traumatised,-1.3802497338840871,1.3802497338840871
+keyword_plus_location,location,positive,1,location__location_Birmingham,1.08412893278157,1.08412893278157
+keyword_plus_location,location,positive,2,location__location_UK,1.0713951662497017,1.0713951662497017
+keyword_plus_location,location,positive,3,location__location_India,1.053149186138504,1.053149186138504
+keyword_plus_location,location,positive,4,location__location_U.K.,1.0424439891504522,1.0424439891504522
+keyword_plus_location,location,positive,5,location__location_Kashmir!,1.036005684226208,1.036005684226208
+keyword_plus_location,location,positive,6,"location__location_Calgary, Alberta",0.9921903251407184,0.9921903251407184
+keyword_plus_location,location,positive,7,location__location_Puerto Rico,0.9782231093697792,0.9782231093697792
+keyword_plus_location,location,positive,8,"location__location_Raleigh, NC",0.964167466169755,0.964167466169755
+keyword_plus_location,location,positive,9,"location__location_Houston, TX",0.9536721461271773,0.9536721461271773
+keyword_plus_location,location,positive,10,location__location_The Netherlands,0.9524831443281433,0.9524831443281433
+keyword_plus_location,location,positive,11,"location__location_Paterson, New Jersey ",0.9361135159535059,0.9361135159535059
+keyword_plus_location,location,positive,12,location__location_Nigeria,0.9337421689134355,0.9337421689134355
+keyword_plus_location,location,positive,13,location__location_Nigeria ,0.9142614236546868,0.9142614236546868
+keyword_plus_location,location,positive,14,"location__location_Mumbai, Maharashtra",0.9140635426229299,0.9140635426229299
+keyword_plus_location,location,positive,15,location__location_Melbourne,0.9134719860229067,0.9134719860229067
+keyword_plus_location,location,positive,16,location__location_canada,0.9045211507123444,0.9045211507123444
+keyword_plus_location,location,positive,17,location__location_?????,0.8842299223198664,0.8842299223198664
+keyword_plus_location,location,positive,18,location__location_Midwest,0.8767159457068949,0.8767159457068949
+keyword_plus_location,location,positive,19,location__location_New York City,0.837398494254134,0.837398494254134
+keyword_plus_location,location,positive,20,location__location_Sydney Australia,0.8181516473299197,0.8181516473299197
+keyword_plus_location,location,positive,21,location__location_Cherry Creek Denver CO,0.8169583612481724,0.8169583612481724
+keyword_plus_location,location,positive,22,"location__location_Wailuku, Maui",0.7871073039175406,0.7871073039175406
+keyword_plus_location,location,positive,23,"location__location_Oklahoma City, OK",0.7823864545837991,0.7823864545837991
+keyword_plus_location,location,positive,24,location__location_???,0.7661536397017584,0.7661536397017584
+keyword_plus_location,location,positive,25,"location__location_Sacramento, CA",0.7645680648663894,0.7645680648663894
+keyword_plus_location,location,negative,1,location__location_Indiana,-1.096060521041223,1.096060521041223
+keyword_plus_location,location,negative,2,"location__location_Leeds, England",-1.0686220905458548,1.0686220905458548
+keyword_plus_location,location,negative,3,location__location_United Kingdom,-0.9586985381945611,0.9586985381945611
+keyword_plus_location,location,negative,4,location__location_far away,-0.9235698222752473,0.9235698222752473
+keyword_plus_location,location,negative,5,"location__location_San Diego, CA",-0.9160651389470688,0.9160651389470688
+keyword_plus_location,location,negative,6,"location__location_Seattle, Washington",-0.8787028685424991,0.8787028685424991
+keyword_plus_location,location,negative,7,"location__location_Muntinlupa City, Philippines",-0.8505374001703733,0.8505374001703733
+keyword_plus_location,location,negative,8,location__location_New York,-0.8220197533594235,0.8220197533594235
+keyword_plus_location,location,negative,9,location__location_China,-0.7984800539417923,0.7984800539417923
+keyword_plus_location,location,negative,10,location__location_Wisconsin,-0.7903417100459235,0.7903417100459235
+keyword_plus_location,location,negative,11,"location__location_Brooklyn, NY",-0.7889908759738857,0.7889908759738857
+keyword_plus_location,location,negative,12,"location__location_St Charles, MD",-0.7828625130562931,0.7828625130562931
+keyword_plus_location,location,negative,13,location__location_NYC,-0.7659891809232815,0.7659891809232815
+keyword_plus_location,location,negative,14,location__location_Germany,-0.7648390947371985,0.7648390947371985
+keyword_plus_location,location,negative,15,"location__location_Renfrew, Scotland",-0.761035417057116,0.761035417057116
+keyword_plus_location,location,negative,16,"location__location_Los Angeles, CA",-0.7583274449807311,0.7583274449807311
+keyword_plus_location,location,negative,17,"location__location_Rock Hill, SC",-0.7549364519611849,0.7549364519611849
+keyword_plus_location,location,negative,18,location__location_london,-0.7543076651237365,0.7543076651237365
+keyword_plus_location,location,negative,19,"location__location_Erie, PA",-0.7512500972773102,0.7512500972773102
+keyword_plus_location,location,negative,20,location__location_Coventry,-0.738448758904015,0.738448758904015
+keyword_plus_location,location,negative,21,"location__location_Nottingham, United Kingdom",-0.734590917953427,0.734590917953427
+keyword_plus_location,location,negative,22,location__location_Evergreen Colorado,-0.7249911877565207,0.7249911877565207
+keyword_plus_location,location,negative,23,location__location_Costa Rica,-0.7199083576402053,0.7199083576402053
+keyword_plus_location,location,negative,24,location__location_Happily Married with 2 kids ,-0.701363778731155,0.701363778731155
+keyword_plus_location,location,negative,25,"location__location_Oregon, USA",-0.6978677397710951,0.6978677397710951
+selected_shallow_only,shallow,positive,1,shallow__character_count,1.436165975069335,1.436165975069335
+selected_shallow_only,shallow,positive,2,shallow__digit_count,0.23922338436580765,0.23922338436580765
+selected_shallow_only,shallow,positive,3,shallow__keyword_missing,0.140428701967131,0.140428701967131
+selected_shallow_only,shallow,positive,4,shallow__location_missing,0.005591079120782745,0.005591079120782745
+selected_shallow_only,shallow,positive,5,shallow__mean_token_length,-0.022188345337341913,0.022188345337341913
+selected_shallow_only,shallow,positive,6,shallow__hashtag_count,-0.03642471815741807,0.03642471815741807
+selected_shallow_only,shallow,positive,7,shallow__url_count,-0.07628453099167995,0.07628453099167995
+selected_shallow_only,shallow,positive,8,shallow__uppercase_letter_ratio,-0.09130163079748398,0.09130163079748398
+selected_shallow_only,shallow,positive,9,shallow__mention_count,-0.19449781595617555,0.19449781595617555
+selected_shallow_only,shallow,positive,10,shallow__punctuation_count,-0.23985953167581303,0.23985953167581303
+selected_shallow_only,shallow,positive,11,shallow__whitespace_token_count,-1.1052934030886934,1.1052934030886934
+selected_shallow_only,shallow,negative,1,shallow__whitespace_token_count,-1.1052934030886934,1.1052934030886934
+selected_shallow_only,shallow,negative,2,shallow__punctuation_count,-0.23985953167581303,0.23985953167581303
+selected_shallow_only,shallow,negative,3,shallow__mention_count,-0.19449781595617555,0.19449781595617555
+selected_shallow_only,shallow,negative,4,shallow__uppercase_letter_ratio,-0.09130163079748398,0.09130163079748398
+selected_shallow_only,shallow,negative,5,shallow__url_count,-0.07628453099167995,0.07628453099167995
+selected_shallow_only,shallow,negative,6,shallow__hashtag_count,-0.03642471815741807,0.03642471815741807
+selected_shallow_only,shallow,negative,7,shallow__mean_token_length,-0.022188345337341913,0.022188345337341913
+selected_shallow_only,shallow,negative,8,shallow__location_missing,0.005591079120782745,0.005591079120782745
+selected_shallow_only,shallow,negative,9,shallow__keyword_missing,0.140428701967131,0.140428701967131
+selected_shallow_only,shallow,negative,10,shallow__digit_count,0.23922338436580765,0.23922338436580765
+selected_shallow_only,shallow,negative,11,shallow__character_count,1.436165975069335,1.436165975069335
+text_plus_keyword,keyword,positive,1,keyword__keyword_derailment,2.0160883621176313,2.0160883621176313
+text_plus_keyword,keyword,positive,2,keyword__keyword_oil%20spill,1.8829150795200613,1.8829150795200613
+text_plus_keyword,keyword,positive,3,keyword__keyword_outbreak,1.6084888129070325,1.6084888129070325
+text_plus_keyword,keyword,positive,4,keyword__keyword_rescuers,1.6065399972523235,1.6065399972523235
+text_plus_keyword,keyword,positive,5,keyword__keyword_typhoon,1.5992784454546338,1.5992784454546338
+text_plus_keyword,keyword,positive,6,keyword__keyword_debris,1.580017652837077,1.580017652837077
+text_plus_keyword,keyword,positive,7,keyword__keyword_suicide%20bombing,1.5798305122754457,1.5798305122754457
+text_plus_keyword,keyword,positive,8,keyword__keyword_mass%20murder,1.5201030105560045,1.5201030105560045
+text_plus_keyword,keyword,positive,9,keyword__keyword_wreckage,1.4676094590414352,1.4676094590414352
+text_plus_keyword,keyword,positive,10,keyword__keyword_wild%20fires,1.462316836225752,1.462316836225752
+text_plus_keyword,keyword,positive,11,keyword__keyword_forest%20fires,1.4052245031658335,1.4052245031658335
+text_plus_keyword,keyword,positive,12,keyword__keyword_terrorist,1.3641294423721844,1.3641294423721844
+text_plus_keyword,keyword,positive,13,keyword__keyword_dust%20storm,1.3577357842331468,1.3577357842331468
+text_plus_keyword,keyword,positive,14,keyword__keyword_bridge%20collapse,1.3209306162647638,1.3209306162647638
+text_plus_keyword,keyword,positive,15,keyword__keyword_drought,1.2969529416404955,1.2969529416404955
+text_plus_keyword,keyword,positive,16,keyword__keyword_evacuated,1.2668905692244885,1.2668905692244885
+text_plus_keyword,keyword,positive,17,keyword__keyword_mass%20murderer,1.2585535626174795,1.2585535626174795
+text_plus_keyword,keyword,positive,18,keyword__keyword_violent%20storm,1.2319575240135177,1.2319575240135177
+text_plus_keyword,keyword,positive,19,keyword__keyword_nuclear%20disaster,1.1812064195529397,1.1812064195529397
+text_plus_keyword,keyword,positive,20,keyword__keyword_terrorism,1.1716883939330855,1.1716883939330855
+text_plus_keyword,keyword,positive,21,keyword__keyword_casualties,1.1252179323431475,1.1252179323431475
+text_plus_keyword,keyword,positive,22,keyword__keyword_evacuation,1.1056581825143843,1.1056581825143843
+text_plus_keyword,keyword,positive,23,keyword__keyword_hostages,1.0643347907338467,1.0643347907338467
+text_plus_keyword,keyword,positive,24,keyword__keyword_suicide%20bomb,1.062499514162284,1.062499514162284
+text_plus_keyword,keyword,positive,25,keyword__keyword_buildings%20burning,1.0570661865360564,1.0570661865360564
+text_plus_keyword,keyword,negative,1,keyword__keyword_body%20bags,-1.7738383159384021,1.7738383159384021
+text_plus_keyword,keyword,negative,2,keyword__keyword_aftershock,-1.7007356890258085,1.7007356890258085
+text_plus_keyword,keyword,negative,3,keyword__keyword_blazing,-1.5654372452880514,1.5654372452880514
+text_plus_keyword,keyword,negative,4,keyword__keyword_bloody,-1.5543697805120138,1.5543697805120138
+text_plus_keyword,keyword,negative,5,keyword__keyword_wrecked,-1.450329358733908,1.450329358733908
+text_plus_keyword,keyword,negative,6,keyword__keyword_body%20bag,-1.436758206520736,1.436758206520736
+text_plus_keyword,keyword,negative,7,keyword__keyword_stretcher,-1.4046919214689164,1.4046919214689164
+text_plus_keyword,keyword,negative,8,keyword__keyword_blizzard,-1.2053898583042228,1.2053898583042228
+text_plus_keyword,keyword,negative,9,keyword__keyword_obliterate,-1.192497582208457,1.192497582208457
+text_plus_keyword,keyword,negative,10,keyword__keyword_avalanche,-1.168392904569287,1.168392904569287
+text_plus_keyword,keyword,negative,11,keyword__keyword_hellfire,-1.1602871453241062,1.1602871453241062
+text_plus_keyword,keyword,negative,12,keyword__keyword_rescue,-1.1522328758306977,1.1522328758306977
+text_plus_keyword,keyword,negative,13,keyword__keyword_traumatised,-1.120439674406384,1.120439674406384
+text_plus_keyword,keyword,negative,14,keyword__keyword_ruin,-1.1165284754065383,1.1165284754065383
+text_plus_keyword,keyword,negative,15,keyword__keyword_destruction,-1.1088664538738766,1.1088664538738766
+text_plus_keyword,keyword,negative,16,keyword__keyword_blight,-1.0955958337694676,1.0955958337694676
+text_plus_keyword,keyword,negative,17,keyword__keyword_explode,-1.06280552075036,1.06280552075036
+text_plus_keyword,keyword,negative,18,keyword__keyword_siren,-1.0506734122406338,1.0506734122406338
+text_plus_keyword,keyword,negative,19,keyword__keyword_panicking,-1.047891009278505,1.047891009278505
+text_plus_keyword,keyword,negative,20,keyword__keyword_harm,-1.0452244842276721,1.0452244842276721
+text_plus_keyword,keyword,negative,21,keyword__keyword_fear,-1.044040936260931,1.044040936260931
+text_plus_keyword,keyword,negative,22,keyword__keyword_blew%20up,-1.0238697641099588,1.0238697641099588
+text_plus_keyword,keyword,negative,23,keyword__keyword_pandemonium,-0.9988796762176654,0.9988796762176654
+text_plus_keyword,keyword,negative,24,keyword__keyword_survive,-0.9968081098554723,0.9968081098554723
+text_plus_keyword,keyword,negative,25,keyword__keyword_army,-0.9940781090061196,0.9940781090061196
+text_plus_keyword,text,positive,1,text__in,3.3758570997715016,3.3758570997715016
+text_plus_keyword,text,positive,2,text__hiroshima,2.456845815418321,2.456845815418321
+text_plus_keyword,text,positive,3,text__http,2.35727784885657,2.35727784885657
+text_plus_keyword,text,positive,4,text__california,2.0516921375733173,2.0516921375733173
+text_plus_keyword,text,positive,5,text__fire,2.0477120568475917,2.0477120568475917
+text_plus_keyword,text,positive,6,text__co,1.9140785944703789,1.9140785944703789
+text_plus_keyword,text,positive,7,text__train,1.9049600994883915,1.9049600994883915
+text_plus_keyword,text,positive,8,text__of,1.703655764322358,1.703655764322358
+text_plus_keyword,text,positive,9,text__over,1.629663740993151,1.629663740993151
+text_plus_keyword,text,positive,10,text__crash,1.5397572748791377,1.5397572748791377
+text_plus_keyword,text,positive,11,text__on,1.414388101606572,1.414388101606572
+text_plus_keyword,text,positive,12,text__fires,1.3580832850270934,1.3580832850270934
+text_plus_keyword,text,positive,13,text__disaster,1.3577132851682383,1.3577132851682383
+text_plus_keyword,text,positive,14,text__police,1.3412702311866282,1.3412702311866282
+text_plus_keyword,text,positive,15,text__earthquake,1.3289995747887926,1.3289995747887926
+text_plus_keyword,text,positive,16,text__warning,1.3159219066409618,1.3159219066409618
+text_plus_keyword,text,positive,17,text__killed,1.3101396599206603,1.3101396599206603
+text_plus_keyword,text,positive,18,text__car,1.3017767927368107,1.3017767927368107
+text_plus_keyword,text,positive,19,text__after,1.2897810695183423,1.2897810695183423
+text_plus_keyword,text,positive,20,text__near,1.2722498006727427,1.2722498006727427
+text_plus_keyword,text,positive,21,text__were,1.2499777782013524,1.2499777782013524
+text_plus_keyword,text,positive,22,text__home,1.2098512650227045,1.2098512650227045
+text_plus_keyword,text,positive,23,text__japan,1.2000437467816576,1.2000437467816576
+text_plus_keyword,text,positive,24,text__watch,1.1987970958439451,1.1987970958439451
+text_plus_keyword,text,positive,25,text__homes,1.185188428249125,1.185188428249125
+text_plus_keyword,text,negative,1,text__you,-3.0081140227334204,3.0081140227334204
+text_plus_keyword,text,negative,2,text__my,-2.3147771998317777,2.3147771998317777
+text_plus_keyword,text,negative,3,text__new,-2.068352972602003,2.068352972602003
+text_plus_keyword,text,negative,4,text__full,-1.5261059678877207,1.5261059678877207
+text_plus_keyword,text,negative,5,text__or,-1.320411140414691,1.320411140414691
+text_plus_keyword,text,negative,6,text__his,-1.113266572793109,1.113266572793109
+text_plus_keyword,text,negative,7,text__song,-1.0864621766093514,1.0864621766093514
+text_plus_keyword,text,negative,8,text__love,-1.0573459732508113,1.0573459732508113
+text_plus_keyword,text,negative,9,text__he,-1.0365640140071068,1.0365640140071068
+text_plus_keyword,text,negative,10,text__all,-1.0328150173510977,1.0328150173510977
+text_plus_keyword,text,negative,11,text__me,-1.027212620555999,1.027212620555999
+text_plus_keyword,text,negative,12,text__is,-1.0216454148243528,1.0216454148243528
+text_plus_keyword,text,negative,13,text__can,-1.0188635077021937,1.0188635077021937
+text_plus_keyword,text,negative,14,text__cool,-0.9960944221439075,0.9960944221439075
+text_plus_keyword,text,negative,15,text__out,-0.992158939343831,0.992158939343831
+text_plus_keyword,text,negative,16,text__video,-0.9829484318659498,0.9829484318659498
+text_plus_keyword,text,negative,17,text__she,-0.9452184859527316,0.9452184859527316
+text_plus_keyword,text,negative,18,text__your,-0.9086884823669988,0.9086884823669988
+text_plus_keyword,text,negative,19,text__ass,-0.8953369628018971,0.8953369628018971
+text_plus_keyword,text,negative,20,text__god,-0.8766273007118959,0.8766273007118959
+text_plus_keyword,text,negative,21,text__https,-0.8740968756331963,0.8740968756331963
+text_plus_keyword,text,negative,22,text__cake,-0.8736552428757998,0.8736552428757998
+text_plus_keyword,text,negative,23,text__sure,-0.85899318559069,0.85899318559069
+text_plus_keyword,text,negative,24,text__keep,-0.8464781899235356,0.8464781899235356
+text_plus_keyword,text,negative,25,text__youtube,-0.8385142077431453,0.8385142077431453
+text_plus_selected_shallow_features,keyword,positive,1,keyword__keyword_derailment,2.0361333264577324,2.0361333264577324
+text_plus_selected_shallow_features,keyword,positive,2,keyword__keyword_oil%20spill,1.9119358246114992,1.9119358246114992
+text_plus_selected_shallow_features,keyword,positive,3,keyword__keyword_debris,1.6485564296536928,1.6485564296536928
+text_plus_selected_shallow_features,keyword,positive,4,keyword__keyword_typhoon,1.6036357042733624,1.6036357042733624
+text_plus_selected_shallow_features,keyword,positive,5,keyword__keyword_rescuers,1.5422041826182107,1.5422041826182107
+text_plus_selected_shallow_features,keyword,positive,6,keyword__keyword_suicide%20bombing,1.5339625271749,1.5339625271749
+text_plus_selected_shallow_features,keyword,positive,7,keyword__keyword_wild%20fires,1.5020344843078008,1.5020344843078008
+text_plus_selected_shallow_features,keyword,positive,8,keyword__keyword_outbreak,1.4841903781710273,1.4841903781710273
+text_plus_selected_shallow_features,keyword,positive,9,keyword__keyword_mass%20murder,1.4778603240078116,1.4778603240078116
+text_plus_selected_shallow_features,keyword,positive,10,keyword__keyword_forest%20fires,1.4701064721238384,1.4701064721238384
+text_plus_selected_shallow_features,keyword,positive,11,keyword__keyword_dust%20storm,1.44148754858294,1.44148754858294
+text_plus_selected_shallow_features,keyword,positive,12,keyword__keyword_wreckage,1.3778086060192476,1.3778086060192476
+text_plus_selected_shallow_features,keyword,positive,13,keyword__keyword_terrorist,1.3620164125162244,1.3620164125162244
+text_plus_selected_shallow_features,keyword,positive,14,keyword__keyword_drought,1.2805250743476142,1.2805250743476142
+text_plus_selected_shallow_features,keyword,positive,15,keyword__keyword_mass%20murderer,1.2440730575225307,1.2440730575225307
+text_plus_selected_shallow_features,keyword,positive,16,keyword__keyword_bridge%20collapse,1.2309558225912145,1.2309558225912145
+text_plus_selected_shallow_features,keyword,positive,17,keyword__keyword_evacuated,1.195094404600475,1.195094404600475
+text_plus_selected_shallow_features,keyword,positive,18,keyword__keyword_violent%20storm,1.1807668252923584,1.1807668252923584
+text_plus_selected_shallow_features,keyword,positive,19,keyword__keyword_terrorism,1.1288639002627767,1.1288639002627767
+text_plus_selected_shallow_features,keyword,positive,20,keyword__keyword_casualties,1.0968676024259831,1.0968676024259831
+text_plus_selected_shallow_features,keyword,positive,21,keyword__keyword_nuclear%20disaster,1.0854285310576792,1.0854285310576792
+text_plus_selected_shallow_features,keyword,positive,22,keyword__keyword_heat%20wave,1.0674097590757292,1.0674097590757292
+text_plus_selected_shallow_features,keyword,positive,23,keyword__keyword_evacuation,1.0668944528082072,1.0668944528082072
+text_plus_selected_shallow_features,keyword,positive,24,keyword__keyword_wildfire,1.0360062440938096,1.0360062440938096
+text_plus_selected_shallow_features,keyword,positive,25,keyword__keyword_buildings%20burning,1.0213019625936912,1.0213019625936912
+text_plus_selected_shallow_features,keyword,negative,1,keyword__keyword_body%20bags,-1.8108496753929382,1.8108496753929382
+text_plus_selected_shallow_features,keyword,negative,2,keyword__keyword_aftershock,-1.6109920133358537,1.6109920133358537
+text_plus_selected_shallow_features,keyword,negative,3,keyword__keyword_blazing,-1.4613418553291706,1.4613418553291706
+text_plus_selected_shallow_features,keyword,negative,4,keyword__keyword_body%20bag,-1.4469266378495247,1.4469266378495247
+text_plus_selected_shallow_features,keyword,negative,5,keyword__keyword_bloody,-1.377983154948904,1.377983154948904
+text_plus_selected_shallow_features,keyword,negative,6,keyword__keyword_wrecked,-1.3517461105407207,1.3517461105407207
+text_plus_selected_shallow_features,keyword,negative,7,keyword__keyword_stretcher,-1.3467216629568615,1.3467216629568615
+text_plus_selected_shallow_features,keyword,negative,8,keyword__keyword_obliterate,-1.2479630299824327,1.2479630299824327
+text_plus_selected_shallow_features,keyword,negative,9,keyword__keyword_destruction,-1.2341864345595062,1.2341864345595062
+text_plus_selected_shallow_features,keyword,negative,10,keyword__keyword_avalanche,-1.1817208720460717,1.1817208720460717
+text_plus_selected_shallow_features,keyword,negative,11,keyword__keyword_blight,-1.1212848143041751,1.1212848143041751
+text_plus_selected_shallow_features,keyword,negative,12,keyword__keyword_hellfire,-1.1121892083284737,1.1121892083284737
+text_plus_selected_shallow_features,keyword,negative,13,keyword__keyword_survive,-1.0874695690266323,1.0874695690266323
+text_plus_selected_shallow_features,keyword,negative,14,keyword__keyword_catastrophe,-1.0671814084452638,1.0671814084452638
+text_plus_selected_shallow_features,keyword,negative,15,keyword__keyword_harm,-1.0662657701963671,1.0662657701963671
+text_plus_selected_shallow_features,keyword,negative,16,keyword__keyword_blizzard,-1.0628956179753433,1.0628956179753433
+text_plus_selected_shallow_features,keyword,negative,17,keyword__keyword_military,-1.059504664371449,1.059504664371449
+text_plus_selected_shallow_features,keyword,negative,18,keyword__keyword_detonation,-1.0462447119427527,1.0462447119427527
+text_plus_selected_shallow_features,keyword,negative,19,keyword__keyword_obliteration,-1.0432017680411703,1.0432017680411703
+text_plus_selected_shallow_features,keyword,negative,20,keyword__keyword_rescue,-1.0419075838702185,1.0419075838702185
+text_plus_selected_shallow_features,keyword,negative,21,keyword__keyword_fear,-1.0224945982409792,1.0224945982409792
+text_plus_selected_shallow_features,keyword,negative,22,keyword__keyword_pandemonium,-1.021028690141696,1.021028690141696
+text_plus_selected_shallow_features,keyword,negative,23,keyword__keyword_traumatised,-1.0205140943921418,1.0205140943921418
+text_plus_selected_shallow_features,keyword,negative,24,keyword__keyword_sinking,-1.0077200794840502,1.0077200794840502
+text_plus_selected_shallow_features,keyword,negative,25,keyword__keyword_deluge,-1.0010631137400097,1.0010631137400097
+text_plus_selected_shallow_features,shallow,positive,1,shallow__character_count,0.8021694292094113,0.8021694292094113
+text_plus_selected_shallow_features,shallow,positive,2,shallow__digit_count,0.1546832714942065,0.1546832714942065
+text_plus_selected_shallow_features,shallow,positive,3,shallow__keyword_missing,0.12807772906888,0.12807772906888
+text_plus_selected_shallow_features,shallow,positive,4,shallow__mean_token_length,0.12314311346447254,0.12314311346447254
+text_plus_selected_shallow_features,shallow,positive,5,shallow__location_missing,-0.009133180574045939,0.009133180574045939
+text_plus_selected_shallow_features,shallow,positive,6,shallow__hashtag_count,-0.04610175739424365,0.04610175739424365
+text_plus_selected_shallow_features,shallow,positive,7,shallow__uppercase_letter_ratio,-0.06760470930618628,0.06760470930618628
+text_plus_selected_shallow_features,shallow,positive,8,shallow__mention_count,-0.08155765026075326,0.08155765026075326
+text_plus_selected_shallow_features,shallow,positive,9,shallow__url_count,-0.10872859930371101,0.10872859930371101
+text_plus_selected_shallow_features,shallow,positive,10,shallow__punctuation_count,-0.1250965837953279,0.1250965837953279
+text_plus_selected_shallow_features,shallow,positive,11,shallow__whitespace_token_count,-0.5382469489719448,0.5382469489719448
+text_plus_selected_shallow_features,shallow,negative,1,shallow__whitespace_token_count,-0.5382469489719448,0.5382469489719448
+text_plus_selected_shallow_features,shallow,negative,2,shallow__punctuation_count,-0.1250965837953279,0.1250965837953279
+text_plus_selected_shallow_features,shallow,negative,3,shallow__url_count,-0.10872859930371101,0.10872859930371101
+text_plus_selected_shallow_features,shallow,negative,4,shallow__mention_count,-0.08155765026075326,0.08155765026075326
+text_plus_selected_shallow_features,shallow,negative,5,shallow__uppercase_letter_ratio,-0.06760470930618628,0.06760470930618628
+text_plus_selected_shallow_features,shallow,negative,6,shallow__hashtag_count,-0.04610175739424365,0.04610175739424365
+text_plus_selected_shallow_features,shallow,negative,7,shallow__location_missing,-0.009133180574045939,0.009133180574045939
+text_plus_selected_shallow_features,shallow,negative,8,shallow__mean_token_length,0.12314311346447254,0.12314311346447254
+text_plus_selected_shallow_features,shallow,negative,9,shallow__keyword_missing,0.12807772906888,0.12807772906888
+text_plus_selected_shallow_features,shallow,negative,10,shallow__digit_count,0.1546832714942065,0.1546832714942065
+text_plus_selected_shallow_features,shallow,negative,11,shallow__character_count,0.8021694292094113,0.8021694292094113
+text_plus_selected_shallow_features,text,positive,1,text__in,3.4938287081902213,3.4938287081902213
+text_plus_selected_shallow_features,text,positive,2,text__hiroshima,2.2786649361605145,2.2786649361605145
+text_plus_selected_shallow_features,text,positive,3,text__fire,2.0653072371130707,2.0653072371130707
+text_plus_selected_shallow_features,text,positive,4,text__train,1.9188365625249717,1.9188365625249717
+text_plus_selected_shallow_features,text,positive,5,text__california,1.7431841424806236,1.7431841424806236
+text_plus_selected_shallow_features,text,positive,6,text__of,1.5904347937303973,1.5904347937303973
+text_plus_selected_shallow_features,text,positive,7,text__crash,1.5812375062139792,1.5812375062139792
+text_plus_selected_shallow_features,text,positive,8,text__on,1.5332163822906852,1.5332163822906852
+text_plus_selected_shallow_features,text,positive,9,text__over,1.4962994619619352,1.4962994619619352
+text_plus_selected_shallow_features,text,positive,10,text__car,1.421137784672097,1.421137784672097
+text_plus_selected_shallow_features,text,positive,11,text__fires,1.4049314497918632,1.4049314497918632
+text_plus_selected_shallow_features,text,positive,12,text__earthquake,1.292677989347174,1.292677989347174
+text_plus_selected_shallow_features,text,positive,13,text__disaster,1.272644970241132,1.272644970241132
+text_plus_selected_shallow_features,text,positive,14,text__http,1.1994582861209164,1.1994582861209164
+text_plus_selected_shallow_features,text,positive,15,text__at,1.1870294380696929,1.1870294380696929
+text_plus_selected_shallow_features,text,positive,16,text__home,1.1782436736214101,1.1782436736214101
+text_plus_selected_shallow_features,text,positive,17,text__japan,1.1774337907113284,1.1774337907113284
+text_plus_selected_shallow_features,text,positive,18,text__watch,1.175390462287962,1.175390462287962
+text_plus_selected_shallow_features,text,positive,19,text__was,1.1721313691593602,1.1721313691593602
+text_plus_selected_shallow_features,text,positive,20,text__homes,1.1592139747489363,1.1592139747489363
+text_plus_selected_shallow_features,text,positive,21,text__police,1.1456100500692743,1.1456100500692743
+text_plus_selected_shallow_features,text,positive,22,text__bomb,1.1439523883705938,1.1439523883705938
+text_plus_selected_shallow_features,text,positive,23,text__lives,1.1326183803921677,1.1326183803921677
+text_plus_selected_shallow_features,text,positive,24,text__near,1.131328940754542,1.131328940754542
+text_plus_selected_shallow_features,text,positive,25,text__killed,1.1278020786407483,1.1278020786407483
+text_plus_selected_shallow_features,text,negative,1,text__you,-2.689434688524363,2.689434688524363
+text_plus_selected_shallow_features,text,negative,2,text__new,-2.0565394035188036,2.0565394035188036
+text_plus_selected_shallow_features,text,negative,3,text__my,-1.775588304020944,1.775588304020944
+text_plus_selected_shallow_features,text,negative,4,text__full,-1.5876788603546026,1.5876788603546026
+text_plus_selected_shallow_features,text,negative,5,text__or,-1.2351016028790907,1.2351016028790907
+text_plus_selected_shallow_features,text,negative,6,text__his,-1.1046951114185155,1.1046951114185155
+text_plus_selected_shallow_features,text,negative,7,text__https,-1.049529486474774,1.049529486474774
+text_plus_selected_shallow_features,text,negative,8,text__song,-0.9960847899493507,0.9960847899493507
+text_plus_selected_shallow_features,text,negative,9,text__with,-0.9398320586330257,0.9398320586330257
+text_plus_selected_shallow_features,text,negative,10,text__love,-0.9272793149545074,0.9272793149545074
+text_plus_selected_shallow_features,text,negative,11,text__all,-0.920373926321833,0.920373926321833
+text_plus_selected_shallow_features,text,negative,12,text__gt,-0.9056013263167568,0.9056013263167568
+text_plus_selected_shallow_features,text,negative,13,text__ass,-0.9011433360833951,0.9011433360833951
+text_plus_selected_shallow_features,text,negative,14,text__cool,-0.8980789266244598,0.8980789266244598
+text_plus_selected_shallow_features,text,negative,15,text__black,-0.892280860073538,0.892280860073538
+text_plus_selected_shallow_features,text,negative,16,text__can,-0.8921302432288915,0.8921302432288915
+text_plus_selected_shallow_features,text,negative,17,text__is,-0.8711055112738834,0.8711055112738834
+text_plus_selected_shallow_features,text,negative,18,text__your,-0.8562533727416415,0.8562533727416415
+text_plus_selected_shallow_features,text,negative,19,text__sure,-0.8438480822099321,0.8438480822099321
+text_plus_selected_shallow_features,text,negative,20,text__video,-0.8283130200816476,0.8283130200816476
+text_plus_selected_shallow_features,text,negative,21,text__he,-0.8282063681739628,0.8282063681739628
+text_plus_selected_shallow_features,text,negative,22,text__she,-0.8198526612255767,0.8198526612255767
+text_plus_selected_shallow_features,text,negative,23,text__keep,-0.8047076145698461,0.8047076145698461
+text_plus_selected_shallow_features,text,negative,24,text__anti,-0.78397689612476,0.78397689612476
+text_plus_selected_shallow_features,text,negative,25,text__course,-0.7777249448414812,0.7777249448414812

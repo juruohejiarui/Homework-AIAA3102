@@ -26,13 +26,23 @@ FREEZE_PATHS = {
     5: PROJECT_ROOT / "experiments" / "ticket-5" / "frozen_decision.json",
 }
 
-DEV_PREDICTIONS = {
-    1: PROJECT_ROOT / "experiments" / "step-4-baselines" / "predictions" / "raw_text_tfidf_logistic_regression_dev_predictions.csv",
-    2: PROJECT_ROOT / "experiments" / "ticket-2" / "dev" / "predictions" / "normalize_urls_placeholder_dev_predictions.csv",
-    3: PROJECT_ROOT / "experiments" / "ticket-3" / "dev" / "predictions" / "raw_text_tfidf_logistic_regression_dev_predictions.csv",
-    4: PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / "lr_c1_balanced_default_dev_predictions.csv",
-    5: PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / "lr_c1_balanced_default_dev_predictions.csv",
-}
+def _get_ticket4_selected_variant() -> str:
+    """Dynamically resolve the selected variant from ticket-4 frozen_decision.json."""
+    freeze_path = PROJECT_ROOT / "experiments" / "ticket-4" / "frozen_decision.json"
+    if freeze_path.exists():
+        return json.loads(freeze_path.read_text(encoding="utf-8"))["selected_variant"]
+    return "lr_c1_balanced_default"
+
+
+def _get_dev_predictions() -> dict[int, Path]:
+    variant = _get_ticket4_selected_variant()
+    return {
+        1: PROJECT_ROOT / "experiments" / "step-4-baselines" / "predictions" / "raw_text_tfidf_logistic_regression_dev_predictions.csv",
+        2: PROJECT_ROOT / "experiments" / "ticket-2" / "dev" / "predictions" / "normalize_urls_placeholder_dev_predictions.csv",
+        3: PROJECT_ROOT / "experiments" / "ticket-3" / "dev" / "predictions" / "raw_text_tfidf_logistic_regression_dev_predictions.csv",
+        4: PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / f"{variant}_dev_predictions.csv",
+        5: PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / f"{variant}_dev_predictions.csv",
+    }
 
 HELDOUT_PREDICTIONS = {
     1: PROJECT_ROOT / "predictions" / "heldout_predictions.csv",
@@ -77,25 +87,32 @@ def _assert_dev_only_decisions(freezes: dict[int, dict[str, Any]]) -> None:
 def main() -> int:
     if OUTPUT.exists():
         raise RuntimeError("frozen-decision manifest exists; refusing overwrite")
+    DEV_PREDICTIONS = _get_dev_predictions()
     freezes = {ticket: _read_json(path) for ticket, path in FREEZE_PATHS.items()}
     _assert_dev_only_decisions(freezes)
     summary = pd.read_csv(PROJECT_ROOT / "results" / "summary.csv")
     if list(summary.columns) != SUMMARY_COLUMNS or summary["ticket"].tolist() != [f"ticket_{value}" for value in range(1, 6)]:
         raise RuntimeError("summary does not contain exactly one ordered row per ticket")
 
+    # Dynamically read ticket-4 winner to avoid hardcoding
+    t4_freeze = freezes[4]
+    t4_variant = t4_freeze["selected_variant"]
+    t4_C = float(t4_freeze.get("selected_C", t4_freeze.get("C", 1.0)))
+    t4_class_weight = t4_freeze.get("selected_class_weight", t4_freeze.get("class_weight", "balanced"))
+    t4_threshold = float(t4_freeze.get("selected_threshold", t4_freeze.get("threshold", 0.5)))
     recipes = {
         1: {"factory": "raw_text_reference", "normalization": None, "C": 1.0, "class_weight": None, "threshold": 0.5, "training_label_corrections": []},
         2: {"factory": "url_placeholder_reference", "normalization": "normalize_urls_placeholder", "C": 1.0, "class_weight": None, "threshold": 0.5, "training_label_corrections": []},
         3: {"factory": "raw_text_reference", "normalization": None, "C": 1.0, "class_weight": None, "threshold": 0.5, "training_label_corrections": []},
-        4: {"factory": "raw_text_balanced_logistic", "normalization": None, "C": 1.0, "class_weight": "balanced", "threshold": 0.5, "training_label_corrections": []},
-        5: {"factory": "raw_text_balanced_logistic", "normalization": None, "C": 1.0, "class_weight": "balanced", "threshold": 0.5, "training_label_corrections": []},
+        4: {"factory": "raw_text_balanced_logistic", "normalization": None, "C": t4_C, "class_weight": t4_class_weight, "threshold": t4_threshold, "training_label_corrections": []},
+        5: {"factory": "raw_text_balanced_logistic", "normalization": None, "C": t4_C, "class_weight": t4_class_weight, "threshold": t4_threshold, "training_label_corrections": freezes[5].get("training_label_corrections", [])},
     }
     model_names = {
         1: "raw_text_tfidf_logistic_regression",
         2: "normalize_urls_placeholder",
         3: "raw_text_tfidf_logistic_regression",
-        4: "lr_c1_balanced_default",
-        5: "lr_c1_balanced_default",
+        4: t4_variant,
+        5: t4_variant,
     }
     decisions: list[dict[str, Any]] = []
     for ticket in range(1, 6):

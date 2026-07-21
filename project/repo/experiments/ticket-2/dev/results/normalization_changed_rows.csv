@@ -1,0 +1,8 @@
+variant,train_changed_rows,dev_changed_rows
+raw_text_control,0,0
+normalize_urls_placeholder,2420,767
+normalize_mentions_placeholder,1156,399
+strip_hashtag_marker,1055,330
+normalize_punctuation_to_space,4362,1451
+unicode_casefold,4397,1471
+normalize_emoji_placeholder,0,0

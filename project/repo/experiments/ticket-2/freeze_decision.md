@@ -1,6 +1,6 @@
 # Ticket 2 Freeze Decision
 
-Frozen at: 2026-07-21T13:00:54+08:00
+Frozen at: 2026-07-21T20:13:37+08:00
 
 Selected variant: `normalize_urls_placeholder`.
 

@@ -23,9 +23,19 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "train.csv"
 DEFAULT_PLAN_PATH = PROJECT_ROOT / "experiments" / "ticket-5" / "dev" / "label_correction_plan.json"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "experiments" / "ticket-5" / "dev" / "correction_experiment"
-TICKET4_DEV_PREDICTIONS = (
-    PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / "lr_c1_balanced_default_dev_predictions.csv"
-)
+def _get_ticket4_selected_variant() -> str:
+    """Read the selected variant from the Ticket 4 frozen decision (supports expanded MODEL_SPECS)."""
+    freeze_path = PROJECT_ROOT / "experiments" / "ticket-4" / "frozen_decision.json"
+    if freeze_path.exists():
+        import json as _json
+        return _json.loads(freeze_path.read_text(encoding="utf-8"))["selected_variant"]
+    # Fallback: use the original default if freeze has not been run yet
+    return "lr_c1_balanced_default"
+
+
+def _ticket4_dev_predictions_path() -> Path:
+    variant = _get_ticket4_selected_variant()
+    return PROJECT_ROOT / "experiments" / "ticket-4" / "dev" / "predictions" / f"{variant}_dev_predictions.csv"
 BASELINE_DEV_PREDICTIONS = (
     PROJECT_ROOT / "experiments" / "step-4-baselines" / "predictions" / "raw_text_tfidf_logistic_regression_dev_predictions.csv"
 )
@@ -70,9 +80,15 @@ def main() -> int:
     if not np.array_equal(observed.to_numpy(), expected.to_numpy()):
         raise ValueError("stored training labels differ from correction plan originals")
 
-    ticket4_spec = next(spec for spec in MODEL_SPECS if spec.name == "lr_c1_balanced_default")
+    ticket4_variant = _get_ticket4_selected_variant()
+    ticket4_spec = next((spec for spec in MODEL_SPECS if spec.name == ticket4_variant), None)
+    if ticket4_spec is None:
+        raise RuntimeError(
+            f"Ticket 4 selected variant '{ticket4_variant}' not found in MODEL_SPECS. "
+            "Ensure decision_rule.py MODEL_SPECS includes this variant."
+        )
     original_model, original = fit_and_evaluate_spec(train, dev, ticket4_spec, settings)
-    frozen_predictions = pd.read_csv(TICKET4_DEV_PREDICTIONS)
+    frozen_predictions = pd.read_csv(_ticket4_dev_predictions_path())
     validate_prediction_frame(frozen_predictions, expected_ids=list(split.dev_ids))
     if not np.array_equal(original.predictions["y_pred"], frozen_predictions["y_pred"]):
         raise AssertionError("correction control does not reproduce frozen Ticket 4 dev predictions")
@@ -138,7 +154,7 @@ def main() -> int:
         "new_errors": new_errors,
         "error_balance_pass": fixes >= new_errors,
         "adopt_corrected_training_model": adopt,
-        "selected_variant": candidate_spec.name if adopt else "lr_c1_balanced_default",
+        "selected_variant": candidate_spec.name if adopt else ticket4_variant,
     }
     write_json_artifact(selection, output_dir / "selection_result.json")
     command = subprocess.list2cmdline([sys.executable, "-m", "pipeline.run_ticket5_corrections", *sys.argv[1:]])

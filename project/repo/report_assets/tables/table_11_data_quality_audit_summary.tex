@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\caption{Ticket 5 Data-Quality Audit Summary}
+\label{tab:data_quality}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrr}
+\hline
+scope & relationship type & groups or pairs & member rows & conflicting groups or pairs & cross split groups or pairs \\
+\hline
+train\_plus\_dev & exact & 50 & 124 & 13 & 19 \\
+train\_plus\_dev & canonical & 214 & 677 & 46 & 98 \\
+train\_plus\_dev & near & 693 & 538 & 104 & 265 \\
+full\_with\_heldout & exact & 69 & 179 & 18 & 41 \\
+full\_with\_heldout & canonical & 292 & 932 & 64 & 194 \\
+full\_with\_heldout & near & 960 & 715 & 186 & 546 \\
+audit\_disposition & ambiguous & -- & 15 & -- & -- \\
+audit\_disposition & fix & -- & 30 & -- & -- \\
+audit\_disposition & keep\_but\_flag & -- & 6 & -- & -- \\
+audit\_disposition & reject\_false\_positive & -- & 13 & -- & -- \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{Duplicate rows report groups/pairs and member tweets; disposition rows report audited tweet counts. Source and held-out labels remain unchanged.}
+\end{table*}

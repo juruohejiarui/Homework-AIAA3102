@@ -1,0 +1,11 @@
+{
+  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket5_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-5/frozen_decision.json --output-dir experiments/ticket-5/heldout --confirm-single-ticket5-report",
+  "freeze_sha256": "f5e814a4cbe4f4f94bcac1c2d1ab07e5effacb83f21e91a6395791b2f5b9b097",
+  "heldout_labels_modified": false,
+  "heldout_rows_removed": 0,
+  "new_model_fit": false,
+  "selection_reopened": false,
+  "source_prediction_sha256": "9ba20012c64b1b6afef701da553968a8d906c92d06e771a019046e64d9180d18",
+  "status": "ticket5_heldout_reporting_started",
+  "ticket5_heldout_reporting_number": 1
+}

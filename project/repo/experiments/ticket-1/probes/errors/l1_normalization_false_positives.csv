@@ -1,0 +1,75 @@
+id,text,keyword,location,y_true,y_pred,score,model_name,ticket
+86,"Progressive greetings!
+
+In about a month students would have set their pens ablaze in The Torch Publications'... http://t.co/9FxPiXQuJt",ablaze,Inang Pamantasan,0,1,0.5032477159035906,l1_normalization,ticket_1_baseline
+132,???? it was an accident http://t.co/Oia5fxi4gM,accident,,0,1,0.5437327022477791,l1_normalization,ticket_1_baseline
+386,Please sign &amp; RT to save #SaltRiverWildHorses http://t.co/IKUAYUSEqt http://t.co/BQBHUyfmE9,annihilation,,0,1,0.5247807181139739,l1_normalization,ticket_1_baseline
+884,Firepower in the lab [electronic resource] : automation in the fight against infectious diseases and bioterrorism /Û_ http://t.co/KvpbybglSR,bioterrorism,,0,1,0.5083970606105056,l1_normalization,ticket_1_baseline
+1208,Lizard Wizard in a Blizzard #LWB http://t.co/MgR809yc5a,blizzard,,0,1,0.7298160038156494,l1_normalization,ticket_1_baseline
+1289,'A Nightmare On Elm Street' Is Getting Remade... Again - http://t.co/HvwkJQXXyT,bloody,,0,1,0.5041296714882841,l1_normalization,ticket_1_baseline
+1715,Leicester_Merc : ICYMI - #Ashes 2015: Australia collapse at Trent Bridge - how Twitter reaÛ_ http://t.co/HqeWMREysO) http://t.co/y4y8fclJED,bridge%20collapse,Leicester,0,1,0.5303283025480174,l1_normalization,ticket_1_baseline
+1888,Kanger coils - burning out fast? via /r/Vaping101 http://t.co/cykr4XAlUH,burning,,0,1,0.5426558259307086,l1_normalization,ticket_1_baseline
+2227,Google Alert: Emergency units simulate a chemical explosion at NU http://t.co/NDgpWYxu6H,chemical%20emergency,,0,1,0.5145986919865276,l1_normalization,ticket_1_baseline
+2348,Growth dries up for BHP Billiton as oil price collapse bites http://t.co/HQoD6v6DnC,collapse,"Pompano Beach, FL",0,1,0.5565378875943302,l1_normalization,ticket_1_baseline
+2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0.593510423899471,l1_normalization,ticket_1_baseline
+2475,On page 500 of 688 of After We Collided by Anna Todd http://t.co/Y7PetO0DX2,collided,Tennessee,0,1,0.5367537782908564,l1_normalization,ticket_1_baseline
+2846,"Blending the old with the new in #Vanuatu to prepare for future emergencies: 
+http://t.co/aFMKcFn1TL http://t.co/8QqzYZIAqf",cyclone,Geneva,0,1,0.5020437968933936,l1_normalization,ticket_1_baseline
+2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0.5007205726654259,l1_normalization,ticket_1_baseline
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,1,0.5624816555478299,l1_normalization,ticket_1_baseline
+3398,7 Christians detained in Zhejiang amid widespread anger over cross removal- over 1200 crosses removed since last yr http://t.co/8PICbkDJM0,demolition,,0,1,0.5048103228505078,l1_normalization,ticket_1_baseline
+3401,Canberra's first Mr Fluffy homes demolition schedule released  http://t.co/B77T2QxDCS,demolition,,0,1,0.5188236650882142,l1_normalization,ticket_1_baseline
+3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0.5234505674340573,l1_normalization,ticket_1_baseline
+3849,Ignition Knock (Detonation) Sensor Connector-Connecto MOTORCRAFT WPT-994 http://t.co/h2aHxpCH0Y http://t.co/VQ3Vwxj8YU,detonation,,0,1,0.5112296787206537,l1_normalization,ticket_1_baseline
+4387,Earthquake drill ??????,earthquake,Orm,0,1,0.5549931137445336,l1_normalization,ticket_1_baseline
+4577,@RebeccaforReal accepts Wisconsin Emergency Response Plan on behalf of @GovWalker #nbc15 http://t.co/Pis0aiVRbR,emergency%20plan,"Madison, WI",0,1,0.5886952840086676,l1_normalization,ticket_1_baseline
+4596,County 911 Overload Prompts Use of Emergency Plan During July 4 Celebrations http://t.co/HXTUPrA5bc http://t.co/DqxKJibbKy,emergency%20plan,"Augusta, GA",0,1,0.5206639669790861,l1_normalization,ticket_1_baseline
+5001,Checkout all the NURGLE rules &amp; features that snuck in on Khrone's WD! http://t.co/he7Q7H3nZf http://t.co/rpvZBEsUQJ,explosion,,0,1,0.5395829968476694,l1_normalization,ticket_1_baseline
+5022,#Eyewitness media is actively embraced by #UK audiences. Read the report by @emhub on the impact of #UGC in news: http://t.co/6mBPvwiTxf,eyewitness,,0,1,0.5512666341718334,l1_normalization,ticket_1_baseline
+5038,WFTV Eyewitness News: TN school psychologist arrested in Florida on child porn charges http://t.co/lgGLf5yrMe,eyewitness,"Orlando, Fl",0,1,0.5213316234175113,l1_normalization,ticket_1_baseline
+5088,"A grade in Black Horse Famine[MEGA]. Score 0840728
+http://t.co/pdiit0AF3Q
+#Dynamix http://t.co/ZQ5KDOx7BY",famine,,0,1,0.5505909539257784,l1_normalization,ticket_1_baseline
+5247,Kosciusko police investigating pedestrian fatality hit by a train Thursday http://t.co/m5djLLxoZP,fatality,USA,0,1,0.5447241072823705,l1_normalization,ticket_1_baseline
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0.5026246125360995,l1_normalization,ticket_1_baseline
+5391,Trident 90225 Chevy fire Truck w/ Pumper  IMS Fire Dept. Red HO 1:87  plastic http://t.co/FAQNFUpeGn http://t.co/mQfOfKXtyh,fire%20truck,,0,1,0.5734508394445743,l1_normalization,ticket_1_baseline
+5510,The advantages apropos of in flames favorable regard mississauga ontario: pWHvGwax,flames,,0,1,0.5128609770551916,l1_normalization,ticket_1_baseline
+5518,IDEAS IN FOOD: Flattened http://t.co/QfrAWLn4BA,flattened,"Bow, NH",0,1,0.576551149282097,l1_normalization,ticket_1_baseline
+5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0.6004353529390569,l1_normalization,ticket_1_baseline
+5953,Davis's Drug Guide for Nurses by Judith Hopfer Deglin and April Hazard Vallerand http://t.co/IufS7UV1HK http://t.co/AFrHnLLY8D,hazard,,0,1,0.510043567658673,l1_normalization,ticket_1_baseline
+5990,JAX issues Hazardous Weather Outlook (HWO) http://t.co/fuCOQhcLAD,hazardous,,0,1,0.556521310649382,l1_normalization,ticket_1_baseline
+6002,09:13 PM:  Hazardous Weather Outlook (http://t.co/ed1VpITsWY): NO HAZARDOUS WEATHER IS EXPECTED AT THIS TIME.... http://t.co/6XSbddlZiy,hazardous,"Gainesville, FL",0,1,0.524904259538688,l1_normalization,ticket_1_baseline
+6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0.5626295821362731,l1_normalization,ticket_1_baseline
+6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0.5626295821362731,l1_normalization,ticket_1_baseline
+6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0.5145871810796256,l1_normalization,ticket_1_baseline
+6366,#hot  C-130 specially modified to land in a stadium and rescue hostages in Iran in 1980 http://t.co/zY3hpdJNwg #prebreak #best,hostages,china,0,1,0.5276039659700563,l1_normalization,ticket_1_baseline
+6536,Rory McIlroy to Test Ankle Injury in Weekend Practice #chinadotcom #sports http://t.co/UDTGWfSc3P http://t.co/V5wSx0LQN2,injury,beijing .China,0,1,0.5062977888829344,l1_normalization,ticket_1_baseline
+6568,'McFadden Reportedly to Test Hamstring Thursday' via @TeamStream http://t.co/jWq4KvJH2j,injury,"Plano, Texas",0,1,0.5185449813081283,l1_normalization,ticket_1_baseline
+6937,@BenignoVito @LibertyBell1000 HILLARYMASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0.5628536689934422,l1_normalization,ticket_1_baseline
+7142,Study: Wider Variety of Therapies Could Help Vets Troops With PTSD | http://t.co/g0q0bzBjli http://t.co/ExYr6c5QPu via @Militarydotcom,military,,0,1,0.5063983099223254,l1_normalization,ticket_1_baseline
+7529,@TroySlaby22 slicker than an oil spill,oil%20spill,,0,1,0.5550724772471078,l1_normalization,ticket_1_baseline
+7761,Police expand search for missing pregnant woman in Beloeil: Police in Richelieu-Saint-Laurent are expanding th... http://t.co/hMuyzmv8qH,police,,0,1,0.5935589311973467,l1_normalization,ticket_1_baseline
+7771,@BrandonMulcahy @fpine Here's the story http://t.co/TgXutUoyHl,police,SoCal,0,1,0.5952646157601555,l1_normalization,ticket_1_baseline
+7895,http://t.co/X5XUMtoEkE Nuclear Emergency Current USA radiation levels monitoring site,radiation%20emergency,"LP, MN USA",0,1,0.5120646729289995,l1_normalization,ticket_1_baseline
+7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0.5648479074483432,l1_normalization,ticket_1_baseline
+7938,"RAIN RAIN GO AWAY... A soaker is on the way 
+------&gt; http://t.co/jQFcY9GuqV &lt;----- http://t.co/tN65puhfhw",rainstorm,"Pennsylvania, USA",0,1,0.5011181884093283,l1_normalization,ticket_1_baseline
+8044,wowo--=== 12000 Nigerian refugees repatriated from Cameroon,refugees,,0,1,0.5331403219965497,l1_normalization,ticket_1_baseline
+8047,http://t.co/eHKLp12yiP Paci?c Media Centre | articles: AUSTRALIA: RSF protests over new security gag over reporting on...,refugees,"Auckland, New Zealand",0,1,0.507397637483288,l1_normalization,ticket_1_baseline
+8133,Rescued TB goes on to ribbon at HITS: http://t.co/pA5SSLeFEC via @offtrackhorse,rescued,,0,1,0.5275547727983927,l1_normalization,ticket_1_baseline
+8301,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/eaTFro3d5x,rubble,"Accra,Ghana",0,1,0.505400031474906,l1_normalization,ticket_1_baseline
+8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0.5200523385062273,l1_normalization,ticket_1_baseline
+8585,@wisdc &amp; obama supports  death2USA .. http://t.co/serARcNrbY,screams,United States,0,1,0.5752363007965385,l1_normalization,ticket_1_baseline
+8618,ON THE USE OF PERFORATED METAL SHEAR PANEL SFOR SEISMIC-RESISTANT APPLICATIONS http://t.co/cX5OjH2Dr4,seismic,,0,1,0.5000639014749995,l1_normalization,ticket_1_baseline
+9030,Stretcher in 5 min // Speaker Deck http://t.co/0YO2l38OZr,stretcher,??,0,1,0.5072277840045594,l1_normalization,ticket_1_baseline
+9041,ÛÏStretcher in 5 min // Speaker DeckÛ http://t.co/7qPG80uD7v,stretcher,3???2???????,0,1,0.5186917413478306,l1_normalization,ticket_1_baseline
+9298,10 Ways To Survive and Escape Martial Law | World http://t.co/BiuEY7bUtS http://t.co/JWQYbe4ep1,survive,Lincoln City Oregon,0,1,0.506211988985493,l1_normalization,ticket_1_baseline
+9341,Suicide of a Superpower : Will America Survive To 2025? by Patrick J. Buchana... http://t.co/eMTwirknyq http://t.co/M9K08OaZve,survive,,0,1,0.580555860234718,l1_normalization,ticket_1_baseline
+9432,Survivors of Shanghai Ghetto reunite after 70 years - http://t.co/1Ki8LgVAy4 #Shanghai #China #??,survivors,Shanghai,0,1,0.5589245302348712,l1_normalization,ticket_1_baseline
+9439,Haley Lu Richardson Fights for Water in The Last Survivors (Review) http://t.co/oObSCFOKtQ,survivors,Numenor,0,1,0.535743672056422,l1_normalization,ticket_1_baseline
+9501,HereÛªs how media in Pakistan covered the capture of terrorist Mohammed Naved http://t.co/f7WqpCEkg2,terrorist,,0,1,0.5205324600000514,l1_normalization,ticket_1_baseline
+9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0.507998243933876,l1_normalization,ticket_1_baseline
+9905,I'm traumatised???? @megancoopy @laurathorne97 http://t.co/MeSqTVdu63,traumatised,,0,1,0.558418666218627,l1_normalization,ticket_1_baseline
+10258,Camping in a war zone with roving raccoons toughens city slicker http://t.co/oJuS08yZrq,war%20zone,"Downtown Churubusco, Indiana",0,1,0.5879943085312196,l1_normalization,ticket_1_baseline
+10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0.5055573922100627,l1_normalization,ticket_1_baseline
+10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0.5021264261020608,l1_normalization,ticket_1_baseline

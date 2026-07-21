@@ -1,0 +1,3 @@
+split,model_name,precision_target_1,recall_target_1,f1_target_1,accuracy,true_negative,false_positive,false_negative,true_positive,converged,n_iter
+dev,train_majority_floor,0.0,0.0,0.0,0.5699277741300066,868,0,655,0,True,
+dev,raw_text_tfidf_logistic_regression,0.7909407665505227,0.6931297709923664,0.7388120423108218,0.7892317793827971,748,120,201,454,True,[15]

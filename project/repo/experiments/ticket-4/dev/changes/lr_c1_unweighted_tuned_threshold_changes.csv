@@ -1,0 +1,39 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+110,'By accident' they knew what was gon happen https://t.co/Ysxun5vCeh,accident,Norf Carolina,0,0,1,0.4866711270489187,0.48667112704891874,0->1,True,False,new_error
+353,World Annihilation vs Self Transformation http://t.co/pyehwodWun Aliens Attack to Exterminate Humans http://t.co/pB2N77nSKz,annihilation,Subconscious LA,0,0,1,0.4715869356907179,0.4715869356907179,0->1,True,False,new_error
+390,World Annihilation vs Self Transformation http://t.co/pyehwodWun Aliens Attack to Exterminate Humans http://t.co/8jxqL8Cv8Z,annihilation,Subconscious LA,1,0,1,0.4715869356907179,0.4715869356907179,0->1,False,True,fixed_error
+489,9 Charts Prove Financial Crisis Part 2 Has BEGUN!: The Financial Armageddon Economic Collapse Blog tracks tren... http://t.co/vHCXTvCINr,armageddon,,0,0,1,0.4742977765763189,0.47429777657631894,0->1,True,False,new_error
+840,FedEx to stop transporting bioterror germs after lab mishaps: FedEx has stopped transporting certain research ... http://t.co/y3dM9uLqxG,bioterror,"Phoenix, AZ",1,0,1,0.4946231612578851,0.49462316125788514,0->1,False,True,fixed_error
+890,Bioterrorism public health superbug biolabs epidemics biosurveillance outbreaks | Homeland Security News Wire http://t.co/cvhYGwcBZv,bioterrorism,,1,0,1,0.4902180646328049,0.4902180646328049,0->1,False,True,fixed_error
+1610,http://t.co/wMNOnHxEIr 'Nagasaki has to be forever the last city bombed with a nuclear weapon.' #bannukes,bombed,"Nairobi, Kenya ",1,0,1,0.4973945313563198,0.4973945313563198,0->1,False,True,fixed_error
+1741,@1acd4900c1424d1 @FoxNews no one is rioting burning down buildings or looting.,buildings%20burning,GO BLUE! HAIL YES!!,1,0,1,0.4865289206344229,0.4865289206344229,0->1,False,True,fixed_error
+1921,Killing Black Babies at Planned Parenthood where's the demonstrations looting of PP burning down the buildings Black Babies Lives Matter,burning%20buildings,"Sacramento, CA",1,0,1,0.4926164398516666,0.49261643985166664,0->1,False,True,fixed_error
+2231,@pjcoyle ... need to be included in emergency planning for chemical plants. See also http://t.co/OamqqBNIce,chemical%20emergency,"Tyler, TX",0,0,1,0.4945981610135117,0.4945981610135117,0->1,True,False,new_error
+3026,@Allahsfinest12 ...death to muslims,death,"Sylacauga, Alabama",1,0,1,0.4817204142044541,0.4817204142044541,0->1,False,True,fixed_error
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,0,1,0.4959187160041027,0.4959187160041027,0->1,True,False,new_error
+3463,@jozerphine LITERALLY JUST LOOK THAT UP! YEAH DERAILED AT SMITHSONIAN SO EVERYTHIGN IS SHUT DOWN FROM FEDERAL CENTER SW TO MCPHERSON,derailed,,1,0,1,0.4729885546301397,0.4729885546301397,0->1,False,True,fixed_error
+3567,If the Taken movies took place in India 2 (Vine by @JusReign) https://t.co/hxM8C8e33D,desolate,,0,0,1,0.4925194304804893,0.4925194304804893,0->1,True,False,new_error
+3663,Watch These Super Strong Magnets Destroy Everyday Objects: http://t.co/bTUs5jejuy http://t.co/zrTfxLuk6R,destroy,New York City,1,0,1,0.4978379940994576,0.4978379940994576,0->1,False,True,fixed_error
+3903,Zayn Malik &amp; Perrie Edwards End Engagement: SheÛªs Û÷DevastatedÛª http://t.co/GedOxSPpL9 http://t.co/ACZRUOrYtD,devastated,,1,0,1,0.4990439456239611,0.49904394562396115,0->1,False,True,fixed_error
+3969,We haven't seen the devastation from the 2014 Corp. Breaches yet Be Prepared! Get Coverage!: http://t.co/eK6KYHxPE9 http://t.co/Yn6NxOucR1,devastation,"Las Vegas, Nevada",0,0,1,0.4867603654426728,0.48676036544267287,0->1,True,False,new_error
+4012,beautiful disaster https://t.co/qm5Sz0fyU8,disaster,en el pais de los arrechos,0,0,1,0.4757215280233731,0.47572152802337314,0->1,True,False,new_error
+4732,The EFAK would be designed for building occupants once they evacuate and report to their evacuation assembly sites,evacuate,"Chevy Chase, MD",1,0,1,0.4822085365347792,0.4822085365347792,0->1,False,True,fixed_error
+5458,As firefighters make gains on #RockyFire Jerry Brown is heading to the area to meet with first responders tomorrow morning,first%20responders,"Sacramento, CA",1,0,1,0.4746906504421361,0.4746906504421361,0->1,False,True,fixed_error
+5625,#Laos flooding -10 villages underwater World Vision responding http://t.co/8fvQRizOUX,flooding,Jakarta/Kuala Lumpur/S'pore,1,0,1,0.4781504298929503,0.4781504298929503,0->1,False,True,fixed_error
+5719,@Sweet2Young -runs at her for setting my forest on fire and bites the shit out of her neck-,forest%20fire,,1,0,1,0.4850099654004476,0.4850099654004476,0->1,False,True,fixed_error
+5953,Davis's Drug Guide for Nurses by Judith Hopfer Deglin and April Hazard Vallerand http://t.co/IufS7UV1HK http://t.co/AFrHnLLY8D,hazard,,0,0,1,0.4713793765387102,0.47137937653871026,0->1,True,False,new_error
+6420,@pattonoswalt @FoxNews Wait I thought Fecal Hurricane was on SciFi? Maybe that was turdnado. I've been forgeting up a shit storm lately.,hurricane,,1,0,1,0.4947911418212289,0.49479114182122896,0->1,False,True,fixed_error
+6759,Phones Offers &gt;&gt; http://t.co/bYtbZ8s5ux #034 8-Pin Lightning Connector 2.1A Car Charger For Apple 5 5S 5C 6 6+ iPÛ_ http://t.co/o3wVScLiCX,lightning,USA,0,0,1,0.470077189707692,0.470077189707692,0->1,True,False,new_error
+6854,The media needs to stop publicizing mass murder. So many sick people do these things for the eyes of the world &amp; the media is not helping.,mass%20murder,New Sweden,1,0,1,0.4753826162084852,0.4753826162084852,0->1,False,True,fixed_error
+7229,We have overrun a Natural Disaster Survival server!,natural%20disaster,"Suburban Detroit, Michigan",1,0,1,0.4856233998228822,0.4856233998228822,0->1,False,True,fixed_error
+8154,I have an unexplainable desire to watch The Rescuers. #childhooddefined,rescuers,,0,0,1,0.4900587869816755,0.4900587869816755,0->1,True,False,new_error
+8294,China's Stock Market Crash: Are There Gems In The Rubble?: ChinaÛªs stock market crash this su... http://t.co/KABK3tcJNL ...  via @Forbes,rubble,"Minna, Nigeria",0,0,1,0.4838965375329091,0.4838965375329091,0->1,True,False,new_error
+8795,"Thu Aug 06 2015 01:20:32 GMT+0000 (UTC)
+#millcityio #20150613
+theramin sirens",sirens,... -.- -.--,1,0,1,0.4968999562282334,0.4968999562282334,0->1,False,True,fixed_error
+9471,OMEGA MEN Writer Explores Terrorism Religion In an 'Epic KYLE RAYNER Story' http://t.co/Hr88CWxPGz #Newsarama,terrorism,"Tampa, FL",0,0,1,0.4856709835140479,0.4856709835140479,0->1,True,False,new_error
+9551,The few I warned about .. Were just as I expected.. They are a threat to his soul,threat,"Ohio, USA",0,0,1,0.4967742365844112,0.4967742365844112,0->1,True,False,new_error
+9810,in response to trauma Children of Addicts develop a defensive self - one that decreases vulnerability. (3,trauma,"Montgomery County, MD",0,0,1,0.4938710079910158,0.4938710079910158,0->1,True,False,new_error
+10203,If you were the NWS wth a rotating storm w/ a report of a 'HUGE' / 'MASSIVE' / 'VIOLENT' tornado what would you do? https://t.co/J3dI85IST5,violent%20storm,,1,0,1,0.4858328220652796,0.4858328220652796,0->1,False,True,fixed_error
+10299,GUN FIREARM WEAPON VECTOR CLIP ART FOR VINYL SIGN CUTTER RIFLE GUNS WEAPONS http://t.co/sdOgEF3kFT http://t.co/x0giy85BS8,weapon,,0,0,1,0.4961163506186361,0.4961163506186361,0->1,True,False,new_error
+10636,Gunshot wound #9 is in the bicep. The only one of the ten wounds that is not in the chest/torso area.  #KerrickTrial #JonathanFerrell,wounds,Charlotte ,1,0,1,0.4744879263995815,0.4744879263995815,0->1,False,True,fixed_error

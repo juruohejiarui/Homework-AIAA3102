@@ -1,0 +1,26 @@
+{
+  "freeze_sha256": "4a555995bdfff447ea192e35e78abcfda02d4914375ebe4631b28faf7a0f957c",
+  "metrics": {
+    "accuracy": 0.7977675640183848,
+    "f1_target_1": 0.749185667752443,
+    "false_negative": 194,
+    "false_positive": 114,
+    "precision_target_1": 0.8013937282229965,
+    "recall_target_1": 0.7033639143730887,
+    "true_negative": 755,
+    "true_positive": 460
+  },
+  "new_heldout_model_fit": false,
+  "prediction_sha256": "a6f65bfdcd9cd7116acd2966f55d68a7fac6f9ebb85a56149b88ae56f50c942e",
+  "selection_reopened": false,
+  "source_prediction_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
+  "status": "ticket3_heldout_reporting_completed",
+  "ticket3_heldout_reporting_count": 1,
+  "transitions_vs_frozen_baseline": {
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  }
+}

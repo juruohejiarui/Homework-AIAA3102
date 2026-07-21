@@ -1,0 +1,86 @@
+{
+  "decision": "Freeze the independently implemented minimal raw-text TF-IDF plus Logistic Regression baseline for the single Ticket 1 held-out comparison.",
+  "decision_basis": "The project specifies TF-IDF plus Logistic Regression and no tuned settings. The frozen implementation uses version-locked sklearn defaults, random_state=3102, train-only fitting, dev-only pre-freeze evidence, no metadata, no manual normalization, no threshold tuning, and no class weighting.",
+  "effective_parameters": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 100,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 3102,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "tfidf_vectorizer": {
+      "analyzer": "word",
+      "binary": false,
+      "decode_error": "strict",
+      "dtype": "numpy.float64",
+      "encoding": "utf-8",
+      "input": "content",
+      "lowercase": true,
+      "max_df": 1.0,
+      "max_features": null,
+      "min_df": 1,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "norm": "l2",
+      "preprocessor": null,
+      "smooth_idf": true,
+      "stop_words": null,
+      "strip_accents": null,
+      "sublinear_tf": false,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "tokenizer": null,
+      "use_idf": true,
+      "vocabulary": null
+    }
+  },
+  "fit_split": "train_ids only",
+  "freeze_status": "frozen_before_heldout",
+  "frozen_at": "2026-07-21T20:09:42+08:00",
+  "heldout_evaluation_count_at_freeze": 0,
+  "heldout_observed_at_freeze": false,
+  "heldout_split": "heldout_ids; evaluation permitted only after this freeze file exists",
+  "input_feature": "text",
+  "integrity": {
+    "contract_sha256": "84de6c87a21df0bc352110edafa73891fa1e2eabb380dc648e1af2e99bf4f646",
+    "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+    "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1"
+  },
+  "label_column": "target",
+  "manual_normalization": null,
+  "metadata_features": [],
+  "model_name": "raw_text_tfidf_logistic_regression",
+  "n_jobs": 1,
+  "pre_freeze_dev_evidence": {
+    "accuracy": 0.7892317793827971,
+    "f1_target_1": 0.7388120423108218,
+    "false_negative": 201,
+    "false_positive": 120,
+    "precision_target_1": 0.7909407665505227,
+    "recall_target_1": 0.6931297709923664,
+    "true_negative": 748,
+    "true_positive": 454
+  },
+  "prediction_rule": "sklearn Pipeline.predict with the fitted LogisticRegression",
+  "reference_contract": {
+    "metric": "heldout_f1_target_1",
+    "reference_value": 0.7574221578566256,
+    "tolerance": 0.001
+  },
+  "score": "predict_proba probability for classifier class 1",
+  "seed": 3102,
+  "selection_split": "dev_ids only",
+  "threshold_selection": null,
+  "ticket": 1
+}

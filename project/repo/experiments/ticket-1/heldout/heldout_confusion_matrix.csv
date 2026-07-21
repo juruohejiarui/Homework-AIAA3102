@@ -1,0 +1,3 @@
+model_name,actual_label,predicted_0,predicted_1
+raw_text_tfidf_logistic_regression,0,755,114
+raw_text_tfidf_logistic_regression,1,194,460

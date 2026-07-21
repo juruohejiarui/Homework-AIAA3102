@@ -1,0 +1,51 @@
+{
+  "duplicate_summary": [
+    {
+      "conflicting_groups_or_pairs": 18,
+      "cross_split_groups_or_pairs": 41,
+      "groups_or_pairs": 69,
+      "member_rows": 179,
+      "relationship_type": "exact"
+    },
+    {
+      "conflicting_groups_or_pairs": 64,
+      "cross_split_groups_or_pairs": 194,
+      "groups_or_pairs": 292,
+      "member_rows": 932,
+      "relationship_type": "canonical"
+    },
+    {
+      "conflicting_groups_or_pairs": 186,
+      "cross_split_groups_or_pairs": 546,
+      "groups_or_pairs": 960,
+      "member_rows": 715,
+      "relationship_type": "near"
+    }
+  ],
+  "freeze_sha256": "f5e814a4cbe4f4f94bcac1c2d1ab07e5effacb83f21e91a6395791b2f5b9b097",
+  "heldout_labels_modified": false,
+  "heldout_rows_removed": 0,
+  "metrics": {
+    "accuracy": 0.7839789888378201,
+    "f1_target_1": 0.7505686125852918,
+    "false_negative": 159,
+    "false_positive": 170,
+    "precision_target_1": 0.7443609022556391,
+    "recall_target_1": 0.7568807339449541,
+    "true_negative": 699,
+    "true_positive": 495
+  },
+  "new_model_fit": false,
+  "prediction_sha256": "0b537ff675028aef6252ffff11f152908b21b0f3fa4e88188f212895704fbedd",
+  "selection_reopened": false,
+  "stable_prediction_sha256": "0b537ff675028aef6252ffff11f152908b21b0f3fa4e88188f212895704fbedd",
+  "status": "ticket5_heldout_reporting_completed",
+  "ticket5_heldout_reporting_count": 1,
+  "transitions_vs_frozen_baseline": {
+    "fixed_fn": 35,
+    "fixed_fp": 0,
+    "new_fn": 0,
+    "new_fp": 56,
+    "prediction_changes": 91
+  }
+}

@@ -1,78 +1,78 @@
 id,text,keyword,location,y_true,baseline_y_pred,probe_y_pred,baseline_score,probe_score,transition,baseline_correct,probe_correct,outcome
-97,Accident on I-24 W #NashvilleTraffic. Traffic moving 8m slower than usual. https://t.co/0GHk693EgJ,accident,"Nashville, TN",1,1,0,0.5218900596647168,0.47839513972775505,1->0,True,False,new_error
-174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183659895,0.48674052147722774,1->0,False,True,fixed_error
+97,Accident on I-24 W #NashvilleTraffic. Traffic moving 8m slower than usual. https://t.co/0GHk693EgJ,accident,"Nashville, TN",1,1,0,0.5218900596647266,0.4783951397277542,1->0,True,False,new_error
+174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183660052,0.48674052147723657,1->0,False,True,fixed_error
 237,"#OMG! I don't believe this. #RIP bro
-#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756524,0.4635188316696568,1->0,True,False,new_error
-512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.5120563427295252,0.49292674864783875,1->0,False,True,fixed_error
-971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848427,0.46188357606621205,1->0,False,True,fixed_error
-1208,Lizard Wizard in a Blizzard #LWB http://t.co/MgR809yc5a,blizzard,,0,1,0,0.7404250882257518,0.4989357082384871,1->0,False,True,fixed_error
-1617,'Redskins WR Roberts Belly-Bombed ' via @TeamStream http://t.co/GbcvVEvDTY,bombed,"Screwston, TX",1,1,0,0.6604328724441652,0.448381943857601,1->0,True,False,new_error
-1653,@rinkydnk2 @ZaibatsuNews @NeoProgressive1 When push2Left talk='ecology'&amp;'human rts'&amp;'democracy'. War Afghetc='Left' humanitarian bombing,bombing,Toronto-Citizen of Canada & US,1,1,0,0.5655753454938502,0.47061290762879027,1->0,True,False,new_error
-1880,501 sky news mandem in totteham going maddddd burning up fed cars an dem ting dere,burning,Isle of Man,1,1,0,0.5801044048621796,0.49259999543190996,1->0,True,False,new_error
-1888,Kanger coils - burning out fast? via /r/Vaping101 http://t.co/cykr4XAlUH,burning,,0,1,0,0.6148076334696332,0.4810045580272411,1->0,False,True,fixed_error
-2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169084,0.48996910555464845,1->0,True,False,new_error
-2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0,0.6314778275767235,0.4591982382474783,1->0,False,True,fixed_error
-2530,Westminister Sr22 W / Knott St **Trfc Collision-No Inj** http://t.co/EUmlca1Edw,collision,"Orange County, California",1,1,0,0.5443241357382528,0.4704236283841058,1->0,True,False,new_error
-2536,@MissJadeBrown tells of the tragic mid-morning collision which claimed the life of a young man riding a motorcycle. https://t.co/rPDA60Aoni,collision,Saint Lucia,1,1,0,0.5530100533879443,0.49566587086545494,1->0,True,False,new_error
-2820,GREAT CONDITION Easton Cyclone Softball Bat Fastpitch (-9) 29/20 SK398 http://t.co/rA2mAjPkq2 http://t.co/y7gHHYK05b,cyclone,,1,1,0,0.6147123443629644,0.49842713426019253,1->0,True,False,new_error
-2857,FYI: ;ACCIDENT PROPERTY DAMAGE;3460 LIMESTONE LN;COL;YELLOWSTONE WAY;FIELDSTONE DR;08/05/2015 19:36:35,damage,"Bartholomew County, Indiana",1,1,0,0.5387170683335207,0.49584655775131536,1->0,True,False,new_error
-2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0,0.5275325531944466,0.4607109639884741,1->0,False,True,fixed_error
-3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175763,0.4656193551623169,1->0,True,False,new_error
+#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756566,0.4635188316696532,1->0,True,False,new_error
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.512056342729524,0.49292674864786057,1->0,False,True,fixed_error
+971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848288,0.4618835760662257,1->0,False,True,fixed_error
+1208,Lizard Wizard in a Blizzard #LWB http://t.co/MgR809yc5a,blizzard,,0,1,0,0.7404250882257878,0.4989357082384881,1->0,False,True,fixed_error
+1617,'Redskins WR Roberts Belly-Bombed ' via @TeamStream http://t.co/GbcvVEvDTY,bombed,"Screwston, TX",1,1,0,0.6604328724441987,0.44838194385759833,1->0,True,False,new_error
+1653,@rinkydnk2 @ZaibatsuNews @NeoProgressive1 When push2Left talk='ecology'&amp;'human rts'&amp;'democracy'. War Afghetc='Left' humanitarian bombing,bombing,Toronto-Citizen of Canada & US,1,1,0,0.5655753454938346,0.4706129076287881,1->0,True,False,new_error
+1880,501 sky news mandem in totteham going maddddd burning up fed cars an dem ting dere,burning,Isle of Man,1,1,0,0.5801044048621943,0.4925999954319094,1->0,True,False,new_error
+1888,Kanger coils - burning out fast? via /r/Vaping101 http://t.co/cykr4XAlUH,burning,,0,1,0,0.6148076334696685,0.4810045580272362,1->0,False,True,fixed_error
+2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169255,0.4899691055546604,1->0,True,False,new_error
+2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0,0.6314778275767777,0.45919823824747474,1->0,False,True,fixed_error
+2530,Westminister Sr22 W / Knott St **Trfc Collision-No Inj** http://t.co/EUmlca1Edw,collision,"Orange County, California",1,1,0,0.5443241357382685,0.47042362838410207,1->0,True,False,new_error
+2536,@MissJadeBrown tells of the tragic mid-morning collision which claimed the life of a young man riding a motorcycle. https://t.co/rPDA60Aoni,collision,Saint Lucia,1,1,0,0.5530100533879263,0.49566587086547237,1->0,True,False,new_error
+2820,GREAT CONDITION Easton Cyclone Softball Bat Fastpitch (-9) 29/20 SK398 http://t.co/rA2mAjPkq2 http://t.co/y7gHHYK05b,cyclone,,1,1,0,0.6147123443629974,0.49842713426018853,1->0,True,False,new_error
+2857,FYI: ;ACCIDENT PROPERTY DAMAGE;3460 LIMESTONE LN;COL;YELLOWSTONE WAY;FIELDSTONE DR;08/05/2015 19:36:35,damage,"Bartholomew County, Indiana",1,1,0,0.5387170683335266,0.4958465577513103,1->0,True,False,new_error
+2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0,0.5275325531944569,0.460710963988486,1->0,False,True,fixed_error
+3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175761,0.46561935516232056,1->0,True,False,new_error
 3475,"Has #IdentityTheft Derailed Your #TaxReturn? 
 8 Steps for Cleaning Up an  #IdentityTheft Train Wreck. #CRI
-http://t.co/gxQWD1qZBd",derailed,"Enterprise, Alabama",0,1,0,0.6073272064098636,0.47804197283321354,1->0,False,True,fixed_error
-3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000146,0.48263920599744875,1->0,False,True,fixed_error
-3702,Media stocks are getting destroyed (DIS FOXA CMCSA SNI AMCX VIAB VIA TWX) http://t.co/aqinaVl1b6,destroyed,todaysbigstock.com,0,1,0,0.5441967811043446,0.4584005722451755,1->0,False,True,fixed_error
-3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0,0.5329051435429631,0.48190915098521575,1->0,False,True,fixed_error
-3990,$10M SETTLEMENT attained using our illustrations to help jurors understand the true devastation of internal injuries: http://t.co/2BaXg1WdPP,devastation,"Denver, CO",1,1,0,0.5369723869582337,0.49545674808380735,1->0,True,False,new_error
-4529,The eyes of the nation &amp; broader conservation community are on #Alaska @AKGovBillWalker reinstate emergency buffer #ProtectDenaliWolves,emergency,,0,1,0,0.5153393133629869,0.48332263458570385,1->0,False,True,fixed_error
-4550,See Aug 4 2015 PoconoRecord @EmergencyMgtMag - How Many Households Have an #Emergency Plan? | http://t.co/7zlsUmIess http://t.co/TdccH01N7q,emergency%20plan,"Alexandria, VA, USA",1,1,0,0.5615938777307199,0.48010542849089044,1->0,True,False,new_error
-4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0,0.5484739669811307,0.4536735024942747,1->0,False,True,fixed_error
-4628,#Healthcare #Job in #Kodiak AK: Emergency Services Supervisor - Emergency... at Providence Health &amp; Services http://t.co/8KJ1wDAiGj #Jobs,emergency%20services,Alaska,0,1,0,0.5202693345035481,0.4862164159849671,1->0,False,True,fixed_error
-4644,Our doctors and nurses in the new Pediatric Emergency Department are all specialized in child services! http://t.co/k1TMLWvjmJ,emergency%20services,"Park Ridge, Illinois",0,1,0,0.5622037783758151,0.48503218843223694,1->0,False,True,fixed_error
-4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0,0.5244978354434978,0.47172815596697903,1->0,False,True,fixed_error
-5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024112,0.4830557968813094,1->0,True,False,new_error
-5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597519968,0.4408178584513896,1->0,False,True,fixed_error
-5454,At the #999day Emergency Services display! Meeting the brave police firefighters and first responders that help keep us safe! ????????,first%20responders,"Stalybridge, Tameside",1,1,0,0.5058001576247834,0.48452831355920056,1->0,True,False,new_error
-5488,RP said they can see smoke coming from the silo on 260th Street in Hartford but no flames.,flames,"Sioux Falls, S.D. ",1,1,0,0.5485433478532761,0.4842090734560921,1->0,True,False,new_error
-5510,The advantages apropos of in flames favorable regard mississauga ontario: pWHvGwax,flames,,0,1,0,0.5302837446005768,0.4489481504237537,1->0,False,True,fixed_error
-5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273623,0.4855377902177074,1->0,True,False,new_error
-5805,@KMacTWN @meaganerd Looks like a bowl of weather cereal. New! Kellogg's Sugar Hail! Stays crunchy even in milk...,hail,"Windsor,Ontario",0,1,0,0.5228420637069925,0.4590322929908123,1->0,False,True,fixed_error
-5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0,0.5794638757469245,0.46173096817760023,1->0,False,True,fixed_error
-6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237609,0.49270229657836034,1->0,False,True,fixed_error
-6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0,0.5163946237232752,0.4503893029998984,1->0,False,True,fixed_error
-6568,'McFadden Reportedly to Test Hamstring Thursday' via @TeamStream http://t.co/jWq4KvJH2j,injury,"Plano, Texas",0,1,0,0.5650969202111334,0.4798945568433969,1->0,False,True,fixed_error
-6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.513861486388386,0.4419662133769187,1->0,True,False,new_error
-6937,@BenignoVito @LibertyBell1000 HILLARYMASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0,0.628708555417207,0.4437052069514078,1->0,False,True,fixed_error
-7205,Coming later this year~ 'THE MAN THAT TATTOOED WOMEN.' A novel based on a real serial killer from #Arkansas &amp; a natural disaster. #NOLA,natural%20disaster,USA,1,1,0,0.519872238552277,0.47147079978733136,1->0,True,False,new_error
-7340,Aug. 5: The Fort Calhoun Nuclear Station is at 100% capacity today according to the NRC: http://t.co/pztbQImpuW,nuclear%20reactor,"Fort Calhoun, NE",0,1,0,0.5376975872183544,0.49036128086748315,1->0,False,True,fixed_error
-7458,Are people not concerned that after #SLAB's obliteration in Scotland #Labour UK is ripping itself apart over #Labourleadership contest?,obliteration,"Glasgow, Scotland",0,1,0,0.5438964641790028,0.48963186702506634,1->0,False,True,fixed_error
-7765,UNWANTED PERSON at 200 BLOCK OF SE 12TH AVE PORTLAND OR [Portland Police #PP15000266818] 17:10 #pdx911,police,"Portland, OR",0,1,0,0.5255177889897236,0.48974669288415945,1->0,False,True,fixed_error
-7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0,0.5954571356633346,0.48664999626190414,1->0,False,True,fixed_error
-8060,Policyholders object to Clico rescue plan http://t.co/E4DvI9vUXZ http://t.co/JyCpf8iYhg,rescue,Trinidad & Tobago,1,1,0,0.5647289198233264,0.4745770766262939,1->0,True,False,new_error
-8138,Angry Mistrustful Rescued Elephant Finds Peace and Friendship in Her New Home (PHOTOS) http://t.co/VaUnPS6WJa via @OneGreenPlanet,rescued,Canada,0,1,0,0.5319670061312431,0.49703713314702586,1->0,False,True,fixed_error
-8408,SANDSTORM!!! WOO HOO!!,sandstorm,"Hamilton County, IN",1,1,0,0.5251335098301194,0.41424480972068045,1->0,True,False,new_error
-8585,@wisdc &amp; obama supports  death2USA .. http://t.co/serARcNrbY,screams,United States,0,1,0,0.6003140918349389,0.49742494877789106,1->0,False,True,fixed_error
-8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0,0.5070019989638579,0.4886893975558702,1->0,False,True,fixed_error
-8761,There's a weird siren going off here...I hope Hunterston isn't in the process of blowing itself to smithereens...,siren,Hame,1,1,0,0.5295530838587098,0.4900210804522595,1->0,True,False,new_error
-9082,Slums are a manifestation state failure to provide housing to citizens. Illegality discourse confounds structural problems. #stopevictions,structural%20failure,,1,1,0,0.5048100465004837,0.44897598074242184,1->0,True,False,new_error
-9237,9) 'Without the bombing you would have to do hara-kiri you know commit suicide'. http://t.co/UO0aQk9KR8 Hiroshima 70 years ago.,suicide%20bombing,Tokyo & Osaka,1,1,0,0.5505261927538067,0.4903675532626452,1->0,True,False,new_error
-9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473890103,0.48769801608608737,1->0,False,True,fixed_error
-9484,@KurtSchlichter  He's already done it by negotiating with the #1 state of terrorism in the World. What was his hurry in trying to get a deal,terrorism,,1,1,0,0.5057388238764181,0.49836924369182406,1->0,True,False,new_error
+http://t.co/gxQWD1qZBd",derailed,"Enterprise, Alabama",0,1,0,0.607327206409875,0.4780419728332107,1->0,False,True,fixed_error
+3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000026,0.482639205997449,1->0,False,True,fixed_error
+3702,Media stocks are getting destroyed (DIS FOXA CMCSA SNI AMCX VIAB VIA TWX) http://t.co/aqinaVl1b6,destroyed,todaysbigstock.com,0,1,0,0.5441967811043666,0.4584005722451721,1->0,False,True,fixed_error
+3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0,0.5329051435429902,0.48190915098521014,1->0,False,True,fixed_error
+3990,$10M SETTLEMENT attained using our illustrations to help jurors understand the true devastation of internal injuries: http://t.co/2BaXg1WdPP,devastation,"Denver, CO",1,1,0,0.5369723869582399,0.4954567480838145,1->0,True,False,new_error
+4529,The eyes of the nation &amp; broader conservation community are on #Alaska @AKGovBillWalker reinstate emergency buffer #ProtectDenaliWolves,emergency,,0,1,0,0.5153393133629707,0.4833226345857215,1->0,False,True,fixed_error
+4550,See Aug 4 2015 PoconoRecord @EmergencyMgtMag - How Many Households Have an #Emergency Plan? | http://t.co/7zlsUmIess http://t.co/TdccH01N7q,emergency%20plan,"Alexandria, VA, USA",1,1,0,0.5615938777307514,0.48010542849088556,1->0,True,False,new_error
+4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0,0.548473966981153,0.4536735024942716,1->0,False,True,fixed_error
+4628,#Healthcare #Job in #Kodiak AK: Emergency Services Supervisor - Emergency... at Providence Health &amp; Services http://t.co/8KJ1wDAiGj #Jobs,emergency%20services,Alaska,0,1,0,0.5202693345035683,0.48621641598496784,1->0,False,True,fixed_error
+4644,Our doctors and nurses in the new Pediatric Emergency Department are all specialized in child services! http://t.co/k1TMLWvjmJ,emergency%20services,"Park Ridge, Illinois",0,1,0,0.5622037783758117,0.4850321884322482,1->0,False,True,fixed_error
+4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0,0.5244978354435214,0.47172815596697854,1->0,False,True,fixed_error
+5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024065,0.4830557968813143,1->0,True,False,new_error
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597520046,0.44081785845138793,1->0,False,True,fixed_error
+5454,At the #999day Emergency Services display! Meeting the brave police firefighters and first responders that help keep us safe! ????????,first%20responders,"Stalybridge, Tameside",1,1,0,0.5058001576247602,0.4845283135592166,1->0,True,False,new_error
+5488,RP said they can see smoke coming from the silo on 260th Street in Hartford but no flames.,flames,"Sioux Falls, S.D. ",1,1,0,0.5485433478532468,0.484209073456101,1->0,True,False,new_error
+5510,The advantages apropos of in flames favorable regard mississauga ontario: pWHvGwax,flames,,0,1,0,0.5302837446005609,0.4489481504237688,1->0,False,True,fixed_error
+5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273591,0.48553779021769955,1->0,True,False,new_error
+5805,@KMacTWN @meaganerd Looks like a bowl of weather cereal. New! Kellogg's Sugar Hail! Stays crunchy even in milk...,hail,"Windsor,Ontario",0,1,0,0.5228420637069763,0.45903229299081444,1->0,False,True,fixed_error
+5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0,0.5794638757469507,0.461730968177608,1->0,False,True,fixed_error
+6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237764,0.49270229657836023,1->0,False,True,fixed_error
+6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0,0.5163946237233049,0.45038930299989505,1->0,False,True,fixed_error
+6568,'McFadden Reportedly to Test Hamstring Thursday' via @TeamStream http://t.co/jWq4KvJH2j,injury,"Plano, Texas",0,1,0,0.5650969202111606,0.47989455684339355,1->0,False,True,fixed_error
+6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.5138614863883569,0.4419662133769148,1->0,True,False,new_error
+6937,@BenignoVito @LibertyBell1000 HILLARYMASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0,0.6287085554172096,0.4437052069514031,1->0,False,True,fixed_error
+7205,Coming later this year~ 'THE MAN THAT TATTOOED WOMEN.' A novel based on a real serial killer from #Arkansas &amp; a natural disaster. #NOLA,natural%20disaster,USA,1,1,0,0.5198722385522704,0.4714707997873371,1->0,True,False,new_error
+7340,Aug. 5: The Fort Calhoun Nuclear Station is at 100% capacity today according to the NRC: http://t.co/pztbQImpuW,nuclear%20reactor,"Fort Calhoun, NE",0,1,0,0.5376975872183585,0.49036128086749725,1->0,False,True,fixed_error
+7458,Are people not concerned that after #SLAB's obliteration in Scotland #Labour UK is ripping itself apart over #Labourleadership contest?,obliteration,"Glasgow, Scotland",0,1,0,0.5438964641790063,0.48963186702506933,1->0,False,True,fixed_error
+7765,UNWANTED PERSON at 200 BLOCK OF SE 12TH AVE PORTLAND OR [Portland Police #PP15000266818] 17:10 #pdx911,police,"Portland, OR",0,1,0,0.5255177889897286,0.4897466928841612,1->0,False,True,fixed_error
+7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0,0.5954571356633654,0.4866499962619027,1->0,False,True,fixed_error
+8060,Policyholders object to Clico rescue plan http://t.co/E4DvI9vUXZ http://t.co/JyCpf8iYhg,rescue,Trinidad & Tobago,1,1,0,0.5647289198233721,0.4745770766262905,1->0,True,False,new_error
+8138,Angry Mistrustful Rescued Elephant Finds Peace and Friendship in Her New Home (PHOTOS) http://t.co/VaUnPS6WJa via @OneGreenPlanet,rescued,Canada,0,1,0,0.5319670061312487,0.4970371331470238,1->0,False,True,fixed_error
+8408,SANDSTORM!!! WOO HOO!!,sandstorm,"Hamilton County, IN",1,1,0,0.5251335098301211,0.41424480972067756,1->0,True,False,new_error
+8585,@wisdc &amp; obama supports  death2USA .. http://t.co/serARcNrbY,screams,United States,0,1,0,0.6003140918349679,0.4974249487778893,1->0,False,True,fixed_error
+8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0,0.5070019989638421,0.4886893975558851,1->0,False,True,fixed_error
+8761,There's a weird siren going off here...I hope Hunterston isn't in the process of blowing itself to smithereens...,siren,Hame,1,1,0,0.5295530838586917,0.4900210804522727,1->0,True,False,new_error
+9082,Slums are a manifestation state failure to provide housing to citizens. Illegality discourse confounds structural problems. #stopevictions,structural%20failure,,1,1,0,0.5048100465004907,0.4489759807424175,1->0,True,False,new_error
+9237,9) 'Without the bombing you would have to do hara-kiri you know commit suicide'. http://t.co/UO0aQk9KR8 Hiroshima 70 years ago.,suicide%20bombing,Tokyo & Osaka,1,1,0,0.5505261927538025,0.4903675532626446,1->0,True,False,new_error
+9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473889971,0.48769801608610386,1->0,False,True,fixed_error
+9484,@KurtSchlichter  He's already done it by negotiating with the #1 state of terrorism in the World. What was his hurry in trying to get a deal,terrorism,,1,1,0,0.5057388238763957,0.4983692436918472,1->0,True,False,new_error
 9686,"@kunalkapoor Photo of the Day: Storm
 Chaser
 http://t.co/4WJy7seHmw
-#photography #pod",tornado,"Dindigul,TamilNadu.",1,1,0,0.6117710147937025,0.4991732067870582,1->0,True,False,new_error
-9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0,0.5171927159339293,0.4872854453103169,1->0,False,True,fixed_error
-9838,Esteemed journalist recalls tragic effects of unaddressed #childhood #trauma. @keithboykin @RandallPinkston @pozarmy  http://t.co/GXq1Auzb18,trauma,"Nashville, TN",1,1,0,0.5552531784099397,0.46961475440284706,1->0,True,False,new_error
-9842,What is the role of usg in paeds major trauma imaging decision tool? #FOAMed #FOAMcc,trauma,,0,1,0,0.5343726857567687,0.46768645107069284,1->0,False,True,fixed_error
-10130,Ancient Mayan Tablet Found in Jungle Temple http://t.co/qp6q8RS8ON,upheaval,"Wisconsin, USA",1,1,0,0.5263920812154085,0.4845917584007754,1->0,True,False,new_error
+#photography #pod",tornado,"Dindigul,TamilNadu.",1,1,0,0.6117710147937067,0.49917320678707333,1->0,True,False,new_error
+9771,Hollywood movie about trapped miners released in #Chile http://t.co/r18aUtnLSd #ZippedNews http://t.co/CNqaE9foj6,trapped,,0,1,0,0.5171927159339386,0.48728544531031964,1->0,False,True,fixed_error
+9838,Esteemed journalist recalls tragic effects of unaddressed #childhood #trauma. @keithboykin @RandallPinkston @pozarmy  http://t.co/GXq1Auzb18,trauma,"Nashville, TN",1,1,0,0.5552531784099539,0.4696147544028476,1->0,True,False,new_error
+9842,What is the role of usg in paeds major trauma imaging decision tool? #FOAMed #FOAMcc,trauma,,0,1,0,0.5343726857567523,0.4676864510707042,1->0,False,True,fixed_error
+10130,Ancient Mayan Tablet Found in Jungle Temple http://t.co/qp6q8RS8ON,upheaval,"Wisconsin, USA",1,1,0,0.5263920812154439,0.4845917584007759,1->0,True,False,new_error
 10209,"nside a Dragon's belly. Or an ice cave under
 a volcano in Kamchatka | Photography by
 å©Daniel Korzhonov
-http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098314,0.4681855381438472,1->0,True,False,new_error
-10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207256,0.44025147683014715,1->0,True,False,new_error
-10527,Oregon's biggest wildfire slows growth http://t.co/P0GoS5URXG via @katunews,wildfire,"Eddyville, Oregon 97343",1,1,0,0.5298624181989355,0.4766282874191263,1->0,True,False,new_error
-10536,Windstorm lastingness perquisite - acquiesce in a twister retreat: ZiUW http://t.co/iRt4kkgsJx,windstorm,,1,1,0,0.5174134853266275,0.43337791323165686,1->0,True,False,new_error
-10544,*looks outside at the windstorm* niiiice,windstorm,"Victoria, BC",1,1,0,0.5331485866194543,0.4877171260927157,1->0,True,False,new_error
-10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0,0.5312923407705948,0.46038072942007585,1->0,False,True,fixed_error
+http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098492,0.4681855381438486,1->0,True,False,new_error
+10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207206,0.440251476830142,1->0,True,False,new_error
+10527,Oregon's biggest wildfire slows growth http://t.co/P0GoS5URXG via @katunews,wildfire,"Eddyville, Oregon 97343",1,1,0,0.5298624181989622,0.47662828741912394,1->0,True,False,new_error
+10536,Windstorm lastingness perquisite - acquiesce in a twister retreat: ZiUW http://t.co/iRt4kkgsJx,windstorm,,1,1,0,0.517413485326659,0.43337791323165575,1->0,True,False,new_error
+10544,*looks outside at the windstorm* niiiice,windstorm,"Victoria, BC",1,1,0,0.5331485866194404,0.4877171260927259,1->0,True,False,new_error
+10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0,0.5312923407705978,0.46038072942008634,1->0,False,True,fixed_error

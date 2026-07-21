@@ -1,6 +1,6 @@
 id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
-174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183659895,0.49082188801683424,1->0,False,True,fixed_error
-3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175763,0.49971097941772896,1->0,True,False,new_error
-3903,Zayn Malik &amp; Perrie Edwards End Engagement: SheÛªs Û÷DevastatedÛª http://t.co/GedOxSPpL9 http://t.co/ACZRUOrYtD,devastated,,1,0,1,0.4990439456239312,0.5008216737218644,0->1,False,True,fixed_error
-5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024112,0.4984528352485562,1->0,True,False,new_error
-6420,@pattonoswalt @FoxNews Wait I thought Fecal Hurricane was on SciFi? Maybe that was turdnado. I've been forgeting up a shit storm lately.,hurricane,,1,0,1,0.4947911418212379,0.5129293016518365,0->1,False,True,fixed_error
+174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183660052,0.4908218880168324,1->0,False,True,fixed_error
+3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175761,0.4997109794177283,1->0,True,False,new_error
+3903,Zayn Malik &amp; Perrie Edwards End Engagement: SheÛªs Û÷DevastatedÛª http://t.co/GedOxSPpL9 http://t.co/ACZRUOrYtD,devastated,,1,0,1,0.49904394562396115,0.5008216737218627,0->1,False,True,fixed_error
+5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024065,0.4984528352485553,1->0,True,False,new_error
+6420,@pattonoswalt @FoxNews Wait I thought Fecal Hurricane was on SciFi? Maybe that was turdnado. I've been forgeting up a shit storm lately.,hurricane,,1,0,1,0.49479114182122896,0.5129293016518367,0->1,False,True,fixed_error

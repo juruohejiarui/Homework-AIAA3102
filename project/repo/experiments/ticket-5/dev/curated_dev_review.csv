@@ -1,0 +1,26 @@
+id,split,original_label,proposed_label,issue_type,evidence,disposition,confidence,model_error_type
+4076,train,0,1,exact_duplicate_conflicting_label,"Exact text matches train IDs 4068 and 4077 and dev ID 4072, all labeled 1; it explicitly describes genocide, refugees, and internally displaced people.",fix,0.98,not_applicable
+6566,train,0,1,exact_duplicate_conflicting_label,"Exact text matches train IDs 6537 and 6548 labeled 1; it literally reports a cleared traffic incident with injury.",fix,0.99,not_applicable
+8698,train,1,0,exact_duplicate_conflicting_label,"Exact text matches train IDs 8702 and 8714 labeled 0; 'sinking feeling' refers to a phone using 3G and is clearly figurative.",fix,0.98,not_applicable
+8739,train,1,0,exact_duplicate_conflicting_label,"Same exact figurative 3G-phone text as IDs 8698, 8702, and 8714; no disaster event is described.",fix,0.98,not_applicable
+1723,train,1,0,exact_duplicate_conflicting_label,"Exact text matches train ID 1922 labeled 0; this is a lyric-like phrase about burning buildings rather than an event report.",fix,0.96,not_applicable
+1760,train,1,0,exact_duplicate_conflicting_label,"Exact text matches train ID 1950 labeled 0; it hypothetically requests burning buildings for a music video.",fix,0.96,not_applicable
+6097,train,1,0,exact_duplicate_conflicting_label,"Four exact duplicates (6087, 6090, 6111, 6118) are labeled 0; Hellfire appears in a religious charity quotation.",fix,0.99,not_applicable
+9472,train,1,0,exact_duplicate_conflicting_label,"Exact dev duplicate 9470 is labeled 0; the text negates terrorism and reports no event.",fix,0.98,not_applicable
+5247,dev,0,1,likely_mislabel,"The tweet literally reports police investigating a pedestrian fatality caused by a train; the Ticket 4 false positive is semantically consistent with target 1.",fix,0.97,false_positive
+6407,dev,1,0,likely_mislabel,"'My back is so sunburned :(' is an individual minor condition rather than a disaster report; the false negative is not persuasive model-failure evidence.",fix,0.96,false_negative
+10823,dev,1,0,likely_mislabel,"'Did you get wrecked again?' is conversational/figurative and contains no event report.",fix,0.97,false_negative
+6325,dev,1,0,likely_mislabel,"A bartender holding change 'hostage' to obtain a phone number is plainly figurative.",fix,0.99,false_negative
+805,dev,1,0,likely_mislabel,"The text explicitly describes a virtual space battle with fleets and ships in a game-like setting, not a real disaster.",fix,0.98,false_negative
+353,dev,0,,canonical_duplicate_conflicting_label,"Canonical text is identical to dev ID 390 but labels conflict; URL differences provide no semantic basis to choose one annotation.",ambiguous,0.99,false_positive
+390,dev,1,,canonical_duplicate_conflicting_label,"Canonical text is identical to dev ID 353 but labels conflict; the alien-annihilation framing is also semantically borderline.",ambiguous,0.99,not_error
+4656,train,0,,exact_duplicate_conflicting_label,"Five exact copies across train/dev carry labels 0 and 1; historical tribal war is mentioned but the tweet emphasizes peace, so a single confident label is not recoverable from text alone.",ambiguous,0.92,not_applicable
+4669,dev,1,,exact_duplicate_conflicting_label,"Exact duplicates 4656, 4659, 4672, and 4684 contain both labels; identical evidence yields contradictory annotations.",ambiguous,0.96,not_error
+7761,dev,0,,hard_negative,"A missing-person police search is serious news but is not necessarily a disaster under this task; retain the label and treat the high-score false positive as scope weakness.",reject_false_positive,0.86,false_positive
+6002,dev,0,,hard_negative,"The tweet explicitly says no hazardous weather is expected; disaster vocabulary caused the false positive but the negative label is well supported.",reject_false_positive,0.99,false_positive
+9341,dev,0,,hard_negative,"'Suicide of a Superpower' is a book title, not a report of a suicide or disaster; the negative label is well supported.",reject_false_positive,0.98,false_positive
+1208,dev,0,,hard_negative,"'Lizard Wizard in a Blizzard' is wordplay/title-like content, not a weather-disaster report.",reject_false_positive,0.98,false_positive
+5140,dev,1,,cross_split_exact_duplicate,"This manslaughter report exactly duplicates six train rows with the same label, creating potential split leakage even though the annotation is consistent.",keep_but_flag,0.99,not_error
+8183,dev,1,,cross_split_exact_duplicate,"This migrant-boat rescue report exactly duplicates three train rows with the same label, creating potential split leakage.",keep_but_flag,0.99,not_error
+1634,dev,1,,within_dev_exact_duplicate,"Exact duplicate dev ID 1665 has the same label; retain both but flag non-independent evaluation evidence.",keep_but_flag,0.99,not_error
+563,dev,0,1,near_duplicate_conflicting_label,"Similarity 0.9954 to train ID 585 labeled 1; both report a Chicago-area bar owner admitting an arson scheme, so the negative annotation is likely inconsistent.",fix,0.97,false_positive

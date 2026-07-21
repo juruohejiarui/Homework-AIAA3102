@@ -1,0 +1,10 @@
+path,category,sha256,rows,status,note
+predictions/heldout_predictions.csv,prediction,e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66,1523,verified,"exact schema, stable IDs, labels, and order verified"
+predictions/ticket-2-heldout-predictions.csv,prediction,14fa2e4f1bdc99c97abd6d39a418279545cc084786ad6785dd948673202ef54a,1523,verified,"exact schema, stable IDs, labels, and order verified"
+predictions/ticket-3-heldout-predictions.csv,prediction,a6f65bfdcd9cd7116acd2966f55d68a7fac6f9ebb85a56149b88ae56f50c942e,1523,verified,"exact schema, stable IDs, labels, and order verified"
+predictions/ticket-4-heldout-predictions.csv,prediction,9ba20012c64b1b6afef701da553968a8d906c92d06e771a019046e64d9180d18,1523,verified,"exact schema, stable IDs, labels, and order verified"
+predictions/ticket-5-heldout-predictions.csv,prediction,0b537ff675028aef6252ffff11f152908b21b0f3fa4e88188f212895704fbedd,1523,verified,"exact schema, stable IDs, labels, and order verified"
+predictions/final-heldout-predictions.csv,prediction,dda12e5cfab19d9ec565c55ea1b08e8c26671c1ea10afe046eba1f2422a18e82,1523,verified,"exact schema, stable IDs, labels, and order verified"
+results/summary.csv,result_table,73d2da9784ceba9168c833f0fe31fd8232ec0f2737b1b1ff95d1a0b3e8108fa1,5,verified,reproduced from five clean replay prediction sets
+results/threshold_sweep.csv,result_table,fe0f6907e72431a5b5852252e8570abaeab53504b949a0580a54900a9a4e53b6,61,verified,reproduced from raw-text baseline dev scores
+results/data_quality_audit.csv,result_table,9387710cc13d24ab914e61514da4d2c6a23a2d1bbd98beb3017e0faf88c39421,64,verified,reproduced from preserved structured Ticket 5 records

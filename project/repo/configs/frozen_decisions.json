@@ -1,15 +1,15 @@
 {
   "baseline_comparator_ticket": "ticket_1",
   "clean_process_policy": "Launch pipeline.reproduce_frozen_ticket once per ticket in a distinct interpreter process; write only under experiments/final-reproducibility-audit/replays.",
-  "created_at": "2026-07-21T13:57:01+08:00",
+  "created_at": "2026-07-21T20:15:04+08:00",
   "data_path": "data/train.csv",
   "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
   "decisions": [
     {
       "archived_dev_predictions": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv",
-      "archived_dev_predictions_sha256": "0e10a0d08ab24d2f85413bb4efcf284dee62593b8e58457bab305ff168525c32",
+      "archived_dev_predictions_sha256": "7277257f4fd62f3328352350819754c6cd0e9a7dcf244a7f6a0053bc425e9428",
       "archived_heldout_predictions": "predictions/heldout_predictions.csv",
-      "archived_heldout_predictions_sha256": "0e5b6caab24e1371ff17ae7a95882831b744f4d147c3c56f2ef2e51369c4bba1",
+      "archived_heldout_predictions_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
       "decision": "frozen_reference_baseline",
       "decision_basis_split": "dev_ids only",
       "expected_dev_metrics": {
@@ -40,11 +40,11 @@
       },
       "freeze_decision_reason": "The project specifies TF-IDF plus Logistic Regression and no tuned settings. The frozen implementation uses version-locked sklearn defaults, random_state=3102, train-only fitting, dev-only pre-freeze evidence, no metadata, no manual normalization, no threshold tuning, and no class weighting.",
       "freeze_path": "experiments/ticket-1/frozen_baseline_config.json",
-      "freeze_sha256": "3b1f589fb5b445cf146e63ad176dd5255e99aa342cc0502c8b8df657945ee3e8",
+      "freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b",
       "freeze_status": "frozen_before_heldout",
-      "frozen_at": "2026-07-21T12:08:53+08:00",
+      "frozen_at": "2026-07-21T20:09:42+08:00",
       "heldout_completion_path": "experiments/ticket-1/heldout/heldout_evaluation_completed.json",
-      "heldout_completion_sha256": "e355150a1aceabca056e3e8075366e56cd78baccb950552b2e5a4cdab3e7d502",
+      "heldout_completion_sha256": "e48c1c14339d683092bc53fc10473adc98e69fb90bcb94016d9fa85a5ff1a554",
       "heldout_count_at_freeze": 0,
       "heldout_used_for_selection": false,
       "model_name": "raw_text_tfidf_logistic_regression",
@@ -57,15 +57,15 @@
         "training_label_corrections": []
       },
       "selection_reopening_permitted": false,
-      "summary_decision_reason": "Frozen before the historical held-out comparison from project specification and dev evidence; files later reconstructed without changing the decision.",
+      "summary_decision_reason": "Frozen before held-out comparison from project specification and dev evidence.",
       "ticket": 1,
       "ticket_key": "ticket_1"
     },
     {
       "archived_dev_predictions": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv",
-      "archived_dev_predictions_sha256": "5798ffbde7e682026128e0b6ab4a4770f3f9537a6f920e7a8a57c4430b2d2286",
+      "archived_dev_predictions_sha256": "5ae850e24e071fe60d71b8f93d260e2b12577bae7b520030964949241be1f266",
       "archived_heldout_predictions": "predictions/ticket-2-heldout-predictions.csv",
-      "archived_heldout_predictions_sha256": "486bd8af3f808ed29a4471b384cfa82d6080670f657193c6717f1d0c4305acb4",
+      "archived_heldout_predictions_sha256": "14fa2e4f1bdc99c97abd6d39a418279545cc084786ad6785dd948673202ef54a",
       "decision": "adopt_url_placeholder_normalization",
       "decision_basis_split": "dev_ids only",
       "expected_dev_metrics": {
@@ -96,11 +96,11 @@
       },
       "freeze_decision_reason": "Selected on dev only: URL placeholdering had the highest normalization-variant F1 (0.7403132728771641 versus raw 0.7388120423108218), increased precision and accuracy, fixed 28 baseline errors while creating 22, and was exactly invariant on all 767 URL-perturbed dev rows while the raw control changed 275 predictions.",
       "freeze_path": "experiments/ticket-2/frozen_decision.json",
-      "freeze_sha256": "51a9ed0c07d092fa194a1f1399ae502eb0c3662bfdfb2b661ef22dfcbc5376cf",
+      "freeze_sha256": "d0818d6ad68f1900301e8738495ade949f96bcaa6d7646ef3e4b3a845896eaed",
       "freeze_status": "frozen_before_ticket2_heldout",
-      "frozen_at": "2026-07-21T13:00:54+08:00",
+      "frozen_at": "2026-07-21T20:13:37+08:00",
       "heldout_completion_path": "experiments/ticket-2/heldout/heldout_evaluation_completed.json",
-      "heldout_completion_sha256": "d0c0cf0bec0513b2320d421244178f3c4891642e3ce34b1fcc91ac5bd4ae7087",
+      "heldout_completion_sha256": "abbd3fe17e24514b60d65f6c49bd4f2919c8b8ba32db326a3e784d6972e760cc",
       "heldout_count_at_freeze": 0,
       "heldout_used_for_selection": false,
       "model_name": "normalize_urls_placeholder",
@@ -119,9 +119,9 @@
     },
     {
       "archived_dev_predictions": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv",
-      "archived_dev_predictions_sha256": "ffdb5a1d7103c76096700cd89e25c25101f705c87a37ae21630c70d7eb1d63bd",
+      "archived_dev_predictions_sha256": "23b3e84fa858181c444c8b8f23601a5a3d6ace3cc5a421068f652ee2a5949d62",
       "archived_heldout_predictions": "predictions/ticket-3-heldout-predictions.csv",
-      "archived_heldout_predictions_sha256": "2e57aa5dfca39c329ca1773ff3437b3d01cd2a87965e6974ac2017908e3cefa3",
+      "archived_heldout_predictions_sha256": "a6f65bfdcd9cd7116acd2966f55d68a7fac6f9ebb85a56149b88ae56f50c942e",
       "decision": "retain_text_only_reject_shortcuts",
       "decision_basis_split": "dev_ids only",
       "expected_dev_metrics": {
@@ -152,11 +152,11 @@
       },
       "freeze_decision_reason": "Retain the frozen text-only baseline. Although text plus keyword and selected shallow features raised dev F1 to 0.7493956486704271, its gain was shortcut-sensitive: masking keyword changed 702 predictions and reduced F1 to 0.6423057128152342, while superficial-text neutralization reduced F1 to 0.7330677290836654. Text plus keyword alone was worse than baseline (0.7350835322195705). Sparse location, length-only, and shallow-only variants were substantially weaker. The visible gain is therefore rejected rather than adopted automatically.",
       "freeze_path": "experiments/ticket-3/frozen_decision.json",
-      "freeze_sha256": "651905972507d06427d427e3e3f0a219faba48d8dff2183dbd86e4c194cf0ac6",
+      "freeze_sha256": "4a555995bdfff447ea192e35e78abcfda02d4914375ebe4631b28faf7a0f957c",
       "freeze_status": "frozen_before_ticket3_heldout_reporting",
-      "frozen_at": "2026-07-21T13:13:53+08:00",
+      "frozen_at": "2026-07-21T20:14:15+08:00",
       "heldout_completion_path": "experiments/ticket-3/heldout/heldout_evaluation_completed.json",
-      "heldout_completion_sha256": "d14f2313cd45cff55747862492302d4911cbf3112bd28eeb529c0fc7e6b94d22",
+      "heldout_completion_sha256": "54de03e00a96435625fcba804ff7f93bac011b651f57a6734dccff88949957c0",
       "heldout_count_at_freeze": 0,
       "heldout_used_for_selection": false,
       "model_name": "raw_text_tfidf_logistic_regression",
@@ -175,9 +175,9 @@
     },
     {
       "archived_dev_predictions": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv",
-      "archived_dev_predictions_sha256": "b58e295cd07483ffd39696d0d3f2f991c3e0c627a7271dddbc0de91c105b2dcb",
+      "archived_dev_predictions_sha256": "4b94e757d7e2ab43a453318f770bc906cf28ee41b16dd6f611e8be2be348ab97",
       "archived_heldout_predictions": "predictions/ticket-4-heldout-predictions.csv",
-      "archived_heldout_predictions_sha256": "d45d3f0b53c29d304bb571a3e9c01dc48d4c742060b410e2fcb8a6095190feeb",
+      "archived_heldout_predictions_sha256": "9ba20012c64b1b6afef701da553968a8d906c92d06e771a019046e64d9180d18",
       "decision": "adopt_balanced_logistic_regression_at_default_threshold",
       "decision_basis_split": "dev_ids only",
       "expected_dev_metrics": {
@@ -206,13 +206,13 @@
         "new_fn": 0,
         "new_fp": 56
       },
-      "freeze_decision_reason": "Select balanced Logistic Regression with the frozen raw-text TF-IDF preprocessing, C=1.0, and probability threshold 0.50. It maximized target-1 dev F1 under the predeclared bounded criterion (0.7520849128127369 versus baseline 0.7388120423108218). The gain came from fixing 42 baseline false negatives while creating 48 new false positives: recall rose from 0.6931297709923664 to 0.7572519083969466 while precision fell from 0.7909407665505227 to 0.7469879518072289. The best baseline threshold-only candidate was 0.47 at F1 0.7494071146245059, and the best regularization-only candidate was C=2.0 at F1 0.7504025764895334.",
+      "freeze_decision_reason": "Selected variant 'lr_c1_balanced_default' maximised target-1 dev F1 under the predeclared bounded criterion (dev F1 0.7520849128). Hyperparameters: C=1.0, class_weight=balanced, threshold=0.50.",
       "freeze_path": "experiments/ticket-4/frozen_decision.json",
-      "freeze_sha256": "14e3c474f15a04a9997bada41d477447ea2e3c7e49533b8980edfac7896b371e",
+      "freeze_sha256": "098ce482f0bf9cf9ac5b0bd509d15310c9e6a48cb66c08651c87584316307845",
       "freeze_status": "frozen_before_ticket4_heldout_evaluation",
-      "frozen_at": "2026-07-21T13:26:17+08:00",
+      "frozen_at": "2026-07-21T20:14:47+08:00",
       "heldout_completion_path": "experiments/ticket-4/heldout/heldout_evaluation_completed.json",
-      "heldout_completion_sha256": "0ec2d4ced0aa5af37de32ba056f20370d9b65461b115b1392cccc2b31a43c49e",
+      "heldout_completion_sha256": "3c4562f5b62103a90d57cd0f75df15228736414a2173745d3bdec53b93ed0914",
       "heldout_count_at_freeze": 0,
       "heldout_used_for_selection": false,
       "model_name": "lr_c1_balanced_default",
@@ -225,15 +225,15 @@
         "training_label_corrections": []
       },
       "selection_reopening_permitted": false,
-      "summary_decision_reason": "Select balanced Logistic Regression with the frozen raw-text TF-IDF preprocessing, C=1.0, and probability threshold 0.50. It maximized target-1 dev F1 under the predeclared bounded criterion (0.7520849128127369 versus baseline 0.7388120423108218). The gain came from fixing 42 baseline false negatives while creating 48 new false positives: recall rose from 0.6931297709923664 to 0.7572519083969466 while precision fell from 0.7909407665505227 to 0.7469879518072289. The best baseline threshold-only candidate was 0.47 at F1 0.7494071146245059, and the best regularization-only candidate was C=2.0 at F1 0.7504025764895334.",
+      "summary_decision_reason": "Selected variant 'lr_c1_balanced_default' maximised target-1 dev F1 under the predeclared bounded criterion (dev F1 0.7520849128). Hyperparameters: C=1.0, class_weight=balanced, threshold=0.50.",
       "ticket": 4,
       "ticket_key": "ticket_4"
     },
     {
       "archived_dev_predictions": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv",
-      "archived_dev_predictions_sha256": "b58e295cd07483ffd39696d0d3f2f991c3e0c627a7271dddbc0de91c105b2dcb",
+      "archived_dev_predictions_sha256": "4b94e757d7e2ab43a453318f770bc906cf28ee41b16dd6f611e8be2be348ab97",
       "archived_heldout_predictions": "predictions/ticket-5-heldout-predictions.csv",
-      "archived_heldout_predictions_sha256": "b4ca0706ca355e4ba05a9c09f4c3fb8fd701e07c3ef211d3a9ee93d4a1c465d2",
+      "archived_heldout_predictions_sha256": "0b537ff675028aef6252ffff11f152908b21b0f3fa4e88188f212895704fbedd",
       "decision": "retain_ticket4_model_no_label_corrections",
       "decision_basis_split": "train_ids and dev_ids only",
       "expected_dev_metrics": {
@@ -264,11 +264,11 @@
       },
       "freeze_decision_reason": "Retain the frozen Ticket 4 balanced Logistic Regression model and do not apply training-label corrections. The eight-row correction probe preserved all original/proposed labels and source data, but dev F1 fell from 0.7520849128127369 to 0.7488653555219364 (delta -0.003219557290800479), failing the predeclared -0.002 noninferiority margin. It fixed 3 Ticket 4 dev errors while creating 8. Duplicate conflicts remain important audit findings, but benchmark inconsistency and annotation ambiguity make silent relabeling unjustified.",
       "freeze_path": "experiments/ticket-5/frozen_decision.json",
-      "freeze_sha256": "9423deaf6f30659f55547176a5ddb2191ed4895738cf7fe17b9d6138df693afa",
+      "freeze_sha256": "f5e814a4cbe4f4f94bcac1c2d1ab07e5effacb83f21e91a6395791b2f5b9b097",
       "freeze_status": "frozen_before_ticket5_heldout_reporting_and_audit",
-      "frozen_at": "2026-07-21T13:42:00+08:00",
+      "frozen_at": "2026-07-21T20:14:58+08:00",
       "heldout_completion_path": "experiments/ticket-5/heldout/heldout_evaluation_completed.json",
-      "heldout_completion_sha256": "1dc339b36fa14c557ae279b658c18eba8d260774603af37231b376edf324c66d",
+      "heldout_completion_sha256": "f66250d0c4a6aff2397cc524b639d33c142f21b8f4d9d769cca37e285779a986",
       "heldout_count_at_freeze": 0,
       "heldout_used_for_selection": false,
       "model_name": "lr_c1_balanced_default",
@@ -286,7 +286,7 @@
       "ticket_key": "ticket_5"
     }
   ],
-  "exact_command": "D:\\project\\topic-a-text-classification-pipeline-forensics\\.venv\\Scripts\\python.exe -m pipeline.build_frozen_decisions_manifest",
+  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.build_frozen_decisions_manifest",
   "explicit_replay_authorization": "User Step 10 explicitly requested re-running all final configurations from clean processes.",
   "final_prediction_path": "predictions/final-heldout-predictions.csv",
   "final_submission_decision": "ticket_5 retains the ticket_4 balanced Logistic Regression configuration with no label corrections",
@@ -301,7 +301,7 @@
     },
     "summary": {
       "path": "results/summary.csv",
-      "sha256": "19edbc8bfe93aac063b0da041482a442cf2c99444894371cdd3fc9eb3bf74c59"
+      "sha256": "73d2da9784ceba9168c833f0fe31fd8232ec0f2737b1b1ff95d1a0b3e8108fa1"
     },
     "threshold_sweep": {
       "path": "results/threshold_sweep.csv",

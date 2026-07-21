@@ -1,0 +1,2 @@
+split,variant,precision_target_1,recall_target_1,f1_target_1,accuracy,true_negative,false_positive,false_negative,true_positive,prediction_changes,fixed_fp,fixed_fn,new_fp,new_fn,new_model_fit
+heldout,lr_c1_balanced_default,0.7443609022556391,0.7568807339449541,0.7505686125852918,0.7839789888378201,699,170,159,495,91,0,35,56,0,False

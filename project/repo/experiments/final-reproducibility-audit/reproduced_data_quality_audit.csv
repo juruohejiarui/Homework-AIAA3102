@@ -1,0 +1,65 @@
+id,issue_type,evidence,disposition,confidence
+4076,exact_duplicate_conflicting_label,"train target=0; exact train IDs 4068/4077 and dev ID 4072 have target=1, and the text explicitly describes genocide, refugees, and internally displaced people; recommend 0->1 but source remains unchanged.",fix,0.98
+6566,exact_duplicate_conflicting_label,train target=0; exact train IDs 6537/6548 have target=1 and the text literally reports a cleared traffic incident with injury; recommend 0->1 but source remains unchanged.,fix,0.99
+8698,exact_duplicate_conflicting_label,train target=1; exact IDs 8702/8714 have target=0 and 'sinking feeling' refers to a phone using 3G; recommend 1->0 but source remains unchanged.,fix,0.98
+8739,exact_duplicate_conflicting_label,train target=1; same exact figurative 3G-phone text as IDs 8698/8702/8714; recommend 1->0 but source remains unchanged.,fix,0.98
+1723,exact_duplicate_conflicting_label,train target=1; exact train ID 1922 has target=0 and the lyric-like burning-buildings phrase is not an event report; recommend 1->0.,fix,0.96
+1760,exact_duplicate_conflicting_label,train target=1; exact train ID 1950 has target=0 and the speaker only wants burning buildings in a hypothetical music video; recommend 1->0.,fix,0.96
+6097,exact_duplicate_conflicting_label,train target=1; exact IDs 6087/6090/6111/6118 have target=0 and Hellfire appears in a religious charity quotation; recommend 1->0.,fix,0.99
+9472,exact_duplicate_conflicting_label,train target=1; exact dev ID 9470 has target=0 and the text explicitly negates terrorism rather than reporting an event; recommend 1->0.,fix,0.98
+5247,likely_mislabel,dev target=0 but the tweet literally reports police investigating a pedestrian fatality caused by a train; canonical held-out ID 5228 has target=1; recommend 0->1 without editing dev.,fix,0.97
+6407,likely_mislabel,dev target=1; 'My back is so sunburned' describes an individual minor condition rather than a disaster; recommend 1->0 without editing dev.,fix,0.96
+10823,likely_mislabel,dev target=1; 'Did you get wrecked again?' is conversational and figurative with no event report; recommend 1->0.,fix,0.97
+6325,likely_mislabel,dev target=1; a bartender holding change 'hostage' to obtain a phone number is plainly figurative; recommend 1->0.,fix,0.99
+805,likely_mislabel,dev target=1; the text explicitly describes a virtual space battle with fleets and ships rather than a real event; recommend 1->0.,fix,0.98
+353,canonical_duplicate_conflicting_label,"dev target=0; canonical text is identical to dev ID 390 target=1, with URL differences only; no textual basis resolves the conflict.",ambiguous,0.99
+390,canonical_duplicate_conflicting_label,dev target=1; canonical text is identical to dev ID 353 target=0 and its alien-annihilation framing is borderline; do not relabel automatically.,ambiguous,0.99
+4656,exact_duplicate_conflicting_label,"train target=0; five train/dev exact copies carry both labels, and historical tribal war is mentioned while the message emphasizes peace; text alone cannot recover one certain label.",ambiguous,0.92
+4669,exact_duplicate_conflicting_label,"dev target=1; exact IDs 4656/4659/4672/4684 carry both targets despite identical text, demonstrating annotation uncertainty.",ambiguous,0.96
+7761,hard_negative,"dev target=0 and Ticket 4 false positive; a missing-person police search is serious news but not necessarily a disaster under task scope, so model disagreement is insufficient to call a mislabel.",reject_false_positive,0.86
+6002,hard_negative,"dev target=0 and false positive; the tweet explicitly says no hazardous weather is expected, so the negative annotation is well supported despite disaster vocabulary.",reject_false_positive,0.99
+9341,hard_negative,"dev target=0 and false positive; 'Suicide of a Superpower' is a book title, not a suicide or disaster report.",reject_false_positive,0.98
+1208,hard_negative,dev target=0 and false positive; 'Lizard Wizard in a Blizzard' is title-like wordplay rather than a weather-disaster report.,reject_false_positive,0.98
+5140,cross_split_exact_duplicate,"dev target=1; exact text duplicates six target=1 train rows about an 11-year-old charged with manslaughter, creating train/dev leakage and non-independent evaluation evidence.",keep_but_flag,0.99
+8183,cross_split_exact_duplicate,"dev target=1; exact text duplicates three target=1 train rows about rescuers recovering bodies, creating potential split leakage although labels agree.",keep_but_flag,0.99
+1634,within_dev_exact_duplicate,"dev target=1; exact dev ID 1665 has the same label, so retain both rows but flag that evaluation examples are not independent.",keep_but_flag,0.99
+563,near_duplicate_conflicting_label,dev target=0; similarity=0.9954 to train ID 585 target=1 and both report a bar owner admitting an arson scheme; recommend 0->1 without editing dev.,fix,0.97
+4691,exact_duplicate_conflicting_label,heldout target=0; exact copies across train/dev/heldout carry both targets for the Madinah tribal-war/peace text; preserve the row and label because the wording is semantically borderline.,ambiguous,0.95
+6132,exact_duplicate_conflicting_label,"heldout target=1; four of five non-heldout exact copies have target=0 and Hellfire is a religious charity metaphor; recommend 1->0, but heldout remains untouched.",fix,0.99
+907,exact_duplicate_conflicting_label,heldout target=1; exact train IDs 898/916 have target=0 and ID 881 has target=1; 'To fight bioterrorism sir' is too context-poor to resolve confidently.,ambiguous,0.9
+6112,exact_duplicate_conflicting_label,heldout target=1; exact train IDs 6088/6125 have target=0 and Hellfire is explicitly religious/afterlife language; recommend 1->0 without modifying heldout.,fix,0.99
+5662,exact_duplicate_conflicting_label,"heldout target=1; exact train IDs 5699/5710 have target=0, but the political/religious quote explicitly mentions tornadoes and floods, leaving task scope uncertain.",ambiguous,0.88
+6023,exact_duplicate_conflicting_label,"heldout target=1; exact train IDs 5996/6031 conflict, and unsafe-food news may be harmful without meeting the benchmark's disaster scope.",ambiguous,0.9
+6134,exact_duplicate_conflicting_label,"heldout target=1; exact train ID 6113 has target=0 and the text is a religious Hellfire warning, not a literal fire; recommend 1->0 without modifying heldout.",fix,0.99
+8018,exact_duplicate_conflicting_label,heldout target=1; exact dev ID 8044 has target=0 for a refugee-repatriation headline; humanitarian relevance is clear but disaster-event scope is uncertain.,ambiguous,0.88
+6220,within_heldout_exact_conflict,heldout target=0; exact heldout ID 6223 has target=1 for the same historical D.B. Cooper image; identical evidence with opposite labels makes the pair unsuitable for automatic correction.,ambiguous,0.99
+6223,within_heldout_exact_conflict,heldout target=1; exact heldout ID 6220 has target=0 for the same historical D.B. Cooper image; heldout label is preserved.,ambiguous,0.99
+355,cross_split_canonical_conflict,heldout target=0; seven canonical train/dev copies of the wild-horse 'annihilation' petition carry both labels; URL variation does not resolve metaphorical task scope.,ambiguous,0.96
+6365,cross_split_canonical_duplicate,"heldout target=1; seven canonical train/dev duplicates exist and six are target=1, so retain the label but flag cross-split leakage and one conflicting dev annotation.",keep_but_flag,0.97
+5603,false_positive_duplicate_audit,"heldout target=0; six canonical product-listing duplicates are target=0 and one train row is target=1; 'flood beam' describes an LED product, supporting the negative label.",reject_false_positive,0.99
+6232,false_positive_duplicate_audit,"heldout target=0; canonical duplicates conflict, but 'browser hijacker' refers to malware removal rather than a physical disaster, supporting target=0.",reject_false_positive,0.97
+9486,cross_split_canonical_conflict,heldout target=0; six canonical train/dev copies with terrorism hashtags carry both labels and the terse 'Truth...' content lacks enough context for a confident correction.,ambiguous,0.9
+7833,cross_split_canonical_duplicate,"heldout target=0; canonical copies about Reddit quarantining content occur in train/dev/heldout, mostly target=0 with one conflicting dev target=1; retain but flag leakage.",keep_but_flag,0.98
+7613,near_duplicate_conflicting_label,heldout target=1; multiple train/dev/heldout near copies of the same baby-without-face headline carry both labels at similarity up to 0.9985; preserve as ambiguous.,ambiguous,0.99
+3270,canonical_duplicate_conflicting_label,"heldout target=1; canonical train ID 3255 and dev ID 3266 are target=0 for the same planned demolition headline, which is not an unfolding disaster; recommend 1->0.",fix,0.96
+1409,likely_mislabel,"heldout target=1; canonical train ID 1420 and heldout ID 1402 are target=0, and the text is a handbag product listing; recommend 1->0.",fix,0.99
+3879,likely_mislabel,heldout target=1; canonical train IDs 3889/3894 are target=0 and 'detonation' appears in an electronic-watch product title; recommend 1->0.,fix,0.99
+4918,likely_mislabel,heldout target=1; canonical train IDs 4922/4935 are target=0 and 'exploded on the internet' is figurative meme popularity; recommend 1->0.,fix,0.99
+7804,likely_mislabel,"heldout target=1; five canonical train/dev/heldout copies about Reddit quarantining content are target=0; no disaster is reported, so recommend 1->0.",fix,0.99
+2400,canonical_duplicate_conflicting_label,heldout target=1; canonical train ID 2379 and heldout ID 2385 are target=0 for the same animal-abuse petition; recommend 1->0 while preserving heldout.,fix,0.94
+546,likely_mislabel,"heldout target=0 and high-confidence false positive; the tweet reports two terrorists charged in a historic-church arson, a literal harmful event; recommend 0->1.",fix,0.96
+4043,annotation_scope_uncertainty,"heldout target=0 and false positive; police killed a cinema gunman with a hoax device and the tweet says disaster averted, so event reality and benchmark scope point in different directions.",ambiguous,0.86
+10795,model_weakness,"heldout target=1 and false negative; 'Israel wrecked my home. Now it wants my land' plausibly reports real destruction, so reject a mislabel suspicion and attribute the miss to limited context/model weakness.",reject_false_positive,0.92
+6211,hard_negative,"heldout target=0 and false positive; parole news about a historical school-bus hijacker is not a current disaster event, so retain the difficult negative.",reject_false_positive,0.9
+6914,hard_negative,"heldout target=0 and false positive; 'I look like a mass murderer' is self-description/hyperbole, not an event report.",reject_false_positive,0.98
+7061,hard_negative,"heldout target=0 and false positive; 'Monthly Meltdown' is an audio-show title with music hashtags, not a disaster.",reject_false_positive,0.98
+5760,hard_negative,"heldout target=0 and false positive; the tweet explicitly says there are no forest fires, so the negative label is supported.",reject_false_positive,0.99
+4003,hard_negative,heldout target=0 and false positive; 'I'm a disaster' is figurative self-description rather than an event report.,reject_false_positive,0.98
+783,hard_negative,"heldout target=0 and false positive; Avalanche is a sports team name in a player-draft update, not a snow event.",reject_false_positive,0.99
+2619,likely_mislabel,"heldout target=1 and false negative; 'My iPod crashed' is a device failure with fan hashtags, not a disaster; recommend 1->0.",fix,0.99
+3240,likely_mislabel,heldout target=1 and false negative; businesses being 'deluged with invoices' is figurative marketing advice; recommend 1->0.,fix,0.99
+6120,likely_mislabel,heldout target=1 and false negative; this is an ordinary conversation about receiving a message twice and contains no disaster content; recommend 1->0.,fix,0.99
+4675,likely_mislabel,"heldout target=1 and false negative; a coat 'engulfed her' is narrative/figurative language, not an event report; recommend 1->0.",fix,0.98
+8450,likely_mislabel,heldout target=1 and false negative; the speaker screamed because a song played and merely scared a coworker; recommend 1->0.,fix,0.99
+8721,likely_mislabel,heldout target=1 and false negative; canonical train ID 8692 is target=0 and 'sinking in low self-image' is figurative quiz promotion; recommend 1->0.,fix,0.99
+5228,cross_split_canonical_conflict,heldout target=1; canonical dev ID 5247 target=0 has the same pedestrian-fatality report; retain the heldout label but flag the conflicting dev annotation and leakage.,keep_but_flag,0.98

@@ -6,3 +6,4 @@ Claude.md
 *.pth
 *.png
 *.zip
+*tmp/*

@@ -1,0 +1,225 @@
+id,text,keyword,location,y_true,y_pred,score,model_name,ticket
+17,Haha South Tampa is getting flooded hah- WAIT A SECOND I LIVE IN SOUTH TAMPA WHAT AM I GONNA DO WHAT AM I GONNA DO FVCK #flooding,,,1,0,0.340040434437568,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+258,@20skyhawkmm20 @traplord_29 @FREDOSANTANA300 @LilReese300 it was hella crazy 3 fights an ambulance and a couple mosh pits ??,ambulance,Arizona ,1,0,0.3359312761077519,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+365,@willienelson We need help! Horses will die!Please RT &amp; sign petition!Take a stand &amp; be a voice for them! #gilbert23 https://t.co/e8dl1lNCVu,annihilation,,1,0,0.2011114010708315,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+509,Salvation Army hosts rally to reconnect fathers with children: The Salvation Army is hosting a back to school rallyÛ_ http://t.co/rDjpor3AZg,army,"Memphis, TN",1,0,0.4404550009349482,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+516,One Direction Is my pick for http://t.co/q2eBlOKeVE Fan Army #Directioners http://t.co/eNCmhz6y34 x1392,army,,1,0,0.2183614277562052,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+556,Another fake hate crime Lesbians burn their own house down. What else Is new :http://t.co/66oBQmxImb,arson,Our Empire State,1,0,0.4643227525963672,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+775,driving the avalanche after having my car for a week is like driving a tank,avalanche,,1,0,0.2060188965985438,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+797,CIVIL WAR GENERAL BATTLE BULL RUN HERO COLONEL 2nd NEW HAMPSHIRE LETTER SIGNED ! http://t.co/Ot0tFFpBYB http://t.co/zaRBwep9LD,battle,,1,0,0.2987811021089361,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+852,Hmm...this could be problem for some researchers: FedEx no longer to transport select agents http://t.co/9vIibxgjAV via @usatoday,bioterror,"Oxford, MS",1,0,0.4223241616267739,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+899,CDC has a pretty cool list of all bioterrorism agents :3,bioterrorism,,1,0,0.3036062785860013,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+907,To fight bioterrorism sir.,bioterrorism,,1,0,0.4608138412388644,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+915,@HowardU If 90BLKs&amp;8WHTs colluded 2 take WHT F @USAgov AUTH Hostage&amp;2 make her look BLK w/Bioterrorism&amp;use her lgl/org IDis ID still hers?,bioterrorism,,1,0,0.4852232477128455,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+982,Montgomery come for the blazing hot weather...stay for the STDs. Yet another rejected city slogan.,blazing,"Pig Symbol, Alabama",1,0,0.3777728706912013,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1259,Ain't no hoe in my blood,blood,The World,1,0,0.2435578010763902,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1294,@TradCatKnight (1) Russia may have played into reason but that link is BS.  Okanowa was bloody and mainline invasion looked like a bloody,bloody,Nashua NH,1,0,0.2118062705804335,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1296,Bloody insomnia again! Grrrr!! #Insomnia,bloody,Leicester,1,0,0.2023561766373153,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1324,'I came to kill Indians...for FUN': Video of smirking and remorseless Pakistani killer shows him boasting. http://t.co/FPjLwOXKlg,bloody,Isolated City In World Perth,1,0,0.4255522841819005,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1360,Even though BSG had been sufficiently hyped up for me in all the years I somehow delayed watching it I was utterly utterly blown away.,blown%20up,Los Angeles,1,0,0.3903475402409807,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1409,?? New Ladies Shoulder Tote #Handbag Faux Leather Hobo Purse Cross Body Bag #Womens http://t.co/zujwUiomb3 http://t.co/iap4LwvqsW,body%20bag,Paignton,1,0,0.1208391382919061,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1440,@Yankees body bagging mfs,body%20bagging,302???? 815,1,0,0.2380043234885072,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1479,@FoxNews @JenGriffinFNC When you call to report dangerous activity tell em to have body bags on arrival.,body%20bags,"Austin, Texas",1,0,0.2571335945893985,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1645,@NBCNews Yea bombing #pearlharbor not so good of an idea!,bombing,,1,0,0.4736448907616567,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1724,@DougMartin17 Fireman Ed runs into burning buildings while others are running out Doug he deserves your respect??????,buildings%20burning,Quincy MA,1,0,0.3886119090336232,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1725,@themagickidraps not upset with a rally upset with burning buildings businesses executing cops that have nothing to do with it etc,buildings%20burning,NJ,1,0,0.3389512119449949,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1757,@zourryart I forgot to add the burning buildings and screaming babies,buildings%20burning,,1,0,0.3941392600603476,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1771,Fire hazard associated with installation of non-compliant external cladding on http://t.co/bTPQdehl3p - By @www.cbplawyers,buildings%20on%20fire,World Wide,1,0,0.4220615729699948,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1796,shootings explosions hand grenades thrown at cars and houses &amp; vehicles and buildings set on fire. It all just baffles me.Is this Sweden?,buildings%20on%20fire,Sweden,1,0,0.4871631933858427,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1967,"You picture buildings burning to the ground from the basement to the streetlight. 
+
+I'm not your drinking problem
+a hole is in the sky.",burning%20buildings,"Tucson, Arizona ",1,0,0.3522783818097941,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1973,@marcoarment Middle of winter in Sydney we have had snow bush fires and 78 degree days in the last week.  Keeps you on your toes for sure.,bush%20fires,"iPhone: -27.499212,153.011072",1,0,0.4642366301114441,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+1992,Bush Fires are scary....even scarier when you go down and fight them,bush%20fires,somewhere outside,1,0,0.4742723702299144,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2039,@AlcoholAndMetal + do anything to fix that. Of the few people he had every trusted in his life Charles was one of the casualties.,casualties,,1,0,0.4897871933460567,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2068,Another sad ocean casualty-Gray whale population in the Pacific listed as critically #endangered (#drone video) https://t.co/vwz3vZpmfb .,casualty,,1,0,0.4878098454160011,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2109,.@robdelaney  Catastrophe is anything but! I literally have been unable to stop ejaculating.,catastrophe,,1,0,0.1759444304286712,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2191,A better look at what this catastrophic rain and flooding has done to ourÛ_ https://t.co/5yRBegzafX,catastrophic,,1,0,0.4414137783190674,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2194,Something Catastrophic Is Coming: Should We Tune Out? http://t.co/a8jZ5A26wi,catastrophic,"Portland, OR",1,0,0.292571246419152,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2282,I accidentally killed an 87 day snap streak and now I wanna accidentally fall off a cliff ????????????????????,cliff%20fall,livin life in the 610,1,0,0.3367197323975309,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2396,@flickershowell oh wow my heart collapsed cool im crying cool cool,collapsed,wherever-the-fuck washington,1,0,0.1337672354330144,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2398,Apparently part of the building just collapsed. Hope everyone is ok.,collapsed,"From NY. In Scranton, PA",1,0,0.3203147507290279,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2400,Petition | Heartless owner that whipped horse until it collapsed is told he can KEEP his animal! Act Now! http://t.co/87eFCBIczM,collapsed,,1,0,0.1515192986251591,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2505,@Zojadelin you literally almost had a head on collision with us today on pilot knob,collision,'soooota,1,0,0.3829555523378091,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2545,CLEARED: COLLISION: #QEW Fort Erie bound approaching Hwy 405 #Niagara.Vehicles removed. ^ag,collision,"Ontario, Canada",1,0,0.4873158909949864,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2611,@brianroemmele UX fail of EMV - people want to insert and remove quickly like a gas pump stripe reader. 1 person told me it crashed the POS,crashed,,1,0,0.3018545988377851,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2619,"My iPod crashed..... 
+#WeLoveYouLouis 
+#MTVHottest One Direction",crashed,,1,0,0.1865435388564175,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2675,Ron &amp; Fez - Dave's High School Crush https://t.co/aN3W16c8F6 via @YouTube,crush,,1,0,0.1872415566286004,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2740,Holy moly that was crushed.,crushed,,1,0,0.2413394066722876,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2871,"@Drothvader @CM_Nevalistis you can keep this please!!!!! Arachys
+    [2 Pieces] - Now deals 4000% weapon damage (up from 2500%)",damage,http://twitch.tv/jcmonkey,1,0,0.1919051041199177,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2879,@HfxStanfield @beelieveDC @DiscoveryCntr what is happening we hear there is runway lighting damage by a contractor.,damage,,1,0,0.3562084566537222,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2884,#pt Cross-sectarian protest. Powerful Shia cleric says militias must withdraw:'ur fightin ISIS but we wont forget damage uve done to ur ppl',damage,London/New York,1,0,0.4711707861149087,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2900,@MichaelWestBiz standard damage control,damage,"Bhopal, Madhya Pradesh, India.",1,0,0.4578717196905958,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2913,What is this? Like I could be in danger or something,danger,"Loughborough, England",1,0,0.1623298174130759,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2942,SO THIRSTY YALL IN DANGER OF DEHYDRATION,danger,ALWAYS DYING NEVER RESTING,1,0,0.4333111453699992,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+2950,Honestly tho Modibo Maiga is stealing a living - fuck all about him - im past my best but still more of a danger than that fucktard #coyi,danger,Jersey - C.I,1,0,0.1532997417317252,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3005,Until my death I'll forever rep the Jets.,death,UPTOWN ,1,0,0.1852821939013254,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3037,Ted Cruz Bashes Obama Comparison GOP To Iranians Shouting 'Death To America' http://t.co/tXETcysm1H | #tcot,death,To The Right of You!,1,0,0.4207158066292985,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3101,Bigamist and his 'first' wife are charged in the deaths of his 'second' pregnant wife her child 8 her mothe... http://t.co/rTEuGB5Tnv,deaths,"ÌÏT: 10.614817868480726,12.195582811791382",1,0,0.4528962764926723,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3114,How Missing JetÛªs Debris Could Have Floated to RÌ©union - The New York Times http://t.co/pNnUnrnqjA,debris,"46.950109,7.439469",1,0,0.4824387343305438,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3240,Businesses are deluged with invoices. Make yours stand out with colour or shape and it's likely to rise to the top of t e pay' pileq,deluged,,1,0,0.133206013689938,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3270,Enugu Government to demolish illegal structures at International Conference Centre http://t.co/ouYLwuIXcs,demolish,"Port Harcourt, Nigeria",1,0,0.3113814789203411,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3476,#Metro still doesn't know when Blue &amp; Orange lines will reopen. Empty passenger car derailed ~ 5 a.m. NOT a new 7000-series. @CQnow #WMATA,derailed,"Washington, DC",1,0,0.4016206580739218,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3506,Death on Railway track: Why rains cannot take all the blame?: Derailment is not very common. Last year less th... http://t.co/jdkQC12tid,derailment,,1,0,0.4726284986493102,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3525,@Raishimi33 :) well I think that sounds like a fine plan where little derailment is possible so I applaud you :),derailment,UK,1,0,0.1571448103247964,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3602,The date for the release of EP03 DESOLATION is set. Stay tuned for more info while we finalise the schedule. #alt #electro #rock #comingsoon,desolation,"Birmingham, UK",1,0,0.3094760495636214,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3607,Just came back from camping and returned with a new song which gets recorded tomorrow. Can't wait! #Desolation #TheConspiracyTheory #NewEP,desolation,"North East, England",1,0,0.1224404045449418,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3625,going to redo my nails and watch behind the scenes of desolation of smaug ayyy,desolation,infj ,1,0,0.2603239350138234,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3796,So you have a new weapon that can cause un-imaginable destruction.,destruction,,1,0,0.0626568070083168,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3861,Ignition Knock (Detonation) Sensor-Senso Standard KS94 http://t.co/dY1erSDcRh http://t.co/m4cPmxmuRK,detonation,,1,0,0.4192851880604408,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3879,Detonation fashionable mountaineering electronic watch water-resistant couples leisure tabÛ_ http://t.co/7dYOgLhMRe http://t.co/HKm3rtD4ZF,detonation,New York,1,0,0.41167057746756,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3935,'Er indoors will be devastated. RIP Arfur. #GeorgeCole,devastated,Banbridge,1,0,0.2507047086702482,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+3970,@Pam_Palmater i agree with @perrybellegarde to get out &amp; vote. Look at devastation @pmharper caused #FirstNations #IdleNoMore #cndpoli #yyj,devastation,"Victoria, British Columbia",1,0,0.4225416036432655,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4094,Real people. True stories. Real pain &amp; suffering. #displaced #RefugeesMatter #Syria  https://t.co/OEZ7O9AB2C,displaced,Canada,1,0,0.3253201743636799,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4202,Sadly before she could save humanity Ursula drowned in the drool of a protoshoggoth but at least she sort of died doing what she loved.,drowned,"R'lyeh, South Pacific",1,0,0.3520936850341321,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4464,Michael talking about when he was electrocuted omg #ROWYSOLouisville http://t.co/HxVfmoUhDM,electrocuted,not so cool KY,1,0,0.3942790213296789,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4476,I was blow drying my hair &amp; the cable caught on fire. I let go of it as soon as I realized. Just before I could get electrocuted ??,electrocuted,,1,0,0.3066607095078934,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4523,SF Asian Women's Shelter crisis line (415) 751-0880. Emergency shelter/support services 4 non-English speaking Asian women &amp; children.,emergency,We are global!,1,0,0.408296368845367,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4526,"Myanmar floods: Childfund https://t.co/pQHQ4JnZTT
+ and International Needs https://t.co/FX0W2Sq05F and CARE Aust @CAREemergencies appeals",emergency,Adelaide,1,0,0.3603035486620094,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4543,@chowtaxis of Newport a big thanks for the emergency run to pick Jackie up from Bristol temple messages much appreciated,emergency,,1,0,0.3506679515815682,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4675,@godsfirstson1 and she wrapped his coat around herself. It practically engulfed her.,engulfed,@ ForSL/RP,1,0,0.1465064202886647,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4794,@115Film Doctor we must leave immediately the Core is unstable...The whole building is told to be evacuated. Take the research. We need...,evacuated,,1,0,0.3457332340565677,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4803,Is it seclusion when a class is evacuated and a child is left alone in the class to force compliance?  #MoreVoices,evacuated,MIchigan,1,0,0.3818174149170078,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4840,Updated #RockyFire map with Mandatory Evacuation areas (red) Advisory Evacuation (yellow) 2 Evac Centers (green) https://t.co/gZEgjoAKKw,evacuation,Northern California U.S.A.,1,0,0.4581397616174031,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4882,Kendall Jenner and Nick Jonas Are Dating and the World Might Quite Literally Explode http://t.co/pfvzVPxQGr,explode,"Washington, D.C.",1,0,0.3011275243038159,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4895,@allen_enbot If you mess up it's gonna explode...,explode,,1,0,0.0958371193055582,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4915,@KopiteLuke1892 Its broken its fully exploded.,exploded,LFC x GSW,1,0,0.4884788528058244,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4918,The Dress Memes Have Officially Exploded On The Internet http://t.co/3drSmxw3cr,exploded,,1,0,0.3393460710664688,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4969,I liked a @YouTube video http://t.co/bGAJ2oAX1p Huge Building Explosion at 2500fps - The Slow Mo Guys,explosion,Germany,1,0,0.4510321616977168,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+4972,GAElite 0    Explosion Greg 2 [Top 3rd] [0 Out] [0 balls] [0 strikes] ... No one on [P: #16 Morgan Orchard] [B: ],explosion,,1,0,0.362375272166304,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5074,exporting food wont solve the problem. africans will end famine n poverty by SOLVING OUT OF CONTROL TRIBAL WARS. https://t.co/UttaNbigRx,famine,"Earth, Milky Way, Universe",1,0,0.37657351798235,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5083,"Russia destroys food while people go hungry.  We're not the only ones with an insane government.
+http://t.co/ZonNqGsxYw",famine,Massachusetts,1,0,0.4980138825865801,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5168,We are totally unprepared for an EMP attack. Both China Russia and probably Isis possess them. 90% fatalities. Why are we pushing them?,fatalities,"Corpus Christi, Texas",1,0,0.3974487050637589,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5193,I liked a @YouTube video http://t.co/43sXG9Z6xh TREMOR IS NO JOKE!! [TREMOR DLC] [FATALITIES/X-RAY],fatalities,oman muscat al seeb ,1,0,0.2524600555575697,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5254,@LindaSOCVAT @TfLBusAlerts Yes apparently. Report of cow fatality as well sadly.,fatality,"Bishops Stortford, England",1,0,0.4054398675733607,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5386,133 N past  the 5 L lane is reopened. All other lanes are closed. All lanes are open on the 133 S. Trash truck fire cleanup. @KNX1070,fire%20truck,Los Angeles,1,0,0.4852038522355092,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5487,watching it go up in flames,flames,manaus,1,0,0.4271832015118512,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5502,@AisuMage @AkumaReisu --just between Gray and Ophelia red flames blazing around her person setting nearly everything in the area--,flames,Fairy Tail! ,1,0,0.3463393045521902,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5532,Flattened thee striker,flattened,Leeds,1,0,0.2272503315909979,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5576,And please don't flood poor @RobertBEnglund's mentions. He's put in his work!,flood,Philadelphia,1,0,0.3741384993283824,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5662,"Who is bringing the tornadoes and floods. Who is bringing the climate change. God is after America He is plaguing her
+ 
+#FARRAKHAN #QUOTE",floods,,1,0,0.2017391881461613,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5668,"@ictyosaur I never thought it would be a wtf moment yet it's here after months of 90 degree heat
+Next we will have flash floods..",floods,Passamaquoddy,1,0,0.3734769925920726,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5685,@ContactEnergy Yep. During floods of 1999 or 2000 - Clyde Dam releasing every bit of water it could. Most speccy!  EV charging your way?,floods,"Timaru District, New Zealand",1,0,0.4182081744958181,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5705,Memphis always floods,floods,,1,0,0.4001269555387097,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5789,"GREAT MICHIGAN TECHNIQUE CAMP
+B1G THANKS TO @bmurph1019 
+@hail_Youtsey . @termn8r13 
+#GoBlue #WrestleOn http://t.co/OasKgki6Qj",hail,"Carol Stream, Illinois",1,0,0.4360794283438031,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5903,You can never escape me. Bullets don't harm me. Nothing harms me. But I know pain. I know pain. Sometimes I share it. With someone like you.,harm,Gotham City,1,0,0.0472128284536917,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+5955,CONFIRMED: Sanchez Hazard and Bolasie will be out for the rest of the season. https://t.co/7Ct01nEptL,hazard,Chicago,1,0,0.2595726529443073,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6023,#foodscare #offers2go #NestleIndia slips into loss after #Magginoodle #ban unsafe and hazardous for #humanconsumption,hazardous,"Mysore, Karnataka",1,0,0.4769107794552398,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6032,#psd #special Olap #world pres: http://t.co/9xO9mKQqsi How To Recognize A Hazardous Waste And The Multidimensi http://t.co/BP03eAFEWR,hazardous,,1,0,0.4821109121533248,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6060,NOT.. Ready for this heat wave .. I don't want the sun to come back out.. I'm enjoying this break of cooler temps..,heat%20wave,,1,0,0.3509744522611738,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6061,It's kinda cool tonight. Is the heat wave finally over?? ???? 7amdollela 3la kulli 7aal,heat%20wave,Malaysia/Jordan,1,0,0.3395236668698708,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6112,Hellfire is surrounded by desires so be careful and donÛªt let your desires control you! #Afterlife,hellfire,,1,0,0.1134215285980347,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6120,@gg_keeponrockin @StrawberrySoryu Oh okay I just got the message twice and got suspicious. Sorry.  I'll check it out!,hellfire,"Denver, Colorado",1,0,0.1293695622275529,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6132,The Prophet (peace be upon him) said 'Save yourself from Hellfire even if it is by giving half a date in charity.',hellfire,,1,0,0.3187552696658415,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6134,Hellfire! We donÛªt even want to think about it or mention it so letÛªs not do anything that leads to it #islam!,hellfire,Riyadh '),1,0,0.1164121917131103,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6152,Plans by former First Lady and wife of ex-President Goodluck Jonathan Dame Patience Jonathan to hijack the All... http://t.co/HaShGQAFic,hijack,"Port Harcourt, Nigeria",1,0,0.4167427773681325,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6165,Swansea Û÷plot hijack transfer move for Southampton target Virgil van DijkÛª http://t.co/PVmr38LnvA,hijack,,1,0,0.3474273953392542,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6181,Swansea Û÷plot hijack transfer move for Southampton target Virgil van DijkÛª http://t.co/PVmr38LnvA,hijack,,1,0,0.3474273953392542,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6315,Murfreesboro peeps- I'm hearing Walmart on S Rutherford is on lockdown with a hostage is that true or a rumor?,hostage,"ÌÏT: 40.562796,-75.488849",1,0,0.3816322224927295,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6328,New ISIS Video: ISIS Threatens to Behead Croatian Hostage Within 48 Hours - TLVFaces - TLVFaces#auspol http://t.co/a6PPEgeLOX,hostage,Australia ,1,0,0.3638907066787489,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6434,Ashley and I on going to hurricane harbor Friday. ?? http://t.co/ScEfPFvAEU,hurricane,,1,0,0.4951487998438622,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6461,I can't believe Blevins got injured falling off a curb. That's something that would happen to me never it expected for a pro player,injured,,1,0,0.2363622087875951,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6593,"Body shops inundated with cars dented by hail... Good news insurance pays... Bad news :  you are stuck with deductible !
+#wcvb",inundated,"Boston, Massachusetts",1,0,0.2524743858019789,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6654,@MartinMJ22 @YouGov When did a 12 seat majority with 36% of the vote become a landslide?,landslide,,1,0,0.3022007536030286,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6663,11:30BST traffic: A10&gt;Paris A40 Geneva A7 Mons A1 Hamburg A2&gt;Hanover A5 Karlsruhe Gotthard n/b  http://t.co/yoi9tOCxiQ,landslide,London,1,0,0.368661167321262,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6669,FreeBesieged: .MartinMJ22 YouGov Which '#Tory landslide' ... you can't POSSIBLY mean the wafer-thin majority of #GÛ_ http://t.co/2q3fuEReY5,landslide,Scotland,1,0,0.3204173275204148,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6764,Science Daily: Lightning reshapes rocks at the atomic level - A lightning strike can reshape a mineral's crystal s... http://t.co/TEZLTqeyw2,lightning,,1,0,0.4724884573601118,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6795,Check this out! Lightning reshapes rocks at the atomic level http://t.co/l1gH8064YV #scichat #science,lightning,SoDak,1,0,0.4908581917934417,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6806,@Chibi877 --head. It hit the wall behind him with a loud bang. 'Language!' Drake shouted at him before getting up. 'I'm going out stay--,loud%20bang,Why should you know?,1,0,0.1814774476845768,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6813,tianta_: Breaking news! Unconfirmed! I just heard a loud bang nearby. in what appears to be a blast of wind from my neighbour's ass.,loud%20bang,Kenya,1,0,0.228945790619735,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6828,I WAS PEACEFULLY SITTING IN MY ROOM AND I HEARD THIS LOUD BANG OF SOMETHING FALLING,loud%20bang,im definitely taller than you.,1,0,0.2917850450882139,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6967,I see a massacre!!,massacre,Own planet!!,1,0,0.4663829877338156,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+6978,@freddiedeboer @Thucydiplease then you have rise of Coates Charleston massacre Walter Scott and black twitter more broadly as well.,massacre,Stay Tuned ;) ,1,0,0.2025947891472897,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7147,'It looks like a mudslide!' And #GBBO is back with a belter!,mudslide,"Ealing, London",1,0,0.2188197444466109,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7173,@brobread looks like mudslide????,mudslide,plymouth,1,0,0.4267210513383812,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7193,First time getting into #gbbo2015 and physically gasped at the cake 'mudslide' incident already way too emotionally invested...,mudslide,"South, England",1,0,0.4085428955285114,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7223,"This is the natural and unavoidable consequence of socialism everywhere it has been tried.
+http://t.co/BbDpnj8XSx A",natural%20disaster,America of Founding Fathers,1,0,0.2878471556867756,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7226,Of course the one day I have to dress professionally aka unsensibly for class is the day I have try and outrun a natural disaster!,natural%20disaster,on to the next adventure,1,0,0.2323181063415606,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7256,@DalaiLama then have the biggest nuclear disaster to ever have happened,nuclear%20disaster,"Hammersmith, London",1,0,0.3882383110275461,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7312,@RobertHarding @RepJohnKatko Crazy to use the Netanyahu argument Iran can flush A NUCLEAR REACTOR DOWN THE TOILET,nuclear%20reactor,,1,0,0.4322051254553118,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7356,Whereas Jez will obliterate the national debt - and give lots of new benefits - by simply printing money! Genius! https://t.co/ReffbkVG9R,obliterate,Purfleet,1,0,0.1729216407124184,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7361,@McCaineNL Think how spectacular it will look when the Stonewall riots obliterate the white house.,obliterate,Cymru araul,1,0,0.2430404100241161,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7377,Someone teaching you that obedience will obliterate trials in your life is trying to sell you a used car. Jesus's life blows that theory.',obliterate,Ondo,1,0,0.149802283491343,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7463,@tiggr_ why only Squad Obliteration?,obliteration,,1,0,0.2360128290203313,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7613,Pandemonium In Aba As Woman Delivers Baby Without Face (Photos) - http://t.co/xRP0rTkFfJ,pandemonium,Houston TX,1,0,0.3768487118508045,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7801,#Reddit updates #content #policy promises to quarantine Û÷extremely offensiveÛª communities http://t.co/EHGtZhKAn4,quarantine,Bucharest,1,0,0.2086041399122414,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+7804,Reddit Will Now Quarantine Offensive Content http://t.co/WosYPVQUFI http://t.co/XW8SDS1Tjp,quarantine,"Joshua Tree, CA",1,0,0.2711222007125222,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8026,Refugee Connections Indiegogo campaign will be going live tomorrow! Support us and help launch the only online community for #refugees.,refugees,,1,0,0.2811578049309184,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8064,UD: Rescue (Structural Collapse) - Scott Road @ Ypres Road York (14 Trucks),rescue,"Toronto, Ontario",1,0,0.4060498013874497,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8084,UD: Rescue (Structural Collapse) - Scott Road @ Ypres Road York (14 Trucks),rescue,"Toronto, Ontario",1,0,0.4060498013874497,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8129,Heroes! A Springer Spaniel &amp; her dog dad rescued a stranded baby dolphin: http://t.co/G03DkPooNP http://t.co/Go0HPi0B4c,rescued,,1,0,0.4881363189042842,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8211,@Live_Workshop selfie at booth or riot Kappa,riot,,1,0,0.2997425161357721,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8242,But the government will not care. Police will stop rioting eventually of protestors. Eventually some skyscrapers become plant-covered .,rioting,hertfordshire.,1,0,0.3619417887539298,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8259,"@evacide The Ferguson RIOTS worked. This of this the next time you say RIOTING doesn't change anything.
+
+There fixed it for you.",rioting,trapped in America,1,0,0.2070962526669915,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8278,@aelinrhee a group of mascara smeared girls rioting will be horrific I think,rioting,,1,0,0.3731218914647289,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8286,"people rioting everywhere and I think I'd be one of them.'
+
+Usami-san &lt;3",rioting,The Weird Part of Wonderland,1,0,0.3062475626115929,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8296,@accionempresa ChinaÛªs stock market crash this summer has sparked interest from bargain hunt... http://t.co/s0Eyq1wEHE @gerenciatodos å¨,rubble,,1,0,0.3544069413197775,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8450,"OMFG??
+Didnt expect Drag Me Down to be the first song Pandora played 
+
+OMFG I SCREAMED SO LOUD
+My coworker is scared http://t.co/VzcvAdkcQp",screamed,"San Diego, CA",1,0,0.1539240115851694,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8472,Vacation update: my great aunt just killed a spider with her bare hand after I screamed in fear. #fierce,screamed,"North Carolina, USA",1,0,0.2797407993340536,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8578,I agree with certain cultural appropriation things but honestly if u looked at my house it screams appropriation bc Buddhas and stuff-,screams,Sheffield/Leeds,1,0,0.1470148213723757,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8586,The little girl next to me sees the spot lights in the sky and screams ' mom! Look I see Angels in the sky!' ????,screams,"Florida, USA",1,0,0.2896164792495854,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8673,Damn that sinkhole on sunset????,sinkhole,Texas af,1,0,0.4260155360589827,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8721,Do you feel like you are sinking in low self-image? Take the quiz: http://t.co/bJoJVM0pjX http://t.co/wHOc7LHb5F,sinking,Liverpool,1,0,0.1545407290049202,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8738,The #Tribe just keeps sinking everyday it seems faster. As for this year it's been a titanic disaster.,sinking,Rhyme Or Reason?,1,0,0.4169013636191716,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8780,The real question is why is the tornado siren going off in Dyersburg?,siren,,1,0,0.3480047368338766,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8816,@TravelElixir Any idea what's going on? I hear no sirens but this damn helo is flying so low my apt is shaking!,sirens,Hollywood,1,0,0.1635458332187741,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8935,Photo: mothernaturenetwork: What is thundersnow? Hearing thunder during a snowstorm is extremely uncommon.... http://t.co/eYdAPauPvG,snowstorm,In the spirit world,1,0,0.3913625885539945,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+8946,So this storm just came out of no where. .fuck me its cool,storm,,1,0,0.2274823335350712,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9029,Keep shape your shoes ??#Amazon #foot #adjust #shape #shoe Mini Shoe Tree Stretcher Shaper Width Extender Adjustable http://t.co/8cPcz2xoHb,stretcher,"Amazon Seller , Propagandist",1,0,0.1749050506546125,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9208,@JewhadiTM It is almost amazing to think someone thought suicide bombing would actually be a good idea.,suicide%20bombing,,1,0,0.3476576146746555,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9249,Aquarium Ornament Wreck Sailing Boat Sunk Ship Destroyer Fish Tank Cave Decor - Full read Û_ http://t.co/kNCm9jC8i9 http://t.co/swviAZSPHk,sunk,New York,1,0,0.2587301335891135,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9301,So much shit has happened today wtf idk how I survive thruuu it all,survive,,1,0,0.1836379308319596,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9317,"Escaping her captors was the 1st step. Now she must survive a deadly storm &amp; a wild-looking recluse.
+BETRAYED
+http://t.co/0Q040STkCV
+#books",survive,Kansas,1,0,0.4329835478368385,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9337,#Autoinsurance industry clueless on driverless cars : #healthinsurance http://t.co/YdEtWgRibk,survive,,1,0,0.4701293447839632,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9355,@TheSmallClark 'He'll kill me instead if he survived the shot. I don't exactly know. I fled the scene and pulled the trigger with---,survived,?,1,0,0.2082508140244023,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9430,@FedPorn I feel your pain. Survivors will look back on this period as most absurd in human history. Satire indistinguishable from reality.,survivors,"Berlin, NY, DC, Malibu",1,0,0.4581769168499818,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9435,@LawfulSurvivor T-Dog had been holed up in an apartment store with several other survivors Glenn Morales Andrea Jacqui and Merle.--,survivors,Anywhere Safe,1,0,0.4894264609272589,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9764,@onihimedesu the whole city is trapped! You can't leave the city! This was supposed to be a normal sports manga wit a love triangle (c),trapped,shoujo hell ,1,0,0.2086418677127718,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9820,@PTSD_Chat Yes. I feel the root of that is Shame - which can be found in the rubble of most trauma. #PTSDchat,trauma,I rap to burn shame.,1,0,0.4168391033333413,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9826,Trauma injuries involving kids and sport usually cycling related - CBC.ca http://t.co/0dQjereTXU,trauma,,1,0,0.4425960640778725,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+9991,@author_mike Amen today is the Day of Salvation. THX brother Mike for your great encouragement. - http://t.co/cybKsXHF7d Coming US Tsunami,tsunami,in the Word of God,1,0,0.3813797399039311,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10034,Crazy Mom Threw Teen Daughter a NUDE Twister Sex Party According To Her Friend50 =&gt;http://t.co/Hy5Pbe12TM http://t.co/c1nJpLi5oR,twister,NY,1,0,0.2743821087574893,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10040,Tornadoes: El Nino may give Canada's twister season a boost #Toronto http://t.co/agyCutKBnN,twister,,1,0,0.4609517675928083,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10236,I added a video to a @YouTube playlist http://t.co/y2Mt6v13E8 Doc: Volcanoes and Earthquakes - Inside the Volcano,volcano,Santiago de Cmpostela Galicia,1,0,0.3427168460827615,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10246,@volcano_tornado live somewhere else for a while and Da Mill ain't too bad son! #perspective,volcano,right here,1,0,0.1855240094874192,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10268,#DebateQuestionsWeWantToHear If U start another war would U B willing 2 go 2 the war-zone yourself or send UR sons and/or daughters 2 fight?,war%20zone,The D,1,0,0.2340317575780325,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10283,THIS IS A ONE DIRECTION CONCERT NOT A WAR ZONE WHAT IS THIS #OTRAMETLIFE http://t.co/PtY9HRCUZH,war%20zone,ca(NADA) ,1,0,0.2527238103429684,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10284,Looks like a war zone outside. What's going on?,war%20zone,T-Ville,1,0,0.3696262180004669,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10310,Rare insight into #terror and How to fight it http://t.co/t6OBVWaPhW #Cameroon #USA #Whitehouse #ES #FR #Nigeria #UK #Africa #DE #CA #AU #JP,weapon,Washington DC,1,0,0.4884063545017771,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10337,Agreed there - especially on automatic weapons. There's no legitimate reason for needing one @Argus_99 @HeidiA1438,weapons,Proud @BuckMasonUSA supporter!,1,0,0.4208555555212993,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10355,@NRO Except when ordered not to carry unauthorized weapons while on duty or in military uniforms. THATS THE RULE FOOL,weapons,,1,0,0.4345226195290544,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10396,"life can wild when... 
+you're caught in a whirlwind ??",whirlwind,,1,0,0.2966987887513243,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10414,Whirlwind that has lasted for more than an hour and still strong. A standstill in parts of middle east.,whirlwind,"Nairobi, Kenya",1,0,0.4991055944836061,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10441,My brother-n-law riooooos got the call to head up north and fight the wild fires. Dudes a beast atÛ_ https://t.co/463P0yS0Eb,wild%20fires,,1,0,0.4871273565036005,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10458,Wild fires freak me the fuck out. Like hell no,wild%20fires,nap central,1,0,0.3640541962095069,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10680,"Crawling in my skin
+These wounds they will not hea",wounds,"cody, austin follows ?*?",1,0,0.2300503368789929,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10711,@GeorgeFoster72 and The Wreck of the Edmund Fitzgerald,wreck,Primum non nocere,1,0,0.3141716538959508,raw_text_tfidf_logistic_regression,ticket_3_shortcuts
+10795,"Israel wrecked my home. Now it wants my land. 
+https://t.co/g0r3ZR1nQj",wrecked,"Santa Cruz, CA",1,0,0.1087635936602694,raw_text_tfidf_logistic_regression,ticket_3_shortcuts

@@ -1,0 +1,2 @@
+split,variant,model_name,precision_target_1,recall_target_1,f1_target_1,accuracy,true_negative,false_positive,false_negative,true_positive,prediction_changes,fixed_fp,fixed_fn,new_fp,new_fn,converged,n_iter
+heldout,normalize_urls_placeholder,normalize_urls_placeholder,0.825136612021858,0.6926605504587156,0.7531172069825436,0.8049901510177282,773,96,201,453,49,22,8,4,15,True,[22]

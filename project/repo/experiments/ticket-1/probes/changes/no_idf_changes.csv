@@ -1,0 +1,45 @@
+id,text,keyword,location,y_true,baseline_y_pred,probe_y_pred,baseline_score,probe_score,transition,baseline_correct,probe_correct,outcome
+353,World Annihilation vs Self Transformation http://t.co/pyehwodWun Aliens Attack to Exterminate Humans http://t.co/pB2N77nSKz,annihilation,Subconscious LA,0,0,1,0.4715869356907179,0.5013064464910494,0->1,True,False,new_error
+390,World Annihilation vs Self Transformation http://t.co/pyehwodWun Aliens Attack to Exterminate Humans http://t.co/8jxqL8Cv8Z,annihilation,Subconscious LA,1,0,1,0.4715869356907179,0.5013064464910494,0->1,False,True,fixed_error
+685,The fact that the atomic bombs were called 'Little Boy' and 'Fat man' says a lot about the mentality that went into the attack.,attack,London.,1,1,0,0.5237410293053515,0.4643875549742197,1->0,True,False,new_error
+890,Bioterrorism public health superbug biolabs epidemics biosurveillance outbreaks | Homeland Security News Wire http://t.co/cvhYGwcBZv,bioterrorism,,1,0,1,0.4902180646328049,0.5211932658194239,0->1,False,True,fixed_error
+1921,Killing Black Babies at Planned Parenthood where's the demonstrations looting of PP burning down the buildings Black Babies Lives Matter,burning%20buildings,"Sacramento, CA",1,0,1,0.49261643985166664,0.5189540454865388,0->1,False,True,fixed_error
+2193,Learning from the Legacy of a Catastrophic Eruption - The New Yorker http://t.co/t344PhNpy9,catastrophic,Planet Earth,1,1,0,0.5414833497865712,0.477167325770578,1->0,True,False,new_error
+2198,Learning from the Legacy of a Catastrophic Eruption - The New Yorker http://t.co/vMWTOUyOHm,catastrophic,Planet Earth,1,1,0,0.5414833497865712,0.477167325770578,1->0,True,False,new_error
+2231,@pjcoyle ... need to be included in emergency planning for chemical plants. See also http://t.co/OamqqBNIce,chemical%20emergency,"Tyler, TX",0,0,1,0.4945981610135117,0.53036642642642,0->1,True,False,new_error
+2352,The @POTUS economy continues to collapse.,collapse,United States,1,1,0,0.5057589044209738,0.4663624982719491,1->0,True,False,new_error
+2463,I scored 111020 points in PUNCH QUEST stopped when a squeaky bat collided into my skull. http://t.co/aEtgbxm1pL,collided,,1,0,1,0.45239983520888133,0.516920194462016,0->1,False,True,fixed_error
+2471,Major accident causes life-threatening injuries closes highway: An 18-wheeler and an SUV collided and thenÛ_ http://t.co/ajTXUafOEM,collided,Waco TX,1,1,0,0.5624806427816833,0.4991735435844625,1->0,True,False,new_error
+2536,@MissJadeBrown tells of the tragic mid-morning collision which claimed the life of a young man riding a motorcycle. https://t.co/rPDA60Aoni,collision,Saint Lucia,1,1,0,0.5530100533879263,0.49083245783567997,1->0,True,False,new_error
+3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175761,0.48598609871434606,1->0,True,False,new_error
+3116,RÌ©union Debris Is Almost Surely From Flight 370 Officials Say - New York Times http://t.co/VFbW3NyO9L,debris,,1,1,0,0.5503909875384597,0.49704368536937066,1->0,True,False,new_error
+3347,A demolished Palestinian village comes back to life http://t.co/9Lpf4V4hMq,demolished,,1,1,0,0.5444477054155052,0.49013788029832484,1->0,True,False,new_error
+3567,If the Taken movies took place in India 2 (Vine by @JusReign) https://t.co/hxM8C8e33D,desolate,,0,0,1,0.4925194304804893,0.5024803382895412,0->1,True,False,new_error
+3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000026,0.49151525070366175,1->0,False,True,fixed_error
+3633,The Hobbit: The Desolation of Smaug - Ed Sheeran 'I See Fire' [HD] http://t.co/OXRwRJZmnu,desolation,??????,0,0,1,0.44357691386883547,0.5054738900148896,0->1,True,False,new_error
+3663,Watch These Super Strong Magnets Destroy Everyday Objects: http://t.co/bTUs5jejuy http://t.co/zrTfxLuk6R,destroy,New York City,1,0,1,0.4978379940994576,0.517865802896465,0->1,False,True,fixed_error
+3674,Wow Crackdown 3 uses multiple servers in multiplayer?!?! U can destroy whole buildings?!?! #copped,destroy,Trackside California,0,0,1,0.4369989338715096,0.5021230028328804,0->1,True,False,new_error
+4981,Aspiring musician &amp; song writer shares her talent at the GMMBC Youth Explosion on this past Saturday. http://t.co/OmjMTU9kFG,explosion,,0,0,1,0.4492046330900705,0.5133095003356336,0->1,True,False,new_error
+5200,Las Vegas in top 5 cities for red-light running fatalities http://t.co/kC8O81BcHG,fatalities,USA,1,0,1,0.460420977632618,0.5212510971546654,0->1,False,True,fixed_error
+5454,At the #999day Emergency Services display! Meeting the brave police firefighters and first responders that help keep us safe! ????????,first%20responders,"Stalybridge, Tameside",1,1,0,0.5058001576247602,0.47940623636943813,1->0,True,False,new_error
+5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273591,0.4589470313377756,1->0,True,False,new_error
+5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0,0.5794638757469507,0.44250731124481735,1->0,False,True,fixed_error
+6343,Holmgren describing 96 World Cup: we were Lou's hostages.,hostages,NYC metro,0,1,0,0.5103008060550379,0.48155462423667156,1->0,False,True,fixed_error
+6420,@pattonoswalt @FoxNews Wait I thought Fecal Hurricane was on SciFi? Maybe that was turdnado. I've been forgeting up a shit storm lately.,hurricane,,1,0,1,0.49479114182122896,0.5805958402355483,0->1,False,True,fixed_error
+6759,Phones Offers &gt;&gt; http://t.co/bYtbZ8s5ux #034 8-Pin Lightning Connector 2.1A Car Charger For Apple 5 5S 5C 6 6+ iPÛ_ http://t.co/o3wVScLiCX,lightning,USA,0,0,1,0.470077189707692,0.5112256679379718,0->1,True,False,new_error
+6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.5138614863883569,0.45367594598816247,1->0,True,False,new_error
+7526,Plains All American Pipeline company may have spilled 40 percent more crude oil than previously estimated.... http://t.co/WEZjqC4Cf2,oil%20spill,"San Luis Obispo, CA",1,1,0,0.5349564416988027,0.49319823128195417,1->0,True,False,new_error
+7617,Element of Freedom at Mirage Saturday! 21+ Ladies Free Before Midnight!' http://t.co/7hAnPcr5rK,pandemonium,"Durham, NC",0,0,1,0.4654396739343686,0.5218956065168113,0->1,True,False,new_error
+8294,China's Stock Market Crash: Are There Gems In The Rubble?: ChinaÛªs stock market crash this su... http://t.co/KABK3tcJNL ...  via @Forbes,rubble,"Minna, Nigeria",0,0,1,0.4838965375329091,0.5134066186255072,0->1,True,False,new_error
+8408,SANDSTORM!!! WOO HOO!!,sandstorm,"Hamilton County, IN",1,1,0,0.5251335098301211,0.46038610473040986,1->0,True,False,new_error
+9030,Stretcher in 5 min // Speaker Deck http://t.co/0YO2l38OZr,stretcher,??,0,0,1,0.39862956273638117,0.5241681709124466,0->1,True,False,new_error
+9041,ÛÏStretcher in 5 min // Speaker DeckÛ http://t.co/7qPG80uD7v,stretcher,3???2???????,0,0,1,0.45678283428626704,0.585192467573412,0->1,True,False,new_error
+9082,Slums are a manifestation state failure to provide housing to citizens. Illegality discourse confounds structural problems. #stopevictions,structural%20failure,,1,1,0,0.5048100465004907,0.47964009823634596,1->0,True,False,new_error
+9237,9) 'Without the bombing you would have to do hara-kiri you know commit suicide'. http://t.co/UO0aQk9KR8 Hiroshima 70 years ago.,suicide%20bombing,Tokyo & Osaka,1,1,0,0.5505261927538025,0.4505414792326821,1->0,True,False,new_error
+9471,OMEGA MEN Writer Explores Terrorism Religion In an 'Epic KYLE RAYNER Story' http://t.co/Hr88CWxPGz #Newsarama,terrorism,"Tampa, FL",0,0,1,0.4856709835140479,0.5910635053033647,0->1,True,False,new_error
+9496,Signing a petition to seek mercy on a death punishment for a convivted terrorist is a job well done in India. But asking a foreign govt 1/n,terrorist,,1,0,1,0.4536261896032344,0.5094244650491878,0->1,False,True,fixed_error
+9810,in response to trauma Children of Addicts develop a defensive self - one that decreases vulnerability. (3,trauma,"Montgomery County, MD",0,0,1,0.4938710079910158,0.5351218301982275,0->1,True,False,new_error
+10299,GUN FIREARM WEAPON VECTOR CLIP ART FOR VINYL SIGN CUTTER RIFLE GUNS WEAPONS http://t.co/sdOgEF3kFT http://t.co/x0giy85BS8,weapon,,0,0,1,0.4961163506186361,0.5272679843898047,0->1,True,False,new_error
+10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207206,0.45600748109661937,1->0,True,False,new_error
+10545,Texas Seeks Comment on Rules for Changes to WindstormåÊInsurer http://t.co/92fwtObi3U,windstorm,,1,0,1,0.4541239699431515,0.5038118977195658,0->1,False,True,fixed_error
+10718,Got in a car wreck. The car in front of me didn't put their blinker on :-))) but it really does feel great outside so lol,wreck,"Arlington, TX",0,0,1,0.45311300782994296,0.5134132740642261,0->1,True,False,new_error

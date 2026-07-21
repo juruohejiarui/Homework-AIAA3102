@@ -1,0 +1,14 @@
+{
+  "exact_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket5_heldout --data data/train.csv --split starter/data/split_indices.json --freeze experiments/ticket-5/frozen_decision.json --output-dir experiments/ticket-5/heldout --confirm-single-ticket5-report",
+  "freeze_sha256": "f5e814a4cbe4f4f94bcac1c2d1ab07e5effacb83f21e91a6395791b2f5b9b097",
+  "full_rows_audited": 7613,
+  "heldout_labels_modified": false,
+  "heldout_rows_removed": 0,
+  "new_model_fit": false,
+  "reporting_mode": "Reuse validated Ticket 4 stable held-out predictions; no refit or new prediction pass",
+  "scope": "Post-freeze Ticket 5 held-out report and full cross-split data-quality candidate audit",
+  "selection_or_tuning_on_heldout": false,
+  "selection_reopened": false,
+  "source_dataset_modified": false,
+  "ticket5_heldout_reporting_number": 1
+}

@@ -46,9 +46,14 @@ def main() -> int:
     if (summary["ticket"] == "ticket_5").any():
         raise RuntimeError("Ticket 5 summary exists before freeze")
 
+    # Read the Ticket 4 frozen variant dynamically (supports expanded MODEL_SPECS)
+    ticket4_freeze_path = PROJECT_ROOT / "experiments" / "ticket-4" / "frozen_decision.json"
+    ticket4_freeze = json.loads(ticket4_freeze_path.read_text(encoding="utf-8"))
+    ticket4_selected_variant = ticket4_freeze["selected_variant"]
+
     correction_selection_path = args.dev_dir / "correction_experiment" / "selection_result.json"
     correction = json.loads(correction_selection_path.read_text(encoding="utf-8"))
-    if correction["adopt_corrected_training_model"] is not False or correction["selected_variant"] != "lr_c1_balanced_default":
+    if correction["adopt_corrected_training_model"] is not False or correction["selected_variant"] != ticket4_selected_variant:
         raise RuntimeError("correction result does not retain the frozen Ticket 4 model")
     if correction["heldout_rows_loaded"] != 0 or correction["dev_labels_modified"] is not False:
         raise RuntimeError("correction selection violated split or label constraints")
@@ -82,7 +87,7 @@ def main() -> int:
         "freeze_status": "frozen_before_ticket5_heldout_reporting_and_audit",
         "frozen_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "decision_split": "train_ids and dev_ids only",
-        "selected_variant": "lr_c1_balanced_default",
+        "selected_variant": ticket4_selected_variant,
         "selected_model_source": "Frozen Ticket 4 model configuration",
         "training_label_corrections_adopted": False,
         "source_dataset_modified": False,
@@ -116,7 +121,7 @@ def main() -> int:
                 "",
                 f"Frozen at: {freeze['frozen_at']}",
                 "",
-                "Selected: retain the frozen Ticket 4 balanced Logistic Regression model; apply no label corrections.",
+                f"Selected: retain the frozen Ticket 4 model ({ticket4_selected_variant}); apply no label corrections.",
                 "",
                 DECISION_REASON,
                 "",

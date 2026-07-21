@@ -1,0 +1,124 @@
+{
+  "decision": "Adopt URL placeholder normalization as the single Ticket 2 lever.",
+  "decision_reason": "Selected on dev only: URL placeholdering had the highest normalization-variant F1 (0.7403132728771641 versus raw 0.7388120423108218), increased precision and accuracy, fixed 28 baseline errors while creating 22, and was exactly invariant on all 767 URL-perturbed dev rows while the raw control changed 275 predictions.",
+  "decision_split": "dev_ids only",
+  "effective_parameters": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 100,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 3102,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "normalizer": {
+      "casefold_text": false,
+      "punctuation_to_space": false,
+      "replace_emoji": false,
+      "replace_mentions": false,
+      "replace_urls": true,
+      "strip_hashtag_markers": false
+    },
+    "tfidf_vectorizer": {
+      "analyzer": "word",
+      "binary": false,
+      "decode_error": "strict",
+      "dtype": "numpy.float64",
+      "encoding": "utf-8",
+      "input": "content",
+      "lowercase": true,
+      "max_df": 1.0,
+      "max_features": null,
+      "min_df": 1,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "norm": "l2",
+      "preprocessor": null,
+      "smooth_idf": true,
+      "stop_words": null,
+      "strip_accents": null,
+      "sublinear_tf": false,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "tokenizer": null,
+      "use_idf": true,
+      "vocabulary": null
+    }
+  },
+  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket2 --dev-dir experiments/ticket-2/dev --output experiments/ticket-2/frozen_decision.json",
+  "freeze_status": "frozen_before_ticket2_heldout",
+  "frozen_at": "2026-07-21T20:13:37+08:00",
+  "heldout_observed_at_freeze": false,
+  "integrity": {
+    "control_dev_predictions_sha256": "36c239ae24573e168be6d3b93c120ddfbe0aef485ca6f36c41ab4d9ac2b35496",
+    "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+    "dev_metrics_sha256": "bdc40f65b89d7b348e1b76d9576ad8bec54dfe0d43b370f3e0d8f66f6c369925",
+    "dev_run_config_sha256": "83e70ea199a131370db42e5200399072c9b721830804067660b46d787a9baa93",
+    "dev_runner_source_sha256": "cc6ce024e79b451e8e6a030fb4ab8952b6c430db2ec79e93fafe198affde8754",
+    "experiment_plan_sha256": "15fe483a5c66a148cfec1ac21f53b6c3115e0b54c4b61456a0e81afa4d0cd2c7",
+    "heldout_runner_source_sha256": "90ede6764fd37f2181f9221343835f4a71310c5c54663395f69d132e8515b1fe",
+    "normalization_source_sha256": "a8b9ecd13d6c62aa7691e97917d5dd4039d82f9350237ad36e63f4bdec9c47e4",
+    "requirements_lock_sha256": "5bcff454cf416c8759e4e2a46beb1f9aedbf2637dd2b455da0d2b3242682a4d5",
+    "robustness_metrics_sha256": "1c0550dbe99a480c709dbad057c570822acb9df1c375d6e04013ec40f6953031",
+    "selected_dev_predictions_sha256": "5ae850e24e071fe60d71b8f93d260e2b12577bae7b520030964949241be1f266",
+    "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+    "ticket1_freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b",
+    "ticket2_source_sha256": "5ff19156e4733ef2e02e07b429d2f2254d3163b222f5b7f7dc8441d2f2951afc"
+  },
+  "normalization": {
+    "order": "URL replacement occurs before the otherwise unchanged frozen TF-IDF vectorizer.",
+    "parameters": {
+      "replace_urls": true
+    },
+    "replacement_token": "URLTOKEN",
+    "url_pattern": "(?i)\\b(?:https?://|www\\.)\\S+"
+  },
+  "raw_control_dev_evidence": {
+    "accuracy": 0.7892317793827971,
+    "f1_target_1": 0.7388120423108218,
+    "false_negative": 201,
+    "false_positive": 120,
+    "precision_target_1": 0.7909407665505227,
+    "recall_target_1": 0.6931297709923664,
+    "true_negative": 748,
+    "true_positive": 454
+  },
+  "selected_dev_evidence": {
+    "accuracy": 0.7931713722915299,
+    "converged": true,
+    "f1_delta_vs_frozen_baseline": 0.0015012305663423,
+    "f1_target_1": 0.7403132728771641,
+    "false_negative": 206,
+    "false_positive": 109,
+    "fixed_fn": 6,
+    "fixed_fp": 22,
+    "n_iter": "[22]",
+    "new_fn": 11,
+    "new_fp": 11,
+    "precision_target_1": 0.8046594982078853,
+    "prediction_changes": 50,
+    "recall_target_1": 0.6854961832061068,
+    "true_negative": 759,
+    "true_positive": 449
+  },
+  "selected_variant": "normalize_urls_placeholder",
+  "selection_reopening_permitted": false,
+  "ticket": 2,
+  "ticket2_heldout_evaluation_count_at_freeze": 0,
+  "url_robustness_evidence": {
+    "affected_dev_rows": 767,
+    "raw_control_changed_predictions": 275,
+    "raw_control_prediction_invariance_rate": 0.6414602346805737,
+    "selected_changed_predictions": 0,
+    "selected_maximum_absolute_score_shift": 0.0
+  }
+}

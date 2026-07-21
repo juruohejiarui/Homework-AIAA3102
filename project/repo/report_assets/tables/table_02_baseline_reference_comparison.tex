@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Baseline Floor and Assignment-Reference Comparison}
+\label{tab:baseline_reference}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\hline
+condition & split & metric & value & reference or tolerance & absolute gap & within tolerance \\
+\hline
+train\_majority\_floor & dev & f1\_target\_1 & 0 & -- & -- & -- \\
+raw\_text\_tfidf\_logistic\_regression & dev & f1\_target\_1 & 0.738812 & -- & -- & -- \\
+frozen\_baseline\_heldout & heldout & heldout\_f1\_target\_1 & 0.749186 & 0.757422 & 0.008236 & False \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{F1 is unitless in [0,1]. The assignment reference tolerance is 0.001; the frozen held-out result does not match it.}
+\end{table*}

@@ -21,6 +21,7 @@ os.environ.setdefault("MPLBACKEND", "Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.patches import Patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -150,13 +151,13 @@ def write_tex_table(frame: pd.DataFrame, path: Path, title: str, label: str, not
     align = "l" + "r" * (len(shown.columns) - 1)
     lines = [
         r"\begin{table*}[t]", r"\centering", f"\\caption{{{tex_escape(title)}}}",
-        f"\\label{{{label}}}", r"\resizebox{\textwidth}{!}{%", f"\\begin{{tabular}}{{{align}}}",
+        f"\\label{{{label}}}", r"\begin{adjustbox}{max width=\textwidth}", r"\scriptsize", f"\\begin{{tabular}}{{{align}}}",
         r"\hline", " & ".join(tex_escape(column.replace("_", " ")) for column in shown.columns) + r" \\",
         r"\hline",
     ]
     for row in shown.itertuples(index=False, name=None):
         lines.append(" & ".join(tex_escape(display_value(value)) for value in row) + r" \\")
-    lines.extend([r"\hline", r"\end{tabular}%", r"}", f"\\par\\footnotesize{{{tex_escape(notes)}}}", r"\end{table*}", ""])
+    lines.extend([r"\hline", r"\end{tabular}", r"\end{adjustbox}", f"\\par\\footnotesize{{{tex_escape(notes)}}}", r"\end{table*}", ""])
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -350,6 +351,85 @@ def main() -> None:
     write_table("table_07_prediction_transitions", transition_table, "Prediction Transitions Relative to the Ticket 1 Frozen Baseline", "tab:prediction_transitions", pred_sources,
                 "Fixed/new FP/FN are disjoint correctness transitions; counts are tweets and are reported separately for dev and held-out.", expected_rows=10)
 
+    # Table 15: historical Ticket 1 probe deltas on dev and held-out.
+    probe_metrics_path = "experiments/ticket-1/probes/dev_probe_metrics.csv"
+    probe_heldout_path = "experiments/ticket-1/heldout/heldout_probe_metrics.csv"
+    probe_comparison_path = "experiments/ticket-1/heldout/discrepancy_comparison.csv"
+    probe_plan_path = "experiments/ticket-1/probes/probe_plan.json"
+    probe_metrics = load_csv(probe_metrics_path)
+    probe_heldout_metrics = load_csv(probe_heldout_path)
+    probe_comparison = load_csv(probe_comparison_path)
+    probe_plan = load_json(probe_plan_path)
+    probe_details = {item["name"]: item for item in probe_plan["controlled_probes"]}
+    baseline_probe = "raw_text_tfidf_logistic_regression"
+    record_check("Ticket 1 probe plan count", len(probe_details) == 32, f"probes={len(probe_details)}")
+    record_check("Ticket 1 probe metric coverage", len(probe_metrics) == len(probe_details) + 1 and set(probe_metrics["model_name"]) == set(probe_details) | {baseline_probe}, f"rows={len(probe_metrics)}")
+    record_check("Ticket 1 held-out probe metric coverage", len(probe_heldout_metrics) == len(probe_metrics) == 33, f"rows={len(probe_heldout_metrics)}")
+    record_check("Ticket 1 discrepancy comparison coverage", len(probe_comparison) == len(probe_metrics) == 33, f"rows={len(probe_comparison)}")
+    probe_labels = {
+        "submitted_baseline": "Frozen baseline control",
+        "unigrams_only": "Explicit unigram control",
+        "tfidf_word_bigrams": "Add word bigrams",
+        "trigrams_added": "Add word trigrams",
+        "no_sublinear_tf": "Disable sublinear TF",
+        "max_features_20000": "max_features=20,000",
+        "max_features_unbounded": "max_features=None",
+        "min_df_2": "min_df=2",
+        "min_df_3": "min_df=3",
+        "min_df_5": "min_df=5",
+        "max_df_0_9": "max_df=0.9",
+        "no_idf": "Disable IDF",
+        "no_smooth_idf": "Disable IDF smoothing",
+        "l1_normalization": "L1 normalization",
+        "no_vector_normalization": "No vector normalization",
+        "unicode_accents": "Unicode accent stripping",
+        "single_character_tokens": "Single-character tokens",
+        "tfidf_lowercase_false": "Preserve case",
+        "c_0_1": "C=0.1",
+        "c_0_25": "C=0.25",
+        "c_0_5": "C=0.5",
+        "c_2": "C=2",
+        "c_4": "C=4",
+        "c_10": "C=10",
+        "balanced_classes": "class_weight=balanced",
+        "logreg_solver_liblinear": "Solver=liblinear",
+        "lbfgs_solver": "Explicit solver=lbfgs",
+        "logreg_max_iter_1000": "max_iter=1,000",
+        "seed_1": "random_state=1",
+        "seed_42": "random_state=42",
+        "logreg_seed_9999": "random_state=9,999",
+        "logreg_explicit_l2": "Explicit L2 representation",
+        "leaky_tfidf_train_plus_dev": "Leaky train+dev TF-IDF (invalid)",
+    }
+    comparable_dev = probe_metrics[["model_name", "f1_target_1", "f1_delta_vs_baseline"]].copy()
+    comparable_dev["probe"] = comparable_dev["model_name"].replace({baseline_probe: "submitted_baseline"})
+    comparable_heldout = probe_heldout_metrics[["model_name", "f1_target_1", "f1_delta_vs_baseline"]].copy()
+    record_check("Ticket 1 dev comparison ledger matches",
+                 probe_comparison["probe"].equals(comparable_dev["probe"])
+                 and np.allclose(probe_comparison["dev_f1_target_1"], comparable_dev["f1_target_1"], rtol=0, atol=1e-15)
+                 and np.allclose(probe_comparison["dev_delta_from_baseline"], comparable_dev["f1_delta_vs_baseline"], rtol=0, atol=1e-15),
+                 "33 dev rows")
+    record_check("Ticket 1 held-out comparison ledger matches",
+                 probe_comparison["probe"].equals(comparable_heldout["model_name"])
+                 and np.allclose(probe_comparison["heldout_f1_target_1"], comparable_heldout["f1_target_1"], rtol=0, atol=1e-15)
+                 and np.allclose(probe_comparison["heldout_delta_from_baseline"], comparable_heldout["f1_delta_vs_baseline"], rtol=0, atol=1e-15),
+                 "33 held-out rows")
+    record_check("Ticket 1 comparison deltas recompute",
+                 np.allclose(probe_comparison["dev_delta_from_baseline"], probe_comparison["dev_f1_target_1"] - float(probe_comparison.iloc[0]["dev_f1_target_1"]), rtol=0, atol=1e-15)
+                 and np.allclose(probe_comparison["heldout_delta_from_baseline"], probe_comparison["heldout_f1_target_1"] - float(probe_comparison.iloc[0]["heldout_f1_target_1"]), rtol=0, atol=1e-15),
+                 "baseline-relative F1")
+    probe_table = probe_comparison.copy()
+    probe_table.insert(1, "probe_label", probe_table["probe"].map(probe_labels))
+    probe_table.insert(2, "cause_category", probe_table["probe"].map(lambda name: "frozen baseline control" if name == "submitted_baseline" else probe_details[name]["cause_category"]))
+    probe_table["dev_delta_percentage_points"] = probe_table["dev_delta_from_baseline"] * 100.0
+    probe_table["heldout_delta_percentage_points"] = probe_table["heldout_delta_from_baseline"] * 100.0
+    record_check("Ticket 1 probe labels complete", probe_table["probe_label"].notna().all(), "all probe names have display labels")
+    write_table("table_15_ticket1_dev_probe_ledger", probe_table,
+                "Ticket 1 Historical Probe Deltas on Dev and Held-Out", "tab:ticket1_probe_ledger",
+                source(probe_metrics_path, probe_heldout_path, probe_comparison_path, probe_plan_path),
+                "Each delta is probe F1 minus submitted-baseline F1 in percentage points. The historical held-out ledger is diagnostic after the reference mismatch and is not eligible evidence for replacing the frozen baseline.",
+                display_columns=["probe_label", "cause_category", "dev_f1_target_1", "heldout_f1_target_1", "dev_delta_percentage_points", "heldout_delta_percentage_points"], expected_rows=33)
+
     # Table 8: normalization variants and robustness evidence.
     norm_metrics_path = "experiments/ticket-2/dev/results/dev_metrics.csv"
     norm_robust_path = "experiments/ticket-2/dev/robustness/robustness_metrics.csv"
@@ -393,7 +473,7 @@ def main() -> None:
     write_table("table_10_decision_rule_model_comparison", model_table, "Ticket 4 Model and Decision-Rule Comparison on Dev", "tab:model_comparison",
                 source(model_path, threshold_path),
                 "All rows preserve the frozen text representation; only the listed classifier/regularization/class-weight/threshold lever changes.",
-                display_columns=["variant", "classifier_family", "class_weight", "decision_threshold", "precision_target_1", "recall_target_1", "f1_target_1", "accuracy", "fixed_fn", "new_fp"], expected_rows=8)
+                display_columns=["variant", "classifier_family", "class_weight", "decision_threshold", "precision_target_1", "recall_target_1", "f1_target_1", "accuracy", "fixed_fn", "new_fp"], expected_rows=12)
     sweep = load_csv(threshold_path, ["threshold", "precision_target_1", "recall_target_1", "f1_target_1"])
     record_check("threshold sweep row count", len(sweep) == 61, f"rows={len(sweep)}")
     record_check("threshold sweep grid", np.allclose(sweep["threshold"].to_numpy(), np.arange(0.20, 0.801, 0.01), atol=1e-12), "0.20--0.80 inclusive, step 0.01")
@@ -412,6 +492,71 @@ def main() -> None:
     ax.legend(ncol=3, loc="lower center")
     save_figure(fig, "figure_01_threshold_sweep", "Ticket 4 Threshold Sweep on Dev", threshold_path,
                 "Y-axis spans the full [0,1] metric range; the sweep evaluates the unweighted frozen baseline scores.")
+
+    # Figure 5: all predeclared Ticket 4 candidates, including the extended C grid.
+    model_figure_data = model_table.loc[:, [
+        "variant", "classifier_family", "C", "class_weight", "decision_threshold", "intended_lever",
+        "precision_target_1", "recall_target_1", "f1_target_1", "accuracy",
+    ]].copy()
+    control_f1 = float(model_figure_data.loc[
+        model_figure_data["variant"] == "lr_c1_unweighted_default", "f1_target_1"
+    ].iloc[0])
+    model_figure_data["f1_delta_percentage_points"] = (
+        model_figure_data["f1_target_1"] - control_f1
+    ) * 100.0
+    candidate_labels = {
+        "lr_c1_unweighted_default": "LR C=1",
+        "lr_c025_unweighted_default": "LR C=.25",
+        "lr_c05_unweighted_default": "LR C=.5",
+        "lr_c2_unweighted_default": "LR C=2",
+        "lr_c4_unweighted_default": "LR C=4",
+        "lr_c5_unweighted_default": "LR C=5",
+        "lr_c10_unweighted_default": "LR C=10",
+        "lr_c1_balanced_default": "Bal. LR C=1",
+        "lr_c5_balanced_default": "Bal. LR C=5",
+        "lr_c10_balanced_default": "Bal. LR C=10",
+        "linear_svc_c1_default": "LinearSVC",
+        "lr_c1_unweighted_tuned_threshold": "LR t=.47",
+    }
+    model_figure_data["candidate_label"] = model_figure_data["variant"].map(candidate_labels)
+    model_figure_data.to_csv(FIGURES / "figure_05_ticket4_model_grid_data.csv", index=False, float_format="%.17g")
+    ASSETS.append({"asset": rel(FIGURES / "figure_05_ticket4_model_grid_data.csv"), "asset_type": "figure_source_csv", "title": "Ticket 4 Model Grid on Dev", "split": "dev", "comparison_baseline": "Ticket 1 frozen baseline", "source_artifacts": source(model_path), "notes": "All 12 predeclared candidates; lower panel reports F1 change from the unweighted C=1 control in percentage points."})
+    positions = np.arange(len(model_figure_data))
+    selected_index = int(model_figure_data.index[model_figure_data["variant"] == "lr_c1_balanced_default"][0])
+    extended_mask = model_figure_data["variant"].isin({
+        "lr_c5_unweighted_default", "lr_c10_unweighted_default",
+        "lr_c5_balanced_default", "lr_c10_balanced_default",
+    })
+    bar_colors = np.where(
+        model_figure_data["variant"] == "lr_c1_balanced_default", "#009E73",
+        np.where(extended_mask, "#E69F00", "#0072B2"),
+    )
+    fig, (metric_axis, delta_axis) = plt.subplots(
+        2, 1, figsize=(7.16, 5.0), sharex=True, gridspec_kw={"height_ratios": [1.35, 1]},
+    )
+    for column, label, color, marker in (
+        ("precision_target_1", "Precision", "#0072B2", "o"),
+        ("recall_target_1", "Recall", "#D55E00", "s"),
+        ("f1_target_1", "F1", "#009E73", "D"),
+    ):
+        metric_axis.plot(positions, model_figure_data[column], label=label, color=color, marker=marker, linewidth=1.2, markersize=3.5)
+    metric_axis.axvspan(selected_index - 0.4, selected_index + 0.4, color="#009E73", alpha=0.10)
+    metric_axis.annotate("selected", xy=(selected_index, model_figure_data.loc[selected_index, "f1_target_1"]), xytext=(0, 10), textcoords="offset points", ha="center", color="#0072B2", fontsize=7)
+    metric_axis.set(ylabel="Dev metric", ylim=(0, 1), title="Ticket 4 bounded model and decision-rule grid on dev")
+    metric_axis.grid(axis="y", alpha=0.25)
+    metric_axis.legend(ncol=3, loc="lower left")
+    delta_axis.bar(positions, model_figure_data["f1_delta_percentage_points"], color=bar_colors)
+    delta_axis.axhline(0, color="#555555", linewidth=0.8)
+    delta_axis.set(
+        xticks=positions,
+        xticklabels=model_figure_data["candidate_label"],
+        ylabel="F1 delta (pp)",
+    )
+    delta_axis.tick_params(axis="x", rotation=28)
+    delta_axis.grid(axis="y", alpha=0.25)
+    fig.tight_layout()
+    save_figure(fig, "figure_05_ticket4_model_grid", "Ticket 4 Model Grid on Dev", source(model_path),
+                "Upper panel uses the full [0,1] metric range. Lower panel shows F1 deltas from the unweighted C=1 control; green is the frozen selection and orange marks extended C=5/C=10 candidates.")
 
     # Table 11 and Figure 4: data-quality evidence.
     audit_path = "results/data_quality_audit.csv"
@@ -581,6 +726,69 @@ def main() -> None:
     ax.grid(axis="y", alpha=0.25); ax.legend(ncol=4)
     save_figure(fig, "figure_03_prediction_transitions", "Held-Out Error Transitions Relative to Ticket 1", pred_sources,
                 "Axis starts at zero; fixed and new FP/FN counts are shown separately without netting successes against failures.")
+
+    # Figure 6: historical Ticket 1 probe dev-vs-held-out F1 delta scatter.
+    probe_figure_data = probe_table[["probe", "probe_label", "cause_category", "dev_delta_percentage_points", "heldout_delta_percentage_points"]].copy()
+    display_groups = {
+        "frozen baseline control": "Frozen control",
+        "changed TF-IDF parameters": "TF-IDF setting",
+        "changed preprocessing": "Preprocessing",
+        "regularization": "Logistic Regression setting",
+        "class weighting": "Logistic Regression setting",
+        "Logistic Regression solver": "Reproducibility check",
+        "maximum iterations or convergence": "Reproducibility check",
+        "random seed": "Reproducibility check",
+        "package-version behavior": "Reproducibility check",
+        "accidental leakage": "Invalid leakage diagnostic",
+    }
+    probe_figure_data["display_group"] = probe_figure_data["cause_category"].map(display_groups)
+    record_check("Ticket 1 probe display groups complete", probe_figure_data["display_group"].notna().all(), "all probe categories map to figure groups")
+    probe_figure_data.to_csv(FIGURES / "figure_06_ticket1_dev_probe_deltas_data.csv", index=False, float_format="%.17g")
+    ASSETS.append({"asset": rel(FIGURES / "figure_06_ticket1_dev_probe_deltas_data.csv"), "asset_type": "figure_source_csv", "title": "Ticket 1 Historical Probe Delta Scatter", "split": "dev and heldout", "comparison_baseline": "Ticket 1 submitted baseline", "source_artifacts": source(probe_metrics_path, probe_heldout_path, probe_comparison_path, probe_plan_path), "notes": "Each point plots dev and held-out target-1 F1 deltas in percentage points. The second panel magnifies near-baseline probes; the historical held-out ledger is diagnostic only."})
+    group_colors = {
+        "Frozen control": "#555555", "TF-IDF setting": "#0072B2", "Preprocessing": "#D55E00",
+        "Logistic Regression setting": "#009E73", "Reproducibility check": "#56B4E9",
+        "Invalid leakage diagnostic": "#E69F00",
+    }
+    zero_overlap_count = int(((np.abs(probe_figure_data["dev_delta_percentage_points"]) <= 1e-12) & (np.abs(probe_figure_data["heldout_delta_percentage_points"]) <= 1e-12)).sum())
+    fig, (full_axis, zoom_axis) = plt.subplots(1, 2, figsize=(7.16, 3.45))
+    def draw_probe_scatter(axis: plt.Axes, xlim: tuple[float, float], ylim: tuple[float, float], title: str,
+                           annotations: dict[str, tuple[str, tuple[float, float]]]) -> None:
+        for group, color in group_colors.items():
+            subset = probe_figure_data[probe_figure_data["display_group"] == group]
+            axis.scatter(subset["dev_delta_percentage_points"], subset["heldout_delta_percentage_points"],
+                         s=27, color=color, alpha=0.88, edgecolors="white", linewidths=0.35, label=group)
+        baseline = probe_figure_data[probe_figure_data["probe"] == "submitted_baseline"].iloc[0]
+        axis.scatter([baseline["dev_delta_percentage_points"]], [baseline["heldout_delta_percentage_points"]],
+                     s=58, color="#000000", marker="*", zorder=4, label="Submitted baseline")
+        axis.axhline(0, color="#555555", linewidth=0.7)
+        axis.axvline(0, color="#555555", linewidth=0.7)
+        diagonal = np.linspace(min(xlim[0], ylim[0]), max(xlim[1], ylim[1]), 100)
+        axis.plot(diagonal, diagonal, color="#555555", linestyle="--", linewidth=0.7, label="Equal delta")
+        axis.set(xlim=xlim, ylim=ylim, xlabel="Dev F1 delta (pp)", ylabel="Held-out F1 delta (pp)", title=title)
+        axis.grid(alpha=0.22)
+        axis.set_aspect("equal", adjustable="box")
+        for probe, (label, offset) in annotations.items():
+            row = probe_figure_data[probe_figure_data["probe"] == probe].iloc[0]
+            axis.annotate(label, (row["dev_delta_percentage_points"], row["heldout_delta_percentage_points"]),
+                          xytext=offset, textcoords="offset points", fontsize=6.5,
+                          arrowprops={"arrowstyle": "-", "color": "#555555", "linewidth": 0.5})
+    draw_probe_scatter(
+        full_axis, (-16, 2), (-16, 2), "Full historical range",
+        {"l1_normalization": ("L1 norm", (5, 7)), "c_0_1": ("C=0.1", (4, 4)), "trigrams_added": ("trigrams", (4, -10))},
+    )
+    draw_probe_scatter(
+        zoom_axis, (-4, 2), (-6, 2), "Near-baseline magnification",
+        {"min_df_3": ("min df=3", (8, -11)), "c_2": ("C=2", (9, 11)), "balanced_classes": ("balanced", (4, -10)), "no_vector_normalization": ("no norm", (4, 5)), "c_0_25": ("C=0.25", (4, -10))},
+    )
+    zoom_axis.annotate(f"{zero_overlap_count} exact overlaps", (0, 0), xytext=(5, 6), textcoords="offset points", fontsize=6.5)
+    handles, labels = full_axis.get_legend_handles_labels()
+    unique_legend = dict(zip(labels, handles))
+    fig.legend(unique_legend.values(), unique_legend.keys(), loc="lower center", ncol=3, fontsize=6.5, frameon=False)
+    fig.tight_layout(rect=(0, 0.13, 1, 1))
+    save_figure(fig, "figure_06_ticket1_dev_probe_deltas", "Ticket 1 Historical Probe Delta Scatter",
+                source(probe_metrics_path, probe_heldout_path, probe_comparison_path, probe_plan_path),
+                "Each point is a historical probe. The left panel shows the full percentage-point range; the right magnifies near-baseline behavior. Points at zero overlap exactly. The held-out probe ledger is diagnostic after the reference mismatch, not valid for replacement-model selection.")
 
     # Cross-table compatibility and reproducibility assertions.
     record_check("Ticket 1 and Ticket 3 selected configurations match", predictions[(1, "heldout")][["id", "y_true", "y_pred"]].equals(predictions[(3, "heldout")][["id", "y_true", "y_pred"]]), "held-out IDs/labels/predictions identical")

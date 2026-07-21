@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\caption{Representative Successes, Failures, Ambiguities, and Audit Cases}
+\label{tab:cases}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrrrrr}
+\hline
+ticket & split & id & case type & true label & baseline pred & baseline score & candidate pred & candidate score & transition or disposition \\
+\hline
+1 & dev & 5282 & solver boundary failure & 1 & 1 & 0.500826 & 0 & 0.498597 & new\_error \\
+2 & heldout & 773 & normalization success & 0 & 1 & 0.533045 & 0 & 0.460680 & fixed\_error \\
+2 & heldout & 902 & normalization failure & 1 & 1 & 0.508666 & 0 & 0.499356 & new\_error \\
+3 & dev & 7 & shortcut success & 1 & 0 & 0.412138 & 1 & 0.663488 & fixed\_error \\
+3 & dev & 25 & shortcut failure & 0 & 0 & 0.265330 & 1 & 0.663488 & new\_error \\
+3 & dev & 331 & shallow-feature failure & 0 & 0 & 0.418088 & 1 & 0.521747 & new\_error \\
+4 & heldout & 556 & recall success & 1 & 0 & 0.464323 & 1 & 0.529717 & fixed\_error \\
+4 & heldout & 59 & precision failure & 0 & 0 & 0.450541 & 1 & 0.504457 & new\_error \\
+4 & heldout & 767 & verified score conflict & 0 & 0 & 0.487623 & 1 & 0.544815 & new\_error \\
+5 & dev & 9470 & correction-probe success & 0 & 1 & 0.633044 & 0 & 0.465278 & fixed\_error \\
+5 & dev & 4014 & correction-probe failure & 0 & 0 & 0.496509 & 1 & 0.502209 & new\_error \\
+5 & heldout & 5760 & validated model error & 0 & -- & -- & 1 & 0.768287 & reject\_false\_positive \\
+5 & heldout & 2619 & potential annotation issue & 1 & -- & -- & 0 & 0.224300 & fix \\
+5 & heldout & 6220 & ambiguity & 0 & -- & -- & 1 & 0.645703 & ambiguous \\
+5 & heldout & 6223 & ambiguity & 1 & -- & -- & 1 & 0.645703 & ambiguous \\
+5 & heldout & 10795 & validated model error & 1 & -- & -- & 0 & 0.135000 & reject\_false\_positive \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{The CSV preserves full text, scores, and rationales; the compact report table preserves the verified numeric case ledger. Stable IDs support exact lookup.}
+\end{table*}

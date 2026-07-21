@@ -1,0 +1,11 @@
+{
+  "baseline_probe": "submitted_baseline",
+  "dev_metric": "f1_target_1",
+  "heldout_metric": "f1_target_1",
+  "pearson_p_value": 6.59156671321466e-22,
+  "pearson_r": 0.9777584252957625,
+  "policy": "Probes are forensic diagnostics. Held-out scores verify dev-heldout agreement; they do not select or revise the frozen baseline.",
+  "probe_count": 32,
+  "spearman_p_value": 2.077091959967972e-08,
+  "spearman_rho": 0.8091460144552395
+}

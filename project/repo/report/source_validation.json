@@ -11,6 +11,7 @@
     "../report_assets/tables/table_05_heldout_metric_comparison.tex",
     "../report_assets/tables/table_06_confusion_matrix_summary.tex",
     "../report_assets/tables/table_07_prediction_transitions.tex",
+    "../report_assets/tables/table_15_ticket1_dev_probe_ledger.tex",
     "../report_assets/tables/table_08_normalization_experiments.tex",
     "../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex",
     "../report_assets/tables/table_10_decision_rule_model_comparison.tex",
@@ -20,7 +21,9 @@
     "../report_assets/tables/table_14_ai_usage_and_verification.tex"
   ],
   "figure_inputs": [
+    "figure_06_ticket1_dev_probe_deltas.png",
     "figure_01_threshold_sweep.png",
+    "figure_05_ticket4_model_grid.png",
     "figure_02_dev_heldout_f1.png",
     "figure_03_prediction_transitions.png",
     "figure_04_data_quality_dispositions.png"
@@ -110,104 +113,119 @@
       "detail": "requested report order"
     },
     {
-      "check": "14 generated tables included",
+      "check": "15 generated tables included",
       "status": "PASS",
-      "detail": "['../report_assets/tables/table_01_dataset_split_statistics.tex', '../report_assets/tables/table_02_baseline_reference_comparison.tex', '../report_assets/tables/table_03_five_ticket_summary.tex', '../report_assets/tables/table_04_dev_metric_comparison.tex', '../report_assets/tables/table_05_heldout_metric_comparison.tex', '../report_assets/tables/table_06_confusion_matrix_summary.tex', '../report_assets/tables/table_07_prediction_transitions.tex', '../report_assets/tables/table_08_normalization_experiments.tex', '../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex', '../report_assets/tables/table_10_decision_rule_model_comparison.tex', '../report_assets/tables/table_11_data_quality_audit_summary.tex', '../report_assets/tables/table_12_representative_case_analysis.tex', '../report_assets/tables/table_13_difficulties_and_solutions.tex', '../report_assets/tables/table_14_ai_usage_and_verification.tex']"
+      "detail": "['../report_assets/tables/table_01_dataset_split_statistics.tex', '../report_assets/tables/table_02_baseline_reference_comparison.tex', '../report_assets/tables/table_03_five_ticket_summary.tex', '../report_assets/tables/table_04_dev_metric_comparison.tex', '../report_assets/tables/table_05_heldout_metric_comparison.tex', '../report_assets/tables/table_06_confusion_matrix_summary.tex', '../report_assets/tables/table_07_prediction_transitions.tex', '../report_assets/tables/table_15_ticket1_dev_probe_ledger.tex', '../report_assets/tables/table_08_normalization_experiments.tex', '../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex', '../report_assets/tables/table_10_decision_rule_model_comparison.tex', '../report_assets/tables/table_11_data_quality_audit_summary.tex', '../report_assets/tables/table_12_representative_case_analysis.tex', '../report_assets/tables/table_13_difficulties_and_solutions.tex', '../report_assets/tables/table_14_ai_usage_and_verification.tex']"
     },
     {
-      "check": "4 generated figures included",
+      "check": "6 generated figures included",
       "status": "PASS",
-      "detail": "['figure_01_threshold_sweep.png', 'figure_02_dev_heldout_f1.png', 'figure_03_prediction_transitions.png', 'figure_04_data_quality_dispositions.png']"
+      "detail": "['figure_06_ticket1_dev_probe_deltas.png', 'figure_01_threshold_sweep.png', 'figure_05_ticket4_model_grid.png', 'figure_02_dev_heldout_f1.png', 'figure_03_prediction_transitions.png', 'figure_04_data_quality_dispositions.png']"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_01_dataset_split_statistics.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_01_dataset_split_statistics.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_01_dataset_split_statistics.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_02_baseline_reference_comparison.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_02_baseline_reference_comparison.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_02_baseline_reference_comparison.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_03_five_ticket_summary.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_03_five_ticket_summary.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_03_five_ticket_summary.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_04_dev_metric_comparison.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_04_dev_metric_comparison.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_04_dev_metric_comparison.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_05_heldout_metric_comparison.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_05_heldout_metric_comparison.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_05_heldout_metric_comparison.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_06_confusion_matrix_summary.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_06_confusion_matrix_summary.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_06_confusion_matrix_summary.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_07_prediction_transitions.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_07_prediction_transitions.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_07_prediction_transitions.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_15_ticket1_dev_probe_ledger.tex",
+      "status": "PASS",
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_15_ticket1_dev_probe_ledger.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_08_normalization_experiments.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_08_normalization_experiments.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_08_normalization_experiments.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_09_shortcut_shallow_feature_audit.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_09_shortcut_shallow_feature_audit.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_10_decision_rule_model_comparison.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_10_decision_rule_model_comparison.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_10_decision_rule_model_comparison.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_11_data_quality_audit_summary.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_11_data_quality_audit_summary.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_11_data_quality_audit_summary.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_12_representative_case_analysis.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_12_representative_case_analysis.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_12_representative_case_analysis.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_13_difficulties_and_solutions.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_13_difficulties_and_solutions.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_13_difficulties_and_solutions.tex"
     },
     {
       "check": "included asset exists: ../report_assets/tables/table_14_ai_usage_and_verification.tex",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_14_ai_usage_and_verification.tex"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/tables/table_14_ai_usage_and_verification.tex"
+    },
+    {
+      "check": "included asset exists: figure_06_ticket1_dev_probe_deltas.png",
+      "status": "PASS",
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_06_ticket1_dev_probe_deltas.png"
     },
     {
       "check": "included asset exists: figure_01_threshold_sweep.png",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_01_threshold_sweep.png"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_01_threshold_sweep.png"
+    },
+    {
+      "check": "included asset exists: figure_05_ticket4_model_grid.png",
+      "status": "PASS",
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_05_ticket4_model_grid.png"
     },
     {
       "check": "included asset exists: figure_02_dev_heldout_f1.png",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_02_dev_heldout_f1.png"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_02_dev_heldout_f1.png"
     },
     {
       "check": "included asset exists: figure_03_prediction_transitions.png",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_03_prediction_transitions.png"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_03_prediction_transitions.png"
     },
     {
       "check": "included asset exists: figure_04_data_quality_dispositions.png",
       "status": "PASS",
-      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_04_data_quality_dispositions.png"
+      "detail": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/report_assets/figures/figure_04_data_quality_dispositions.png"
     },
     {
       "check": "balanced braces: main.tex",
@@ -330,6 +348,21 @@
       "detail": "report_assets/tables/table_07_prediction_transitions.tex"
     },
     {
+      "check": "balanced braces: table_15_ticket1_dev_probe_ledger.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_15_ticket1_dev_probe_ledger.tex"
+    },
+    {
+      "check": "balanced environments: table_15_ticket1_dev_probe_ledger.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_15_ticket1_dev_probe_ledger.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_15_ticket1_dev_probe_ledger.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_15_ticket1_dev_probe_ledger.tex"
+    },
+    {
       "check": "balanced braces: table_08_normalization_experiments.tex",
       "status": "PASS",
       "detail": "report_assets/tables/table_08_normalization_experiments.tex"
@@ -450,9 +483,19 @@
       "detail": "fig:dev-heldout"
     },
     {
+      "check": "major asset referenced: fig:model-grid",
+      "status": "PASS",
+      "detail": "fig:model-grid"
+    },
+    {
       "check": "major asset referenced: fig:threshold",
       "status": "PASS",
       "detail": "fig:threshold"
+    },
+    {
+      "check": "major asset referenced: fig:ticket1-probe-deltas",
+      "status": "PASS",
+      "detail": "fig:ticket1-probe-deltas"
     },
     {
       "check": "major asset referenced: fig:transitions",
@@ -528,6 +571,11 @@
       "check": "major asset referenced: tab:shortcut_audit",
       "status": "PASS",
       "detail": "tab:shortcut_audit"
+    },
+    {
+      "check": "major asset referenced: tab:ticket1_probe_ledger",
+      "status": "PASS",
+      "detail": "tab:ticket1_probe_ledger"
     },
     {
       "check": "all citations resolve",
@@ -620,6 +668,16 @@
       "detail": "stale narrative values absent"
     },
     {
+      "check": "Ticket 1 historical probe table source",
+      "status": "PASS",
+      "detail": "33 baseline-relative dev/held-out F1 rows"
+    },
+    {
+      "check": "Ticket 1 historical probe figure source",
+      "status": "PASS",
+      "detail": "figure source matches Table XV"
+    },
+    {
       "check": "heldout integrity stated",
       "status": "PASS",
       "detail": "no held-out mutation"
@@ -652,7 +710,7 @@
     {
       "check": "substantive report length",
       "status": "PASS",
-      "detail": "approximate source word count=5953"
+      "detail": "approximate source word count=6514"
     }
   ],
   "remaining_warnings": [

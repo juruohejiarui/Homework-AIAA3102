@@ -1,0 +1,33 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+137,9 Mile backup on I-77 South...accident blocking the Right 2 Lanes at Exit 31 Langtree Rd...consider NC 115 or NC 150 to NC 16 as alternate,accident,Charlotte,1,1,0,0.5317625684845447,0.4973010844041599,1->0,True,False,new_error
+685,The fact that the atomic bombs were called 'Little Boy' and 'Fat man' says a lot about the mentality that went into the attack.,attack,London.,1,1,0,0.5237410293053515,0.4923307244843256,1->0,True,False,new_error
+890,Bioterrorism public health superbug biolabs epidemics biosurveillance outbreaks | Homeland Security News Wire http://t.co/cvhYGwcBZv,bioterrorism,,1,0,1,0.4902180646328049,0.5068830370078162,0->1,False,True,fixed_error
+1932,A protest rally at Stone Mountain? Atleast they're not burning down buildings and looting store like some individuals do when they 'protest',burning%20buildings,,0,1,0,0.5193211532457104,0.46555898271683754,1->0,False,True,fixed_error
+2352,The @POTUS economy continues to collapse.,collapse,United States,1,1,0,0.5057589044209738,0.4676702025024688,1->0,True,False,new_error
+2857,FYI: ;ACCIDENT PROPERTY DAMAGE;3460 LIMESTONE LN;COL;YELLOWSTONE WAY;FIELDSTONE DR;08/05/2015 19:36:35,damage,"Bartholomew County, Indiana",1,1,0,0.5387170683335266,0.49957100045255376,1->0,True,False,new_error
+3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175761,0.46913895281480433,1->0,True,False,new_error
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,0,1,0.4959187160041027,0.5189860652277665,0->1,True,False,new_error
+3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000026,0.4492228602192304,1->0,False,True,fixed_error
+3663,Watch These Super Strong Magnets Destroy Everyday Objects: http://t.co/bTUs5jejuy http://t.co/zrTfxLuk6R,destroy,New York City,1,0,1,0.4978379940994576,0.5130716877345312,0->1,False,True,fixed_error
+3903,Zayn Malik &amp; Perrie Edwards End Engagement: SheÛªs Û÷DevastatedÛª http://t.co/GedOxSPpL9 http://t.co/ACZRUOrYtD,devastated,,1,0,1,0.4990439456239611,0.5157616816622712,0->1,False,True,fixed_error
+4529,The eyes of the nation &amp; broader conservation community are on #Alaska @AKGovBillWalker reinstate emergency buffer #ProtectDenaliWolves,emergency,,0,1,0,0.5153393133629707,0.4876668343924231,1->0,False,True,fixed_error
+5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024065,0.4792612737795146,1->0,True,False,new_error
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597520046,0.49181714072706234,1->0,False,True,fixed_error
+5454,At the #999day Emergency Services display! Meeting the brave police firefighters and first responders that help keep us safe! ????????,first%20responders,"Stalybridge, Tameside",1,1,0,0.5058001576247602,0.47190942391408186,1->0,True,False,new_error
+5488,RP said they can see smoke coming from the silo on 260th Street in Hartford but no flames.,flames,"Sioux Falls, S.D. ",1,1,0,0.5485433478532468,0.497584215689356,1->0,True,False,new_error
+5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273591,0.4703324835239405,1->0,True,False,new_error
+5805,@KMacTWN @meaganerd Looks like a bowl of weather cereal. New! Kellogg's Sugar Hail! Stays crunchy even in milk...,hail,"Windsor,Ontario",0,1,0,0.5228420637069763,0.4855513324331959,1->0,False,True,fixed_error
+5953,Davis's Drug Guide for Nurses by Judith Hopfer Deglin and April Hazard Vallerand http://t.co/IufS7UV1HK http://t.co/AFrHnLLY8D,hazard,,0,0,1,0.4713793765387102,0.5078564687294675,0->1,True,False,new_error
+6027,HAZARD - HAZARDOUS CONDITION at SB I5 FWY AT / SW TERWILLIGER BLVD PORTLAND OR [Portland Police #PP15000266858] 17:26 #pdx911,hazardous,"Portland, OR",1,1,0,0.5281013708307708,0.49992875249459817,1->0,True,False,new_error
+6343,Holmgren describing 96 World Cup: we were Lou's hostages.,hostages,NYC metro,0,1,0,0.5103008060550379,0.469723518823198,1->0,False,True,fixed_error
+6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.5138614863883569,0.4474068787558158,1->0,True,False,new_error
+7205,Coming later this year~ 'THE MAN THAT TATTOOED WOMEN.' A novel based on a real serial killer from #Arkansas &amp; a natural disaster. #NOLA,natural%20disaster,USA,1,1,0,0.5198722385522704,0.4907424978129382,1->0,True,False,new_error
+9082,Slums are a manifestation state failure to provide housing to citizens. Illegality discourse confounds structural problems. #stopevictions,structural%20failure,,1,1,0,0.5048100465004907,0.4688059382788789,1->0,True,False,new_error
+9237,9) 'Without the bombing you would have to do hara-kiri you know commit suicide'. http://t.co/UO0aQk9KR8 Hiroshima 70 years ago.,suicide%20bombing,Tokyo & Osaka,1,1,0,0.5505261927538025,0.48022314358940665,1->0,True,False,new_error
+9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473889971,0.4921465034033656,1->0,False,True,fixed_error
+9471,OMEGA MEN Writer Explores Terrorism Religion In an 'Epic KYLE RAYNER Story' http://t.co/Hr88CWxPGz #Newsarama,terrorism,"Tampa, FL",0,0,1,0.4856709835140479,0.5007714898654255,0->1,True,False,new_error
+9484,@KurtSchlichter  He's already done it by negotiating with the #1 state of terrorism in the World. What was his hurry in trying to get a deal,terrorism,,1,1,0,0.5057388238763957,0.4844640162590357,1->0,True,False,new_error
+9842,What is the role of usg in paeds major trauma imaging decision tool? #FOAMed #FOAMcc,trauma,,0,1,0,0.5343726857567523,0.4984795945296143,1->0,False,True,fixed_error
+10299,GUN FIREARM WEAPON VECTOR CLIP ART FOR VINYL SIGN CUTTER RIFLE GUNS WEAPONS http://t.co/sdOgEF3kFT http://t.co/x0giy85BS8,weapon,,0,0,1,0.4961163506186361,0.5072931671720536,0->1,True,False,new_error
+10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207206,0.4576090600163885,1->0,True,False,new_error
+10544,*looks outside at the windstorm* niiiice,windstorm,"Victoria, BC",1,1,0,0.5331485866194404,0.4892410190913232,1->0,True,False,new_error

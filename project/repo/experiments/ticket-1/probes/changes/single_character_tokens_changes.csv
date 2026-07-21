@@ -1,0 +1,34 @@
+id,text,keyword,location,y_true,baseline_y_pred,probe_y_pred,baseline_score,probe_score,transition,baseline_correct,probe_correct,outcome
+97,Accident on I-24 W #NashvilleTraffic. Traffic moving 8m slower than usual. https://t.co/0GHk693EgJ,accident,"Nashville, TN",1,1,0,0.5218900596647266,0.42480458343881167,1->0,True,False,new_error
+110,'By accident' they knew what was gon happen https://t.co/Ysxun5vCeh,accident,Norf Carolina,0,0,1,0.48667112704891874,0.5175505752344243,0->1,True,False,new_error
+237,"#OMG! I don't believe this. #RIP bro
+#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756566,0.471775212247984,1->0,True,False,new_error
+896,@MeyerBjoern @thelonevirologi @MackayIM of a major American newspaper running a series on all the alleged bioterrorism research going on 2/n,bioterrorism,"Philadelphia, PA",1,0,1,0.4670057547123057,0.5595876590248691,0->1,False,True,fixed_error
+971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848288,0.40097772350481414,1->0,False,True,fixed_error
+1610,http://t.co/wMNOnHxEIr 'Nagasaki has to be forever the last city bombed with a nuclear weapon.' #bannukes,bombed,"Nairobi, Kenya ",1,0,1,0.4973945313563198,0.5213047192457879,0->1,False,True,fixed_error
+1813,I hope the only time I end up on TV is when I'm being arrested for lighting buildings on fire.,buildings%20on%20fire,,1,1,0,0.5860527268631679,0.3160710940805781,1->0,True,False,new_error
+1921,Killing Black Babies at Planned Parenthood where's the demonstrations looting of PP burning down the buildings Black Babies Lives Matter,burning%20buildings,"Sacramento, CA",1,0,1,0.49261643985166664,0.5004374369441638,0->1,False,True,fixed_error
+2231,@pjcoyle ... need to be included in emergency planning for chemical plants. See also http://t.co/OamqqBNIce,chemical%20emergency,"Tyler, TX",0,0,1,0.4945981610135117,0.522919358673293,0->1,True,False,new_error
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,0,1,0.4959187160041027,0.5097332366779366,0->1,True,False,new_error
+3567,If the Taken movies took place in India 2 (Vine by @JusReign) https://t.co/hxM8C8e33D,desolate,,0,0,1,0.4925194304804893,0.528779867887407,0->1,True,False,new_error
+3663,Watch These Super Strong Magnets Destroy Everyday Objects: http://t.co/bTUs5jejuy http://t.co/zrTfxLuk6R,destroy,New York City,1,0,1,0.4978379940994576,0.5035125720642798,0->1,False,True,fixed_error
+3819,@BldrCOSheriff says 2nd grenade found is 'younger' that WWII era grenade found earlier. They'll detonate it at 8:00 tonight. @CBSDenver,detonate,Colorado,1,0,1,0.4504448241882307,0.5021143188446106,0->1,False,True,fixed_error
+3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0,0.5329051435429902,0.4663659930680389,1->0,False,True,fixed_error
+3969,We haven't seen the devastation from the 2014 Corp. Breaches yet Be Prepared! Get Coverage!: http://t.co/eK6KYHxPE9 http://t.co/Yn6NxOucR1,devastation,"Las Vegas, Nevada",0,0,1,0.48676036544267287,0.5091926646771932,0->1,True,False,new_error
+4014,My first staining attempt was a disaster https://t.co/buDmKE3nNf,disaster,,0,0,1,0.42741986128470677,0.5021385444402056,0->1,True,False,new_error
+4750,@pantalonesfuego Yeah I grew up in the canyon above L.A. We had to evacuate a few times.,evacuate,An eight-sided polygon,1,1,0,0.5550226962154937,0.4874088825211701,1->0,True,False,new_error
+5719,@Sweet2Young -runs at her for setting my forest on fire and bites the shit out of her neck-,forest%20fire,,1,0,1,0.4850099654004476,0.5111256054951899,0->1,False,True,fixed_error
+6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237764,0.47219857532707743,1->0,False,True,fixed_error
+6787,Cell Phone Shop : http://t.co/iOq051t5te #629 8-Pin Lightning Connector 2.1A Car Charger For Apple 5 5S 5C 6 6+ iÛ_ http://t.co/klxAUcNP5I,lightning,USA,1,1,0,0.5846158738811763,0.47871811044837403,1->0,True,False,new_error
+6896,Okay not sure the word 'mass murder' applies during this war but it was horrendous none the less. https://t.co/Sb3rjQqzIX,mass%20murder,"Huntsville, AL",1,0,1,0.4645836545679682,0.5048622056873863,0->1,False,True,fixed_error
+7229,We have overrun a Natural Disaster Survival server!,natural%20disaster,"Suburban Detroit, Michigan",1,0,1,0.4856233998228822,0.5066801951716288,0->1,False,True,fixed_error
+8795,"Thu Aug 06 2015 01:20:32 GMT+0000 (UTC)
+#millcityio #20150613
+theramin sirens",sirens,... -.- -.--,1,0,1,0.4968999562282334,0.5036503149115412,0->1,False,True,fixed_error
+8961,Crazy storm hit and I'm trapped inside a Hobby Lobby AMA http://t.co/8qc8Bcxoko,storm,"Atlanta, GA",1,1,0,0.614742263414575,0.4380619701041587,1->0,True,False,new_error
+9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473889971,0.479550297319516,1->0,False,True,fixed_error
+9496,Signing a petition to seek mercy on a death punishment for a convivted terrorist is a job well done in India. But asking a foreign govt 1/n,terrorist,,1,0,1,0.4536261896032344,0.536091246847512,0->1,False,True,fixed_error
+10203,If you were the NWS wth a rotating storm w/ a report of a 'HUGE' / 'MASSIVE' / 'VIOLENT' tornado what would you do? https://t.co/J3dI85IST5,violent%20storm,,1,0,1,0.4858328220652796,0.5181760024629591,0->1,False,True,fixed_error
+10299,GUN FIREARM WEAPON VECTOR CLIP ART FOR VINYL SIGN CUTTER RIFLE GUNS WEAPONS http://t.co/sdOgEF3kFT http://t.co/x0giy85BS8,weapon,,0,0,1,0.4961163506186361,0.5092638782383238,0->1,True,False,new_error
+10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207206,0.32825639467240825,1->0,True,False,new_error
+10718,Got in a car wreck. The car in front of me didn't put their blinker on :-))) but it really does feel great outside so lol,wreck,"Arlington, TX",0,0,1,0.45311300782994296,0.5225379155752221,0->1,True,False,new_error

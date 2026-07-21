@@ -1,0 +1,258 @@
+id,text,keyword,location,y_true,baseline_y_pred,probe_y_pred,baseline_score,probe_score,transition,baseline_correct,probe_correct,outcome
+16,Three people died from the heat wave so far,,,1,1,0,0.6854686444082099,0.47998979748026427,1->0,True,False,new_error
+97,Accident on I-24 W #NashvilleTraffic. Traffic moving 8m slower than usual. https://t.co/0GHk693EgJ,accident,"Nashville, TN",1,1,0,0.5218900596647266,0.47153713189570245,1->0,True,False,new_error
+113,I-77 Mile Marker 31 to 40 South Mooresville  Iredell Vehicle Accident Congestion at 8/6 1:18 PM,accident,North Carolina,1,1,0,0.6546226473638309,0.48731672305928936,1->0,True,False,new_error
+129,RT nAAYf: First accident in years. Turning onto Chandanee Magu from near MMA. Taxi rammed into me while I was halfway turned. Everyone confÛ_,accident,Maldives,1,1,0,0.6750683237154247,0.47344760035644384,1->0,True,False,new_error
+137,9 Mile backup on I-77 South...accident blocking the Right 2 Lanes at Exit 31 Langtree Rd...consider NC 115 or NC 150 to NC 16 as alternate,accident,Charlotte,1,1,0,0.5317625684845447,0.44754518614320404,1->0,True,False,new_error
+174,Aftershock: Protect Yourself and Profit in the Next Global Financial Meltdown by David Wiedemer http http://t.co/WZTz4hgMVq,aftershock,Baker City Oregon,0,1,0,0.5063461183660052,0.47756396235248744,1->0,False,True,fixed_error
+237,"#OMG! I don't believe this. #RIP bro
+#AirPlane #Accident #JetEngine #TurboJet #Boing #G90 http://t.co/KXxnSZp6nk",airplane%20accident,92,1,1,0,0.5265357369756566,0.46539330667367934,1->0,True,False,new_error
+241,My phone looks like it was in a car ship airplane accident. Terrible,airplane%20accident,Fashion Heaven. IG: TMId_,0,1,0,0.5947115100444805,0.42121585819476615,1->0,False,True,fixed_error
+313,Cop pulls drunk driver to safety SECONDS before his car is hit by train. http://t.co/C0nKGp6w03åÊ http://t.co/IMWmfDJSSn via @ViralSpell,annihilated,,1,1,0,0.7140072974420376,0.49654831740862254,1->0,True,False,new_error
+420,candylit: Imagine sarumi in a zombie apocalypse Fighting back to back Heart to heart conversations over the... http://t.co/xIZkjffF29,apocalypse,"Buenos Aires, Argentina",0,1,0,0.6454842137021297,0.4790550708461807,1->0,False,True,fixed_error
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.512056342729524,0.4828962051365813,1->0,False,True,fixed_error
+574,Mourning notices for stabbing arson victims stir Û÷politics of griefÛª in Israel: Posters for Shira Banki and A... http://t.co/3GZ5zQQTHe,arson,Jerusalem,0,1,0,0.6776586008662477,0.4871828547323457,1->0,False,True,fixed_error
+683,Strongly condemn attack on ARY news team in Karachi. A cowardly act against those simply trying to do their job!,attack,FIMAK A.S Ist Bolge Muduru,1,1,0,0.5356718821121269,0.4649275799981222,1->0,True,False,new_error
+685,The fact that the atomic bombs were called 'Little Boy' and 'Fat man' says a lot about the mentality that went into the attack.,attack,London.,1,1,0,0.5237410293053515,0.42167874199529964,1->0,True,False,new_error
+709,Israeli helicopters that attacked civilians in Gaza just completed exercises in Greece.,attacked,MAURITIUS,1,1,0,0.7005302539714048,0.4990790201554567,1->0,True,False,new_error
+851,RT alisonannyoung: EXCLUSIVE: FedEx no longer to transport research specimens of bioterror pathogens in wake of anthrax lab mishaps Û_,bioterror,United States,0,1,0,0.6042840370497318,0.4772988955912259,1->0,False,True,fixed_error
+853,#world FedEx no longer to transport bioterror germs in wake of anthrax lab mishaps  http://t.co/5zDbTktwW7,bioterror,,0,1,0,0.6288027343308742,0.49971252484453954,1->0,False,True,fixed_error
+971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0,0.5166697174848288,0.47043634078033636,1->0,False,True,fixed_error
+1556,The crew on #EnolaGay had nuclear bomb on board disarmed. 15 mins to #Hiroshima they got ready to arm Little Boy http://t.co/JB25fHKe6q,bomb,Ireland,1,1,0,0.8078947682340016,0.493686607542884,1->0,True,False,new_error
+1574,"Oops.
+H bomb lost 70 miles off the Okinawan coast.
+Fell off the ship 1965.
+http://t.co/yVsJyzwxJR",bomb,"Odawara, Japan",1,1,0,0.6174763296780758,0.4739601390907432,1->0,True,False,new_error
+1596,@NickLee8  i went to school in a bombed out East End of London3 families to one house no bathroom outside loo &amp; poor so whats yr point,bombed,Old Blighty,1,1,0,0.6109431988446455,0.4384622595478933,1->0,True,False,new_error
+1653,@rinkydnk2 @ZaibatsuNews @NeoProgressive1 When push2Left talk='ecology'&amp;'human rts'&amp;'democracy'. War Afghetc='Left' humanitarian bombing,bombing,Toronto-Citizen of Canada & US,1,1,0,0.5655753454938346,0.4416883926325965,1->0,True,False,new_error
+1763,@RockBottomRadFM Is one of the challenges on Tough Enough rescuing people from burning buildings?,buildings%20burning,"Dublin City, Ireland",0,1,0,0.6892661316096996,0.49171825968529265,1->0,False,True,fixed_error
+1813,I hope the only time I end up on TV is when I'm being arrested for lighting buildings on fire.,buildings%20on%20fire,,1,1,0,0.5860527268631679,0.43352592953185287,1->0,True,False,new_error
+1880,501 sky news mandem in totteham going maddddd burning up fed cars an dem ting dere,burning,Isle of Man,1,1,0,0.5801044048621943,0.4830491514995339,1->0,True,False,new_error
+1932,A protest rally at Stone Mountain? Atleast they're not burning down buildings and looting store like some individuals do when they 'protest',burning%20buildings,,0,1,0,0.5193211532457104,0.4182146123303181,1->0,False,True,fixed_error
+1962,Schools in Western Uganda still Burning down Buildings during Strikes....Strikes in Western Uganda always Lit literally..,burning%20buildings,In Hell,1,1,0,0.6647154805990297,0.4965053962709515,1->0,True,False,new_error
+1976,OMFG there are bush fires all over this tiny island. Our freaking house is gonna burn down.,bush%20fires,,1,1,0,0.6984019475839064,0.4451021085761182,1->0,True,False,new_error
+1996,@JohnFromCranber  Pleas FOR global warming don't really work when California / Australia keep having catastrophic 'bush' fires.,bush%20fires,Loughborough.,1,1,0,0.6397298822565224,0.45858202190493447,1->0,True,False,new_error
+2001,So apparently there were bush fires near where I live over the weekend that I was totally oblivious to...,bush%20fires,,1,1,0,0.721818274265077,0.4492262135349973,1->0,True,False,new_error
+2010,"??
+Warfighting Robots Could Reduce Civilian Casualties So Calling for a Ban Now Is Premature - IEEE Spectrum http://t.co/TzR58B86qz",casualties,,1,1,0,0.5998496981150697,0.44264087237218724,1->0,True,False,new_error
+2081,@AvBronstein @Popehat @instapundit @KurtSchlichter Also are you aware of the casualty estimates for an invasion of Japan's home islands?,casualty,Virginia,1,1,0,0.5640849802545346,0.4304214109336215,1->0,True,False,new_error
+2103,Small casualty on the way to Colorado http://t.co/hDVmhSQXHm,casualty,"Kansas City, MO",1,1,0,0.5758447829105711,0.48335810877091057,1->0,True,False,new_error
+2116,#iphone #twist Ultimate #preparedness library: http://t.co/ksgmY0D0Mx Prepare Yourself For Any Catastrophe. Ov http://t.co/MZK0PFogI7,catastrophe,,0,1,0,0.5659896463239709,0.49696628666649184,1->0,False,True,fixed_error
+2193,Learning from the Legacy of a Catastrophic Eruption - The New Yorker http://t.co/t344PhNpy9,catastrophic,Planet Earth,1,1,0,0.5414833497865712,0.49543116845523,1->0,True,False,new_error
+2198,Learning from the Legacy of a Catastrophic Eruption - The New Yorker http://t.co/vMWTOUyOHm,catastrophic,Planet Earth,1,1,0,0.5414833497865712,0.49543116845523,1->0,True,False,new_error
+2212,At FEMA's Center for Disaster Preparedness for a weeklong training on Chemical Biological Radioactive Nuclear   Emergency Response,chemical%20emergency,Center for Domestic Preparedness,1,1,0,0.6909280658824292,0.4860100248262339,1->0,True,False,new_error
+2225,Bomb Crash Loot Riot Emergency Pipe Bomb Nuclear Chemical Spill Gas Ricin Leak Violence Drugs Cartel Cocaine Marijuana Heroine Kidnap Bust,chemical%20emergency,"Las Vegas, Nevada",1,1,0,0.7487320435330138,0.4971731085686401,1->0,True,False,new_error
+2267,#FunnyNews #Business Watch the moment a cliff collapses as huge chunks of rock fall onto a road in China  http://t.co/LCi3pljX25,cliff%20fall,,1,1,0,0.5989263553857783,0.4855906172309779,1->0,True,False,new_error
+2292,Huge cliff landslide on road in China: Watch the moment a cliff collapses as huge chunks of rock fall onto a r... http://t.co/eEEwO207mX,cliff%20fall,"Lagos, Nigeria",1,1,0,0.6252898119097247,0.4843303185232829,1->0,True,False,new_error
+2346,Warne shocked over Australia's epic collapse at Trent Bridge: Johannesburg Aug 06 (ANI): Legendary Australian... http://t.co/LwwoJXtTIV,collapse,"Mumbai , India",1,1,0,0.6460904416260218,0.49480833707826977,1->0,True,False,new_error
+2352,The @POTUS economy continues to collapse.,collapse,United States,1,1,0,0.5057589044209738,0.4355858222330451,1->0,True,False,new_error
+2364,Roof collapsed a bowling alley many in the community remember going to for more than 30 years @KEZI9 http://t.co/sAhbhLXsSh,collapsed,"Eugene, Oregon",1,1,0,0.5204909437169255,0.47715078150479195,1->0,True,False,new_error
+2377,Another entity forced to close in Montego Bay as a result of the collapsed sewer line #TVJNews,collapsed,"Kingston, Jamaica",1,1,0,0.6761671198815172,0.47708498387089104,1->0,True,False,new_error
+2440,Worlds Collide When an American Family Takes Over Britain's Isle of Man in New TLC Show Suddenly Royal http://t.co/OmB3oS54tN via @People,collide,"Pennsylvania, USA",0,1,0,0.5558423043614352,0.4728544965627285,1->0,False,True,fixed_error
+2471,Major accident causes life-threatening injuries closes highway: An 18-wheeler and an SUV collided and thenÛ_ http://t.co/ajTXUafOEM,collided,Waco TX,1,1,0,0.5624806427816833,0.44975580387151654,1->0,True,False,new_error
+2483,SSP East says a car AEG 061 driven by a young man collided with Akram's carhot words were exchanged n he did firing in air1bullet hit tyre,collided,Pakistan,1,1,0,0.6686104976775292,0.46322159952487774,1->0,True,False,new_error
+2493,Bicycle-SUV accident in Mesick: Police say that the bicyclist entered onto West M-115 and collided with a boat... http://t.co/A9gtOPyZK8,collided,"Traverse City, MI",1,1,0,0.7249298499149575,0.4914711972200143,1->0,True,False,new_error
+2510,South Sac Florin Rd / Franklin Blvd **Trfc Collision-1141 Enrt** http://t.co/Es1b3lywAy,collision,Sacramento,1,1,0,0.6058460180866304,0.4874439695610551,1->0,True,False,new_error
+2536,@MissJadeBrown tells of the tragic mid-morning collision which claimed the life of a young man riding a motorcycle. https://t.co/rPDA60Aoni,collision,Saint Lucia,1,1,0,0.5530100533879263,0.44492752041295885,1->0,True,False,new_error
+2566,Deliver Value: A Cash Source Crash Course http://t.co/st5fGBLsYe #course http://t.co/0uK0H9hOzn,crash,,1,0,1,0.45257725120790204,0.515790591323046,0->1,False,True,fixed_error
+2604,Maj Muzzamil Pilot Offr of MI-17 crashed near Mansehra today. http://t.co/kL4R1ccWct,crashed,Pakistan,1,1,0,0.6829995406678213,0.4993605894201745,1->0,True,False,new_error
+2608,Neil_Eastwood77: I AM A KNOBHEAD!! Bin Laden family plane crashed after 'avoiding microlight and landing t... Û_ http://t.co/dUVUzhMVUT,crashed,Scotland,1,1,0,0.6987674374293118,0.4905701638202447,1->0,True,False,new_error
+2621,@johndcgow heard this few days ago while driving and near crashed the car from laughing to much,crashed,"Bangor, Co.Down",0,1,0,0.5928482149674067,0.4308451443506238,1->0,False,True,fixed_error
+2637,Army sources say 12 persons on board including a team of doctors die in helicopter crashed near Mansehra. weather seems to be cause of crash,crashed,Islamabad,1,1,0,0.7717641510047482,0.48977909817360127,1->0,True,False,new_error
+2760,Police: Teenagers arrested for curfew violations in Evanston were riding stolen bicycles: Two teenagers taken into cus...  #Chicago #news,curfew,"Chicago, IL",1,1,0,0.7191473572277801,0.49763292376160123,1->0,True,False,new_error
+2761,for some reason im listening to curfew overtime and stuck in a kodak over and over again,curfew,,0,1,0,0.5312299294169764,0.4456717583876971,1->0,False,True,fixed_error
+2819,BBC Forced To Retract False Claims About Cyclone Pam http://t.co/tbbObvCotj via @wordpressdotcom,cyclone,,1,1,0,0.5665772473056325,0.4772923826084944,1->0,True,False,new_error
+2831,BBC Forced To Retract False Claims About Cyclone Pam http://t.co/ciHC8Nrc9h via @wordpressdotcom,cyclone,Cornwall,1,1,0,0.5665772473056325,0.4772923826084944,1->0,True,False,new_error
+2857,FYI: ;ACCIDENT PROPERTY DAMAGE;3460 LIMESTONE LN;COL;YELLOWSTONE WAY;FIELDSTONE DR;08/05/2015 19:36:35,damage,"Bartholomew County, Indiana",1,1,0,0.5387170683335266,0.45736319304693857,1->0,True,False,new_error
+3075,"real magic in real life:
+
+women went missing in Ohio town the focus of FBI probe after strange deaths and... http://t.co/6m0YNJWbc9",deaths,Your screen,1,1,0,0.6589430154523247,0.4937067943149273,1->0,True,False,new_error
+3097,Since 1940 the year Angela Sanders was born roundhouse kick related deaths have increased 13000 percent.,deaths,,1,1,0,0.5001721692175761,0.43533652331303924,1->0,True,False,new_error
+3116,RÌ©union Debris Is Almost Surely From Flight 370 Officials Say - New York Times http://t.co/VFbW3NyO9L,debris,,1,1,0,0.5503909875384597,0.46857136608360145,1->0,True,False,new_error
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,0,1,0.4959187160041027,0.5624816555478299,0->1,True,False,new_error
+3347,A demolished Palestinian village comes back to life http://t.co/9Lpf4V4hMq,demolished,,1,1,0,0.5444477054155052,0.46417207041021946,1->0,True,False,new_error
+3379,Israel continues its demolition of Palestinian homes #gop #potus #irandeal #isis  https://t.co/NMgp7iMEIi,demolition,,1,1,0,0.6021433973549722,0.4694575417746295,1->0,True,False,new_error
+3475,"Has #IdentityTheft Derailed Your #TaxReturn? 
+8 Steps for Cleaning Up an  #IdentityTheft Train Wreck. #CRI
+http://t.co/gxQWD1qZBd",derailed,"Enterprise, Alabama",0,1,0,0.607327206409875,0.47198517463944806,1->0,False,True,fixed_error
+3489,1 of those days when ya don't realize till already in transit that a train DERAILED at the Metro St closest to work?? https://t.co/QYX5ThkRbH,derailed,L'Enfant Plaza Metro Station,1,1,0,0.7445222593418892,0.4639406000270838,1->0,True,False,new_error
+3497,@ItsQueenBaby I'm at work it's a bunch of ppl and buses because the train derailed,derailed,,1,1,0,0.710285255892468,0.4607577282780079,1->0,True,False,new_error
+3544,Very sad to learn of the derailment of 2 trains in Mp.My deepest condolences to the families who lost loved ones in this Mishap @OfficeOfRG,derailment,,1,1,0,0.7788957478625077,0.4878355849198555,1->0,True,False,new_error
+3589,@booksbyRoger TY for the follow Go To http://t.co/l9MB2j5pXg BRUTALLY ABUSED+DESOLATE&amp;LOST + HER LOVELY MUM DIES..Is it Murder?,desolate,Macclesfield,0,1,0,0.5017077428000026,0.40966752881398943,1->0,False,True,fixed_error
+3663,Watch These Super Strong Magnets Destroy Everyday Objects: http://t.co/bTUs5jejuy http://t.co/zrTfxLuk6R,destroy,New York City,1,0,1,0.4978379940994576,0.5033915865963094,0->1,False,True,fixed_error
+3702,Media stocks are getting destroyed (DIS FOXA CMCSA SNI AMCX VIAB VIA TWX) http://t.co/aqinaVl1b6,destroyed,todaysbigstock.com,0,1,0,0.5441967811043666,0.4928942280542691,1->0,False,True,fixed_error
+3849,Ignition Knock (Detonation) Sensor Connector-Connecto MOTORCRAFT WPT-994 http://t.co/h2aHxpCH0Y http://t.co/VQ3Vwxj8YU,detonation,,0,0,1,0.45918125143668015,0.5112296787206537,0->1,True,False,new_error
+3990,$10M SETTLEMENT attained using our illustrations to help jurors understand the true devastation of internal injuries: http://t.co/2BaXg1WdPP,devastation,"Denver, CO",1,1,0,0.5369723869582399,0.4593721903383635,1->0,True,False,new_error
+4058,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/Khd99oZ7u3,displaced,"Ojodu,Lagos",0,1,0,0.5792588224991891,0.46014675487026335,1->0,False,True,fixed_error
+4072,.POTUS #StrategicPatience is a strategy for #Genocide; refugees; IDP Internally displaced people; horror; etc. https://t.co/rqWuoy1fm4,displaced,Pedophile hunting ground,1,1,0,0.5952870295001625,0.4478234357722532,1->0,True,False,new_error
+4089,@peterjukes A crime that killed/displaced millions. In which systematic torture was carried out. But look. GrahamWP fired a gun! Arrest him!,displaced,,1,1,0,0.6641453674446014,0.449067200053046,1->0,True,False,new_error
+4092,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/6ySbCSSzYS,displaced,Nigeria,0,1,0,0.5792588224991891,0.46014675487026335,1->0,False,True,fixed_error
+4124,Pretty neat website to get the latest drought conditions in your area https://t.co/uaoDOquDa1,drought,"Las Cruces, NM",1,1,0,0.5819858045645123,0.4554526968500965,1->0,True,False,new_error
+4238,80 tons of cocaine worth 125 million dollars drowned in #Alameda .....now that's a American drought #coke,drowned,"San Francisco, CA",1,1,0,0.622736094781597,0.46551829157358404,1->0,True,False,new_error
+4298,@NWSPocatello BG-16: So far brunt of storm just to our north. Grayed out w/ dust &amp; rain to N blue sky interspersed w/ clouds to S.,dust%20storm,Idaho,0,1,0,0.6285616976335655,0.4212315860296737,1->0,False,True,fixed_error
+4304,Severe storm weakening as it moves SE towards Lubbock area.  Outflow boundary may create dust and 50 mph gusts http://t.co/pw3tZU0tay,dust%20storm,"Lubbock, TX",1,1,0,0.7595812732521381,0.47957531062114533,1->0,True,False,new_error
+4330,I learned more about economics from one South Dakota dust storm than I did in all my years in college.  -Hubert Humphrey,dust%20storm,,1,1,0,0.6665340858465877,0.47114884217345576,1->0,True,False,new_error
+4393,'There was a small earthquake in LA but don't worry Emmy Rossum is fine',earthquake,London,1,1,0,0.6572503356046595,0.45399853063836515,1->0,True,False,new_error
+4487,"Zotar(50 skeleton alchemist) was electrocuted to death by Atamathon the Giant Golem on Golem Graveyard 1.
+http://t.co/GpwrC1KZ5i",electrocuted,"Planet Eyal, Shandral System",1,1,0,0.6537510508566048,0.49492563694808,1->0,True,False,new_error
+4507,Survival Kit Whistle Fire Starter Wire Saw Cree Torch Emergency Blanket S knife  - Full reÛ_ http://t.co/2OroYUNYM2 http://t.co/C9JnXz3DXC,emergency,New York,0,1,0,0.5998706368651742,0.4808138225633312,1->0,False,True,fixed_error
+4529,The eyes of the nation &amp; broader conservation community are on #Alaska @AKGovBillWalker reinstate emergency buffer #ProtectDenaliWolves,emergency,,0,1,0,0.5153393133629707,0.4392004965514557,1->0,False,True,fixed_error
+4537,Former heroin addict shares story as city leaders sound alarm: City officials said emergency teams responded t... http://t.co/GZxIPMOknB,emergency,Southern Maine,1,1,0,0.6101419792236528,0.4842320108184124,1->0,True,False,new_error
+4550,See Aug 4 2015 PoconoRecord @EmergencyMgtMag - How Many Households Have an #Emergency Plan? | http://t.co/7zlsUmIess http://t.co/TdccH01N7q,emergency%20plan,"Alexandria, VA, USA",1,1,0,0.5615938777307514,0.48795331350767884,1->0,True,False,new_error
+4568,The City has activated the Municipal Emergency Plan. Primarily stay indoors avoid flooded areas Call 311 for... http://t.co/Ch6E7vTATR,emergency%20plan,"Calgary,AB, Canada",1,1,0,0.6168912552424107,0.460604953636241,1->0,True,False,new_error
+4579,Practice your families fire escape plan so everyone knows what to do in case of an emergency.,emergency%20plan,North Hastings Ontario,0,1,0,0.6277069410922844,0.4521167282091019,1->0,False,True,fixed_error
+4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0,0.548473966981153,0.4843243368595729,1->0,False,True,fixed_error
+4628,#Healthcare #Job in #Kodiak AK: Emergency Services Supervisor - Emergency... at Providence Health &amp; Services http://t.co/8KJ1wDAiGj #Jobs,emergency%20services,Alaska,0,1,0,0.5202693345035683,0.4927545044602069,1->0,False,True,fixed_error
+4644,Our doctors and nurses in the new Pediatric Emergency Department are all specialized in child services! http://t.co/k1TMLWvjmJ,emergency%20services,"Park Ridge, Illinois",0,1,0,0.5622037783758117,0.481843015055712,1->0,False,True,fixed_error
+4667,Tube strike live: Latest travel updates as London is engulfed inåÊchaos http://t.co/xkonKZ0Zl6 http://t.co/dXVtgi1BvO,engulfed,UK,1,1,0,0.5717968767871844,0.49183279697566346,1->0,True,False,new_error
+4669,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,Bahrain,1,1,0,0.5803898272227491,0.4392498327331602,1->0,True,False,new_error
+4672,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0,0.5803898272227491,0.4392498327331602,1->0,False,True,fixed_error
+4684,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0,0.5803898272227491,0.4392498327331602,1->0,False,True,fixed_error
+4750,@pantalonesfuego Yeah I grew up in the canyon above L.A. We had to evacuate a few times.,evacuate,An eight-sided polygon,1,1,0,0.5550226962154937,0.4449212902383906,1->0,True,False,new_error
+4768,Red Cross re-opens shelter at Bickleton School after 25 homes evacuated in &amp; around Roosevelt WA due to wildfire. #LiveOnK2,evacuated,"Portland, Oregon",1,1,0,0.7838715308514049,0.49284841994248735,1->0,True,False,new_error
+4773,"Trafford Centre film fans angry after Odeon cinema evacuated following false fire alarm: 
+ Twitter users tell ... http://t.co/dZLENSe1Gw",evacuated,North West England UK,1,1,0,0.5894398765277769,0.480699654381907,1->0,True,False,new_error
+4784,#WorldNews Fallen powerlines on G:link tram: UPDATE: FIRE crews have evacuated up to 30 passengers who were tr...  http://t.co/EYSVvzA7Qm,evacuated,,1,1,0,0.7960724302265566,0.49805731799137554,1->0,True,False,new_error
+4848,ÛÏA voluntary evacuation is being recommended at this timeÛ for Pickerel Lake cabins across highway from #Reidlake fire says MACA #NWT #YZF,evacuation,Yellowknife,1,1,0,0.6826879095604401,0.471719378159455,1->0,True,False,new_error
+4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0,0.5244978354435214,0.4816240105914569,1->0,False,True,fixed_error
+4959,Worked at a fast food joint. Poured burnt hot oil down the sink. It hit the water in the trap and exploded.  @FallonTonight #WORSTSUMMERJOB,exploded,,0,1,0,0.5792439879639486,0.4385026031289041,1->0,False,True,fixed_error
+4964,Another Mechanical Mod Explosion: Man Injured When a 'Pharaoh' Mod Blows Up in His Hand - http://t.co/O82yVXbztv http://t.co/N5KmxuVeRg,explosion,,1,1,0,0.6159730084524718,0.49891375615635025,1->0,True,False,new_error
+5207,.@KurtSchlichter Yep considering that *millions* of Japanese fatalities were projected for Downfall. @_FreeMarketeer @dibang,fatalities,Just Happy to Be Anywhere,1,1,0,0.6199454650266122,0.46293120810290667,1->0,True,False,new_error
+5222,Dying of Lyme disease: Case fatality rate nearly 100% http://t.co/RgT9GhODpW,fatality,Boston Û¢ Cape Cod ?,1,1,0,0.5925280086640835,0.4888629832111983,1->0,True,False,new_error
+5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024065,0.4377614101271841,1->0,True,False,new_error
+5352,In the words of Charlie Daniels 'Fire on the mountain run boys run.'Û_ https://t.co/fz1HAEj255,fire,The Desert,1,1,0,0.533242169812337,0.4784341936351313,1->0,True,False,new_error
+5368,wild night in the village of pugwash every fire truck is out that the town has which is like a fire truck for every house -population:6,fire%20truck,,1,1,0,0.5822690868105577,0.4413646828391435,1->0,True,False,new_error
+5383,@eeenice221 true because of the truck that caught fire?,fire%20truck,lost in my thoughts,1,1,0,0.6222279120586655,0.47666671886239564,1->0,True,False,new_error
+5420,Û÷We Can HelpÛª Says Denver Firefighter Working To Curb First Responder Suicide http://t.co/WtaFaepuKZ,first%20responders,"Portage, IN / Worldwide",1,1,0,0.553527919905737,0.45950377800780473,1->0,True,False,new_error
+5454,At the #999day Emergency Services display! Meeting the brave police firefighters and first responders that help keep us safe! ????????,first%20responders,"Stalybridge, Tameside",1,1,0,0.5058001576247602,0.42554205826574104,1->0,True,False,new_error
+5488,RP said they can see smoke coming from the silo on 260th Street in Hartford but no flames.,flames,"Sioux Falls, S.D. ",1,1,0,0.5485433478532468,0.4301916125440939,1->0,True,False,new_error
+5611,ROCK SPRINGS ÛÒ Residents living off Elk Street continue to battle flooding issues after MondayÛªs rain storm. WhileÛ_ http://t.co/8J19FvU7qA,flooding,"Rock Springs, WY",1,1,0,0.8175712030331221,0.49777149887470684,1->0,True,False,new_error
+5618,11:30a Radar Update: Widespread Showers/Storms but moving over the same areas-minor flooding possible #HUNwx http://t.co/E3L1JqjH2u,flooding,"Huntsville, Alabama",1,1,0,0.6823342667221588,0.48711099427965404,1->0,True,False,new_error
+5670,@madonnamking RSPCA site multiple 7 story high rise buildings next to low density character residential in an area that floods,floods,"Sherwood, Brisbane, Australia",0,1,0,0.6756226467424332,0.4710547373704457,1->0,False,True,fixed_error
+5712,BE CAREFUL anyone who lives west of Beaverton. Forest Grove has a rapidly spreading fire heading east,forest%20fire,PDX,1,1,0,0.702331036639847,0.4807859712618338,1->0,True,False,new_error
+5730,We are having forest fires out here in #socal but the only fire you should watch for is @YBTheProphet #RealHiphop https://t.co/ZPSnX5iYAJ,forest%20fire,Los Angeles for now,1,1,0,0.6430747981336702,0.419899762902265,1->0,True,False,new_error
+5736,Only you can prevent forest fires. ???? http://t.co/rGYUaKc0dR,forest%20fires,,1,1,0,0.5131388547273591,0.4194984220801013,1->0,True,False,new_error
+5778,Forest fires could delay @AbbyAirshow but officials say it could be a good thing http://t.co/Vxjcx8uKMd,forest%20fires,"Vancouver, BC",1,1,0,0.567809937074884,0.44126355732327716,1->0,True,False,new_error
+5800,Cue storm with massive wind and hail!! Now a power outage @WXII in Davidson County.,hail,Inside the Beltway (DC Area),1,1,0,0.6179130010440019,0.45416061192446117,1->0,True,False,new_error
+5805,@KMacTWN @meaganerd Looks like a bowl of weather cereal. New! Kellogg's Sugar Hail! Stays crunchy even in milk...,hail,"Windsor,Ontario",0,1,0,0.5228420637069763,0.4504864319138571,1->0,False,True,fixed_error
+5815,New warning for Central Hills 1' hail 60 mph winds. NOT affecting Sturgis but could later tonight. #KOTAWeather http://t.co/1EPIYeNQYL,hail,"Rapid City, South Dakota",1,1,0,0.5689803605848202,0.4426983359823232,1->0,True,False,new_error
+5826,UNR continues Severe Thunderstorm Warning [wind: 60 MPH hail: &lt;.75 IN] for Weston [WY] and Custer Fall River Pennington [SD] till 7:15 PÛ_,hail,United States,1,1,0,0.6988225586299958,0.4644337711177163,1->0,True,False,new_error
+5841,OMG NIXON LIVES! That is Richard M. Nixon Tricky Dicky right there in the picture isn't it. Hiding in Calgary he... http://t.co/MIUsvPxQTE,hailstorm,Kicking Horse Pass,1,1,0,0.706538390977518,0.47683208154796997,1->0,True,False,new_error
+5858,IG: http://t.co/2WBiVKzJIP 'It's hailing again! #abstorm #yyc #hail #hailstorm #haildamage #yycweather #calgary #captureyyc #alberta #stoÛ_,hailstorm,,1,1,0,0.7237192224472738,0.4879369753305646,1->0,True,False,new_error
+5953,Davis's Drug Guide for Nurses by Judith Hopfer Deglin and April Hazard Vallerand http://t.co/IufS7UV1HK http://t.co/AFrHnLLY8D,hazard,,0,0,1,0.47137937653871026,0.510043567658673,0->1,True,False,new_error
+5960,BREAKING: Arsenal's Hector Bellerin has been arrested for questioning regarding the disappearance of Eden Hazard.Û_ http://t.co/eCMJ18AzaI,hazard,,0,1,0,0.5790073088722786,0.4787190935026918,1->0,False,True,fixed_error
+5998,Skinny Jeans are Hazardous for Your Health! #socialnews http://t.co/92Pk0HujD8,hazardous,"British Columbia, Canada",1,1,0,0.609608072306823,0.4783059177331686,1->0,True,False,new_error
+6027,HAZARD - HAZARDOUS CONDITION at SB I5 FWY AT / SW TERWILLIGER BLVD PORTLAND OR [Portland Police #PP15000266858] 17:26 #pdx911,hazardous,"Portland, OR",1,1,0,0.5281013708307708,0.4576811041699949,1->0,True,False,new_error
+6141,0-day bug in fully patched OS X comes under active exploit to hijack Macs http://t.co/sbGiRvQvzb,hijack,"Kansas City, MO",0,1,0,0.5090894211237764,0.4800405803924073,1->0,False,True,fixed_error
+6329,Sydney hostage crisis has now been recovered from the AirAsia wreckage.,hostage,,1,1,0,0.6243387034292892,0.4703225034104592,1->0,True,False,new_error
+6343,Holmgren describing 96 World Cup: we were Lou's hostages.,hostages,NYC metro,0,1,0,0.5103008060550379,0.4481414103600861,1->0,False,True,fixed_error
+6374,Nigerian Military Rescue 178 Hostages From Boko Haram - Florida Sentinel Bulletin: Florid... http://t.co/KcTiGYMahl #security #terrorism,hostages,,1,1,0,0.6372347298754246,0.497975516180983,1->0,True,False,new_error
+6438,UPDATE:M.E. confirms 2 women pulled from burning house died last Friday. 91 yr old Edna Jefferson&amp;Doris Sherfield72. http://t.co/L6nSLzl7mI,injured,"DFW, Texas",1,1,0,0.6873111012804513,0.491764611415939,1->0,True,False,new_error
+6501,Peel police say male cyclist struck near Southdown Road and Royal Windsor Drive in Mississauga. Serious but non life-threatening injuries.,injuries,Toronto,1,1,0,0.5852419107547289,0.4480654594429825,1->0,True,False,new_error
+6506,West Nyack Pineview Road railroad crossing off Western Highway. Units on scene of a CSX Train vs. truck no injuries.,injuries,"Rockland County, NY",1,1,0,0.6803347835197002,0.4823477217326577,1->0,True,False,new_error
+6571,incident with injury:I-495  inner loop Exit 31 - MD 97/Georgia Ave Silver Spring,injury,,1,1,0,0.5675728706616262,0.4437824596885809,1->0,True,False,new_error
+6576,Quirk Injury Law's News is out! http://t.co/HxVIhDuShP Stories via @dantmatrafajlo,injury,California,0,1,0,0.5759991632813265,0.49839548639458625,1->0,False,True,fixed_error
+6614,As a result of heavy rains in #Bangladeshaffected lands are inundated by flood waters-land looks like rivers at high tide #BangladeshFlood,inundated,Asia,1,1,0,0.7777727098558243,0.4942072894395264,1->0,True,False,new_error
+6787,Cell Phone Shop : http://t.co/iOq051t5te #629 8-Pin Lightning Connector 2.1A Car Charger For Apple 5 5S 5C 6 6+ iÛ_ http://t.co/klxAUcNP5I,lightning,USA,1,1,0,0.5846158738811763,0.49358412972220383,1->0,True,False,new_error
+6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.5138614863883569,0.3872643516574039,1->0,True,False,new_error
+6879,http://t.co/FhI4qBpwFH @FredOlsenCruise Please take the #FaroeIslands off your itinerary until the mass murder of dolphins &amp; whales stops.,mass%20murder,Anonymous,0,1,0,0.7163874208566792,0.47211150684471925,1->0,False,True,fixed_error
+6940,Another White mass murderer. #Antioch  https://t.co/OWpd7vcFS6,mass%20murderer,,1,1,0,0.7142005680547273,0.487894388657466,1->0,True,False,new_error
+6949,Baby elephant dies just days after surviving massacre of his family http://t.co/qzCUT7bVKT,massacre,Las Vegas aka Hell,1,1,0,0.5739293062209244,0.4798884936802931,1->0,True,False,new_error
+6972,The Fake of Nanking Massacre-4 Eyewitnesses (English): http://t.co/TiPnDEmPuz  #Obama #Clinton #Bush #GOP #ABC #CBS #BBC #CNN #WSJ #WPO,massacre,,1,1,0,0.6322339023976086,0.499909663567812,1->0,True,False,new_error
+7196,"'Up to 40% of businesses affected by a natural or man-made disaster never reopen'
+http://t.co/35JyAp0ul9",natural%20disaster,"Orlando/Cocoa Beach, FL",0,1,0,0.5620931620569225,0.4845921388639674,1->0,False,True,fixed_error
+7205,Coming later this year~ 'THE MAN THAT TATTOOED WOMEN.' A novel based on a real serial killer from #Arkansas &amp; a natural disaster. #NOLA,natural%20disaster,USA,1,1,0,0.5198722385522704,0.4367123422957761,1->0,True,False,new_error
+7234,@BookTubeAThon A world in which people aren't dying from natural and supernatural disaster and war most likely.,natural%20disaster,"Pennsylvania, USA",0,1,0,0.5904730937837241,0.46949197780325297,1->0,False,True,fixed_error
+7286,The president spoke of Kennedy's diplomacy to avert nuclear disaster during the Cold War to bolster his own pitch for Congress' approval,nuclear%20disaster,,1,1,0,0.6891446685449462,0.45779718841141104,1->0,True,False,new_error
+7301,Salem 2 nuclear reactor shut down over electrical circuit failure on pump: The Salem 2 nuclear reactor had bee... http://t.co/5hkGXzJLmX,nuclear%20reactor,"USA, North Dakota",1,1,0,0.645754014492627,0.4871744115926526,1->0,True,False,new_error
+7340,Aug. 5: The Fort Calhoun Nuclear Station is at 100% capacity today according to the NRC: http://t.co/pztbQImpuW,nuclear%20reactor,"Fort Calhoun, NE",0,1,0,0.5376975872183585,0.45671637135315596,1->0,False,True,fixed_error
+7458,Are people not concerned that after #SLAB's obliteration in Scotland #Labour UK is ripping itself apart over #Labourleadership contest?,obliteration,"Glasgow, Scotland",0,1,0,0.5438964641790063,0.45277614224916823,1->0,False,True,fixed_error
+7515,"Watch our video of Wendell Berry speaking about the BP oil spill in the Gulf of Mexico.
+
+ItÛªs the birthday... http://t.co/tN1aX1xMBB",oil%20spill,Clean World,1,1,0,0.7129703089820759,0.4978789652326427,1->0,True,False,new_error
+7519,Hannah: 'Hiroshima sounds like it could be a place in China. Isn't that where the oil spill was?',oil%20spill,,1,1,0,0.6910827934232119,0.449693051762041,1->0,True,False,new_error
+7526,Plains All American Pipeline company may have spilled 40 percent more crude oil than previously estimated.... http://t.co/WEZjqC4Cf2,oil%20spill,"San Luis Obispo, CA",1,1,0,0.5349564416988027,0.47008857791062325,1->0,True,False,new_error
+7556,'Legionnaires' Disease: What's Being Done to Stop Deadly Outbreak' http://t.co/FftOKd0Vts #????_?????,outbreak,??????,1,1,0,0.6371499112936972,0.48533021060050585,1->0,True,False,new_error
+7765,UNWANTED PERSON at 200 BLOCK OF SE 12TH AVE PORTLAND OR [Portland Police #PP15000266818] 17:10 #pdx911,police,"Portland, OR",0,1,0,0.5255177889897286,0.4617284171468854,1->0,False,True,fixed_error
+7775,New technology designed to help prevent dangerous police chases: In an effort to reduce injuries Milwaukee policeÛ_ http://t.co/cedjdlPDAN,police,"Milwaukee, WI",0,1,0,0.5333128247150127,0.4650172657243623,1->0,False,True,fixed_error
+7864,Are Users of this Sub to be Quarantined? http://t.co/9nLY2TovUD,quarantined,,0,1,0,0.5757048520399303,0.4661102887446343,1->0,False,True,fixed_error
+7905,Radioactive Box Quarantined - IsraelÛªs Ashdod Port was evacuated when emergency teams discovered radiation emittin... http://t.co/swQ5lMyDka,radiation%20emergency,Warszawa,1,1,0,0.6428371986696925,0.47257521616837733,1->0,True,False,new_error
+7926,Stuck in a rainstorm? Stay toward the middle of the road. Most streets are crowned so water tends to pool on the sides.,rainstorm,"La Puente, CA",0,1,0,0.6117835324072035,0.4484171783376095,1->0,False,True,fixed_error
+8138,Angry Mistrustful Rescued Elephant Finds Peace and Friendship in Her New Home (PHOTOS) http://t.co/VaUnPS6WJa via @OneGreenPlanet,rescued,Canada,0,1,0,0.5319670061312487,0.46744551125126765,1->0,False,True,fixed_error
+8656,"150-Foot Sinkhole Opens in Lowndes County Residential Area
+WCTV-35 minutes ago",sinkhole,Newcastle,1,1,0,0.6527890550165572,0.4856114076813996,1->0,True,False,new_error
+8681,@DavidCovucci We can't because a sinkhole swallowed every taco place in the neighborhood,sinkhole,Greenpoint,0,1,0,0.5557612560882214,0.4576646768432919,1->0,False,True,fixed_error
+8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0,0.5070019989638421,0.4796759375993197,1->0,False,True,fixed_error
+8761,There's a weird siren going off here...I hope Hunterston isn't in the process of blowing itself to smithereens...,siren,Hame,1,1,0,0.5295530838586917,0.44598885312170916,1->0,True,False,new_error
+8939,@PrablematicLA @Adweek I'm actually currently dressed for a snowstorm...despite being in the middle of a Texas summer. Thanks office A/C.,snowstorm,"Austin, TX",1,1,0,0.5595038589220361,0.45799858794978665,1->0,True,False,new_error
+8952,kesabaran membuahkan hasil indah pada saat tepat! life isn't about waiting for the storm to pass it's about learning to dance in the rain.,storm,,1,1,0,0.6188812057537302,0.42689121168450334,1->0,True,False,new_error
+8961,Crazy storm hit and I'm trapped inside a Hobby Lobby AMA http://t.co/8qc8Bcxoko,storm,"Atlanta, GA",1,1,0,0.614742263414575,0.4913615409419956,1->0,True,False,new_error
+8974,Ready for this storm,storm,pittsboro,1,1,0,0.6194087109307527,0.4677162271638256,1->0,True,False,new_error
+9030,Stretcher in 5 min // Speaker Deck http://t.co/0YO2l38OZr,stretcher,??,0,0,1,0.39862956273638117,0.5072277840045594,0->1,True,False,new_error
+9041,ÛÏStretcher in 5 min // Speaker DeckÛ http://t.co/7qPG80uD7v,stretcher,3???2???????,0,0,1,0.45678283428626704,0.5186917413478306,0->1,True,False,new_error
+9075,Investigators have said a Virgin Galactic spaceship crash was caused by structural failure after the co-pilot unlocked a braking system,structural%20failure,,1,1,0,0.7841261847871871,0.4995968235295617,1->0,True,False,new_error
+9082,Slums are a manifestation state failure to provide housing to citizens. Illegality discourse confounds structural problems. #stopevictions,structural%20failure,,1,1,0,0.5048100465004907,0.43369085062239043,1->0,True,False,new_error
+9192,I was taught at school in the 1970s that piracy slavery and suicide-bombing were purely historical. No one then expected them to re-occur,suicide%20bombing,,1,1,0,0.7927756454784718,0.4661701211250724,1->0,True,False,new_error
+9197,"Suicide bombing for Da'esh is (rightly) despicable. Suicide bombing for Ocalan/ Marxism?
+
+= They share 'our values'. https://t.co/Gs0km0vlgk",suicide%20bombing,England,1,1,0,0.6661900600480738,0.4780760406536213,1->0,True,False,new_error
+9237,9) 'Without the bombing you would have to do hara-kiri you know commit suicide'. http://t.co/UO0aQk9KR8 Hiroshima 70 years ago.,suicide%20bombing,Tokyo & Osaka,1,1,0,0.5505261927538025,0.4027720341966203,1->0,True,False,new_error
+9242,why wasn't this warship sunk?      CNN: First on CNN: Iranian warship points weapon at U.S. helicopter official says http://t.co/hfZk09McEN,sunk,mainly California,1,1,0,0.5384350214549415,0.46398551528531173,1->0,True,False,new_error
+9259,Hasn't quite sunk in that I saw Johnny Marr and Primal Scream all in the space of a few hours on Sunday,sunk,Derby,0,1,0,0.5043381473889971,0.44586770873987847,1->0,False,True,fixed_error
+9288,Everything has sunk in except the fact that I am actually moving to the state of Colorado tomorrow. Been dreaming of it since I was a kid.??,sunk,,0,1,0,0.5997621105155178,0.43186959458921587,1->0,False,True,fixed_error
+9431,Û÷Faceless body belonged to my sisterÛª: #Hiroshima #Nagasaki #nuke survivors recall horrors 70 years on ÛÓ RT News http://t.co/918EQmTkrL,survivors,,1,1,0,0.6285449811926576,0.46004157224578596,1->0,True,False,new_error
+9454,"Truth...
+https://t.co/beJfTYgJIL
+#News
+#BBC
+#CNN
+#Islam
+#Truth
+#god
+#ISIS
+#terrorism
+#Quran
+#Lies http://t.co/jlCZiDZ7Vu",terrorism,,0,1,0,0.6661533272511969,0.4993835395228397,1->0,False,True,fixed_error
+9470,In #islam saving a person is equal in reward to saving all humans! Islam is the opposite of terrorism!,terrorism,Jeddah_Saudi Arabia.,0,1,0,0.580432825808497,0.4564145588284642,1->0,False,True,fixed_error
+9484,@KurtSchlichter  He's already done it by negotiating with the #1 state of terrorism in the World. What was his hurry in trying to get a deal,terrorism,,1,1,0,0.5057388238763957,0.4311421745478226,1->0,True,False,new_error
+9492,Captured terrorist Naved not registered as our citizen: Pakistan http://t.co/0FS9kSV5xK,terrorist,,1,1,0,0.6181621996289557,0.494166960400847,1->0,True,False,new_error
+9642,Strong Thunderstorm 4 Miles East of Pickens Moving NE At 20 MPH. Pea Size Hail and Wind Gusts Up to 40 MPH... #scwx http://t.co/TsaLetFtkt,thunderstorm,South Carolina,1,1,0,0.70530218941877,0.47454282181925445,1->0,True,False,new_error
+9729,"@TOIIndiaNews ofcourse 
+
+Just 8 minute b4 tragedy another train had crossed this place 
+
+N a flash flood caued washing of tracks..",tragedy,dubai ,1,1,0,0.7332400151489107,0.47511636330663876,1->0,True,False,new_error
+9755,Rt hirochii0: There is no country that making fun of Hiroshima 's tragedy but Korea. http://t.co/And1Btizao #Indonesia #Malaysia #Jamaica #Û_,tragedy,Jamaica,1,1,0,0.6070794307120791,0.4652563245982098,1->0,True,False,new_error
+9765,Bomb head? Explosive decisions dat produced more dead children than dead bodies trapped tween buildings on that day in September there,trapped,10 Steps Ahead.  Cloud 9,1,1,0,0.6806840391985713,0.48440743488834365,1->0,True,False,new_error
+9822,Hiroshima: They told me to paint my story: Eighty-nine year old man recalls the terror and the trauma when the... http://t.co/spE7U8t40K,trauma,,1,1,0,0.5782996070196517,0.4259305914452412,1->0,True,False,new_error
+9841,Trauma can happen anywhere -- school home etc. -- at any time. Learn the ABC's of trauma and how to parent... Û_ http://t.co/fMj8MXJY8a,trauma,World,1,1,0,0.5819081310546437,0.4533431655278797,1->0,True,False,new_error
+9842,What is the role of usg in paeds major trauma imaging decision tool? #FOAMed #FOAMcc,trauma,,0,1,0,0.5343726857567523,0.4527406282205919,1->0,False,True,fixed_error
+9853,Today was trauma on top of trauma on top of  trauma in Richmond so I know work is going to be crazy the next two days,trauma,,0,1,0,0.5703542580070923,0.44268470359673195,1->0,False,True,fixed_error
+9890,A traumatised dog that was found buried up to its head in dirt in France is now in safe hands. This is such a... http://t.co/AGQo1479xM,traumatised,"Tring, UK",0,1,0,0.561985529164622,0.4544844337408952,1->0,False,True,fixed_error
+9905,I'm traumatised???? @megancoopy @laurathorne97 http://t.co/MeSqTVdu63,traumatised,,0,0,1,0.3727522329965287,0.558418666218627,0->1,True,False,new_error
+10087,Map: Typhoon Soudelor's predicted path as it approaches Taiwan; expected to make landfall over southern China by... http://t.co/YvaFI3zuJx,typhoon,"Wilmington, Delaware",1,1,0,0.7261765248118017,0.48925925237637885,1->0,True,False,new_error
+10153,"@nytimes 
+Due to upheaval created by the west in Iraq Syria Libya etc.",upheaval,Karachi,1,1,0,0.6511756450196946,0.48469258381027597,1->0,True,False,new_error
+10183,@Skarletan åÇ the storm. A violent swell of emotions then nothing.,violent%20storm,??? ???? ?f glory. ?,0,1,0,0.5956868481497508,0.45860171670256983,1->0,False,True,fixed_error
+10199,A brief violent storm swept through the Chicago area Sunday afternoon leading to one death and an evacuation of Lollapalooza and more,violent%20storm,,1,1,0,0.678560519906567,0.4489178374950002,1->0,True,False,new_error
+10207,"Violent video: Ukraine rioters brutally beat police storm local admin building
+WE'RE ALL FIGHTING BACK  http://t.co/Byj5Dfa2rv",violent%20storm,3rd Eye Chakra,1,1,0,0.63239488806826,0.45839775774100167,1->0,True,False,new_error
+10209,"nside a Dragon's belly. Or an ice cave under
+a volcano in Kamchatka | Photography by
+å©Daniel Korzhonov
+http://t.co/8T36HWgoqd",volcano, ? ??????? ? ( ?? å¡ ? ? ? å¡),1,1,0,0.5084253846098492,0.4935524652695812,1->0,True,False,new_error
+10250,Sitting still in the #CityofMemphis traffic is like sitting in a war zone! They don't move for the Police.. They don't care,war%20zone,"nashville, tn ",0,1,0,0.5819246036970299,0.4392779034054329,1->0,False,True,fixed_error
+10367,WWII Memories Plus Lessons of Hiroshima We Still Need Nuclear Weapons http://t.co/xbMm7ITe9q #denver #billings #rapidcity #seattle #cheyenne,weapons,West,1,1,0,0.7343660332521807,0.49086179668113633,1->0,True,False,new_error
+10374,I will adamantly opposed to nuclear weapons.,weapons,??? ?????????????,1,1,0,0.5163245881207206,0.4134302418794959,1->0,True,False,new_error
+10421,Richard returns after whirlwind few days http://t.co/L8W30WFW3R #MLB,whirlwind,Internet,1,1,0,0.5378505096349157,0.4984597336095048,1->0,True,False,new_error
+10451,Catastrophic wild fires threatening U.S. Mid west &amp; Republicans fighting new climate change rules I guess this is the ultimate in Darwinism,wild%20fires,"Toronto, Bob-Lo, Miami Beach",1,1,0,0.5588527645339522,0.44548627395178747,1->0,True,False,new_error
+10473,@randerson62 Watching news of wild fires and hope all is ok.,wild%20fires,"London, UK",1,1,0,0.6706611883815483,0.45883739585850875,1->0,True,False,new_error
+10525,#IDFire Cherokee Road and Road 22 (Three Sisters Wildfire): There are two roads closed to the general public: ... http://t.co/UORXfF0NfX,wildfire,,1,1,0,0.5378751958746448,0.45681406489751847,1->0,True,False,new_error
+10544,*looks outside at the windstorm* niiiice,windstorm,"Victoria, BC",1,1,0,0.5331485866194404,0.45643420014503533,1->0,True,False,new_error
+10582,@rangerkaitimay had major windstorm thunder and some rain down here near Jackson...calm now.,windstorm,Home is where we park it!,1,1,0,0.6477475995468138,0.43275905257680386,1->0,True,False,new_error
+10598,"Prince Phillip said of the numbers of those murdered by the British at Amritsar...
+
+ÛÏThatÛªs a bit exaggerated it must include the woundedÛ.",wounded,FILM OUT LATE 2015,1,1,0,0.6520072425013205,0.46294999707923096,1->0,True,False,new_error
+10730,@TitorTau The Loretta Lynch one was fuckin' HI-LARIOUS to watch in realtime. It was like a train wreck of fact-checking and ombudsmanship.,wreck,,0,1,0,0.6228749596920216,0.43835008495784994,1->0,False,True,fixed_error
+10746,KUALA LUMPUR (Reuters) - A piece of a wing that washed up on an Indian Ocean island beach last week was part of the wreckage of Malaysian A,wreckage,,1,1,0,0.6440246103902781,0.4674000681756446,1->0,True,False,new_error
+10770,#science Now that a piece of wreckage from flight MH370 has been confirmed on RÌ©union Island is it possible t...  http://t.co/Z2vDGIyOwf,wreckage,iTunes,1,1,0,0.7727832514190315,0.49753238103023817,1->0,True,False,new_error

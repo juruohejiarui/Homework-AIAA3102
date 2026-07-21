@@ -1,0 +1,15 @@
+variant,model_name,actual_label,predicted_0,predicted_1
+raw_text_control,raw_text_tfidf_logistic_regression,0,748,120
+raw_text_control,raw_text_tfidf_logistic_regression,1,201,454
+normalize_urls_placeholder,normalize_urls_placeholder,0,759,109
+normalize_urls_placeholder,normalize_urls_placeholder,1,206,449
+normalize_mentions_placeholder,normalize_mentions_placeholder,0,748,120
+normalize_mentions_placeholder,normalize_mentions_placeholder,1,203,452
+strip_hashtag_marker,strip_hashtag_marker,0,748,120
+strip_hashtag_marker,strip_hashtag_marker,1,201,454
+normalize_punctuation_to_space,normalize_punctuation_to_space,0,749,119
+normalize_punctuation_to_space,normalize_punctuation_to_space,1,201,454
+unicode_casefold,unicode_casefold,0,748,120
+unicode_casefold,unicode_casefold,1,201,454
+normalize_emoji_placeholder,normalize_emoji_placeholder,0,748,120
+normalize_emoji_placeholder,normalize_emoji_placeholder,1,201,454

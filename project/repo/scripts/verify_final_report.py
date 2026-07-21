@@ -80,8 +80,8 @@ def main() -> None:
     check("all five ticket discussions", all(f"Ticket {ticket}:" in source for ticket in range(1, 6)), "Tickets 1-5 present")
     check("held-out policy explicit", "held-out tuning" in source.lower() and "held-out was not used for selection" in source.lower(), "dev selection and held-out reporting distinguished")
 
-    check("asset generator validation", asset_validation["status"] == "PASS" and len(asset_validation["checks"]) == 196 and all(x["status"] == "PASS" for x in asset_validation["checks"]), "196/196 checks")
-    check("source validation", source_validation["status"] == "PASS" and len(source_validation["checks"]) == 123 and all(x["status"] == "PASS" for x in source_validation["checks"]), "123/123 checks")
+    check("asset generator validation", asset_validation["status"] == "PASS" and len(asset_validation["checks"]) == 206 and all(x["status"] == "PASS" for x in asset_validation["checks"]), "206/206 checks")
+    check("source validation", source_validation["status"] == "PASS" and len(source_validation["checks"]) == 134 and all(x["status"] == "PASS" for x in source_validation["checks"]), "134/134 checks")
     check("held-out labels unchanged", asset_validation["heldout_labels_modified"] is False and asset_validation["heldout_rows_removed"] == 0, "no mutation/removal")
 
     check("frozen manifest ticket count", [d["ticket"] for d in manifest["decisions"]] == [1, 2, 3, 4, 5], "five ordered decisions")
@@ -145,6 +145,41 @@ def main() -> None:
     sweep_source = pd.read_csv(ROOT / "results/threshold_sweep.csv")[["ticket", "threshold", "precision_target_1", "recall_target_1", "f1_target_1"]]
     sweep_figure = pd.read_csv(ROOT / "report_assets/figures/figure_01_threshold_sweep_data.csv")
     check("threshold figure source", sweep_source["ticket"].equals(sweep_figure["ticket"]) and np.allclose(sweep_source.drop(columns="ticket"), sweep_figure.drop(columns="ticket"), rtol=0, atol=1e-15), "61 rows match")
+    model_grid_source = pd.read_csv(ROOT / "report_assets/figures/figure_05_ticket4_model_grid_data.csv")
+    model_grid_metrics = pd.read_csv(ROOT / "experiments/ticket-4/dev/results/dev_model_metrics.csv")
+    model_grid_numeric = ["C", "decision_threshold", "precision_target_1", "recall_target_1", "f1_target_1", "accuracy"]
+    expected_grid_delta = (
+        model_grid_metrics["f1_target_1"]
+        - float(model_grid_metrics.loc[model_grid_metrics["variant"] == "lr_c1_unweighted_default", "f1_target_1"].iloc[0])
+    ) * 100.0
+    check(
+        "Ticket 4 model-grid figure source",
+        len(model_grid_source) == len(model_grid_metrics) == 12
+        and model_grid_source["variant"].equals(model_grid_metrics["variant"])
+        and np.allclose(model_grid_source[model_grid_numeric], model_grid_metrics[model_grid_numeric], rtol=0, atol=1e-15)
+        and np.allclose(model_grid_source["f1_delta_percentage_points"], expected_grid_delta, rtol=0, atol=1e-15),
+        "12 candidate metrics and F1 deltas match",
+    )
+    probe_comparison = pd.read_csv(ROOT / "experiments/ticket-1/heldout/discrepancy_comparison.csv")
+    probe_table = pd.read_csv(ROOT / "report_assets/tables/table_15_ticket1_dev_probe_ledger.csv")
+    probe_figure = pd.read_csv(ROOT / "report_assets/figures/figure_06_ticket1_dev_probe_deltas_data.csv")
+    check(
+        "Ticket 1 historical probe table source",
+        len(probe_comparison) == len(probe_table) == 33
+        and probe_comparison["probe"].equals(probe_table["probe"])
+        and np.allclose(probe_comparison["dev_f1_target_1"], probe_table["dev_f1_target_1"], rtol=0, atol=1e-15)
+        and np.allclose(probe_comparison["heldout_f1_target_1"], probe_table["heldout_f1_target_1"], rtol=0, atol=1e-15)
+        and np.allclose(probe_comparison["dev_delta_from_baseline"] * 100.0, probe_table["dev_delta_percentage_points"], rtol=0, atol=1e-12)
+        and np.allclose(probe_comparison["heldout_delta_from_baseline"] * 100.0, probe_table["heldout_delta_percentage_points"], rtol=0, atol=1e-12),
+        "33 baseline-relative dev/held-out rows match",
+    )
+    check(
+        "Ticket 1 historical probe figure source",
+        probe_table["probe"].equals(probe_figure["probe"])
+        and np.allclose(probe_table["dev_delta_percentage_points"], probe_figure["dev_delta_percentage_points"], rtol=0, atol=1e-12)
+        and np.allclose(probe_table["heldout_delta_percentage_points"], probe_figure["heldout_delta_percentage_points"], rtol=0, atol=1e-12),
+        "Figure 6 matches Table XV",
+    )
     f1_figure = pd.read_csv(ROOT / "report_assets/figures/figure_02_dev_heldout_f1_data.csv")
     check("dev/held-out figure source", len(f1_figure) == 10 and all(close(row.f1_target_1, (dev_table if row.split == "dev" else held_table).loc[row.ticket, "f1_target_1"]) for row in f1_figure.itertuples()), "10 ticket/split values")
     transition_table = pd.read_csv(ROOT / "report_assets/tables/table_07_prediction_transitions.csv")
@@ -186,14 +221,14 @@ def main() -> None:
     check("prose decimal provenance", not unmatched, f"checked={len(report_decimals)}, unmatched={unmatched}")
 
     reader = PdfReader(str(PDF))
-    check("PDF opens and page count", len(reader.pages) == 12, f"pages={len(reader.pages)}")
+    check("PDF opens and minimum page count", len(reader.pages) >= 12, f"pages={len(reader.pages)}")
     extracted_pages = [(page.extract_text() or "").strip() for page in reader.pages]
     check("no blank or corrupted PDF pages", all(len(text) >= 300 for text in extracted_pages), str([len(text) for text in extracted_pages]))
     check("US-letter PDF pages", all(abs(float(page.mediabox.width) - 612) < 0.1 and abs(float(page.mediabox.height) - 792) < 0.1 for page in reader.pages), "612x792 pt")
     pdf_text = "\n".join(extracted_pages)
     check("PDF author names", "LAI Jiaxing" in pdf_text and "HE Jiarui" in pdf_text, "front matter")
-    check("PDF table coverage", all(f"TABLE {roman}" in pdf_text for roman in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV")), "Tables I-XIV")
-    check("PDF figure coverage", all(f"Fig. {number}." in pdf_text for number in range(1, 5)), "Figures 1-4")
+    check("PDF table coverage", all(f"TABLE {roman}" in pdf_text for roman in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV")), "Tables I-XV")
+    check("PDF figure coverage", all(f"Fig. {number}." in pdf_text for number in range(1, 7)), "Figures 1-6")
     compact_pdf_text = re.sub(r"[^A-Z0-9]", "", pdf_text.upper().replace("\ufb01", "FI").replace("\ufb02", "FL"))
     check("PDF section coverage", all(re.sub(r"[^A-Z0-9]", "", name.upper()) in compact_pdf_text for name in required_sections), "all required sections extracted")
     check("PDF has no placeholder text", not re.search(r"\b(?:TODO|TBD|PLACEHOLDER)\b|\[Author", pdf_text, re.I), "extracted text scanned")

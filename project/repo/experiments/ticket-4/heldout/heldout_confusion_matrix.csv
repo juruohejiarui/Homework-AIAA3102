@@ -1,0 +1,3 @@
+model_name,actual_label,predicted_0,predicted_1
+lr_c1_balanced_default,0,699,170
+lr_c1_balanced_default,1,159,495

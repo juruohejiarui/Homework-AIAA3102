@@ -1,0 +1,7 @@
+{
+  "heldout_metrics_computed": false,
+  "heldout_predictions_created": false,
+  "hypothesis": "The instructor floor verifies wiring, while an untuned raw-text TF-IDF plus Logistic Regression pipeline provides a stronger comparator.",
+  "interpretation": "The raw-text baseline's dev metrics exceed the all-zero floor; held-out agreement with the reference contract was not tested.",
+  "limitation": "This run is dev-only and cannot establish reproduction of the held-out reference F1 until the Ticket 1 configuration is explicitly frozen."
+}

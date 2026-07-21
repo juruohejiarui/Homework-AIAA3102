@@ -1,0 +1,72 @@
+{
+  "decision_reason": "Retain the frozen Ticket 4 balanced Logistic Regression model and do not apply training-label corrections. The eight-row correction probe preserved all original/proposed labels and source data, but dev F1 fell from 0.7520849128127369 to 0.7488653555219364 (delta -0.003219557290800479), failing the predeclared -0.002 noninferiority margin. It fixed 3 Ticket 4 dev errors while creating 8. Duplicate conflicts remain important audit findings, but benchmark inconsistency and annotation ambiguity make silent relabeling unjustified.",
+  "decision_split": "train_ids and dev_ids only",
+  "dev_labels_modified": false,
+  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket5 --dev-dir experiments/ticket-5/dev --output experiments/ticket-5/frozen_decision.json",
+  "freeze_status": "frozen_before_ticket5_heldout_reporting_and_audit",
+  "frozen_at": "2026-07-21T20:14:58+08:00",
+  "heldout_label_modification_permitted": false,
+  "heldout_reporting_mode": "Reuse validated Ticket 4 stable held-out predictions; do not refit or repredict. Perform post-freeze duplicate/error audit without changing labels or rows.",
+  "heldout_row_removal_permitted": false,
+  "integrity": {
+    "audit_plan_sha256": "beb3c82d1dffcfceea2666ee54a74a4005be472ab269ebf0779bf02a45f8cffa",
+    "baseline_heldout_predictions_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
+    "correction_metrics_sha256": "af21df4de1a662bd375e71c16268affa291a322dc32e9e3924d99d3214361510",
+    "correction_plan_sha256": "1da688030a4fbb2b21e9eab82f8cf0fabfa13a6dbf7f9739c28dc82ec123f769",
+    "correction_runner_source_sha256": "7bc356ac2a5dcd0107eb82a04c3c310aab8a433d6ba90026d3a7463c1d3fb8b9",
+    "correction_selection_sha256": "ea57d4a2c8be9d6c67e2346f9f29dcfe3e3a1fdba136c98b2bcd2b5048defbbb",
+    "curated_dev_review_sha256": "c9f9b341ce07b97d5bed9225c2faf78c33742480b93c6422e2729683cb63990f",
+    "data_quality_source_sha256": "c48742785b8302625f46d659798ba21411610c4e57ed426300a0a49c6f373f15",
+    "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+    "dev_runner_source_sha256": "ec7faee834e2dcd08c59781123df1d2f693499d81b2a2ed38c22a2539afc3663",
+    "duplicate_summary_sha256": "ee33ac69283f413505b4014e5b0502b87daf39bc2905f60c8c263bf565bf6bfd",
+    "heldout_runner_source_sha256": "6270c48d4bbea04dac5d52483c47a252af5b8c9b47396a30ec5f6ab12f04774d",
+    "requirements_lock_sha256": "5bcff454cf416c8759e4e2a46beb1f9aedbf2637dd2b455da0d2b3242682a4d5",
+    "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+    "ticket4_freeze_sha256": "098ce482f0bf9cf9ac5b0bd509d15310c9e6a48cb66c08651c87584316307845",
+    "ticket4_heldout_predictions_sha256": "9ba20012c64b1b6afef701da553968a8d906c92d06e771a019046e64d9180d18"
+  },
+  "prior_ticket_heldout_artifacts_exist": true,
+  "rejected_correction_probe": {
+    "candidate_dev_metrics": {
+      "accuracy": 0.7820091923834537,
+      "f1_target_1": 0.7488653555219364,
+      "false_negative": 160,
+      "false_positive": 172,
+      "precision_target_1": 0.7421289355322339,
+      "recall_target_1": 0.7557251908396947,
+      "true_negative": 696,
+      "true_positive": 495
+    },
+    "candidate_f1_delta_vs_ticket4": -0.003219557290800479,
+    "candidate_transitions_vs_ticket4": {
+      "fixed_fn": 0,
+      "fixed_fp": 3,
+      "new_fn": 1,
+      "new_fp": 7,
+      "prediction_changes": 11
+    },
+    "error_balance_pass": false,
+    "minimum_proposal_confidence": 0.96,
+    "noninferiority_pass": false,
+    "proposal_count": 8
+  },
+  "selected_dev_evidence": {
+    "accuracy": 0.7852921864740644,
+    "f1_target_1": 0.7520849128127369,
+    "false_negative": 159,
+    "false_positive": 168,
+    "precision_target_1": 0.7469879518072289,
+    "recall_target_1": 0.7572519083969466,
+    "true_negative": 700,
+    "true_positive": 496
+  },
+  "selected_model_source": "Frozen Ticket 4 model configuration",
+  "selected_variant": "lr_c1_balanced_default",
+  "selection_reopening_permitted": false,
+  "source_dataset_modified": false,
+  "ticket": 5,
+  "ticket5_heldout_artifact_used_in_decision": false,
+  "ticket5_heldout_reporting_count_at_freeze": 0,
+  "training_label_corrections_adopted": false
+}

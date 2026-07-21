@@ -1,0 +1,13 @@
+perturbation_for,evaluated_variant,affected_rows,changed_predictions,prediction_invariance_rate,mean_absolute_score_shift,maximum_absolute_score_shift,scores_invariant_at_1e_12
+normalize_urls_placeholder,raw_text_control,767,275,0.6414602346805737,0.21046877419297969,0.5775683617590015,False
+normalize_urls_placeholder,normalize_urls_placeholder,767,0,1.0,0.0,0.0,True
+normalize_mentions_placeholder,raw_text_control,399,3,0.9924812030075187,0.005501614303569197,0.09846250026083814,False
+normalize_mentions_placeholder,normalize_mentions_placeholder,399,0,1.0,0.0,0.0,True
+strip_hashtag_marker,raw_text_control,330,0,1.0,0.00015158745301442974,0.03607593203619297,False
+strip_hashtag_marker,strip_hashtag_marker,330,0,1.0,0.0,0.0,True
+normalize_punctuation_to_space,raw_text_control,1445,0,1.0,0.0009918205686109264,0.09820475529607577,False
+normalize_punctuation_to_space,normalize_punctuation_to_space,1445,0,1.0,0.0,0.0,True
+unicode_casefold,raw_text_control,1523,0,1.0,0.0,0.0,True
+unicode_casefold,unicode_casefold,1523,0,1.0,0.0,0.0,True
+normalize_emoji_placeholder,raw_text_control,0,0,1.0,0.0,0.0,True
+normalize_emoji_placeholder,normalize_emoji_placeholder,0,0,1.0,0.0,0.0,True

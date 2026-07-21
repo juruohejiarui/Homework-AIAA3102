@@ -1,0 +1,160 @@
+id,text,keyword,location,y_true,y_pred,score,model_name,ticket
+86,"Progressive greetings!
+
+In about a month students would have set their pens ablaze in The Torch Publications'... http://t.co/9FxPiXQuJt",ablaze,Inang Pamantasan,0,1,0.6775055719656902,trigrams_added,ticket_1_baseline
+132,???? it was an accident http://t.co/Oia5fxi4gM,accident,,0,1,0.595153215195616,trigrams_added,ticket_1_baseline
+353,World Annihilation vs Self Transformation http://t.co/pyehwodWun Aliens Attack to Exterminate Humans http://t.co/pB2N77nSKz,annihilation,Subconscious LA,0,1,0.6685067013040976,trigrams_added,ticket_1_baseline
+386,Please sign &amp; RT to save #SaltRiverWildHorses http://t.co/IKUAYUSEqt http://t.co/BQBHUyfmE9,annihilation,,0,1,0.704747386278485,trigrams_added,ticket_1_baseline
+420,candylit: Imagine sarumi in a zombie apocalypse Fighting back to back Heart to heart conversations over the... http://t.co/xIZkjffF29,apocalypse,"Buenos Aires, Argentina",0,1,0.5920697795567984,trigrams_added,ticket_1_baseline
+489,9 Charts Prove Financial Crisis Part 2 Has BEGUN!: The Financial Armageddon Economic Collapse Blog tracks tren... http://t.co/vHCXTvCINr,armageddon,,0,1,0.5051122327587456,trigrams_added,ticket_1_baseline
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0.6214732454865889,trigrams_added,ticket_1_baseline
+574,Mourning notices for stabbing arson victims stir Û÷politics of griefÛª in Israel: Posters for Shira Banki and A... http://t.co/3GZ5zQQTHe,arson,Jerusalem,0,1,0.6618610989542003,trigrams_added,ticket_1_baseline
+798,Dragon Ball Z: Battle Of Gods (2014) - Rotten Tomatoes http://t.co/jDDNhmrmMJ via @RottenTomatoes,battle,,0,1,0.5079372835313866,trigrams_added,ticket_1_baseline
+851,RT alisonannyoung: EXCLUSIVE: FedEx no longer to transport research specimens of bioterror pathogens in wake of anthrax lab mishaps Û_,bioterror,United States,0,1,0.5422608923847595,trigrams_added,ticket_1_baseline
+853,#world FedEx no longer to transport bioterror germs in wake of anthrax lab mishaps  http://t.co/5zDbTktwW7,bioterror,,0,1,0.6024285381079287,trigrams_added,ticket_1_baseline
+884,Firepower in the lab [electronic resource] : automation in the fight against infectious diseases and bioterrorism /Û_ http://t.co/KvpbybglSR,bioterrorism,,0,1,0.6719398023520021,trigrams_added,ticket_1_baseline
+971,The mixtape is coming i promise. We goin in right now http://t.co/uUNGRqoUgn,blaze,Mo.City,0,1,0.6259396228785592,trigrams_added,ticket_1_baseline
+1208,Lizard Wizard in a Blizzard #LWB http://t.co/MgR809yc5a,blizzard,,0,1,0.8859897546003733,trigrams_added,ticket_1_baseline
+1289,'A Nightmare On Elm Street' Is Getting Remade... Again - http://t.co/HvwkJQXXyT,bloody,,0,1,0.5888122480459832,trigrams_added,ticket_1_baseline
+1326,I've just watched episode S01E09 of Bloody Monday! http://t.co/vRptHvPymt #bloodymonday #tvshowtime http://t.co/NkKvknBvOz,bloody,Brazil ,0,1,0.6301387295696358,trigrams_added,ticket_1_baseline
+1715,Leicester_Merc : ICYMI - #Ashes 2015: Australia collapse at Trent Bridge - how Twitter reaÛ_ http://t.co/HqeWMREysO) http://t.co/y4y8fclJED,bridge%20collapse,Leicester,0,1,0.6582887678355455,trigrams_added,ticket_1_baseline
+1763,@RockBottomRadFM Is one of the challenges on Tough Enough rescuing people from burning buildings?,buildings%20burning,"Dublin City, Ireland",0,1,0.5909934021277656,trigrams_added,ticket_1_baseline
+1888,Kanger coils - burning out fast? via /r/Vaping101 http://t.co/cykr4XAlUH,burning,,0,1,0.7092924671886086,trigrams_added,ticket_1_baseline
+2116,#iphone #twist Ultimate #preparedness library: http://t.co/ksgmY0D0Mx Prepare Yourself For Any Catastrophe. Ov http://t.co/MZK0PFogI7,catastrophe,,0,1,0.6379441924753116,trigrams_added,ticket_1_baseline
+2227,Google Alert: Emergency units simulate a chemical explosion at NU http://t.co/NDgpWYxu6H,chemical%20emergency,,0,1,0.7170770560350059,trigrams_added,ticket_1_baseline
+2231,@pjcoyle ... need to be included in emergency planning for chemical plants. See also http://t.co/OamqqBNIce,chemical%20emergency,"Tyler, TX",0,1,0.5438030606000703,trigrams_added,ticket_1_baseline
+2348,Growth dries up for BHP Billiton as oil price collapse bites http://t.co/HQoD6v6DnC,collapse,"Pompano Beach, FL",0,1,0.7235339984788879,trigrams_added,ticket_1_baseline
+2440,Worlds Collide When an American Family Takes Over Britain's Isle of Man in New TLC Show Suddenly Royal http://t.co/OmB3oS54tN via @People,collide,"Pennsylvania, USA",0,1,0.6069665932947159,trigrams_added,ticket_1_baseline
+2446,Devia ler 'AS WE COLLIDE #wattys2015' no #Wattpad #teenfiction http://t.co/g891m9GH4r http://t.co/Xq92X4bVG3,collide,,0,1,0.799287114297697,trigrams_added,ticket_1_baseline
+2475,On page 500 of 688 of After We Collided by Anna Todd http://t.co/Y7PetO0DX2,collided,Tennessee,0,1,0.7538302727087736,trigrams_added,ticket_1_baseline
+2555,MotoGP Indianapolis: Espargaro: Layout 'worries me a little' - http://t.co/RNy4l3sr7a http://t.co/igX8XFz8Ko,crash,,0,1,0.6432516375996308,trigrams_added,ticket_1_baseline
+2621,@johndcgow heard this few days ago while driving and near crashed the car from laughing to much,crashed,"Bangor, Co.Down",0,1,0.5208611269819988,trigrams_added,ticket_1_baseline
+2846,"Blending the old with the new in #Vanuatu to prepare for future emergencies: 
+http://t.co/aFMKcFn1TL http://t.co/8QqzYZIAqf",cyclone,Geneva,0,1,0.6295545659210077,trigrams_added,ticket_1_baseline
+2925,Permits for bear hunting in danger of outnumbering actual bears: The licenses for Florida's fir... http://t.co/FP64YOSJwx #st petersburg,danger,World,0,1,0.6197194242072157,trigrams_added,ticket_1_baseline
+3042,VIDEO: Slain Mexican Journalist Unknowingly Predicted His Own Death http://t.co/QxhOwCv16R via @BreitbartNews,death,"Los Angeles,CA, USA",0,1,0.5198970251181904,trigrams_added,ticket_1_baseline
+3168,Photo: forrestmankins: Colorado camping. http://t.co/S0VgTkhW7V,deluge,617-BTOWN-BEATDOWN,0,1,0.6772513475682006,trigrams_added,ticket_1_baseline
+3241,@accionempresa The U.S. Department of Commerce has been deluged the last two months with com... http://t.co/V1SFlLOWGh @gerenciatodos å¨,deluged,,0,1,0.5357327579751987,trigrams_added,ticket_1_baseline
+3398,7 Christians detained in Zhejiang amid widespread anger over cross removal- over 1200 crosses removed since last yr http://t.co/8PICbkDJM0,demolition,,0,1,0.6916426846750692,trigrams_added,ticket_1_baseline
+3400,San Jose: Demolition of Willow Glen Trestle put off while legal battles continue http://t.co/t4AXZ7Kc3S,demolition,San Jose,0,1,0.5309885272321022,trigrams_added,ticket_1_baseline
+3401,Canberra's first Mr Fluffy homes demolition schedule released  http://t.co/B77T2QxDCS,demolition,,0,1,0.6499950749273293,trigrams_added,ticket_1_baseline
+3475,"Has #IdentityTheft Derailed Your #TaxReturn? 
+8 Steps for Cleaning Up an  #IdentityTheft Train Wreck. #CRI
+http://t.co/gxQWD1qZBd",derailed,"Enterprise, Alabama",0,1,0.5648148988987526,trigrams_added,ticket_1_baseline
+3702,Media stocks are getting destroyed (DIS FOXA CMCSA SNI AMCX VIAB VIA TWX) http://t.co/aqinaVl1b6,destroyed,todaysbigstock.com,0,1,0.6156151291320889,trigrams_added,ticket_1_baseline
+3831,@WoundedPigeon http://t.co/s9soAeVcVo Detonate by @ApolloBrown ft. M.O.P.,detonate,,0,1,0.6408260774084071,trigrams_added,ticket_1_baseline
+3849,Ignition Knock (Detonation) Sensor Connector-Connecto MOTORCRAFT WPT-994 http://t.co/h2aHxpCH0Y http://t.co/VQ3Vwxj8YU,detonation,,0,1,0.543019679663905,trigrams_added,ticket_1_baseline
+3892,Ignition Knock (Detonation) Sensor Connector-Connecto Dorman 917-141 http://t.co/rfJZexQgxt http://t.co/WQGsmiOiMx,detonation,,0,1,0.5375765937366395,trigrams_added,ticket_1_baseline
+3969,We haven't seen the devastation from the 2014 Corp. Breaches yet Be Prepared! Get Coverage!: http://t.co/eK6KYHxPE9 http://t.co/Yn6NxOucR1,devastation,"Las Vegas, Nevada",0,1,0.6530792288667334,trigrams_added,ticket_1_baseline
+4058,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/Khd99oZ7u3,displaced,"Ojodu,Lagos",0,1,0.5701820965017323,trigrams_added,ticket_1_baseline
+4092,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/6ySbCSSzYS,displaced,Nigeria,0,1,0.5701820965017323,trigrams_added,ticket_1_baseline
+4298,@NWSPocatello BG-16: So far brunt of storm just to our north. Grayed out w/ dust &amp; rain to N blue sky interspersed w/ clouds to S.,dust%20storm,Idaho,0,1,0.5124097217978899,trigrams_added,ticket_1_baseline
+4387,Earthquake drill ??????,earthquake,Orm,0,1,0.573421138799896,trigrams_added,ticket_1_baseline
+4456,Woman electrocuted #Red #Redblood #videoclip http://t.co/9PYmM2RUWf #,electrocuted,New York,0,1,0.5961944558203661,trigrams_added,ticket_1_baseline
+4507,Survival Kit Whistle Fire Starter Wire Saw Cree Torch Emergency Blanket S knife  - Full reÛ_ http://t.co/2OroYUNYM2 http://t.co/C9JnXz3DXC,emergency,New York,0,1,0.5669312137330149,trigrams_added,ticket_1_baseline
+4527,#Anchorage #Jobs Emergency Medicine - Nurse Practitioner - Healthcare Recruitment Counselors (Wasilla AK): Em... http://t.co/LKz5cNYNxX,emergency,"Anchorage, AK",0,1,0.5367002680255402,trigrams_added,ticket_1_baseline
+4577,@RebeccaforReal accepts Wisconsin Emergency Response Plan on behalf of @GovWalker #nbc15 http://t.co/Pis0aiVRbR,emergency%20plan,"Madison, WI",0,1,0.748087483821604,trigrams_added,ticket_1_baseline
+4579,Practice your families fire escape plan so everyone knows what to do in case of an emergency.,emergency%20plan,North Hastings Ontario,0,1,0.518373138546313,trigrams_added,ticket_1_baseline
+4596,County 911 Overload Prompts Use of Emergency Plan During July 4 Celebrations http://t.co/HXTUPrA5bc http://t.co/DqxKJibbKy,emergency%20plan,"Augusta, GA",0,1,0.7196783381031496,trigrams_added,ticket_1_baseline
+4607,Emergency Services Committee and Personnel Committee Meeting on Thursday Night http://t.co/DrBcRyPj4p,emergency%20services,,0,1,0.5375086943937779,trigrams_added,ticket_1_baseline
+4628,#Healthcare #Job in #Kodiak AK: Emergency Services Supervisor - Emergency... at Providence Health &amp; Services http://t.co/8KJ1wDAiGj #Jobs,emergency%20services,Alaska,0,1,0.5503321184469164,trigrams_added,ticket_1_baseline
+4644,Our doctors and nurses in the new Pediatric Emergency Department are all specialized in child services! http://t.co/k1TMLWvjmJ,emergency%20services,"Park Ridge, Illinois",0,1,0.560449058779771,trigrams_added,ticket_1_baseline
+4700,Tomorrow kick off your weekend with drinks &amp; entertainment @AliveAfter5 http://t.co/sC4TWJkxr1 http://t.co/yN6DuOtimr,epicentre,"Charlotte, NC",0,1,0.5419603340251925,trigrams_added,ticket_1_baseline
+4889,Philadelphia EaglesÛª Jordan Matthews Is Going To Explode In 2015 http://t.co/rRq1ildkiL #news #hotnewscake,explode,United States,0,1,0.5249699194270311,trigrams_added,ticket_1_baseline
+4981,Aspiring musician &amp; song writer shares her talent at the GMMBC Youth Explosion on this past Saturday. http://t.co/OmjMTU9kFG,explosion,,0,1,0.5024423318394938,trigrams_added,ticket_1_baseline
+5001,Checkout all the NURGLE rules &amp; features that snuck in on Khrone's WD! http://t.co/he7Q7H3nZf http://t.co/rpvZBEsUQJ,explosion,,0,1,0.7927517198393235,trigrams_added,ticket_1_baseline
+5022,#Eyewitness media is actively embraced by #UK audiences. Read the report by @emhub on the impact of #UGC in news: http://t.co/6mBPvwiTxf,eyewitness,,0,1,0.7849200425272785,trigrams_added,ticket_1_baseline
+5038,WFTV Eyewitness News: TN school psychologist arrested in Florida on child porn charges http://t.co/lgGLf5yrMe,eyewitness,"Orlando, Fl",0,1,0.6635983884291561,trigrams_added,ticket_1_baseline
+5088,"A grade in Black Horse Famine[MEGA]. Score 0840728
+http://t.co/pdiit0AF3Q
+#Dynamix http://t.co/ZQ5KDOx7BY",famine,,0,1,0.7728330182770645,trigrams_added,ticket_1_baseline
+5114,Roger Goodell's Fatal Mistake: Tom Brady An Innocent Man http://t.co/UCNcKrnLow,fatal,"Wood Buffalo, Alberta",0,1,0.5522263283733455,trigrams_added,ticket_1_baseline
+5247,Kosciusko police investigating pedestrian fatality hit by a train Thursday http://t.co/m5djLLxoZP,fatality,USA,0,1,0.7181987055990754,trigrams_added,ticket_1_baseline
+5272,Fear Factory - Cars (Official MusicVideo) http://t.co/UUzaUMdObc,fear,mexico,0,1,0.5101523321112511,trigrams_added,ticket_1_baseline
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0.5265946290485232,trigrams_added,ticket_1_baseline
+5391,Trident 90225 Chevy fire Truck w/ Pumper  IMS Fire Dept. Red HO 1:87  plastic http://t.co/FAQNFUpeGn http://t.co/mQfOfKXtyh,fire%20truck,,0,1,0.7915203329991943,trigrams_added,ticket_1_baseline
+5510,The advantages apropos of in flames favorable regard mississauga ontario: pWHvGwax,flames,,0,1,0.5739962302922569,trigrams_added,ticket_1_baseline
+5518,IDEAS IN FOOD: Flattened http://t.co/QfrAWLn4BA,flattened,"Bow, NH",0,1,0.6085339230632271,trigrams_added,ticket_1_baseline
+5670,@madonnamking RSPCA site multiple 7 story high rise buildings next to low density character residential in an area that floods,floods,"Sherwood, Brisbane, Australia",0,1,0.5415104881563216,trigrams_added,ticket_1_baseline
+5675,Floods Fishing Finally Sunshine &amp; Fab Deals from Albertsons Anniversary Sale |Lauren Paints | a beautiful life http://t.co/CwHSLMB8x9,floods,California,0,1,0.5005929786647193,trigrams_added,ticket_1_baseline
+5805,@KMacTWN @meaganerd Looks like a bowl of weather cereal. New! Kellogg's Sugar Hail! Stays crunchy even in milk...,hail,"Windsor,Ontario",0,1,0.5002515759733771,trigrams_added,ticket_1_baseline
+5828,Hail The New Caesars! http://t.co/GzMoBlsJxu http://t.co/5CGtqfk2uR,hail,"Las Vegas, Nevada",0,1,0.6711528992399581,trigrams_added,ticket_1_baseline
+5953,Davis's Drug Guide for Nurses by Judith Hopfer Deglin and April Hazard Vallerand http://t.co/IufS7UV1HK http://t.co/AFrHnLLY8D,hazard,,0,1,0.6853666960545611,trigrams_added,ticket_1_baseline
+5960,BREAKING: Arsenal's Hector Bellerin has been arrested for questioning regarding the disappearance of Eden Hazard.Û_ http://t.co/eCMJ18AzaI,hazard,,0,1,0.6141513171933349,trigrams_added,ticket_1_baseline
+5990,JAX issues Hazardous Weather Outlook (HWO) http://t.co/fuCOQhcLAD,hazardous,,0,1,0.7655068029555772,trigrams_added,ticket_1_baseline
+5997,#what #tribal Olap #world pres: http://t.co/Jw6FNnsSxT How To Recognize A Hazardous Waste And The Multidimensi http://t.co/4zAzTB19qE,hazardous,,0,1,0.5345079070938294,trigrams_added,ticket_1_baseline
+6002,09:13 PM:  Hazardous Weather Outlook (http://t.co/ed1VpITsWY): NO HAZARDOUS WEATHER IS EXPECTED AT THIS TIME.... http://t.co/6XSbddlZiy,hazardous,"Gainesville, FL",0,1,0.7487743190601421,trigrams_added,ticket_1_baseline
+6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0.6477296803077084,trigrams_added,ticket_1_baseline
+6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0.6477296803077084,trigrams_added,ticket_1_baseline
+6227,Demco 8550013 Hijacker 5th Wheel Hitch 21K Ultra Series Double Pivot http://t.co/hRdwGfbFYq http://t.co/nUOhKmPZFj,hijacker,,0,1,0.6837665075069728,trigrams_added,ticket_1_baseline
+6293,Û÷RansomwareÛª holds B.C. manÛªs computer files hostage: A virus locked Andrew Wilson's family photos and otherÛ_ http://t.co/aQbLjComlN,hostage,"Vancouver, British Columbia",0,1,0.5057232794434664,trigrams_added,ticket_1_baseline
+6347,Render assistance gain as proxy for your hostages to fortune: sSu http://t.co/KS7Ln8HQ8s,hostages,,0,1,0.5111792716069007,trigrams_added,ticket_1_baseline
+6366,#hot  C-130 specially modified to land in a stadium and rescue hostages in Iran in 1980 http://t.co/zY3hpdJNwg #prebreak #best,hostages,china,0,1,0.7848914271786975,trigrams_added,ticket_1_baseline
+6536,Rory McIlroy to Test Ankle Injury in Weekend Practice #chinadotcom #sports http://t.co/UDTGWfSc3P http://t.co/V5wSx0LQN2,injury,beijing .China,0,1,0.6882593217647126,trigrams_added,ticket_1_baseline
+6568,'McFadden Reportedly to Test Hamstring Thursday' via @TeamStream http://t.co/jWq4KvJH2j,injury,"Plano, Texas",0,1,0.6665575982301749,trigrams_added,ticket_1_baseline
+6576,Quirk Injury Law's News is out! http://t.co/HxVIhDuShP Stories via @dantmatrafajlo,injury,California,0,1,0.5621089444267225,trigrams_added,ticket_1_baseline
+6759,Phones Offers &gt;&gt; http://t.co/bYtbZ8s5ux #034 8-Pin Lightning Connector 2.1A Car Charger For Apple 5 5S 5C 6 6+ iPÛ_ http://t.co/o3wVScLiCX,lightning,USA,0,1,0.5720312049897486,trigrams_added,ticket_1_baseline
+6879,http://t.co/FhI4qBpwFH @FredOlsenCruise Please take the #FaroeIslands off your itinerary until the mass murder of dolphins &amp; whales stops.,mass%20murder,Anonymous,0,1,0.6702254260823621,trigrams_added,ticket_1_baseline
+6937,@BenignoVito @LibertyBell1000 HILLARYMASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0.5534268774208075,trigrams_added,ticket_1_baseline
+7142,Study: Wider Variety of Therapies Could Help Vets Troops With PTSD | http://t.co/g0q0bzBjli http://t.co/ExYr6c5QPu via @Militarydotcom,military,,0,1,0.6939549608505932,trigrams_added,ticket_1_baseline
+7196,"'Up to 40% of businesses affected by a natural or man-made disaster never reopen'
+http://t.co/35JyAp0ul9",natural%20disaster,"Orlando/Cocoa Beach, FL",0,1,0.6183728883155345,trigrams_added,ticket_1_baseline
+7234,@BookTubeAThon A world in which people aren't dying from natural and supernatural disaster and war most likely.,natural%20disaster,"Pennsylvania, USA",0,1,0.5445102479553603,trigrams_added,ticket_1_baseline
+7340,Aug. 5: The Fort Calhoun Nuclear Station is at 100% capacity today according to the NRC: http://t.co/pztbQImpuW,nuclear%20reactor,"Fort Calhoun, NE",0,1,0.5552243093752018,trigrams_added,ticket_1_baseline
+7458,Are people not concerned that after #SLAB's obliteration in Scotland #Labour UK is ripping itself apart over #Labourleadership contest?,obliteration,"Glasgow, Scotland",0,1,0.5359458897705566,trigrams_added,ticket_1_baseline
+7529,@TroySlaby22 slicker than an oil spill,oil%20spill,,0,1,0.6054903687463857,trigrams_added,ticket_1_baseline
+7617,Element of Freedom at Mirage Saturday! 21+ Ladies Free Before Midnight!' http://t.co/7hAnPcr5rK,pandemonium,"Durham, NC",0,1,0.6068983503249318,trigrams_added,ticket_1_baseline
+7685,#dream #magic The #linden method lite version - #1 anxiety panic cure program: http://t.co/073izwX0lB THE LIND http://t.co/OkmLAGvkjv,panic,,0,1,0.5522365206907627,trigrams_added,ticket_1_baseline
+7761,Police expand search for missing pregnant woman in Beloeil: Police in Richelieu-Saint-Laurent are expanding th... http://t.co/hMuyzmv8qH,police,,0,1,0.8381396776535891,trigrams_added,ticket_1_baseline
+7765,UNWANTED PERSON at 200 BLOCK OF SE 12TH AVE PORTLAND OR [Portland Police #PP15000266818] 17:10 #pdx911,police,"Portland, OR",0,1,0.5288870126626903,trigrams_added,ticket_1_baseline
+7771,@BrandonMulcahy @fpine Here's the story http://t.co/TgXutUoyHl,police,SoCal,0,1,0.64068023367559,trigrams_added,ticket_1_baseline
+7775,New technology designed to help prevent dangerous police chases: In an effort to reduce injuries Milwaukee policeÛ_ http://t.co/cedjdlPDAN,police,"Milwaukee, WI",0,1,0.5925138153954431,trigrams_added,ticket_1_baseline
+7864,Are Users of this Sub to be Quarantined? http://t.co/9nLY2TovUD,quarantined,,0,1,0.5111685613957688,trigrams_added,ticket_1_baseline
+7895,http://t.co/X5XUMtoEkE Nuclear Emergency Current USA radiation levels monitoring site,radiation%20emergency,"LP, MN USA",0,1,0.6923381688048288,trigrams_added,ticket_1_baseline
+7916,#DnB #NewRelease EDGE Jimmy - Summer Rainstorm (Lapaka Sounds) http://t.co/4L8h2FKlNO via http://t.co/ZITQKDFXJY,rainstorm,,0,1,0.7272083271837431,trigrams_added,ticket_1_baseline
+7926,Stuck in a rainstorm? Stay toward the middle of the road. Most streets are crowned so water tends to pool on the sides.,rainstorm,"La Puente, CA",0,1,0.5480549791783026,trigrams_added,ticket_1_baseline
+7938,"RAIN RAIN GO AWAY... A soaker is on the way 
+------&gt; http://t.co/jQFcY9GuqV &lt;----- http://t.co/tN65puhfhw",rainstorm,"Pennsylvania, USA",0,1,0.6410547778038084,trigrams_added,ticket_1_baseline
+8044,wowo--=== 12000 Nigerian refugees repatriated from Cameroon,refugees,,0,1,0.6926042289423584,trigrams_added,ticket_1_baseline
+8047,http://t.co/eHKLp12yiP Paci?c Media Centre | articles: AUSTRALIA: RSF protests over new security gag over reporting on...,refugees,"Auckland, New Zealand",0,1,0.6808736094893547,trigrams_added,ticket_1_baseline
+8133,Rescued TB goes on to ribbon at HITS: http://t.co/pA5SSLeFEC via @offtrackhorse,rescued,,0,1,0.6947256701122144,trigrams_added,ticket_1_baseline
+8138,Angry Mistrustful Rescued Elephant Finds Peace and Friendship in Her New Home (PHOTOS) http://t.co/VaUnPS6WJa via @OneGreenPlanet,rescued,Canada,0,1,0.5639695298879207,trigrams_added,ticket_1_baseline
+8241,? Cracker - White Riot ? http://t.co/Cc7D0wxk0M #nowplaying,riot,"San Francisco, CA",0,1,0.5237105505580334,trigrams_added,ticket_1_baseline
+8301,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/eaTFro3d5x,rubble,"Accra,Ghana",0,1,0.5809151389950653,trigrams_added,ticket_1_baseline
+8335,New post: 'China's Stock Market Crash: Are There Gems In The Rubble?' http://t.co/6CaDRhIOxp,rubble,"Portland, OR",0,1,0.5149741081535195,trigrams_added,ticket_1_baseline
+8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0.6347289867145364,trigrams_added,ticket_1_baseline
+8585,@wisdc &amp; obama supports  death2USA .. http://t.co/serARcNrbY,screams,United States,0,1,0.7133012005025955,trigrams_added,ticket_1_baseline
+8618,ON THE USE OF PERFORATED METAL SHEAR PANEL SFOR SEISMIC-RESISTANT APPLICATIONS http://t.co/cX5OjH2Dr4,seismic,,0,1,0.6551610274076481,trigrams_added,ticket_1_baseline
+8688,A random hole just broke out in the street ?? http://t.co/dWU8QqYs0v,sinkhole,,0,1,0.5694905663654013,trigrams_added,ticket_1_baseline
+8724,Sinking the Slipper or Putting the Boot In http://t.co/b1bx0ERuep,sinking,Queensland,0,1,0.5905090792745153,trigrams_added,ticket_1_baseline
+8763,Internet firms to be subject to new cybersecurity rules in EU... http://t.co/lafTJ2GyLY,siren,,0,1,0.5471785853245282,trigrams_added,ticket_1_baseline
+8841,It's 'Run From Sirens' by 'Half Hour Hotel' @halfhourhotel @Edgarsgift. 'Premium Promotion' OFFER http://t.co/zRN30A78ir,sirens,,0,1,0.5150828839221694,trigrams_added,ticket_1_baseline
+8948,New on Ebay UK Star Wars Storm Trooper Pop! Vinyl Bobble Head Figure POP Funko http://t.co/KJbXIeypma http://t.co/ENPjCfMa8L,storm,,0,1,0.5360980888583096,trigrams_added,ticket_1_baseline
+9298,10 Ways To Survive and Escape Martial Law | World http://t.co/BiuEY7bUtS http://t.co/JWQYbe4ep1,survive,Lincoln City Oregon,0,1,0.6990404329795901,trigrams_added,ticket_1_baseline
+9341,Suicide of a Superpower : Will America Survive To 2025? by Patrick J. Buchana... http://t.co/eMTwirknyq http://t.co/M9K08OaZve,survive,,0,1,0.8623795386405061,trigrams_added,ticket_1_baseline
+9432,Survivors of Shanghai Ghetto reunite after 70 years - http://t.co/1Ki8LgVAy4 #Shanghai #China #??,survivors,Shanghai,0,1,0.6875955429911453,trigrams_added,ticket_1_baseline
+9439,Haley Lu Richardson Fights for Water in The Last Survivors (Review) http://t.co/oObSCFOKtQ,survivors,Numenor,0,1,0.6150201240285161,trigrams_added,ticket_1_baseline
+9454,"Truth...
+https://t.co/beJfTYgJIL
+#News
+#BBC
+#CNN
+#Islam
+#Truth
+#god
+#ISIS
+#terrorism
+#Quran
+#Lies http://t.co/jlCZiDZ7Vu",terrorism,,0,1,0.656168379481703,trigrams_added,ticket_1_baseline
+9470,In #islam saving a person is equal in reward to saving all humans! Islam is the opposite of terrorism!,terrorism,Jeddah_Saudi Arabia.,0,1,0.5399691901227541,trigrams_added,ticket_1_baseline
+9501,HereÛªs how media in Pakistan covered the capture of terrorist Mohammed Naved http://t.co/f7WqpCEkg2,terrorist,,0,1,0.6400129706547756,trigrams_added,ticket_1_baseline
+9890,A traumatised dog that was found buried up to its head in dirt in France is now in safe hands. This is such a... http://t.co/AGQo1479xM,traumatised,"Tring, UK",0,1,0.610583867433199,trigrams_added,ticket_1_baseline
+9905,I'm traumatised???? @megancoopy @laurathorne97 http://t.co/MeSqTVdu63,traumatised,,0,1,0.6617809548683018,trigrams_added,ticket_1_baseline
+9915,A man a woman Romance &amp; South Afrikaan Trouble - on # sale PreOrder #theBargain - http://t.co/UMl5jZTmcB,trouble,Atlanta,0,1,0.544710994831251,trigrams_added,ticket_1_baseline
+10183,@Skarletan åÇ the storm. A violent swell of emotions then nothing.,violent%20storm,??? ???? ?f glory. ?,0,1,0.5156465605055891,trigrams_added,ticket_1_baseline
+10258,Camping in a war zone with roving raccoons toughens city slicker http://t.co/oJuS08yZrq,war%20zone,"Downtown Churubusco, Indiana",0,1,0.6989772232940387,trigrams_added,ticket_1_baseline
+10299,GUN FIREARM WEAPON VECTOR CLIP ART FOR VINYL SIGN CUTTER RIFLE GUNS WEAPONS http://t.co/sdOgEF3kFT http://t.co/x0giy85BS8,weapon,,0,1,0.6173281902887513,trigrams_added,ticket_1_baseline
+10380,Death certificates safes weapons and Teslas: DEF CON 23 #Security http://t.co/KMDQm3NlnS,weapons,London,0,1,0.5223891760857468,trigrams_added,ticket_1_baseline
+10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0.6104455484469522,trigrams_added,ticket_1_baseline
+10640,Nout like rubbin salt in the wounds dad.. ?????? http://t.co/M8UfjDtlsm,wounds,"Newcastle, England ",0,1,0.6143603135892552,trigrams_added,ticket_1_baseline
+10730,@TitorTau The Loretta Lynch one was fuckin' HI-LARIOUS to watch in realtime. It was like a train wreck of fact-checking and ombudsmanship.,wreck,,0,1,0.5458631398449546,trigrams_added,ticket_1_baseline

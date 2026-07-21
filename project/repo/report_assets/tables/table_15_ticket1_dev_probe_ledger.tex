@@ -1,0 +1,48 @@
+\begin{table*}[t]
+\centering
+\caption{Ticket 1 Historical Probe Deltas on Dev and Held-Out}
+\label{tab:ticket1_probe_ledger}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrr}
+\hline
+probe label & cause category & dev f1 target 1 & heldout f1 target 1 & dev delta percentage points & heldout delta percentage points \\
+\hline
+Frozen baseline control & frozen baseline control & 0.738812 & 0.749186 & 0 & 0 \\
+Explicit unigram control & changed TF-IDF parameters & 0.738812 & 0.749186 & 0 & 0 \\
+Add word bigrams & changed TF-IDF parameters & 0.728745 & 0.726979 & -1.006710 & -2.220667 \\
+Add word trigrams & changed TF-IDF parameters & 0.720387 & 0.717949 & -1.842526 & -3.123695 \\
+Disable sublinear TF & changed TF-IDF parameters & 0.738812 & 0.749186 & 0 & 0 \\
+max\_features=20,000 & changed TF-IDF parameters & 0.738812 & 0.749186 & 0 & 0 \\
+max\_features=None & changed TF-IDF parameters & 0.738812 & 0.749186 & 0 & 0 \\
+min\_df=2 & changed TF-IDF parameters & 0.743525 & 0.755187 & 0.471344 & 0.600105 \\
+min\_df=3 & changed TF-IDF parameters & 0.747725 & 0.754561 & 0.891335 & 0.537486 \\
+min\_df=5 & changed TF-IDF parameters & 0.745033 & 0.751236 & 0.622107 & 0.204992 \\
+max\_df=0.9 & changed TF-IDF parameters & 0.738812 & 0.749186 & 0 & 0 \\
+Disable IDF & changed TF-IDF parameters & 0.723439 & 0.729184 & -1.537328 & -2.000216 \\
+Disable IDF smoothing & changed TF-IDF parameters & 0.739414 & 0.746732 & 0.060164 & -0.245364 \\
+L1 normalization & changed TF-IDF parameters & 0.592016 & 0.598639 & -14.679646 & -15.054621 \\
+No vector normalization & changed TF-IDF parameters & 0.728606 & 0.761373 & -1.020569 & 1.218704 \\
+Unicode accent stripping & changed preprocessing & 0.737785 & 0.749186 & -0.102703 & 0 \\
+Single-character tokens & changed preprocessing & 0.740501 & 0.743548 & 0.168917 & -0.563728 \\
+Preserve case & changed preprocessing & 0.731148 & 0.723265 & -0.766450 & -2.592036 \\
+C=0.1 & regularization & 0.618817 & 0.623552 & -11.999536 & -12.563354 \\
+C=0.25 & regularization & 0.704663 & 0.697998 & -3.414883 & -5.118741 \\
+C=0.5 & regularization & 0.726672 & 0.722269 & -1.213987 & -2.691711 \\
+C=2 & regularization & 0.750403 & 0.763347 & 1.159053 & 1.416095 \\
+C=4 & regularization & 0.748800 & 0.762658 & 0.998796 & 1.347256 \\
+C=10 & regularization & 0.745628 & 0.762276 & 0.681594 & 1.309025 \\
+class\_weight=balanced & class weighting & 0.752085 & 0.750569 & 1.327287 & 0.138294 \\
+Solver=liblinear & Logistic Regression solver & 0.737785 & 0.748576 & -0.102703 & -0.060959 \\
+Explicit solver=lbfgs & Logistic Regression solver & 0.738812 & 0.749186 & 0 & 0 \\
+max\_iter=1,000 & maximum iterations or convergence & 0.738812 & 0.749186 & 0 & 0 \\
+random\_state=1 & random seed & 0.738812 & 0.749186 & 0 & 0 \\
+random\_state=42 & random seed & 0.738812 & 0.749186 & 0 & 0 \\
+random\_state=9,999 & random seed & 0.738812 & 0.749186 & 0 & 0 \\
+Explicit L2 representation & package-version behavior & 0.738812 & 0.749186 & 0 & 0 \\
+Leaky train+dev TF-IDF (invalid) & accidental leakage & 0.725237 & 0.736932 & -1.357518 & -1.225336 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{Each delta is probe F1 minus submitted-baseline F1 in percentage points. The historical held-out ledger is diagnostic after the reference mismatch and is not eligible evidence for replacing the frozen baseline.}
+\end{table*}

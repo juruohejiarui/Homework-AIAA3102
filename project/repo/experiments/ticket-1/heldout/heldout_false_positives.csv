@@ -1,0 +1,150 @@
+id,text,keyword,location,y_true,y_pred,score,model_name,ticket
+117,"mom: 'we didn't get home as fast as we wished' 
+me: 'why is that?'
+mom: 'there was an accident and some truck spilt mayonnaise all over ??????",accident,,0,1,0.5071621935321514,raw_text_tfidf_logistic_regression,ticket_1_baseline
+198,@crobscarla your lifetime odds of dying from an airplane accident are 1 in 8015.,airplane%20accident,"Salt Lake City, Utah",0,1,0.7129798247918359,raw_text_tfidf_logistic_regression,ticket_1_baseline
+303,Be annihilated for status education mba on behalf of a on easy street careen: eOvm http://t.co/e0pI0c54FF,annihilated,,0,1,0.5894842904017711,raw_text_tfidf_logistic_regression,ticket_1_baseline
+472,God's Kingdom (Heavenly Gov't) will rule over all people on the earth after Armageddon.  http://t.co/8HGcBXUkz0  http://t.co/4kopkCyvTt,armageddon,Worldwide,0,1,0.5440637498599186,raw_text_tfidf_logistic_regression,ticket_1_baseline
+520,".: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: RT DrAyesha4: #IndiaKoMunTorJawabDo
+
+Indian Army kiÛ_ http://t.co/WJLJq3yA4g",army,Pakistan,0,1,0.6021931873603806,raw_text_tfidf_logistic_regression,ticket_1_baseline
+546,Two Jewish Terrorists Charged In Historic-Church Arson | The Ugly Truth http://t.co/iEksNFSbY7 http://t.co/VWCf3slkrW,arson,,0,1,0.8466221432129959,raw_text_tfidf_logistic_regression,ticket_1_baseline
+773,GREAT PERFORMANCE CHIP FUEL/GAS SAVER CHEVY TAHOE/BLAZER/AVALANCHE/S-10 http://t.co/iCrZi5TqC5 http://t.co/ONxhKfHn2a,avalanche,,0,1,0.5330453472032985,raw_text_tfidf_logistic_regression,ticket_1_baseline
+783,.@bigperm28 was drafted by the @Avalanche in 2005 (rd. 4 #124) overall. Played last season in @UtahGrizz. http://t.co/gPGTAfMKt0,avalanche,"505 W. Maple, Suite 100",0,1,0.6744738911081213,raw_text_tfidf_logistic_regression,ticket_1_baseline
+868,#BreakingNews http://t.co/gAN14PW9TG FedEx no longer willing to transport research specimens of potential bioterÛ_ http://t.co/5n4hUsewLy,bioterror,Across the Atlantic,0,1,0.6295128114494527,raw_text_tfidf_logistic_regression,ticket_1_baseline
+878,Biolab safety concerns grow: FedEx stops transporting certain specimens. Research facilities 'dumbfounded' by action. http://t.co/RUjV4VPnBV,bioterror,"Washington, D.C., area",0,1,0.5616620290071173,raw_text_tfidf_logistic_regression,ticket_1_baseline
+936,See a virtual tour of one of our listings on 547 Fir St Cannon Beach OR listed by Dorrie Caruana. http://t.co/nF46PAYTvw,blaze,,0,1,0.5197233362064878,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1272,@Anthxvy runs in the blood,blood,"Ewa Beach, HI",0,1,0.5110594997053642,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1488,The Body Bags has a show on 08/07/2015 at 07:30 PM @ Tremont Music Hall in Charlotte NC http://t.co/FpKiqbus9r #concert,body%20bags,Charlotte NC,0,1,0.5347259516004411,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1599,@QPR1980 @Rorington95 Nowt to do with money. Fergie bombed out the big drinkers at United within years of taking over while Wenger,bombed,,0,1,0.5015644805229147,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1671,A Marshall Plan for the United States by Dambisa Moyo via @ProSyn #oped http://t.co/GnPStnvi5G via @po_st,bridge%20collapse,VitÌ_ria (ES),0,1,0.5406824803706612,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1719,A Marshall Plan for the United States by Dambisa Moyo via @ProSyn #oped http://t.co/l5g2zJ3kgG via @po_st,bridge%20collapse,,0,1,0.5406824803706612,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1737,? High Skies - Burning Buildings ? http://t.co/uVq41i3Kx2 #nowplaying,buildings%20burning,San Francisco,0,1,0.5472241654582184,raw_text_tfidf_logistic_regression,ticket_1_baseline
+1766,saving babies from burning buildings soaking cake in a shit tonne of alcohol mat is a man after my own heart ?? #GBBO,buildings%20burning,"Leeds, England",0,1,0.5719730473203777,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2134,#spark #song Ultimate #preparedness library: http://t.co/VsGqoLr32g Prepare Yourself For Any Catastrophe. Over http://t.co/p7UhcB13Qx,catastrophe,,0,1,0.567920166187516,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2301,ESN :  Cilla Black died of stroke after fall in Spain: Sir Cliff revealed he was due to visit her in Spain nextÛ_ http://t.co/F7a66dIiYK,cliff%20fall,"Madrid, Comunidad de Madrid",0,1,0.6825991949600962,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2329,Timestack' Photos Collapse Entire Sunsets Into Single Mesmerizing Images. http://t.co/Cas8xC2DFE,collapse,"San Jose, California",0,1,0.5295038136780235,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2336,SA MP. Steel and ferrochrome industry on verge of collapse. You don't even put that on list of questions to president for oral answer,collapse,"Sandton, South Africa",0,1,0.5345357436564557,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2351,åÈMGN-AFRICAå¨ pin:263789F4 åÈ Correction: Tent Collapse Story: Correction: Tent Collapse story åÈ http://t.co/fDJUYvZMrv @wizkidayo,collapse,Worldwide.,0,1,0.5740323549598566,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2844,"Some drugs and alcohol in Jackson Vroman house.
+
+http://t.co/5OQhQ8QUQV",cyclone,Vilnius,0,1,0.6585679107794374,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2852,Cyclone by Double G would be the cherry on top to this outfit! #OOTD #DoubleGhats http://t.co/JSuHuPz6Vp http://t.co/N5vrFFRbo3,cyclone,Made in America,0,1,0.5091859187190805,raw_text_tfidf_logistic_regression,ticket_1_baseline
+2872,'Mages of Fairy Tail.. Specialize in property damage!' - Natsu Dragneel,damage,Indonesia,0,1,0.6639403213541583,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3044,Afghan peace talks in doubt after Mullah Omar's death - Financial Times | #Mullah,death,Carry On Jutta!!!,0,1,0.5806455019962339,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3068,Hear @DrFriedenCDC talk on how to avoid thousands of resistant infections/deaths in next 5 yrs: http://t.co/niV8x5Tbe0 #AdiosSuperBacterias,deaths,"Atlanta, GA",0,1,0.7195414633864544,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3070,Irony just died a thousand deaths! ???? http://t.co/dBU30ObDxz,deaths,Planet Earth,0,1,0.5909968916899618,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3197,What's missing in the #asae15 exhibitor emails? Value. http://t.co/r8cepRqxlE #assnchat,deluge,Raleigh (Garner/Cleveland) NC,0,1,0.8126518725641098,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3341,'Dangerous' property in downtown Phoenix demolished  http://t.co/hiBDw7d7ja,demolished,"Medford, Oregon",0,1,0.6007614135400632,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3345,5000 year old ring fort to be demolished http://t.co/1PxpoqKTjo,demolished,Kilkenny,0,1,0.5014398370788119,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3389,@samajp32 really needs to tone it down some in the weight room. RT @SoonerSportsTV: Demolition (cont) http://t.co/2o7Eva1cOe,demolition,"ÌÏT: 36.142163,-95.979189",0,1,0.5274071550645296,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3433,Various issues fail to derail homes bid http://t.co/zhsLl7swBh,derail,#MadeInNorthumberland,0,1,0.6578468721711112,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3481,Oh wait I expected to go a totally different route in LS that was derailed by another barely passing grade in a required course. Super.,derailed,,0,1,0.5822400081522568,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3756,Russian authorities to take account of petition against destruction of sanctioned food: Vladimir Putin's press... http://t.co/QbMcSJaVt0,destruction,New York NYC,0,1,0.5213566500765267,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3788,@Bonn1eGreer The Angel of History propelled into the future by the winds of progress leaves in its wake piles of death and destruction. WB,destruction,London,0,1,0.6330215005000125,raw_text_tfidf_logistic_regression,ticket_1_baseline
+3997,Currently Blasting #Benediction - #SanelessTheory -on Metal Devastation Radio-  http://t.co/siGeeQ42cZ,devastation,Jackson TN,0,1,0.5941488019688891,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4003,I'm a disaster?? https://t.co/VCV73BUaCZ,disaster,Portoviejo-Manabi-Ecuador,0,1,0.6778952503407988,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4029,I'm setting myself up for disaster,disaster,,0,1,0.519370717520345,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4041,The @rbcinsurance quote website = disaster. Tried 3 browsers &amp; 3 machines. Always get 'Missing Info' error due to a non-existant drop down.,disaster,"Calgary, AB",0,1,0.5175290397673863,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4043,DISASTER AVERTED: Police kill gunman with Û÷hoax deviceÛª atåÊcinema http://t.co/5NG0FzpVdS,disaster,USA ,0,1,0.7368032126750071,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4083,Displaced Persons GN (2014 Image) #1-1ST NM http://t.co/yEJt18sbm0 http://t.co/RcqacN91bE,displaced,,0,1,0.5868930224671466,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4127,Pizza drought is over I just couldn't anymore...,drought,Meereen ,0,1,0.5716169016567788,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4262,#ICYMI #Annoucement from Al Jackson... http://t.co/7BevuJE5eP,drowning,"Hendersonville, NC",0,1,0.6200067632318984,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4292,Drowning in Actavis suicide,drowning,Pittsburgh ,0,1,0.8359529991543071,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4334,@LegacyOfTheSith @SagaciousSaber @Lordofbetrayal Moved in a crescent formation small trails of dust left in their wake as they moved.,dust%20storm,The Harbinger.,0,1,0.6917916271320594,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4666,@FNAF_TalkMC *stands there engulfed in the fire smiling*,engulfed,,0,1,0.6339212631540985,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4691,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5803898272227491,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4798,Ahrar Al Sham: In our negotiations with Iran over Al Zabadani they wanted all Sunnis evacuated out of Al Zabadani!,evacuated,,0,1,0.5831259313225206,raw_text_tfidf_logistic_regression,ticket_1_baseline
+4989,"#cum explosion!
+
+@begforcum 
+@allday_cumshots 
+@cumcovered 
+@sexycumshots 
+@Cumtown
+@BJ_Nutt
+@cumslut_2
+@GirlsLoveCum http://t.co/2CX1yjjoZ9",explosion,,0,1,0.6415343312345778,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5013,Remembering Pittsburgh Eyewitness History of Steel City by Len Barcousky PB Penn http://t.co/dhGAVw8bSW http://t.co/0lMhEAEX9k,eyewitness,,0,1,0.6684483950019406,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5041,"Aug. 06 2015 Radio Show articles ÛÒ  
+1] Eyewitness Account of Abortion Organ Harvesting by Planned Parenthood: http://t.co/49izkbOHri",eyewitness,Los Angeles... CA... USA,0,1,0.527140461662334,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5126,@ChrisDanielShow Nearly-Fatal Pee in San Francisco http://t.co/1tvlFrhm1m,fatal,"Fresno, CA",0,1,0.7785047451814657,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5198,Uber reduces drunk driving fatalities says independent study http://t.co/jVIVT6zrv7,fatalities,Vancouver BC,0,1,0.5252906943802406,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5313,Morganite Gemstone White Fire Opal 925 Sterling Silver Ring Size 6 R1354 http://t.co/hHpVSAtQXN http://t.co/D12r8XpShy,fire,,0,1,0.6334269116865173,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5316,Save the Date! Saturday August 15 2015 is the Salisbury Fire Department Open House at 325 Cypress St 10am to... http://t.co/Oa6B0Z2H6Y,fire,,0,1,0.645753594516055,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5321,http://t.co/iNkuv5DNTX #auction #shoes Retro 5 fire red http://t.co/1cvEGTIZOG,fire,Wrex,0,1,0.6107029209272011,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5326,I See Fire,fire,,0,1,0.5943316053660881,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5342,#news Politifiact: Harry Reid's '30 Percent of Women Served' Planned Parenthood Claim Is a 'Pants on Fire' Lie... http://t.co/bMSeDZOfSV,fire,,0,1,0.5041966732468321,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5392,Toddler Bedding Firetruck Bundle Fire Truck Firefighter Sticker Decals Sign Wall http://t.co/ykuAuOV9jO,fire%20truck,"Tallahassee, FL",0,1,0.5857360581233803,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5446,First Responders Convene for National Summit and Awards on GIS Technology http://t.co/0T9yd557rY #gisuserPR #geoTech,first%20responders,USA,0,1,0.5295470926609558,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5448,York Co. first responders compete to save lives in Û÷Badges for BloodÛª #paramedic #EMS http://t.co/E65V80FCus,first%20responders,,0,1,0.6937545237306864,raw_text_tfidf_logistic_regression,ticket_1_baseline
+5760,Tales of the #trees #deep water loving #Lake Tahoe. And no #forest fires https://t.co/xuhMJ098Lq,forest%20fires,Tips on my blog at,0,1,0.7211877333374538,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6085,Orchid - Sign Of The Witch http://t.co/YtkXwPyIHg,hellfire,Rheinbach / Germany,0,1,0.6891479393717234,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6169,[Latest Post] Bayelsa poll: Tension in Bayelsa as Patience Jonathan plans to hijack APC PDP http://t.co/B2yvLMPepR,hijack,Nigeria,0,1,0.6113347361910154,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6211,Governor allows parole for California school bus hijacker | Fresno Linked Local Network http://t.co/Sww0QsMxVM http://t.co/bcdP4gKokA,hijacker,,0,1,0.7545557605328949,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6220,RT NotExplained: The only known image of infamous hijacker D.B. Cooper. http://t.co/JlzK2HdeTG,hijacker,worldwide,0,1,0.5888021889367216,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6232,Remove the http://t.co/7IEiZ619h0 and Linkury Browser Hijacker http://t.co/tFeaNwhH2h http://t.co/SjicbhzFo4,hijacker,"El Paso, TX",0,1,0.6118569869107265,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6565,@Patricia_Traina any update on the McClain injury from today's practice?#NYG,injury,,0,1,0.649821466241668,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6583,Ngata on injury list at start of practice for Lions http://t.co/Z16DtoQHhG,injury,Baltimore,0,1,0.6634542097597335,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6670,Now Playing: Landslide by Smashing Pumpkins http://t.co/7pQS4rshHb #89X,landslide,Detroit/Windsor,0,1,0.5691276604765169,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6794,Check out this amazing footage of lightning filmed while lifting off from Chicago... http://t.co/AOg5chjmVs http://t.co/cLN2SXzY1Z,lightning,"State College, PA",0,1,0.5298432541927472,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6900,@CarlaChamorros HILLARY A MASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0.70385150806365,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6914,@defendbutera i look like a mass murderer in it,mass%20murderer,,0,1,0.7444720394474659,raw_text_tfidf_logistic_regression,ticket_1_baseline
+6979,Review: Dude Bro Party Massacre III http://t.co/f0WQlobOoy by Patrick BromleyThe title sa  http://t.co/THpBDPdj35,massacre,Cimerak - Pangandaran,0,1,0.5537026033633167,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7061,DFR EP016 Monthly Meltdown - On Dnbheaven 2015.08.06 http://t.co/EjKRf8N8A8 #Drum and Bass #heavy #nasty http://t.co/SPHWE6wFI5,meltdown,Oldenburg // London,0,1,0.7376416667841094,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7112,Army names 10th Mountain units for Iraq Afghanistan deployments (Deeds) http://t.co/N6ZfLXIGvr,military,"Bozeman, Montana",0,1,0.5999406335903392,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7141,Bad News for US: China Russia Bolstering Military Cooperation in Asia / Sputnik International http://t.co/9q9Rk3fOf7 via @SputnikInt,military,highlands&slands scotland,0,1,0.5808091712188427,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7754,Maid charged with stealing Dh30000 from police officer sponsor http://t.co/y35qtVDSOH | https://t.co/qhUJAjCTR5,police,,0,1,0.8074709077648909,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7758,Vinnie Jones goes on the beat with Northumbria Police http://t.co/UP30AQgnLf,police,,0,1,0.6229593699724691,raw_text_tfidf_logistic_regression,ticket_1_baseline
+7793,.@slosheriff: 2 South Gate police officers and 2 Huntington Park officers arrested after child abuse investigation at boot camp,police,Los Angeles ,0,1,0.6349423616286415,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8118,Homeless Man Traveling Across USA With 11 Stray Dogs He Rescued Gets A Helping Hand From Strangers http://t.co/QhfqlUI6RY via @Reshareworthy,rescued,"Philadelphia, Pennsylvania USA",0,1,0.5872281999711092,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8204,http://t.co/cxB55H37jn Rascal Flatts Riot Tour Atlantic City Beach Concert-August 20 2015-2 Tickets http://t.co/H6tyYSGR30,riot,Bossland,0,1,0.5687785214472283,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8252,".@runjewels recently met with the @BBC to discuss race relations in America &amp; the benefits of rioting. #LoveIsLove 
+https://t.co/6Ce1vwOVHs",rioting,NYC,0,1,0.5576492758335981,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8312,China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/3PBFyJx0yA,rubble,Italy,0,1,0.5880094707474097,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8324,I found a diamond in the rubble,rubble,"Chester, IL",0,1,0.5833213781910621,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8341,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/gQskwqZuUl,rubble,"ATLANTA , GEORGIA ",0,1,0.5969379930481674,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8610,'Seismic' Apple TV service to stream 25 channels across all d... http://t.co/zqMtrBKaS0 | https://t.co/YEqq3BZX3g http://t.co/kmVrZaSXY4,seismic,"Lakewood, Tennessee",0,1,0.5323251177217385,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8613,SEISMIC AUDIO SA-15T SA15T Padded Black Speaker COVERS (2) - Qty of 1 = 1 Pair! http://t.co/2jbIbeib9G http://t.co/p5KtaqW5QG,seismic,,0,1,0.5399878147997657,raw_text_tfidf_logistic_regression,ticket_1_baseline
+8970,A Warcraft 3-inspired mode is likely coming to Heroes of the Storm http://t.co/wz55NBYAO3 http://t.co/L7pMDmeJs1 http://t.co/mDP2nI1pQU,storm,,0,1,0.6442094987256475,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9106,she's a suicide bomb,suicide%20bomb,dorito land,0,1,0.6450235216341472,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9486,"Truth...
+https://t.co/k44tL3rfMy
+#News
+#BBC
+#CNN
+#Islam
+#Truth
+#god
+#ISIS
+#terrorism
+#Quran
+#Lies http://t.co/ipT0hoNoTI",terrorism,,0,1,0.6661533272511969,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9524,@BarackObama Senator John McCainÛªs Whoops Moment : Photographed Chilling With ISISÛ_ http://t.co/JNrOMsE1Z2 @acmilan http://t.co/w6Yu7Qs4CV,terrorist,,0,1,0.5020947344449446,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9552,"Generational Û÷British schismÛª over privacy threat of drones http://t.co/dqtMTPqmBR
+  #drones #privacy http://t.co/dMsnYPtscY",threat,"London, UK",0,1,0.7452115568893392,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9555,Purple Heart Vet Finds Jihad Threat on His Car at Mall: ÛÏAll of you Islamaphobe vets... http://t.co/hWnyXXKczz,threat,Everywhere,0,1,0.6180712031742811,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9565,#PlayingNow #BLOODBOUND Seven Angels Media Stream http://t.co/dlY6rUuSqK,thunder,"Enfield, UK",0,1,0.5301524459086168,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9654,Wed 20:30: Mainly cloudy. 60 percent chance of showers this evening with risk of a thunderstorm. Low 10.,thunderstorm,"Lethbridge, AB, Canada",0,1,0.5222872344572975,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9785,trapped in its disappearance,trapped,,0,1,0.6662769252741543,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9833,"Why #Marijuana Is Critical For Research in Treating #PTSD
+
+http://t.co/T6fuAhFp7p 
+#hempoil #cannabis #marijuanaÛ_ http://t.co/RhE7dXM7Ey",trauma,The Jewfnited State,0,1,0.5988033098961797,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9850,"Simmering beneath #NHL good times the league's own concussion issues @PioneerPress
+
+http://t.co/zl7FhUCxHL",trauma,Minneapolis/St. Paul,0,1,0.5830577408126574,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9873,...the kids at the orphanage were obviously not too traumatised. http://t.co/DjA4relcnS,traumatised,,0,1,0.5033300782582192,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9932,Live updates: Boyd gets out of trouble in 5th http://t.co/3ugfpwMY2x via @detroitnews,trouble,"Rochester Hills, MI",0,1,0.5140257619620582,raw_text_tfidf_logistic_regression,ticket_1_baseline
+9935,The trouble in one of Buffett's favorite sectors http://t.co/J4dqPFLMkR,trouble,,0,1,0.6609396189847155,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10110,A look at state actions a year after Ferguson's upheaval http://t.co/GZEkQWzijq,upheaval,Oregon,0,1,0.7436124080019756,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10113,A look at state actions a year after FergusonÛªs upheaval  http://t.co/G5ZsRU0zVQ,upheaval,,0,1,0.7350029290175963,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10124,A look at state actions a year after Ferguson's upheaval http://t.co/TBQsqtmqV4,upheaval,Oregon,0,1,0.7436124080019756,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10173,"Violent Forces Radio: Now Playing Agony - Storm of the apocalypse
+TuneIn Player @ http://t.co/XsSgEdSbH4",violent%20storm,Worldwide,0,1,0.6908914461942682,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10193,I think that none of us know the impact we have on the lives of those around us. Even the slightest stirring can create a violent storm.,violent%20storm,"Newcastle, OK",0,1,0.6023111481275133,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10342,Weapons stolen from National Guard Armory in New Albany still missing #Gunsense http://t.co/lKNU8902JE,weapons,"GrC Founder, 8,000 Subscribers",0,1,0.5347787048534776,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10360,Mere sight of a gun makes police ÛÒ and public ÛÒ more aggressive experts say http://t.co/N4NEUIyt2k,weapons,N. California USA,0,1,0.6233155148660445,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10402,PawSox owners public return from whirlwind trip to Durham - Knoxville News Sentinel http://t.co/9ckggGYvOU http://t.co/u0vdBrXfia,whirlwind,World,0,1,0.6011875773172791,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10584,Texas Seeks Comment on Rules for Changes to Windstorm Insurer http://t.co/XQIadG9H2w http://t.co/yPEElMjdZY,windstorm,,0,1,0.5097794165921193,raw_text_tfidf_logistic_regression,ticket_1_baseline
+10650,RT @DianneG: Gunshot wound #9 is in the bicep. only 1 of the 10 wounds that is not in the chest/torso area.  #KerrickTrial #JonathanFerrell,wounds,Earth,0,1,0.5135152929310537,raw_text_tfidf_logistic_regression,ticket_1_baseline

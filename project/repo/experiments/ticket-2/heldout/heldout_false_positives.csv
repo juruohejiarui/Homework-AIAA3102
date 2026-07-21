@@ -1,0 +1,134 @@
+id,text,keyword,location,y_true,y_pred,score,model_name,ticket
+117,"mom: 'we didn't get home as fast as we wished' 
+me: 'why is that?'
+mom: 'there was an accident and some truck spilt mayonnaise all over ??????",accident,,0,1,0.5065244834949502,normalize_urls_placeholder,ticket_2_normalization
+198,@crobscarla your lifetime odds of dying from an airplane accident are 1 in 8015.,airplane%20accident,"Salt Lake City, Utah",0,1,0.7204739126403519,normalize_urls_placeholder,ticket_2_normalization
+303,Be annihilated for status education mba on behalf of a on easy street careen: eOvm http://t.co/e0pI0c54FF,annihilated,,0,1,0.5378595128565363,normalize_urls_placeholder,ticket_2_normalization
+520,".: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: .: RT DrAyesha4: #IndiaKoMunTorJawabDo
+
+Indian Army kiÛ_ http://t.co/WJLJq3yA4g",army,Pakistan,0,1,0.5708250622359383,normalize_urls_placeholder,ticket_2_normalization
+546,Two Jewish Terrorists Charged In Historic-Church Arson | The Ugly Truth http://t.co/iEksNFSbY7 http://t.co/VWCf3slkrW,arson,,0,1,0.8092726133786037,normalize_urls_placeholder,ticket_2_normalization
+783,.@bigperm28 was drafted by the @Avalanche in 2005 (rd. 4 #124) overall. Played last season in @UtahGrizz. http://t.co/gPGTAfMKt0,avalanche,"505 W. Maple, Suite 100",0,1,0.6416410742394405,normalize_urls_placeholder,ticket_2_normalization
+868,#BreakingNews http://t.co/gAN14PW9TG FedEx no longer willing to transport research specimens of potential bioterÛ_ http://t.co/5n4hUsewLy,bioterror,Across the Atlantic,0,1,0.5653179172614402,normalize_urls_placeholder,ticket_2_normalization
+878,Biolab safety concerns grow: FedEx stops transporting certain specimens. Research facilities 'dumbfounded' by action. http://t.co/RUjV4VPnBV,bioterror,"Washington, D.C., area",0,1,0.5426657887614044,normalize_urls_placeholder,ticket_2_normalization
+1272,@Anthxvy runs in the blood,blood,"Ewa Beach, HI",0,1,0.5159275234732433,normalize_urls_placeholder,ticket_2_normalization
+1488,The Body Bags has a show on 08/07/2015 at 07:30 PM @ Tremont Music Hall in Charlotte NC http://t.co/FpKiqbus9r #concert,body%20bags,Charlotte NC,0,1,0.5090372384815285,normalize_urls_placeholder,ticket_2_normalization
+1599,@QPR1980 @Rorington95 Nowt to do with money. Fergie bombed out the big drinkers at United within years of taking over while Wenger,bombed,,0,1,0.5058532901394257,normalize_urls_placeholder,ticket_2_normalization
+1766,saving babies from burning buildings soaking cake in a shit tonne of alcohol mat is a man after my own heart ?? #GBBO,buildings%20burning,"Leeds, England",0,1,0.5775708060233379,normalize_urls_placeholder,ticket_2_normalization
+2134,#spark #song Ultimate #preparedness library: http://t.co/VsGqoLr32g Prepare Yourself For Any Catastrophe. Over http://t.co/p7UhcB13Qx,catastrophe,,0,1,0.5160651662143467,normalize_urls_placeholder,ticket_2_normalization
+2301,ESN :  Cilla Black died of stroke after fall in Spain: Sir Cliff revealed he was due to visit her in Spain nextÛ_ http://t.co/F7a66dIiYK,cliff%20fall,"Madrid, Comunidad de Madrid",0,1,0.6714794942415433,normalize_urls_placeholder,ticket_2_normalization
+2329,Timestack' Photos Collapse Entire Sunsets Into Single Mesmerizing Images. http://t.co/Cas8xC2DFE,collapse,"San Jose, California",0,1,0.500562471109924,normalize_urls_placeholder,ticket_2_normalization
+2336,SA MP. Steel and ferrochrome industry on verge of collapse. You don't even put that on list of questions to president for oral answer,collapse,"Sandton, South Africa",0,1,0.5368651910398966,normalize_urls_placeholder,ticket_2_normalization
+2351,åÈMGN-AFRICAå¨ pin:263789F4 åÈ Correction: Tent Collapse Story: Correction: Tent Collapse story åÈ http://t.co/fDJUYvZMrv @wizkidayo,collapse,Worldwide.,0,1,0.5832853916744579,normalize_urls_placeholder,ticket_2_normalization
+2569,am boy @Crash_______  https://t.co/f5Ylp7pfN7,crash,"Cleveland, OH",0,1,0.5080136274348254,normalize_urls_placeholder,ticket_2_normalization
+2844,"Some drugs and alcohol in Jackson Vroman house.
+
+http://t.co/5OQhQ8QUQV",cyclone,Vilnius,0,1,0.6133863534683591,normalize_urls_placeholder,ticket_2_normalization
+2872,'Mages of Fairy Tail.. Specialize in property damage!' - Natsu Dragneel,damage,Indonesia,0,1,0.6739434499230391,normalize_urls_placeholder,ticket_2_normalization
+3044,Afghan peace talks in doubt after Mullah Omar's death - Financial Times | #Mullah,death,Carry On Jutta!!!,0,1,0.5979311144206892,normalize_urls_placeholder,ticket_2_normalization
+3068,Hear @DrFriedenCDC talk on how to avoid thousands of resistant infections/deaths in next 5 yrs: http://t.co/niV8x5Tbe0 #AdiosSuperBacterias,deaths,"Atlanta, GA",0,1,0.6822302047670072,normalize_urls_placeholder,ticket_2_normalization
+3070,Irony just died a thousand deaths! ???? http://t.co/dBU30ObDxz,deaths,Planet Earth,0,1,0.5322597993587633,normalize_urls_placeholder,ticket_2_normalization
+3197,What's missing in the #asae15 exhibitor emails? Value. http://t.co/r8cepRqxlE #assnchat,deluge,Raleigh (Garner/Cleveland) NC,0,1,0.7515054698830893,normalize_urls_placeholder,ticket_2_normalization
+3341,'Dangerous' property in downtown Phoenix demolished  http://t.co/hiBDw7d7ja,demolished,"Medford, Oregon",0,1,0.5586497636189808,normalize_urls_placeholder,ticket_2_normalization
+3433,Various issues fail to derail homes bid http://t.co/zhsLl7swBh,derail,#MadeInNorthumberland,0,1,0.6212139676063888,normalize_urls_placeholder,ticket_2_normalization
+3481,Oh wait I expected to go a totally different route in LS that was derailed by another barely passing grade in a required course. Super.,derailed,,0,1,0.5858749860071524,normalize_urls_placeholder,ticket_2_normalization
+3756,Russian authorities to take account of petition against destruction of sanctioned food: Vladimir Putin's press... http://t.co/QbMcSJaVt0,destruction,New York NYC,0,1,0.5077700262216019,normalize_urls_placeholder,ticket_2_normalization
+3788,@Bonn1eGreer The Angel of History propelled into the future by the winds of progress leaves in its wake piles of death and destruction. WB,destruction,London,0,1,0.6376270365683671,normalize_urls_placeholder,ticket_2_normalization
+3997,Currently Blasting #Benediction - #SanelessTheory -on Metal Devastation Radio-  http://t.co/siGeeQ42cZ,devastation,Jackson TN,0,1,0.5407112467909778,normalize_urls_placeholder,ticket_2_normalization
+4003,I'm a disaster?? https://t.co/VCV73BUaCZ,disaster,Portoviejo-Manabi-Ecuador,0,1,0.8972933151542275,normalize_urls_placeholder,ticket_2_normalization
+4029,I'm setting myself up for disaster,disaster,,0,1,0.5293421402151027,normalize_urls_placeholder,ticket_2_normalization
+4041,The @rbcinsurance quote website = disaster. Tried 3 browsers &amp; 3 machines. Always get 'Missing Info' error due to a non-existant drop down.,disaster,"Calgary, AB",0,1,0.5275996105856746,normalize_urls_placeholder,ticket_2_normalization
+4043,DISASTER AVERTED: Police kill gunman with Û÷hoax deviceÛª atåÊcinema http://t.co/5NG0FzpVdS,disaster,USA ,0,1,0.7205102426218418,normalize_urls_placeholder,ticket_2_normalization
+4083,Displaced Persons GN (2014 Image) #1-1ST NM http://t.co/yEJt18sbm0 http://t.co/RcqacN91bE,displaced,,0,1,0.5260096100428915,normalize_urls_placeholder,ticket_2_normalization
+4127,Pizza drought is over I just couldn't anymore...,drought,Meereen ,0,1,0.5783770346332219,normalize_urls_placeholder,ticket_2_normalization
+4262,#ICYMI #Annoucement from Al Jackson... http://t.co/7BevuJE5eP,drowning,"Hendersonville, NC",0,1,0.5621786826490262,normalize_urls_placeholder,ticket_2_normalization
+4292,Drowning in Actavis suicide,drowning,Pittsburgh ,0,1,0.8419276666563004,normalize_urls_placeholder,ticket_2_normalization
+4334,@LegacyOfTheSith @SagaciousSaber @Lordofbetrayal Moved in a crescent formation small trails of dust left in their wake as they moved.,dust%20storm,The Harbinger.,0,1,0.7005912239842833,normalize_urls_placeholder,ticket_2_normalization
+4666,@FNAF_TalkMC *stands there engulfed in the fire smiling*,engulfed,,0,1,0.6243014153268672,normalize_urls_placeholder,ticket_2_normalization
+4691,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5884033850611284,normalize_urls_placeholder,ticket_2_normalization
+4798,Ahrar Al Sham: In our negotiations with Iran over Al Zabadani they wanted all Sunnis evacuated out of Al Zabadani!,evacuated,,0,1,0.5903394764533175,normalize_urls_placeholder,ticket_2_normalization
+4989,"#cum explosion!
+
+@begforcum 
+@allday_cumshots 
+@cumcovered 
+@sexycumshots 
+@Cumtown
+@BJ_Nutt
+@cumslut_2
+@GirlsLoveCum http://t.co/2CX1yjjoZ9",explosion,,0,1,0.5778610394837421,normalize_urls_placeholder,ticket_2_normalization
+5013,Remembering Pittsburgh Eyewitness History of Steel City by Len Barcousky PB Penn http://t.co/dhGAVw8bSW http://t.co/0lMhEAEX9k,eyewitness,,0,1,0.6015759058030186,normalize_urls_placeholder,ticket_2_normalization
+5041,"Aug. 06 2015 Radio Show articles ÛÒ  
+1] Eyewitness Account of Abortion Organ Harvesting by Planned Parenthood: http://t.co/49izkbOHri",eyewitness,Los Angeles... CA... USA,0,1,0.5185826397202452,normalize_urls_placeholder,ticket_2_normalization
+5126,@ChrisDanielShow Nearly-Fatal Pee in San Francisco http://t.co/1tvlFrhm1m,fatal,"Fresno, CA",0,1,0.7341806680789121,normalize_urls_placeholder,ticket_2_normalization
+5198,Uber reduces drunk driving fatalities says independent study http://t.co/jVIVT6zrv7,fatalities,Vancouver BC,0,1,0.5087845877478717,normalize_urls_placeholder,ticket_2_normalization
+5313,Morganite Gemstone White Fire Opal 925 Sterling Silver Ring Size 6 R1354 http://t.co/hHpVSAtQXN http://t.co/D12r8XpShy,fire,,0,1,0.5372471243193802,normalize_urls_placeholder,ticket_2_normalization
+5316,Save the Date! Saturday August 15 2015 is the Salisbury Fire Department Open House at 325 Cypress St 10am to... http://t.co/Oa6B0Z2H6Y,fire,,0,1,0.6071997837890044,normalize_urls_placeholder,ticket_2_normalization
+5321,http://t.co/iNkuv5DNTX #auction #shoes Retro 5 fire red http://t.co/1cvEGTIZOG,fire,Wrex,0,1,0.5105005056432823,normalize_urls_placeholder,ticket_2_normalization
+5326,I See Fire,fire,,0,1,0.5810163823846295,normalize_urls_placeholder,ticket_2_normalization
+5392,Toddler Bedding Firetruck Bundle Fire Truck Firefighter Sticker Decals Sign Wall http://t.co/ykuAuOV9jO,fire%20truck,"Tallahassee, FL",0,1,0.5402501677987356,normalize_urls_placeholder,ticket_2_normalization
+5448,York Co. first responders compete to save lives in Û÷Badges for BloodÛª #paramedic #EMS http://t.co/E65V80FCus,first%20responders,,0,1,0.6535018402999443,normalize_urls_placeholder,ticket_2_normalization
+5760,Tales of the #trees #deep water loving #Lake Tahoe. And no #forest fires https://t.co/xuhMJ098Lq,forest%20fires,Tips on my blog at,0,1,0.7841575861367258,normalize_urls_placeholder,ticket_2_normalization
+6085,Orchid - Sign Of The Witch http://t.co/YtkXwPyIHg,hellfire,Rheinbach / Germany,0,1,0.5965325142298361,normalize_urls_placeholder,ticket_2_normalization
+6169,[Latest Post] Bayelsa poll: Tension in Bayelsa as Patience Jonathan plans to hijack APC PDP http://t.co/B2yvLMPepR,hijack,Nigeria,0,1,0.6065581254507436,normalize_urls_placeholder,ticket_2_normalization
+6211,Governor allows parole for California school bus hijacker | Fresno Linked Local Network http://t.co/Sww0QsMxVM http://t.co/bcdP4gKokA,hijacker,,0,1,0.7174437565044255,normalize_urls_placeholder,ticket_2_normalization
+6220,RT NotExplained: The only known image of infamous hijacker D.B. Cooper. http://t.co/JlzK2HdeTG,hijacker,worldwide,0,1,0.5627136935160675,normalize_urls_placeholder,ticket_2_normalization
+6565,@Patricia_Traina any update on the McClain injury from today's practice?#NYG,injury,,0,1,0.6584019421433509,normalize_urls_placeholder,ticket_2_normalization
+6583,Ngata on injury list at start of practice for Lions http://t.co/Z16DtoQHhG,injury,Baltimore,0,1,0.6235198736340579,normalize_urls_placeholder,ticket_2_normalization
+6900,@CarlaChamorros HILLARY A MASS MURDERER.,mass%20murderer,"Haysville, KS",0,1,0.7093858775884647,normalize_urls_placeholder,ticket_2_normalization
+6914,@defendbutera i look like a mass murderer in it,mass%20murderer,,0,1,0.7506437166161174,normalize_urls_placeholder,ticket_2_normalization
+7061,DFR EP016 Monthly Meltdown - On Dnbheaven 2015.08.06 http://t.co/EjKRf8N8A8 #Drum and Bass #heavy #nasty http://t.co/SPHWE6wFI5,meltdown,Oldenburg // London,0,1,0.6657822541571923,normalize_urls_placeholder,ticket_2_normalization
+7112,Army names 10th Mountain units for Iraq Afghanistan deployments (Deeds) http://t.co/N6ZfLXIGvr,military,"Bozeman, Montana",0,1,0.5763404234891911,normalize_urls_placeholder,ticket_2_normalization
+7141,Bad News for US: China Russia Bolstering Military Cooperation in Asia / Sputnik International http://t.co/9q9Rk3fOf7 via @SputnikInt,military,highlands&slands scotland,0,1,0.5485475751750064,normalize_urls_placeholder,ticket_2_normalization
+7332,A little filming inside a Nuclear Reactor at #Chernobyl @SonyProUSA @LumixUSA @DJIGlobal @ProfBrianCox @RT_America https://t.co/2GLjhvEAD9,nuclear%20reactor,"Denver, CO",0,1,0.5431035983770478,normalize_urls_placeholder,ticket_2_normalization
+7754,Maid charged with stealing Dh30000 from police officer sponsor http://t.co/y35qtVDSOH | https://t.co/qhUJAjCTR5,police,,0,1,0.845498541958819,normalize_urls_placeholder,ticket_2_normalization
+7758,Vinnie Jones goes on the beat with Northumbria Police http://t.co/UP30AQgnLf,police,,0,1,0.5721408415334579,normalize_urls_placeholder,ticket_2_normalization
+7793,.@slosheriff: 2 South Gate police officers and 2 Huntington Park officers arrested after child abuse investigation at boot camp,police,Los Angeles ,0,1,0.6500344094454025,normalize_urls_placeholder,ticket_2_normalization
+7908,"#CCOT #TCOT #radiation Nuclear Emergency Tracking Center
+http://t.co/KF74o2mcsC
+https://t.co/N2ZHrChCGV",radiation%20emergency,#MayGodHelpUS,0,1,0.5341274058638577,normalize_urls_placeholder,ticket_2_normalization
+8118,Homeless Man Traveling Across USA With 11 Stray Dogs He Rescued Gets A Helping Hand From Strangers http://t.co/QhfqlUI6RY via @Reshareworthy,rescued,"Philadelphia, Pennsylvania USA",0,1,0.5679008891150297,normalize_urls_placeholder,ticket_2_normalization
+8252,".@runjewels recently met with the @BBC to discuss race relations in America &amp; the benefits of rioting. #LoveIsLove 
+https://t.co/6Ce1vwOVHs",rioting,NYC,0,1,0.628823420129639,normalize_urls_placeholder,ticket_2_normalization
+8312,China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/3PBFyJx0yA,rubble,Italy,0,1,0.5410545983819136,normalize_urls_placeholder,ticket_2_normalization
+8324,I found a diamond in the rubble,rubble,"Chester, IL",0,1,0.5888805539888078,normalize_urls_placeholder,ticket_2_normalization
+8341,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/gQskwqZuUl,rubble,"ATLANTA , GEORGIA ",0,1,0.5614423516000357,normalize_urls_placeholder,ticket_2_normalization
+8610,'Seismic' Apple TV service to stream 25 channels across all d... http://t.co/zqMtrBKaS0 | https://t.co/YEqq3BZX3g http://t.co/kmVrZaSXY4,seismic,"Lakewood, Tennessee",0,1,0.5297984243689284,normalize_urls_placeholder,ticket_2_normalization
+8970,A Warcraft 3-inspired mode is likely coming to Heroes of the Storm http://t.co/wz55NBYAO3 http://t.co/L7pMDmeJs1 http://t.co/mDP2nI1pQU,storm,,0,1,0.523260494606452,normalize_urls_placeholder,ticket_2_normalization
+9106,she's a suicide bomb,suicide%20bomb,dorito land,0,1,0.6607490926056812,normalize_urls_placeholder,ticket_2_normalization
+9486,"Truth...
+https://t.co/k44tL3rfMy
+#News
+#BBC
+#CNN
+#Islam
+#Truth
+#god
+#ISIS
+#terrorism
+#Quran
+#Lies http://t.co/ipT0hoNoTI",terrorism,,0,1,0.6769658333363868,normalize_urls_placeholder,ticket_2_normalization
+9552,"Generational Û÷British schismÛª over privacy threat of drones http://t.co/dqtMTPqmBR
+  #drones #privacy http://t.co/dMsnYPtscY",threat,"London, UK",0,1,0.7036125073343961,normalize_urls_placeholder,ticket_2_normalization
+9555,Purple Heart Vet Finds Jihad Threat on His Car at Mall: ÛÏAll of you Islamaphobe vets... http://t.co/hWnyXXKczz,threat,Everywhere,0,1,0.594256340276976,normalize_urls_placeholder,ticket_2_normalization
+9654,Wed 20:30: Mainly cloudy. 60 percent chance of showers this evening with risk of a thunderstorm. Low 10.,thunderstorm,"Lethbridge, AB, Canada",0,1,0.5385913558641205,normalize_urls_placeholder,ticket_2_normalization
+9785,trapped in its disappearance,trapped,,0,1,0.6772845562985063,normalize_urls_placeholder,ticket_2_normalization
+9833,"Why #Marijuana Is Critical For Research in Treating #PTSD
+
+http://t.co/T6fuAhFp7p 
+#hempoil #cannabis #marijuanaÛ_ http://t.co/RhE7dXM7Ey",trauma,The Jewfnited State,0,1,0.5451412659928725,normalize_urls_placeholder,ticket_2_normalization
+9850,"Simmering beneath #NHL good times the league's own concussion issues @PioneerPress
+
+http://t.co/zl7FhUCxHL",trauma,Minneapolis/St. Paul,0,1,0.5534704347388009,normalize_urls_placeholder,ticket_2_normalization
+9935,The trouble in one of Buffett's favorite sectors http://t.co/J4dqPFLMkR,trouble,,0,1,0.6114338569290884,normalize_urls_placeholder,ticket_2_normalization
+10110,A look at state actions a year after Ferguson's upheaval http://t.co/GZEkQWzijq,upheaval,Oregon,0,1,0.723234505516458,normalize_urls_placeholder,ticket_2_normalization
+10113,A look at state actions a year after FergusonÛªs upheaval  http://t.co/G5ZsRU0zVQ,upheaval,,0,1,0.7169074088707172,normalize_urls_placeholder,ticket_2_normalization
+10124,A look at state actions a year after Ferguson's upheaval http://t.co/TBQsqtmqV4,upheaval,Oregon,0,1,0.723234505516458,normalize_urls_placeholder,ticket_2_normalization
+10173,"Violent Forces Radio: Now Playing Agony - Storm of the apocalypse
+TuneIn Player @ http://t.co/XsSgEdSbH4",violent%20storm,Worldwide,0,1,0.6832400694962791,normalize_urls_placeholder,ticket_2_normalization
+10193,I think that none of us know the impact we have on the lives of those around us. Even the slightest stirring can create a violent storm.,violent%20storm,"Newcastle, OK",0,1,0.599775664319041,normalize_urls_placeholder,ticket_2_normalization
+10243,The Architect Behind Kanye WestÛªs Volcano https://t.co/MUSBIk7EJf,volcano,"West Coast, Cali USA",0,1,0.5348145229354221,normalize_urls_placeholder,ticket_2_normalization
+10342,Weapons stolen from National Guard Armory in New Albany still missing #Gunsense http://t.co/lKNU8902JE,weapons,"GrC Founder, 8,000 Subscribers",0,1,0.5042242199256298,normalize_urls_placeholder,ticket_2_normalization
+10360,Mere sight of a gun makes police ÛÒ and public ÛÒ more aggressive experts say http://t.co/N4NEUIyt2k,weapons,N. California USA,0,1,0.6098991973456539,normalize_urls_placeholder,ticket_2_normalization
+10402,PawSox owners public return from whirlwind trip to Durham - Knoxville News Sentinel http://t.co/9ckggGYvOU http://t.co/u0vdBrXfia,whirlwind,World,0,1,0.526092183569375,normalize_urls_placeholder,ticket_2_normalization
+10650,RT @DianneG: Gunshot wound #9 is in the bicep. only 1 of the 10 wounds that is not in the chest/torso area.  #KerrickTrial #JonathanFerrell,wounds,Earth,0,1,0.5208075328458328,normalize_urls_placeholder,ticket_2_normalization

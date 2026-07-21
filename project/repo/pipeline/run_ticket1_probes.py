@@ -31,14 +31,52 @@ DEFAULT_PLAN_PATH = PROJECT_ROOT / "experiments" / "ticket-1" / "probes" / "prob
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "experiments" / "ticket-1" / "probes"
 
 PROBES: tuple[dict[str, Any], ...] = (
-    {"name": "tfidf_lowercase_false", "tfidf": {"lowercase": False}},
-    {"name": "tfidf_word_bigrams", "tfidf": {"ngram_range": (1, 2)}},
-    {"name": "logreg_solver_liblinear", "logreg": {"solver": "liblinear"}},
-    {"name": "logreg_c_0_5", "logreg": {"C": 0.5}},
-    {"name": "logreg_max_iter_1000", "logreg": {"max_iter": 1000}},
-    {"name": "logreg_class_weight_balanced", "logreg": {"class_weight": "balanced"}},
-    {"name": "logreg_seed_9999", "logreg": {"random_state": 9999}},
-    {"name": "logreg_explicit_l2", "logreg": {"penalty": "l2"}},
+    # -- TF-IDF: n-gram range -----------------------------------------------
+    {"name": "unigrams_only",              "tfidf": {"ngram_range": (1, 1)}},
+    {"name": "tfidf_word_bigrams",         "tfidf": {"ngram_range": (1, 2)}},
+    {"name": "trigrams_added",             "tfidf": {"ngram_range": (1, 3)}},
+    # -- TF-IDF: term weighting ---------------------------------------------
+    {"name": "no_sublinear_tf",            "tfidf": {"sublinear_tf": False}},
+    # -- TF-IDF: vocabulary size --------------------------------------------
+    {"name": "max_features_20000",         "tfidf": {"max_features": 20000}},
+    {"name": "max_features_unbounded",     "tfidf": {"max_features": None}},
+    # -- TF-IDF: document-frequency cutoffs ---------------------------------
+    {"name": "min_df_2",                   "tfidf": {"min_df": 2}},
+    {"name": "min_df_3",                   "tfidf": {"min_df": 3}},
+    {"name": "min_df_5",                   "tfidf": {"min_df": 5}},
+    {"name": "max_df_0_9",                 "tfidf": {"max_df": 0.9}},
+    # -- TF-IDF: IDF weighting ----------------------------------------------
+    {"name": "no_idf",                     "tfidf": {"use_idf": False}},
+    {"name": "no_smooth_idf",              "tfidf": {"smooth_idf": False}},
+    # -- TF-IDF: vector normalisation ---------------------------------------
+    {"name": "l1_normalization",           "tfidf": {"norm": "l1"}},
+    {"name": "no_vector_normalization",    "tfidf": {"norm": None}},
+    # -- TF-IDF: tokenisation -----------------------------------------------
+    {"name": "unicode_accents",            "tfidf": {"strip_accents": "unicode"}},
+    {"name": "single_character_tokens",    "tfidf": {"token_pattern": r"(?u)\b\w+\b"}},
+    # -- TF-IDF: casing (preserve_case == lowercase=False) ------------------
+    {"name": "tfidf_lowercase_false",      "tfidf": {"lowercase": False}},
+    # -- LogReg: regularisation strength ------------------------------------
+    {"name": "c_0_1",                      "logreg": {"C": 0.1}},
+    {"name": "c_0_25",                     "logreg": {"C": 0.25}},
+    {"name": "c_0_5",                      "logreg": {"C": 0.5}},
+    {"name": "c_2",                        "logreg": {"C": 2.0}},
+    {"name": "c_4",                        "logreg": {"C": 4.0}},
+    {"name": "c_10",                       "logreg": {"C": 10.0}},
+    # -- LogReg: class weighting --------------------------------------------
+    {"name": "balanced_classes",           "logreg": {"class_weight": "balanced"}},
+    # -- LogReg: solver -----------------------------------------------------
+    {"name": "logreg_solver_liblinear",    "logreg": {"solver": "liblinear"}},
+    {"name": "lbfgs_solver",               "logreg": {"solver": "lbfgs"}},
+    # -- LogReg: convergence ------------------------------------------------
+    {"name": "logreg_max_iter_1000",       "logreg": {"max_iter": 1000}},
+    # -- LogReg: random seed ------------------------------------------------
+    {"name": "seed_1",                     "logreg": {"random_state": 1}},
+    {"name": "seed_42",                    "logreg": {"random_state": 42}},
+    {"name": "logreg_seed_9999",           "logreg": {"random_state": 9999}},
+    # -- LogReg: penalty representation -------------------------------------
+    {"name": "logreg_explicit_l2",         "logreg": {"penalty": "l2"}},
+    # -- Leakage diagnostic -------------------------------------------------
     {"name": "leaky_tfidf_train_plus_dev", "special": "leaky"},
 )
 

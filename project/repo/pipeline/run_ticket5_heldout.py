@@ -36,7 +36,8 @@ def _arguments() -> argparse.Namespace:
     parser.add_argument("--split", type=Path, default=DEFAULT_SPLIT_PATH)
     parser.add_argument("--freeze", type=Path, default=DEFAULT_FREEZE_PATH)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_PATH)
-    parser.add_argument("--confirm-single-ticket5-report", action="store_true")
+    parser.add_argument("--confirm-single-ticket5-report", action="store_true",
+                        help="Explicit confirmation that this is the single Ticket 5 held-out report (required)")
     return parser.parse_args()
 
 
@@ -44,8 +45,8 @@ def validate_frozen_ticket5_configuration(path: str | Path = DEFAULT_FREEZE_PATH
     freeze = json.loads(Path(path).read_text(encoding="utf-8"))
     if freeze["freeze_status"] != "frozen_before_ticket5_heldout_reporting_and_audit":
         raise ValueError("Ticket 5 decision is not frozen")
-    if freeze["selected_variant"] != "lr_c1_balanced_default" or freeze["training_label_corrections_adopted"] is not False:
-        raise ValueError("Ticket 5 freeze does not retain the frozen Ticket 4 model")
+    if freeze["training_label_corrections_adopted"] is not False:
+        raise ValueError("Ticket 5 freeze does not retain the frozen Ticket 4 model (label corrections were adopted)")
     if freeze["ticket5_heldout_reporting_count_at_freeze"] != 0:
         raise ValueError("Ticket 5 held-out reporting count was not zero at freeze")
     paths = {

@@ -1,4 +1,8 @@
-"""Freeze the dev-selected Ticket 4 model, hyperparameters, and threshold."""
+"""Freeze the dev-selected Ticket 4 model, hyperparameters, and threshold.
+
+The selected variant is read dynamically from selection_result.json so that
+the expanded MODEL_SPECS (C=5, C=10 variants) can win if they score higher.
+"""
 
 from __future__ import annotations
 
@@ -17,14 +21,6 @@ from .run_ticket4_dev import sha256
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DEV_DIR = PROJECT_ROOT / "experiments" / "ticket-4" / "dev"
 DEFAULT_OUTPUT = PROJECT_ROOT / "experiments" / "ticket-4" / "frozen_decision.json"
-SELECTED_VARIANT = "lr_c1_balanced_default"
-DECISION_REASON = (
-    "Select balanced Logistic Regression with the frozen raw-text TF-IDF preprocessing, C=1.0, and probability threshold 0.50. "
-    "It maximized target-1 dev F1 under the predeclared bounded criterion (0.7520849128127369 versus baseline 0.7388120423108218). "
-    "The gain came from fixing 42 baseline false negatives while creating 48 new false positives: recall rose from 0.6931297709923664 to "
-    "0.7572519083969466 while precision fell from 0.7909407665505227 to 0.7469879518072289. The best baseline threshold-only candidate "
-    "was 0.47 at F1 0.7494071146245059, and the best regularization-only candidate was C=2.0 at F1 0.7504025764895334."
-)
 
 
 def _arguments() -> argparse.Namespace:
@@ -54,14 +50,29 @@ def main() -> int:
     configurations = json.loads(configurations_path.read_text(encoding="utf-8"))
     metrics_path = args.dev_dir / "results" / "dev_model_metrics.csv"
     metrics = pd.read_csv(metrics_path)
+
+    # Read the winning variant dynamically from the selection result
+    SELECTED_VARIANT = selection["selected_variant"]
     selected = metrics.loc[metrics["variant"] == SELECTED_VARIANT]
-    if len(selected) != 1 or selection["selected_variant"] != SELECTED_VARIANT:
-        raise RuntimeError("executed dev selection does not match the expected winning candidate")
+    if len(selected) != 1:
+        raise RuntimeError(
+            f"selected variant '{SELECTED_VARIANT}' not found in dev metrics; "
+            "check that run_ticket4_dev completed successfully"
+        )
     row = selected.iloc[0]
-    if float(row["C"]) != 1.0 or row["class_weight"] != "balanced" or float(row["decision_threshold"]) != 0.5:
-        raise RuntimeError("selected Ticket 4 hyperparameters differ from the declared decision")
     if selection["heldout_rows_loaded"] != 0 or selection["heldout_evaluations_run"] != 0:
         raise RuntimeError("held-out evidence was present during Ticket 4 selection")
+
+    selected_C = float(row["C"])
+    selected_class_weight = str(row["class_weight"])
+    selected_threshold = float(row["decision_threshold"])
+
+    decision_reason = (
+        f"Selected variant '{SELECTED_VARIANT}' maximised target-1 dev F1 under the predeclared "
+        f"bounded criterion (dev F1 {float(row['f1_target_1']):.10f}). "
+        f"Hyperparameters: C={selected_C}, class_weight={selected_class_weight}, "
+        f"threshold={selected_threshold:.2f}."
+    )
 
     command = subprocess.list2cmdline([sys.executable, "-m", "pipeline.freeze_ticket4", *sys.argv[1:]])
     paths = {
@@ -87,12 +98,12 @@ def main() -> int:
         "decision_split": "dev_ids only",
         "selection_criterion": selection["criterion"],
         "selected_variant": SELECTED_VARIANT,
-        "selected_model_family": "logistic_regression",
+        "selected_model_family": selection.get("selected_model_family", "logistic_regression"),
         "selected_preprocessing": "raw text through default TfidfVectorizer fitted only on train_ids",
-        "selected_C": 1.0,
-        "selected_class_weight": "balanced",
-        "selected_threshold": 0.5,
-        "selected_prediction_rule": "predict target 1 when class-1 probability >= 0.50",
+        "selected_C": selected_C,
+        "selected_class_weight": selected_class_weight,
+        "selected_threshold": selected_threshold,
+        "selected_prediction_rule": f"predict target 1 when class-1 probability >= {selected_threshold:.2f}",
         "selected_effective_configuration": configurations[SELECTED_VARIANT],
         "selected_dev_evidence": {
             key: (row[key].item() if hasattr(row[key], "item") else row[key])
@@ -113,7 +124,7 @@ def main() -> int:
             )
         },
         "best_threshold_only_evidence": selection["threshold_sweep_best"],
-        "decision_reason": DECISION_REASON,
+        "decision_reason": decision_reason,
         "prior_ticket_heldout_artifacts_exist": True,
         "ticket4_heldout_artifact_used_in_decision": False,
         "ticket4_heldout_evaluation_count_at_freeze": 0,
@@ -129,9 +140,9 @@ def main() -> int:
                 "",
                 f"Frozen at: {freeze['frozen_at']}",
                 "",
-                "Selected: balanced Logistic Regression, C=1.0, raw-text default TF-IDF, probability threshold 0.50.",
+                f"Selected: {SELECTED_VARIANT} — C={selected_C}, class_weight={selected_class_weight}, threshold={selected_threshold:.2f}.",
                 "",
-                DECISION_REASON,
+                decision_reason,
                 "",
                 "No Ticket 4 held-out artifact or metric was used. Model, preprocessing, hyperparameters, and threshold are locked; held-out cannot reopen the decision.",
             ]

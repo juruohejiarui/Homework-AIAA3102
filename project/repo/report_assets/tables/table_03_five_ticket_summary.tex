@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Project-Wide Results Across Five Tickets}
+\label{tab:five_ticket_summary}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrrrr}
+\hline
+ticket & model name & dev f1 & heldout f1 & heldout accuracy & fixed fp & fixed fn & new fp & new fn \\
+\hline
+1 & raw\_text\_tfidf\_logistic\_regression & 0.738812 & 0.749186 & 0.797768 & 0 & 0 & 0 & 0 \\
+2 & normalize\_urls\_placeholder & 0.740313 & 0.753117 & 0.804990 & 22 & 8 & 4 & 15 \\
+3 & raw\_text\_tfidf\_logistic\_regression & 0.738812 & 0.749186 & 0.797768 & 0 & 0 & 0 & 0 \\
+4 & lr\_c1\_balanced\_default & 0.752085 & 0.750569 & 0.783979 & 0 & 35 & 56 & 0 \\
+5 & lr\_c1\_balanced\_default & 0.752085 & 0.750569 & 0.783979 & 0 & 35 & 56 & 0 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{Metrics are recomputed from archived predictions. Transition counts are held-out changes relative to Ticket 1; counts are tweets.}
+\end{table*}

@@ -1,0 +1,11 @@
+scope,relationship_type,groups_or_pairs,member_rows,conflicting_groups_or_pairs,cross_split_groups_or_pairs
+train_plus_dev,exact,50,124,13,19
+train_plus_dev,canonical,214,677,46,98
+train_plus_dev,near,693,538,104,265
+full_with_heldout,exact,69,179,18,41
+full_with_heldout,canonical,292,932,64,194
+full_with_heldout,near,960,715,186,546
+audit_disposition,ambiguous,,15,,
+audit_disposition,fix,,30,,
+audit_disposition,keep_but_flag,,6,,
+audit_disposition,reject_false_positive,,13,,

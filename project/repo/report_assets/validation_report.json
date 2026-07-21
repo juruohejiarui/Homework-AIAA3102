@@ -5,10 +5,10 @@
   "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
   "heldout_labels_modified": false,
   "heldout_rows_removed": 0,
-  "table_count": 14,
-  "figure_count_png": 4,
-  "figure_count_svg": 4,
-  "asset_manifest_rows": 40,
+  "table_count": 15,
+  "figure_count_png": 6,
+  "figure_count_svg": 6,
+  "asset_manifest_rows": 48,
   "checks": [
     {
       "check": "five frozen ticket decisions",
@@ -761,6 +761,51 @@
       "detail": "expected 10, observed 10"
     },
     {
+      "check": "Ticket 1 probe plan count",
+      "status": "PASS",
+      "detail": "probes=32"
+    },
+    {
+      "check": "Ticket 1 probe metric coverage",
+      "status": "PASS",
+      "detail": "rows=33"
+    },
+    {
+      "check": "Ticket 1 held-out probe metric coverage",
+      "status": "PASS",
+      "detail": "rows=33"
+    },
+    {
+      "check": "Ticket 1 discrepancy comparison coverage",
+      "status": "PASS",
+      "detail": "rows=33"
+    },
+    {
+      "check": "Ticket 1 dev comparison ledger matches",
+      "status": "PASS",
+      "detail": "33 dev rows"
+    },
+    {
+      "check": "Ticket 1 held-out comparison ledger matches",
+      "status": "PASS",
+      "detail": "33 held-out rows"
+    },
+    {
+      "check": "Ticket 1 comparison deltas recompute",
+      "status": "PASS",
+      "detail": "baseline-relative F1"
+    },
+    {
+      "check": "Ticket 1 probe labels complete",
+      "status": "PASS",
+      "detail": "all probe names have display labels"
+    },
+    {
+      "check": "table_15_ticket1_dev_probe_ledger row count",
+      "status": "PASS",
+      "detail": "expected 33, observed 33"
+    },
+    {
       "check": "normalization variant count",
       "status": "PASS",
       "detail": "rows=7"
@@ -778,7 +823,7 @@
     {
       "check": "table_10_decision_rule_model_comparison row count",
       "status": "PASS",
-      "detail": "expected 8, observed 8"
+      "detail": "expected 12, observed 12"
     },
     {
       "check": "threshold sweep row count",
@@ -971,6 +1016,11 @@
       "detail": "expected 5, observed 5"
     },
     {
+      "check": "Ticket 1 probe display groups complete",
+      "status": "PASS",
+      "detail": "all probe categories map to figure groups"
+    },
+    {
       "check": "Ticket 1 and Ticket 3 selected configurations match",
       "status": "PASS",
       "detail": "held-out IDs/labels/predictions identical"
@@ -995,8 +1045,8 @@
     "stable_id": 767,
     "status": "CONFLICTING_NARRATIVE_SUPERSEDED_BY_MACHINE_ARTIFACT",
     "machine_source": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv",
-    "baseline_score": 0.4876230020837692,
-    "candidate_score": 0.5448153095708489
+    "baseline_score": 0.4876230020837546,
+    "candidate_score": 0.5448153095708506
   },
   "omitted_assets": []
 }

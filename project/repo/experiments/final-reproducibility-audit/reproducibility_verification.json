@@ -1,0 +1,142 @@
+{
+  "all_decisions_dev_based": true,
+  "audit": "Step 10 frozen-decision reproducibility; not the final report",
+  "baseline_comparator": "ticket_1 clean held-out replay",
+  "clean_process_pids": [
+    58724,
+    58799,
+    58878,
+    58950,
+    59038
+  ],
+  "contradictory_active_result_files": [],
+  "created_at": "2026-07-21T20:15:23+08:00",
+  "data_quality_audit_comparison": {
+    "byte_exact": true,
+    "columns": [
+      "id",
+      "issue_type",
+      "evidence",
+      "disposition",
+      "confidence"
+    ],
+    "rows": 64,
+    "semantic_match": true
+  },
+  "distinct_clean_process_count": 5,
+  "final_prediction_columns": [
+    "id",
+    "y_true",
+    "y_pred",
+    "score",
+    "model_name",
+    "ticket"
+  ],
+  "final_prediction_path": "predictions/final-heldout-predictions.csv",
+  "final_prediction_sha256": "dda12e5cfab19d9ec565c55ea1b08e8c26671c1ea10afe046eba1f2422a18e82",
+  "heldout_rows": 1523,
+  "historical_naming_hazard": "predictions/heldout_predictions.csv is Ticket 1, not the final submission",
+  "intentional_semantic_duplicate_groups": [
+    {
+      "reason": "raw baseline retained",
+      "tickets": [
+        1,
+        3
+      ]
+    },
+    {
+      "reason": "Ticket 4 retained by Ticket 5 and final",
+      "tickets": [
+        4,
+        5
+      ]
+    }
+  ],
+  "manifest_path": "configs/frozen_decisions.json",
+  "manifest_sha256": "58a293b517d016767b6f7f64c0d43ce0ab2fb0ccea6c19bdcd7c3685080e403d",
+  "maximum_score_difference": 1.1102230246251565e-16,
+  "metric_acceptance_tolerance": 1e-15,
+  "result": "PASS",
+  "score_acceptance_tolerance": 1e-12,
+  "selection_reopened": false,
+  "stale_active_result_files": [],
+  "summary_comparison": {
+    "byte_exact": true,
+    "columns": [
+      "ticket",
+      "model_name",
+      "dev_f1_target_1",
+      "heldout_f1_target_1",
+      "heldout_accuracy",
+      "fixed_fp",
+      "fixed_fn",
+      "new_fp",
+      "new_fn",
+      "decision",
+      "decision_reason"
+    ],
+    "rows": 5,
+    "semantic_match": true
+  },
+  "threshold_sweep_comparison": {
+    "byte_exact": true,
+    "columns": [
+      "ticket",
+      "threshold",
+      "precision_target_1",
+      "recall_target_1",
+      "f1_target_1"
+    ],
+    "rows": 61,
+    "semantic_match": true
+  },
+  "ticket_metrics": {
+    "1": {
+      "dev_f1_target_1": 0.7388120423108218,
+      "fixed_fn": 0,
+      "fixed_fp": 0,
+      "heldout_accuracy": 0.7977675640183848,
+      "heldout_f1_target_1": 0.749185667752443,
+      "new_fn": 0,
+      "new_fp": 0
+    },
+    "2": {
+      "dev_f1_target_1": 0.7403132728771641,
+      "fixed_fn": 8,
+      "fixed_fp": 22,
+      "heldout_accuracy": 0.8049901510177282,
+      "heldout_f1_target_1": 0.7531172069825436,
+      "new_fn": 15,
+      "new_fp": 4
+    },
+    "3": {
+      "dev_f1_target_1": 0.7388120423108218,
+      "fixed_fn": 0,
+      "fixed_fp": 0,
+      "heldout_accuracy": 0.7977675640183848,
+      "heldout_f1_target_1": 0.749185667752443,
+      "new_fn": 0,
+      "new_fp": 0
+    },
+    "4": {
+      "dev_f1_target_1": 0.7520849128127369,
+      "fixed_fn": 35,
+      "fixed_fp": 0,
+      "heldout_accuracy": 0.7839789888378201,
+      "heldout_f1_target_1": 0.7505686125852918,
+      "new_fn": 0,
+      "new_fp": 56
+    },
+    "5": {
+      "dev_f1_target_1": 0.7520849128127369,
+      "fixed_fn": 35,
+      "fixed_fp": 0,
+      "heldout_accuracy": 0.7839789888378201,
+      "heldout_f1_target_1": 0.7505686125852918,
+      "new_fn": 0,
+      "new_fp": 56
+    }
+  },
+  "unexplained_exact_duplicate_groups": [],
+  "unexplained_manual_edits": []
+}

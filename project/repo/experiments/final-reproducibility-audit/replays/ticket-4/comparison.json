@@ -1,0 +1,27 @@
+{
+  "clean_process_pid": 58950,
+  "dev": {
+    "archived_sha256": "4b94e757d7e2ab43a453318f770bc906cf28ee41b16dd6f611e8be2be348ab97",
+    "maximum_absolute_score_difference": 1.1102230246251565e-16,
+    "prediction_changes": 0,
+    "same_ids_and_order": true,
+    "same_y_pred": true,
+    "same_y_true": true,
+    "scores_match_within_1e_12": true
+  },
+  "freeze_sha256": "098ce482f0bf9cf9ac5b0bd509d15310c9e6a48cb66c08651c87584316307845",
+  "heldout": {
+    "archived_sha256": "9ba20012c64b1b6afef701da553968a8d906c92d06e771a019046e64d9180d18",
+    "maximum_absolute_score_difference": 1.1102230246251565e-16,
+    "prediction_changes": 0,
+    "same_ids_and_order": true,
+    "same_y_pred": true,
+    "same_y_true": true,
+    "scores_match_within_1e_12": true
+  },
+  "manifest_sha256": "58a293b517d016767b6f7f64c0d43ce0ab2fb0ccea6c19bdcd7c3685080e403d",
+  "metrics_exact_within_1e_15": true,
+  "process_started": "2026-07-21T20:15:18.408894+08:00",
+  "result": "PASS",
+  "ticket": 4
+}

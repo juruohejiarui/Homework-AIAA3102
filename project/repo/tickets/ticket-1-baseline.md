@@ -2,7 +2,7 @@
 
 ## Required evidence map
 
-This ticket's **hypothesis** is stated under "Hypothesis." Its **intended lever** is discrepancy diagnosis across split construction, train-only feature fitting, seed, effective TF-IDF/classifier defaults, convergence, and software version; each behavioral probe changes one lever. The **controlled setup** is fully serialized under "Frozen baseline configuration" and bounded by "Evidence boundary and chronology." **Dev evidence** appears under "Dev evidence before the freeze" and "Controlled dev probes." The **frozen decision** and its pre-held-out chronology are recorded under "Evidence boundary and chronology." **Held-out evidence** appears only under "Final held-out evidence." **Concrete prediction changes** are listed by stable ID under "Concrete prediction-change examples." The **interpretation** is in "Systematic discrepancy diagnosis" and "Conclusion," and the **limitation** is stated under "Limitations." This map is descriptive; it does not add or revise any experiment result.
+This ticket's **hypothesis** is stated under "Hypothesis." Its **intended lever** is discrepancy diagnosis across split construction, train-only feature fitting, seed, effective TF-IDF/classifier defaults, convergence, and software version; each behavioral probe changes one lever. The **controlled setup** is fully serialized under "Frozen baseline configuration" and bounded by "Evidence boundary and chronology." **Dev evidence** appears under "Dev evidence before the freeze" and "Controlled dev probes." The **frozen decision** and its pre-held-out chronology are recorded under "Evidence boundary and chronology." **Held-out evidence** includes the frozen baseline result and a separately bounded historical diagnostic ledger under "Historical probe comparison." **Concrete prediction changes** are listed by stable ID under "Concrete prediction-change examples." The **interpretation** is in "Systematic discrepancy diagnosis" and "Conclusion," and the **limitation** is stated under "Limitations." This map is descriptive; it does not add or revise any experiment result.
 
 ## Required question and answer
 
@@ -33,7 +33,7 @@ Ticket 1 has an unusual but fully recorded recovery history:
 2. The frozen model was evaluated once for the historical primary comparison.
 3. A user-requested rollback deleted the Ticket 1 files, including the stable prediction rows, while the scalar outcome remained recorded in `PROJECT_STATUS.md`.
 4. Because row-level predictions cannot be recovered from aggregate metrics, an explicitly authorized deterministic replay of the same frozen model was performed once solely to reconstruct deleted artifacts. It reproduced the historical metrics exactly and did not create a new decision or tune a model.
-5. The historical primary-comparison count is therefore `1`; the artifact-recovery replay count is `1`. No further held-out run was performed while producing this document, and none is permitted.
+5. The historical primary-comparison count is therefore `1`; the artifact-recovery replay count is `1`. The completion ledger also archives 33 historical baseline/probe held-out records for post-mismatch discrepancy diagnosis. These records do not reopen selection, do not replace the frozen baseline, and must not be extended with further held-out runs.
 
 The current freeze JSON was reconstructed byte-for-byte with SHA-256 `3b1f589fb5b445cf146e63ad176dd5255e99aa342cc0502c8b8df657945ee3e8`. The recovery start and completion ledgers preserve the purpose and counts. This history is a limitation of the artifact chain and is not hidden or described as an ordinary single physical execution.
 
@@ -44,6 +44,7 @@ Primary evidence:
 - Recovery chronology: `experiments/ticket-1/heldout/heldout_evaluation_started.json` and `heldout_evaluation_completed.json`
 - Contract comparison: `experiments/ticket-1/heldout/primary_contract_comparison.json`
 - Held-out metrics and confusion matrix: `experiments/ticket-1/heldout/heldout_metrics.csv` and `heldout_confusion_matrix.csv`
+- Historical baseline/probe comparison: `experiments/ticket-1/heldout/heldout_probe_metrics.csv` and `discrepancy_comparison.csv`
 - Stable prediction interface: `predictions/heldout_predictions.csv`
 - Dev probe plan and outputs: `experiments/ticket-1/probes/`
 
@@ -153,7 +154,7 @@ The stable held-out artifact contains 1,523 rows, 1,523 unique IDs, exact fixed 
 
 ## Systematic discrepancy diagnosis
 
-All behavioral probes changed one intended lever and used train for fitting and dev for comparison, except the explicitly invalid leakage probe, which deliberately allowed dev text into TF-IDF fitting to demonstrate the effect. No probe accessed held-out or changed the frozen decision.
+All behavioral probes changed one intended lever. Dev was the diagnostic basis for the frozen decision, and no probe changed that decision. The archived historical ledger additionally records held-out metrics for the submitted baseline and 32 probes after the reference mismatch; it is descriptive discrepancy evidence, not an eligible model-selection comparison. The explicitly invalid leakage probe deliberately allowed dev text into TF-IDF fitting to demonstrate the effect.
 
 ### Structural causes
 
@@ -194,6 +195,14 @@ The frozen baseline is the comparator for every transition count, as required by
 | train-only TF-IDF -> train+dev-text TF-IDF | 0.725237 | -0.013575 | 68 | 35 | 0 | 0 | 33 | Invalid leakage shifts toward negative predictions and lowers F1. |
 
 The largest positive dev delta came from class weighting, but it is not adopted: it was a post-mismatch diagnostic, changes the operating point substantially, and using it to revise Ticket 1 would make the held-out comparison no longer correspond to the frozen baseline. It is also more appropriately considered in Ticket 4, which was not started here.
+
+## Historical probe comparison
+
+`experiments/ticket-1/heldout/discrepancy_comparison.csv` joins 33 saved records: the submitted baseline and 32 single-lever probes. Each row gives dev and held-out target-1 F1 plus the delta from the submitted baseline. This ledger exists because the baseline missed the external reference; it is forensic evidence, not a held-out-blind search or a permissible replacement-model ranking.
+
+The broad relationship is positive but imperfect: the archived summary reports Pearson `r=0.9777584252957625` and Spearman `rho=0.8091460144552395`. Several changes improve both records: `C=2` has dev/held-out F1 deltas of `+0.011590534178711254/+0.014160945793373791`, while `min_df=3` has `+0.0089133505758614/+0.005374862927490676`. However, dev ordering is not preserved exactly. Removing vector normalization has a dev delta of `-0.010205685342606574` but a held-out delta of `+0.012187037754340713`; balanced class weights have `+0.013272870501915168/+0.0013829448328488425`. Severe failures also agree across splits: L1 normalization has `-0.14679646295347026/-0.15054621197013007`.
+
+These records show sensitivity and ranking instability, not that the held-out-maximizing configuration should replace the frozen baseline. The final report's two-scale delta scatter preserves extreme failures while magnifying near-baseline reversals; its report-ready source is `report_assets/figures/figure_06_ticket1_dev_probe_deltas_data.csv`.
 
 ## Concrete prediction-change examples
 
@@ -241,7 +250,7 @@ The Ticket 1 decision remains the frozen minimal baseline. The summary transitio
 ## Limitations
 
 1. The reference contract exposes only a scalar held-out F1 and tolerance, not reference predictions, exact TF-IDF/logistic parameters, preprocessing code, solver diagnostics, or package versions. A unique causal attribution is therefore impossible from the available evidence.
-2. Probe evidence is from one fixed dev split. It demonstrates sensitivity and mechanisms but does not estimate uncertainty across resampled splits and cannot prove what the external reference used.
+2. The probe evidence is from one fixed dev split, and the historical held-out ledger is post-mismatch diagnostic evidence rather than a pre-registered validation protocol. Together they demonstrate sensitivity and ranking instability but do not estimate uncertainty across resampled splits, justify a replacement selection, or prove what the external reference used.
 3. The probe plan and regenerated diagnostic artifacts were created after the mismatch, so they are diagnostic rather than pre-registered model-selection evidence. They did not revise the frozen decision.
 4. The original Ticket 1 files were deleted during a requested rollback. Although the freeze was reconstructed byte-for-byte and the authorized deterministic replay reproduced the historical scalar metrics exactly, the provenance includes one recovery replay in addition to the single historical primary comparison.
 5. Concrete errors are illustrative rather than an exhaustive qualitative taxonomy. Broader normalization, shortcut, decision-rule, and data-quality investigations belong to Tickets 2–5 and were deliberately not started here.

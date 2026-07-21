@@ -1,0 +1,3 @@
+variant,precision_target_1,recall_target_1,f1_target_1,accuracy,true_negative,false_positive,false_negative,true_positive,prediction_changes,fixed_fp,fixed_fn,new_fp,new_fn
+ticket4_original_training_labels,0.7469879518072289,0.7572519083969466,0.7520849128127369,0.7852921864740644,700,168,159,496,0,0,0,0,0
+lr_c1_balanced_eight_train_label_corrections,0.7421289355322339,0.7557251908396947,0.7488653555219364,0.7820091923834537,696,172,160,495,11,3,0,7,1

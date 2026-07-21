@@ -1,0 +1,50 @@
+{
+  "decision": "Reject keyword, location, length, and selected shallow additions; retain the frozen text-only baseline.",
+  "decision_reason": "Retain the frozen text-only baseline. Although text plus keyword and selected shallow features raised dev F1 to 0.7493956486704271, its gain was shortcut-sensitive: masking keyword changed 702 predictions and reduced F1 to 0.6423057128152342, while superficial-text neutralization reduced F1 to 0.7330677290836654. Text plus keyword alone was worse than baseline (0.7350835322195705). Sparse location, length-only, and shallow-only variants were substantially weaker. The visible gain is therefore rejected rather than adopted automatically.",
+  "decision_split": "dev_ids only",
+  "exact_freeze_command": "/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.freeze_ticket3 --dev-dir experiments/ticket-3/dev --output experiments/ticket-3/frozen_decision.json",
+  "freeze_status": "frozen_before_ticket3_heldout_reporting",
+  "frozen_at": "2026-07-21T20:14:15+08:00",
+  "heldout_reporting_mode": "Reuse the already validated Ticket 1 stable baseline predictions after freeze; do not refit or rerun the baseline on held-out.",
+  "integrity": {
+    "baseline_heldout_predictions_sha256": "e68ce5498cd8161311f2f6d6565ced21bedc6467491fd7f9f72e139a05377e66",
+    "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+    "dev_metrics_sha256": "d848f60c9a2ad09747dc2c634c684f9b8233af0fe482a58c308e2f3a7add8bb0",
+    "dev_runner_source_sha256": "3f9b787af40205ca2cf9dc89c3377165683bee8cf72066fb412b86f4e0217f87",
+    "experiment_plan_sha256": "e0da43650b5682ed4426c2c9140f25532fe42d54fa7e753d41f15de3eae852b3",
+    "heldout_runner_source_sha256": "49a8db4aa95f796c42bdb8a96872603f45a3464bc59f80fe280eb957825faf1b",
+    "requirements_lock_sha256": "5bcff454cf416c8759e4e2a46beb1f9aedbf2637dd2b455da0d2b3242682a4d5",
+    "robustness_metrics_sha256": "9909ac11d79cb2d780805fa7b25dc19719fa035fc0e2ece32f5dbe6bd7d172aa",
+    "shortcut_source_sha256": "54602815e659a4255c0d5459d86fe2d13895187011e930fb8fa4bcba19d0067d",
+    "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+    "text_control_dev_predictions_sha256": "23b3e84fa858181c444c8b8f23601a5a3d6ace3cc5a421068f652ee2a5949d62",
+    "ticket1_freeze_sha256": "76e01a101a980cb6d71edcc1a84b5f0aa46b96d0d809c31182712e75d91f223b"
+  },
+  "prior_ticket_heldout_artifacts_exist": true,
+  "rejected_best_visible_candidate": {
+    "dev_f1_target_1": 0.7493956486704271,
+    "f1_delta_vs_baseline": 0.0105836063596053,
+    "fixed_fn": 46,
+    "fixed_fp": 41,
+    "keyword_masked_f1": 0.6423057128152342,
+    "new_fn": 35,
+    "new_fp": 42,
+    "superficial_neutralized_f1": 0.7330677290836654,
+    "variant": "text_plus_selected_shallow_features"
+  },
+  "selected_dev_evidence": {
+    "accuracy": 0.7892317793827971,
+    "f1_target_1": 0.7388120423108218,
+    "false_negative": 201,
+    "false_positive": 120,
+    "precision_target_1": 0.7909407665505227,
+    "recall_target_1": 0.6931297709923664,
+    "true_negative": 748,
+    "true_positive": 454
+  },
+  "selected_variant": "raw_text_tfidf_logistic_regression",
+  "selection_reopening_permitted": false,
+  "ticket": 3,
+  "ticket3_heldout_artifact_used_in_decision": false,
+  "ticket3_heldout_reporting_count_at_freeze": 0
+}

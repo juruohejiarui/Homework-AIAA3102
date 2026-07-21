@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Ticket 2 Normalization and Invariance Results on Dev}
+\label{tab:normalization}
+\begin{adjustbox}{max width=\textwidth}
+\scriptsize
+\begin{tabular}{lrrrrrrrr}
+\hline
+variant & f1 target 1 & fixed fp & fixed fn & new fp & new fn & robustness affected rows & robustness changed predictions & robustness invariance rate \\
+\hline
+raw\_text\_control & 0.738812 & 0 & 0 & 0 & 0 & -- & -- & -- \\
+normalize\_urls\_placeholder & 0.740313 & 22 & 6 & 11 & 11 & 767 & 0 & 1 \\
+normalize\_mentions\_placeholder & 0.736756 & 2 & 1 & 2 & 3 & 399 & 0 & 1 \\
+strip\_hashtag\_marker & 0.738812 & 0 & 0 & 0 & 0 & 330 & 0 & 1 \\
+normalize\_punctuation\_to\_space & 0.739414 & 1 & 2 & 0 & 2 & 1445 & 0 & 1 \\
+unicode\_casefold & 0.738812 & 0 & 0 & 0 & 0 & 1523 & 0 & 1 \\
+normalize\_emoji\_placeholder & 0.738812 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\par\footnotesize{All variants use the frozen baseline model family; robustness values refer to each transformation's matched perturbation. Emoji affected zero dataset rows.}
+\end{table*}

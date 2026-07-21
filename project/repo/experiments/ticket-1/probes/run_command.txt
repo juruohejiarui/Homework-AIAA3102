@@ -1,1 +1,1 @@
-D:\project\topic-a-text-classification-pipeline-forensics\.venv\Scripts\python.exe -m pipeline.run_ticket1_probes --data data\train.csv --split starter\data\split_indices.json --plan experiments\ticket-1\probes\probe_plan.json --output-dir experiments\ticket-1\probes
+/home/hjr/Documents/Projects/Homework-AIAA3102/project/repo/.venv/bin/python3 -m pipeline.run_ticket1_probes --data data/train.csv --split starter/data/split_indices.json --plan experiments/ticket-1/probes/probe_plan.json --output-dir experiments/ticket-1/probes

@@ -1,86 +1,86 @@
 id,text,keyword,location,y_true,y_pred,score,model_name,ticket
 86,"Progressive greetings!
 
-In about a month students would have set their pens ablaze in The Torch Publications'... http://t.co/9FxPiXQuJt",ablaze,Inang Pamantasan,0,1,0.5520993592691276,leaky_tfidf_train_plus_dev,ticket_1_baseline
-132,???? it was an accident http://t.co/Oia5fxi4gM,accident,,0,1,0.6301737192285819,leaky_tfidf_train_plus_dev,ticket_1_baseline
-241,My phone looks like it was in a car ship airplane accident. Terrible,airplane%20accident,Fashion Heaven. IG: TMId_,0,1,0.5921076696428855,leaky_tfidf_train_plus_dev,ticket_1_baseline
-386,Please sign &amp; RT to save #SaltRiverWildHorses http://t.co/IKUAYUSEqt http://t.co/BQBHUyfmE9,annihilation,,0,1,0.5520743443310887,leaky_tfidf_train_plus_dev,ticket_1_baseline
-420,candylit: Imagine sarumi in a zombie apocalypse Fighting back to back Heart to heart conversations over the... http://t.co/xIZkjffF29,apocalypse,"Buenos Aires, Argentina",0,1,0.5982969607056252,leaky_tfidf_train_plus_dev,ticket_1_baseline
-574,Mourning notices for stabbing arson victims stir Û÷politics of griefÛª in Israel: Posters for Shira Banki and A... http://t.co/3GZ5zQQTHe,arson,Jerusalem,0,1,0.6500378573082992,leaky_tfidf_train_plus_dev,ticket_1_baseline
-851,RT alisonannyoung: EXCLUSIVE: FedEx no longer to transport research specimens of bioterror pathogens in wake of anthrax lab mishaps Û_,bioterror,United States,0,1,0.5748745895301797,leaky_tfidf_train_plus_dev,ticket_1_baseline
-853,#world FedEx no longer to transport bioterror germs in wake of anthrax lab mishaps  http://t.co/5zDbTktwW7,bioterror,,0,1,0.6094805546218718,leaky_tfidf_train_plus_dev,ticket_1_baseline
-884,Firepower in the lab [electronic resource] : automation in the fight against infectious diseases and bioterrorism /Û_ http://t.co/KvpbybglSR,bioterrorism,,0,1,0.5665364951888672,leaky_tfidf_train_plus_dev,ticket_1_baseline
-1289,'A Nightmare On Elm Street' Is Getting Remade... Again - http://t.co/HvwkJQXXyT,bloody,,0,1,0.5212719262889695,leaky_tfidf_train_plus_dev,ticket_1_baseline
-1715,Leicester_Merc : ICYMI - #Ashes 2015: Australia collapse at Trent Bridge - how Twitter reaÛ_ http://t.co/HqeWMREysO) http://t.co/y4y8fclJED,bridge%20collapse,Leicester,0,1,0.6322280352992361,leaky_tfidf_train_plus_dev,ticket_1_baseline
-1763,@RockBottomRadFM Is one of the challenges on Tough Enough rescuing people from burning buildings?,buildings%20burning,"Dublin City, Ireland",0,1,0.631307352572558,leaky_tfidf_train_plus_dev,ticket_1_baseline
-1932,A protest rally at Stone Mountain? Atleast they're not burning down buildings and looting store like some individuals do when they 'protest',burning%20buildings,,0,1,0.5151707087135292,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2116,#iphone #twist Ultimate #preparedness library: http://t.co/ksgmY0D0Mx Prepare Yourself For Any Catastrophe. Ov http://t.co/MZK0PFogI7,catastrophe,,0,1,0.5115638244355873,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2227,Google Alert: Emergency units simulate a chemical explosion at NU http://t.co/NDgpWYxu6H,chemical%20emergency,,0,1,0.6860273189885806,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2348,Growth dries up for BHP Billiton as oil price collapse bites http://t.co/HQoD6v6DnC,collapse,"Pompano Beach, FL",0,1,0.5556830231834726,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2440,Worlds Collide When an American Family Takes Over Britain's Isle of Man in New TLC Show Suddenly Royal http://t.co/OmB3oS54tN via @People,collide,"Pennsylvania, USA",0,1,0.5344873490920045,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2475,On page 500 of 688 of After We Collided by Anna Todd http://t.co/Y7PetO0DX2,collided,Tennessee,0,1,0.6275176042388344,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2621,@johndcgow heard this few days ago while driving and near crashed the car from laughing to much,crashed,"Bangor, Co.Down",0,1,0.5699501765056851,leaky_tfidf_train_plus_dev,ticket_1_baseline
-2761,for some reason im listening to curfew overtime and stuck in a kodak over and over again,curfew,,0,1,0.5197444718918546,leaky_tfidf_train_plus_dev,ticket_1_baseline
+In about a month students would have set their pens ablaze in The Torch Publications'... http://t.co/9FxPiXQuJt",ablaze,Inang Pamantasan,0,1,0.5520993592691367,leaky_tfidf_train_plus_dev,ticket_1_baseline
+132,???? it was an accident http://t.co/Oia5fxi4gM,accident,,0,1,0.6301737192285798,leaky_tfidf_train_plus_dev,ticket_1_baseline
+241,My phone looks like it was in a car ship airplane accident. Terrible,airplane%20accident,Fashion Heaven. IG: TMId_,0,1,0.5921076696428851,leaky_tfidf_train_plus_dev,ticket_1_baseline
+386,Please sign &amp; RT to save #SaltRiverWildHorses http://t.co/IKUAYUSEqt http://t.co/BQBHUyfmE9,annihilation,,0,1,0.5520743443310849,leaky_tfidf_train_plus_dev,ticket_1_baseline
+420,candylit: Imagine sarumi in a zombie apocalypse Fighting back to back Heart to heart conversations over the... http://t.co/xIZkjffF29,apocalypse,"Buenos Aires, Argentina",0,1,0.5982969607056308,leaky_tfidf_train_plus_dev,ticket_1_baseline
+574,Mourning notices for stabbing arson victims stir Û÷politics of griefÛª in Israel: Posters for Shira Banki and A... http://t.co/3GZ5zQQTHe,arson,Jerusalem,0,1,0.6500378573083033,leaky_tfidf_train_plus_dev,ticket_1_baseline
+851,RT alisonannyoung: EXCLUSIVE: FedEx no longer to transport research specimens of bioterror pathogens in wake of anthrax lab mishaps Û_,bioterror,United States,0,1,0.5748745895301922,leaky_tfidf_train_plus_dev,ticket_1_baseline
+853,#world FedEx no longer to transport bioterror germs in wake of anthrax lab mishaps  http://t.co/5zDbTktwW7,bioterror,,0,1,0.6094805546218817,leaky_tfidf_train_plus_dev,ticket_1_baseline
+884,Firepower in the lab [electronic resource] : automation in the fight against infectious diseases and bioterrorism /Û_ http://t.co/KvpbybglSR,bioterrorism,,0,1,0.5665364951888883,leaky_tfidf_train_plus_dev,ticket_1_baseline
+1289,'A Nightmare On Elm Street' Is Getting Remade... Again - http://t.co/HvwkJQXXyT,bloody,,0,1,0.5212719262889689,leaky_tfidf_train_plus_dev,ticket_1_baseline
+1715,Leicester_Merc : ICYMI - #Ashes 2015: Australia collapse at Trent Bridge - how Twitter reaÛ_ http://t.co/HqeWMREysO) http://t.co/y4y8fclJED,bridge%20collapse,Leicester,0,1,0.6322280352992341,leaky_tfidf_train_plus_dev,ticket_1_baseline
+1763,@RockBottomRadFM Is one of the challenges on Tough Enough rescuing people from burning buildings?,buildings%20burning,"Dublin City, Ireland",0,1,0.6313073525725733,leaky_tfidf_train_plus_dev,ticket_1_baseline
+1932,A protest rally at Stone Mountain? Atleast they're not burning down buildings and looting store like some individuals do when they 'protest',burning%20buildings,,0,1,0.515170708713523,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2116,#iphone #twist Ultimate #preparedness library: http://t.co/ksgmY0D0Mx Prepare Yourself For Any Catastrophe. Ov http://t.co/MZK0PFogI7,catastrophe,,0,1,0.5115638244355811,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2227,Google Alert: Emergency units simulate a chemical explosion at NU http://t.co/NDgpWYxu6H,chemical%20emergency,,0,1,0.6860273189885774,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2348,Growth dries up for BHP Billiton as oil price collapse bites http://t.co/HQoD6v6DnC,collapse,"Pompano Beach, FL",0,1,0.5556830231834698,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2440,Worlds Collide When an American Family Takes Over Britain's Isle of Man in New TLC Show Suddenly Royal http://t.co/OmB3oS54tN via @People,collide,"Pennsylvania, USA",0,1,0.5344873490920086,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2475,On page 500 of 688 of After We Collided by Anna Todd http://t.co/Y7PetO0DX2,collided,Tennessee,0,1,0.6275176042388471,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2621,@johndcgow heard this few days ago while driving and near crashed the car from laughing to much,crashed,"Bangor, Co.Down",0,1,0.5699501765056926,leaky_tfidf_train_plus_dev,ticket_1_baseline
+2761,for some reason im listening to curfew overtime and stuck in a kodak over and over again,curfew,,0,1,0.5197444718918568,leaky_tfidf_train_plus_dev,ticket_1_baseline
 2846,"Blending the old with the new in #Vanuatu to prepare for future emergencies: 
-http://t.co/aFMKcFn1TL http://t.co/8QqzYZIAqf",cyclone,Geneva,0,1,0.534299441299854,leaky_tfidf_train_plus_dev,ticket_1_baseline
-3398,7 Christians detained in Zhejiang amid widespread anger over cross removal- over 1200 crosses removed since last yr http://t.co/8PICbkDJM0,demolition,,0,1,0.5808976621726599,leaky_tfidf_train_plus_dev,ticket_1_baseline
-3401,Canberra's first Mr Fluffy homes demolition schedule released  http://t.co/B77T2QxDCS,demolition,,0,1,0.5014004862396727,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4058,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/Khd99oZ7u3,displaced,"Ojodu,Lagos",0,1,0.5719564351973111,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4092,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/6ySbCSSzYS,displaced,Nigeria,0,1,0.5719564351973111,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4298,@NWSPocatello BG-16: So far brunt of storm just to our north. Grayed out w/ dust &amp; rain to N blue sky interspersed w/ clouds to S.,dust%20storm,Idaho,0,1,0.5585581370774257,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4387,Earthquake drill ??????,earthquake,Orm,0,1,0.6186485607259978,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4507,Survival Kit Whistle Fire Starter Wire Saw Cree Torch Emergency Blanket S knife  - Full reÛ_ http://t.co/2OroYUNYM2 http://t.co/C9JnXz3DXC,emergency,New York,0,1,0.5804252959551144,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4577,@RebeccaforReal accepts Wisconsin Emergency Response Plan on behalf of @GovWalker #nbc15 http://t.co/Pis0aiVRbR,emergency%20plan,"Madison, WI",0,1,0.5189286755314271,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4579,Practice your families fire escape plan so everyone knows what to do in case of an emergency.,emergency%20plan,North Hastings Ontario,0,1,0.6275620790459657,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4596,County 911 Overload Prompts Use of Emergency Plan During July 4 Celebrations http://t.co/HXTUPrA5bc http://t.co/DqxKJibbKy,emergency%20plan,"Augusta, GA",0,1,0.6697240649491892,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4672,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5822340279946193,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4684,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5822340279946193,leaky_tfidf_train_plus_dev,ticket_1_baseline
-4959,Worked at a fast food joint. Poured burnt hot oil down the sink. It hit the water in the trap and exploded.  @FallonTonight #WORSTSUMMERJOB,exploded,,0,1,0.5490479456696133,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5001,Checkout all the NURGLE rules &amp; features that snuck in on Khrone's WD! http://t.co/he7Q7H3nZf http://t.co/rpvZBEsUQJ,explosion,,0,1,0.5276071382656057,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5022,#Eyewitness media is actively embraced by #UK audiences. Read the report by @emhub on the impact of #UGC in news: http://t.co/6mBPvwiTxf,eyewitness,,0,1,0.676615647906928,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5038,WFTV Eyewitness News: TN school psychologist arrested in Florida on child porn charges http://t.co/lgGLf5yrMe,eyewitness,"Orlando, Fl",0,1,0.6061163522345194,leaky_tfidf_train_plus_dev,ticket_1_baseline
+http://t.co/aFMKcFn1TL http://t.co/8QqzYZIAqf",cyclone,Geneva,0,1,0.5342994412998704,leaky_tfidf_train_plus_dev,ticket_1_baseline
+3398,7 Christians detained in Zhejiang amid widespread anger over cross removal- over 1200 crosses removed since last yr http://t.co/8PICbkDJM0,demolition,,0,1,0.5808976621726615,leaky_tfidf_train_plus_dev,ticket_1_baseline
+3401,Canberra's first Mr Fluffy homes demolition schedule released  http://t.co/B77T2QxDCS,demolition,,0,1,0.5014004862396728,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4058,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/Khd99oZ7u3,displaced,"Ojodu,Lagos",0,1,0.5719564351973093,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4092,Angry Woman Openly Accuses NEMA Of Stealing Relief Materials Meant For IDPs: An angry Internally Displaced wom... http://t.co/6ySbCSSzYS,displaced,Nigeria,0,1,0.5719564351973093,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4298,@NWSPocatello BG-16: So far brunt of storm just to our north. Grayed out w/ dust &amp; rain to N blue sky interspersed w/ clouds to S.,dust%20storm,Idaho,0,1,0.5585581370774279,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4387,Earthquake drill ??????,earthquake,Orm,0,1,0.6186485607259968,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4507,Survival Kit Whistle Fire Starter Wire Saw Cree Torch Emergency Blanket S knife  - Full reÛ_ http://t.co/2OroYUNYM2 http://t.co/C9JnXz3DXC,emergency,New York,0,1,0.5804252959551082,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4577,@RebeccaforReal accepts Wisconsin Emergency Response Plan on behalf of @GovWalker #nbc15 http://t.co/Pis0aiVRbR,emergency%20plan,"Madison, WI",0,1,0.5189286755314304,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4579,Practice your families fire escape plan so everyone knows what to do in case of an emergency.,emergency%20plan,North Hastings Ontario,0,1,0.6275620790459688,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4596,County 911 Overload Prompts Use of Emergency Plan During July 4 Celebrations http://t.co/HXTUPrA5bc http://t.co/DqxKJibbKy,emergency%20plan,"Augusta, GA",0,1,0.6697240649491912,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4672,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5822340279946268,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4684,He came to a land which was engulfed in tribal war and turned it into a land of peace i.e. Madinah. #ProphetMuhammad #islam,engulfed,,0,1,0.5822340279946268,leaky_tfidf_train_plus_dev,ticket_1_baseline
+4959,Worked at a fast food joint. Poured burnt hot oil down the sink. It hit the water in the trap and exploded.  @FallonTonight #WORSTSUMMERJOB,exploded,,0,1,0.5490479456696329,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5001,Checkout all the NURGLE rules &amp; features that snuck in on Khrone's WD! http://t.co/he7Q7H3nZf http://t.co/rpvZBEsUQJ,explosion,,0,1,0.5276071382656143,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5022,#Eyewitness media is actively embraced by #UK audiences. Read the report by @emhub on the impact of #UGC in news: http://t.co/6mBPvwiTxf,eyewitness,,0,1,0.6766156479069473,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5038,WFTV Eyewitness News: TN school psychologist arrested in Florida on child porn charges http://t.co/lgGLf5yrMe,eyewitness,"Orlando, Fl",0,1,0.6061163522345192,leaky_tfidf_train_plus_dev,ticket_1_baseline
 5088,"A grade in Black Horse Famine[MEGA]. Score 0840728
 http://t.co/pdiit0AF3Q
-#Dynamix http://t.co/ZQ5KDOx7BY",famine,,0,1,0.5533483090036007,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5247,Kosciusko police investigating pedestrian fatality hit by a train Thursday http://t.co/m5djLLxoZP,fatality,USA,0,1,0.7206998591672871,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5391,Trident 90225 Chevy fire Truck w/ Pumper  IMS Fire Dept. Red HO 1:87  plastic http://t.co/FAQNFUpeGn http://t.co/mQfOfKXtyh,fire%20truck,,0,1,0.5672428102622282,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5518,IDEAS IN FOOD: Flattened http://t.co/QfrAWLn4BA,flattened,"Bow, NH",0,1,0.5548151148873895,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5670,@madonnamking RSPCA site multiple 7 story high rise buildings next to low density character residential in an area that floods,floods,"Sherwood, Brisbane, Australia",0,1,0.6278252253864612,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5960,BREAKING: Arsenal's Hector Bellerin has been arrested for questioning regarding the disappearance of Eden Hazard.Û_ http://t.co/eCMJ18AzaI,hazard,,0,1,0.506477713114517,leaky_tfidf_train_plus_dev,ticket_1_baseline
-5990,JAX issues Hazardous Weather Outlook (HWO) http://t.co/fuCOQhcLAD,hazardous,,0,1,0.7419332721448098,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6002,09:13 PM:  Hazardous Weather Outlook (http://t.co/ed1VpITsWY): NO HAZARDOUS WEATHER IS EXPECTED AT THIS TIME.... http://t.co/6XSbddlZiy,hazardous,"Gainesville, FL",0,1,0.7456454610060526,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0.5404126637152769,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0.5404126637152769,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6343,Holmgren describing 96 World Cup: we were Lou's hostages.,hostages,NYC metro,0,1,0.5086473356354962,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6366,#hot  C-130 specially modified to land in a stadium and rescue hostages in Iran in 1980 http://t.co/zY3hpdJNwg #prebreak #best,hostages,china,0,1,0.7801128272199025,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6536,Rory McIlroy to Test Ankle Injury in Weekend Practice #chinadotcom #sports http://t.co/UDTGWfSc3P http://t.co/V5wSx0LQN2,injury,beijing .China,0,1,0.5371041665347118,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6576,Quirk Injury Law's News is out! http://t.co/HxVIhDuShP Stories via @dantmatrafajlo,injury,California,0,1,0.5016435953400213,leaky_tfidf_train_plus_dev,ticket_1_baseline
-6879,http://t.co/FhI4qBpwFH @FredOlsenCruise Please take the #FaroeIslands off your itinerary until the mass murder of dolphins &amp; whales stops.,mass%20murder,Anonymous,0,1,0.6097865564555204,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7142,Study: Wider Variety of Therapies Could Help Vets Troops With PTSD | http://t.co/g0q0bzBjli http://t.co/ExYr6c5QPu via @Militarydotcom,military,,0,1,0.5354048169029801,leaky_tfidf_train_plus_dev,ticket_1_baseline
+#Dynamix http://t.co/ZQ5KDOx7BY",famine,,0,1,0.5533483090036005,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5247,Kosciusko police investigating pedestrian fatality hit by a train Thursday http://t.co/m5djLLxoZP,fatality,USA,0,1,0.7206998591672868,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5391,Trident 90225 Chevy fire Truck w/ Pumper  IMS Fire Dept. Red HO 1:87  plastic http://t.co/FAQNFUpeGn http://t.co/mQfOfKXtyh,fire%20truck,,0,1,0.5672428102622272,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5518,IDEAS IN FOOD: Flattened http://t.co/QfrAWLn4BA,flattened,"Bow, NH",0,1,0.5548151148873932,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5670,@madonnamking RSPCA site multiple 7 story high rise buildings next to low density character residential in an area that floods,floods,"Sherwood, Brisbane, Australia",0,1,0.6278252253864618,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5960,BREAKING: Arsenal's Hector Bellerin has been arrested for questioning regarding the disappearance of Eden Hazard.Û_ http://t.co/eCMJ18AzaI,hazard,,0,1,0.5064777131145243,leaky_tfidf_train_plus_dev,ticket_1_baseline
+5990,JAX issues Hazardous Weather Outlook (HWO) http://t.co/fuCOQhcLAD,hazardous,,0,1,0.7419332721448088,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6002,09:13 PM:  Hazardous Weather Outlook (http://t.co/ed1VpITsWY): NO HAZARDOUS WEATHER IS EXPECTED AT THIS TIME.... http://t.co/6XSbddlZiy,hazardous,"Gainesville, FL",0,1,0.745645461006052,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6200,Remove the http://t.co/l4wJHz4AJ6 and Linkury Browser Hijacker http://t.co/KMgDv7VSAz http://t.co/byTsfms7Md,hijacker,Halifax,0,1,0.5404126637152847,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6206,Remove the http://t.co/2nS5TfnxpA and Linkury Browser Hijacker http://t.co/W2kVScbTLp http://t.co/tn8o00NrLP,hijacker,,0,1,0.5404126637152847,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6343,Holmgren describing 96 World Cup: we were Lou's hostages.,hostages,NYC metro,0,1,0.5086473356354926,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6366,#hot  C-130 specially modified to land in a stadium and rescue hostages in Iran in 1980 http://t.co/zY3hpdJNwg #prebreak #best,hostages,china,0,1,0.7801128272199056,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6536,Rory McIlroy to Test Ankle Injury in Weekend Practice #chinadotcom #sports http://t.co/UDTGWfSc3P http://t.co/V5wSx0LQN2,injury,beijing .China,0,1,0.5371041665347108,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6576,Quirk Injury Law's News is out! http://t.co/HxVIhDuShP Stories via @dantmatrafajlo,injury,California,0,1,0.5016435953400183,leaky_tfidf_train_plus_dev,ticket_1_baseline
+6879,http://t.co/FhI4qBpwFH @FredOlsenCruise Please take the #FaroeIslands off your itinerary until the mass murder of dolphins &amp; whales stops.,mass%20murder,Anonymous,0,1,0.6097865564555349,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7142,Study: Wider Variety of Therapies Could Help Vets Troops With PTSD | http://t.co/g0q0bzBjli http://t.co/ExYr6c5QPu via @Militarydotcom,military,,0,1,0.53540481690298,leaky_tfidf_train_plus_dev,ticket_1_baseline
 7196,"'Up to 40% of businesses affected by a natural or man-made disaster never reopen'
-http://t.co/35JyAp0ul9",natural%20disaster,"Orlando/Cocoa Beach, FL",0,1,0.5262139094200393,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7234,@BookTubeAThon A world in which people aren't dying from natural and supernatural disaster and war most likely.,natural%20disaster,"Pennsylvania, USA",0,1,0.5716080534624669,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7529,@TroySlaby22 slicker than an oil spill,oil%20spill,,0,1,0.5641382606028306,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7761,Police expand search for missing pregnant woman in Beloeil: Police in Richelieu-Saint-Laurent are expanding th... http://t.co/hMuyzmv8qH,police,,0,1,0.7356803413392037,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7771,@BrandonMulcahy @fpine Here's the story http://t.co/TgXutUoyHl,police,SoCal,0,1,0.5109841232669349,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7775,New technology designed to help prevent dangerous police chases: In an effort to reduce injuries Milwaukee policeÛ_ http://t.co/cedjdlPDAN,police,"Milwaukee, WI",0,1,0.5128995983727747,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7864,Are Users of this Sub to be Quarantined? http://t.co/9nLY2TovUD,quarantined,,0,1,0.5412311001301285,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7895,http://t.co/X5XUMtoEkE Nuclear Emergency Current USA radiation levels monitoring site,radiation%20emergency,"LP, MN USA",0,1,0.5867383913330402,leaky_tfidf_train_plus_dev,ticket_1_baseline
-7926,Stuck in a rainstorm? Stay toward the middle of the road. Most streets are crowned so water tends to pool on the sides.,rainstorm,"La Puente, CA",0,1,0.5868429202742866,leaky_tfidf_train_plus_dev,ticket_1_baseline
+http://t.co/35JyAp0ul9",natural%20disaster,"Orlando/Cocoa Beach, FL",0,1,0.5262139094200429,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7234,@BookTubeAThon A world in which people aren't dying from natural and supernatural disaster and war most likely.,natural%20disaster,"Pennsylvania, USA",0,1,0.571608053462473,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7529,@TroySlaby22 slicker than an oil spill,oil%20spill,,0,1,0.5641382606028279,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7761,Police expand search for missing pregnant woman in Beloeil: Police in Richelieu-Saint-Laurent are expanding th... http://t.co/hMuyzmv8qH,police,,0,1,0.7356803413392072,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7771,@BrandonMulcahy @fpine Here's the story http://t.co/TgXutUoyHl,police,SoCal,0,1,0.5109841232669442,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7775,New technology designed to help prevent dangerous police chases: In an effort to reduce injuries Milwaukee policeÛ_ http://t.co/cedjdlPDAN,police,"Milwaukee, WI",0,1,0.5128995983727745,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7864,Are Users of this Sub to be Quarantined? http://t.co/9nLY2TovUD,quarantined,,0,1,0.5412311001301306,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7895,http://t.co/X5XUMtoEkE Nuclear Emergency Current USA radiation levels monitoring site,radiation%20emergency,"LP, MN USA",0,1,0.5867383913330387,leaky_tfidf_train_plus_dev,ticket_1_baseline
+7926,Stuck in a rainstorm? Stay toward the middle of the road. Most streets are crowned so water tends to pool on the sides.,rainstorm,"La Puente, CA",0,1,0.5868429202743154,leaky_tfidf_train_plus_dev,ticket_1_baseline
 7938,"RAIN RAIN GO AWAY... A soaker is on the way 
-------&gt; http://t.co/jQFcY9GuqV &lt;----- http://t.co/tN65puhfhw",rainstorm,"Pennsylvania, USA",0,1,0.6426464285879755,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8044,wowo--=== 12000 Nigerian refugees repatriated from Cameroon,refugees,,0,1,0.6780912024554471,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8047,http://t.co/eHKLp12yiP Paci?c Media Centre | articles: AUSTRALIA: RSF protests over new security gag over reporting on...,refugees,"Auckland, New Zealand",0,1,0.5386695906265137,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8133,Rescued TB goes on to ribbon at HITS: http://t.co/pA5SSLeFEC via @offtrackhorse,rescued,,0,1,0.5980086442753203,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8301,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/eaTFro3d5x,rubble,"Accra,Ghana",0,1,0.5740505479960383,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0.510219448948936,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8618,ON THE USE OF PERFORATED METAL SHEAR PANEL SFOR SEISMIC-RESISTANT APPLICATIONS http://t.co/cX5OjH2Dr4,seismic,,0,1,0.529373890845469,leaky_tfidf_train_plus_dev,ticket_1_baseline
-8681,@DavidCovucci We can't because a sinkhole swallowed every taco place in the neighborhood,sinkhole,Greenpoint,0,1,0.5370700036814989,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9288,Everything has sunk in except the fact that I am actually moving to the state of Colorado tomorrow. Been dreaming of it since I was a kid.??,sunk,,0,1,0.5973507232538847,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9298,10 Ways To Survive and Escape Martial Law | World http://t.co/BiuEY7bUtS http://t.co/JWQYbe4ep1,survive,Lincoln City Oregon,0,1,0.5613453368276632,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9341,Suicide of a Superpower : Will America Survive To 2025? by Patrick J. Buchana... http://t.co/eMTwirknyq http://t.co/M9K08OaZve,survive,,0,1,0.6310795982929849,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9432,Survivors of Shanghai Ghetto reunite after 70 years - http://t.co/1Ki8LgVAy4 #Shanghai #China #??,survivors,Shanghai,0,1,0.6170045979148626,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9439,Haley Lu Richardson Fights for Water in The Last Survivors (Review) http://t.co/oObSCFOKtQ,survivors,Numenor,0,1,0.5436095130370191,leaky_tfidf_train_plus_dev,ticket_1_baseline
+------&gt; http://t.co/jQFcY9GuqV &lt;----- http://t.co/tN65puhfhw",rainstorm,"Pennsylvania, USA",0,1,0.6426464285879812,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8044,wowo--=== 12000 Nigerian refugees repatriated from Cameroon,refugees,,0,1,0.6780912024554465,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8047,http://t.co/eHKLp12yiP Paci?c Media Centre | articles: AUSTRALIA: RSF protests over new security gag over reporting on...,refugees,"Auckland, New Zealand",0,1,0.5386695906265145,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8133,Rescued TB goes on to ribbon at HITS: http://t.co/pA5SSLeFEC via @offtrackhorse,rescued,,0,1,0.5980086442753174,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8301,#360WiseNews : China's Stock Market Crash: Are There Gems In The Rubble? http://t.co/eaTFro3d5x,rubble,"Accra,Ghana",0,1,0.5740505479960506,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8440,Now playing: Darude - Sandstorm - radio edit http://t.co/DUdAIrBBPo http://t.co/padosfyXnM,sandstorm,,0,1,0.5102194489489342,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8618,ON THE USE OF PERFORATED METAL SHEAR PANEL SFOR SEISMIC-RESISTANT APPLICATIONS http://t.co/cX5OjH2Dr4,seismic,,0,1,0.5293738908454799,leaky_tfidf_train_plus_dev,ticket_1_baseline
+8681,@DavidCovucci We can't because a sinkhole swallowed every taco place in the neighborhood,sinkhole,Greenpoint,0,1,0.5370700036815063,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9288,Everything has sunk in except the fact that I am actually moving to the state of Colorado tomorrow. Been dreaming of it since I was a kid.??,sunk,,0,1,0.597350723253909,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9298,10 Ways To Survive and Escape Martial Law | World http://t.co/BiuEY7bUtS http://t.co/JWQYbe4ep1,survive,Lincoln City Oregon,0,1,0.5613453368276603,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9341,Suicide of a Superpower : Will America Survive To 2025? by Patrick J. Buchana... http://t.co/eMTwirknyq http://t.co/M9K08OaZve,survive,,0,1,0.6310795982929884,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9432,Survivors of Shanghai Ghetto reunite after 70 years - http://t.co/1Ki8LgVAy4 #Shanghai #China #??,survivors,Shanghai,0,1,0.6170045979148691,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9439,Haley Lu Richardson Fights for Water in The Last Survivors (Review) http://t.co/oObSCFOKtQ,survivors,Numenor,0,1,0.5436095130370309,leaky_tfidf_train_plus_dev,ticket_1_baseline
 9454,"Truth...
 https://t.co/beJfTYgJIL
 #News
@@ -92,13 +92,13 @@ https://t.co/beJfTYgJIL
 #ISIS
 #terrorism
 #Quran
-#Lies http://t.co/jlCZiDZ7Vu",terrorism,,0,1,0.6316929621765558,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9470,In #islam saving a person is equal in reward to saving all humans! Islam is the opposite of terrorism!,terrorism,Jeddah_Saudi Arabia.,0,1,0.5826200306853977,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9501,HereÛªs how media in Pakistan covered the capture of terrorist Mohammed Naved http://t.co/f7WqpCEkg2,terrorist,,0,1,0.7352659207164469,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9853,Today was trauma on top of trauma on top of  trauma in Richmond so I know work is going to be crazy the next two days,trauma,,0,1,0.5724579858443425,leaky_tfidf_train_plus_dev,ticket_1_baseline
-9890,A traumatised dog that was found buried up to its head in dirt in France is now in safe hands. This is such a... http://t.co/AGQo1479xM,traumatised,"Tring, UK",0,1,0.5464299617800172,leaky_tfidf_train_plus_dev,ticket_1_baseline
-10183,@Skarletan åÇ the storm. A violent swell of emotions then nothing.,violent%20storm,??? ???? ?f glory. ?,0,1,0.5443357109315851,leaky_tfidf_train_plus_dev,ticket_1_baseline
-10250,Sitting still in the #CityofMemphis traffic is like sitting in a war zone! They don't move for the Police.. They don't care,war%20zone,"nashville, tn ",0,1,0.5687050364917627,leaky_tfidf_train_plus_dev,ticket_1_baseline
-10258,Camping in a war zone with roving raccoons toughens city slicker http://t.co/oJuS08yZrq,war%20zone,"Downtown Churubusco, Indiana",0,1,0.512750059087601,leaky_tfidf_train_plus_dev,ticket_1_baseline
-10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0.5064176288043691,leaky_tfidf_train_plus_dev,ticket_1_baseline
-10730,@TitorTau The Loretta Lynch one was fuckin' HI-LARIOUS to watch in realtime. It was like a train wreck of fact-checking and ombudsmanship.,wreck,,0,1,0.5386933242677359,leaky_tfidf_train_plus_dev,ticket_1_baseline
+#Lies http://t.co/jlCZiDZ7Vu",terrorism,,0,1,0.6316929621765547,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9470,In #islam saving a person is equal in reward to saving all humans! Islam is the opposite of terrorism!,terrorism,Jeddah_Saudi Arabia.,0,1,0.5826200306854127,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9501,HereÛªs how media in Pakistan covered the capture of terrorist Mohammed Naved http://t.co/f7WqpCEkg2,terrorist,,0,1,0.7352659207164605,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9853,Today was trauma on top of trauma on top of  trauma in Richmond so I know work is going to be crazy the next two days,trauma,,0,1,0.572457985844359,leaky_tfidf_train_plus_dev,ticket_1_baseline
+9890,A traumatised dog that was found buried up to its head in dirt in France is now in safe hands. This is such a... http://t.co/AGQo1479xM,traumatised,"Tring, UK",0,1,0.5464299617800265,leaky_tfidf_train_plus_dev,ticket_1_baseline
+10183,@Skarletan åÇ the storm. A violent swell of emotions then nothing.,violent%20storm,??? ???? ?f glory. ?,0,1,0.5443357109315982,leaky_tfidf_train_plus_dev,ticket_1_baseline
+10250,Sitting still in the #CityofMemphis traffic is like sitting in a war zone! They don't move for the Police.. They don't care,war%20zone,"nashville, tn ",0,1,0.5687050364917825,leaky_tfidf_train_plus_dev,ticket_1_baseline
+10258,Camping in a war zone with roving raccoons toughens city slicker http://t.co/oJuS08yZrq,war%20zone,"Downtown Churubusco, Indiana",0,1,0.5127500590876032,leaky_tfidf_train_plus_dev,ticket_1_baseline
+10607,GENERAL AUDIENCE: On Wounded Families | ZENIT - The World Seen From Rome http://t.co/hFvnyfT78C,wounded,"Suva, Fiji Islands.",0,1,0.506417628804381,leaky_tfidf_train_plus_dev,ticket_1_baseline
+10730,@TitorTau The Loretta Lynch one was fuckin' HI-LARIOUS to watch in realtime. It was like a train wreck of fact-checking and ombudsmanship.,wreck,,0,1,0.5386933242677476,leaky_tfidf_train_plus_dev,ticket_1_baseline

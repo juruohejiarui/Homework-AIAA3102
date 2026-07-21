@@ -34,7 +34,7 @@ Hypothesis: `class_weight='balanced'` should increase the influence of the less 
 
 ### Logistic Regression regularization
 
-Hypothesis: stronger regularization may suppress rare but useful disaster terms and lose recall, while weaker regularization may separate harder cases but amplify noisy lexical associations. The finite logarithmic-style range was `C ∈ {0.25, 0.5, 1.0, 2.0, 4.0}`, always with `class_weight=None`, the unchanged TF-IDF representation, and threshold `0.50`. The `C=1.0` member was the control. This was not an open-ended hyperparameter search.
+Hypothesis: stronger regularization may suppress rare but useful disaster terms and lose recall, while weaker regularization may separate harder cases but amplify noisy lexical associations. The finite range was `C ∈ {0.25, 0.5, 1.0, 2.0, 4.0, 5.0, 10.0}`, always with `class_weight=None`, the unchanged TF-IDF representation, and threshold `0.50`. The `C=1.0` member was the control. Two additional balanced variants at `C=5` and `C=10` were recorded as sensitivity extensions. Their plan cites a parallel V1 held-out observation as motivation, so they are reported transparently but are not independent held-out-blind evidence. This was not an open-ended hyperparameter search.
 
 ### Second CPU classifier
 
@@ -71,7 +71,7 @@ It converged in 10 iterations on dev and 10 iterations in the final held-out fit
 
 ## Bounded dev experiment
 
-The pre-execution plan is `experiments/ticket-4/dev/experiment_plan.json`. It specifies exactly 61 thresholds, one non-default class-weight setting, five total `C` values including the control, and one second classifier. The raw control was independently refitted and reproduced all frozen baseline dev labels and predictions exactly. Its saved probabilities differed from the earlier CSV only at floating-point roundoff: maximum absolute difference `1.1102230246251565e-16`, with no differences exceeding `1e-12` and no prediction changes.
+The pre-execution plan is `experiments/ticket-4/dev/experiment_plan.json`. It specifies exactly 61 thresholds, one independent non-default class-weight setting, seven unweighted `C` values including the control, two balanced `C=5/10` extensions, and one second classifier: 12 saved candidate rows in total. The raw control was independently refitted and reproduced all frozen baseline dev labels and predictions exactly. Its saved probabilities differed from the earlier CSV only at floating-point roundoff: maximum absolute difference `1.1102230246251565e-16`, with no differences exceeding `1e-12` and no prediction changes.
 
 The selection criterion was declared before execution: maximize target-1 dev F1 across the bounded candidates. The threshold sweep applied only to the unweighted `C=1.0` baseline scores. Class weighting, regularization, and the second classifier were evaluated independently at their native default rules. If F1 tied within `1e-12`, choose the candidate with fewer departures from the frozen baseline, then the threshold closest to `0.50`, then the lexicographically earlier name. No tie occurred at the maximum.
 
@@ -84,11 +84,17 @@ The selection criterion was declared before execution: maximize target-1 dev F1 
 | `lr_c05_unweighted_default` | Stronger regularization | 0.791367 | 0.671756 | 0.726672 | 0.782666 | 752 | 116 | 215 | 440 | 32 | 8 | 3 | 4 | 17 |
 | `lr_c2_unweighted_default` | Weaker regularization | 0.793867 | 0.711450 | 0.750403 | 0.796454 | 747 | 121 | 189 | 466 | 37 | 8 | 16 | 9 | 4 |
 | `lr_c4_unweighted_default` | Weaker regularization | 0.786555 | 0.714504 | 0.748800 | 0.793828 | 741 | 127 | 187 | 468 | 67 | 15 | 22 | 22 | 8 |
+| `lr_c5_unweighted_default` | Weaker regularization extension | 0.782392 | 0.719084 | 0.749403 | 0.793171 | 737 | 131 | 184 | 471 | 72 | 14 | 25 | 25 | 8 |
+| `lr_c10_unweighted_default` | Weaker regularization extension | 0.777778 | 0.716031 | 0.745628 | 0.789888 | 734 | 134 | 186 | 469 | 95 | 20 | 28 | 34 | 13 |
 | `lr_c1_balanced_default` | Class weighting | 0.746988 | 0.757252 | **0.752085** | 0.785292 | 700 | 168 | 159 | 496 | 90 | 0 | 42 | 48 | 0 |
+| `lr_c5_balanced_default` | Class weight plus regularization extension | 0.751543 | 0.743511 | 0.747506 | 0.783979 | 707 | 161 | 168 | 487 | 94 | 6 | 37 | 47 | 4 |
+| `lr_c10_balanced_default` | Class weight plus regularization extension | 0.753846 | 0.748092 | 0.750958 | 0.786605 | 708 | 160 | 165 | 490 | 108 | 11 | 41 | 51 | 5 |
 | `linear_svc_c1_default` | Second classifier | 0.772803 | 0.711450 | 0.740859 | 0.785949 | 731 | 137 | 189 | 466 | 111 | 26 | 27 | 43 | 15 |
 | `lr_c1_unweighted_tuned_threshold` | Threshold `0.47` | 0.777049 | 0.723664 | 0.749407 | 0.791858 | 732 | 136 | 181 | 474 | 36 | 0 | 20 | 16 | 0 |
 
 These data distinguish three mechanisms. Lowering the threshold to `0.47` changed only 36 borderline scores and made the expected monotonic exchange: 20 false negatives were fixed and 16 new false positives appeared. Balanced fitting changed 90 decisions and made a stronger recall-oriented exchange: 42 fixed false negatives versus 48 new false positives. Because class weighting changes the fitted objective and coefficients, it is not merely the same baseline score ranking at a different cutoff. `C=2.0` gave the best accuracy (`0.796454`) and a more precision-preserving gain, but the predeclared criterion was F1, under which balanced fitting was higher by `0.0016823363232039`.
+
+The `C=5/10` extensions did not overturn the result. Unweighted `C=5` and `C=10` reached F1 `0.749403` and `0.745628`; balanced `C=5` and `C=10` reached `0.747506` and `0.750958`, respectively. Even across all 12 rows, balanced `C=1` remains the dev-F1 maximum. Because the extensions have the documented V1 held-out motivation, this agreement is sensitivity evidence, not an independent confirmation of the selection protocol.
 
 The second classifier did not win. Linear SVC improved recall over the baseline but had lower precision, F1, and accuracy than `C=2.0`, balanced Logistic Regression, and the best threshold alternative. Its 111 changes included both directions—26 fixed false positives, 27 fixed false negatives, 43 new false positives, and 15 new false negatives—consistent with learning a different boundary rather than simply shifting one operating point.
 
@@ -216,4 +222,4 @@ The held-out result supports only a cautious conclusion. The recall-oriented mov
 
 ## Limitation
 
-The experiment uses one fixed dev split and a finite grid. Selecting the maximum among 61 thresholds and several model configurations can exploit dev-specific noise even without held-out leakage; the small held-out F1 delta is consistent with that risk. Linear SVC is only one reasonable second classifier, so this ticket does not establish that every CPU-compatible alternative is inferior. Class weighting and threshold tuning were intentionally tested independently to preserve causal interpretability; their interaction was not searched. Finally, labels include duplicates, near-duplicates, figurative uses, and ambiguous examples, so changes in measured F1 do not always correspond to unambiguous semantic improvements. These constraints are reasons to preserve the detailed error ledgers and avoid presenting the selected operating point as universally optimal.
+The experiment uses one fixed dev split and a finite grid. Selecting the maximum among 61 thresholds and several model configurations can exploit dev-specific noise even without held-out leakage; the small held-out F1 delta is consistent with that risk. The $C=5/10$ and balanced $C=5/10$ extensions have a historical V1 held-out motivation, so they cannot be represented as independently held-out-blind candidates even though they did not change the selected winner. Linear SVC is only one reasonable second classifier, so this ticket does not establish that every CPU-compatible alternative is inferior. Class weighting and threshold tuning were intentionally tested independently to preserve causal interpretability; their interaction was not searched. Finally, labels include duplicates, near-duplicates, figurative uses, and ambiguous examples, so changes in measured F1 do not always correspond to unambiguous semantic improvements. These constraints are reasons to preserve the detailed error ledgers and avoid presenting the selected operating point as universally optimal.
