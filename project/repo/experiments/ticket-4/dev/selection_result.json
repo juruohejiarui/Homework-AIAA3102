@@ -1,0 +1,40 @@
+{
+  "criterion": "Maximize target-1 F1 on dev across the predeclared candidates. Threshold candidates are tested only on the baseline Logistic Regression scores; class weighting, C, and the second classifier are evaluated independently at their native default decision rules. If F1 ties within 1e-12, prefer the candidate with the fewest departures from the baseline, then the threshold closest to 0.50, then the lexicographically earliest name. Freeze the winner without consulting held-out.",
+  "heldout_evaluations_run": 0,
+  "heldout_rows_loaded": 0,
+  "selected_C": 1.0,
+  "selected_class_weight": "balanced",
+  "selected_metrics": {
+    "accuracy": 0.7852921864740644,
+    "f1_target_1": 0.7520849128127369,
+    "false_negative": 159,
+    "false_positive": 168,
+    "precision_target_1": 0.7469879518072289,
+    "recall_target_1": 0.7572519083969466,
+    "true_negative": 700,
+    "true_positive": 496
+  },
+  "selected_model_family": "logistic_regression",
+  "selected_threshold": 0.5,
+  "selected_variant": "lr_c1_balanced_default",
+  "selection_split": "dev_ids only",
+  "threshold_sweep_best": {
+    "accuracy": 0.7918581746552856,
+    "f1_target_1": 0.7494071146245059,
+    "false_negative": 181,
+    "false_positive": 136,
+    "precision_target_1": 0.7770491803278688,
+    "recall_target_1": 0.7236641221374046,
+    "threshold": 0.47,
+    "ticket": "ticket_4",
+    "true_negative": 732,
+    "true_positive": 474
+  },
+  "transitions_vs_frozen_baseline": {
+    "fixed_fn": 42,
+    "fixed_fp": 0,
+    "new_fn": 0,
+    "new_fp": 48,
+    "prediction_changes": 90
+  }
+}

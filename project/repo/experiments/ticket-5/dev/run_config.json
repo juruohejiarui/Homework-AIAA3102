@@ -1,0 +1,18 @@
+{
+  "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+  "dev_rows": 1523,
+  "exact_command": "D:\\project\\topic-a-text-classification-pipeline-forensics\\.venv\\Scripts\\python.exe -m pipeline.run_ticket5_dev --data data\\train.csv --split starter\\data\\split_indices.json --plan experiments\\ticket-5\\dev\\audit_plan.json --output-dir experiments\\ticket-5\\dev",
+  "heldout_evaluations_run": 0,
+  "heldout_labels_inspected": false,
+  "heldout_rows_loaded": 0,
+  "labels_modified": 0,
+  "n_jobs": 1,
+  "plan_sha256": "beb3c82d1dffcfceea2666ee54a74a4005be472ab269ebf0779bf02a45f8cffa",
+  "rows_removed": 0,
+  "scope": "Ticket 5 duplicate and frozen-model error candidate discovery on train/dev only",
+  "seed": 3102,
+  "source_rows_modified": 0,
+  "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+  "ticket4_dev_predictions_sha256": "b58e295cd07483ffd39696d0d3f2f991c3e0c627a7271dddbc0de91c105b2dcb",
+  "train_rows": 4567
+}

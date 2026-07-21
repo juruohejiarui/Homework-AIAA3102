@@ -1,8 +1,0 @@
-*.log
-*.out
-*.gz
-*.aux
-*.bbl
-*.blg
-*latexmk
-*.fls

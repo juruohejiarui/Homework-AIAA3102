@@ -1,0 +1,115 @@
+{
+  "leaky_tfidf_train_plus_dev": {
+    "converged": true,
+    "f1_delta_vs_baseline": -0.013575177539073224,
+    "fixed_fn": 0,
+    "fixed_fp": 35,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 33,
+    "new_fp": 0,
+    "prediction_changes": 68,
+    "warnings": []
+  },
+  "logreg_c_0_5": {
+    "converged": true,
+    "f1_delta_vs_baseline": -0.012139870551944765,
+    "fixed_fn": 3,
+    "fixed_fp": 8,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 17,
+    "new_fp": 4,
+    "prediction_changes": 32,
+    "warnings": []
+  },
+  "logreg_class_weight_balanced": {
+    "converged": true,
+    "f1_delta_vs_baseline": 0.013272870501915168,
+    "fixed_fn": 42,
+    "fixed_fp": 0,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 0,
+    "new_fp": 48,
+    "prediction_changes": 90,
+    "warnings": []
+  },
+  "logreg_explicit_l2": {
+    "converged": true,
+    "f1_delta_vs_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "interpretation": "This one-lever dev diagnostic is prediction-equivalent in this environment.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0,
+    "warnings": [
+      {
+        "category": "FutureWarning",
+        "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      }
+    ]
+  },
+  "logreg_max_iter_1000": {
+    "converged": true,
+    "f1_delta_vs_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "interpretation": "This one-lever dev diagnostic is prediction-equivalent in this environment.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0,
+    "warnings": []
+  },
+  "logreg_seed_9999": {
+    "converged": true,
+    "f1_delta_vs_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "interpretation": "This one-lever dev diagnostic is prediction-equivalent in this environment.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0,
+    "warnings": []
+  },
+  "logreg_solver_liblinear": {
+    "converged": true,
+    "f1_delta_vs_baseline": -0.0010270260241768137,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 1,
+    "new_fp": 0,
+    "prediction_changes": 1,
+    "warnings": []
+  },
+  "tfidf_lowercase_false": {
+    "converged": true,
+    "f1_delta_vs_baseline": -0.00766450132721519,
+    "fixed_fn": 12,
+    "fixed_fp": 14,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 20,
+    "new_fp": 13,
+    "prediction_changes": 59,
+    "warnings": []
+  },
+  "tfidf_word_bigrams": {
+    "converged": true,
+    "f1_delta_vs_baseline": -0.010067103039566705,
+    "fixed_fn": 13,
+    "fixed_fp": 12,
+    "interpretation": "This one-lever dev diagnostic materially changes reproducibility.",
+    "limitation": "Dev-only diagnostic; not used to revise the frozen result.",
+    "new_fn": 17,
+    "new_fp": 22,
+    "prediction_changes": 64,
+    "warnings": []
+  }
+}

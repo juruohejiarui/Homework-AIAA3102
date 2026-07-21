@@ -1,0 +1,68 @@
+{
+  "ticket": 5,
+  "created_before_correction_experiment": true,
+  "scope": "One controlled training-label correction set derived from train/dev duplicate evidence; no dev or held-out label changes",
+  "source_dataset_mutation_permitted": false,
+  "model": "Frozen Ticket 4 raw-text default TF-IDF plus balanced Logistic Regression, C=1.0, threshold=0.50",
+  "control": "Original training labels and original dev labels",
+  "candidate": "Eight proposed train-label corrections applied only to an in-memory copy; original dev labels unchanged",
+  "acceptance_rule": "Adopt the corrected-training model only if every proposal confidence is at least 0.90, dev F1 is no worse than 0.002 below the frozen Ticket 4 dev F1, and the candidate fixes at least as many Ticket 4 dev errors as it creates. Otherwise retain the frozen Ticket 4 model. Held-out cannot affect this decision.",
+  "proposals": [
+    {
+      "id": 4076,
+      "original_label": 0,
+      "proposed_label": 1,
+      "confidence": 0.98,
+      "evidence": "Raw-exact duplicate group contains IDs 4068 and 4077 labeled 1 in train and ID 4072 labeled 1 in dev; the text explicitly describes genocide, refugees, and internally displaced people."
+    },
+    {
+      "id": 6566,
+      "original_label": 0,
+      "proposed_label": 1,
+      "confidence": 0.99,
+      "evidence": "Raw-exact train duplicates 6537 and 6548 are labeled 1; the text is a cleared traffic incident with injury, which is literal event reporting."
+    },
+    {
+      "id": 8698,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.98,
+      "evidence": "Raw-exact train duplicates 8702 and 8714 are labeled 0; 'sinking feeling' refers figuratively to discovering a phone used 3G, not a disaster."
+    },
+    {
+      "id": 8739,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.98,
+      "evidence": "Same raw-exact 3G-phone text as IDs 8698, 8702, and 8714; semantics are clearly figurative despite another canonical dev duplicate carrying label 1."
+    },
+    {
+      "id": 1723,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.96,
+      "evidence": "Raw-exact train duplicate 1922 is labeled 0; the text is a lyric-like phrase about 'burning buildings,' not a report of an event."
+    },
+    {
+      "id": 1760,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.96,
+      "evidence": "Raw-exact train duplicate 1950 is labeled 0; the speaker hypothetically wants burning buildings in a music video rather than reporting a disaster."
+    },
+    {
+      "id": 6097,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.99,
+      "evidence": "Four raw-exact duplicates (6087, 6090, 6111, 6118) are labeled 0; 'Hellfire' occurs in a religious charity quotation, not a literal fire."
+    },
+    {
+      "id": 9472,
+      "original_label": 1,
+      "proposed_label": 0,
+      "confidence": 0.98,
+      "evidence": "Raw-exact dev duplicate 9470 is labeled 0; the text explicitly says Islam is the opposite of terrorism and reports no event."
+    }
+  ]
+}

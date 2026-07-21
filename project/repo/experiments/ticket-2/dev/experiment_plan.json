@@ -1,0 +1,53 @@
+{
+  "ticket": 2,
+  "created_before_dev_execution": true,
+  "baseline": "Exact frozen raw-text TF-IDF plus Logistic Regression baseline",
+  "selection_split": "dev_ids only",
+  "heldout_access_by_dev_command": false,
+  "selection_rule": "Prefer a one-lever variant only when dev error transitions and the paired superficial-perturbation check support its mechanism. Otherwise retain raw text. Do not select from held-out.",
+  "variants": [
+    {
+      "name": "raw_text_control",
+      "lever": "none",
+      "hypothesis": "The unchanged frozen baseline provides the required control and may already be invariant to several surface forms because its default token pattern lowercases words and ignores much punctuation and emoji."
+    },
+    {
+      "name": "normalize_urls_placeholder",
+      "lever": "replace complete URLs with URLTOKEN",
+      "hypothesis": "Collapsing unstable domains and paths while preserving URL presence will reduce memorization of URL fragments and improve robustness, with little loss of disaster-semantic evidence."
+    },
+    {
+      "name": "normalize_mentions_placeholder",
+      "lever": "replace @handles with MENTIONTOKEN",
+      "hypothesis": "Collapsing user handles will remove identity-specific vocabulary while preserving the fact that a mention occurred, improving robustness with little visible-score cost."
+    },
+    {
+      "name": "strip_hashtag_marker",
+      "lever": "remove # while preserving hashtag text",
+      "hypothesis": "Preserving the hashtag word but removing its marker should retain topical meaning and make hash-mark formatting irrelevant; the frozen tokenizer may already make this prediction-equivalent."
+    },
+    {
+      "name": "normalize_punctuation_to_space",
+      "lever": "replace every Unicode punctuation character with a space",
+      "hypothesis": "Canonical punctuation boundaries may reduce stylistic noise, but apostrophes, underscores, and URL punctuation can also affect useful token structure, so error movement may be mixed."
+    },
+    {
+      "name": "unicode_casefold",
+      "lever": "apply Unicode casefold before the frozen lowercasing vectorizer",
+      "hypothesis": "Unicode casefolding should make casing perturbations harmless and mostly match the already-lowercased control, with possible differences only for non-ASCII case mappings."
+    },
+    {
+      "name": "normalize_emoji_placeholder",
+      "lever": "replace emoji spans with EMOJITOKEN",
+      "hypothesis": "Preserving emoji presence as one token may capture affect while preventing particular glyphs from being brittle; because the frozen word tokenizer ignores most emoji, visible movement may be small."
+    }
+  ],
+  "paired_robustness_perturbations": {
+    "normalize_urls_placeholder": "replace URLs with a deterministic unseen URL",
+    "normalize_mentions_placeholder": "replace handles with a deterministic unseen handle",
+    "strip_hashtag_marker": "remove hashtag markers",
+    "normalize_punctuation_to_space": "replace Unicode punctuation with an alternate punctuation mark",
+    "unicode_casefold": "swap input casing",
+    "normalize_emoji_placeholder": "replace emoji spans with a different emoji"
+  }
+}

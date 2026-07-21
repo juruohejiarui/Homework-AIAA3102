@@ -1,0 +1,28 @@
+{
+  "baseline_dev_predictions_sha256": "0e10a0d08ab24d2f85413bb4efcf284dee62593b8e58457bab305ff168525c32",
+  "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+  "dev_rows": 1523,
+  "exact_command": "D:\\project\\topic-a-text-classification-pipeline-forensics\\.venv\\Scripts\\python.exe -m pipeline.run_ticket3_dev --data data\\train.csv --split starter\\data\\split_indices.json --plan experiments\\ticket-3\\dev\\experiment_plan.json --output-dir experiments\\ticket-3\\dev",
+  "heldout_evaluations_run": 0,
+  "heldout_rows_loaded": 0,
+  "n_jobs": 1,
+  "plan_sha256": "e0da43650b5682ed4426c2c9140f25532fe42d54fa7e753d41f15de3eae852b3",
+  "raw_control_reproduces_frozen_baseline": true,
+  "scope": "Ticket 3 controlled feature and shortcut audit on dev only",
+  "seed": 3102,
+  "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+  "ticket1_freeze_sha256": "3b1f589fb5b445cf146e63ad176dd5255e99aa342cc0502c8b8df657945ee3e8",
+  "train_rows": 4567,
+  "variants": [
+    "train_majority_floor",
+    "raw_text_tfidf_logistic_regression",
+    "keyword_only",
+    "length_only",
+    "keyword_plus_length",
+    "location_only",
+    "keyword_plus_location",
+    "selected_shallow_only",
+    "text_plus_keyword",
+    "text_plus_selected_shallow_features"
+  ]
+}

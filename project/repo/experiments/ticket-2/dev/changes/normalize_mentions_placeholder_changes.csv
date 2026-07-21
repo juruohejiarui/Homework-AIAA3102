@@ -1,0 +1,9 @@
+id,text,keyword,location,y_true,baseline_y_pred,candidate_y_pred,baseline_score,candidate_score,transition,baseline_correct,candidate_correct,outcome
+512,Vote for #Directioners vs #Queens in the 5th round of the @Billboard #FanArmyFaceOff http://t.co/Kgtxnnbj7y,army,,0,1,0,0.5120563427295252,0.49608003191041894,1->0,False,True,fixed_error
+840,FedEx to stop transporting bioterror germs after lab mishaps: FedEx has stopped transporting certain research ... http://t.co/y3dM9uLqxG,bioterror,"Phoenix, AZ",1,0,1,0.4946231612578764,0.5025566647646911,0->1,False,True,fixed_error
+2352,The @POTUS economy continues to collapse.,collapse,United States,1,1,0,0.50575890442099,0.4611598146251549,1->0,True,False,new_error
+5282,@CowgirlLawyer We must refuse to become a nation with everyone living in fear of being shot unawares by intoxicated &amp;/or crazy people.,fear,Midwestern USA,1,1,0,0.5008256985024112,0.4959878158462702,1->0,True,False,new_error
+5344,@DaughterofNai Tenshi activated Yuki's fire card!,fire,Makai,0,1,0,0.5046578597519968,0.48817575806433927,1->0,False,True,fixed_error
+6863,@D1ff3r3nt1sG00d @RiceeChrispies What if he committed a mass murder?,mass%20murder,"Leicester, England",1,1,0,0.513861486388386,0.48307195378269474,1->0,True,False,new_error
+9471,OMEGA MEN Writer Explores Terrorism Religion In an 'Epic KYLE RAYNER Story' http://t.co/Hr88CWxPGz #Newsarama,terrorism,"Tampa, FL",0,0,1,0.4856709835140445,0.5007349135970295,0->1,True,False,new_error
+9551,The few I warned about .. Were just as I expected.. They are a threat to his soul,threat,"Ohio, USA",0,0,1,0.49677423658442704,0.5040182993437621,0->1,True,False,new_error

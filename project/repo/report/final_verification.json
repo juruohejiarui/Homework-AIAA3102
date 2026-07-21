@@ -1,0 +1,1074 @@
+{
+  "status": "PASS",
+  "scope": "final report, generated assets, frozen artifacts, representative cases, and PDF structure",
+  "checks": [
+    {
+      "check": "standard IEEE conference class",
+      "status": "PASS",
+      "detail": "IEEEtran conference mode"
+    },
+    {
+      "check": "verified authors",
+      "status": "PASS",
+      "detail": "both supplied names"
+    },
+    {
+      "check": "no placeholders",
+      "status": "PASS",
+      "detail": "source scanned"
+    },
+    {
+      "check": "required section completeness",
+      "status": "PASS",
+      "detail": "Project Problem and Goal, Methodology, Main Evidence and Results, Case Analysis, Difficulties and Solutions, AI Usage Declaration, Discussion and Limitations, Conclusion"
+    },
+    {
+      "check": "all five ticket discussions",
+      "status": "PASS",
+      "detail": "Tickets 1-5 present"
+    },
+    {
+      "check": "held-out policy explicit",
+      "status": "PASS",
+      "detail": "dev selection and held-out reporting distinguished"
+    },
+    {
+      "check": "asset generator validation",
+      "status": "PASS",
+      "detail": "196/196 checks"
+    },
+    {
+      "check": "source validation",
+      "status": "PASS",
+      "detail": "123/123 checks"
+    },
+    {
+      "check": "held-out labels unchanged",
+      "status": "PASS",
+      "detail": "no mutation/removal"
+    },
+    {
+      "check": "frozen manifest ticket count",
+      "status": "PASS",
+      "detail": "five ordered decisions"
+    },
+    {
+      "check": "data hash",
+      "status": "PASS",
+      "detail": "data/train.csv"
+    },
+    {
+      "check": "split hash",
+      "status": "PASS",
+      "detail": "starter/data/split_indices.json"
+    },
+    {
+      "check": "requirements hash",
+      "status": "PASS",
+      "detail": "requirements-lock.txt"
+    },
+    {
+      "check": "ticket 1 dev prediction hash",
+      "status": "PASS",
+      "detail": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 1 held-out prediction hash",
+      "status": "PASS",
+      "detail": "predictions/heldout_predictions.csv"
+    },
+    {
+      "check": "ticket 1 frozen configuration hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-1/frozen_baseline_config.json"
+    },
+    {
+      "check": "ticket 1 held-out completion hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-1/heldout/heldout_evaluation_completed.json"
+    },
+    {
+      "check": "ticket 1 dev-only decision",
+      "status": "PASS",
+      "detail": "dev_ids only"
+    },
+    {
+      "check": "ticket 2 dev prediction hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 2 held-out prediction hash",
+      "status": "PASS",
+      "detail": "predictions/ticket-2-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 2 frozen configuration hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/frozen_decision.json"
+    },
+    {
+      "check": "ticket 2 held-out completion hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/heldout/heldout_evaluation_completed.json"
+    },
+    {
+      "check": "ticket 2 dev-only decision",
+      "status": "PASS",
+      "detail": "dev_ids only"
+    },
+    {
+      "check": "ticket 3 dev prediction hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 3 held-out prediction hash",
+      "status": "PASS",
+      "detail": "predictions/ticket-3-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 3 frozen configuration hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/frozen_decision.json"
+    },
+    {
+      "check": "ticket 3 held-out completion hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/heldout/heldout_evaluation_completed.json"
+    },
+    {
+      "check": "ticket 3 dev-only decision",
+      "status": "PASS",
+      "detail": "dev_ids only"
+    },
+    {
+      "check": "ticket 4 dev prediction hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 4 held-out prediction hash",
+      "status": "PASS",
+      "detail": "predictions/ticket-4-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 4 frozen configuration hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/frozen_decision.json"
+    },
+    {
+      "check": "ticket 4 held-out completion hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_evaluation_completed.json"
+    },
+    {
+      "check": "ticket 4 dev-only decision",
+      "status": "PASS",
+      "detail": "dev_ids only"
+    },
+    {
+      "check": "ticket 5 dev prediction hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 5 held-out prediction hash",
+      "status": "PASS",
+      "detail": "predictions/ticket-5-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 5 frozen configuration hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/frozen_decision.json"
+    },
+    {
+      "check": "ticket 5 held-out completion hash",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/heldout/heldout_evaluation_completed.json"
+    },
+    {
+      "check": "ticket 5 dev-only decision",
+      "status": "PASS",
+      "detail": "train_ids and dev_ids only"
+    },
+    {
+      "check": "ticket 1 dev precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7909407665505227"
+    },
+    {
+      "check": "ticket 1 dev recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.6931297709923664"
+    },
+    {
+      "check": "ticket 1 dev f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7388120423108218"
+    },
+    {
+      "check": "ticket 1 dev accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7892317793827971"
+    },
+    {
+      "check": "ticket 1 dev true_negative",
+      "status": "PASS",
+      "detail": "recomputed=748"
+    },
+    {
+      "check": "ticket 1 dev false_positive",
+      "status": "PASS",
+      "detail": "recomputed=120"
+    },
+    {
+      "check": "ticket 1 dev false_negative",
+      "status": "PASS",
+      "detail": "recomputed=201"
+    },
+    {
+      "check": "ticket 1 dev true_positive",
+      "status": "PASS",
+      "detail": "recomputed=454"
+    },
+    {
+      "check": "ticket 1 dev confusion tn",
+      "status": "PASS",
+      "detail": "748"
+    },
+    {
+      "check": "ticket 1 dev confusion fp",
+      "status": "PASS",
+      "detail": "120"
+    },
+    {
+      "check": "ticket 1 dev confusion fn",
+      "status": "PASS",
+      "detail": "201"
+    },
+    {
+      "check": "ticket 1 dev confusion tp",
+      "status": "PASS",
+      "detail": "454"
+    },
+    {
+      "check": "ticket 1 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.8013937282229965"
+    },
+    {
+      "check": "ticket 1 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7033639143730887"
+    },
+    {
+      "check": "ticket 1 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7491856677524429"
+    },
+    {
+      "check": "ticket 1 heldout accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7977675640183848"
+    },
+    {
+      "check": "ticket 1 heldout true_negative",
+      "status": "PASS",
+      "detail": "recomputed=755"
+    },
+    {
+      "check": "ticket 1 heldout false_positive",
+      "status": "PASS",
+      "detail": "recomputed=114"
+    },
+    {
+      "check": "ticket 1 heldout false_negative",
+      "status": "PASS",
+      "detail": "recomputed=194"
+    },
+    {
+      "check": "ticket 1 heldout true_positive",
+      "status": "PASS",
+      "detail": "recomputed=460"
+    },
+    {
+      "check": "ticket 1 heldout confusion tn",
+      "status": "PASS",
+      "detail": "755"
+    },
+    {
+      "check": "ticket 1 heldout confusion fp",
+      "status": "PASS",
+      "detail": "114"
+    },
+    {
+      "check": "ticket 1 heldout confusion fn",
+      "status": "PASS",
+      "detail": "194"
+    },
+    {
+      "check": "ticket 1 heldout confusion tp",
+      "status": "PASS",
+      "detail": "460"
+    },
+    {
+      "check": "ticket 1 summary metrics",
+      "status": "PASS",
+      "detail": "summary matches prediction recomputation"
+    },
+    {
+      "check": "ticket 2 dev precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.8046594982078853"
+    },
+    {
+      "check": "ticket 2 dev recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.6854961832061068"
+    },
+    {
+      "check": "ticket 2 dev f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7403132728771641"
+    },
+    {
+      "check": "ticket 2 dev accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7931713722915299"
+    },
+    {
+      "check": "ticket 2 dev true_negative",
+      "status": "PASS",
+      "detail": "recomputed=759"
+    },
+    {
+      "check": "ticket 2 dev false_positive",
+      "status": "PASS",
+      "detail": "recomputed=109"
+    },
+    {
+      "check": "ticket 2 dev false_negative",
+      "status": "PASS",
+      "detail": "recomputed=206"
+    },
+    {
+      "check": "ticket 2 dev true_positive",
+      "status": "PASS",
+      "detail": "recomputed=449"
+    },
+    {
+      "check": "ticket 2 dev confusion tn",
+      "status": "PASS",
+      "detail": "759"
+    },
+    {
+      "check": "ticket 2 dev confusion fp",
+      "status": "PASS",
+      "detail": "109"
+    },
+    {
+      "check": "ticket 2 dev confusion fn",
+      "status": "PASS",
+      "detail": "206"
+    },
+    {
+      "check": "ticket 2 dev confusion tp",
+      "status": "PASS",
+      "detail": "449"
+    },
+    {
+      "check": "ticket 2 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.825136612021858"
+    },
+    {
+      "check": "ticket 2 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.6926605504587156"
+    },
+    {
+      "check": "ticket 2 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7531172069825437"
+    },
+    {
+      "check": "ticket 2 heldout accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.8049901510177282"
+    },
+    {
+      "check": "ticket 2 heldout true_negative",
+      "status": "PASS",
+      "detail": "recomputed=773"
+    },
+    {
+      "check": "ticket 2 heldout false_positive",
+      "status": "PASS",
+      "detail": "recomputed=96"
+    },
+    {
+      "check": "ticket 2 heldout false_negative",
+      "status": "PASS",
+      "detail": "recomputed=201"
+    },
+    {
+      "check": "ticket 2 heldout true_positive",
+      "status": "PASS",
+      "detail": "recomputed=453"
+    },
+    {
+      "check": "ticket 2 heldout confusion tn",
+      "status": "PASS",
+      "detail": "773"
+    },
+    {
+      "check": "ticket 2 heldout confusion fp",
+      "status": "PASS",
+      "detail": "96"
+    },
+    {
+      "check": "ticket 2 heldout confusion fn",
+      "status": "PASS",
+      "detail": "201"
+    },
+    {
+      "check": "ticket 2 heldout confusion tp",
+      "status": "PASS",
+      "detail": "453"
+    },
+    {
+      "check": "ticket 2 summary metrics",
+      "status": "PASS",
+      "detail": "summary matches prediction recomputation"
+    },
+    {
+      "check": "ticket 3 dev precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7909407665505227"
+    },
+    {
+      "check": "ticket 3 dev recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.6931297709923664"
+    },
+    {
+      "check": "ticket 3 dev f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7388120423108218"
+    },
+    {
+      "check": "ticket 3 dev accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7892317793827971"
+    },
+    {
+      "check": "ticket 3 dev true_negative",
+      "status": "PASS",
+      "detail": "recomputed=748"
+    },
+    {
+      "check": "ticket 3 dev false_positive",
+      "status": "PASS",
+      "detail": "recomputed=120"
+    },
+    {
+      "check": "ticket 3 dev false_negative",
+      "status": "PASS",
+      "detail": "recomputed=201"
+    },
+    {
+      "check": "ticket 3 dev true_positive",
+      "status": "PASS",
+      "detail": "recomputed=454"
+    },
+    {
+      "check": "ticket 3 dev confusion tn",
+      "status": "PASS",
+      "detail": "748"
+    },
+    {
+      "check": "ticket 3 dev confusion fp",
+      "status": "PASS",
+      "detail": "120"
+    },
+    {
+      "check": "ticket 3 dev confusion fn",
+      "status": "PASS",
+      "detail": "201"
+    },
+    {
+      "check": "ticket 3 dev confusion tp",
+      "status": "PASS",
+      "detail": "454"
+    },
+    {
+      "check": "ticket 3 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.8013937282229965"
+    },
+    {
+      "check": "ticket 3 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7033639143730887"
+    },
+    {
+      "check": "ticket 3 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7491856677524429"
+    },
+    {
+      "check": "ticket 3 heldout accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7977675640183848"
+    },
+    {
+      "check": "ticket 3 heldout true_negative",
+      "status": "PASS",
+      "detail": "recomputed=755"
+    },
+    {
+      "check": "ticket 3 heldout false_positive",
+      "status": "PASS",
+      "detail": "recomputed=114"
+    },
+    {
+      "check": "ticket 3 heldout false_negative",
+      "status": "PASS",
+      "detail": "recomputed=194"
+    },
+    {
+      "check": "ticket 3 heldout true_positive",
+      "status": "PASS",
+      "detail": "recomputed=460"
+    },
+    {
+      "check": "ticket 3 heldout confusion tn",
+      "status": "PASS",
+      "detail": "755"
+    },
+    {
+      "check": "ticket 3 heldout confusion fp",
+      "status": "PASS",
+      "detail": "114"
+    },
+    {
+      "check": "ticket 3 heldout confusion fn",
+      "status": "PASS",
+      "detail": "194"
+    },
+    {
+      "check": "ticket 3 heldout confusion tp",
+      "status": "PASS",
+      "detail": "460"
+    },
+    {
+      "check": "ticket 3 summary metrics",
+      "status": "PASS",
+      "detail": "summary matches prediction recomputation"
+    },
+    {
+      "check": "ticket 4 dev precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7469879518072289"
+    },
+    {
+      "check": "ticket 4 dev recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7572519083969466"
+    },
+    {
+      "check": "ticket 4 dev f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7520849128127368"
+    },
+    {
+      "check": "ticket 4 dev accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7852921864740644"
+    },
+    {
+      "check": "ticket 4 dev true_negative",
+      "status": "PASS",
+      "detail": "recomputed=700"
+    },
+    {
+      "check": "ticket 4 dev false_positive",
+      "status": "PASS",
+      "detail": "recomputed=168"
+    },
+    {
+      "check": "ticket 4 dev false_negative",
+      "status": "PASS",
+      "detail": "recomputed=159"
+    },
+    {
+      "check": "ticket 4 dev true_positive",
+      "status": "PASS",
+      "detail": "recomputed=496"
+    },
+    {
+      "check": "ticket 4 dev confusion tn",
+      "status": "PASS",
+      "detail": "700"
+    },
+    {
+      "check": "ticket 4 dev confusion fp",
+      "status": "PASS",
+      "detail": "168"
+    },
+    {
+      "check": "ticket 4 dev confusion fn",
+      "status": "PASS",
+      "detail": "159"
+    },
+    {
+      "check": "ticket 4 dev confusion tp",
+      "status": "PASS",
+      "detail": "496"
+    },
+    {
+      "check": "ticket 4 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7443609022556391"
+    },
+    {
+      "check": "ticket 4 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7568807339449541"
+    },
+    {
+      "check": "ticket 4 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7505686125852918"
+    },
+    {
+      "check": "ticket 4 heldout accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7839789888378201"
+    },
+    {
+      "check": "ticket 4 heldout true_negative",
+      "status": "PASS",
+      "detail": "recomputed=699"
+    },
+    {
+      "check": "ticket 4 heldout false_positive",
+      "status": "PASS",
+      "detail": "recomputed=170"
+    },
+    {
+      "check": "ticket 4 heldout false_negative",
+      "status": "PASS",
+      "detail": "recomputed=159"
+    },
+    {
+      "check": "ticket 4 heldout true_positive",
+      "status": "PASS",
+      "detail": "recomputed=495"
+    },
+    {
+      "check": "ticket 4 heldout confusion tn",
+      "status": "PASS",
+      "detail": "699"
+    },
+    {
+      "check": "ticket 4 heldout confusion fp",
+      "status": "PASS",
+      "detail": "170"
+    },
+    {
+      "check": "ticket 4 heldout confusion fn",
+      "status": "PASS",
+      "detail": "159"
+    },
+    {
+      "check": "ticket 4 heldout confusion tp",
+      "status": "PASS",
+      "detail": "495"
+    },
+    {
+      "check": "ticket 4 summary metrics",
+      "status": "PASS",
+      "detail": "summary matches prediction recomputation"
+    },
+    {
+      "check": "ticket 5 dev precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7469879518072289"
+    },
+    {
+      "check": "ticket 5 dev recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7572519083969466"
+    },
+    {
+      "check": "ticket 5 dev f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7520849128127368"
+    },
+    {
+      "check": "ticket 5 dev accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7852921864740644"
+    },
+    {
+      "check": "ticket 5 dev true_negative",
+      "status": "PASS",
+      "detail": "recomputed=700"
+    },
+    {
+      "check": "ticket 5 dev false_positive",
+      "status": "PASS",
+      "detail": "recomputed=168"
+    },
+    {
+      "check": "ticket 5 dev false_negative",
+      "status": "PASS",
+      "detail": "recomputed=159"
+    },
+    {
+      "check": "ticket 5 dev true_positive",
+      "status": "PASS",
+      "detail": "recomputed=496"
+    },
+    {
+      "check": "ticket 5 dev confusion tn",
+      "status": "PASS",
+      "detail": "700"
+    },
+    {
+      "check": "ticket 5 dev confusion fp",
+      "status": "PASS",
+      "detail": "168"
+    },
+    {
+      "check": "ticket 5 dev confusion fn",
+      "status": "PASS",
+      "detail": "159"
+    },
+    {
+      "check": "ticket 5 dev confusion tp",
+      "status": "PASS",
+      "detail": "496"
+    },
+    {
+      "check": "ticket 5 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7443609022556391"
+    },
+    {
+      "check": "ticket 5 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7568807339449541"
+    },
+    {
+      "check": "ticket 5 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "recomputed=0.7505686125852918"
+    },
+    {
+      "check": "ticket 5 heldout accuracy",
+      "status": "PASS",
+      "detail": "recomputed=0.7839789888378201"
+    },
+    {
+      "check": "ticket 5 heldout true_negative",
+      "status": "PASS",
+      "detail": "recomputed=699"
+    },
+    {
+      "check": "ticket 5 heldout false_positive",
+      "status": "PASS",
+      "detail": "recomputed=170"
+    },
+    {
+      "check": "ticket 5 heldout false_negative",
+      "status": "PASS",
+      "detail": "recomputed=159"
+    },
+    {
+      "check": "ticket 5 heldout true_positive",
+      "status": "PASS",
+      "detail": "recomputed=495"
+    },
+    {
+      "check": "ticket 5 heldout confusion tn",
+      "status": "PASS",
+      "detail": "699"
+    },
+    {
+      "check": "ticket 5 heldout confusion fp",
+      "status": "PASS",
+      "detail": "170"
+    },
+    {
+      "check": "ticket 5 heldout confusion fn",
+      "status": "PASS",
+      "detail": "159"
+    },
+    {
+      "check": "ticket 5 heldout confusion tp",
+      "status": "PASS",
+      "detail": "495"
+    },
+    {
+      "check": "ticket 5 summary metrics",
+      "status": "PASS",
+      "detail": "summary matches prediction recomputation"
+    },
+    {
+      "check": "representative case count and IDs",
+      "status": "PASS",
+      "detail": "rows=16"
+    },
+    {
+      "check": "case 5282 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 5282 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-1/probes/changes/logreg_solver_liblinear_changes.csv"
+    },
+    {
+      "check": "case 773 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 773 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case 902 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 902 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case 7 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 7 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/keyword_only_changes.csv"
+    },
+    {
+      "check": "case 25 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 25 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/keyword_only_changes.csv"
+    },
+    {
+      "check": "case 331 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 331 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/text_plus_selected_shallow_features_changes.csv"
+    },
+    {
+      "check": "case 556 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 556 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case 59 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 59 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case 767 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 767 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case 9470 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 9470 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv"
+    },
+    {
+      "check": "case 4014 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 4014 predictions/scores/category",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv"
+    },
+    {
+      "check": "case 5760 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 5760 predictions/scores/category",
+      "status": "PASS",
+      "detail": "results/data_quality_audit.csv"
+    },
+    {
+      "check": "case 2619 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 2619 predictions/scores/category",
+      "status": "PASS",
+      "detail": "results/data_quality_audit.csv"
+    },
+    {
+      "check": "case 6220 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 6220 predictions/scores/category",
+      "status": "PASS",
+      "detail": "results/data_quality_audit.csv"
+    },
+    {
+      "check": "case 6223 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 6223 predictions/scores/category",
+      "status": "PASS",
+      "detail": "results/data_quality_audit.csv"
+    },
+    {
+      "check": "case 10795 source truth",
+      "status": "PASS",
+      "detail": "stable ID text and label"
+    },
+    {
+      "check": "case 10795 predictions/scores/category",
+      "status": "PASS",
+      "detail": "results/data_quality_audit.csv"
+    },
+    {
+      "check": "threshold figure source",
+      "status": "PASS",
+      "detail": "61 rows match"
+    },
+    {
+      "check": "dev/held-out figure source",
+      "status": "PASS",
+      "detail": "10 ticket/split values"
+    },
+    {
+      "check": "transition figure source",
+      "status": "PASS",
+      "detail": "five held-out rows"
+    },
+    {
+      "check": "data-quality figure source",
+      "status": "PASS",
+      "detail": "{'ambiguous': 15, 'fix': 30, 'keep_but_flag': 6, 'reject_false_positive': 13}"
+    },
+    {
+      "check": "prose decimal provenance",
+      "status": "PASS",
+      "detail": "checked=75, unmatched=[]"
+    },
+    {
+      "check": "PDF opens and page count",
+      "status": "PASS",
+      "detail": "pages=12"
+    },
+    {
+      "check": "no blank or corrupted PDF pages",
+      "status": "PASS",
+      "detail": "[5216, 4826, 5463, 4657, 3029, 4575, 3342, 3415, 2821, 6389, 6357, 2728]"
+    },
+    {
+      "check": "US-letter PDF pages",
+      "status": "PASS",
+      "detail": "612x792 pt"
+    },
+    {
+      "check": "PDF author names",
+      "status": "PASS",
+      "detail": "front matter"
+    },
+    {
+      "check": "PDF table coverage",
+      "status": "PASS",
+      "detail": "Tables I-XIV"
+    },
+    {
+      "check": "PDF figure coverage",
+      "status": "PASS",
+      "detail": "Figures 1-4"
+    },
+    {
+      "check": "PDF section coverage",
+      "status": "PASS",
+      "detail": "all required sections extracted"
+    },
+    {
+      "check": "PDF has no placeholder text",
+      "status": "PASS",
+      "detail": "extracted text scanned"
+    }
+  ],
+  "check_count": 209,
+  "representative_case_ids": [
+    5282,
+    773,
+    902,
+    7,
+    25,
+    331,
+    556,
+    59,
+    767,
+    9470,
+    4014,
+    5760,
+    2619,
+    6220,
+    6223,
+    10795
+  ],
+  "pdf_pages": 12,
+  "pdf_sha256": "a1b81e2a29963ca755f00b2c63170e087f3468dda05a49a177c4d23782384275",
+  "experiments_rerun": false,
+  "heldout_labels_modified": false
+}

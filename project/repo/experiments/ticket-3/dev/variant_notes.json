@@ -1,0 +1,102 @@
+{
+  "keyword_only": {
+    "fixed_fn": 71,
+    "fixed_fp": 62,
+    "hypothesis": "Keywords carry strong topical signal but are mixed evidence because they are benchmark-provided retrieval metadata rather than tweet prose.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.078953440583; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 105,
+    "new_fp": 140,
+    "prediction_changes": 378
+  },
+  "keyword_plus_length": {
+    "fixed_fn": 59,
+    "fixed_fp": 62,
+    "hypothesis": "Length may add complementary style information to keyword, but any gain may remain shortcut-prone.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.073751801347; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 99,
+    "new_fp": 118,
+    "prediction_changes": 338
+  },
+  "keyword_plus_location": {
+    "fixed_fn": 69,
+    "fixed_fp": 69,
+    "hypothesis": "Location may add memorized identity-like categories to keyword but should not be trusted without robust evidence.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.080177504158; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 113,
+    "new_fp": 129,
+    "prediction_changes": 380
+  },
+  "length_only": {
+    "fixed_fn": 38,
+    "fixed_fp": 69,
+    "hypothesis": "Length can separate reporting styles but is primarily a shallow dataset artifact and should be weak alone.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.301199022419; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 250,
+    "new_fp": 158,
+    "prediction_changes": 515
+  },
+  "location_only": {
+    "fixed_fn": 14,
+    "fixed_fp": 106,
+    "hypothesis": "Sparse user-entered locations should be weak and brittle; apparent signal is likely a dataset artifact.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.514397738982; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 377,
+    "new_fp": 51,
+    "prediction_changes": 548
+  },
+  "raw_text_tfidf_logistic_regression": {
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "hypothesis": "Provides the frozen legitimate content baseline.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is 0.000000000000; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  },
+  "selected_shallow_only": {
+    "fixed_fn": 46,
+    "fixed_fp": 68,
+    "hypothesis": "Counts, ratios, missingness, and length may expose benchmark construction artifacts but should remain weaker than semantic text.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.208522314479; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 198,
+    "new_fp": 130,
+    "prediction_changes": 442
+  },
+  "text_plus_keyword": {
+    "fixed_fn": 33,
+    "fixed_fp": 35,
+    "hypothesis": "Keyword may complement tweet text and improve dev performance, but the model should be audited under keyword masking before adoption.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.003728510091; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 25,
+    "new_fp": 55,
+    "prediction_changes": 148
+  },
+  "text_plus_selected_shallow_features": {
+    "fixed_fn": 46,
+    "fixed_fp": 41,
+    "hypothesis": "Adding keyword plus length, surface counts, and missingness may improve the visible split; adoption requires that the gain not be explained by brittle fields or superficial formatting.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is 0.010583606360; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 35,
+    "new_fp": 42,
+    "prediction_changes": 164
+  },
+  "train_majority_floor": {
+    "fixed_fn": 0,
+    "fixed_fp": 120,
+    "hypothesis": "Provides a no-signal wiring floor and should have target-1 F1 zero.",
+    "interpretation": "Dev F1 delta versus frozen text baseline is -0.738812042311; inspect transitions, coefficients, and perturbations before judging legitimacy.",
+    "limitation": "One fixed dev split; correlations are not causal and held-out was not accessed by this command.",
+    "new_fn": 454,
+    "new_fp": 0,
+    "prediction_changes": 574
+  }
+}

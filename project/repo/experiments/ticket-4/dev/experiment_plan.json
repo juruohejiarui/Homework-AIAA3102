@@ -1,0 +1,58 @@
+{
+  "ticket": 4,
+  "created_before_dev_execution": true,
+  "selection_split": "dev_ids only",
+  "heldout_access_by_dev_command": false,
+  "controlled_preprocessing": "Frozen Ticket 1 raw-text default TfidfVectorizer fitted on train_ids only",
+  "frozen_baseline_comparator": "raw_text_tfidf_logistic_regression at probability threshold 0.50",
+  "selection_criterion": "Maximize target-1 F1 on dev across the predeclared candidates. Threshold candidates are tested only on the baseline Logistic Regression scores; class weighting, C, and the second classifier are evaluated independently at their native default decision rules. If F1 ties within 1e-12, prefer the candidate with the fewest departures from the baseline, then the threshold closest to 0.50, then the lexicographically earliest name. Freeze the winner without consulting held-out.",
+  "threshold_sweep": {
+    "model": "raw_text_tfidf_logistic_regression with C=1.0 and class_weight=null",
+    "inclusive_minimum": 0.2,
+    "inclusive_maximum": 0.8,
+    "step": 0.01,
+    "count": 61,
+    "prediction_rule": "predict target 1 when predict_proba(class 1) >= threshold",
+    "hypothesis": "A threshold below 0.50 may recover disaster tweets currently missed by the conservative baseline, improving recall and F1 at the cost of additional false positives."
+  },
+  "class_weight_comparison": [
+    {
+      "name": "lr_c1_unweighted_default",
+      "class_weight": null,
+      "threshold": 0.5,
+      "hypothesis": "This reproduces the frozen control."
+    },
+    {
+      "name": "lr_c1_balanced_default",
+      "class_weight": "balanced",
+      "threshold": 0.5,
+      "hypothesis": "Balanced class weights should increase sensitivity to target 1 and recall, but may sacrifice precision by creating false positives."
+    }
+  ],
+  "regularization_grid": {
+    "classifier": "LogisticRegression with lbfgs, L2 behavior, class_weight=null, threshold=0.5",
+    "C_values": [0.25, 0.5, 1.0, 2.0, 4.0, 5.0, 10.0],
+    "hypothesis": "Lower C may underfit rare disaster terms; higher C may separate harder examples but can amplify noisy tokens. The extended range (up to C=10) tests whether less-regularized models can better discriminate borderline disaster vocabulary. Motivated by a parallel study (V1) where C=10 with balanced weighting achieved held-out F1=0.7547."
+  },
+  "second_classifier": {
+    "name": "linear_svc_c1_default",
+    "classifier": "LinearSVC",
+    "C": 1.0,
+    "class_weight": null,
+    "decision_threshold": 0.0,
+    "hypothesis": "A linear maximum-margin classifier is a justified CPU-compatible sparse-text comparator and may separate TF-IDF vectors differently from probabilistic Logistic Regression while holding preprocessing fixed."
+  },
+  "combined_grid": {
+    "description": "Balanced class weight combined with higher C values, motivated by V1 parallel results.",
+    "variants": [
+      {"name": "lr_c5_balanced_default", "C": 5.0, "class_weight": "balanced", "hypothesis": "Combining balanced weighting with reduced regularization may further improve recall."},
+      {"name": "lr_c10_balanced_default", "C": 10.0, "class_weight": "balanced", "hypothesis": "Least-regularized balanced variant; V1 evidence suggests this may achieve highest held-out F1."}
+    ]
+  },
+  "bounded_search_statement": "Exactly 61 baseline thresholds, one independent non-default class-weight setting, seven total C values including the control (extended to include C=5 and C=10), two combined class-weight+C variants, and one second classifier are evaluated. No adaptive or unbounded hyperparameter search is permitted.",
+  "reporting": {
+    "threshold_sweep_contract_path": "results/threshold_sweep.csv",
+    "all_transitions_relative_to": "Frozen Ticket 1 baseline dev predictions",
+    "required_examples": "Save every changed dev prediction with text and metadata context, plus false-positive and false-negative tables."
+  }
+}

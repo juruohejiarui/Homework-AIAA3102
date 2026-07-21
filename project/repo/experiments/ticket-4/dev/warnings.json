@@ -1,0 +1,51 @@
+{
+  "linear_svc_c1_default": {
+    "converged": true,
+    "n_iter": [
+      43
+    ],
+    "warnings": []
+  },
+  "lr_c025_unweighted_default": {
+    "converged": true,
+    "n_iter": [
+      6
+    ],
+    "warnings": []
+  },
+  "lr_c05_unweighted_default": {
+    "converged": true,
+    "n_iter": [
+      13
+    ],
+    "warnings": []
+  },
+  "lr_c1_balanced_default": {
+    "converged": true,
+    "n_iter": [
+      10
+    ],
+    "warnings": []
+  },
+  "lr_c1_unweighted_default": {
+    "converged": true,
+    "n_iter": [
+      15
+    ],
+    "warnings": []
+  },
+  "lr_c2_unweighted_default": {
+    "converged": true,
+    "n_iter": [
+      22
+    ],
+    "warnings": []
+  },
+  "lr_c4_unweighted_default": {
+    "converged": true,
+    "n_iter": [
+      19
+    ],
+    "warnings": []
+  }
+}

@@ -1,9 +1,0 @@
-issue_type,disposition,evidence_rows,unique_ids,heldout_evidence_rows
-conflicting_label_duplicate,ambiguous,266,266,42
-exact_duplicate,keep_but_flag,179,179,41
-high_confidence_fn,ambiguous,75,75,75
-high_confidence_fp,ambiguous,48,48,48
-high_confidence_fp,reject_false_positive,1,1,1
-near_duplicate,ambiguous,27,27,0
-near_duplicate,keep_but_flag,73,73,0
-normalized_duplicate,keep_but_flag,1019,1019,202

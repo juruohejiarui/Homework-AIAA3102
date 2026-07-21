@@ -1,0 +1,48 @@
+{
+  "accidental_leakage": {
+    "diagnostic_probe": "leaky_tfidf_train_plus_dev",
+    "frozen_model": "sklearn Pipeline fitted on train only",
+    "status": "RULED_OUT_FOR_FROZEN_RUN"
+  },
+  "baseline_convergence": {
+    "max_iter": 100,
+    "n_iter": [
+      15
+    ],
+    "status": "PASS",
+    "warnings": []
+  },
+  "package_version_behavior": {
+    "conclusion": "Cross-version cause cannot be confirmed from the contract; explicit-L2 probe tests current semantics.",
+    "current_sklearn": "1.9.0",
+    "reference_sklearn": "not specified by project contract"
+  },
+  "preprocessing_and_features": {
+    "input": "raw text only",
+    "manual_preprocessor": null,
+    "metadata_features": [],
+    "pipeline_fit_scope": "train only",
+    "status": "PASS"
+  },
+  "row_position_misuse": {
+    "dataset_row_count": 7613,
+    "explanation": "Kaggle IDs are sparse identifiers, not row offsets; the loader joins by id.",
+    "ids_not_valid_as_zero_based_positions": 2279,
+    "maximum_kaggle_id": 10873,
+    "status": "RULED_OUT_FOR_FROZEN_RUN"
+  },
+  "seed_and_determinism": {
+    "seed": 3102,
+    "status": "PASS",
+    "step4_two_run_reproducibility": true
+  },
+  "split_assignment": {
+    "cross_split_overlap": 0,
+    "dev_count": 1523,
+    "heldout_count": 1523,
+    "selection_method": "Kaggle id membership followed by fixed JSON order",
+    "status": "PASS",
+    "train_count": 4567,
+    "unique_total": 7613
+  }
+}

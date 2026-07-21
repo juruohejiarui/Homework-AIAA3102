@@ -1,0 +1,663 @@
+{
+  "status": "PASS",
+  "validation_scope": "static final report-source validation; PDF checks are recorded separately",
+  "report_source": "report/main.tex",
+  "references": "report/references.bib",
+  "table_inputs": [
+    "../report_assets/tables/table_01_dataset_split_statistics.tex",
+    "../report_assets/tables/table_02_baseline_reference_comparison.tex",
+    "../report_assets/tables/table_03_five_ticket_summary.tex",
+    "../report_assets/tables/table_04_dev_metric_comparison.tex",
+    "../report_assets/tables/table_05_heldout_metric_comparison.tex",
+    "../report_assets/tables/table_06_confusion_matrix_summary.tex",
+    "../report_assets/tables/table_07_prediction_transitions.tex",
+    "../report_assets/tables/table_08_normalization_experiments.tex",
+    "../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex",
+    "../report_assets/tables/table_10_decision_rule_model_comparison.tex",
+    "../report_assets/tables/table_11_data_quality_audit_summary.tex",
+    "../report_assets/tables/table_12_representative_case_analysis.tex",
+    "../report_assets/tables/table_13_difficulties_and_solutions.tex",
+    "../report_assets/tables/table_14_ai_usage_and_verification.tex"
+  ],
+  "figure_inputs": [
+    "figure_01_threshold_sweep.png",
+    "figure_02_dev_heldout_f1.png",
+    "figure_03_prediction_transitions.png",
+    "figure_04_data_quality_dispositions.png"
+  ],
+  "citation_keys": [
+    "instructor-clarifications",
+    "kaggle-dataset",
+    "matplotlib-software",
+    "numpy-software",
+    "openai-codex",
+    "pandas-software",
+    "project-handout",
+    "sklearn-software",
+    "starter-data",
+    "starter-readme",
+    "ucbrise-mirror"
+  ],
+  "checks": [
+    {
+      "check": "IEEE conference class",
+      "status": "PASS",
+      "detail": "standard IEEEtran conference mode"
+    },
+    {
+      "check": "required section: Project Problem and Goal",
+      "status": "PASS",
+      "detail": "Project Problem and Goal"
+    },
+    {
+      "check": "required section: Methodology",
+      "status": "PASS",
+      "detail": "Methodology"
+    },
+    {
+      "check": "required section: Main Evidence and Results",
+      "status": "PASS",
+      "detail": "Main Evidence and Results"
+    },
+    {
+      "check": "required section: Case Analysis",
+      "status": "PASS",
+      "detail": "Case Analysis"
+    },
+    {
+      "check": "required section: Difficulties and Solutions",
+      "status": "PASS",
+      "detail": "Difficulties and Solutions"
+    },
+    {
+      "check": "required section: AI Usage Declaration",
+      "status": "PASS",
+      "detail": "AI Usage Declaration"
+    },
+    {
+      "check": "required section: Discussion and Limitations",
+      "status": "PASS",
+      "detail": "Discussion and Limitations"
+    },
+    {
+      "check": "required section: Conclusion",
+      "status": "PASS",
+      "detail": "Conclusion"
+    },
+    {
+      "check": "abstract",
+      "status": "PASS",
+      "detail": "abstract environment present"
+    },
+    {
+      "check": "keywords",
+      "status": "PASS",
+      "detail": "IEEE keywords present"
+    },
+    {
+      "check": "appendix",
+      "status": "PASS",
+      "detail": "appendices included"
+    },
+    {
+      "check": "bibliography",
+      "status": "PASS",
+      "detail": "BibTeX bibliography included"
+    },
+    {
+      "check": "references precede appendix",
+      "status": "PASS",
+      "detail": "requested report order"
+    },
+    {
+      "check": "14 generated tables included",
+      "status": "PASS",
+      "detail": "['../report_assets/tables/table_01_dataset_split_statistics.tex', '../report_assets/tables/table_02_baseline_reference_comparison.tex', '../report_assets/tables/table_03_five_ticket_summary.tex', '../report_assets/tables/table_04_dev_metric_comparison.tex', '../report_assets/tables/table_05_heldout_metric_comparison.tex', '../report_assets/tables/table_06_confusion_matrix_summary.tex', '../report_assets/tables/table_07_prediction_transitions.tex', '../report_assets/tables/table_08_normalization_experiments.tex', '../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex', '../report_assets/tables/table_10_decision_rule_model_comparison.tex', '../report_assets/tables/table_11_data_quality_audit_summary.tex', '../report_assets/tables/table_12_representative_case_analysis.tex', '../report_assets/tables/table_13_difficulties_and_solutions.tex', '../report_assets/tables/table_14_ai_usage_and_verification.tex']"
+    },
+    {
+      "check": "4 generated figures included",
+      "status": "PASS",
+      "detail": "['figure_01_threshold_sweep.png', 'figure_02_dev_heldout_f1.png', 'figure_03_prediction_transitions.png', 'figure_04_data_quality_dispositions.png']"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_01_dataset_split_statistics.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_01_dataset_split_statistics.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_02_baseline_reference_comparison.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_02_baseline_reference_comparison.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_03_five_ticket_summary.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_03_five_ticket_summary.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_04_dev_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_04_dev_metric_comparison.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_05_heldout_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_05_heldout_metric_comparison.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_06_confusion_matrix_summary.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_06_confusion_matrix_summary.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_07_prediction_transitions.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_07_prediction_transitions.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_08_normalization_experiments.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_08_normalization_experiments.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_09_shortcut_shallow_feature_audit.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_09_shortcut_shallow_feature_audit.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_10_decision_rule_model_comparison.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_10_decision_rule_model_comparison.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_11_data_quality_audit_summary.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_11_data_quality_audit_summary.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_12_representative_case_analysis.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_12_representative_case_analysis.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_13_difficulties_and_solutions.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_13_difficulties_and_solutions.tex"
+    },
+    {
+      "check": "included asset exists: ../report_assets/tables/table_14_ai_usage_and_verification.tex",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\tables\\table_14_ai_usage_and_verification.tex"
+    },
+    {
+      "check": "included asset exists: figure_01_threshold_sweep.png",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_01_threshold_sweep.png"
+    },
+    {
+      "check": "included asset exists: figure_02_dev_heldout_f1.png",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_02_dev_heldout_f1.png"
+    },
+    {
+      "check": "included asset exists: figure_03_prediction_transitions.png",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_03_prediction_transitions.png"
+    },
+    {
+      "check": "included asset exists: figure_04_data_quality_dispositions.png",
+      "status": "PASS",
+      "detail": "D:\\project\\topic-a-text-classification-pipeline-forensics\\report_assets\\figures\\figure_04_data_quality_dispositions.png"
+    },
+    {
+      "check": "balanced braces: main.tex",
+      "status": "PASS",
+      "detail": "report/main.tex"
+    },
+    {
+      "check": "balanced environments: main.tex",
+      "status": "PASS",
+      "detail": "report/main.tex"
+    },
+    {
+      "check": "ASCII-safe source: main.tex",
+      "status": "PASS",
+      "detail": "report/main.tex"
+    },
+    {
+      "check": "balanced braces: table_01_dataset_split_statistics.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_01_dataset_split_statistics.tex"
+    },
+    {
+      "check": "balanced environments: table_01_dataset_split_statistics.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_01_dataset_split_statistics.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_01_dataset_split_statistics.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_01_dataset_split_statistics.tex"
+    },
+    {
+      "check": "balanced braces: table_02_baseline_reference_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_02_baseline_reference_comparison.tex"
+    },
+    {
+      "check": "balanced environments: table_02_baseline_reference_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_02_baseline_reference_comparison.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_02_baseline_reference_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_02_baseline_reference_comparison.tex"
+    },
+    {
+      "check": "balanced braces: table_03_five_ticket_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_03_five_ticket_summary.tex"
+    },
+    {
+      "check": "balanced environments: table_03_five_ticket_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_03_five_ticket_summary.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_03_five_ticket_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_03_five_ticket_summary.tex"
+    },
+    {
+      "check": "balanced braces: table_04_dev_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_04_dev_metric_comparison.tex"
+    },
+    {
+      "check": "balanced environments: table_04_dev_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_04_dev_metric_comparison.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_04_dev_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_04_dev_metric_comparison.tex"
+    },
+    {
+      "check": "balanced braces: table_05_heldout_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_05_heldout_metric_comparison.tex"
+    },
+    {
+      "check": "balanced environments: table_05_heldout_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_05_heldout_metric_comparison.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_05_heldout_metric_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_05_heldout_metric_comparison.tex"
+    },
+    {
+      "check": "balanced braces: table_06_confusion_matrix_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_06_confusion_matrix_summary.tex"
+    },
+    {
+      "check": "balanced environments: table_06_confusion_matrix_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_06_confusion_matrix_summary.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_06_confusion_matrix_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_06_confusion_matrix_summary.tex"
+    },
+    {
+      "check": "balanced braces: table_07_prediction_transitions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_07_prediction_transitions.tex"
+    },
+    {
+      "check": "balanced environments: table_07_prediction_transitions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_07_prediction_transitions.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_07_prediction_transitions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_07_prediction_transitions.tex"
+    },
+    {
+      "check": "balanced braces: table_08_normalization_experiments.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_08_normalization_experiments.tex"
+    },
+    {
+      "check": "balanced environments: table_08_normalization_experiments.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_08_normalization_experiments.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_08_normalization_experiments.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_08_normalization_experiments.tex"
+    },
+    {
+      "check": "balanced braces: table_09_shortcut_shallow_feature_audit.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_09_shortcut_shallow_feature_audit.tex"
+    },
+    {
+      "check": "balanced environments: table_09_shortcut_shallow_feature_audit.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_09_shortcut_shallow_feature_audit.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_09_shortcut_shallow_feature_audit.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_09_shortcut_shallow_feature_audit.tex"
+    },
+    {
+      "check": "balanced braces: table_10_decision_rule_model_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_10_decision_rule_model_comparison.tex"
+    },
+    {
+      "check": "balanced environments: table_10_decision_rule_model_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_10_decision_rule_model_comparison.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_10_decision_rule_model_comparison.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_10_decision_rule_model_comparison.tex"
+    },
+    {
+      "check": "balanced braces: table_11_data_quality_audit_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_11_data_quality_audit_summary.tex"
+    },
+    {
+      "check": "balanced environments: table_11_data_quality_audit_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_11_data_quality_audit_summary.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_11_data_quality_audit_summary.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_11_data_quality_audit_summary.tex"
+    },
+    {
+      "check": "balanced braces: table_12_representative_case_analysis.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_12_representative_case_analysis.tex"
+    },
+    {
+      "check": "balanced environments: table_12_representative_case_analysis.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_12_representative_case_analysis.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_12_representative_case_analysis.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_12_representative_case_analysis.tex"
+    },
+    {
+      "check": "balanced braces: table_13_difficulties_and_solutions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_13_difficulties_and_solutions.tex"
+    },
+    {
+      "check": "balanced environments: table_13_difficulties_and_solutions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_13_difficulties_and_solutions.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_13_difficulties_and_solutions.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_13_difficulties_and_solutions.tex"
+    },
+    {
+      "check": "balanced braces: table_14_ai_usage_and_verification.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_14_ai_usage_and_verification.tex"
+    },
+    {
+      "check": "balanced environments: table_14_ai_usage_and_verification.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_14_ai_usage_and_verification.tex"
+    },
+    {
+      "check": "ASCII-safe source: table_14_ai_usage_and_verification.tex",
+      "status": "PASS",
+      "detail": "report_assets/tables/table_14_ai_usage_and_verification.tex"
+    },
+    {
+      "check": "all cross-references resolve",
+      "status": "PASS",
+      "detail": "unresolved=[]"
+    },
+    {
+      "check": "major asset referenced: fig:data-quality",
+      "status": "PASS",
+      "detail": "fig:data-quality"
+    },
+    {
+      "check": "major asset referenced: fig:dev-heldout",
+      "status": "PASS",
+      "detail": "fig:dev-heldout"
+    },
+    {
+      "check": "major asset referenced: fig:threshold",
+      "status": "PASS",
+      "detail": "fig:threshold"
+    },
+    {
+      "check": "major asset referenced: fig:transitions",
+      "status": "PASS",
+      "detail": "fig:transitions"
+    },
+    {
+      "check": "major asset referenced: tab:ai_usage",
+      "status": "PASS",
+      "detail": "tab:ai_usage"
+    },
+    {
+      "check": "major asset referenced: tab:baseline_reference",
+      "status": "PASS",
+      "detail": "tab:baseline_reference"
+    },
+    {
+      "check": "major asset referenced: tab:cases",
+      "status": "PASS",
+      "detail": "tab:cases"
+    },
+    {
+      "check": "major asset referenced: tab:confusion_summary",
+      "status": "PASS",
+      "detail": "tab:confusion_summary"
+    },
+    {
+      "check": "major asset referenced: tab:data_quality",
+      "status": "PASS",
+      "detail": "tab:data_quality"
+    },
+    {
+      "check": "major asset referenced: tab:dataset_split",
+      "status": "PASS",
+      "detail": "tab:dataset_split"
+    },
+    {
+      "check": "major asset referenced: tab:dev_metrics",
+      "status": "PASS",
+      "detail": "tab:dev_metrics"
+    },
+    {
+      "check": "major asset referenced: tab:difficulties",
+      "status": "PASS",
+      "detail": "tab:difficulties"
+    },
+    {
+      "check": "major asset referenced: tab:five_ticket_summary",
+      "status": "PASS",
+      "detail": "tab:five_ticket_summary"
+    },
+    {
+      "check": "major asset referenced: tab:heldout_metrics",
+      "status": "PASS",
+      "detail": "tab:heldout_metrics"
+    },
+    {
+      "check": "major asset referenced: tab:model_comparison",
+      "status": "PASS",
+      "detail": "tab:model_comparison"
+    },
+    {
+      "check": "major asset referenced: tab:normalization",
+      "status": "PASS",
+      "detail": "tab:normalization"
+    },
+    {
+      "check": "major asset referenced: tab:prediction_transitions",
+      "status": "PASS",
+      "detail": "tab:prediction_transitions"
+    },
+    {
+      "check": "major asset referenced: tab:shortcut_audit",
+      "status": "PASS",
+      "detail": "tab:shortcut_audit"
+    },
+    {
+      "check": "all citations resolve",
+      "status": "PASS",
+      "detail": "unresolved=[]"
+    },
+    {
+      "check": "quantitative anchor: train rows",
+      "status": "PASS",
+      "detail": "4,567"
+    },
+    {
+      "check": "quantitative anchor: dev rows",
+      "status": "PASS",
+      "detail": "1,523"
+    },
+    {
+      "check": "quantitative anchor: heldout rows",
+      "status": "PASS",
+      "detail": "1,523"
+    },
+    {
+      "check": "quantitative anchor: ticket 1 heldout F1",
+      "status": "PASS",
+      "detail": "0.749186"
+    },
+    {
+      "check": "quantitative anchor: reference F1",
+      "status": "PASS",
+      "detail": "0.757422"
+    },
+    {
+      "check": "quantitative anchor: reference gap",
+      "status": "PASS",
+      "detail": "0.008236"
+    },
+    {
+      "check": "quantitative anchor: ticket 2 dev F1",
+      "status": "PASS",
+      "detail": "0.740313"
+    },
+    {
+      "check": "quantitative anchor: ticket 2 heldout F1",
+      "status": "PASS",
+      "detail": "0.753117"
+    },
+    {
+      "check": "quantitative anchor: final heldout precision",
+      "status": "PASS",
+      "detail": "0.744361"
+    },
+    {
+      "check": "quantitative anchor: final heldout recall",
+      "status": "PASS",
+      "detail": "0.756881"
+    },
+    {
+      "check": "quantitative anchor: final heldout F1",
+      "status": "PASS",
+      "detail": "0.750569"
+    },
+    {
+      "check": "quantitative anchor: final heldout accuracy",
+      "status": "PASS",
+      "detail": "0.783979"
+    },
+    {
+      "check": "quantitative anchor: ID 767 baseline score",
+      "status": "PASS",
+      "detail": "0.487623"
+    },
+    {
+      "check": "quantitative anchor: ID 767 candidate score",
+      "status": "PASS",
+      "detail": "0.544815"
+    },
+    {
+      "check": "final transition values present",
+      "status": "PASS",
+      "detail": "{'ticket': 5, 'split': 'heldout', 'baseline': 'ticket_1_frozen', 'fixed_fp': 0, 'fixed_fn': 35, 'new_fp': 56, 'new_fn': 0}"
+    },
+    {
+      "check": "machine ID 767 values used",
+      "status": "PASS",
+      "detail": "machine CSV values"
+    },
+    {
+      "check": "stale ID 767 values excluded",
+      "status": "PASS",
+      "detail": "stale narrative values absent"
+    },
+    {
+      "check": "heldout integrity stated",
+      "status": "PASS",
+      "detail": "no held-out mutation"
+    },
+    {
+      "check": "replay drift stated",
+      "status": "PASS",
+      "detail": "1.11\\times10^{-16}"
+    },
+    {
+      "check": "final model preserved",
+      "status": "PASS",
+      "detail": "no post-hoc Ticket 2 selection"
+    },
+    {
+      "check": "verified author names",
+      "status": "PASS",
+      "detail": "both supplied names present"
+    },
+    {
+      "check": "no report placeholders",
+      "status": "PASS",
+      "detail": "no unresolved placeholder tokens"
+    },
+    {
+      "check": "affiliation not fabricated",
+      "status": "PASS",
+      "detail": "unsupplied affiliation/email omitted"
+    },
+    {
+      "check": "substantive report length",
+      "status": "PASS",
+      "detail": "approximate source word count=5953"
+    }
+  ],
+  "remaining_warnings": [
+    "affiliation, location, and email were not supplied and are omitted",
+    "course-internal references have repository filenames but no public publication metadata",
+    "the Ticket 1 reference discrepancy remains causally unresolved"
+  ]
+}

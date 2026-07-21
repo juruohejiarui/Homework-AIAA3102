@@ -1,0 +1,79 @@
+{
+  "normalize_emoji_placeholder": {
+    "f1_delta_vs_frozen_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "hypothesis": "Preserving emoji presence as one token may capture affect while preventing particular glyphs from being brittle; because the frozen word tokenizer ignores most emoji, visible movement may be small.",
+    "interpretation": "Prediction-equivalent to the raw control on visible dev; inspect the paired perturbation result to determine whether it adds robustness.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  },
+  "normalize_mentions_placeholder": {
+    "f1_delta_vs_frozen_baseline": -0.0020557260924028986,
+    "fixed_fn": 1,
+    "fixed_fp": 2,
+    "hypothesis": "Collapsing user handles will remove identity-specific vocabulary while preserving the fact that a mention occurred, improving robustness with little visible-score cost.",
+    "interpretation": "Changed 8 dev labels and decreased target-1 F1 by 0.002055726092; inspect fixed/new errors before judging the mechanism.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 3,
+    "new_fp": 2,
+    "prediction_changes": 8
+  },
+  "normalize_punctuation_to_space": {
+    "f1_delta_vs_frozen_baseline": 0.0006016384709371936,
+    "fixed_fn": 2,
+    "fixed_fp": 1,
+    "hypothesis": "Canonical punctuation boundaries may reduce stylistic noise, but apostrophes, underscores, and URL punctuation can also affect useful token structure, so error movement may be mixed.",
+    "interpretation": "Changed 5 dev labels and increased target-1 F1 by 0.000601638471; inspect fixed/new errors before judging the mechanism.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 2,
+    "new_fp": 0,
+    "prediction_changes": 5
+  },
+  "normalize_urls_placeholder": {
+    "f1_delta_vs_frozen_baseline": 0.0015012305663423264,
+    "fixed_fn": 6,
+    "fixed_fp": 22,
+    "hypothesis": "Collapsing unstable domains and paths while preserving URL presence will reduce memorization of URL fragments and improve robustness, with little loss of disaster-semantic evidence.",
+    "interpretation": "Changed 50 dev labels and increased target-1 F1 by 0.001501230566; inspect fixed/new errors before judging the mechanism.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 11,
+    "new_fp": 11,
+    "prediction_changes": 50
+  },
+  "raw_text_control": {
+    "f1_delta_vs_frozen_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "hypothesis": "The unchanged frozen baseline provides the required control and may already be invariant to several surface forms because its default token pattern lowercases words and ignores much punctuation and emoji.",
+    "interpretation": "Prediction-equivalent to the raw control on visible dev; inspect the paired perturbation result to determine whether it adds robustness.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  },
+  "strip_hashtag_marker": {
+    "f1_delta_vs_frozen_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "hypothesis": "Preserving the hashtag word but removing its marker should retain topical meaning and make hash-mark formatting irrelevant; the frozen tokenizer may already make this prediction-equivalent.",
+    "interpretation": "Prediction-equivalent to the raw control on visible dev; inspect the paired perturbation result to determine whether it adds robustness.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  },
+  "unicode_casefold": {
+    "f1_delta_vs_frozen_baseline": 0.0,
+    "fixed_fn": 0,
+    "fixed_fp": 0,
+    "hypothesis": "Unicode casefolding should make casing perturbations harmless and mostly match the already-lowercased control, with possible differences only for non-ASCII case mappings.",
+    "interpretation": "Prediction-equivalent to the raw control on visible dev; inspect the paired perturbation result to determine whether it adds robustness.",
+    "limitation": "One fixed dev split and one normalization lever; not evidence for combinations and not used after held-out access.",
+    "new_fn": 0,
+    "new_fp": 0,
+    "prediction_changes": 0
+  }
+}

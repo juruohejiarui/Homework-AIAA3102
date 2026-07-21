@@ -1,6 +1,0 @@
-ticket,model_name,comparison,threshold,precision_target_1,recall_target_1,f1_target_1,tn,fp,fn,tp
-ticket-4,baseline_fixed_t0.50,Ticket 1 baseline,0.5,0.780068728522,0.693129770992,0.734033953112,740,128,201,454
-ticket-4,baseline_threshold_t0.46,threshold only,0.46,0.75,0.741984732824,0.745970836531,706,162,169,486
-ticket-4,lr_c10_balanced_t0.56,selected combination,0.56,0.786069651741,0.723664122137,0.753577106518,739,129,181,474
-ticket-4,lr_c10_none_t0.52,single model-configuration change from baseline,0.52,0.787979966611,0.720610687023,0.752791068581,741,127,183,472
-ticket-4,lr_c1_balanced_t0.51,single model-configuration change from baseline,0.51,0.741641337386,0.745038167939,0.743335872049,698,170,167,488

@@ -1,0 +1,13 @@
+{
+  "packages": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.13.0"
+  }
+}

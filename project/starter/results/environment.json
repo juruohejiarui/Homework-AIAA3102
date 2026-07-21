@@ -1,9 +1,0 @@
-{
-  "cpu_only": true,
-  "numpy": "2.5.1",
-  "pandas": "3.0.3",
-  "python": "3.13.14",
-  "scikit_learn": "1.9.0",
-  "scipy": "1.18.0",
-  "seed": 3102
-}

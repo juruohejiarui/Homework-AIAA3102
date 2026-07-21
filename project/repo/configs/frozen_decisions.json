@@ -1,0 +1,314 @@
+{
+  "baseline_comparator_ticket": "ticket_1",
+  "clean_process_policy": "Launch pipeline.reproduce_frozen_ticket once per ticket in a distinct interpreter process; write only under experiments/final-reproducibility-audit/replays.",
+  "created_at": "2026-07-21T13:57:01+08:00",
+  "data_path": "data/train.csv",
+  "data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+  "decisions": [
+    {
+      "archived_dev_predictions": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv",
+      "archived_dev_predictions_sha256": "0e10a0d08ab24d2f85413bb4efcf284dee62593b8e58457bab305ff168525c32",
+      "archived_heldout_predictions": "predictions/heldout_predictions.csv",
+      "archived_heldout_predictions_sha256": "0e5b6caab24e1371ff17ae7a95882831b744f4d147c3c56f2ef2e51369c4bba1",
+      "decision": "frozen_reference_baseline",
+      "decision_basis_split": "dev_ids only",
+      "expected_dev_metrics": {
+        "accuracy": 0.7892317793827971,
+        "f1_target_1": 0.7388120423108218,
+        "false_negative": 201,
+        "false_positive": 120,
+        "precision_target_1": 0.7909407665505227,
+        "recall_target_1": 0.6931297709923664,
+        "true_negative": 748,
+        "true_positive": 454
+      },
+      "expected_heldout_metrics": {
+        "accuracy": 0.7977675640183848,
+        "f1_target_1": 0.749185667752443,
+        "false_negative": 194,
+        "false_positive": 114,
+        "precision_target_1": 0.8013937282229965,
+        "recall_target_1": 0.7033639143730887,
+        "true_negative": 755,
+        "true_positive": 460
+      },
+      "expected_transitions_vs_ticket1_baseline": {
+        "fixed_fn": 0,
+        "fixed_fp": 0,
+        "new_fn": 0,
+        "new_fp": 0
+      },
+      "freeze_decision_reason": "The project specifies TF-IDF plus Logistic Regression and no tuned settings. The frozen implementation uses version-locked sklearn defaults, random_state=3102, train-only fitting, dev-only pre-freeze evidence, no metadata, no manual normalization, no threshold tuning, and no class weighting.",
+      "freeze_path": "experiments/ticket-1/frozen_baseline_config.json",
+      "freeze_sha256": "3b1f589fb5b445cf146e63ad176dd5255e99aa342cc0502c8b8df657945ee3e8",
+      "freeze_status": "frozen_before_heldout",
+      "frozen_at": "2026-07-21T12:08:53+08:00",
+      "heldout_completion_path": "experiments/ticket-1/heldout/heldout_evaluation_completed.json",
+      "heldout_completion_sha256": "e355150a1aceabca056e3e8075366e56cd78baccb950552b2e5a4cdab3e7d502",
+      "heldout_count_at_freeze": 0,
+      "heldout_used_for_selection": false,
+      "model_name": "raw_text_tfidf_logistic_regression",
+      "recipe": {
+        "C": 1.0,
+        "class_weight": null,
+        "factory": "raw_text_reference",
+        "normalization": null,
+        "threshold": 0.5,
+        "training_label_corrections": []
+      },
+      "selection_reopening_permitted": false,
+      "summary_decision_reason": "Frozen before the historical held-out comparison from project specification and dev evidence; files later reconstructed without changing the decision.",
+      "ticket": 1,
+      "ticket_key": "ticket_1"
+    },
+    {
+      "archived_dev_predictions": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv",
+      "archived_dev_predictions_sha256": "5798ffbde7e682026128e0b6ab4a4770f3f9537a6f920e7a8a57c4430b2d2286",
+      "archived_heldout_predictions": "predictions/ticket-2-heldout-predictions.csv",
+      "archived_heldout_predictions_sha256": "486bd8af3f808ed29a4471b384cfa82d6080670f657193c6717f1d0c4305acb4",
+      "decision": "adopt_url_placeholder_normalization",
+      "decision_basis_split": "dev_ids only",
+      "expected_dev_metrics": {
+        "accuracy": 0.7931713722915299,
+        "f1_target_1": 0.7403132728771641,
+        "false_negative": 206,
+        "false_positive": 109,
+        "precision_target_1": 0.8046594982078853,
+        "recall_target_1": 0.6854961832061068,
+        "true_negative": 759,
+        "true_positive": 449
+      },
+      "expected_heldout_metrics": {
+        "accuracy": 0.8049901510177282,
+        "f1_target_1": 0.7531172069825436,
+        "false_negative": 201,
+        "false_positive": 96,
+        "precision_target_1": 0.825136612021858,
+        "recall_target_1": 0.6926605504587156,
+        "true_negative": 773,
+        "true_positive": 453
+      },
+      "expected_transitions_vs_ticket1_baseline": {
+        "fixed_fn": 8,
+        "fixed_fp": 22,
+        "new_fn": 15,
+        "new_fp": 4
+      },
+      "freeze_decision_reason": "Selected on dev only: URL placeholdering had the highest normalization-variant F1 (0.7403132728771641 versus raw 0.7388120423108218), increased precision and accuracy, fixed 28 baseline errors while creating 22, and was exactly invariant on all 767 URL-perturbed dev rows while the raw control changed 275 predictions.",
+      "freeze_path": "experiments/ticket-2/frozen_decision.json",
+      "freeze_sha256": "51a9ed0c07d092fa194a1f1399ae502eb0c3662bfdfb2b661ef22dfcbc5376cf",
+      "freeze_status": "frozen_before_ticket2_heldout",
+      "frozen_at": "2026-07-21T13:00:54+08:00",
+      "heldout_completion_path": "experiments/ticket-2/heldout/heldout_evaluation_completed.json",
+      "heldout_completion_sha256": "d0c0cf0bec0513b2320d421244178f3c4891642e3ce34b1fcc91ac5bd4ae7087",
+      "heldout_count_at_freeze": 0,
+      "heldout_used_for_selection": false,
+      "model_name": "normalize_urls_placeholder",
+      "recipe": {
+        "C": 1.0,
+        "class_weight": null,
+        "factory": "url_placeholder_reference",
+        "normalization": "normalize_urls_placeholder",
+        "threshold": 0.5,
+        "training_label_corrections": []
+      },
+      "selection_reopening_permitted": false,
+      "summary_decision_reason": "Selected on dev only: URL placeholdering had the highest normalization-variant F1 (0.7403132728771641 versus raw 0.7388120423108218), increased precision and accuracy, fixed 28 baseline errors while creating 22, and was exactly invariant on all 767 URL-perturbed dev rows while the raw control changed 275 predictions.",
+      "ticket": 2,
+      "ticket_key": "ticket_2"
+    },
+    {
+      "archived_dev_predictions": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv",
+      "archived_dev_predictions_sha256": "ffdb5a1d7103c76096700cd89e25c25101f705c87a37ae21630c70d7eb1d63bd",
+      "archived_heldout_predictions": "predictions/ticket-3-heldout-predictions.csv",
+      "archived_heldout_predictions_sha256": "2e57aa5dfca39c329ca1773ff3437b3d01cd2a87965e6974ac2017908e3cefa3",
+      "decision": "retain_text_only_reject_shortcuts",
+      "decision_basis_split": "dev_ids only",
+      "expected_dev_metrics": {
+        "accuracy": 0.7892317793827971,
+        "f1_target_1": 0.7388120423108218,
+        "false_negative": 201,
+        "false_positive": 120,
+        "precision_target_1": 0.7909407665505227,
+        "recall_target_1": 0.6931297709923664,
+        "true_negative": 748,
+        "true_positive": 454
+      },
+      "expected_heldout_metrics": {
+        "accuracy": 0.7977675640183848,
+        "f1_target_1": 0.749185667752443,
+        "false_negative": 194,
+        "false_positive": 114,
+        "precision_target_1": 0.8013937282229965,
+        "recall_target_1": 0.7033639143730887,
+        "true_negative": 755,
+        "true_positive": 460
+      },
+      "expected_transitions_vs_ticket1_baseline": {
+        "fixed_fn": 0,
+        "fixed_fp": 0,
+        "new_fn": 0,
+        "new_fp": 0
+      },
+      "freeze_decision_reason": "Retain the frozen text-only baseline. Although text plus keyword and selected shallow features raised dev F1 to 0.7493956486704271, its gain was shortcut-sensitive: masking keyword changed 702 predictions and reduced F1 to 0.6423057128152342, while superficial-text neutralization reduced F1 to 0.7330677290836654. Text plus keyword alone was worse than baseline (0.7350835322195705). Sparse location, length-only, and shallow-only variants were substantially weaker. The visible gain is therefore rejected rather than adopted automatically.",
+      "freeze_path": "experiments/ticket-3/frozen_decision.json",
+      "freeze_sha256": "651905972507d06427d427e3e3f0a219faba48d8dff2183dbd86e4c194cf0ac6",
+      "freeze_status": "frozen_before_ticket3_heldout_reporting",
+      "frozen_at": "2026-07-21T13:13:53+08:00",
+      "heldout_completion_path": "experiments/ticket-3/heldout/heldout_evaluation_completed.json",
+      "heldout_completion_sha256": "d14f2313cd45cff55747862492302d4911cbf3112bd28eeb529c0fc7e6b94d22",
+      "heldout_count_at_freeze": 0,
+      "heldout_used_for_selection": false,
+      "model_name": "raw_text_tfidf_logistic_regression",
+      "recipe": {
+        "C": 1.0,
+        "class_weight": null,
+        "factory": "raw_text_reference",
+        "normalization": null,
+        "threshold": 0.5,
+        "training_label_corrections": []
+      },
+      "selection_reopening_permitted": false,
+      "summary_decision_reason": "Retain the frozen text-only baseline. Although text plus keyword and selected shallow features raised dev F1 to 0.7493956486704271, its gain was shortcut-sensitive: masking keyword changed 702 predictions and reduced F1 to 0.6423057128152342, while superficial-text neutralization reduced F1 to 0.7330677290836654. Text plus keyword alone was worse than baseline (0.7350835322195705). Sparse location, length-only, and shallow-only variants were substantially weaker. The visible gain is therefore rejected rather than adopted automatically.",
+      "ticket": 3,
+      "ticket_key": "ticket_3"
+    },
+    {
+      "archived_dev_predictions": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv",
+      "archived_dev_predictions_sha256": "b58e295cd07483ffd39696d0d3f2f991c3e0c627a7271dddbc0de91c105b2dcb",
+      "archived_heldout_predictions": "predictions/ticket-4-heldout-predictions.csv",
+      "archived_heldout_predictions_sha256": "d45d3f0b53c29d304bb571a3e9c01dc48d4c742060b410e2fcb8a6095190feeb",
+      "decision": "adopt_balanced_logistic_regression_at_default_threshold",
+      "decision_basis_split": "dev_ids only",
+      "expected_dev_metrics": {
+        "accuracy": 0.7852921864740644,
+        "f1_target_1": 0.7520849128127369,
+        "false_negative": 159,
+        "false_positive": 168,
+        "precision_target_1": 0.7469879518072289,
+        "recall_target_1": 0.7572519083969466,
+        "true_negative": 700,
+        "true_positive": 496
+      },
+      "expected_heldout_metrics": {
+        "accuracy": 0.7839789888378201,
+        "f1_target_1": 0.7505686125852918,
+        "false_negative": 159,
+        "false_positive": 170,
+        "precision_target_1": 0.7443609022556391,
+        "recall_target_1": 0.7568807339449541,
+        "true_negative": 699,
+        "true_positive": 495
+      },
+      "expected_transitions_vs_ticket1_baseline": {
+        "fixed_fn": 35,
+        "fixed_fp": 0,
+        "new_fn": 0,
+        "new_fp": 56
+      },
+      "freeze_decision_reason": "Select balanced Logistic Regression with the frozen raw-text TF-IDF preprocessing, C=1.0, and probability threshold 0.50. It maximized target-1 dev F1 under the predeclared bounded criterion (0.7520849128127369 versus baseline 0.7388120423108218). The gain came from fixing 42 baseline false negatives while creating 48 new false positives: recall rose from 0.6931297709923664 to 0.7572519083969466 while precision fell from 0.7909407665505227 to 0.7469879518072289. The best baseline threshold-only candidate was 0.47 at F1 0.7494071146245059, and the best regularization-only candidate was C=2.0 at F1 0.7504025764895334.",
+      "freeze_path": "experiments/ticket-4/frozen_decision.json",
+      "freeze_sha256": "14e3c474f15a04a9997bada41d477447ea2e3c7e49533b8980edfac7896b371e",
+      "freeze_status": "frozen_before_ticket4_heldout_evaluation",
+      "frozen_at": "2026-07-21T13:26:17+08:00",
+      "heldout_completion_path": "experiments/ticket-4/heldout/heldout_evaluation_completed.json",
+      "heldout_completion_sha256": "0ec2d4ced0aa5af37de32ba056f20370d9b65461b115b1392cccc2b31a43c49e",
+      "heldout_count_at_freeze": 0,
+      "heldout_used_for_selection": false,
+      "model_name": "lr_c1_balanced_default",
+      "recipe": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "factory": "raw_text_balanced_logistic",
+        "normalization": null,
+        "threshold": 0.5,
+        "training_label_corrections": []
+      },
+      "selection_reopening_permitted": false,
+      "summary_decision_reason": "Select balanced Logistic Regression with the frozen raw-text TF-IDF preprocessing, C=1.0, and probability threshold 0.50. It maximized target-1 dev F1 under the predeclared bounded criterion (0.7520849128127369 versus baseline 0.7388120423108218). The gain came from fixing 42 baseline false negatives while creating 48 new false positives: recall rose from 0.6931297709923664 to 0.7572519083969466 while precision fell from 0.7909407665505227 to 0.7469879518072289. The best baseline threshold-only candidate was 0.47 at F1 0.7494071146245059, and the best regularization-only candidate was C=2.0 at F1 0.7504025764895334.",
+      "ticket": 4,
+      "ticket_key": "ticket_4"
+    },
+    {
+      "archived_dev_predictions": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv",
+      "archived_dev_predictions_sha256": "b58e295cd07483ffd39696d0d3f2f991c3e0c627a7271dddbc0de91c105b2dcb",
+      "archived_heldout_predictions": "predictions/ticket-5-heldout-predictions.csv",
+      "archived_heldout_predictions_sha256": "b4ca0706ca355e4ba05a9c09f4c3fb8fd701e07c3ef211d3a9ee93d4a1c465d2",
+      "decision": "retain_ticket4_model_no_label_corrections",
+      "decision_basis_split": "train_ids and dev_ids only",
+      "expected_dev_metrics": {
+        "accuracy": 0.7852921864740644,
+        "f1_target_1": 0.7520849128127369,
+        "false_negative": 159,
+        "false_positive": 168,
+        "precision_target_1": 0.7469879518072289,
+        "recall_target_1": 0.7572519083969466,
+        "true_negative": 700,
+        "true_positive": 496
+      },
+      "expected_heldout_metrics": {
+        "accuracy": 0.7839789888378201,
+        "f1_target_1": 0.7505686125852918,
+        "false_negative": 159,
+        "false_positive": 170,
+        "precision_target_1": 0.7443609022556391,
+        "recall_target_1": 0.7568807339449541,
+        "true_negative": 699,
+        "true_positive": 495
+      },
+      "expected_transitions_vs_ticket1_baseline": {
+        "fixed_fn": 35,
+        "fixed_fp": 0,
+        "new_fn": 0,
+        "new_fp": 56
+      },
+      "freeze_decision_reason": "Retain the frozen Ticket 4 balanced Logistic Regression model and do not apply training-label corrections. The eight-row correction probe preserved all original/proposed labels and source data, but dev F1 fell from 0.7520849128127369 to 0.7488653555219364 (delta -0.003219557290800479), failing the predeclared -0.002 noninferiority margin. It fixed 3 Ticket 4 dev errors while creating 8. Duplicate conflicts remain important audit findings, but benchmark inconsistency and annotation ambiguity make silent relabeling unjustified.",
+      "freeze_path": "experiments/ticket-5/frozen_decision.json",
+      "freeze_sha256": "9423deaf6f30659f55547176a5ddb2191ed4895738cf7fe17b9d6138df693afa",
+      "freeze_status": "frozen_before_ticket5_heldout_reporting_and_audit",
+      "frozen_at": "2026-07-21T13:42:00+08:00",
+      "heldout_completion_path": "experiments/ticket-5/heldout/heldout_evaluation_completed.json",
+      "heldout_completion_sha256": "1dc339b36fa14c557ae279b658c18eba8d260774603af37231b376edf324c66d",
+      "heldout_count_at_freeze": 0,
+      "heldout_used_for_selection": false,
+      "model_name": "lr_c1_balanced_default",
+      "recipe": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "factory": "raw_text_balanced_logistic",
+        "normalization": null,
+        "threshold": 0.5,
+        "training_label_corrections": []
+      },
+      "selection_reopening_permitted": false,
+      "summary_decision_reason": "Retain the frozen Ticket 4 balanced Logistic Regression model and do not apply training-label corrections. The eight-row correction probe preserved all original/proposed labels and source data, but dev F1 fell from 0.7520849128127369 to 0.7488653555219364 (delta -0.003219557290800479), failing the predeclared -0.002 noninferiority margin. It fixed 3 Ticket 4 dev errors while creating 8. Duplicate conflicts remain important audit findings, but benchmark inconsistency and annotation ambiguity make silent relabeling unjustified.",
+      "ticket": 5,
+      "ticket_key": "ticket_5"
+    }
+  ],
+  "exact_command": "D:\\project\\topic-a-text-classification-pipeline-forensics\\.venv\\Scripts\\python.exe -m pipeline.build_frozen_decisions_manifest",
+  "explicit_replay_authorization": "User Step 10 explicitly requested re-running all final configurations from clean processes.",
+  "final_prediction_path": "predictions/final-heldout-predictions.csv",
+  "final_submission_decision": "ticket_5 retains the ticket_4 balanced Logistic Regression configuration with no label corrections",
+  "manifest_version": 1,
+  "n_jobs": 1,
+  "purpose": "Step 10 consolidated freeze and clean-process reproducibility audit; no ticket selection is reopened",
+  "requirements_lock_sha256": "5bcff454cf416c8759e4e2a46beb1f9aedbf2637dd2b455da0d2b3242682a4d5",
+  "result_table_inputs": {
+    "data_quality_audit": {
+      "path": "results/data_quality_audit.csv",
+      "sha256": "9387710cc13d24ab914e61514da4d2c6a23a2d1bbd98beb3017e0faf88c39421"
+    },
+    "summary": {
+      "path": "results/summary.csv",
+      "sha256": "19edbc8bfe93aac063b0da041482a442cf2c99444894371cdd3fc9eb3bf74c59"
+    },
+    "threshold_sweep": {
+      "path": "results/threshold_sweep.csv",
+      "sha256": "fe0f6907e72431a5b5852252e8570abaeab53504b949a0580a54900a9a4e53b6"
+    }
+  },
+  "seed": 3102,
+  "split_path": "starter/data/split_indices.json",
+  "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1"
+}

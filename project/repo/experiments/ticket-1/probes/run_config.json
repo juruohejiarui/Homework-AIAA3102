@@ -1,0 +1,20 @@
+{
+  "artifact_recovery": true,
+  "baseline_prediction_reproduction": "PASS",
+  "candidate_selection_from_probe_results": false,
+  "exact_command": "D:\\project\\topic-a-text-classification-pipeline-forensics\\.venv\\Scripts\\python.exe -m pipeline.run_ticket1_probes --data data\\train.csv --split starter\\data\\split_indices.json --plan experiments\\ticket-1\\probes\\probe_plan.json --output-dir experiments\\ticket-1\\probes",
+  "heldout_evaluations_run_by_this_command": 0,
+  "probe_count": 9,
+  "probe_names": [
+    "tfidf_lowercase_false",
+    "tfidf_word_bigrams",
+    "logreg_solver_liblinear",
+    "logreg_c_0_5",
+    "logreg_max_iter_1000",
+    "logreg_class_weight_balanced",
+    "logreg_seed_9999",
+    "logreg_explicit_l2",
+    "leaky_tfidf_train_plus_dev"
+  ],
+  "scope": "Ticket 1 discrepancy diagnosis on dev only"
+}

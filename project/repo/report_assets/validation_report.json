@@ -1,0 +1,1002 @@
+{
+  "status": "PASS",
+  "generated_by": "scripts/generate_report_assets.py",
+  "source_data_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df",
+  "split_sha256": "db2fd1fdcc24043dd40ed202efe2c6cc19183d75de2becb2bb8645e99d8988f1",
+  "heldout_labels_modified": false,
+  "heldout_rows_removed": 0,
+  "table_count": 14,
+  "figure_count_png": 4,
+  "figure_count_svg": 4,
+  "asset_manifest_rows": 40,
+  "checks": [
+    {
+      "check": "five frozen ticket decisions",
+      "status": "PASS",
+      "detail": "tickets=[1, 2, 3, 4, 5]"
+    },
+    {
+      "check": "source data SHA-256",
+      "status": "PASS",
+      "detail": "data/train.csv"
+    },
+    {
+      "check": "split SHA-256",
+      "status": "PASS",
+      "detail": "starter/data/split_indices.json"
+    },
+    {
+      "check": "source IDs unique",
+      "status": "PASS",
+      "detail": "rows=7613"
+    },
+    {
+      "check": "fixed split disjoint",
+      "status": "PASS",
+      "detail": "pairwise intersections are empty"
+    },
+    {
+      "check": "fixed split complete",
+      "status": "PASS",
+      "detail": "rows=7613"
+    },
+    {
+      "check": "ticket 1 dev archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 1 dev row count",
+      "status": "PASS",
+      "detail": "path=experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 1 dev stable IDs",
+      "status": "PASS",
+      "detail": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 1 dev frozen model",
+      "status": "PASS",
+      "detail": "expected=raw_text_tfidf_logistic_regression, observed=['raw_text_tfidf_logistic_regression']"
+    },
+    {
+      "check": "ticket 1 dev labels unchanged",
+      "status": "PASS",
+      "detail": "experiments/step-4-baselines/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 1 dev precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7909407665505227, manifest=0.7909407665505227"
+    },
+    {
+      "check": "ticket 1 dev recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.6931297709923664, manifest=0.6931297709923664"
+    },
+    {
+      "check": "ticket 1 dev f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7388120423108218, manifest=0.7388120423108218"
+    },
+    {
+      "check": "ticket 1 dev accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7892317793827971, manifest=0.7892317793827971"
+    },
+    {
+      "check": "ticket 1 dev true_negative",
+      "status": "PASS",
+      "detail": "calculated=748, manifest=748"
+    },
+    {
+      "check": "ticket 1 dev false_positive",
+      "status": "PASS",
+      "detail": "calculated=120, manifest=120"
+    },
+    {
+      "check": "ticket 1 dev false_negative",
+      "status": "PASS",
+      "detail": "calculated=201, manifest=201"
+    },
+    {
+      "check": "ticket 1 dev true_positive",
+      "status": "PASS",
+      "detail": "calculated=454, manifest=454"
+    },
+    {
+      "check": "ticket 1 heldout archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "predictions/heldout_predictions.csv"
+    },
+    {
+      "check": "ticket 1 heldout row count",
+      "status": "PASS",
+      "detail": "path=predictions/heldout_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 1 heldout stable IDs",
+      "status": "PASS",
+      "detail": "predictions/heldout_predictions.csv"
+    },
+    {
+      "check": "ticket 1 heldout frozen model",
+      "status": "PASS",
+      "detail": "expected=raw_text_tfidf_logistic_regression, observed=['raw_text_tfidf_logistic_regression']"
+    },
+    {
+      "check": "ticket 1 heldout labels unchanged",
+      "status": "PASS",
+      "detail": "predictions/heldout_predictions.csv"
+    },
+    {
+      "check": "ticket 1 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.8013937282229965, manifest=0.8013937282229965"
+    },
+    {
+      "check": "ticket 1 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7033639143730887, manifest=0.7033639143730887"
+    },
+    {
+      "check": "ticket 1 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7491856677524429, manifest=0.749185667752443"
+    },
+    {
+      "check": "ticket 1 heldout accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7977675640183848, manifest=0.7977675640183848"
+    },
+    {
+      "check": "ticket 1 heldout true_negative",
+      "status": "PASS",
+      "detail": "calculated=755, manifest=755"
+    },
+    {
+      "check": "ticket 1 heldout false_positive",
+      "status": "PASS",
+      "detail": "calculated=114, manifest=114"
+    },
+    {
+      "check": "ticket 1 heldout false_negative",
+      "status": "PASS",
+      "detail": "calculated=194, manifest=194"
+    },
+    {
+      "check": "ticket 1 heldout true_positive",
+      "status": "PASS",
+      "detail": "calculated=460, manifest=460"
+    },
+    {
+      "check": "ticket 2 dev archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 2 dev row count",
+      "status": "PASS",
+      "detail": "path=experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 2 dev stable IDs",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 2 dev frozen model",
+      "status": "PASS",
+      "detail": "expected=normalize_urls_placeholder, observed=['normalize_urls_placeholder']"
+    },
+    {
+      "check": "ticket 2 dev labels unchanged",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/dev/predictions/normalize_urls_placeholder_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 2 dev precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.8046594982078853, manifest=0.8046594982078853"
+    },
+    {
+      "check": "ticket 2 dev recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.6854961832061068, manifest=0.6854961832061068"
+    },
+    {
+      "check": "ticket 2 dev f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7403132728771641, manifest=0.7403132728771641"
+    },
+    {
+      "check": "ticket 2 dev accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7931713722915299, manifest=0.7931713722915299"
+    },
+    {
+      "check": "ticket 2 dev true_negative",
+      "status": "PASS",
+      "detail": "calculated=759, manifest=759"
+    },
+    {
+      "check": "ticket 2 dev false_positive",
+      "status": "PASS",
+      "detail": "calculated=109, manifest=109"
+    },
+    {
+      "check": "ticket 2 dev false_negative",
+      "status": "PASS",
+      "detail": "calculated=206, manifest=206"
+    },
+    {
+      "check": "ticket 2 dev true_positive",
+      "status": "PASS",
+      "detail": "calculated=449, manifest=449"
+    },
+    {
+      "check": "ticket 2 heldout archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "predictions/ticket-2-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 2 heldout row count",
+      "status": "PASS",
+      "detail": "path=predictions/ticket-2-heldout-predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 2 heldout stable IDs",
+      "status": "PASS",
+      "detail": "predictions/ticket-2-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 2 heldout frozen model",
+      "status": "PASS",
+      "detail": "expected=normalize_urls_placeholder, observed=['normalize_urls_placeholder']"
+    },
+    {
+      "check": "ticket 2 heldout labels unchanged",
+      "status": "PASS",
+      "detail": "predictions/ticket-2-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 2 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.825136612021858, manifest=0.825136612021858"
+    },
+    {
+      "check": "ticket 2 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.6926605504587156, manifest=0.6926605504587156"
+    },
+    {
+      "check": "ticket 2 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7531172069825437, manifest=0.7531172069825436"
+    },
+    {
+      "check": "ticket 2 heldout accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.8049901510177282, manifest=0.8049901510177282"
+    },
+    {
+      "check": "ticket 2 heldout true_negative",
+      "status": "PASS",
+      "detail": "calculated=773, manifest=773"
+    },
+    {
+      "check": "ticket 2 heldout false_positive",
+      "status": "PASS",
+      "detail": "calculated=96, manifest=96"
+    },
+    {
+      "check": "ticket 2 heldout false_negative",
+      "status": "PASS",
+      "detail": "calculated=201, manifest=201"
+    },
+    {
+      "check": "ticket 2 heldout true_positive",
+      "status": "PASS",
+      "detail": "calculated=453, manifest=453"
+    },
+    {
+      "check": "ticket 3 dev archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 3 dev row count",
+      "status": "PASS",
+      "detail": "path=experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 3 dev stable IDs",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 3 dev frozen model",
+      "status": "PASS",
+      "detail": "expected=raw_text_tfidf_logistic_regression, observed=['raw_text_tfidf_logistic_regression']"
+    },
+    {
+      "check": "ticket 3 dev labels unchanged",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/predictions/raw_text_tfidf_logistic_regression_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 3 dev precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7909407665505227, manifest=0.7909407665505227"
+    },
+    {
+      "check": "ticket 3 dev recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.6931297709923664, manifest=0.6931297709923664"
+    },
+    {
+      "check": "ticket 3 dev f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7388120423108218, manifest=0.7388120423108218"
+    },
+    {
+      "check": "ticket 3 dev accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7892317793827971, manifest=0.7892317793827971"
+    },
+    {
+      "check": "ticket 3 dev true_negative",
+      "status": "PASS",
+      "detail": "calculated=748, manifest=748"
+    },
+    {
+      "check": "ticket 3 dev false_positive",
+      "status": "PASS",
+      "detail": "calculated=120, manifest=120"
+    },
+    {
+      "check": "ticket 3 dev false_negative",
+      "status": "PASS",
+      "detail": "calculated=201, manifest=201"
+    },
+    {
+      "check": "ticket 3 dev true_positive",
+      "status": "PASS",
+      "detail": "calculated=454, manifest=454"
+    },
+    {
+      "check": "ticket 3 heldout archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "predictions/ticket-3-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 3 heldout row count",
+      "status": "PASS",
+      "detail": "path=predictions/ticket-3-heldout-predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 3 heldout stable IDs",
+      "status": "PASS",
+      "detail": "predictions/ticket-3-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 3 heldout frozen model",
+      "status": "PASS",
+      "detail": "expected=raw_text_tfidf_logistic_regression, observed=['raw_text_tfidf_logistic_regression']"
+    },
+    {
+      "check": "ticket 3 heldout labels unchanged",
+      "status": "PASS",
+      "detail": "predictions/ticket-3-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 3 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.8013937282229965, manifest=0.8013937282229965"
+    },
+    {
+      "check": "ticket 3 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7033639143730887, manifest=0.7033639143730887"
+    },
+    {
+      "check": "ticket 3 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7491856677524429, manifest=0.749185667752443"
+    },
+    {
+      "check": "ticket 3 heldout accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7977675640183848, manifest=0.7977675640183848"
+    },
+    {
+      "check": "ticket 3 heldout true_negative",
+      "status": "PASS",
+      "detail": "calculated=755, manifest=755"
+    },
+    {
+      "check": "ticket 3 heldout false_positive",
+      "status": "PASS",
+      "detail": "calculated=114, manifest=114"
+    },
+    {
+      "check": "ticket 3 heldout false_negative",
+      "status": "PASS",
+      "detail": "calculated=194, manifest=194"
+    },
+    {
+      "check": "ticket 3 heldout true_positive",
+      "status": "PASS",
+      "detail": "calculated=460, manifest=460"
+    },
+    {
+      "check": "ticket 4 dev archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 4 dev row count",
+      "status": "PASS",
+      "detail": "path=experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 4 dev stable IDs",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 4 dev frozen model",
+      "status": "PASS",
+      "detail": "expected=lr_c1_balanced_default, observed=['lr_c1_balanced_default']"
+    },
+    {
+      "check": "ticket 4 dev labels unchanged",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 4 dev precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7469879518072289, manifest=0.7469879518072289"
+    },
+    {
+      "check": "ticket 4 dev recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7572519083969466, manifest=0.7572519083969466"
+    },
+    {
+      "check": "ticket 4 dev f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7520849128127368, manifest=0.7520849128127369"
+    },
+    {
+      "check": "ticket 4 dev accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7852921864740644, manifest=0.7852921864740644"
+    },
+    {
+      "check": "ticket 4 dev true_negative",
+      "status": "PASS",
+      "detail": "calculated=700, manifest=700"
+    },
+    {
+      "check": "ticket 4 dev false_positive",
+      "status": "PASS",
+      "detail": "calculated=168, manifest=168"
+    },
+    {
+      "check": "ticket 4 dev false_negative",
+      "status": "PASS",
+      "detail": "calculated=159, manifest=159"
+    },
+    {
+      "check": "ticket 4 dev true_positive",
+      "status": "PASS",
+      "detail": "calculated=496, manifest=496"
+    },
+    {
+      "check": "ticket 4 heldout archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "predictions/ticket-4-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 4 heldout row count",
+      "status": "PASS",
+      "detail": "path=predictions/ticket-4-heldout-predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 4 heldout stable IDs",
+      "status": "PASS",
+      "detail": "predictions/ticket-4-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 4 heldout frozen model",
+      "status": "PASS",
+      "detail": "expected=lr_c1_balanced_default, observed=['lr_c1_balanced_default']"
+    },
+    {
+      "check": "ticket 4 heldout labels unchanged",
+      "status": "PASS",
+      "detail": "predictions/ticket-4-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 4 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7443609022556391, manifest=0.7443609022556391"
+    },
+    {
+      "check": "ticket 4 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7568807339449541, manifest=0.7568807339449541"
+    },
+    {
+      "check": "ticket 4 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7505686125852918, manifest=0.7505686125852918"
+    },
+    {
+      "check": "ticket 4 heldout accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7839789888378201, manifest=0.7839789888378201"
+    },
+    {
+      "check": "ticket 4 heldout true_negative",
+      "status": "PASS",
+      "detail": "calculated=699, manifest=699"
+    },
+    {
+      "check": "ticket 4 heldout false_positive",
+      "status": "PASS",
+      "detail": "calculated=170, manifest=170"
+    },
+    {
+      "check": "ticket 4 heldout false_negative",
+      "status": "PASS",
+      "detail": "calculated=159, manifest=159"
+    },
+    {
+      "check": "ticket 4 heldout true_positive",
+      "status": "PASS",
+      "detail": "calculated=495, manifest=495"
+    },
+    {
+      "check": "ticket 5 dev archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 5 dev row count",
+      "status": "PASS",
+      "detail": "path=experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 5 dev stable IDs",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 5 dev frozen model",
+      "status": "PASS",
+      "detail": "expected=lr_c1_balanced_default, observed=['lr_c1_balanced_default']"
+    },
+    {
+      "check": "ticket 5 dev labels unchanged",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/dev/predictions/lr_c1_balanced_default_dev_predictions.csv"
+    },
+    {
+      "check": "ticket 5 dev precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7469879518072289, manifest=0.7469879518072289"
+    },
+    {
+      "check": "ticket 5 dev recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7572519083969466, manifest=0.7572519083969466"
+    },
+    {
+      "check": "ticket 5 dev f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7520849128127368, manifest=0.7520849128127369"
+    },
+    {
+      "check": "ticket 5 dev accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7852921864740644, manifest=0.7852921864740644"
+    },
+    {
+      "check": "ticket 5 dev true_negative",
+      "status": "PASS",
+      "detail": "calculated=700, manifest=700"
+    },
+    {
+      "check": "ticket 5 dev false_positive",
+      "status": "PASS",
+      "detail": "calculated=168, manifest=168"
+    },
+    {
+      "check": "ticket 5 dev false_negative",
+      "status": "PASS",
+      "detail": "calculated=159, manifest=159"
+    },
+    {
+      "check": "ticket 5 dev true_positive",
+      "status": "PASS",
+      "detail": "calculated=496, manifest=496"
+    },
+    {
+      "check": "ticket 5 heldout archived prediction SHA-256",
+      "status": "PASS",
+      "detail": "predictions/ticket-5-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 5 heldout row count",
+      "status": "PASS",
+      "detail": "path=predictions/ticket-5-heldout-predictions.csv, rows=1523"
+    },
+    {
+      "check": "ticket 5 heldout stable IDs",
+      "status": "PASS",
+      "detail": "predictions/ticket-5-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 5 heldout frozen model",
+      "status": "PASS",
+      "detail": "expected=lr_c1_balanced_default, observed=['lr_c1_balanced_default']"
+    },
+    {
+      "check": "ticket 5 heldout labels unchanged",
+      "status": "PASS",
+      "detail": "predictions/ticket-5-heldout-predictions.csv"
+    },
+    {
+      "check": "ticket 5 heldout precision_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7443609022556391, manifest=0.7443609022556391"
+    },
+    {
+      "check": "ticket 5 heldout recall_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7568807339449541, manifest=0.7568807339449541"
+    },
+    {
+      "check": "ticket 5 heldout f1_target_1",
+      "status": "PASS",
+      "detail": "calculated=0.7505686125852918, manifest=0.7505686125852918"
+    },
+    {
+      "check": "ticket 5 heldout accuracy",
+      "status": "PASS",
+      "detail": "calculated=0.7839789888378201, manifest=0.7839789888378201"
+    },
+    {
+      "check": "ticket 5 heldout true_negative",
+      "status": "PASS",
+      "detail": "calculated=699, manifest=699"
+    },
+    {
+      "check": "ticket 5 heldout false_positive",
+      "status": "PASS",
+      "detail": "calculated=170, manifest=170"
+    },
+    {
+      "check": "ticket 5 heldout false_negative",
+      "status": "PASS",
+      "detail": "calculated=159, manifest=159"
+    },
+    {
+      "check": "ticket 5 heldout true_positive",
+      "status": "PASS",
+      "detail": "calculated=495, manifest=495"
+    },
+    {
+      "check": "held-out labels not modified",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/final_audit_manifest.json"
+    },
+    {
+      "check": "held-out rows not removed",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/final_audit_manifest.json"
+    },
+    {
+      "check": "table_01_dataset_split_statistics row count",
+      "status": "PASS",
+      "detail": "expected 3, observed 3"
+    },
+    {
+      "check": "table_02_baseline_reference_comparison row count",
+      "status": "PASS",
+      "detail": "expected 3, observed 3"
+    },
+    {
+      "check": "ticket 1 heldout transitions",
+      "status": "PASS",
+      "detail": "{'fixed_fp': 0, 'fixed_fn': 0, 'new_fp': 0, 'new_fn': 0}"
+    },
+    {
+      "check": "ticket 2 heldout transitions",
+      "status": "PASS",
+      "detail": "{'fixed_fp': 22, 'fixed_fn': 8, 'new_fp': 4, 'new_fn': 15}"
+    },
+    {
+      "check": "ticket 3 heldout transitions",
+      "status": "PASS",
+      "detail": "{'fixed_fp': 0, 'fixed_fn': 0, 'new_fp': 0, 'new_fn': 0}"
+    },
+    {
+      "check": "ticket 4 heldout transitions",
+      "status": "PASS",
+      "detail": "{'fixed_fp': 0, 'fixed_fn': 35, 'new_fp': 56, 'new_fn': 0}"
+    },
+    {
+      "check": "ticket 5 heldout transitions",
+      "status": "PASS",
+      "detail": "{'fixed_fp': 0, 'fixed_fn': 35, 'new_fp': 56, 'new_fn': 0}"
+    },
+    {
+      "check": "table_03_five_ticket_summary row count",
+      "status": "PASS",
+      "detail": "expected 5, observed 5"
+    },
+    {
+      "check": "table_04_dev_metric_comparison row count",
+      "status": "PASS",
+      "detail": "expected 5, observed 5"
+    },
+    {
+      "check": "table_05_heldout_metric_comparison row count",
+      "status": "PASS",
+      "detail": "expected 5, observed 5"
+    },
+    {
+      "check": "table_06_confusion_matrix_summary row count",
+      "status": "PASS",
+      "detail": "expected 10, observed 10"
+    },
+    {
+      "check": "table_07_prediction_transitions row count",
+      "status": "PASS",
+      "detail": "expected 10, observed 10"
+    },
+    {
+      "check": "normalization variant count",
+      "status": "PASS",
+      "detail": "rows=7"
+    },
+    {
+      "check": "table_08_normalization_experiments row count",
+      "status": "PASS",
+      "detail": "expected 7, observed 7"
+    },
+    {
+      "check": "table_09_shortcut_shallow_feature_audit row count",
+      "status": "PASS",
+      "detail": "expected 10, observed 10"
+    },
+    {
+      "check": "table_10_decision_rule_model_comparison row count",
+      "status": "PASS",
+      "detail": "expected 8, observed 8"
+    },
+    {
+      "check": "threshold sweep row count",
+      "status": "PASS",
+      "detail": "rows=61"
+    },
+    {
+      "check": "threshold sweep grid",
+      "status": "PASS",
+      "detail": "0.20--0.80 inclusive, step 0.01"
+    },
+    {
+      "check": "data-quality audit row count",
+      "status": "PASS",
+      "detail": "rows=64"
+    },
+    {
+      "check": "data-quality audit stable IDs",
+      "status": "PASS",
+      "detail": "unique=64"
+    },
+    {
+      "check": "audit disposition counts",
+      "status": "PASS",
+      "detail": "{'ambiguous': 15, 'fix': 30, 'keep_but_flag': 6, 'reject_false_positive': 13}"
+    },
+    {
+      "check": "table_11_data_quality_audit_summary row count",
+      "status": "PASS",
+      "detail": "expected 10, observed 10"
+    },
+    {
+      "check": "case ID 5282 unique in experiments/ticket-1/probes/changes/logreg_solver_liblinear_changes.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 5282 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-1/probes/changes/logreg_solver_liblinear_changes.csv"
+    },
+    {
+      "check": "case ID 773 unique in experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 773 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case ID 902 unique in experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 902 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-2/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case ID 7 unique in experiments/ticket-3/dev/changes/keyword_only_changes.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 7 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/keyword_only_changes.csv"
+    },
+    {
+      "check": "case ID 25 unique in experiments/ticket-3/dev/changes/keyword_only_changes.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 25 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/keyword_only_changes.csv"
+    },
+    {
+      "check": "case ID 331 unique in experiments/ticket-3/dev/changes/text_plus_selected_shallow_features_changes.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 331 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-3/dev/changes/text_plus_selected_shallow_features_changes.csv"
+    },
+    {
+      "check": "case ID 556 unique in experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 556 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case ID 59 unique in experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 59 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case ID 767 unique in experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 767 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv"
+    },
+    {
+      "check": "case ID 9470 unique in experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 9470 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv"
+    },
+    {
+      "check": "case ID 4014 unique in experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv",
+      "status": "PASS",
+      "detail": "matches=1"
+    },
+    {
+      "check": "case ID 4014 text and label",
+      "status": "PASS",
+      "detail": "experiments/ticket-5/dev/correction_experiment/changes_vs_ticket4.csv"
+    },
+    {
+      "check": "audit case ID 5760",
+      "status": "PASS",
+      "detail": "stable ID present"
+    },
+    {
+      "check": "audit case ID 2619",
+      "status": "PASS",
+      "detail": "stable ID present"
+    },
+    {
+      "check": "audit case ID 6220",
+      "status": "PASS",
+      "detail": "stable ID present"
+    },
+    {
+      "check": "audit case ID 6223",
+      "status": "PASS",
+      "detail": "stable ID present"
+    },
+    {
+      "check": "audit case ID 10795",
+      "status": "PASS",
+      "detail": "stable ID present"
+    },
+    {
+      "check": "representative case stable IDs unique",
+      "status": "PASS",
+      "detail": "rows=16"
+    },
+    {
+      "check": "table_12_representative_case_analysis row count",
+      "status": "PASS",
+      "detail": "expected 16, observed 16"
+    },
+    {
+      "check": "table_13_difficulties_and_solutions row count",
+      "status": "PASS",
+      "detail": "expected 6, observed 6"
+    },
+    {
+      "check": "AI workflow log present",
+      "status": "PASS",
+      "detail": "characters=13175"
+    },
+    {
+      "check": "table_14_ai_usage_and_verification row count",
+      "status": "PASS",
+      "detail": "expected 5, observed 5"
+    },
+    {
+      "check": "Ticket 1 and Ticket 3 selected configurations match",
+      "status": "PASS",
+      "detail": "held-out IDs/labels/predictions identical"
+    },
+    {
+      "check": "Ticket 4 and Ticket 5 selected configurations match",
+      "status": "PASS",
+      "detail": "held-out IDs/labels/predictions identical"
+    },
+    {
+      "check": "reproduced summary row count",
+      "status": "PASS",
+      "detail": "five tickets"
+    },
+    {
+      "check": "reproduced summary values",
+      "status": "PASS",
+      "detail": "archived and replay summaries agree"
+    }
+  ],
+  "known_conflict": {
+    "stable_id": 767,
+    "status": "CONFLICTING_NARRATIVE_SUPERSEDED_BY_MACHINE_ARTIFACT",
+    "machine_source": "experiments/ticket-4/heldout/heldout_changes_vs_frozen_baseline.csv",
+    "baseline_score": 0.4876230020837692,
+    "candidate_score": 0.5448153095708489
+  },
+  "omitted_assets": []
+}

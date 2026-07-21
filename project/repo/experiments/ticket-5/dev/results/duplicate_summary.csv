@@ -1,0 +1,4 @@
+relationship_type,groups_or_pairs,member_rows,conflicting_groups_or_pairs,cross_split_groups_or_pairs
+exact,50,124,13,19
+canonical,214,677,46,98
+near,693,538,104,265

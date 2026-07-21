@@ -1,0 +1,24 @@
+{
+  "created_after_primary_comparison": true,
+  "primary_comparison_result": "reference contract did not match",
+  "selection_rule": "All investigative comparisons use dev only. Probe results cannot revise the already frozen held-out result.",
+  "baseline": "Exact frozen raw-text TF-IDF plus Logistic Regression configuration",
+  "structural_audits": [
+    "fixed split file hash, counts, uniqueness, and overlap",
+    "ID-based membership and fixed-order prediction coverage",
+    "row-position misuse feasibility",
+    "raw text-only feature path and sklearn Pipeline leakage barrier",
+    "data, code, configuration, and package-version hashes"
+  ],
+  "controlled_probes": [
+    {"name":"tfidf_lowercase_false","single_lever":"TfidfVectorizer.lowercase: true -> false","cause_category":"changed preprocessing","rationale":"Tests whether relying on default lowercasing materially affects dev predictions."},
+    {"name":"tfidf_word_bigrams","single_lever":"TfidfVectorizer.ngram_range: [1,1] -> [1,2]","cause_category":"changed TF-IDF parameters","rationale":"Tests the common addition of word bigrams."},
+    {"name":"logreg_solver_liblinear","single_lever":"LogisticRegression.solver: lbfgs -> liblinear","cause_category":"Logistic Regression solver","rationale":"Tests a common CPU binary-classification solver substitution."},
+    {"name":"logreg_c_0_5","single_lever":"LogisticRegression.C: 1.0 -> 0.5","cause_category":"regularization","rationale":"Tests a modest increase in L2 regularization strength."},
+    {"name":"logreg_max_iter_1000","single_lever":"LogisticRegression.max_iter: 100 -> 1000","cause_category":"maximum iterations or convergence","rationale":"Checks whether a defensive max_iter increase changes an already converged fit."},
+    {"name":"logreg_class_weight_balanced","single_lever":"LogisticRegression.class_weight: null -> balanced","cause_category":"class weighting","rationale":"Measures the operating-point shift from a common imbalance option."},
+    {"name":"logreg_seed_9999","single_lever":"LogisticRegression.random_state: 3102 -> 9999","cause_category":"random seed","rationale":"Checks whether the deterministic lbfgs path is seed-sensitive."},
+    {"name":"logreg_explicit_l2","single_lever":"LogisticRegression.penalty representation: deprecated default -> explicit l2","cause_category":"package-version behavior","rationale":"Checks current-version equivalence to historical explicit L2."},
+    {"name":"leaky_tfidf_train_plus_dev","single_lever":"TF-IDF vocabulary/IDF fit scope: train only -> train plus dev text","cause_category":"accidental leakage","rationale":"Diagnostic transductive feature leakage; never a selectable candidate."}
+  ]
+}

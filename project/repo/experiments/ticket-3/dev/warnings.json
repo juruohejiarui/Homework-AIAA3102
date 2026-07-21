@@ -1,0 +1,12 @@
+{
+  "keyword_only": [],
+  "keyword_plus_length": [],
+  "keyword_plus_location": [],
+  "length_only": [],
+  "location_only": [],
+  "raw_text_tfidf_logistic_regression": [],
+  "selected_shallow_only": [],
+  "text_plus_keyword": [],
+  "text_plus_selected_shallow_features": [],
+  "train_majority_floor": []
+}

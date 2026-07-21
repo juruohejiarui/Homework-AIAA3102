@@ -1,0 +1,46 @@
+{
+  "ticket": 5,
+  "created_before_dev_execution": true,
+  "decision_split": "train_ids and dev_ids only",
+  "heldout_access_by_dev_command": false,
+  "questions": [
+    "How many exact raw-text duplicates exist, and which have conflicting labels?",
+    "How many canonical duplicates remain after Unicode normalization, casefolding, HTML entity decoding, URL placeholdering, and whitespace collapse?",
+    "Which high-similarity but non-identical texts are plausible near duplicates?",
+    "Which duplicate relationships cross train and dev?",
+    "Which model false positives are valid hard negatives rather than data errors?",
+    "Which false negatives expose model weakness, ambiguity, or credible annotation uncertainty?"
+  ],
+  "duplicate_definitions": {
+    "exact": "Python string equality on the unmodified text field",
+    "canonical": "NFKC normalize, HTML-unescape, Unicode casefold, replace each HTTP/HTTPS/WWW URL with <url>, and collapse whitespace; punctuation, mentions, hashtags, and words remain",
+    "near": "Cosine similarity at least 0.88 among canonical strings represented by char_wb TF-IDF 3-5 grams; inspect at most seven non-self nearest neighbors per row; exclude canonical-equal pairs"
+  },
+  "near_duplicate_configuration": {
+    "analyzer": "char_wb",
+    "ngram_range": [3, 5],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "similarity_threshold": 0.88,
+    "neighbors_including_self": 8,
+    "algorithm": "brute cosine",
+    "n_jobs": 1
+  },
+  "confidence_scale": {
+    "meaning": "Confidence that the assigned disposition is appropriate, not probability that the model prediction or dataset label is correct",
+    "0.90_to_1.00": "Very strong direct evidence, usually an exact/canonical contradiction plus clear semantics or an obvious valid hard negative",
+    "0.75_to_0.89": "Strong evidence with limited contextual uncertainty",
+    "0.55_to_0.74": "Moderate evidence; ambiguity remains and no silent correction is justified",
+    "below_0.55": "Exploratory only; omit from the final audit table until stronger evidence exists"
+  },
+  "disposition_policy": {
+    "fix": "Use only when the stored label or duplicate record is very likely wrong from evidence independent of model disagreement; no source row is changed by the audit",
+    "keep_but_flag": "Retain the row and label, but flag duplication, leakage risk, or unusual difficulty",
+    "ambiguous": "Multiple reasonable readings or irreconcilable duplicate labels prevent a confident correction",
+    "reject_false_positive": "Reject an audit suspicion: the row is a legitimate hard example or model weakness rather than a data-quality defect"
+  },
+  "label_correction_gate": "A controlled correction experiment is permitted only if train/dev evidence identifies one or more train labels with confidence at least 0.90 from at least two independent evidence sources. Original labels, proposed labels, and evidence must be preserved. Otherwise make no correction and retain the frozen Ticket 4 model.",
+  "final_decision_rule": "Prefer no label changes when duplicate conflicts or model errors remain semantically ambiguous. The held-out split cannot influence whether corrections are attempted or which model is retained.",
+  "post_freeze_scope": "After the decision is frozen, audit exact/canonical/near duplicate relationships involving held-out, inspect frozen-model held-out errors, preserve every held-out row and label, and do not reopen the model decision."
+}

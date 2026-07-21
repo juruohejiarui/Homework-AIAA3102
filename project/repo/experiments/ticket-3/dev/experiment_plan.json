@@ -1,0 +1,36 @@
+{
+  "ticket": 3,
+  "created_before_dev_execution": true,
+  "selection_split": "dev_ids only",
+  "heldout_access_by_dev_command": false,
+  "baseline_comparator": "Frozen Ticket 1 raw-text TF-IDF plus Logistic Regression baseline",
+  "selection_rule": "Do not adopt a feature merely for higher dev F1. Require favorable error movement, an interpretable mechanism, and acceptable behavior when the relevant metadata or superficial surface signals are neutralized. Prefer the simplest defensible representation; reject gains dominated by sparse location identities or brittle metadata availability.",
+  "variants": [
+    {"name":"train_majority_floor","hypothesis":"Provides a no-signal wiring floor and should have target-1 F1 zero."},
+    {"name":"raw_text_tfidf_logistic_regression","hypothesis":"Provides the frozen legitimate content baseline."},
+    {"name":"keyword_only","hypothesis":"Keywords carry strong topical signal but are mixed evidence because they are benchmark-provided retrieval metadata rather than tweet prose."},
+    {"name":"length_only","hypothesis":"Length can separate reporting styles but is primarily a shallow dataset artifact and should be weak alone."},
+    {"name":"keyword_plus_length","hypothesis":"Length may add complementary style information to keyword, but any gain may remain shortcut-prone."},
+    {"name":"location_only","hypothesis":"Sparse user-entered locations should be weak and brittle; apparent signal is likely a dataset artifact."},
+    {"name":"keyword_plus_location","hypothesis":"Location may add memorized identity-like categories to keyword but should not be trusted without robust evidence."},
+    {"name":"selected_shallow_only","hypothesis":"Counts, ratios, missingness, and length may expose benchmark construction artifacts but should remain weaker than semantic text."},
+    {"name":"text_plus_keyword","hypothesis":"Keyword may complement tweet text and improve dev performance, but the model should be audited under keyword masking before adoption."},
+    {"name":"text_plus_selected_shallow_features","hypothesis":"Adding keyword plus length, surface counts, and missingness may improve the visible split; adoption requires that the gain not be explained by brittle fields or superficial formatting."}
+  ],
+  "missing_value_policy": {
+    "keyword": "SimpleImputer constant __MISSING_KEYWORD__ fitted inside the training pipeline",
+    "location": "SimpleImputer constant __MISSING_LOCATION__ fitted inside the training pipeline"
+  },
+  "perturbations": [
+    "mask keyword to missing",
+    "mask location to missing",
+    "mask keyword and location together",
+    "neutralize URLs, mentions, hashtag markers, punctuation, and casing in text"
+  ],
+  "signal_classification_priors": {
+    "text": "legitimate task information",
+    "keyword": "mixed evidence",
+    "length_and_surface_counts": "mixed evidence",
+    "full_location_categories": "dataset artifact unless strong contrary evidence"
+  }
+}
